@@ -18,12 +18,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/favicons/favicon-192x192.png",
+      "src": "/favicons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/favicons/favicon-512x512.png",
+      "src": "/favicons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

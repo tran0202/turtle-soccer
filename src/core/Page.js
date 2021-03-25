@@ -1,16 +1,13 @@
 import React from 'react'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'boxicons/css/boxicons.min.css'
-// import 'animate.css/animate.min.css'
-// import 'aos/dist/aos.css'
-// import '../assets/stylesheets/third-party/icofont/icofont.min.css'
-// import '../assets/stylesheets/third-party/venobox.css'
-// import '../assets/stylesheets/common.css'
-// import '../assets/stylesheets/Page.css'
-// import '../assets/stylesheets/Soccer.css'
-// import '../assets/stylesheets/Football.css'
-// import '../assets/stylesheets/Tennis.css'
-// import turtleLogo from '../assets/images/LogoMakr_1aN4h4.png'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'animate.css/animate.min.css'
+import 'aos/dist/aos.css'
+import '../stylesheets/icofont/icofont.min.css'
+import '../stylesheets/venobox/venobox.css'
+import '../stylesheets/common.css'
+import '../stylesheets/Page.css'
+import '../stylesheets/Soccer.css'
+import turtleLogo from '../images/Turtle_Soccer_logo.png'
 import { Container, Row, Col } from 'reactstrap'
 
 class Page extends React.Component {
@@ -20,9 +17,8 @@ class Page extends React.Component {
         <header id="header">
           <Container>
             <Row>
-              Header
               <Col sm="7" md="5">
-                {/* <div className="logo float-left">
+                <div className="logo float-left">
                   <a href="/">
                     <img src={turtleLogo} alt="Turtle Soccer" className="img-fluid" title="Turtle Soccer" />
                   </a>
@@ -35,22 +31,18 @@ class Page extends React.Component {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/soccer">Soccer</a>
-                    </li>
-                    <li>
-                      <a href="/football">Football</a>
-                    </li>
-                    <li>
-                      <a href="/tennis">Tennis</a>
+                      <a href="/soccer">Tournaments</a>
                     </li>
                   </ul>
-                </nav> */}
+                </nav>
               </Col>
             </Row>
           </Container>
         </header>
+
         {this.props.children}
-        {/* <button className="back-to-top">
+
+        <button className="back-to-top">
           <i className="icofont-simple-up"></i>
         </button>
 
@@ -60,8 +52,7 @@ class Page extends React.Component {
               &copy; Copyright <span className="font-bold">Turtle Soccer</span>. All Rights Reserved.
             </div>
           </div>
-        </footer> */}
-        Footer
+        </footer>
       </React.Fragment>
     )
   }

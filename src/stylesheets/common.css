@@ -1,0 +1,697 @@
+@font-face {
+  font-family: 'Dusha';
+  src: url('fonts/Dusha_-_FIFA_World_Cup_2018.ttf');
+}
+@font-face {
+  font-family: 'Bridge';
+  src: url('fonts/Bridge_Type_-_UEFA_Euro_2020.ttf');
+}
+@font-face {
+  font-family: 'London 2012';
+  src: url('fonts/LONDO___.TTF');
+}
+@font-face {
+  font-family: 'Mexcellent';
+  src: url('fonts/mexcellent rg.ttf');
+}
+@font-face {
+  font-family: 'Mexcellent 3D';
+  src: url('fonts/mexcellent 3d.ttf');
+}
+@font-face {
+  font-family: 'Copa America';
+  src: url('fonts/copa-america-regular.ttf');
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('fonts/coolvetica.regular.ttf');
+}
+@font-face {
+  font-family: 'Hemi Head';
+  src: url('fonts/hemi head bd it.ttf');
+}
+@font-face {
+  font-family: 'Go3';
+  src: url('fonts/go3v2.ttf');
+}
+@font-face {
+  font-family: 'Capture it';
+  src: url('fonts/Capture it.ttf');
+}
+@font-face {
+  font-family: 'Philosopher';
+  src: url('fonts/Philosopher-Regular.ttf');
+}
+@font-face {
+  font-family: 'Good Times';
+  src: url('fonts/good times rg.ttf');
+}
+@font-face {
+  font-family: 'Champions Bold';
+  src: url('fonts/Champions-Bold.ttf');
+}
+@font-face {
+  font-family: 'Homoarak';
+  src: url('fonts/HOMOARAK.TTF');
+}
+@font-face {
+  font-family: 'Europa Title';
+  src: url('fonts/europatitlebold.ttf');
+}
+
+/* ========== Override ========== */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: #0040ff;
+}
+
+a:hover {
+  color: #2acaea;
+  text-decoration: none;
+}
+
+/* ========== Colors ========== */
+
+.blue {
+  color: #0040ff;
+}
+.navy-blue-neon {
+  color: #0002a6;
+}
+.red {
+  color: #cc0000;
+}
+.dark-red {
+  color: #930c10;
+}
+.green {
+  color: #13730f;
+}
+.orange {
+  color: #ffa500;
+}
+
+.russia-2018 {
+  color: #930c10;
+}
+
+.unl-red {
+  color: #e30e1b;
+}
+.unl-league-A {
+  color: #e30918;
+}
+.unl-league-B {
+  color: #ac16e1;
+}
+.unl-league-C {
+  color: #009e4d;
+}
+.unl-league-D {
+  color: #f39205;
+}
+
+/*Tertiary*/
+.gray1 {
+  color: #333333;
+}
+.gray2 {
+  color: #5c6066;
+}
+.gray3 {
+  color: #858585;
+}
+.gray4 {
+  color: #c7c6c6;
+}
+.gray5 {
+  color: #e6e7e9;
+}
+.gray6 {
+  color: #f8f8f8;
+}
+
+/* ========== Typography ========== */
+
+.weight-thin {
+  font-weight: 100;
+}
+.weight-extra-light {
+  font-weight: 200;
+}
+.weight-light {
+  font-weight: 300;
+}
+.weight-regular {
+  font-weight: 400;
+}
+.weight-medium {
+  font-weight: 500;
+}
+.weight-semi-bold {
+  font-weight: 600;
+}
+.weight-bold {
+  font-weight: 700;
+}
+.weight-black {
+  font-weight: 900;
+}
+.font-bold {
+  font-weight: bold;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-custom1 {
+  font-size: 40px;
+}
+.font-custom1:hover {
+  font-size: 40px;
+}
+
+.h1-ff1,
+.h1-ff2,
+.h1-ff3,
+.h1-ff4,
+.h1-ff5,
+.h1-ff6,
+.h1-ff7,
+.h1-ff8,
+.h1-ff1:hover,
+.h1-ff2:hover,
+.h1-ff3:hover,
+.h1-ff4:hover,
+.h1-ff5:hover,
+.h1-ff6:hover,
+.h1-ff7:hover,
+.h1-ff8:hover {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.h2-ff1,
+.h2-ff2,
+.h2-ff3,
+.h2-ff4,
+.h2-ff5,
+.h2-ff6,
+.h2-ff7,
+.h2-ff8 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.h3-ff1,
+.h3-ff2,
+.h3-ff3,
+.h3-ff4,
+.h3-ff5,
+.h3-ff6,
+.h3-ff7,
+.h3-ff8 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+.h4-ff1,
+.h4-ff2,
+.h4-ff3,
+.h4-ff4,
+.h4-ff5,
+.h4-ff6,
+.h4-ff7,
+.h4-ff8 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.h5-ff1,
+.h5-ff2,
+.h5-ff3,
+.h5-ff4,
+.h5-ff5,
+.h5-ff6,
+.h5-ff7,
+.h5-ff8 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+.h6-ff1,
+.h6-ff2,
+.h6-ff3,
+.h6-ff4,
+.h6-ff5,
+.h6-ff6,
+.h6-ff7,
+.h6-ff8 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.h1-ff1,
+.h2-ff1,
+.h3-ff1,
+.h4-ff1,
+.h5-ff1,
+.h6-ff1 {
+  font-family: 'Courgette', cursive;
+}
+.h1-ff2,
+.h2-ff2,
+.h3-ff2,
+.h4-ff2,
+.h5-ff2,
+.h6-ff2 {
+  font-family: 'Monoton', cursive;
+}
+.h1-ff3,
+.h2-ff3,
+.h3-ff3,
+.h4-ff3,
+.h5-ff3,
+.h6-ff3 {
+  font-family: 'Oswald', sans-serif;
+}
+.h1-ff4,
+.h2-ff4,
+.h3-ff4,
+.h4-ff4,
+.h5-ff4,
+.h6-ff4 {
+  font-family: 'Roboto', sans-serif;
+}
+.h1-ff5,
+.h2-ff5,
+.h3-ff5,
+.h4-ff5,
+.h5-ff5,
+.h6-ff5 {
+  font-family: 'Merriweather', serif;
+}
+.h1-ff6,
+.h2-ff6,
+.h3-ff6,
+.h4-ff6,
+.h5-ff6,
+.h6-ff6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.h1-ff7,
+.h2-ff7,
+.h3-ff7,
+.h4-ff7,
+.h5-ff7,
+.h6-ff7 {
+  font-family: 'Open Sans', sans-serif;
+}
+.h1-ff8,
+.h2-ff8,
+.h3-ff8,
+.h4-ff8,
+.h5-ff8,
+.h6-ff8 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ========== Utilities ========== */
+
+.width-200 {
+  width: 200px;
+}
+.width-100 {
+  width: 100px;
+}
+
+.border-trb-gray2 {
+  border-top: 1px solid #5c6066;
+  border-right: 1px solid #5c6066;
+  border-bottom: 1px solid #5c6066;
+}
+.border-top-gray2 {
+  border-top: 1px solid #5c6066;
+}
+.border-bottom-gray2 {
+  border-bottom: 1px solid #5c6066;
+}
+.border-left-gray2 {
+  border-left: 1px solid #5c6066;
+}
+.border-right-gray2 {
+  border-right: 1px solid #5c6066;
+}
+
+.border-top-gray5 {
+  border-top: 1px solid #e6e7e9;
+}
+.border-bottom-gray5 {
+  border-bottom: 1px solid #e6e7e9;
+}
+.border-left-gray5 {
+  border-left: 1px solid #e6e7e9;
+}
+.border-right-gray5 {
+  border-right: 1px solid #e6e7e9;
+}
+
+.no-border-top {
+  border-top: none;
+}
+.no-border-bottom {
+  border-bottom: none;
+}
+.no-border-left {
+  border-left: none;
+}
+.no-border-right {
+  border-right: none;
+}
+
+.margin-top-xs {
+  margin-top: 5px;
+}
+.margin-bottom-xs {
+  margin-bottom: 5px;
+}
+.margin-left-xs {
+  margin-left: 5px;
+}
+.margin-right-xs {
+  margin-right: 5px;
+}
+.margin-tb-xs {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.margin-lr-xs {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.margin-top-sm {
+  margin-top: 10px;
+}
+.margin-bottom-sm {
+  margin-bottom: 10px;
+}
+.margin-left-sm {
+  margin-left: 10px;
+}
+.margin-right-sm {
+  margin-right: 10px;
+}
+.margin-tb-sm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.margin-lr-sm {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.margin-top-md {
+  margin-top: 20px;
+}
+.margin-bottom-md {
+  margin-bottom: 20px;
+}
+.margin-left-md {
+  margin-left: 20px;
+}
+.margin-right-md {
+  margin-right: 20px;
+}
+.margin-tb-md {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.margin-lr-md {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.margin-top-lg {
+  margin-top: 40px;
+}
+.margin-bottom-lg {
+  margin-bottom: 40px;
+}
+.margin-left-lg {
+  margin-left: 40px;
+}
+.margin-right-lg {
+  margin-right: 40px;
+}
+.margin-tb-lg {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.margin-lr-lg {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+.no-margin-left {
+  margin-left: 0;
+}
+.no-margin-right {
+  margin-right: 0;
+}
+.no-margin-tb {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.no-margin-lr {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.padding-top-xxs {
+  padding-top: 3px;
+}
+.padding-top-xs {
+  padding-top: 5px;
+}
+.padding-bottom-xs {
+  padding-bottom: 5px;
+}
+.padding-left-xs {
+  padding-left: 5px;
+}
+.padding-right-xs {
+  padding-right: 5px;
+}
+.padding-tb-xs {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.padding-lr-xs {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.padding-top-sm {
+  padding-top: 10px;
+}
+.padding-bottom-sm {
+  padding-bottom: 10px;
+}
+.padding-left-sm {
+  padding-left: 10px;
+}
+.padding-right-sm {
+  padding-right: 10px;
+}
+.padding-tb-sm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.padding-lr-sm {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding-top-md {
+  padding-top: 20px;
+}
+.padding-bottom-md {
+  padding-bottom: 20px;
+}
+.padding-left-md {
+  padding-left: 20px;
+}
+.padding-right-md {
+  padding-right: 20px;
+}
+.padding-tb-md {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.padding-lr-md {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding-top-lg {
+  padding-top: 40px;
+}
+.padding-bottom-lg {
+  padding-bottom: 40px;
+}
+.padding-left-lg {
+  padding-left: 40px;
+}
+.padding-right-lg {
+  padding-right: 40px;
+}
+.padding-tb-lg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.padding-lr-lg {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}
+.no-padding-tb {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.no-padding-lr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ========== Miscellaneous ========== */
+
+.modal-md {
+  max-width: 800px;
+}
+.modal-X {
+  font-size: 48px;
+}
+.modal-close {
+  font-size: 26px;
+}
+.card-img-top-height-85 {
+  width: auto;
+  height: 85px;
+}
+.card-img-top-height-150 {
+  width: auto;
+  height: 150px;
+}
+.card-img-top-height-200 {
+  width: auto;
+  height: 200px;
+}
+
+a:hover.hover-pointer {
+  cursor: pointer;
+}
+.group-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.group-link:hover {
+  color: #007bc9;
+  text-decoration: underline;
+}
+
+.no-display {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.padding-top-logo {
+  padding-top: 30px;
+}
+
+.scenario-striped {
+  background-color: #e6e7e9;
+}
+.ranking-striped {
+  background-color: #ebebeb;
+}
+.advanced-next-round-striped {
+  background-color: #e3fae3;
+}
+.advanced-wild-card-striped {
+  background-color: #bbf3ff;
+}
+.advanced-wild-card-extra-striped {
+  background-color: #ffffbb;
+}
+.advanced-playoff-striped {
+  background-color: #bbf3ff;
+}
+.advanced-third-place-striped {
+  background-color: #bbf3ff;
+}
+.transferred-striped {
+  background-color: #bbf3ff;
+}
+.qualification-winner-striped {
+  background-color: #bbf3bb;
+}
+.promotion-striped {
+  background-color: #bbf3bb;
+}
+.relegation-striped {
+  background-color: #ffe2e2;
+}
+.gray-striped {
+  background-color: #eaecf0;
+}
+.ltblue-striped {
+  background-color: #eaf4ff;
+}
+
+.gold {
+  background-color: gold;
+}
+.silver {
+  background-color: silver;
+}
+.bronze {
+  background-color: rgb(204, 153, 102);
+}
