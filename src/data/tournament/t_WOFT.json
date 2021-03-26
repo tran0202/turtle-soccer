@@ -3,7 +3,7 @@
     "id": "WOFT2020",
     "year": "2020",
     "name": "Women's Olympic Football Tournament Tokyo 2020",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -29,7 +29,7 @@
     "id": "WOFT2016",
     "year": "2016",
     "name": "Women's Olympic Football Tournament Rio 2016",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -82,7 +82,7 @@
     "id": "WOFT2012",
     "year": "2012",
     "name": "Women's Olympic Football Tournament London 2012",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -130,7 +130,7 @@
     "id": "WOFT2008",
     "year": "2008",
     "name": "Women's Olympic Football Tournament Beijing 2008",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -177,7 +177,7 @@
     "id": "WOFT2004",
     "year": "2004",
     "name": "Women's Olympic Football Tournament Athens 2004",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -227,7 +227,7 @@
     "id": "WOFT2000",
     "year": "2000",
     "name": "Women's Olympic Football Tournament Sydney 2000",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -270,7 +270,7 @@
     "id": "WOFT1996",
     "year": "1996",
     "name": "Women's Olympic Football Tournament Atlanta 1996",
-    "tournament_type_id": "WOFT",
+    "competition_id": "WOFT",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],

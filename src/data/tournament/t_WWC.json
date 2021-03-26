@@ -3,7 +3,7 @@
     "id": "WWC2023",
     "year": "2023",
     "name": "FIFA Women's World Cup Australia-New Zealand 2023",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -29,7 +29,7 @@
     "id": "WWC2019",
     "year": "2019",
     "name": "FIFA Women's World Cup France 2019",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -96,7 +96,7 @@
     "id": "WWC2015",
     "year": "2015",
     "name": "FIFA Women's World Cup Canada 2015",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -153,7 +153,7 @@
     "id": "WWC2011",
     "year": "2011",
     "name": "FIFA Women's World Cup Germany 2011",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -210,7 +210,7 @@
     "id": "WWC2007",
     "year": "2007",
     "name": "FIFA Women's World Cup China 2007",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -265,7 +265,7 @@
     "id": "WWC2003",
     "year": "2003",
     "name": "FIFA Women's World Cup USA 2003",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
@@ -321,7 +321,7 @@
     "id": "WWC1999",
     "year": "1999",
     "name": "FIFA Women's World Cup USA 1999",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
@@ -382,7 +382,7 @@
     "id": "WWC1995",
     "year": "1995",
     "name": "FIFA Women's World Cup Sweden 1995",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -437,7 +437,7 @@
     "year": "1991",
     "name": "FIFA Women's World Cup China 1991",
     "short_name": "China 1991",
-    "tournament_type_id": "WWC",
+    "competition_id": "WWC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {

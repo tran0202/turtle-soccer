@@ -3,7 +3,7 @@
     "id": "MOFT2020",
     "year": "2020",
     "name": "Men's Olympic Football Tournament Tokyo 2020",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -29,7 +29,7 @@
     "id": "MOFT2016",
     "year": "2016",
     "name": "Men's Olympic Football Tournament Rio 2016",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -105,7 +105,7 @@
     "id": "MOFT2012",
     "year": "2012",
     "name": "Men's Olympic Football Tournament London 2012",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -153,7 +153,7 @@
     "id": "MOFT2008",
     "year": "2008",
     "name": "Men's Olympic Football Tournament Beijing 2008",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -206,7 +206,7 @@
     "id": "MOFT2004",
     "year": "2004",
     "name": "Men's Olympic Football Tournament Athens 2004",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -249,7 +249,7 @@
     "id": "MOFT2000",
     "year": "2000",
     "name": "Men's Olympic Football Tournament Sydney 2000",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
@@ -298,7 +298,7 @@
     "id": "MOFT1996",
     "year": "1996",
     "name": "Men's Olympic Football Tournament Atlanta 1996",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
@@ -349,7 +349,7 @@
     "id": "MOFT1992",
     "year": "1992",
     "name": "Men's Olympic Football Tournament Barcelona 1992",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -396,7 +396,7 @@
     "id": "MOFT1988",
     "year": "1988",
     "name": "Men's Olympic Football Tournament Seoul 1988",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -444,7 +444,7 @@
     "year": "1984",
     "name": "Men's Olympic Football Tournament Los Angeles 1984",
     "short_name": "Los Angeles 1984",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -495,7 +495,7 @@
     "id": "MOFT1980",
     "year": "1980",
     "name": "Men's Olympic Football Tournament Moscow 1980",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -542,7 +542,7 @@
     "id": "MOFT1976",
     "year": "1976",
     "name": "Men's Olympic Football Tournament Montreal 1976",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -584,7 +584,7 @@
     "id": "MOFT1972",
     "year": "1972",
     "name": "Men's Olympic Football Tournament Munich 1972",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -636,7 +636,7 @@
     "id": "MOFT1968",
     "year": "1968",
     "name": "Men's Olympic Football Tournament Mexico City 1968",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -683,7 +683,7 @@
     "id": "MOFT1964",
     "year": "1964",
     "name": "Men's Olympic Football Tournament Tokyo 1964",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -731,7 +731,7 @@
     "year": "1960",
     "name": "Men's Olympic Football Tournament Rome 1960",
     "short_name": "Rome 1960",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -779,7 +779,7 @@
     "year": "1956",
     "name": "Men's Olympic Football Tournament Melbourne 1956",
     "short_name": "Melbourne 1956",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -824,7 +824,7 @@
     "id": "MOFT1952",
     "year": "1952",
     "name": "Men's Olympic Football Tournament Helsinki 1952",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -874,7 +874,7 @@
     "id": "MOFT1948",
     "year": "1948",
     "name": "Men's Olympic Football Tournament London 1948",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -925,7 +925,7 @@
     "year": "1936",
     "name": "Men's Olympic Football Tournament Berlin 1936",
     "short_name": "Berlin 1936",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -973,7 +973,7 @@
     "year": "1928",
     "name": "Men's Olympic Football Tournament Amsterdam 1928",
     "short_name": "Amsterdam 1928",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1020,7 +1020,7 @@
     "id": "MOFT1924",
     "year": "1924",
     "name": "Men's Olympic Football Tournament Paris 1924",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1073,7 +1073,7 @@
     "year": "1920",
     "name": "Men's Olympic Football Tournament Antwerp 1920",
     "short_name": "Antwerp 1920",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1121,7 +1121,7 @@
     "year": "1912",
     "name": "Men's Olympic Football Tournament Stockholm 1912",
     "short_name": "Stockholm 1912",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1169,7 +1169,7 @@
     "year": "1908",
     "name": "Men's Olympic Football Tournament London 1908",
     "short_name": "London 1908",
-    "tournament_type_id": "MOFT",
+    "competition_id": "MOFT",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {

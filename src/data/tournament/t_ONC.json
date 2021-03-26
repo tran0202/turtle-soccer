@@ -4,7 +4,7 @@
     "year": "2016",
     "name": "OFC Nations Cup Papua New Guinea 2016",
     "short_name": "Papua New Guinea 2016",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "head2headawaygoals", "fairplay", "lot"],
     "no_third_place": true,
@@ -45,7 +45,7 @@
     "year": "2012",
     "name": "OFC Nations Cup Solomon Islands 2012",
     "short_name": "Solomon Islands 2012",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -85,9 +85,9 @@
     "year": "2008",
     "name": "OFC Nations Cup 2008",
     "short_name": "2008",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
-    "show_match_year": true, 
+    "show_match_year": true,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
       "logo_filename": "OFCcup.png",
@@ -132,7 +132,7 @@
     "year": "2004",
     "name": "OFC Nations Cup Australia 2004",
     "short_name": "Australia 2004",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -182,7 +182,7 @@
     "year": "2002",
     "name": "OFC Nations Cup New Zealand 2002",
     "short_name": "New Zealand 2002",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -235,7 +235,7 @@
     "year": "2000",
     "name": "OFC Nations Cup Tahiti 2000",
     "short_name": "Tahiti 2000",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -270,7 +270,7 @@
     "year": "1998",
     "name": "OFC Nations Cup Australia 1998",
     "short_name": "Australia 1998",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -307,7 +307,7 @@
     "year": "1996",
     "name": "OFC Nations Cup 1996",
     "short_name": "1996",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "no_third_place": true,
@@ -346,7 +346,7 @@
     "year": "1980",
     "name": "Oceania Nations Cup New Caledonia 1980",
     "short_name": "New Caledonia 1980",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -381,7 +381,7 @@
     "year": "1973",
     "name": "Oceania Nations Cup New Zealand 1973",
     "short_name": "New Zealand 1973",
-    "tournament_type_id": "ONC",
+    "competition_id": "ONC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {

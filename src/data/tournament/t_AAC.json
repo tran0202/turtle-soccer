@@ -3,7 +3,7 @@
     "id": "AAC2023",
     "year": "2023",
     "name": "AFC Asian Cup China 2023",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
     "no_third_place": true,
@@ -30,7 +30,7 @@
     "id": "AAC2019",
     "year": "2019",
     "name": "AFC Asian Cup United Arab Emirates 2019",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
     "no_third_place": true,
@@ -81,7 +81,7 @@
     "id": "AAC2015",
     "year": "2015",
     "name": "AFC Asian Cup Australia 2015",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
     "details": {
@@ -131,7 +131,7 @@
     "id": "AAC2011",
     "year": "2011",
     "name": "AFC Asian Cup Qatar 2011",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
     "details": {
@@ -179,7 +179,7 @@
     "id": "AAC2007",
     "year": "2007",
     "name": "AFC Asian Cup Indonesia-Malaysia-Thailand-Vietnam 2007",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -232,7 +232,7 @@
     "id": "AAC2004",
     "year": "2004",
     "name": "AFC Asian Cup China 2004",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -283,7 +283,7 @@
     "id": "AAC2000",
     "year": "2000",
     "name": "AFC Asian Cup Lebanon 2000",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
@@ -333,7 +333,7 @@
     "id": "AAC1996",
     "year": "1996",
     "name": "AFC Asian Cup United Arab Emirates 1996",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "golden_goal_rule": true,
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
@@ -384,7 +384,7 @@
     "year": "1992",
     "name": "AFC Asian Cup Japan 1992",
     "short_name": "Japan 1992",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -432,7 +432,7 @@
     "year": "1988",
     "name": "AFC Asian Cup Qatar 1988",
     "short_name": "Qatar 1988",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -471,7 +471,7 @@
     "year": "1984",
     "name": "AFC Asian Cup Singapore 1984",
     "short_name": "Singapore 1984",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -515,7 +515,7 @@
     "year": "1980",
     "name": "AFC Asian Cup Kuwait 1980",
     "short_name": "Kuwait 1980",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -555,7 +555,7 @@
     "year": "1976",
     "name": "AFC Asian Cup Iran 1976",
     "short_name": "Iran 1976",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -607,7 +607,7 @@
     "year": "1972",
     "name": "AFC Asian Cup Thailand 1972",
     "short_name": "Thailand 1972",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -645,7 +645,7 @@
     "year": "1968",
     "name": "AFC Asian Cup Iran 1968",
     "short_name": "Iran 1968",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -686,7 +686,7 @@
     "year": "1964",
     "name": "AFC Asian Cup Israel 1964",
     "short_name": "Israel 1964",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -736,7 +736,7 @@
     "year": "1960",
     "name": "AFC Asian Cup Korea Republic 1960",
     "short_name": "Korea Republic 1960",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -773,7 +773,7 @@
     "year": "1956",
     "name": "AFC Asian Cup Hong Kong 1956",
     "short_name": "Hong Kong 1956",
-    "tournament_type_id": "AAC",
+    "competition_id": "AAC",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {

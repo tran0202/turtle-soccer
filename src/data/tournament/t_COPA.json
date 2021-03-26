@@ -3,7 +3,7 @@
     "id": "COPA2021",
     "year": "2021",
     "name": "Copa America Argentina–Colombia 2021",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -29,7 +29,7 @@
     "id": "COPA2019",
     "year": "2019",
     "name": "Copa America Brazil 2019",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
@@ -83,7 +83,7 @@
     "id": "COPA2016",
     "year": "2016",
     "name": "Copa America Centenario USA 2016",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -133,7 +133,7 @@
     "id": "COPA2015",
     "year": "2015",
     "name": "Copa America Chile 2015",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headresults", "penalty", "lot"],
     "details": {
@@ -192,7 +192,7 @@
     "id": "COPA2011",
     "year": "2011",
     "name": "Copa America Argentina 2011",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headresults", "penalty", "lot"],
     "details": {
@@ -242,7 +242,7 @@
     "id": "COPA2007",
     "year": "2007",
     "name": "Copa America Venezuela 2007",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headresults", "lot"],
     "details": {
@@ -290,7 +290,7 @@
     "id": "COPA2004",
     "year": "2004",
     "name": "Copa America Peru 2004",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headresults", "lot"],
     "details": {
@@ -337,7 +337,7 @@
     "id": "COPA2001",
     "year": "2001",
     "name": "Copa America Colombia 2001",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -384,7 +384,7 @@
     "id": "COPA1999",
     "year": "1999",
     "name": "Copa America Paraguay 1999",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -434,7 +434,7 @@
     "id": "COPA1997",
     "year": "1997",
     "name": "Copa America Bolivia 1997",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -482,7 +482,7 @@
     "year": "1995",
     "name": "Copa America Uruguay 1995",
     "short_name": "Uruguay 1995",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -533,7 +533,7 @@
     "year": "1993",
     "name": "Copa America Ecuador 1993",
     "short_name": "Ecuador 1993",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -581,7 +581,7 @@
     "year": "1991",
     "name": "Copa America Chile 1991",
     "short_name": "Chile 1991",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -629,7 +629,7 @@
     "year": "1989",
     "name": "Copa America Brazil 1989",
     "short_name": "Brazil 1989",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -677,7 +677,7 @@
     "year": "1987",
     "name": "Copa America Argentina 1987",
     "short_name": "Argentina 1987",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -725,7 +725,7 @@
     "year": "1983",
     "name": "Copa America 1983",
     "short_name": "1983",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "no_third_place": true,
@@ -775,7 +775,7 @@
     "year": "1979",
     "name": "Copa America 1979",
     "short_name": "1979",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "no_third_place": true,
@@ -819,7 +819,7 @@
     "year": "1975",
     "name": "Copa America 1975",
     "short_name": "1975",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "no_third_place": true,
@@ -864,7 +864,7 @@
     "name": "South American Championship Uruguay 1967",
     "short_name": "Uruguay 1967",
     "era": "South American Championship",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -897,7 +897,7 @@
     "year": "1963",
     "name": "South American Championship Bolivia 1963",
     "short_name": "Bolivia 1963",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -940,7 +940,7 @@
     "year": "1959 (Ecuador)",
     "name": "South American Championship Ecuador 1959",
     "short_name": "Ecuador 1959",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -973,7 +973,7 @@
     "year": "1959 (Argentina)",
     "name": "South American Championship Argentina 1959",
     "short_name": "Argentina 1959",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1021,7 +1021,7 @@
     "year": "1957",
     "name": "South American Championship Peru 1957",
     "short_name": "Peru 1957",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1072,7 +1072,7 @@
     "year": "1956",
     "name": "South American Championship Uruguay 1956",
     "short_name": "Uruguay 1956",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1105,7 +1105,7 @@
     "year": "1955",
     "name": "South American Championship Chile 1955",
     "short_name": "Chile 1955",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1138,7 +1138,7 @@
     "year": "1953",
     "name": "South American Championship Peru 1953",
     "short_name": "Peru 1953",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1171,7 +1171,7 @@
     "year": "1949",
     "name": "South American Championship Brazil 1949",
     "short_name": "Brazil 1949",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1219,7 +1219,7 @@
     "year": "1947",
     "name": "South American Championship Ecuador 1947",
     "short_name": "Ecuador 1947",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1252,7 +1252,7 @@
     "year": "1946",
     "name": "South American Championship Argentina 1946",
     "short_name": "Argentina 1946",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1300,7 +1300,7 @@
     "year": "1945",
     "name": "South American Championship Chile 1945",
     "short_name": "Chile 1945",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1341,7 +1341,7 @@
     "year": "1942",
     "name": "South American Championship Uruguay 1942",
     "short_name": "Uruguay 1942",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1392,7 +1392,7 @@
     "year": "1941",
     "name": "South American Championship Chile 1941",
     "short_name": "Chile 1941",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1430,7 +1430,7 @@
     "year": "1939",
     "name": "South American Championship Peru 1939",
     "short_name": "Peru 1939",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1468,7 +1468,7 @@
     "year": "1937",
     "name": "South American Championship Argentina 1937",
     "short_name": "Argentina 1937",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1516,7 +1516,7 @@
     "year": "1935",
     "name": "South American Championship Peru 1935",
     "short_name": "Peru 1935",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1549,7 +1549,7 @@
     "year": "1929",
     "name": "South American Championship Argentina 1929",
     "short_name": "Argentina 1929",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1597,7 +1597,7 @@
     "year": "1927",
     "name": "South American Championship Peru 1927",
     "short_name": "Peru 1927",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1651,7 +1651,7 @@
     "year": "1926",
     "name": "South American Championship Chile 1926",
     "short_name": "Chile 1926",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1684,7 +1684,7 @@
     "year": "1925",
     "name": "South American Championship Argentina 1925",
     "short_name": "Argentina 1925",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1727,7 +1727,7 @@
     "year": "1924",
     "name": "South American Championship Uruguay 1924",
     "short_name": "Uruguay 1924",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1765,7 +1765,7 @@
     "year": "1923",
     "name": "South American Championship Uruguay 1923",
     "short_name": "Uruguay 1923",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1806,7 +1806,7 @@
     "year": "1922",
     "name": "South American Championship Brazil 1922",
     "short_name": "Brazil 1922",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1844,7 +1844,7 @@
     "year": "1921",
     "name": "South American Championship Argentina 1921",
     "short_name": "Argentina 1921",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1892,7 +1892,7 @@
     "year": "1920",
     "name": "South American Championship Chile 1920",
     "short_name": "Chile 1920",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1933,7 +1933,7 @@
     "year": "1919",
     "name": "South American Championship Brazil 1919",
     "short_name": "Brazil 1919",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -1984,7 +1984,7 @@
     "year": "1917",
     "name": "South American Championship Uruguay 1917",
     "short_name": "Uruguay 1917",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {
@@ -2027,7 +2027,7 @@
     "year": "1916",
     "name": "South American Championship Argentina 1916",
     "short_name": "Argentina 1916",
-    "tournament_type_id": "COPA",
+    "competition_id": "COPA",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2headmatch", "lot"],
     "details": {

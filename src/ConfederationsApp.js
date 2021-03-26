@@ -1,6 +1,7 @@
 import React from 'react'
 import Confederations from './data/Confederations.json'
 import Competitions from './data/Competitions.json'
+import { setCompetitionDetails, setCompetitionConfig } from './core/DataHelper'
 import Page from './core/Page'
 import { Container, Row, Col } from 'reactstrap'
 
@@ -12,11 +13,21 @@ class ConfederationsApp extends React.Component {
     this.state = { confederations: [] }
   }
 
+  setConfederationDetails = (conf) => {
+    conf.details = { descriptions: conf.descriptions, logo_filename: conf.logo_filename, name: conf.name }
+    delete conf.descriptions
+    delete conf.logo_filename
+    delete conf.name
+    // console.log('conf', conf)
+  }
+
   getCompetitions = (conf) => {
     const compArray = []
     if (conf.competitions) {
       conf.competitions.forEach((c) => {
         const comp = Competitions.find((x) => x.id === c.id)
+        setCompetitionDetails(comp)
+        setCompetitionConfig(comp)
         compArray.push(comp)
       })
       conf.competitions = compArray
@@ -25,9 +36,9 @@ class ConfederationsApp extends React.Component {
 
   getData = () => {
     Confederations.forEach((c) => {
+      this.setConfederationDetails(c)
       c && this.getCompetitions(c)
     })
-    // console.log('Confederations', Confederations)
     this.setState({ confederations: Confederations })
   }
 
@@ -48,11 +59,13 @@ class ConfederationsApp extends React.Component {
             return (
               <Row className="mt-3 mb-3 text-left conf-box" key={c.id}>
                 <Col sm="12" md="2" className="mb-2">
-                  {c.logo_filename && <img src={`/images/logos/${c.logo_filename}`} alt={`${c.name}`} title={`${c.name}`} className="conf-logo" />}
+                  {c.details && c.details.logo_filename && (
+                    <img src={`/images/logos/${c.details.logo_filename}`} alt={`${c.details.name}`} title={`${c.details.name}`} className="conf-logo" />
+                  )}
                 </Col>
                 <Col sm="12" md="10">
                   <Row>
-                    <Col xs="12">{c.description && c.description.map((d) => <p key={d}>{d}</p>)}</Col>
+                    <Col xs="12">{c.details && c.details.descriptions && c.details.descriptions.map((d) => <p key={d}>{d}</p>)}</Col>
                   </Row>
                   <Row>
                     <Col xs="12">
@@ -60,8 +73,8 @@ class ConfederationsApp extends React.Component {
                       <ul className="list-group">
                         {c.competitions &&
                           c.competitions.map((x) => (
-                            <li className="list-group-item" key={x.id} style={{ color: x ? x.color : '' }}>
-                              {x.name}
+                            <li className="list-group-item" key={x.id} style={{ color: x.details ? x.details.color : '' }}>
+                              {x.details ? x.details.name : ''}
                             </li>
                           ))}
                       </ul>

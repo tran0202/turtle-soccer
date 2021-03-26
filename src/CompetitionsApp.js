@@ -1,6 +1,6 @@
 import React from 'react'
 import Competitions from './data/Competitions.json'
-import { getTournamentArray } from './core/DataHelper'
+import { getTournamentArray, setCompetitionDetails, setCompetitionConfig, setTournamentDetails, setTournamentConfig } from './core/DataHelper'
 import Page from './core/Page'
 import { Container, Row, Col } from 'reactstrap'
 
@@ -20,7 +20,11 @@ class CompetitionsApp extends React.Component {
   getTournaments = (comp) => {
     if (!comp) return
     const randomTournaments = []
-    const compTournaments = getTournamentArray().filter((t) => t.tournament_type_id === comp.id)
+    const compTournaments = getTournamentArray().filter((t) => t.competition_id === comp.id)
+    compTournaments.forEach((ct) => {
+      setTournamentDetails(ct)
+      setTournamentConfig(ct)
+    })
     if (compTournaments.length <= this.tournamentCount) {
       return compTournaments
     }
@@ -42,6 +46,8 @@ class CompetitionsApp extends React.Component {
   getData = () => {
     const filtered = this.getCompetitions(Competitions)
     filtered.forEach((c) => {
+      setCompetitionDetails(c)
+      setCompetitionConfig(c)
       c.tournaments = this.getTournaments(c)
     })
     this.setState({ competitions: filtered })
@@ -66,18 +72,23 @@ class CompetitionsApp extends React.Component {
               return (
                 <Row className="mt-3 mb-3 text-left conf-box" key={c.id}>
                   <Col sm="12" md="2" className="mb-2">
-                    {c.trophy_filename && (
-                      <img src={`/images/${c.logo_path}/${c.trophy_filename}`} alt={`${c.name}`} title={`${c.name}`} className="comp-logo" />
+                    {c.details.trophy_filename && (
+                      <img
+                        src={`/images/${c.details.logo_path}/${c.details.trophy_filename}`}
+                        alt={`${c.details.name}`}
+                        title={`${c.details.name}`}
+                        className="comp-logo"
+                      />
                     )}
                   </Col>
                   <Col sm="12" md="10">
                     <Row>
                       <Col xs="12">
-                        <h2>{c.name}</h2>
+                        <h2>{c.details.name}</h2>
                       </Col>
                     </Row>
                     <Row>
-                      <Col xs="12">{c.description && c.description.map((d) => <p key={d}>{d}</p>)}</Col>
+                      <Col xs="12">{c.details.descriptions && c.details.descriptions.map((d) => <p key={d}>{d}</p>)}</Col>
                     </Row>
                   </Col>
                   <Col sm="12" md="12">
@@ -90,14 +101,14 @@ class CompetitionsApp extends React.Component {
                                 <div className="tournament-box">
                                   <a href={`/soccer/tournament/${t.id}`}>
                                     <img
-                                      src={`/images/${c.logo_path}/${t.details.logo_filename}`}
-                                      alt={t.name}
-                                      title={t.name}
+                                      src={`/images/${c.details.logo_path}/${t.details.logo_filename}`}
+                                      alt={t.details.name}
+                                      title={t.details.name}
                                       className="card-img-top-height-100 mx-auto"
                                     />
                                   </a>
                                   <a href={`/soccer/tournament/${t.id}`}>
-                                    <p className="text-center font-bold mt-3">{t.name}</p>
+                                    <p className="text-center font-bold mt-3">{t.details.name}</p>
                                   </a>
                                 </div>
                               </div>
@@ -110,7 +121,7 @@ class CompetitionsApp extends React.Component {
                               <a href={`/soccer/competition/${c.id}`}>
                                 <p className="text-center font-bold mt-3">
                                   More <br></br>
-                                  {c.name}
+                                  {c.details.name}
                                 </p>
                               </a>
                             </div>

@@ -558,3 +558,45 @@ export const getTournamentArray = () => {
 //     [td_ONC_2016],
 //   )
 // }
+
+export const setCompetitionConfig = (comp) => {
+  comp.config = { show_successors: comp.show_successors ? comp.show_successors : false }
+  delete comp.show_successors
+}
+
+export const setCompetitionDetails = (comp) => {
+  comp.details = { color: comp.color, descriptions: comp.descriptions, logo_path: comp.logo_path, name: comp.name, trophy_filename: comp.trophy_filename }
+  delete comp.color
+  delete comp.descriptions
+  delete comp.logo_path
+  delete comp.name
+  delete comp.trophy_filename
+  // console.log('conf', conf)
+}
+
+export const setTournamentConfig = (t) => {
+  t.config = { golden_goal_rule: t.golden_goal_rule ? t.golden_goal_rule : false, points_for_win: t.points_for_win, tiebreakers: t.tiebreakers }
+  delete t.golden_goal_rule
+  delete t.points_for_win
+  delete t.tiebreakers
+}
+
+export const setTournamentDetails = (t) => {
+  t.details = {
+    ...t.details,
+    awards: t.awards,
+    final_standings: t.final_standings,
+    hero_images: t.hero_images,
+    name: t.name,
+    short_name: t.short_name,
+    statistics: t.statistics,
+    year: t.year,
+  }
+  delete t.awards
+  delete t.final_standings
+  delete t.hero_images
+  delete t.name
+  delete t.short_name
+  delete t.statistics
+  delete t.year
+}

@@ -3,7 +3,7 @@
     "id": "AFCON2021",
     "year": "2021",
     "name": "Africa Cup of Nations Cameroon 2021",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
     "details": {
@@ -29,7 +29,7 @@
     "id": "AFCON2019",
     "year": "2019",
     "name": "Africa Cup of Nations Egypt 2019",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
     "details": {
@@ -76,7 +76,7 @@
     "id": "AFCON2017",
     "year": "2017",
     "name": "Africa Cup of Nations Gabon 2017",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
     "details": {
@@ -121,7 +121,7 @@
     "id": "AFCON2015",
     "year": "2015",
     "name": "Africa Cup of Nations Equatorial Guinea 2015",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
     "details": {
@@ -178,7 +178,7 @@
     "id": "AFCON2013",
     "year": "2013",
     "name": "Africa Cup of Nations South Africa 2013",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "fairplay", "lot"],
     "details": {
@@ -229,7 +229,7 @@
     "id": "AFCON2012",
     "year": "2012",
     "name": "Africa Cup of Nations Gabon-Equatorial Guinea 2012",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "fairplay", "lot"],
     "details": {
@@ -276,7 +276,7 @@
     "id": "AFCON2010",
     "year": "2010",
     "name": "Africa Cup of Nations Angola 2010",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "fairplay", "lot"],
     "details": {
@@ -325,7 +325,7 @@
     "id": "AFCON2008",
     "year": "2008",
     "name": "Africa Cup of Nations Ghana 2008",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "lot"],
     "details": {
@@ -373,7 +373,7 @@
     "id": "AFCON2006",
     "year": "2006",
     "name": "Africa Cup of Nations Egypt 2006",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -421,7 +421,7 @@
     "id": "AFCON2004",
     "year": "2004",
     "name": "Africa Cup of Nations Tunisia 2004",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -474,7 +474,7 @@
     "id": "AFCON2002",
     "year": "2002",
     "name": "Africa Cup of Nations Mali 2002",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -526,7 +526,7 @@
     "year": "2000",
     "name": "Africa Cup of Nations Ghana-Nigeria 2000",
     "short_name": "Ghana-Nigeria 2000",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -573,7 +573,7 @@
     "id": "AFCON1998",
     "year": "1998",
     "name": "Africa Cup of Nations Burkina Faso 1998",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -623,7 +623,7 @@
     "id": "AFCON1996",
     "year": "1996",
     "name": "Africa Cup of Nations South Africa 1996",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -671,7 +671,7 @@
     "year": "1994",
     "name": "Africa Cup of Nations Tunisia 1994",
     "short_name": "Tunisia 1994",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -719,7 +719,7 @@
     "year": "1992",
     "name": "Africa Cup of Nations Senegal 1992",
     "short_name": "Senegal 1992",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -762,7 +762,7 @@
     "id": "AFCON1990",
     "year": "1990",
     "name": "Africa Cup of Nations Algeria 1990",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -809,7 +809,7 @@
     "id": "AFCON1988",
     "year": "1988",
     "name": "Africa Cup of Nations Morocco 1988",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -862,7 +862,7 @@
     "id": "AFCON1986",
     "year": "1986",
     "name": "Africa Cup of Nations Egypt 1986",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -909,7 +909,7 @@
     "id": "AFCON1984",
     "year": "1984",
     "name": "Africa Cup of Nations Ivory Coast 1984",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -958,7 +958,7 @@
     "year": "1982",
     "name": "Africa Cup of Nations Libya 1982",
     "short_name": "Libya 1982",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1006,7 +1006,7 @@
     "year": "1980",
     "name": "Africa Cup of Nations Nigeria 1980",
     "short_name": "Nigeria 1980",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1052,7 +1052,7 @@
     "year": "1978",
     "name": "Africa Cup of Nations Ghana 1978",
     "short_name": "Ghana 1978",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1104,7 +1104,7 @@
     "year": "1976",
     "name": "Africa Cup of Nations Ethiopia 1976",
     "short_name": "Ethiopia 1976",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1147,7 +1147,7 @@
     "year": "1974",
     "name": "Africa Cup of Nations Egypt 1974",
     "short_name": "Egypt 1974",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1195,7 +1195,7 @@
     "year": "1972",
     "name": "Africa Cup of Nations Cameroon 1972",
     "short_name": "Cameroon 1972",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1238,7 +1238,7 @@
     "year": "1970",
     "name": "Africa Cup of Nations Sudan 1970",
     "short_name": "Sudan 1970",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1276,7 +1276,7 @@
     "year": "1968",
     "name": "Africa Cup of Nations Ethiopia 1968",
     "short_name": "Ethiopia 1968",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1319,7 +1319,7 @@
     "year": "1965",
     "name": "Africa Cup of Nations Tunisia 1965",
     "short_name": "Tunisia 1965",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["pointslot"],
     "details": {
@@ -1371,7 +1371,7 @@
     "year": "1963",
     "name": "Africa Cup of Nations Ghana 1963",
     "short_name": "Ghana 1963",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1419,7 +1419,7 @@
     "year": "1962",
     "name": "Africa Cup of Nations Ethiopia 1962",
     "short_name": "Ethiopia 1962",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1460,7 +1460,7 @@
     "year": "1959",
     "name": "Africa Cup of Nations United Arab Republic 1959",
     "short_name": "United Arab Republic 1959",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
@@ -1498,7 +1498,7 @@
     "year": "1957",
     "name": "Africa Cup of Nations Sudan 1957",
     "short_name": "Sudan 1957",
-    "tournament_type_id": "AFCON",
+    "competition_id": "AFCON",
     "points_for_win": 2,
     "tiebreakers": ["team", "head2head", "lot"],
     "details": {
