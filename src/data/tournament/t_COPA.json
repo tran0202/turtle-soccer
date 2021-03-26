@@ -1,0 +1,2074 @@
+[
+  {
+    "id": "COPA2021",
+    "year": "2021",
+    "name": "Copa America Argentina–Colombia 2021",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["ARG", "COL"],
+      "logo_filename": "2021_Copa_América_logo.svg",
+      "start_date": "2021-06-13",
+      "end_date": "2021-07-10",
+      "color": "#003282",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Metropolitano, Barranquilla",
+        "filename": "Estadio_Metropolitano_de_Baranquilla_2011.jpg",
+        "text": "The Estadio Metropolitano will host the final."
+      }
+    ]
+  },
+  {
+    "id": "COPA2019",
+    "year": "2019",
+    "name": "Copa America Brazil 2019",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "2019_Copa_América_logo.svg",
+      "mascot_filename": "14_06_2019_Abertura_da_Copa_América_Brasil_2019_(48064369632)_(cropped).jpg",
+      "start_date": "2019-06-14",
+      "end_date": "2019-07-07",
+      "color": "#6d923d",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "2019_Final_da_Copa_América_2019_-_48226557731.jpg",
+        "text": "Brazil"
+      },
+      {
+        "name": "Estádio do Maracanã, Rio de Janeiro",
+        "filename": "Estádio_Maracanã_1.jpg",
+        "text": "The Estádio do Maracanã in Rio de Janeiro hosted the final."
+      },
+      { "name": "Arena Corinthians, São Paulo", "filename": "ARENA_CORINTHIANS.jpg", "text": "The Arena Corinthians hosted the third-place match." },
+      {
+        "name": "Arena do Grêmio, Porto Alegre",
+        "filename": "Arena_do_Grêmio_2014.jpg",
+        "text": "The Arena do Grêmio hosted the semi-final match Chile vs Peru."
+      },
+      {
+        "name": "Copa América trophy",
+        "filename": "14_06_2019_Abertura_da_Copa_América_Brasil_2019_(48064263156).jpg",
+        "text": "Brazilian president Jair Bolsonaro lifts the Copa América replica trophy."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "PER", "third_place": "ARG", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 26, "total_goals": 60, "attendance": 867245 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Everton", "team": "BRA", "goals": 3 },
+        { "player": "Paolo Guerrero", "team": "PER", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Dani Alves", "team": "BRA" }],
+      "golden_glove": [{ "player": "Alisson", "team": "BRA" }],
+      "fair_play_team": ["BRA"]
+    }
+  },
+  {
+    "id": "COPA2016",
+    "year": "2016",
+    "name": "Copa America Centenario USA 2016",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "Copa_América_Centenario.svg",
+      "mascot_filename": "Copa_america_centenario_clean.jpg",
+      "start_date": "2016-06-03",
+      "end_date": "2016-06-26",
+      "color": "#b61f24",
+      "team_count": 16,
+      "confed_count": 2,
+      "venue_count": 10,
+      "city_count": 10
+    },
+    "hero_images": [
+      {
+        "name": "MetLife Stadium, East Rutherford",
+        "filename": "Copa_America_game_between_Columbia_vs_Peru_at_the_MetLife_Stadium.jpg",
+        "text": "The MetLife Stadium hosted the final."
+      },
+      {
+        "name": "Soldier Field, Chicago",
+        "filename": "Soldier_Field,_Chicago,_Illinois_(cropped).jpg",
+        "text": "The Soldier Field hosted the semi-final match Colombia vs Chile."
+      },
+      {
+        "name": "NRG Stadium, Houston",
+        "filename": "NRG_Stadium_before_Super_Bowl_LI.jpg",
+        "text": "The NRG Stadium hosted the semi-final match United States vs Argentina."
+      },
+      {
+        "name": "Levi's Stadium, Santa Clara",
+        "filename": "Levis_Stadium_interior_1.jpg",
+        "text": "The Levi's Stadium hosted the quarter-final match Mexico vs Chile."
+      }
+    ],
+    "final_standings": { "champions": "CHI", "runners_up": "ARG", "third_place": "COL", "fourth_place": "USA" },
+    "statistics": { "total_matches": 32, "total_goals": 91, "attendance": 1483855 },
+    "awards": {
+      "golden_boot": [{ "player": "Eduardo Vargas", "team": "CHI", "goals": 6 }],
+      "golden_ball": [{ "player": "Alexis Sánchez", "team": "CHI" }],
+      "golden_glove": [{ "player": "Claudio Bravo", "team": "CHI" }],
+      "fair_play_team": ["ARG"]
+    }
+  },
+  {
+    "id": "COPA2015",
+    "year": "2015",
+    "name": "Copa America Chile 2015",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headresults", "penalty", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "2015_Copa_América.svg",
+      "mascot_filename": "Jefa_de_Estado_recibe_invitación_para_la_Copa_América_2015_(17380237702)_(cropped).jpg",
+      "start_date": "2015-06-11",
+      "end_date": "2015-07-04",
+      "color": "#003375",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 9,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Chile_Vs_Uruguay_(19090559799).jpg",
+        "text": "Chile national football team line-up for game against Uruguay at 2015 Copa America"
+      },
+      {
+        "name": "Estadio Nacional, Santiago",
+        "filename": "El_Estadio_Nacional_de_Chile_durante_la_final_de_la_Copa_América_2015.jpeg",
+        "text": "The Estadio Nacional hosted the final"
+      },
+      {
+        "name": "Estadio Municipal de Concepción, Concepción",
+        "filename": "Estadio_Ester_Roa_Rebolledo.jpeg",
+        "text": "The Estadio Municipal de Concepción hosted the semi-final match Argentina vs Paraguay."
+      },
+      {
+        "name": "Estadio Sausalito, Viña del Mar",
+        "filename": "Everton_-_Coquimbo_Unido,_28-02-2016_-_Estadio_Sausalito_03.jpeg",
+        "text": "The Estadio Sausalito hosted the quarter-final match Argentina vs Colombia."
+      },
+      {
+        "name": "Alexis Sánchez, Chile",
+        "filename": "Alexis_Sánchez_2011.jpg",
+        "text": "Alexis Sánchez scored the winner for Chile in the penalty shootout of the final match."
+      }
+    ],
+    "final_standings": { "champions": "CHI", "runners_up": "ARG", "third_place": "PER", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 26, "total_goals": 59, "attendance": 655902 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Eduardo Vargas", "team": "CHI", "goals": 4 },
+        { "player": "Paolo Guerrero", "team": "PER", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Lionel Messi", "team": "ARG", "rejected": true, "rejected_notes": "Messi was to receive the award but rejected it." }],
+      "best_young_player": { "player": "Jeison Murillo", "team": "COL" },
+      "golden_glove": [{ "player": "Claudio Bravo", "team": "CHI" }],
+      "fair_play_team": ["PER"]
+    }
+  },
+  {
+    "id": "COPA2011",
+    "year": "2011",
+    "name": "Copa America Argentina 2011",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headresults", "penalty", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "2011_Copa_América_logo.svg",
+      "start_date": "2011-07-01",
+      "end_date": "2011-07-24",
+      "color": "#0589bc",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_players_with_CA_trophy.jpg",
+        "text": "Uruguayan players celebrating their 15th Copa America title."
+      },
+      {
+        "name": "MVP",
+        "filename": "Luis_Suarez_-_CA2011_mvp_award.jpg",
+        "text": "Uruguay player Luis Suárez, awarded as MVP of the tournament."
+      },
+      {
+        "name": "Opening game",
+        "filename": "Argentina_vs_Bolivia_-_2011-07-01.jpg",
+        "text": "Argentina v. Bolivia"
+      },
+      {
+        "name": "Estadio Monumental, Buenos Aires",
+        "filename": "RiverPlateStadium.jpg",
+        "text": "The Estadio Monumental hosted the final match."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "PAR", "third_place": "PER", "fourth_place": "VEN" },
+    "statistics": { "total_matches": 26, "total_goals": 54, "attendance": 882621 },
+    "awards": {
+      "golden_boot": [{ "player": "Paolo Guerrero", "team": "PER", "goals": 5 }],
+      "golden_ball": [{ "player": "Luis Suárez", "team": "URU" }],
+      "best_young_player": { "player": "Sebastián Coates", "team": "URU" },
+      "golden_glove": [{ "player": "Justo Villar", "team": "PAR" }],
+      "fair_play_team": ["URU"]
+    }
+  },
+  {
+    "id": "COPA2007",
+    "year": "2007",
+    "name": "Copa America Venezuela 2007",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headresults", "lot"],
+    "details": {
+      "host": ["VEN"],
+      "logo_filename": "2007_Copa_América_logo.svg",
+      "mascot_filename": "Guaky_on_his_tour_of_((Venezuela))._2007.jpg",
+      "start_date": "2007-06-26",
+      "end_date": "2007-07-15",
+      "color": "#003399",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 9,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "Estadio José Pachencho Romero, Maracaibo",
+        "filename": "Brazil_vs._Uruguay_Semifinals_Copa_América_2007_-_2.jpg",
+        "text": "The Estadio José Pachencho Romero hosted the final match."
+      },
+      {
+        "name": "Polideportivo Cachamay, Ciudad Guayana",
+        "filename": "CTE_Chamay_Aereo_Cut.jpg",
+        "text": "The Polideportivo Cachamay hosted the semi-final match Mexico vs Argentina."
+      },
+      {
+        "name": "Estadio Metropolitano de Fútbol de Lara, Barquisimeto",
+        "filename": "Estadio_Metropolitano_de_Lara.jpg",
+        "text": "The Estadio Metropolitano de Fútbol de Laray hosted the quarter-final match Argentina vs Peru."
+      },
+      {
+        "name": "Estadio Monumental de Maturín, Maturín",
+        "filename": "Monumental_de_maturin_3.jpg",
+        "text": "The Estadio Monumental de Maturín hosted the quarter-final match Mexico vs Paraguay."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "ARG", "third_place": "MEX", "fourth_place": "URU" },
+    "statistics": { "total_matches": 26, "total_goals": 86, "attendance": 1050230 },
+    "awards": {
+      "golden_boot": [{ "player": "Robinho", "team": "BRA", "goals": 6 }],
+      "golden_ball": [{ "player": "Robinho", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA2004",
+    "year": "2004",
+    "name": "Copa America Peru 2004",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headresults", "lot"],
+    "details": {
+      "host": ["PER"],
+      "logo_filename": "2004_Copa_América_logo.svg",
+      "start_date": "2004-07-06",
+      "end_date": "2004-07-25",
+      "color": "#e2001a",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 7,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Celebration",
+        "filename": "Copa_America-2004-02.jpg",
+        "text": "Final celebration"
+      },
+      {
+        "name": "Celebration",
+        "filename": "Copa_America-2004-01.jpg",
+        "text": "Final celebration"
+      },
+      {
+        "name": "Estadio Nacional, Lima",
+        "filename": "Estadio_Nacional_del_Perú.jpg",
+        "text": "The Estadio Nacional hosted the final match."
+      },
+      {
+        "name": "Estadio Miguel Grau, Piura",
+        "filename": "ESTADIO_MIGUEL_GRAU_CALLAO.jpg",
+        "text": "The Estadio Miguel Grau hosted the quarter-final match Mexico vs Brazil."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "ARG", "third_place": "URU", "fourth_place": "COL" },
+    "statistics": { "total_matches": 26, "total_goals": 78 },
+    "awards": {
+      "golden_boot": [{ "player": "Adriano", "team": "BRA", "goals": 7 }],
+      "golden_ball": [{ "player": "Adriano", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA2001",
+    "year": "2001",
+    "name": "Copa America Colombia 2001",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["COL"],
+      "logo_filename": "Copa_America_2001_official_logo.png",
+      "start_date": "2001-07-11",
+      "end_date": "2001-07-29",
+      "color": "#433c80",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 7,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Estadio El Campín, Bogotá",
+        "filename": "Elcampin1.jpg",
+        "text": "The Estadio El Campín hosted the final match."
+      },
+      {
+        "name": "Estadio Palogrande, Manizales",
+        "filename": "Estadio_Palogrande_CRC_-_ESP_2011.jpg",
+        "text": "The Estadio Palogrande hosted the semi-final match Colombia vs Honduras."
+      },
+      {
+        "name": "Estadio Hernán Ramírez Villegas, Pereira",
+        "filename": "Q_079.jpeg",
+        "text": "The Estadio Hernán Ramírez Villegas hosted the semi-final match Mexico vs Uruguay."
+      },
+      {
+        "name": "Estadio Centenario, Armenia",
+        "filename": "Estadio_Centenario_de_Armenia.jpg",
+        "text": "The Estadio Centenario hosted the quarter-final match Colombia vs Peru."
+      }
+    ],
+    "final_standings": { "champions": "COL", "runners_up": "MEX", "third_place": "HON", "fourth_place": "URU" },
+    "statistics": { "total_matches": 26, "total_goals": 60 },
+    "awards": {
+      "golden_boot": [{ "player": "Víctor Aristizábal", "team": "COL", "goals": 6 }],
+      "golden_ball": [{ "player": "Amado Guevara", "team": "HON" }]
+    }
+  },
+  {
+    "id": "COPA1999",
+    "year": "1999",
+    "name": "Copa America Paraguay 1999",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["PAR"],
+      "logo_filename": "1999_Copa_América_logo.svg",
+      "start_date": "1999-06-29",
+      "end_date": "1999-07-18",
+      "color": "#0066a6",
+      "team_count": 12,
+      "confed_count": 3,
+      "venue_count": 5,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Defensores del Chaco, Asunción",
+        "filename": "Defensores_del_Chaco.jpeg",
+        "text": "The Estadio Defensores del Chaco hosted the final match."
+      },
+      {
+        "name": "Estadio Antonio Oddone Sarubbi, Ciudad del Este",
+        "filename": "3_de_febrero.jpg",
+        "text": "The Estadio Antonio Oddone Sarubbi hosted the semi-final match Brazil vs Mexico."
+      },
+      {
+        "name": "Estadio Feliciano Cáceres, Luque",
+        "filename": "Estadio_Feliciano_Caceres_2010.jpg",
+        "text": "The Estadio Feliciano Cáceres hosted the quarter-final match Chile vs Colombia."
+      },
+      {
+        "name": "Monumental Río Parapití, Pedro Juan Caballero",
+        "filename": "Estadio_Rio_Parapiti.png",
+        "text": "The Monumental Río Parapití hosted the group A matches."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "URU", "third_place": "MEX", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 26, "total_goals": 74 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Ronaldo", "team": "BRA", "goals": 5 },
+        { "player": "Rivaldo", "team": "BRA", "goals": 5 }
+      ],
+      "golden_ball": [{ "player": "Rivaldo", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1997",
+    "year": "1997",
+    "name": "Copa America Bolivia 1997",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["BOL"],
+      "logo_filename": "1997_Copa_América_logo.svg",
+      "start_date": "1997-06-11",
+      "end_date": "1997-06-29",
+      "color": "#00a651",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Hernando Siles, La Paz",
+        "filename": "Hernando_Siles_Stadium_-_La_Paz.jpg",
+        "text": "The Hernando Siles hosted the final match."
+      },
+      {
+        "name": "Estadio Ramón Aguilera, Santa Cruz",
+        "filename": "TahuichiAguileraBlooming.jpg",
+        "text": "The Estadio Ramón Aguilera hosted the semi-final match Peru vs Brazil."
+      },
+      {
+        "name": "Estadio Félix Capriles, Cochabamba",
+        "filename": "Estadio_Departamental_Félix_Capriles_Int.1.jpg",
+        "text": "The Estadio Félix Capriles hosted the quarter-final match Mexico vs Ecuador."
+      },
+      {
+        "name": "Estadio Olímpico Patria, Sucre",
+        "filename": "Estadioolimpicopatria.jpg",
+        "text": "The Estadio Olímpico Patria hosted the quarter-final match Peru vs Argentina."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "BOL", "third_place": "MEX", "fourth_place": "PER" },
+    "statistics": { "total_matches": 26, "total_goals": 67 },
+    "awards": {
+      "golden_boot": [{ "player": "Luis Hernández", "team": "MEX", "goals": 6 }],
+      "golden_ball": [{ "player": "Ronaldo", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1995",
+    "year": "1995",
+    "name": "Copa America Uruguay 1995",
+    "short_name": "Uruguay 1995",
+    "tournament_type_id": "COPA",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1995-07-05",
+      "end_date": "1995-07-23",
+      "color": "#005ca4",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Centenario, Montevideo",
+        "filename": "Estadio_Centenario_(vista_aérea).jpg",
+        "text": "The Estadio Centenario hosted the final match."
+      },
+      {
+        "name": "Estadio Campus Municipal, Maldonado",
+        "filename": "2016_Americas_Rugby_Championship_-_Uruguay_vs_Argentina_XV_-_Crowd_2.jpeg",
+        "text": "The Estadio Campus Municipal hosted the semi-final match Brazil vs United States."
+      },
+      {
+        "name": "Estadio Atilio Paiva Olivera, Rivera",
+        "filename": "Riveraestadio.jpg",
+        "text": "The Estadio Atilio Paiva Olivera hosted the quarter-final match Brazil vs Argentina."
+      },
+      {
+        "name": "Estadio Parque Artigas, Paysandú",
+        "filename": "Estadio_Parque_Artigas_-_4.png",
+        "text": "The Estadio Parque Artigas hosted the quarter-final match United States vs Mexico."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "BRA", "third_place": "COL", "fourth_place": "USA" },
+    "statistics": { "total_matches": 26, "total_goals": 69 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Gabriel Batistuta", "team": "ARG", "goals": 4 },
+        { "player": "Luis García", "team": "MEX", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Enzo Francescoli", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1993",
+    "year": "1993",
+    "name": "Copa America Ecuador 1993",
+    "short_name": "Ecuador 1993",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ECU"],
+      "logo_filename": "copa-1993.jpg",
+      "start_date": "1993-06-15",
+      "end_date": "1993-07-04",
+      "color": "#21216b",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 7,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_podio_copa_america.jpg",
+        "text": "Argentine players at the podium."
+      },
+      {
+        "name": "Argentina",
+        "filename": "Jugadores_argentina_copa_america.jpg",
+        "text": "Argentine players celebrating after the match"
+      },
+      {
+        "name": "Best Player",
+        "filename": "Goycochea_batistuta_celebran.jpg",
+        "text": "Sergio Goycochea and Gabriel Batistuta in the final"
+      },
+      {
+        "name": "Final",
+        "filename": "Batistuta_gol_mexico.jpg",
+        "text": "Gabriel Batistuta scoring one of his two goals"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "MEX", "third_place": "COL", "fourth_place": "ECU" },
+    "statistics": { "total_matches": 26, "total_goals": 64 },
+    "awards": {
+      "golden_boot": [{ "player": "José Luis Dolgetta", "team": "VEN-1954-2006", "goals": 4 }],
+      "golden_ball": [{ "player": "Sergio Goycochea", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1991",
+    "year": "1991",
+    "name": "Copa America Chile 1991",
+    "short_name": "Chile 1991",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "copa-1991.png",
+      "start_date": "1991-07-06",
+      "end_date": "1991-07-21",
+      "color": "#4b6ebf",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_seleccion_1991.jpg",
+        "text": "The Argentina squad that won the cup"
+      },
+      {
+        "name": "Claudio Caniggia",
+        "filename": "Caniggia_define_vs_paraguay.jpg",
+        "text": "Claudio Caniggia scoring v Paraguay in the first round"
+      },
+      {
+        "name": "Estadio Nacional de Chile, Santiago",
+        "filename": "Estadio_Nacional_de_Chile_-_vista_desde_Av._Grecia.jpg",
+        "text": "The Estadio Nacional de Chile hosted the final round."
+      },
+      {
+        "name": "Estadio Sausalito, Viña del Mar",
+        "filename": "EstadioSausalito.jpg",
+        "text": "The Estadio Sausalito hosted the group B matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "CHI", "fourth_place": "COL" },
+    "statistics": { "total_matches": 26, "total_goals": 73 },
+    "awards": {
+      "golden_boot": [{ "player": "Gabriel Batistuta", "team": "ARG", "goals": 6 }],
+      "golden_ball": [{ "player": "Leonardo Rodríguez", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1989",
+    "year": "1989",
+    "name": "Copa America Brazil 1989",
+    "short_name": "Brazil 1989",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "copa-1989.png",
+      "start_date": "1989-07-01",
+      "end_date": "1989-07-16",
+      "color": "#008400",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Estádio do Maracanã, Rio de Janeiro",
+        "filename": "Maracanã_Stadium_in_Rio_de_Janeiro.jpg",
+        "text": "The Estádio do Maracanã hosted the final round."
+      },
+      {
+        "name": "Estádio Fonte Nova, Salvador",
+        "filename": "2116RP037.jpg",
+        "text": "The Estádio Fonte Nova hosted the group A matches."
+      },
+      {
+        "name": "Estádio do Arruda, Recife",
+        "filename": "Estádio_Santa_Cruz.jpg",
+        "text": "The Estádio do Arruda hosted the group A matches."
+      },
+      {
+        "name": "Estádio Serra Dourada, Goiânia",
+        "filename": "Serradourada01.jpg",
+        "text": "The Estádio Serra Dourada hosted the group B matches."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "URU", "third_place": "ARG", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 26, "total_goals": 55 },
+    "awards": {
+      "golden_boot": [{ "player": "Bebeto", "team": "BRA", "goals": 6 }],
+      "golden_ball": [{ "player": "Rubén Sosa", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1987",
+    "year": "1987",
+    "name": "Copa America Argentina 1987",
+    "short_name": "Argentina 1987",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1987-06-27",
+      "end_date": "1987-07-12",
+      "color": "#005ca4",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_copa_1987.jpg",
+        "text": "Players of Uruguay holding the trophy, as covered on El Gráfico"
+      },
+      {
+        "name": "Argentina",
+        "filename": "Argentina_equipo_1987.jpg",
+        "text": "Argentine squad during the Copa América, posing at Monumental of Buenos Aires. Players are: (up): Sergio Batista, José L. Cucciufo, Julio Olarticoechea, Luis Islas, José Luis Brown, Oscar Ruggeri, Diego Maradona; (down): Ricardo Giusti, Roque Alfaro, José Percudani, Daniel Tapia"
+      },
+      {
+        "name": "Third-place match",
+        "filename": "Valderrama_maradona_saludo.jpg",
+        "text": "Captains of Colombia and Argentina, Carlos Valderrama and Diego Maradona, shaking hands before the third-place match of Copa América."
+      },
+      {
+        "name": "Group A",
+        "filename": "Argentina_v_peru_copa_america.jpg",
+        "text": "Argentina v Peru match"
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "CHI", "third_place": "COL", "fourth_place": "ARG" },
+    "statistics": { "total_matches": 13, "total_goals": 33, "attendance": 263000 },
+    "awards": {
+      "golden_boot": [{ "player": "Arnoldo Iguarán", "team": "COL", "goals": 4 }],
+      "golden_ball": [{ "player": "Carlos Valderrama", "team": "COL" }]
+    }
+  },
+  {
+    "id": "COPA1983",
+    "year": "1983",
+    "name": "Copa America 1983",
+    "short_name": "1983",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "no_third_place": true,
+    "details": {
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1983-08-10",
+      "end_date": "1983-11-04",
+      "color": "#005ca4",
+      "team_count": 10,
+      "confed_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Group B - Argentina vs Ecuador",
+        "filename": "Argentina_v_ecuador_copa_america.jpg",
+        "text": "Jorge Rinaldi (right) and Víctor Ramos, trying to take advantage of Ecuadorian defenders, in Buenos Aires."
+      },
+      {
+        "name": "Group B - Argentina vs Ecuador",
+        "filename": "Argentina_v_ecuador.jpg",
+        "text": "Argentina v. Ecuador at the Copa América, played in Buenos Aires. Enzo Trossero (3) defending the goal."
+      },
+      {
+        "name": "Group B - Argentina vs Ecuador",
+        "filename": "Ecuador_argentina_1983.jpg",
+        "text": "Jorge Burruchaga (right) shoting to goal sorrunded by Ecuatorian players Klinger and Narváez. Néstor Clausen (13) watches. The match ended 2-2."
+      },
+      {
+        "name": "Group B - Argentina vs Ecuador",
+        "filename": "Sabella_v_ecuador.jpg",
+        "text": "Alejandro Sabella (10) shooting the ball while goalkeeper Delgado tries to stop him, during the match Ecuador v. Argentina at Copa América (final result: 2-2)."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "BRA", "semi_finalist1": "PAR", "semi_finalist2": "PER" },
+    "statistics": { "total_matches": 24, "total_goals": 55, "attendance": 1119738 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Jorge Burruchaga", "team": "ARG", "goals": 3 },
+        { "player": "Roberto Dinamite", "team": "BRA", "goals": 3 },
+        { "player": "Carlos Aguilera", "team": "URU", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Enzo Francéscoli", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1979",
+    "year": "1979",
+    "name": "Copa America 1979",
+    "short_name": "1979",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "no_third_place": true,
+    "details": {
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1979-07-18",
+      "end_date": "1979-12-12",
+      "color": "#005ca4",
+      "team_count": 10,
+      "confed_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Defensores del Chaco, Asunción",
+        "filename": "Defensores_del_Chaco_6-10-2016_2.jpg",
+        "text": "The Defensores del Chaco hosted one of the finals match"
+      },
+      {
+        "name": "Estadio Nacional, Santiago",
+        "filename": "Estadio_Nacional_Copa_América_2015_(18273644630).jpg",
+        "text": "The Estadio Nacional hosted one of the finals match"
+      },
+      {
+        "name": "José Amalfitani, Buenos Aires",
+        "filename": "Argentina_A_vs_Inglaterra_A_02.jpeg",
+        "text": "The José Amalfitani hosted one of the finals match"
+      }
+    ],
+    "final_standings": { "champions": "PAR", "runners_up": "CHI", "semi_finalist1": "BRA", "semi_finalist2": "PER" },
+    "statistics": { "total_matches": 25, "total_goals": 63, "attendance": 1144000 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Jorge Peredo", "team": "CHI", "goals": 4 },
+        { "player": "Eugenio Morel", "team": "PAR", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Carlos Caszely", "team": "CHI" }]
+    }
+  },
+  {
+    "id": "COPA1975",
+    "year": "1975",
+    "name": "Copa America 1975",
+    "short_name": "1975",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "no_third_place": true,
+    "details": {
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1975-07-17",
+      "end_date": "1975-10-28",
+      "color": "#005ca4",
+      "team_count": 10,
+      "confed_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio El Campín, Bogotá",
+        "filename": "Estadio_El_Campin_Seleccion_Colombia-Caminos.jpg",
+        "text": "The Estadio El Campín hosted one of the finals match"
+      },
+      {
+        "name": "Estadio Nacional, Lima",
+        "filename": "Estadio_Nacional_nuevo_07_10_2011.jpg",
+        "text": "Estadio Nacional hosted one of the finals match"
+      },
+      {
+        "name": "Estadio Olímpico, Caracas",
+        "filename": "Olimpico_ucv.jpg",
+        "text": "The Estadio Olímpico hosted one of the finals match"
+      }
+    ],
+    "final_standings": { "champions": "PER", "runners_up": "COL", "semi_finalist1": "BRA", "semi_finalist2": "URU" },
+    "statistics": { "total_matches": 25, "total_goals": 79, "attendance": 1053000 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Leopoldo Luque", "team": "ARG", "goals": 4 },
+        { "player": "Ernesto Díaz", "team": "COL", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Teófilo Cubillas", "team": "PER" }]
+    }
+  },
+  {
+    "id": "COPA1967",
+    "year": "1967",
+    "name": "South American Championship Uruguay 1967",
+    "short_name": "Uruguay 1967",
+    "era": "South American Championship",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1967-01-13",
+      "end_date": "1967-02-02",
+      "color": "#259bc2",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Centenario, Montevideo",
+        "filename": "Stad_de_centario_uruguay1930_montevideo.jpg",
+        "text": "The Estadio Centenario hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "CHI", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 15, "total_goals": 49 },
+    "awards": {
+      "golden_boot": [{ "player": "Luis Artime", "team": "ARG", "goals": 5 }],
+      "golden_ball": [{ "player": "Pedro Rocha", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1963",
+    "year": "1963",
+    "name": "South American Championship Bolivia 1963",
+    "short_name": "Bolivia 1963",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["BOL"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1963-03-10",
+      "end_date": "1963-03-31",
+      "color": "#00a651",
+      "team_count": 7,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Bolivia_1963.jpg",
+        "text": "The Bolivia team won its first Cup"
+      },
+      {
+        "name": "Estadio Hernando Siles, La Paz",
+        "filename": "Hernando_Siles_Stadium_-_La_Paz.jpg",
+        "text": "The Estadio Hernando Siles hosted the tournament matches."
+      },
+      {
+        "name": "Estadio Félix Capriles, Cochabamba",
+        "filename": "Estadio_Departamental_Félix_Capriles_5.jpg",
+        "text": "The Estadio Félix Capriles hosted the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "BOL", "runners_up": "PAR", "third_place": "ARG", "fourth_place": "BRA" },
+    "statistics": { "total_matches": 21, "total_goals": 91 },
+    "awards": {
+      "golden_boot": [{ "player": "Carlos Alberto Raffo", "team": "ECU", "goals": 6 }],
+      "golden_ball": [{ "player": "Ramiro Blacut", "team": "BOL" }]
+    }
+  },
+  {
+    "id": "COPA1959ECU",
+    "year": "1959 (Ecuador)",
+    "name": "South American Championship Ecuador 1959",
+    "short_name": "Ecuador 1959",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ECU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1959-12-05",
+      "end_date": "1959-12-25",
+      "color": "#21216b",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Modelo, Guayaquil",
+        "filename": "Estadio_modelo_ecuador.jpg",
+        "text": "The Estadio Modelo hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "BRA", "fourth_place": "ECU" },
+    "statistics": { "total_matches": 10, "total_goals": 40 },
+    "awards": {
+      "golden_boot": [{ "player": "José Sanfilippo", "team": "ARG", "goals": 6 }],
+      "golden_ball": [{ "player": "Alcides Silveira", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1959ARG",
+    "year": "1959 (Argentina)",
+    "name": "South American Championship Argentina 1959",
+    "short_name": "Argentina 1959",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1959-03-07",
+      "end_date": "1959-04-04",
+      "color": "#0589bc",
+      "team_count": 7,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Brazil",
+        "filename": "Bra_par1959ca.jpg",
+        "text": "Brazil national football team (Brazil - Paraguay, Buenos Aires, Copa Averica 1959)"
+      },
+      {
+        "name": "Pele",
+        "filename": "Goles_0555_pele.jpg",
+        "text": "Pelé on the cover, Brazil v Chile, Copa América"
+      },
+      {
+        "name": "Argentina vs Peru",
+        "filename": "Gómez_Sánchez_(Perú)_y_Mouriño_(Argentina)_-_El_Gráfico_2066.jpg",
+        "text": "Oscar Gómez Sánchez (Perú) and Eliseo Mouriño (Argentina), camaraderie before the Argentina (3) vs Peru (1) match."
+      },
+      {
+        "name": "Estadio Monumental, Buenos Aires",
+        "filename": "002.Buenos_Aires_desde_el_cielo_(Estadio_de_River).jpeg",
+        "text": "The Estadio Monumental hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "PAR", "fourth_place": "PER" },
+    "statistics": { "total_matches": 21, "total_goals": 86 },
+    "awards": {
+      "golden_boot": [{ "player": "Pele", "team": "BRA", "goals": 8 }],
+      "golden_ball": [{ "player": "Pele", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1957",
+    "year": "1957",
+    "name": "South American Championship Peru 1957",
+    "short_name": "Peru 1957",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["PER"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1957-03-07",
+      "end_date": "1957-04-06",
+      "color": "#e2001a",
+      "team_count": 7,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_Copa_América_1957.jpg",
+        "text": "Argentina national team –nicknamed Los Carasucias– that won the 1957 South American championship in Lima, winning 5 of 6 matches. Players are, f.l.t.r (standing): Juan Carlos Giménez, Guillermo Stábile (coach), Rogelio Domínguez, Pedro Dellacha, Néstor Rossi, Federico Vairo, Ángel Schandlein; (bent): Orestes Corbatta, Humberto Maschio, Antonio Angelillo, Enrique Sívori, Osvaldo Cruz."
+      },
+      {
+        "name": "Argentina",
+        "filename": "Argentina_saludando_publico_lima_1957.jpg",
+        "text": "The Argentine team saluting the crowd at Lima."
+      },
+      {
+        "name": "Enrique O. Sívori, Argentina",
+        "filename": "Sivori_v_ecuador.jpg",
+        "text": "Enrique O. Sívori scoring vs Ecuador"
+      },
+      {
+        "name": "Antonio Angelillo, Argentina",
+        "filename": "Argentina_gol_angelillo_brasil.jpg",
+        "text": "Forward Antonio Angelillo scoring v Brazil"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "URU", "fourth_place": "PER" },
+    "statistics": { "total_matches": 21, "total_goals": 101 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Humberto Maschio", "team": "ARG", "goals": 9 },
+        { "player": "Javier Ambrois", "team": "URU", "goals": 9 }
+      ],
+      "golden_ball": [{ "player": "Omar Sívori", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1956",
+    "year": "1956",
+    "name": "South American Championship Uruguay 1956",
+    "short_name": "Uruguay 1956",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1956-01-21",
+      "end_date": "1956-02-15",
+      "color": "#259bc2",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Centenario, Montevideo",
+        "filename": "Stad_de_centario_uruguay1930_montevideo.jpg",
+        "text": "The Estadio Centenario hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "CHI", "third_place": "ARG", "fourth_place": "BRA" },
+    "statistics": { "total_matches": 15, "total_goals": 38, "attendance": 568000 },
+    "awards": {
+      "golden_boot": [{ "player": "Enrique Hormazábal", "team": "CHI", "goals": 4 }],
+      "golden_ball": [{ "player": "Óscar Míguez", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1955",
+    "year": "1955",
+    "name": "South American Championship Chile 1955",
+    "short_name": "Chile 1955",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1955-02-27",
+      "end_date": "1955-03-30",
+      "color": "#fa300f",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Nacional de Chile, Santiago",
+        "filename": "Estadio_Nacional_de_Chile_-_vista_desde_Av._Grecia.jpg",
+        "text": "The Estadio Nacional de Chile hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "CHI", "third_place": "PER", "fourth_place": "URU" },
+    "statistics": { "total_matches": 15, "total_goals": 73 },
+    "awards": {
+      "golden_boot": [{ "player": "Rodolfo Micheli", "team": "ARG", "goals": 8 }],
+      "golden_ball": [{ "player": "Enrique Hormazábal", "team": "CHI" }]
+    }
+  },
+  {
+    "id": "COPA1953",
+    "year": "1953",
+    "name": "South American Championship Peru 1953",
+    "short_name": "Peru 1953",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["PER"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1953-02-22",
+      "end_date": "1953-04-01",
+      "color": "#e2001a",
+      "team_count": 7,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Nacional de Lima, Lima",
+        "filename": "Inside_Estadio_Nacional_(Lima,_Peru).jpg",
+        "text": "The Estadio Nacional de Lima hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "PAR", "runners_up": "BRA", "third_place": "URU", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 22, "total_goals": 67 },
+    "awards": {
+      "golden_boot": [{ "player": "Francisco Molina", "team": "CHI", "goals": 7 }],
+      "golden_ball": [{ "player": "Heriberto Herrera", "team": "PAR" }]
+    }
+  },
+  {
+    "id": "COPA1949",
+    "year": "1949",
+    "name": "South American Championship Brazil 1949",
+    "short_name": "Brazil 1949",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1949-04-03",
+      "end_date": "1949-05-11",
+      "color": "#008400",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 5,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Estádio São Januário, Rio de Janeiro",
+        "filename": "Sao_janu_sociais.jpg",
+        "text": "The Estádio São Januário hosted the tournament matches."
+      },
+      {
+        "name": "Estádio Sete de Setembro, Belo Horizonte",
+        "filename": "Independ1.jpg",
+        "text": "The Estádio Sete de Setembro hosted the tournament matches."
+      },
+      {
+        "name": "Estádio do Pacaembu, São Paulo",
+        "filename": "Pacaembu.jpg",
+        "text": "The Estádio do Pacaembu hosted the tournament matches."
+      },
+      {
+        "name": "Estádio Vila Belmiro, Santos",
+        "filename": "Vila_Belmiro_SantosFC.jpg",
+        "text": "The Estádio Vila Belmiro hosted the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "PAR", "third_place": "PER", "fourth_place": "BOL" },
+    "statistics": { "total_matches": 29, "total_goals": 135 },
+    "awards": {
+      "golden_boot": [{ "player": "Jair da Rosa Pinto", "team": "BRA", "goals": 9 }],
+      "golden_ball": [{ "player": "Ademir", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1947",
+    "year": "1947",
+    "name": "South American Championship Ecuador 1947",
+    "short_name": "Ecuador 1947",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ECU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1947-11-30",
+      "end_date": "1947-12-31",
+      "color": "#21216b",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_1947.jpg",
+        "text": "Argentina won its 9th title"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "PAR", "third_place": "URU", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 28, "total_goals": 102 },
+    "awards": {
+      "golden_boot": [{ "player": "Nicolás Falero", "team": "URU", "goals": 8 }],
+      "golden_ball": [{ "player": "José Manuel Moreno", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1946",
+    "year": "1946",
+    "name": "South American Championship Argentina 1946",
+    "short_name": "Argentina 1946",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1946-01-12",
+      "end_date": "1946-02-10",
+      "color": "#0589bc",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_1946_sudamericano.jpg",
+        "text": "The Argentina team that beat Brazil 2-0 in the final"
+      },
+      {
+        "name": "Estadio Monumental, Buenos Aires",
+        "filename": "002.Buenos_Aires_desde_el_cielo_(Estadio_de_River).jpeg",
+        "text": "The Estádio Monumentalo hosted the tournament matches."
+      },
+      {
+        "name": "Estadio Gasómetro de Boedo, Buenos Aires",
+        "filename": "El_Gasometro.jpeg",
+        "text": "The Estadio Gasómetro de Boedo hosted the tournament matches."
+      },
+      {
+        "name": "Estadio Independiente, Avellaneda",
+        "filename": "Avellaneda_Futbol_-_aerial_(cropped).jpg",
+        "text": "The Estadio Independiente hosted the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "PAR", "fourth_place": "URU" },
+    "statistics": { "total_matches": 15, "total_goals": 61 },
+    "awards": {
+      "golden_boot": [{ "player": "José María Medina", "team": "URU", "goals": 7 }],
+      "golden_ball": [{ "player": "Adolfo Pedernera", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1945",
+    "year": "1945",
+    "name": "South American Championship Chile 1945",
+    "short_name": "Chile 1945",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1945-01-14",
+      "end_date": "1945-02-28",
+      "color": "#003375",
+      "team_count": 7,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_martino_andas.jpg",
+        "text": "Argentine player Rinaldo Martino being carried by the fans after the 1–0 win v. Uruguay. He scored the only goal."
+      },
+      {
+        "name": "Estadio Nacional de Chile, Santiago",
+        "filename": "Estadio_Nacional_de_Chile_-_vista_desde_Av._Grecia.jpg",
+        "text": "The Estadio Nacional de Chile hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "CHI", "fourth_place": "URU" },
+    "statistics": { "total_matches": 21, "total_goals": 89 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Norberto Méndez", "team": "ARG", "goals": 6 },
+        { "player": "Heleno de Freitasz", "team": "BRA", "goals": 6 }
+      ],
+      "golden_ball": [{ "player": "Domingos da Guia", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1942",
+    "year": "1942",
+    "name": "South American Championship Uruguay 1942",
+    "short_name": "Uruguay 1942",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1942-01-10",
+      "end_date": "1942-02-07",
+      "color": "#259bc2",
+      "team_count": 7,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_1942.jpg",
+        "text": "The Uruguayan squad"
+      },
+      {
+        "name": "Brazil",
+        "filename": "Brazil_v_chile_sudamericano_1942.jpg",
+        "text": "Team of Brazil"
+      },
+      {
+        "name": "Chile",
+        "filename": "Chile_v_brazil_1942.jpg",
+        "text": "Team of Chile v Brazil"
+      },
+      {
+        "name": "Estadio Centenario, Montevideo",
+        "filename": "Stad_de_centario_uruguay1930_montevideo.jpg",
+        "text": "The Estadio Centenario hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "BRA", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 21, "total_goals": 81 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Herminio Masantonio", "team": "ARG", "goals": 7 },
+        { "player": "José Manuel Moreno", "team": "ARG", "goals": 7 }
+      ],
+      "golden_ball": [{ "player": "Obdulio Varela", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1941",
+    "year": "1941",
+    "name": "South American Championship Chile 1941",
+    "short_name": "Chile 1941",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1941-02-02",
+      "end_date": "1941-03-04",
+      "color": "#fa300f",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_1941.jpg",
+        "text": "The Argentina squad that won its 6th South American title"
+      },
+      {
+        "name": "Estadio Nacional de Chile, Santiago",
+        "filename": "Estadio_Nacional_de_Chile_-_vista_desde_Av._Grecia.jpg",
+        "text": "The Estadio Nacional de Chile hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "URU", "third_place": "CHI", "fourth_place": "PER" },
+    "statistics": { "total_matches": 10, "total_goals": 32 },
+    "awards": {
+      "golden_boot": [{ "player": "Juan Marvezzi", "team": "ARG", "goals": 5 }],
+      "golden_ball": [{ "player": "Sergio Livingstone", "team": "CHI" }]
+    }
+  },
+  {
+    "id": "COPA1939",
+    "year": "1939",
+    "name": "South American Championship Peru 1939",
+    "short_name": "Peru 1939",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["PER"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1939-01-15",
+      "end_date": "1939-02-12",
+      "color": "#e2001a",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Peru_1939.jpg",
+        "text": "The Peruvian team that won its first title"
+      },
+      {
+        "name": "Estadio Nacional, Lima",
+        "filename": "Estadio_ingles_lima.jpg",
+        "text": "The Estadio Nacional hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "PER", "runners_up": "URU", "third_place": "PAR", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 10, "total_goals": 47 },
+    "awards": {
+      "golden_boot": [{ "player": "Teodoro Fernández", "team": "PER", "goals": 7 }],
+      "golden_ball": [{ "player": "Teodoro Fernández", "team": "PER" }]
+    }
+  },
+  {
+    "id": "COPA1937",
+    "year": "1937",
+    "name": "South American Championship Argentina 1937",
+    "short_name": "Argentina 1937",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1936-12-27",
+      "end_date": "1937-02-01",
+      "color": "#0589bc",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_equipo_vs_brasil_1937.jpg",
+        "text": "Players for the rematch (or playoff) at Estadio Gasómetro. As Minella, Iribarren and Scopelli were injured, they were replaced by Lazzatti, Fazio and Cherro. (down): the attacking line: Guaita, Varallo, Zozaya, Scopelli, E. García."
+      },
+      {
+        "name": "Chile",
+        "filename": "Chile_en_el_Sudamericano_de_1937,_Estadio,_1944-07-14_(74).jpg",
+        "text": "The Chilean team"
+      },
+      {
+        "name": "Final",
+        "filename": "Argentina_al_tunel_final_vs_brasil.jpg",
+        "text": "Argentina to the final"
+      },
+      {
+        "name": "Top scorer",
+        "filename": "Raúl_Toro.jpg",
+        "text": "Chilean Raúl Toro, top scorer of the tournament"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "URU", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 16, "total_goals": 69 },
+    "awards": {
+      "golden_boot": [{ "player": "Raúl Toro Julio", "team": "CHI", "goals": 7 }],
+      "golden_ball": [{ "player": "Vicente de la Mata", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1935",
+    "year": "1935",
+    "name": "South American Championship Peru 1935",
+    "short_name": "Peru 1935",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["PER"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1935-01-06",
+      "end_date": "1935-01-27",
+      "color": "#e2001a",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Nacional, Lima",
+        "filename": "Estadio_ingles_lima.jpg",
+        "text": "The Estadio Nacional hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "PER", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 6, "total_goals": 18 },
+    "awards": {
+      "golden_boot": [{ "player": "Herminio Masantonio", "team": "ARG", "goals": 4 }],
+      "golden_ball": [{ "player": "José Nasazzi", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1929",
+    "year": "1929",
+    "name": "South American Championship Argentina 1929",
+    "short_name": "Argentina 1929",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1929-11-01",
+      "end_date": "1929-11-17",
+      "color": "#0589bc",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentinesquad1929.jpg",
+        "text": "The Argentine team, winner of the tournament"
+      },
+      {
+        "name": "Paraguay",
+        "filename": "Paraguay_1929.jpeg",
+        "text": "Paraguay national football team at the 1929 Campeonato Sudamericano."
+      },
+      {
+        "name": "Peru",
+        "filename": "Peru_1929.jpeg",
+        "text": "Peru national football team at the 1929 Campeonato Sudamericano."
+      },
+      {
+        "name": "Uruguay",
+        "filename": "Uruguay_1929.jpeg",
+        "text": "Uruguay national football team at the 1929 Campeonato Sudamericano, before playing the match against Argentina. Back row, l. to r.: Álvaro Gestido, Gildeón Silva, José Nasazzi, Andrés Mazali, Pedro Arispe, Lorenzo Fernández. Front row, l. to r.: Conduelo Píriz, Héctor Scarone, Héctor Castro, Pedro Cea, Antonio Cámpolo."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "PAR", "third_place": "URU", "fourth_place": "PER" },
+    "statistics": { "total_matches": 6, "total_goals": 23 },
+    "awards": {
+      "golden_boot": [{ "player": "Aurelio González", "team": "PAR", "goals": 5 }],
+      "golden_ball": [{ "player": "Manuel Ferreira", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1927",
+    "year": "1927",
+    "name": "South American Championship Peru 1927",
+    "short_name": "Peru 1927",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["PER"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1927-10-30",
+      "end_date": "1927-11-27",
+      "color": "#e2001a",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_equipo_vs_bolivia_1927.jpg",
+        "text": "Team of Argentina vs Bolivia, (up): Juan Evaristo, Ludovico Bidoglio, Octavio Diaz, Humberto Recanatini, José Fossa, Luis Monti; (down): Alfredo Carricaberry, Pedro Ochoa, Manuel \"Nolo\" Ferreira, Manuel Seoane, Segundo Luna."
+      },
+      {
+        "name": "Argentina vs Uruguay",
+        "filename": "Arg_vs_urug_1927.jpg",
+        "text": "The match between Argentina and Uruguay national football teams played in the Estadio Nacional of Lima, Perú, during the Copa América held in that country. Argentina won by 3-2."
+      },
+      {
+        "name": "Peru",
+        "filename": "Peru_national_football_team_parading_in_1927_South_American_Championship.png",
+        "text": "Peru national football team parading during the 1927 South American Championship (Copa America)"
+      },
+      {
+        "name": "Argentina vs Bolivia",
+        "filename": "Argentina_gol_bolivia_1927.jpg",
+        "text": "The second goal v Bolivia by Alfredo Carricaberry."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "URU", "third_place": "PER", "fourth_place": "BOL" },
+    "statistics": { "total_matches": 6, "total_goals": 37 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Alfredo Carricaberry", "team": "ARG", "goals": 3 },
+        { "player": "Segundo Luna", "team": "ARG", "goals": 3 },
+        { "player": "Roberto Figueroa", "team": "URU", "goals": 3 },
+        { "player": "Pedro Petrone", "team": "URU", "goals": 3 },
+        { "player": "Héctor Scarone", "team": "URU", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Manuel Seoane", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1926",
+    "year": "1926",
+    "name": "South American Championship Chile 1926",
+    "short_name": "Chile 1926",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1926-10-12",
+      "end_date": "1926-11-03",
+      "color": "#4b6ebf",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay1926.jpeg",
+        "text": "Uruguay squad, winners"
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "CHI", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 10, "total_goals": 55 },
+    "awards": {
+      "golden_boot": [{ "player": "David Arellano", "team": "CHI", "goals": 7 }],
+      "golden_ball": [{ "player": "José Leandro Andrade", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1925",
+    "year": "1925",
+    "name": "South American Championship Argentina 1925",
+    "short_name": "Argentina 1925",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1925-11-29",
+      "end_date": "1925-12-25",
+      "color": "#0589bc",
+      "team_count": 3,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_equipo_vs_paraguay_1925.jpg",
+        "text": "The Argentina squad (here pictured in the first match v Paraguay) won its second title"
+      },
+      {
+        "name": "Sportivo Barracas Stadium, Buenos Aires",
+        "filename": "Stadio_Sportivo_Barracas.jpg",
+        "text": "The Sportivo Barracas Stadium hosted the tournament matches."
+      },
+      {
+        "name": "Estadio Ministro Brin y Senguel, Buenos Aires",
+        "filename": "Tribuna_oficial_viejo_estadio_boca.jpg",
+        "text": "The Estadio Ministro Brin y Senguel hosted the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "PAR" },
+    "statistics": { "total_matches": 6, "total_goals": 26 },
+    "awards": {
+      "golden_boot": [{ "player": "Manuel Seoane", "team": "ARG", "goals": 6 }],
+      "golden_ball": [{ "player": "Manuel Seoane", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1924",
+    "year": "1924",
+    "name": "South American Championship Uruguay 1924",
+    "short_name": "Uruguay 1924",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1924-10-12",
+      "end_date": "1924-11-02",
+      "color": "#259bc2",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay1924_olympic.jpg",
+        "text": "The Uruguayan side had previously won the Olympics championship in Paris"
+      },
+      {
+        "name": "Estadio Gran Parque Central, Montevideo",
+        "filename": "Parque_central_1923.jpg",
+        "text": "The Estadio Gran Parque Central hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "PAR", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 6, "total_goals": 15 },
+    "awards": {
+      "golden_boot": [{ "player": "Pedro Petrone", "team": "URU", "goals": 4 }],
+      "golden_ball": [{ "player": "Pedro Petrone", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1923",
+    "year": "1923",
+    "name": "South American Championship Uruguay 1923",
+    "short_name": "Uruguay 1923",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1923-10-29",
+      "end_date": "1923-12-02",
+      "color": "#259bc2",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_1923.jpg",
+        "text": "The Uruguayan squad won its 4th title"
+      },
+      {
+        "name": "Estadio Gran Parque Central, Montevideo",
+        "filename": "Parque_central_1923.jpg",
+        "text": "The Estadio Gran Parque Central hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "PAR", "fourth_place": "BRA" },
+    "statistics": { "total_matches": 6, "total_goals": 18 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Vicente Aguirre", "team": "ARG", "goals": 3 },
+        { "player": "Pedro Petrone", "team": "URU", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "José Nasazzi", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1922",
+    "year": "1922",
+    "name": "South American Championship Brazil 1922",
+    "short_name": "Brazil 1922",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1922-09-17",
+      "end_date": "1922-10-22",
+      "color": "#6d923d",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Brasil_1922.jpg",
+        "text": "The Brazilian squad"
+      },
+      {
+        "name": "Estadio das Laranjeiras, Rio de Janeiro",
+        "filename": "Das_laranjeiras_1922.jpg",
+        "text": "The Estadio das Laranjeiras hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "PAR", "third_place": "URU", "fourth_place": "ARG" },
+    "statistics": { "total_matches": 11, "total_goals": 22 },
+    "awards": {
+      "golden_boot": [{ "player": "Julio Francia", "team": "ARG", "goals": 4 }],
+      "golden_ball": [{ "player": "Agostinho Fortes Filho", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1921",
+    "year": "1921",
+    "name": "South American Championship Argentina 1921",
+    "short_name": "Argentina 1921",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1921-10-02",
+      "end_date": "1921-10-30",
+      "color": "#0589bc",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_equipo_1921.jpg",
+        "text": "Team of Argentina that played in the South American Championship. Players are (up): Américo Tesoriere, Miguel Delavalle, Emilio Solari, Alfredo López, Florindo Bearzotti, Adolfo Celli; (down): Pedro Calomino, Julio Libonatti, Gabino Sosa, Raúl Echeverría, Jaime Chavín."
+      },
+      {
+        "name": "Argentina",
+        "filename": "Argentina_team_v_uruguay_1921.jpg",
+        "text": "The Argentina team that beat Uruguay in the last game"
+      },
+      {
+        "name": "Top scorer",
+        "filename": "Julio_libonatti.jpg",
+        "text": "Argentine player Julio Libonatti, top scorer of the 1921 South American championship."
+      },
+      {
+        "name": "Sportivo Barracas stadium, Buenos Aires",
+        "filename": "Sp_barracas_sudamericano_1921.jpg",
+        "text": "Sportivo Barracas stadium at the South American Championship"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "URU", "fourth_place": "PAR" },
+    "statistics": { "total_matches": 6, "total_goals": 14 },
+    "awards": {
+      "golden_boot": [{ "player": "Julio Libonatti", "team": "ARG", "goals": 3 }],
+      "golden_ball": [{ "player": "Américo Tesoriere", "team": "ARG" }]
+    }
+  },
+  {
+    "id": "COPA1920",
+    "year": "1920",
+    "name": "South American Championship Chile 1920",
+    "short_name": "Chile 1920",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1920-09-11",
+      "end_date": "1920-10-03",
+      "color": "#4b6ebf",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_campeón_1920.jpg",
+        "text": "Uruguay's winning squad"
+      },
+      {
+        "name": "Estadio Valparaíso Sporting Club, Viña del Mar",
+        "filename": "Tribunas_Valparaíso_Sporting,_Viña_del_Mar_20200206_12.jpg",
+        "text": "The Estadio Valparaíso Sporting Club hosted all of the tournament matches."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "BRA", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 6, "total_goals": 16 },
+    "awards": {
+      "golden_boot": [
+        { "player": "José Pérez", "team": "URU", "goals": 3 },
+        { "player": "Ángel Romano", "team": "URU", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "José Piendibene", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1919",
+    "year": "1919",
+    "name": "South American Championship Brazil 1919",
+    "short_name": "Brazil 1919",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1919-05-11",
+      "end_date": "1919-05-29",
+      "color": "#008400",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Brazil-CopaAmerica-1919.jpg",
+        "text": "The Brazil national football team that won the Copa America in 1919. Standing: Píndaro (Flamengo), Sérgio I (Paulistano), Marcos (Fluminense), Fortes (Fluminense), Bianco (Palestra Itália) and Amílcar (Corinthians); Kneeling: Millón (Santos), Neco (Corinthians), Friedenreich (Paulistano), Héitor (Palestra Itália) and Arnaldo (Santos)."
+      },
+      {
+        "name": "Argentina",
+        "filename": "Argentina_equipo_1919.jpg",
+        "text": "Team of Argentina at the 1919 Sudamericano; fltr (up): Eduardo Uslengui, Ernesto Mattozzi, Armando Reyes, Carlos Isola (GK), Pedro Martínez, Roberto Castagnola; (down): Pedro Calomino, José Laiolo, Edwin Clarke, Carlos Izaguirre, Juan Perinetti."
+      },
+      {
+        "name": "Brazil vs Argentina",
+        "filename": "Brazil_v_argentina_1919.jpg",
+        "text": "The match Brazil vs Argentina"
+      },
+      {
+        "name": "Brazil vs Uruguay",
+        "filename": "Brazil_v_uruguay_1919.jpg",
+        "text": "The final game of the tournament"
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "URU", "third_place": "ARG", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 7, "total_goals": 27 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Arthur Friedenreich", "team": "BRA", "goals": 4 },
+        { "player": "Neco", "team": "BRA", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Arthur Friedenreich", "team": "BRA" }]
+    }
+  },
+  {
+    "id": "COPA1917",
+    "year": "1917",
+    "name": "South American Championship Uruguay 1917",
+    "short_name": "Uruguay 1917",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "start_date": "1917-09-30",
+      "end_date": "1917-10-14",
+      "color": "#259bc2",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_Copa_America_1917.jpg",
+        "text": "The Uruguay national football team before playing a match in the Campeonato Sudamericano. Uruguay won that tournament. From left to right (Up): J. Pacheco, J. Vanzzino, C. Saporiti, G. Rodríguez, M. Varela, A. Foglino. (Down): J. Perez, H. Scarone, A. Romano, C. Scarone, P. Somma."
+      },
+      {
+        "name": "Brazil",
+        "filename": "Brasil_football_team_1917.jpg",
+        "text": "The Brazilian national football team during the 1917 Copa América."
+      },
+      {
+        "name": "Estadio Parque Pereira, Montevideo",
+        "filename": "Parque_pereira.jpg",
+        "text": "The Estadio Parque Pereira hosted all of the tournament matches"
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "BRA", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 6, "total_goals": 21 },
+    "awards": {
+      "golden_boot": [{ "player": "Ángel Romano", "team": "URU", "goals": 4 }],
+      "golden_ball": [{ "player": "Héctor Scarone", "team": "URU" }]
+    }
+  },
+  {
+    "id": "COPA1916",
+    "year": "1916",
+    "name": "South American Championship Argentina 1916",
+    "short_name": "Argentina 1916",
+    "tournament_type_id": "COPA",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "CONMEBOL_logo_(2017).svg",
+      "mascot_filename": "Sudamericano_de_football_1916_brazilian_art.jpg",
+      "start_date": "1916-07-02",
+      "end_date": "1916-07-17",
+      "color": "#63b7e8",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_1916.jpg",
+        "text": "The Uruguay national team that won the first \"Copa América\"."
+      },
+      {
+        "name": "Argentina",
+        "filename": "Argentina-Copa-America-1916.jpg",
+        "text": "The Argentina national team"
+      },
+      {
+        "name": "Gimnasia y Esgrima, Buenos Aires",
+        "filename": "Estadio_geba_tribuna_1910.jpg",
+        "text": "The Gimnasia y Esgrima hosted the tournament matches."
+      },
+      {
+        "name": "Racing, Avellaneda",
+        "filename": "Racing_tribunas_1922.jpg",
+        "text": "The Racing hosted 1 tournament match."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "BRA", "fourth_place": "CHI" },
+    "statistics": { "total_matches": 6, "total_goals": 18 },
+    "awards": {
+      "golden_boot": [{ "player": "Isabelino Gradín", "team": "URU", "goals": 3 }],
+      "golden_ball": [{ "player": "Isabelino Gradín", "team": "URU" }]
+    }
+  }
+]

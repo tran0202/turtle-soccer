@@ -1,0 +1,493 @@
+[
+  {
+    "id": "WWC2023",
+    "year": "2023",
+    "name": "FIFA Women's World Cup Australia-New Zealand 2023",
+    "tournament_type_id": "WWC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["AUS_WNT", "NZL_WNT"],
+      "logo_filename": "Australia–New_Zealand_2023_FIFA_Women's_World_Cup_bid_logo.svg",
+      "start_date": "2023-07-10",
+      "end_date": "2023-08-20",
+      "color": "#45d8b4",
+      "team_count": 32,
+      "confed_count": 6,
+      "venue_count": 13,
+      "city_count": 12
+    },
+    "hero_images": [
+      {
+        "name": "Stadium Australia, Sydney",
+        "filename": "2015_Asian_Cup_Final.jpg",
+        "text": "The Stadium Australia has been proposed to host the final match."
+      }
+    ]
+  },
+  {
+    "id": "WWC2019",
+    "year": "2019",
+    "name": "FIFA Women's World Cup France 2019",
+    "tournament_type_id": "WWC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["FRA_WNT"],
+      "logo_filename": "2019_FIFA_Women's_World_Cup.svg",
+      "mascot_filename": "csm_ettie_7ca1be65ec.png",
+      "start_date": "2019-06-07",
+      "end_date": "2015-07-07",
+      "color": "#103d69",
+      "team_count": 24,
+      "confed_count": 6,
+      "venue_count": 9,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "FIFA_Womens_World_Cup_2019_Final_-_US_team_on_podium_(4).jpg",
+        "text": "The US team receiving their champion medals."
+      },
+      {
+        "name": "Golden Boot & Golden Ball",
+        "filename": "Megan_Rapinoe_(May_2019)_(cropped).jpg",
+        "text": "Megan Rapinoe scored second-half goals for the United States in the final."
+      },
+      {
+        "name": "Silver Boot",
+        "filename": "Alex_Morgan_May19.jpg",
+        "text": "Alex Morgan scored six times for the United States, including five in their opening match."
+      },
+      {
+        "name": "Bronze Ball",
+        "filename": "Rose_Lavelle_(36648133634).jpg",
+        "text": "Rose Lavelle scored second-half goals for the United States in the final."
+      },
+      {
+        "name": "Golden Glove",
+        "filename": "20141015_-_PSG-Twente_084_(cropped).jpg",
+        "text": "Dutch goalkeeper Sari van Veenendaal won the Golden Glove award as best goalkeeper of the tournament."
+      },
+      {
+        "name": "Winning Coach",
+        "filename": "Jillian_Ellis_2015.jpg",
+        "text": "U.S. coach Jill Ellis was vying to become the first manager to win two Women's World Cup titles."
+      }
+    ],
+    "final_standings": { "champions": "USA_WNT", "runners_up": "NED_WNT", "third_place": "SWE_WNT", "fourth_place": "ENG_WNT" },
+    "statistics": { "total_matches": 52, "total_goals": 146, "attendance": 1131312 },
+    "awards": {
+      "golden_boot": [{ "player": "Megan Rapinoe", "team": "USA_WNT", "goals": 6, "assists": 3, "minutes": 428 }],
+      "silver_boot": [{ "player": "Alex Morgan", "team": "USA_WNT", "goals": 6, "assists": 3, "minutes": 490 }],
+      "bronze_boot": [{ "player": "Ellen White", "team": "ENG_WNT", "goals": 6, "assists": 0, "minutes": 514 }],
+      "golden_ball": [
+        { "player": "Megan Rapinoe", "team": "USA_WNT" },
+        { "player": "Lucy Bronze", "team": "ENG_WNT" },
+        { "player": "Rose Lavelle", "team": "USA_WNT" }
+      ],
+      "best_young_player": { "player": "Giulia Gwinn", "team": "GER_WNT" },
+      "golden_glove": [{ "player": "Sari van Veenendaal", "team": "NED_WNT" }],
+      "fair_play_team": ["FRA_WNT"]
+    }
+  },
+  {
+    "id": "WWC2015",
+    "year": "2015",
+    "name": "FIFA Women's World Cup Canada 2015",
+    "tournament_type_id": "WWC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["CAN_WNT"],
+      "logo_filename": "2015_FIFA_Women's_World_Cup.svg",
+      "mascot_filename": "mascot_2015.jpg",
+      "start_date": "2015-06-06",
+      "end_date": "2015-07-05",
+      "color": "#f72337",
+      "team_count": 24,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Champions!_(19185117834).jpg",
+        "text": "Confetti time"
+      },
+      {
+        "name": "United States",
+        "filename": "Starting_lineup_(19184905224).jpg",
+        "text": "Starting lineup"
+      },
+      {
+        "name": "Final",
+        "filename": "Singing_the_national_anthem_(19781316956).jpg",
+        "text": "United States vs Japan"
+      },
+      {
+        "name": "Golden Ball",
+        "filename": "Carli_Lloyd_pointing.jpg",
+        "text": "Carli Lloyd broke multiple goal scoring records in the final."
+      }
+    ],
+    "final_standings": { "champions": "USA_WNT", "runners_up": "JPN_WNT", "third_place": "ENG_WNT", "fourth_place": "GER_WNT" },
+    "statistics": { "total_matches": 52, "total_goals": 146, "attendance": 1353506 },
+    "awards": {
+      "golden_boot": [{ "player": "Célia Šašić", "team": "GER_WNT", "goals": 6, "assists": 1, "minutes": 553 }],
+      "silver_boot": [{ "player": "Carli Lloyd", "team": "USA_WNT", "goals": 6, "assists": 1, "minutes": 630 }],
+      "bronze_boot": [{ "player": "Anja Mittag", "team": "GER_WNT", "goals": 5, "assists": 2, "minutes": 474 }],
+      "golden_ball": [
+        { "player": "Carli Lloyd", "team": "USA_WNT" },
+        { "player": "Amandine Henry", "team": "FRA_WNT" },
+        { "player": "Aya Miyama", "team": "JPN_WNT" }
+      ],
+      "best_young_player": { "player": "Kadeisha Buchanan", "team": "CAN_WNT" },
+      "golden_glove": [{ "player": "Hope Solo", "team": "USA_WNT" }],
+      "fair_play_team": ["FRA_WNT"]
+    }
+  },
+  {
+    "id": "WWC2011",
+    "year": "2011",
+    "name": "FIFA Women's World Cup Germany 2011",
+    "tournament_type_id": "WWC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["GER_WNT"],
+      "logo_filename": "2011_FIFA_Women's_World_Cup.svg",
+      "mascot_filename": "Karla_Kick.jpg",
+      "start_date": "2011-06-26",
+      "end_date": "2011-07-17",
+      "color": "#1d1d1b",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 9,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "Opening ceremony",
+        "filename": "FIFA_Womens_World_Cup_2011_Olympiastadion_Berlin.jpg",
+        "text": "Opening ceremony"
+      },
+      {
+        "name": "Final",
+        "filename": "Penalty_vainqueur_de_Saki_Kumagai_en_2011.jpg",
+        "text": "Saki Kumagai of Japan scoring the winning penalty"
+      },
+      {
+        "name": "Japan",
+        "filename": "Seleção_japonesa_agradece_o_apoio_da_torcida_(DSC01105).jpg",
+        "text": "Japan team thank you for your support."
+      },
+      {
+        "name": "United States",
+        "filename": "Jogadoras_dos_Estados_Unidos_comemoram_gol_(DSC01163).jpg",
+        "text": "USA players celebrates a goal."
+      }
+    ],
+    "final_standings": { "champions": "JPN_WNT", "runners_up": "USA_WNT", "third_place": "SWE_WNT", "fourth_place": "FRA_WNT" },
+    "statistics": { "total_matches": 32, "total_goals": 86, "attendance": 845711 },
+    "awards": {
+      "golden_boot": [{ "player": "Homare Sawa", "team": "JPN_WNT", "goals": 5, "assists": 1 }],
+      "silver_boot": [{ "player": "Marta", "team": "BRA_WNT", "goals": 4, "assists": 2 }],
+      "bronze_boot": [{ "player": "Abby Wambach", "team": "USA_WNT", "goals": 4, "assists": 1 }],
+      "golden_ball": [
+        { "player": "Homare Sawa", "team": "JPN_WNT" },
+        { "player": "Abby Wambach", "team": "USA_WNT" },
+        { "player": "Hope Solo", "team": "USA_WNT" }
+      ],
+      "best_young_player": { "player": "Caitlin Foord", "team": "AUS_WNT" },
+      "golden_glove": [{ "player": "Hope Solo", "team": "USA_WNT" }],
+      "fair_play_team": ["JPN_WNT"]
+    }
+  },
+  {
+    "id": "WWC2007",
+    "year": "2007",
+    "name": "FIFA Women's World Cup China 2007",
+    "tournament_type_id": "WWC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["CHN_WNT"],
+      "logo_filename": "2007_FIFA_Women's_World_Cup.svg",
+      "start_date": "2007-09-10",
+      "end_date": "2007-09-30",
+      "color": "#fa2200",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Hongkou Football Stadium, Shanghai",
+        "filename": "Hongkou_Stadium_in_Shanghai.jpg",
+        "text": "The Hongkou Stadium hosted the final."
+      },
+      {
+        "name": "Yellow Dragon Stadium, Hangzhou",
+        "filename": "Hangzhou-yellow-dragon-stad.jpg",
+        "text": "The Yellow Dragon Stadium hosted the semi-final United States vs Brazil"
+      },
+      {
+        "name": "Tianjin Olympic Center Stadium, Tianjin",
+        "filename": "Tianjin_Olympic_Center_Stadium.jpg",
+        "text": "The Tianjin Olympic Center Stadium hosted the semi-final Germany vs Norway."
+      },
+      {
+        "name": "Chengdu Sports Centre Stadium, Chengdu",
+        "filename": "Chengdu_Sports_Center.jpeg",
+        "text": "The Chengdu Sports Centre Stadium hosted group A matches."
+      }
+    ],
+    "final_standings": { "champions": "GER_WNT", "runners_up": "BRA_WNT", "third_place": "USA_WNT", "fourth_place": "NOR_WNT" },
+    "statistics": { "total_matches": 32, "total_goals": 111, "attendance": 1190971 },
+    "awards": {
+      "golden_boot": [{ "player": "Marta", "team": "BRA_WNT", "goals": 7, "assists": 5 }],
+      "silver_boot": [{ "player": "Abby Wambach", "team": "USA_WNT", "goals": 6, "assists": 2 }],
+      "bronze_boot": [{ "player": "Ragnhild Gulbrandsen", "team": "NOR_WNT", "goals": 6, "assists": 0 }],
+      "golden_ball": [
+        { "player": "Marta", "team": "BRA_WNT" },
+        { "player": "Birgit Prinz", "team": "GER_WNT" },
+        { "player": "Cristiane", "team": "BRA_WNT" }
+      ],
+      "golden_glove": [{ "player": "Nadine Angerer", "team": "GER_WNT" }],
+      "fair_play_team": ["NOR_WNT"]
+    }
+  },
+  {
+    "id": "WWC2003",
+    "year": "2003",
+    "name": "FIFA Women's World Cup USA 2003",
+    "tournament_type_id": "WWC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA_WNT"],
+      "logo_filename": "2003_FIFA_Women's_World_Cup.svg",
+      "start_date": "2003-09-20",
+      "end_date": "2003-10-12",
+      "color": "#0f246a",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "FIFA_Womens_World_Cup_2003_-_Germany_vs_Sweden.jpg",
+        "text": "Germany vs Sweden"
+      },
+      {
+        "name": "Third place game",
+        "filename": "Wambach_2003.jpg",
+        "text": "United States vs Canada"
+      },
+      {
+        "name": "Golden Boot & Golden Ball",
+        "filename": "Birgit_Prinz.jpg",
+        "text": "Birgit Prinz provided Germany with 7 goals and 5 assists during the 2003 Women's World Cup."
+      },
+      {
+        "name": "Golden Goal",
+        "filename": "Nia_Künzer_2013_1.jpg",
+        "text": "German defender Nia Künzer scored the extra time golden goal to win the 2003 Women's World Cup."
+      }
+    ],
+    "final_standings": { "champions": "GER_WNT", "runners_up": "SWE_WNT", "third_place": "USA_WNT", "fourth_place": "CAN_WNT" },
+    "statistics": { "total_matches": 32, "total_goals": 107, "attendance": 679666 },
+    "awards": {
+      "golden_boot": [{ "player": "Birgit Prinz", "team": "GER_WNT", "goals": 7, "assists": 5, "minutes": 548 }],
+      "silver_boot": [{ "player": "Maren Meinert", "team": "GER_WNT", "goals": 4, "assists": 7, "minutes": 548 }],
+      "bronze_boot": [{ "player": "Kátia", "team": "BRA_WNT", "goals": 4, "assists": 0, "minutes": 360 }],
+      "golden_ball": [
+        { "player": "Birgit Prinz", "team": "GER_WNT" },
+        { "player": "Victoria Svensson", "team": "SWE_WNT" },
+        { "player": "Maren Meinert", "team": "GER_WNT" }
+      ],
+      "golden_glove": [{ "player": "Silke Rottenberg", "team": "GER_WNT" }],
+      "fair_play_team": ["CHN_WNT"]
+    }
+  },
+  {
+    "id": "WWC1999",
+    "year": "1999",
+    "name": "FIFA Women's World Cup USA 1999",
+    "tournament_type_id": "WWC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA_WNT"],
+      "logo_filename": "1999.png",
+      "start_date": "1999-06-19",
+      "end_date": "1999-07-10",
+      "color": "#0f246a",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "United States",
+        "filename": "Lilly356.jpg",
+        "text": "Kristine Lilly (left) and Mia Hamm (right) both scored goals in the first two group stage matches for the United States."
+      },
+      {
+        "name": "Rose Bowl, Pasadena",
+        "filename": "Rose_Bowl_aerial.jpg",
+        "text": "The Rose Bowl hosted the final."
+      },
+      {
+        "name": "Foxboro Stadium, Foxborough",
+        "filename": "Foxborostade_crop.png",
+        "text": "The Foxboro Stadium hosted the semi-final Norway vs China PR."
+      },
+      {
+        "name": "Stanford Stadium, Stanford",
+        "filename": "StanfordStadium2004.jpg",
+        "text": "The Stanford Stadium hosted the semi-final United States vs Brazil."
+      }
+    ],
+    "final_standings": { "champions": "USA_WNT", "runners_up": "CHN_WNT", "third_place": "BRA_WNT", "fourth_place": "NOR_WNT" },
+    "statistics": { "total_matches": 32, "total_goals": 123, "attendance": 1194215 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Sissi", "team": "BRA_WNT", "goals": 7, "assists": 3 },
+        { "player": "Sun Wen", "team": "CHN_WNT", "goals": 7, "assists": 3 }
+      ],
+      "bronze_boot": [{ "player": "Ann Kristin Aarønes", "team": "NOR_WNT", "goals": 4, "assists": 1 }],
+      "golden_ball": [
+        { "player": "Sun Wen", "team": "CHN_WNT" },
+        { "player": "Sissi", "team": "BRA_WNT" },
+        { "player": "Michelle Akers", "team": "USA_WNT" }
+      ],
+      "golden_glove": [
+        { "player": "Gao Hong", "team": "CHN_WNT" },
+        { "player": "Briana Scurry", "team": "USA_WNT" }
+      ],
+      "fair_play_team": ["CHN_WNT"]
+    }
+  },
+  {
+    "id": "WWC1995",
+    "year": "1995",
+    "name": "FIFA Women's World Cup Sweden 1995",
+    "tournament_type_id": "WWC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SWE_WNT"],
+      "logo_filename": "1995.png",
+      "start_date": "1995-06-05",
+      "end_date": "1995-06-18",
+      "color": "#1d5f9a",
+      "team_count": 12,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Råsunda Stadium, Solna",
+        "filename": "Råsunda_Stadium.jpg",
+        "text": "The Råsunda Stadium in Solna hosted the final."
+      },
+      {
+        "name": "Olympia, Helsingborg",
+        "filename": "Olympia_Helsingborg.jpg",
+        "text": "The Olympia hosted the semi-final Germany vs China PR."
+      },
+      {
+        "name": "Tingvalla IP, Karlstad",
+        "filename": "Tingvalla_IP.jpeg",
+        "text": "The Tingvalla IP hosted the quarter-final Norway vs Denmark."
+      },
+      {
+        "name": "Strömvallen, Gävle",
+        "filename": "Strömvallen3.jpg",
+        "text": "The Strömvallen hosted the quarter-final Japan vs United States."
+      }
+    ],
+    "final_standings": { "champions": "NOR_WNT", "runners_up": "GER_WNT", "third_place": "USA_WNT", "fourth_place": "CHN_WNT" },
+    "statistics": { "total_matches": 26, "total_goals": 99, "attendance": 112213 },
+    "awards": {
+      "golden_boot": [{ "player": "Ann Kristin Aarønes", "team": "NOR_WNT", "goals": 6, "assists": 0 }],
+      "silver_boot": [{ "player": "Hege Riise", "team": "NOR_WNT", "goals": 5, "assists": 5 }],
+      "bronze_boot": [{ "player": "Shi Guihongs", "team": "CHN_WNT", "goals": 3, "assists": 2 }],
+      "golden_ball": [
+        { "player": "Hege Riise", "team": "NOR_WNT" },
+        { "player": "Gro Espeseth", "team": "NOR_WNT" },
+        { "player": "Ann Kristin Aarønes", "team": "NOR_WNT" }
+      ],
+      "fair_play_team": ["SWE_WNT"]
+    }
+  },
+  {
+    "id": "WWC1991",
+    "year": "1991",
+    "name": "FIFA Women's World Cup China 1991",
+    "short_name": "China 1991",
+    "tournament_type_id": "WWC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CHN_WNT"],
+      "logo_filename": "1991.png",
+      "start_date": "1991-11-16",
+      "end_date": "1991-11-30",
+      "color": "#fa2200",
+      "team_count": 12,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Tianhe Stadium, Guangzhou",
+        "filename": "Tianhe_Stadium.jpg",
+        "text": "The Tianhe Stadium hosted the final."
+      },
+      {
+        "name": "Guangdong Provincial Stadium, Guangzhou",
+        "filename": "Guangdong_Provincial_Peoples_Stadium.jpg",
+        "text": "The Guangdong Provincial Stadium hosted the semi-final Germany vs United States."
+      },
+      {
+        "name": "Guangzhou, China",
+        "filename": "Guangzhou_Twin_Towers.jpg",
+        "text": "Guangzhou Twin Towers"
+      },
+      {
+        "name": "Zhongshan Stadium, Zhongshan",
+        "filename": "Zhongshan_Sports_Center_Stadium_-02.jpg",
+        "text": "The Zhongshan Stadium hosted the quarter-final Denmark vs Germany."
+      }
+    ],
+    "final_standings": { "champions": "USA_WNT", "runners_up": "NOR_WNT", "third_place": "SWE_WNT", "fourth_place": "GER_WNT" },
+    "statistics": { "total_matches": 26, "total_goals": 99, "attendance": 510000 },
+    "awards": {
+      "golden_boot": [{ "player": "Michelle Akers-Stahl", "team": "USA_WNT", "goals": 10 }],
+      "silver_boot": [{ "player": "Heidi Mohr", "team": "GER_WNT", "goals": 7 }],
+      "bronze_boot": [
+        { "player": "Linda Medalen", "team": "NOR_WNT", "goals": 6 },
+        { "player": "Carin Jennings", "team": "USA_WNT", "goals": 6 }
+      ],
+      "golden_ball": [
+        { "player": "Carin Jennings", "team": "USA_WNT" },
+        { "player": "Michelle Akers-Stahl", "team": "USA_WNT" },
+        { "player": "Linda Medalen", "team": "NOR_WNT" }
+      ],
+      "fair_play_team": ["GER_WNT"]
+    }
+  }
+]

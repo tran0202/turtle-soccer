@@ -1,19 +1,15 @@
 import React from 'react'
 import Confederations from './data/Confederations.json'
 import Competitions from './data/Competitions.json'
-// import TournamentTypeArray from '../data/TournamentType.json'
 import Page from './core/Page'
-// import { getTournamentArray } from './DataHelper'
 import { Container, Row, Col } from 'reactstrap'
-// import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
-// import classnames from 'classnames'
 
 class ConfederationsApp extends React.Component {
   constructor(props) {
     super(props)
     document.title = 'Confederations - Turtle Soccer'
 
-    this.state = null
+    this.state = { confederations: [] }
   }
 
   getCompetitions = (conf) => {
@@ -21,7 +17,6 @@ class ConfederationsApp extends React.Component {
     if (conf.competitions) {
       conf.competitions.forEach((c) => {
         const comp = Competitions.find((x) => x.id === c.id)
-        // console.log('y', y)
         compArray.push(comp)
       })
       conf.competitions = compArray
@@ -32,7 +27,8 @@ class ConfederationsApp extends React.Component {
     Confederations.forEach((c) => {
       c && this.getCompetitions(c)
     })
-    this.setState(Confederations)
+    // console.log('Confederations', Confederations)
+    this.setState({ confederations: Confederations })
   }
 
   componentDidMount() {
@@ -46,7 +42,6 @@ class ConfederationsApp extends React.Component {
   render() {
     return (
       <Page>
-        {/* <Style tournamentType={tournamentType} /> */}
         <Container>
           <h1 className="h1-ff5 text-center mt-3 mb-3">FIFA &amp; 6 Regional Confederations</h1>
           {Confederations.map((c) => {

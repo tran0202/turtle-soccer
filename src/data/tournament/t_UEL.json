@@ -1,0 +1,174 @@
+[
+  {
+    "id": "UEL202021",
+    "year": "2020-21",
+    "name": "2020-21 UEFA Europa League",
+    "short_name": "2020-21",
+    "tournament_type_id": "UEL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "no_third_place": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "logo_filename": "UEL.svg",
+      "start_qualifying_date": "2020-08-18",
+      "end_qualifying_date": "2020-10-01",
+      "start_competition_date": "2020-10-22",
+      "end_competition_date": "2021-05-26",
+      "color": "#15611e",
+      "tournament_team_count": 48,
+      "transfer_team_count": 8,
+      "total_team_count": 158,
+      "total_transfer_team_count": 55,
+      "association_count": 55
+    },
+    "hero_images": [
+      {
+        "name": "Stadion Miejski, Gdańsk",
+        "filename": "PGE_Arena_Gdańsk_(6018955265).jpg",
+        "text": "The Stadion Miejski will host the final."
+      }
+    ],
+    "statistics": { "total_matches": 183, "total_goals": 564, "attendance": 98455 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Pizzi", "team": "POR", "club": "SLB", "goals": 7, "minutes": 385 },
+        { "player": "Yusuf Yazıcı", "team": "TUR", "club": "LIL", "goals": 7, "minutes": 625 }
+      ]
+    }
+  },
+  {
+    "id": "UEL201920",
+    "year": "2019-20",
+    "name": "2019-20 UEFA Europa League",
+    "short_name": "2019-20",
+    "tournament_type_id": "UEL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "no_third_place": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "logo_filename": "UEL.svg",
+      "start_qualifying_date": "2019-06-27",
+      "end_qualifying_date": "2019-08-29",
+      "start_competition_date": "2019-09-19",
+      "end_competition_date": "2020-08-21",
+      "color": "#15296d",
+      "tournament_team_count": 48,
+      "transfer_team_count": 8,
+      "total_team_count": 158,
+      "total_transfer_team_count": 55,
+      "association_count": 55
+    },
+    "hero_images": [
+      {
+        "name": "RheinEnergieStadion, Cologne",
+        "filename": "FIFA_WM06_Stadion_Koeln.jpg",
+        "text": "The RheinEnergieStadion in Cologne hosted the final. The stadium was renamed to \"Stadion Köln\" for the match."
+      },
+      {
+        "name": "Program",
+        "filename": "2020_UEFA_Europa_League_Final_programme.jpg",
+        "text": "This is the official match programme for the 2020 UEFA Europa League Final."
+      },
+      {
+        "name": "Merkur Spiel-Arena, Düsseldorf",
+        "filename": "ESPRIT_arena_in_Duesseldorf-Stockum,_von_Sueden.jpg",
+        "text": "The Merkur Spiel-Arena hosted the semi-final Inter Milan vs Shakhtar Donetsk."
+      },
+      {
+        "name": "MSV-Arena, Duisburg",
+        "filename": "MSV-Arena_Stehtribüne.jpeg",
+        "text": "The MSV-Arena hosted the quarter-final Wolverhampton Wanderers vs Sevilla."
+      }
+    ],
+    "final_standings": { "champions": "SEV", "runners_up": "INT", "semi_finalist1": "MUN", "semi_finalist2": "SHK" },
+    "statistics": { "total_matches": 197, "total_goals": 548, "attendance": 4069102 },
+    "awards": {
+      "golden_boot": [{ "player": "Bruno Fernandes", "team": "POR", "club": "SLI", "club2": "MUN", "goals": 8 }],
+      "golden_ball": [{ "player": "Romelu Lukaku", "team": "BEL", "club": "INT" }]
+    }
+  },
+  {
+    "id": "UEL201819",
+    "year": "2018-19",
+    "name": "2018-19 UEFA Europa League",
+    "short_name": "2018-19",
+    "tournament_type_id": "UEL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "no_third_place": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "logo_filename": "UEL.svg",
+      "start_qualifying_date": "2018-06-26",
+      "end_qualifying_date": "2018-08-30",
+      "start_competition_date": "2018-09-20",
+      "end_competition_date": "2019-05-29",
+      "color": "#ee312f",
+      "tournament_team_count": 48,
+      "transfer_team_count": 8,
+      "total_team_count": 158,
+      "total_transfer_team_count": 55,
+      "association_count": 55
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Chelsea_vs._Arsenal,_29_May_2019_32.jpg",
+        "text": "Chelsea celebrating their victory following the match."
+      },
+      {
+        "name": "Olympic Stadium, Baku",
+        "filename": "Baku_Olympic_Stadium_panorama_1.jpeg",
+        "text": "The Olympic Stadium in Baku hosted the final."
+      },
+      {
+        "name": "Program",
+        "filename": "2019_UEFA_Europa_League_Final_programme.jpg",
+        "text": "This is the official match programme for the 2019 UEFA Europa League Final."
+      },
+      {
+        "name": "Manager",
+        "filename": "Unai_Emery_2012.jpg",
+        "text": "Arsenal manager Unai Emery appeared in his fourth Europa League final, having won all three prior."
+      }
+    ],
+    "final_standings": { "champions": "CHE", "runners_up": "ARS", "semi_finalist1": "SGE", "semi_finalist2": "VAL" },
+    "statistics": { "total_matches": 205, "total_goals": 565, "attendance": 5038109 },
+    "awards": {
+      "golden_boot": [{ "player": "Olivier Giroud", "team": "FRA", "club": "CHE", "goals": 11 }],
+      "golden_ball": [{ "player": "Eden Hazard", "team": "BEL", "club": "CHE" }]
+    }
+  }
+]

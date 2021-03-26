@@ -26,6 +26,9 @@ class Page extends React.Component {
                       <a href="/">Home</a>
                     </li>
                     <li>
+                      <a href="/competitions">Competitions</a>
+                    </li>
+                    <li>
                       <a href="/confederations">Confederations</a>
                     </li>
                   </ul>

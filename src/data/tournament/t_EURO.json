@@ -1,0 +1,712 @@
+[
+  {
+    "id": "EURO2020",
+    "year": "2020",
+    "name": "UEFA Euro 2020",
+    "tournament_type_id": "EURO",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplay", "coefficient"],
+    "no_third_place": true,
+    "details": {
+      "host": ["ENG", "GER", "AZE", "RUS", "ITA", "DEN", "ROU", "NED", "IRL", "ESP", "HUN", "SCO"],
+      "logo_filename": "Euro_2020.png",
+      "mascot_filename": "mascot_2020.jpg",
+      "start_date": "2021-06-11",
+      "end_date": "2021-07-11",
+      "color": "#0084a4",
+      "team_count": 24,
+      "venue_count": 12,
+      "city_count": 12
+    },
+    "hero_images": [
+      {
+        "name": "Wembley Stadium, London",
+        "filename": "Wembley-Stadion_2013_16x10.jpg",
+        "text": "The Wembley Stadium will host the final."
+      }
+    ]
+  },
+  {
+    "id": "EURO2016",
+    "year": "2016",
+    "name": "UEFA Euro 2016 France",
+    "tournament_type_id": "EURO",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplay", "coefficient"],
+    "no_third_place": true,
+    "details": {
+      "host": ["FRA"],
+      "logo_filename": "Euro_2016.png",
+      "mascot_filename": "mascot_2016.jpg",
+      "start_date": "2016-06-10",
+      "end_date": "2016-07-10",
+      "color": "#e12631",
+      "team_count": 24,
+      "venue_count": 10,
+      "city_count": 10
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Ricardo_Quaresma_performing_a_bicycle_kick_against_France_at_Euro_2016_final.jpg",
+        "text": "Ricardo Quaresma takes a shot at goal during the match."
+      },
+      { "name": "Final programme", "filename": "Euro2016matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 2016 Final." },
+      {
+        "name": "Opening ceremony",
+        "filename": "Uefa_Euro_2016_Opening_Ceremony.jpg",
+        "text": "The opening ceremony at Stade de France, Saint-Denis"
+      },
+      { "name": "Group C", "filename": "Germany_vs_Poland_0-0_(27103531294).jpg", "text": "Gremany vs Poland" }
+    ],
+    "final_standings": { "champions": "POR", "runners_up": "FRA", "semi_finalist1": "GER", "semi_finalist2": "WAL" },
+    "statistics": { "total_matches": 51, "total_goals": 108, "attendance": 2427303 },
+    "awards": {
+      "golden_boot": [{ "player": "Antoine Griezmann", "team": "FRA", "goals": 6 }],
+      "silver_boot": [{ "player": "Cristiano Ronaldo", "team": "POR", "goals": 3, "assists": 3 }],
+      "bronze_boot": [{ "player": "Olivier Giroud", "team": "FRA", "goals": 3, "assists": 2 }],
+      "golden_ball": [{ "player": "Antoine Griezmann", "team": "FRA" }],
+      "best_young_player": { "player": "Renato Sanches", "team": "POR" }
+    }
+  },
+  {
+    "id": "EURO2012",
+    "year": "2012",
+    "name": "UEFA Euro 2012 Poland-Ukraine",
+    "tournament_type_id": "EURO",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "coefficient", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["POL", "UKR"],
+      "logo_filename": "Euro_2012.png",
+      "mascot_filename": "mascot_2012.jpg",
+      "start_date": "2012-06-08",
+      "end_date": "2012-07-01",
+      "color": "#1797ce",
+      "team_count": 16,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Spain_national_football_team_Euro_2012_trophy_01.jpg",
+        "text": "Spanish players celebrating their victory"
+      },
+      {
+        "name": "Champions",
+        "filename": "Spain_national_football_team_Euro_2012_trophy_02.jpg",
+        "text": "Spain players holding the Henri Delaunay Trophy."
+      },
+      {
+        "name": "Final",
+        "filename": "Di_Natale,_Torres_and_Balotelli_Euro_2012_final.jpg",
+        "text": "Fernando Torres and Mario Balotelli (both with number 9) in the final match"
+      },
+      { "name": "Final", "filename": "Andrés_Iniesta_shot_Euro_2012_final.jpg", "text": "Iniesta takes a shot on Gianluigi Buffon's goal." },
+      { "name": "Olympic Stadium, Kyiv", "filename": "Фінал_Євро-2012._1-й_тайм.jpeg", "text": "The Olympic Stadium in Kyiv hosted the final" },
+      { "name": "Spain", "filename": "Spain_national_football_team_Euro_2012_final.jpg", "text": "Spain's starting line-up in the Final" },
+      { "name": "Italy", "filename": "Italy_national_football_team_Euro_2012_final.jpg", "text": "Italy's starting line-up in the Final" },
+      {
+        "name": "Mascots",
+        "filename": "Slavek&Slavko_(3).jpg",
+        "text": "The mascots Slavek & Slavko"
+      },
+      { "name": "Adidas Tango 12", "filename": "Euro_2012.jpg", "text": "Monumental Adidas Tango 12 in Kiev" },
+      { "name": "Final programme", "filename": "Euro2012matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 2012 Final." }
+    ],
+    "final_standings": { "champions": "ESP", "runners_up": "ITA", "semi_finalist1": "GER", "semi_finalist2": "POR" },
+    "statistics": { "total_matches": 31, "total_goals": 76, "attendance": 1440896 },
+    "awards": {
+      "golden_boot": [{ "player": "Fernando Torres", "team": "ESP", "goals": 3, "assists": 1, "minutes": 189 }],
+      "silver_boot": [{ "player": "Mario Gomez", "team": "GER", "goals": 3, "assists": 1, "minutes": 282 }],
+      "bronze_boot": [{ "player": "Alan Dzagoev", "team": "RUS", "goals": 3, "minutes": 253 }],
+      "golden_ball": [{ "player": "Andrés Iniesta", "team": "ESP" }]
+    }
+  },
+  {
+    "id": "EURO2008",
+    "year": "2008",
+    "name": "UEFA Euro 2008 Austria-Switzerland",
+    "short_name": "Austria-Switzerland",
+    "tournament_type_id": "EURO",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "penalty", "head2head", "goaldifferenceandgoalscored", "coefficient", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["AUT", "SUI"],
+      "logo_filename": "Euro_2008.png",
+      "mascot_filename": "mascot_2008.jpg",
+      "start_date": "2008-06-07",
+      "end_date": "2008-06-29",
+      "color": "#ff0000",
+      "team_count": 16,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Celebracion_Eurocopa_1.jpg",
+        "text": "The Spanish football team touring Madrid as champions"
+      },
+      {
+        "name": "Champions",
+        "filename": "Spain_Euro_08_celebration_2.jpg",
+        "text": "Cesc Fàbregas celebrating Spain's Euro 2008 title"
+      },
+      {
+        "name": "Player of the Tournament",
+        "filename": "Xavi_Selección.jpg",
+        "text": "Spain midfielder Xavi was selected as the Player of the Tournament."
+      },
+      { "name": "Group C", "filename": "NL-IT-Bern-Voetbal-09-06-08.jpeg", "text": "A free kick in the match Netherlands vs Italy on 9 June" },
+      { "name": "Group D", "filename": "España_Suecia_inicio.jpg", "text": "The beginning of the match Sweden vs Spain." },
+      { "name": "Final programme", "filename": "Euro2008matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 2008 Final." }
+    ],
+    "final_standings": { "champions": "ESP", "runners_up": "GER", "semi_finalist1": "RUS", "semi_finalist2": "TUR" },
+    "statistics": { "total_matches": 31, "total_goals": 77, "attendance": 1143990 },
+    "awards": {
+      "golden_boot": [{ "player": "David Villa", "team": "ESP", "goals": 4 }],
+      "golden_ball": [{ "player": "Xavi", "team": "ESP" }]
+    }
+  },
+  {
+    "id": "EURO2004",
+    "year": "2004",
+    "name": "UEFA Euro 2004 Portugal",
+    "tournament_type_id": "EURO",
+    "silver_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "penalty", "coefficient", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["POR"],
+      "logo_filename": "Euro_2004.png",
+      "mascot_filename": "mascots_-_uefa_euro_2004_kinas.jpeg",
+      "start_date": "2004-06-12",
+      "end_date": "2004-07-04",
+      "color": "#f37121",
+      "team_count": 16,
+      "venue_count": 10,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Opening Ceremony",
+        "filename": "Euro2004OpeningCeremony.jpg",
+        "text": "Opening ceremony at the Estádio do Dragão in Porto"
+      },
+      {
+        "name": "Final",
+        "filename": "Charisteas'_Siegtreffer_im_Finale_der_Euro_2004.jpg",
+        "text": "Angelos Charisteas (first from left with white shirt), scoring Greece's winner against Portugal in the final."
+      },
+      {
+        "name": "Player of the Tournament",
+        "filename": "Theodoros_Zagorakis.jpg",
+        "text": "Greece's Theodoros Zagorakis was selected as the Player of the Tournament."
+      },
+      {
+        "name": "Quarter-final",
+        "filename": "Henrik_Larsson_Euro_2004.jpg",
+        "text": "Swedish striker Henrik Larsson taking a free kick against the Netherlands in the quarter-finals"
+      },
+      { "name": "Final programme", "filename": "Euro2004matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 2004 Final." }
+    ],
+    "final_standings": { "champions": "GRE", "runners_up": "POR", "semi_finalist1": "CZE", "semi_finalist2": "NED" },
+    "statistics": { "total_matches": 31, "total_goals": 77, "attendance": 1160802 },
+    "awards": {
+      "golden_boot": [{ "player": "Milan Baroš", "team": "CZE", "goals": 5 }],
+      "golden_ball": [{ "player": "Theodoros Zagorakis", "team": "GRE" }]
+    }
+  },
+  {
+    "id": "EURO2000",
+    "year": "2000",
+    "name": "UEFA Euro 2000 Belgium-Netherlands",
+    "short_name": "Belgium-Netherlands",
+    "tournament_type_id": "EURO",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "coefficient", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["BEL", "NED"],
+      "logo_filename": "Euro_2000.png",
+      "mascot_filename": "mascot_2000_benelucky.jpg",
+      "start_date": "2000-06-10",
+      "end_date": "2000-07-02",
+      "color": "#ee312f",
+      "team_count": 16,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Italy_-_France,_2_July_2000.jpg",
+        "text": "France and Italy before the final on 2 July"
+      },
+      {
+        "name": "Adidas Terrestra Silverstream",
+        "filename": "Euro_2000_ball.jpeg",
+        "text": "The match ball used at the tournament."
+      },
+      {
+        "name": "Italian supporters",
+        "filename": "Euro_2000_supporters.jpg",
+        "text": "Italian supporters during the final."
+      },
+      { "name": "Final programme", "filename": "Euro2000matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 2000 Final." }
+    ],
+    "final_standings": { "champions": "FRA", "runners_up": "ITA", "semi_finalist1": "NED", "semi_finalist2": "POR" },
+    "statistics": { "total_matches": 31, "total_goals": 85, "attendance": 1122833 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Savo Milošević", "team": "YUG-1992-2003", "goals": 5 },
+        { "player": "Patrick Kluivert", "team": "NED", "goals": 5 }
+      ],
+      "golden_ball": [{ "player": "Zinedine Zidane", "team": "FRA" }]
+    }
+  },
+  {
+    "id": "EURO1996",
+    "year": "1996",
+    "name": "UEFA Euro 1996 England",
+    "tournament_type_id": "EURO",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "coefficient", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["ENG"],
+      "logo_filename": "Euro_1996.png",
+      "mascot_filename": "mascot_1996_goaliath.jpg",
+      "start_date": "1996-06-08",
+      "end_date": "1996-06-30",
+      "color": "#2e5e9c",
+      "team_count": 16,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Group A",
+        "filename": "Scotland-holland_euro_96.jpg",
+        "text": "A Group A game Scotland vs Netherlands at Villa Park"
+      },
+      {
+        "name": "Group C",
+        "filename": "Stamps_of_Azerbaijan,_1996-423.jpg",
+        "text": "The match Czech Republic vs Germany, commemorated on an Azerbaijani postage stamp"
+      },
+      {
+        "name": "Wembley Stadium, London",
+        "filename": "The_Charity_Shield_of_1974_at_Wembley_-_geograph.org.uk_-_620498.jpg",
+        "text": "The Wembley Stadium held the final."
+      },
+      { "name": "Final programme", "filename": "Euro1996matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 1996 Final." }
+    ],
+    "final_standings": { "champions": "GER", "runners_up": "CZE", "semi_finalist1": "ENG", "semi_finalist2": "FRA" },
+    "statistics": { "total_matches": 31, "total_goals": 64, "attendance": 1275857 },
+    "awards": {
+      "golden_boot": [{ "player": "Alan Shearer", "team": "ENG", "goals": 5 }],
+      "golden_ball": [{ "player": "Matthias Sammer", "team": "GER" }]
+    }
+  },
+  {
+    "id": "EURO1992",
+    "year": "1992",
+    "name": "UEFA Euro 1992 Sweden",
+    "short_name": "Sweden",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["SWE"],
+      "logo_filename": "Euro_1992.png",
+      "mascot_filename": "mascot_1992.jpg",
+      "start_date": "1992-06-10",
+      "end_date": "1992-06-26",
+      "color": "#00aeef",
+      "team_count": 8,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Ullevi, Gothenburg",
+        "filename": "Nyaullevi.jpg",
+        "text": "The Ullevi held the final."
+      },
+      {
+        "name": "Råsunda Stadium, Solna",
+        "filename": "Råsunda_Stadium.jpg",
+        "text": "The Råsunda Stadium held the opening match."
+      },
+      {
+        "name": "Malmö Stadion, Malmö",
+        "filename": "Malmö_stadion.jpg",
+        "text": "The Malmö Stadion held Group 1 matches."
+      },
+      { "name": "Final programme", "filename": "Euro1992matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 1992 Final." }
+    ],
+    "final_standings": { "champions": "DEN", "runners_up": "GER", "semi_finalist1": "NED", "semi_finalist2": "SWE" },
+    "statistics": { "total_matches": 15, "total_goals": 32, "attendance": 430111 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Dennis Bergkamp", "team": "NED", "goals": 3 },
+        { "player": "Tomas Brolin", "team": "SWE", "goals": 3 },
+        { "player": "Henrik Larsen", "team": "DEN", "goals": 3 },
+        { "player": "Karl-Heinz Riedle", "team": "GER", "goals": 3 }
+      ]
+    }
+  },
+  {
+    "id": "EURO1988",
+    "year": "1988",
+    "name": "UEFA Euro 1988 Germany FR",
+    "short_name": "Germany",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["GER-1949-1990"],
+      "logo_filename": "Euro_1988.png",
+      "mascot_filename": "mascot_1988_berni.jpg",
+      "start_date": "1988-06-10",
+      "end_date": "1988-06-25",
+      "color": "#000000",
+      "team_count": 8,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Munich Olympic Stadium",
+        "filename": "Olympiastadion_Muenchen.jpg",
+        "text": "Munich Olympic stadium, view from Olympic Tower. The Munich Olympic stadium held the final."
+      },
+      {
+        "name": "Rheinstadion, Düsseldorf",
+        "filename": "Altes_Rheinstadion.jpg",
+        "text": "The Rheinstadion held the opening match."
+      },
+      {
+        "name": "Neckarstadion, Stuttgart",
+        "filename": "Gottlieb-Daimler-Stadion_Stuttgart_innen.jpeg",
+        "text": "The Neckarstadion held the semi-final match Soviet Union vs Italy."
+      },
+      { "name": "Final programme", "filename": "Euro1988matchprogramme.jpg", "text": "This is the official match programme for the UEFA Euro 1988 Final." }
+    ],
+    "final_standings": { "champions": "NED", "runners_up": "URS", "semi_finalist1": "GER-1949-1990", "semi_finalist2": "ITA" },
+    "statistics": { "total_matches": 15, "total_goals": 34, "attendance": 849844 },
+    "awards": { "golden_boot": [{ "player": "Marco van Basten", "team": "NED", "goals": 5 }] }
+  },
+  {
+    "id": "EURO1984",
+    "year": "1984",
+    "name": "UEFA Euro 1984 France",
+    "short_name": "France",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["FRA"],
+      "logo_filename": "Euro_1984.png",
+      "mascot_filename": "mascot_1984_peno.jpg",
+      "start_date": "1984-06-12",
+      "end_date": "1984-06-27",
+      "color": "#0077c0",
+      "team_count": 8,
+      "venue_count": 7,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Parc des Princes, Paris",
+        "filename": "PSG-Nantes_Parc_des_Princes_06.jpg",
+        "text": "The Parc des Princes held the final"
+      },
+      {
+        "name": "Stade Vélodrome, Marseille",
+        "filename": "Vue_du_virage_Depé.jpg",
+        "text": "The Stade Vélodrome held the semi-final France vs Portugal"
+      },
+      {
+        "name": "Stade de Gerland, Lyon",
+        "filename": "Stade-Gerland-RWC2007.jpeg",
+        "text": "The Stade de Gerland held the semi-final Denmark vs Spain."
+      },
+      {
+        "name": "Stade Geoffroy-Guichard, Saint-Étienne",
+        "filename": "Geoffroy_Guichard_ASSE.jpeg",
+        "text": "The Stade Geoffroy-Guichard held the group matches."
+      }
+    ],
+    "final_standings": { "champions": "FRA", "runners_up": "ESP", "semi_finalist1": "DEN", "semi_finalist2": "POR" },
+    "statistics": { "total_matches": 15, "total_goals": 41, "attendance": 599669 },
+    "awards": { "golden_boot": [{ "player": "Michel Platini", "team": "FRA", "goals": 9 }] }
+  },
+  {
+    "id": "EURO1980",
+    "year": "1980",
+    "name": "UEFA Euro 1980 Italy",
+    "short_name": "Italy",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "details": {
+      "host": ["ITA"],
+      "logo_filename": "Euro_1980.png",
+      "mascot_filename": "mascot_euro_80_pinocchio.jpeg",
+      "start_date": "1980-06-11",
+      "end_date": "1980-06-22",
+      "color": "#00ab4e",
+      "team_count": 8,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Stadio Olimpico, Rome",
+        "filename": "Stadio_Olimpico_2008.jpeg",
+        "text": "The Stadio Olimpico held the final"
+      },
+      {
+        "name": "Stadio San Paolo, Naples",
+        "filename": "Stadio_San_Paolo.jpg",
+        "text": "The Stadio San Paolo held the third-place match."
+      },
+      {
+        "name": "San Siro, Milan",
+        "filename": "Stadio_Meazza.jpg",
+        "text": "The San Siro held the group matches."
+      },
+      {
+        "name": "Stadio Comunale, Turin",
+        "filename": "Stadio_Olimpico_in_Turin,_2007,_Torino_v_Peñarol.jpg",
+        "text": "The Stadio Comunale held the group matches."
+      },
+      {
+        "name": "Euro 1980",
+        "filename": "UEFA_Euro_1980_logo.svg",
+        "text": "Alternate tournament logo"
+      }
+    ],
+    "final_standings": { "champions": "GER-1949-1990", "runners_up": "BEL", "third_place": "TCH", "fourth_place": "ITA" },
+    "statistics": { "total_matches": 14, "total_goals": 27, "attendance": 345463 },
+    "awards": { "golden_boot": [{ "player": "Klaus Allofs", "team": "GER-1949-1990", "goals": 3 }] }
+  },
+  {
+    "id": "EURO1976",
+    "year": "1976",
+    "name": "UEFA Euro 1976 SFR Yugoslavia",
+    "short_name": "Yugoslavia",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "details": {
+      "host": ["YUG-1945-1992"],
+      "logo_filename": "Euro_1976.png",
+      "start_date": "1976-06-16",
+      "end_date": "1976-06-20",
+      "color": "#0066b3",
+      "team_count": 4,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Red Star Stadium, Belgrade",
+        "filename": "Fk_Red_Star_stadium.jpg",
+        "text": "The Red Star Stadium, aka Marakana, held the final."
+      },
+      {
+        "name": "Stadion Maksimir, Zagreb",
+        "filename": "Maksimirski_stadion_Zagreb.jpg",
+        "text": "The Stadion Maksimir held the semi-final Czechoslovakia vs Netherlands."
+      },
+      {
+        "name": "Euro 1976",
+        "filename": "UEFA_Euro_1976_logo.svg",
+        "text": "Alternate tournament logo"
+      }
+    ],
+    "final_standings": { "champions": "TCH", "runners_up": "GER-1949-1990", "third_place": "NED", "fourth_place": "YUG-1945-1992" },
+    "statistics": { "total_matches": 4, "total_goals": 19, "attendance": 106087 },
+    "awards": { "golden_boot": [{ "player": "Dieter Müller", "team": "GER-1949-1990", "goals": 4 }] }
+  },
+  {
+    "id": "EURO1972",
+    "year": "1972",
+    "name": "UEFA Euro 1972 Belgium",
+    "short_name": "Belgium",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "details": {
+      "host": ["BEL"],
+      "logo_filename": "Euro_1972.png",
+      "start_date": "1972-06-14",
+      "end_date": "1972-06-18",
+      "color": "#dc4128",
+      "team_count": 4,
+      "venue_count": 4,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Heysel Stadium, Brussels",
+        "filename": "Stade_Roi_Baudouin.jpeg",
+        "text": "The Heysel Stadium held the final."
+      },
+      {
+        "name": "Stade Maurice Dufrasne, Liège",
+        "filename": "Standard_liege_kaerjeng02.jpg",
+        "text": "The Stade Maurice Dufrasne held the third-place match."
+      },
+      {
+        "name": "Stade Émile Versé, Brussels",
+        "filename": "3564constantVandenStockStadium.jpg",
+        "text": "The Stade Émile Versé held the semi-final Hungary vs Soviet Union."
+      },
+      {
+        "name": "Bosuilstadion, Antwerp",
+        "filename": "20110720_bosuil.jpg",
+        "text": "The Bosuilstadion held the semi-final Belgium vs Germany FR."
+      }
+    ],
+    "final_standings": { "champions": "GER-1949-1990", "runners_up": "URS", "third_place": "BEL", "fourth_place": "HUN" },
+    "statistics": { "total_matches": 4, "total_goals": 10, "attendance": 121880 },
+    "awards": { "golden_boot": [{ "player": "Gerd Müller", "team": "GER-1949-1990", "goals": 4 }] }
+  },
+  {
+    "id": "EURO1968",
+    "year": "1968",
+    "name": "UEFA Euro 1968 Italy",
+    "short_name": "Italy",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "details": {
+      "host": ["ITA"],
+      "logo_filename": "Euro_1968.png",
+      "start_date": "1968-06-05",
+      "end_date": "1968-06-10",
+      "color": "#00a766",
+      "team_count": 4,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "UEFA_Euro_1968_Final_-_Italy.jpg",
+        "text": "The Italian line-up on the pitch prior to the start of the final replay"
+      },
+      {
+        "name": "Champion",
+        "filename": "UEFA_Euro_1968_Final_-_Italian_captain_Giacinto_Facchetti_with_the_trophy.jpg",
+        "text": "Italian captain Giacinto Facchetti with the trophy"
+      },
+      {
+        "name": "Stadio Olimpico, Rome",
+        "filename": "Stadio_Olimpico_2008.jpeg",
+        "text": "The Stadio Olimpico held the final and the replay."
+      },
+      {
+        "name": "Stadio Comunale, Florence",
+        "filename": "Soccer_in_Florence,_Italy,_2007.jpg",
+        "text": "The Stadio Comunale held the semi-final Yugoslavia vs England."
+      }
+    ],
+    "final_standings": { "champions": "ITA", "runners_up": "YUG-1945-1992", "third_place": "ENG", "fourth_place": "URS" },
+    "statistics": { "total_matches": 5, "total_goals": 7, "attendance": 260916 },
+    "awards": { "golden_boot": [{ "player": "Dragan Džajić", "team": "YUG-1945-1992", "goals": 2 }] }
+  },
+  {
+    "id": "EURO1964",
+    "year": "1964",
+    "name": "UEFA Euro 1964 Spain",
+    "short_name": "Spain",
+    "original_name": "1964 European Nations' Cup",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "details": {
+      "host": ["ESP-1945-1977"],
+      "logo_filename": "Euro_1964.png",
+      "start_date": "1964-06-17",
+      "end_date": "1964-06-21",
+      "color": "#d82c20",
+      "team_count": 4,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Santiago Bernabéu, Madrid",
+        "filename": "The_Santiago_Bernabeu_Stadium_-_U-g-g-B-o-y.jpg",
+        "text": "The Santiago Bernabéu held the final"
+      },
+      {
+        "name": "Camp Nou, Barcelona",
+        "filename": "Camp_Nou_FC_Barcelona.jpeg",
+        "text": "The Camp Nou held the semi-final Denmark vs Soviet Union."
+      }
+    ],
+    "final_standings": { "champions": "ESP-1945-1977", "runners_up": "URS", "third_place": "HUN", "fourth_place": "DEN" },
+    "statistics": { "total_matches": 4, "total_goals": 13, "attendance": 156253 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Ferenc Bene", "team": "HUN", "goals": 2 },
+        { "player": "Dezső Novák", "team": "HUN", "goals": 2 },
+        { "player": "Jesús María Pereda", "team": "ESP-1945-1977", "goals": 2 }
+      ]
+    }
+  },
+  {
+    "id": "EURO1960",
+    "year": "1960",
+    "name": "UEFA Euro 1960 France",
+    "short_name": "France",
+    "original_name": "1960 European Nations' Cup",
+    "tournament_type_id": "EURO",
+    "points_for_win": 2,
+    "details": {
+      "host": ["FRA"],
+      "logo_filename": "Euro_1960.png",
+      "start_date": "1960-07-06",
+      "end_date": "1960-07-10",
+      "color": "#0077c0",
+      "team_count": 4,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Parc des Princes, Paris",
+        "filename": "Paris-Parc-des-Princes.jpg",
+        "text": "The Parc des Princes held the final"
+      },
+      {
+        "name": "Stade Vélodrome, Marseille",
+        "filename": "Le_Stade_vélodrome_de_Marseille,_le_13_juin_1937.jpg",
+        "text": "The Stade Vélodrome held the semi-final Czechoslovakia vs Soviet Union."
+      }
+    ],
+    "final_standings": { "champions": "URS", "runners_up": "YUG-1945-1992", "third_place": "TCH", "fourth_place": "FRA" },
+    "statistics": { "total_matches": 4, "total_goals": 17, "attendance": 78958 },
+    "awards": {
+      "golden_boot": [
+        { "player": "François Heutte", "team": "FRA", "goals": 2 },
+        { "player": "Valentin Ivanov", "team": "URS", "goals": 2 },
+        { "player": "Viktor Ponedelnik", "team": "URS", "goals": 2 },
+        { "player": "Milan Galić", "team": "YUG-1945-1992", "goals": 2 },
+        { "player": "Dražan Jerković", "team": "YUG-1945-1992", "goals": 2 }
+      ]
+    }
+  }
+]

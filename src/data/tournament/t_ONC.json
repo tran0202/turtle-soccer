@@ -1,0 +1,420 @@
+[
+  {
+    "id": "ONC2016",
+    "year": "2016",
+    "name": "OFC Nations Cup Papua New Guinea 2016",
+    "short_name": "Papua New Guinea 2016",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "head2headawaygoals", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["PNG"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "2016-05-28",
+      "end_date": "2016-06-11",
+      "color": "#e1151e",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Sir John Guise Stadium, Port Moresby",
+        "filename": "Sir._John_Guise_Stadium.jpg",
+        "text": "The Sir John Guise Stadium hosted all the matches."
+      },
+      {
+        "name": "Port Moresby, Papua New Guinea",
+        "filename": "POM_Downtown.jpg",
+        "text": "Downtown"
+      }
+    ],
+    "final_standings": { "champions": "NZL", "runners_up": "PNG", "semi_finalist1": "NCL", "semi_finalist2": "SOL" },
+    "statistics": { "total_matches": 15, "total_goals": 48, "attendance": 41996 },
+    "awards": {
+      "golden_boot": [{ "player": "Raymond Gunemba", "team": "PNG", "goals": 5 }],
+      "golden_ball": [{ "player": "David Muta", "team": "PNG" }],
+      "golden_glove": [{ "player": "Stefan Marinovic", "team": "NZL" }],
+      "fair_play_team": ["NCL"]
+    }
+  },
+  {
+    "id": "ONC2012",
+    "year": "2012",
+    "name": "OFC Nations Cup Solomon Islands 2012",
+    "short_name": "Solomon Islands 2012",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SOL"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "2012-06-01",
+      "end_date": "2012-06-10",
+      "color": "#086349",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Lawson Tama Stadium, Honiaray",
+        "filename": "Lawson_Tama_Stadium.jpg",
+        "text": "The national stadium of Solomon Islands, during the Olympics Torch Relay"
+      },
+      {
+        "name": "Honiara, Solomon Islands",
+        "filename": "Honiara_View.jpg",
+        "text": "Honiara, Solomon Islands"
+      }
+    ],
+    "final_standings": { "champions": "TAH", "runners_up": "NCL", "third_place": "NZL", "fourth_place": "SOL" },
+    "statistics": { "total_matches": 16, "total_goals": 64, "attendance": 133700 },
+    "awards": {
+      "golden_boot": [{ "player": "Jacques Haeko", "team": "NCL", "goals": 6 }],
+      "golden_ball": [{ "player": "Nicolas Vallar", "team": "TAH" }],
+      "golden_glove": [{ "player": "Rocky Nyikeine", "team": "NCL" }],
+      "fair_play_team": ["SOL"]
+    }
+  },
+  {
+    "id": "ONC2008",
+    "year": "2008",
+    "name": "OFC Nations Cup 2008",
+    "short_name": "2008",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "show_match_year": true, 
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "logo_filename": "OFCcup.png",
+      "start_date": "2007-10-17",
+      "end_date": "2008-11-19",
+      "color": "#192e71",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Westpac Stadium, Wellington",
+        "filename": "Westpac_Trust_stadium_viewed_from_Wadestown.jpg",
+        "text": "Westpac Stadium, Wellington"
+      },
+      {
+        "name": "Wellington, New Zealand",
+        "filename": "Lambton_Harbour,_Wellington_(cropped).jpg",
+        "text": "A vista of Lambton Harbour, Wellington City"
+      },
+      {
+        "name": "North Harbour Stadium, Auckland",
+        "filename": "North_Harbour_Stadium_East_Side.jpg",
+        "text": "North Harbour Stadium, Auckland"
+      },
+      {
+        "name": "Auckland, New Zealand",
+        "filename": "Auckland_skyline_2019.jpg",
+        "text": "Auckland, New Zealand"
+      }
+    ],
+    "final_standings": { "champions": "NZL", "runners_up": "NCL-1973-2008", "third_place": "FIJ", "fourth_place": "VAN" },
+    "statistics": { "total_matches": 12, "total_goals": 39 },
+    "awards": {
+      "golden_boot": [{ "player": "Shane Smeltz", "team": "NZL", "goals": 8 }]
+    }
+  },
+  {
+    "id": "ONC2004",
+    "year": "2004",
+    "name": "OFC Nations Cup Australia 2004",
+    "short_name": "Australia 2004",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["AUS"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "2004-05-29",
+      "end_date": "2004-10-12",
+      "color": "#178338",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Sydney Football Stadium, Sydney",
+        "filename": "Allianz_Stadium_-_13_October_2012.jpg",
+        "text": "The Sydney Football Stadium hosted the 2nd-leg final."
+      },
+      {
+        "name": "Lawson Tama Stadium, Honiara",
+        "filename": "Lawson_Tama_Stadium.jpg",
+        "text": "The Lawson Tama Stadium hosted the 1st-leg final."
+      },
+      {
+        "name": "Hindmarsh Stadium, Adelaide",
+        "filename": "HindmarshStadium.jpeg",
+        "text": "The Hindmarsh Stadium hosted several matches of the final tournament."
+      },
+      {
+        "name": "Marden Sports Complex, Adelaide",
+        "filename": "Marden_Sports_Complex.jpg",
+        "text": "The Marden Sports Complex hosted several matches of the final tournament."
+      }
+    ],
+    "final_standings": { "champions": "AUS", "runners_up": "SOL", "third_place": "NZL", "fourth_place": "FIJ" },
+    "statistics": { "total_matches": 17, "total_goals": 69 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Tim Cahill", "team": "AUS", "goals": 6 },
+        { "player": "Vaughan Coveny", "team": "NZL", "goals": 6 }
+      ]
+    }
+  },
+  {
+    "id": "ONC2002",
+    "year": "2002",
+    "name": "OFC Nations Cup New Zealand 2002",
+    "short_name": "New Zealand 2002",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["NZL"],
+      "logo_filename": "OFCcup.png",
+      "mascot_filename": "OFC3-copy-2002.jpeg",
+      "start_date": "2002-07-05",
+      "end_date": "2002-07-14",
+      "color": "#1d368a",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Ericsson Stadium, Auckland",
+        "filename": "EricssonStadium00.jpg",
+        "text": "The Ericsson Stadium hosted the final."
+      },
+      {
+        "name": "Auckland, New Zealand",
+        "filename": "Auckland_Habour_Bridge_(9380408897).jpg",
+        "text": "This angle of the Auckland Habour Bridge was taken from the North Shore looking back over the Auckland City."
+      },
+      {
+        "name": "North Harbour Stadium, Albany",
+        "filename": "North_Harbour_Stadium_East_Side.jpg",
+        "text": "The North Harbour Stadium hosted group B matches."
+      },
+      {
+        "name": "Albany, New Zealand",
+        "filename": "Lucas_Creek_from_Kell_Park_platform.jpg",
+        "text": "Lucas Creek in Kell Park, Albany"
+      }
+    ],
+    "final_standings": { "champions": "NZL", "runners_up": "AUS", "third_place": "TAH", "fourth_place": "VAN" },
+    "statistics": { "total_matches": 16, "total_goals": 64 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Bobby Despotovski", "team": "AUS", "goals": 5 },
+        { "player": "Joel Porter", "team": "AUS", "goals": 5 },
+        { "player": "Chris Killen", "team": "NZL", "goals": 5 },
+        { "player": "Jeff Campbell", "team": "NZL", "goals": 5 }
+      ]
+    }
+  },
+  {
+    "id": "ONC2000",
+    "year": "2000",
+    "name": "OFC Nations Cup Tahiti 2000",
+    "short_name": "Tahiti 2000",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["TAH"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "2000-06-19",
+      "end_date": "2000-06-28",
+      "color": "#fe0000",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Papeete, Tahiti",
+        "filename": "FP-papeete-hafen-1.jpg",
+        "text": "Papeete's city center and marina"
+      }
+    ],
+    "final_standings": { "champions": "AUS", "runners_up": "NZL", "third_place": "SOL", "fourth_place": "VAN" },
+    "statistics": { "total_matches": 10, "total_goals": 48 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Craig Foster", "team": "AUS", "goals": 5 },
+        { "player": "Clayton Zane", "team": "AUS", "goals": 5 }
+      ]
+    }
+  },
+  {
+    "id": "ONC1998",
+    "year": "1998",
+    "name": "OFC Nations Cup Australia 1998",
+    "short_name": "Australia 1998",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["AUS"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "1998-09-25",
+      "end_date": "1998-10-04",
+      "color": "#178338",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Lang Park, Brisbane",
+        "filename": "Suncorp_Stadium,_Milton_Road_facade,_Brisbane_05.jpg",
+        "text": "The Lang Park hosted all the matches of the tournament."
+      },
+      {
+        "name": "Brisbane, Australia",
+        "filename": "Skylines_of_Brisbane_in_winter_misty_morning_seen_from_Kangaroo_Point,_Queensland_04.jpg",
+        "text": "Brisbane, Australia"
+      }
+    ],
+    "final_standings": { "champions": "NZL", "runners_up": "AUS", "third_place": "FIJ", "fourth_place": "TAH" },
+    "statistics": { "total_matches": 10, "total_goals": 52 },
+    "awards": {
+      "golden_boot": [{ "player": "Damian Mori", "team": "AUS", "goals": 10 }]
+    }
+  },
+  {
+    "id": "ONC1996",
+    "year": "1996",
+    "name": "OFC Nations Cup 1996",
+    "short_name": "1996",
+    "tournament_type_id": "ONC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "no_third_place": true,
+    "show_match_year": true,
+    "details": { "logo_filename": "OFCcup.png", "start_date": "1995-11-10", "end_date": "1996-11-01", "color": "#192e71", "team_count": 4, "confed_count": 1 },
+    "hero_images": [
+      {
+        "name": "Bruce Stadium, Canberra",
+        "filename": "BruceStadium19032005.jpeg",
+        "text": "The Bruce Stadium hosted the 2nd-leg of the final."
+      },
+      {
+        "name": "Lawson Tama Stadium, Honiara",
+        "filename": "Lawson_Tama_Stadium.jpg",
+        "text": "The Lawson Tama Stadium hosted the 1st-leg of the semi-final Solomon Islands vs Tahiti."
+      },
+      {
+        "name": "Queen Elizabeth II Park, Christchurch",
+        "filename": "QEII1.jpg",
+        "text": "The Queen Elizabeth II Park hosted the 1st-leg of the semi-final New Zealand vs Australia."
+      },
+      {
+        "name": "Christchurch, New Zealand",
+        "filename": "Christchurch_Skyline.jpg",
+        "text": "Christchurch, New Zealand"
+      }
+    ],
+    "final_standings": { "champions": "AUS", "runners_up": "TAH", "semi_finalist1": "NZL", "semi_finalist2": "SOL" },
+    "statistics": { "total_matches": 6, "total_goals": 18 },
+    "awards": {
+      "golden_boot": [{ "player": "Kris Trajanovski", "team": "AUS", "goals": 7 }]
+    }
+  },
+  {
+    "id": "ONC1980",
+    "year": "1980",
+    "name": "Oceania Nations Cup New Caledonia 1980",
+    "short_name": "New Caledonia 1980",
+    "tournament_type_id": "ONC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["NCL-1973-2008"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "1980-02-24",
+      "end_date": "1980-03-01",
+      "color": "#009543",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Nouméa, New Caledonia",
+        "filename": "Noumea_centre_1402561139_375c811796_o.jpg",
+        "text": "City centre and Nouméa Cathedral"
+      }
+    ],
+    "final_standings": { "champions": "AUS", "runners_up": "TAH-1794-1984", "third_place": "NCL-1973-2008", "fourth_place": "FIJ" },
+    "statistics": { "total_matches": 14, "total_goals": 94 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Ian Hunter", "team": "AUS", "goals": 5 },
+        { "player": "Eddie Krncevic", "team": "AUS", "goals": 5 }
+      ]
+    }
+  },
+  {
+    "id": "ONC1973",
+    "year": "1973",
+    "name": "Oceania Nations Cup New Zealand 1973",
+    "short_name": "New Zealand 1973",
+    "tournament_type_id": "ONC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["NZL"],
+      "logo_filename": "OFCcup.png",
+      "start_date": "1973-02-17",
+      "end_date": "1973-02-24",
+      "color": "#1d368a",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Newmarket Park, Auckland",
+        "filename": "Southwestern_Entrance_To_Newmarket_Park.jpg",
+        "text": "Newmarket Park, Auckland"
+      },
+      {
+        "name": "Auckland, New Zealand",
+        "filename": "Auckland,_Albert_Park.jpg",
+        "text": "Albert Park in Auckland"
+      }
+    ],
+    "final_standings": { "champions": "NZL", "runners_up": "TAH-1794-1984", "third_place": "NCL-1973-2008", "fourth_place": "VAN-1953-1980" },
+    "statistics": { "total_matches": 12, "total_goals": 37 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Segin Wayewol (NCL)", "team": "NCL-1973-2008", "goals": 3 },
+        { "player": "Alan Marley", "team": "NZL", "goals": 3 },
+        { "player": "Erroll Bennett (TAH)", "team": "TAH-1794-1984", "goals": 3 }
+      ]
+    }
+  }
+]

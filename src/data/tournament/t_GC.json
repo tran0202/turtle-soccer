@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "GC2021",
+    "year": "2021",
+    "name": "Gold Cup 2021",
+    "short_name": "2021",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "logo_filename": "CONCACAF_Gold_Cup_2021.png",
+      "start_date": "2021-07-10",
+      "end_date": "2021-08-01",
+      "color": "#d39534",
+      "team_count": 16,
+      "confed_count": 2
+    }
+  },
+  {
+    "id": "GC2019",
+    "year": "2019",
+    "name": "Gold Cup 2019 United States-Costa Rica-Jamaica",
+    "short_name": "2019 United States-Costa Rica-Jamaica",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA", "CRC", "JAM"],
+      "logo_filename": "2019_CONCACAF_Gold_Cup.svg",
+      "start_date": "2019-06-15",
+      "end_date": "2019-07-07",
+      "color": "#e6bf7a",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 17,
+      "city_count": 16
+    },
+    "hero_images": [
+      {
+        "name": "Golden Ball",
+        "filename": "Raúl_Jiménez.jpg",
+        "text": "Forward Raúl Jiménez scored five goals for Mexico in the tournament."
+      },
+      {
+        "name": "Gyasi Zardes, United States",
+        "filename": "USMNT_vs._Trinidad_and_Tobago_(48124887166)_(cropped)_3.jpg",
+        "text": "Gyasi Zardes scored three times for the United States during the group stage."
+      },
+      {
+        "name": "Jonathan dos Santos, Mexico",
+        "filename": "Mex-Kor_(33)_(cropped).jpg",
+        "text": "Jonathan dos Santos scored the only goal of the final"
+      },
+      { "name": "Soldier Field, Chicago", "filename": "UsavsHonduras.jpeg", "text": "The Soldier Field in Chicago hosted the final" }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "USA", "semi_finalist1": "HAI", "semi_finalist2": "JAM" },
+    "statistics": { "total_matches": 31, "total_goals": 96, "attendance": 1043168 },
+    "awards": {
+      "golden_boot": [{ "player": "Jonathan David", "team": "CAN", "goals": 6 }],
+      "golden_ball": [{ "player": "Raúl Jiménez", "team": "MEX" }],
+      "best_young_player": { "player": "Christian Pulisic", "team": "USA" },
+      "golden_glove": [{ "player": "Guillermo Ochoa", "team": "MEX" }],
+      "fair_play_team": ["USA"]
+    }
+  },
+  {
+    "id": "GC2017",
+    "year": "2017",
+    "name": "Gold Cup 2017 United States",
+    "short_name": "2017 United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2017.png",
+      "start_date": "2017-07-07",
+      "end_date": "2017-07-26",
+      "color": "#eb1821",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 14,
+      "city_count": 14
+    },
+    "hero_images": [
+      {
+        "name": "Opening game",
+        "filename": "French_Guiana_on_the_Big_Stage_at_Long_Last.jpg",
+        "text": "In Red Bull Arena, French Guiana is in action against Canada as French Guiana attempts a corner kick during a 2017 CONCACAF Gold Cup match on July 7, 2017. This match was not only the opening game of the 2017 CONCACAF Gold Cup, but it was also the first every match at a major international tournament for French Guiana."
+      },
+      {
+        "name": "Honduras vs Costa Rica",
+        "filename": "Honduras_and_Costa_Rica_in_a_familiar_rivalry_in_New_Jersey.jpg",
+        "text": "Action during the 2017 CONCACAF Gold Cup match between Honduras and Costa Rica."
+      },
+      {
+        "name": "Levi's Stadium, Santa Clara",
+        "filename": "Entering_Levis_Stadium.jpeg",
+        "text": "The Levi's Stadium hosted the final."
+      },
+      {
+        "name": "AT&T Stadium, Arlington",
+        "filename": "Cowboys_Stadium_field.jpg",
+        "text": "The AT&T Stadium hosted the semi-final Costa Rica vs United States."
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "JAM", "semi_finalist1": "CRC", "semi_finalist2": "MEX" },
+    "statistics": { "total_matches": 25, "total_goals": 55, "attendance": 875667 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Alphonso Davies", "team": "CAN", "goals": 3 },
+        { "player": "Kévin Parsemain", "team": "MTQ-2019", "goals": 3 },
+        { "player": "Jordan Morris", "team": "USA", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Michael Bradley", "team": "USA" }],
+      "best_young_player": { "player": "Alphonso Davies", "team": "CAN" },
+      "golden_glove": [{ "player": "Andre Blake", "team": "JAM" }],
+      "fair_play_team": ["USA"]
+    }
+  },
+  {
+    "id": "GC2015",
+    "year": "2015",
+    "name": "Gold Cup 2015 United States-Canada",
+    "short_name": "United States-Canada",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA", "CAN"],
+      "logo_filename": "gc_2015.png",
+      "start_date": "2015-07-07",
+      "end_date": "2015-07-26",
+      "color": "#f72337",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 14,
+      "city_count": 14
+    },
+    "hero_images": [
+      {
+        "name": "United States vs Cuba",
+        "filename": "USMNT_players_lineup_vs_Cuba_2015_Gold_Cup_Baltimore.jpg",
+        "text": "USMNT Gold Cup Baltimore"
+      },
+      {
+        "name": "Cuba",
+        "filename": "CubaUSACGC2015_(2).jpg",
+        "text": "CONCACAF Quarter-Finals (USA vs Cuba) - Baltimore, MD (July 2015) Cuba national football team"
+      },
+      {
+        "name": "Panama",
+        "filename": "Panamá_celebra_su_victoria_en_penaltis.jpg",
+        "text": "Panama national team during their celebration against Trinidad & Tobago in 2015 Gold Cup."
+      },
+      {
+        "name": "Chris Wondolowski, United States",
+        "filename": "Chris_Wondolowski2.jpg",
+        "text": "Chris Wondolowski warming up for the Gold Cup game against Panama on 13JUL2015 at Sporting Park, Kansas City, Kansas."
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "JAM", "third_place": "PAN", "fourth_place": "USA" },
+    "statistics": { "total_matches": 26, "total_goals": 62, "attendance": 1090396 },
+    "awards": {
+      "golden_boot": [{ "player": "Clint Dempsey", "team": "USA", "goals": 7 }],
+      "golden_ball": [{ "player": "Andrés Guardado", "team": "MEX" }],
+      "best_young_player": { "player": "Jesús Manuel Corona", "team": "MEX" },
+      "golden_glove": [{ "player": "Brad Guzan", "team": "USA" }],
+      "fair_play_team": ["JAM"]
+    }
+  },
+  {
+    "id": "GC2013",
+    "year": "2013",
+    "name": "Gold Cup 2013 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2013.png",
+      "start_date": "2013-07-07",
+      "end_date": "2013-07-28",
+      "color": "#0f246a",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 13,
+      "city_count": 13
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Gold_Cup_2013_final_in_Chicago_(cropped).jpeg",
+        "text": "USA vs Panama, Gold Cup 2013 final at Soldier Field in Chicago, July 28, 2013"
+      },
+      {
+        "name": "Soldier Field, Chicago",
+        "filename": "UsavsHonduras.jpeg",
+        "text": "The Soldier Field hosted the final"
+      },
+      {
+        "name": "Georgia Dome, Atlanta",
+        "filename": "VT_Hokies_Marching_Virginians.jpg",
+        "text": "The Georgia Dome hosted 2 quarter-finals"
+      },
+      {
+        "name": "M&T Bank Stadium, Baltimore",
+        "filename": "M&T_Bank_Stadium_DoD.jpg",
+        "text": "The M&T Bank Stadium hosted 2 quarter-finals"
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "PAN", "semi_finalist1": "HON", "semi_finalist2": "MEX" },
+    "statistics": { "total_matches": 25, "total_goals": 67, "attendance": 907208 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Gabriel Torres", "team": "PAN", "goals": 5 },
+        { "player": "Landon Donovan", "team": "USA", "goals": 5 },
+        { "player": "Chris Wondolowski", "team": "USA", "goals": 5 }
+      ],
+      "golden_ball": [{ "player": "Landon Donovan", "team": "USA" }],
+      "golden_glove": [{ "player": "Jaime Penedo", "team": "PAN" }],
+      "fair_play_team": ["PAN"]
+    }
+  },
+  {
+    "id": "GC2011",
+    "year": "2011",
+    "name": "Gold Cup 2011 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2011.png",
+      "start_date": "2011-06-05",
+      "end_date": "2011-06-25",
+      "color": "#e6bf7a",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 13,
+      "city_count": 13
+    },
+    "hero_images": [
+      {
+        "name": "Golden Boot",
+        "filename": "Chicharito.jpeg",
+        "text": "Mexico's Javier Hernández, commonly known as \"Chicharito\", earned the Golden Boot and MVP award, with seven goals in the tournament."
+      },
+      {
+        "name": "Rose Bowl, Pasadena",
+        "filename": "Rose_Bowl,_panorama.jpg",
+        "text": "The Rose Bowl hosted the final"
+      },
+      {
+        "name": "Reliant Stadium, Houston",
+        "filename": "Reliantstadium.jpg",
+        "text": "The Reliant Stadium hosted the semi-finals"
+      },
+      {
+        "name": "RFK Stadium, Washington, D.C.",
+        "filename": "Rfkstadium.png",
+        "text": "The RFK Stadium hosted 2 quarter-finals"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "USA", "semi_finalist1": "HON", "semi_finalist2": "PAN" },
+    "statistics": { "total_matches": 25, "total_goals": 80, "attendance": 1140602 },
+    "awards": {
+      "golden_boot": [{ "player": "Javier Hernández", "team": "MEX", "goals": 7 }],
+      "golden_ball": [{ "player": "Javier Hernández", "team": "MEX" }],
+      "golden_glove": [{ "player": "Noel Valladares", "team": "HON" }],
+      "fair_play_team": ["MEX"]
+    }
+  },
+  {
+    "id": "GC2009",
+    "year": "2009",
+    "name": "Gold Cup 2009 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2009.png",
+      "start_date": "2009-07-03",
+      "end_date": "2009-07-26",
+      "color": "#eb1821",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 13,
+      "city_count": 13
+    },
+    "hero_images": [
+      {
+        "name": "Semi-final",
+        "filename": "MexicovsCostaRica.jpeg",
+        "text": "Mexico vs Costa Rica"
+      },
+      {
+        "name": "Semi-final",
+        "filename": "UsavsHonduras.jpeg",
+        "text": "Usa vs Honduras"
+      },
+      {
+        "name": "Panama",
+        "filename": "Panamanationalteam.jpeg",
+        "text": "Panama national football team lined up for the national anthem at the 2009 CONCACAF Gold Cup, 12 July 2009."
+      },
+      {
+        "name": "Giants Stadium, East Rutherford",
+        "filename": "NY_Red_Bulls_vs_LA_Galaxy.jpg",
+        "text": "The Giants Stadium hosted the final"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "USA", "semi_finalist1": "CRC", "semi_finalist2": "HON" },
+    "statistics": { "total_matches": 25, "total_goals": 66, "attendance": 860046 },
+    "awards": {
+      "golden_boot": [{ "player": "Miguel Sabah", "team": "MEX", "goals": 4 }],
+      "golden_ball": [{ "player": "Giovani dos Santos", "team": "MEX" }],
+      "golden_glove": [{ "player": "Keylor Navas", "team": "CRC" }],
+      "fair_play_team": ["USA"]
+    }
+  },
+  {
+    "id": "GC2007",
+    "year": "2007",
+    "name": "Gold Cup 2007 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2007.png",
+      "start_date": "2007-06-06",
+      "end_date": "2007-06-24",
+      "color": "#0f246a",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Soldier Field, Chicago",
+        "filename": "UsavsHonduras.jpeg",
+        "text": "The Soldier Field hosted the final"
+      },
+      {
+        "name": "Reliant Stadium, Houston",
+        "filename": "Reliantstadium.jpg",
+        "text": "The Reliant Stadium hosted 2 quarter-finals"
+      },
+      {
+        "name": "Gillette Stadium, Foxborough",
+        "filename": "Gillette_Stadium02.jpg",
+        "text": "The Gillette Stadium hosted 2 quarter-finals"
+      },
+      {
+        "name": "The Home Depot Center, Carson",
+        "filename": "HomeDepotCenter1.jpg",
+        "text": "The Home Depot Center hosted group B matches"
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "MEX", "semi_finalist1": "CAN", "semi_finalist2": "GLP" },
+    "statistics": { "total_matches": 25, "total_goals": 64, "attendance": 921464 },
+    "awards": {
+      "golden_boot": [{ "player": "Carlos Pavón", "team": "HON", "goals": 5 }],
+      "golden_ball": [{ "player": "Julian de Guzman", "team": "CAN" }],
+      "golden_glove": [{ "player": "Franck Grandel", "team": "GLP" }],
+      "fair_play_team": ["HON"]
+    }
+  },
+  {
+    "id": "GC2005",
+    "year": "2005",
+    "name": "Gold Cup 2005 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2005.png",
+      "start_date": "2005-07-06",
+      "end_date": "2005-07-24",
+      "color": "#e6bf7a",
+      "team_count": 12,
+      "confed_count": 3,
+      "venue_count": 7,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Giants Stadium, East Rutherford",
+        "filename": "NY_Red_Bulls_vs_LA_Galaxy.jpg",
+        "text": "The Giants Stadium hosted the final"
+      },
+      {
+        "name": "Reliant Stadium, Houston",
+        "filename": "Reliantstadium.jpg",
+        "text": "The Reliant Stadium hosted 2 quarter-finals"
+      },
+      {
+        "name": "Qwest Field, Seattle",
+        "filename": "Soundersfcqwestfield.jpg",
+        "text": "The Qwest Field hosted group B matches"
+      },
+      {
+        "name": "Los Angeles Memorial Coliseum, Los Angeles",
+        "filename": "11-11-06-LA-Coliseum-USC-UO.jpg",
+        "text": "The Los Angeles Memorial Coliseum hosted group C matches"
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "PAN", "semi_finalist1": "COL", "semi_finalist2": "HON" },
+    "statistics": { "total_matches": 25, "total_goals": 73, "attendance": 340018 },
+    "awards": {
+      "golden_boot": [
+        { "player": "DaMarcus Beasley", "team": "USA", "goals": 3 },
+        { "player": "Landon Donovan", "team": "USA", "goals": 3 },
+        { "player": "Carlos Ruiz", "team": "GUA", "goals": 3 },
+        { "player": "Luis Tejada", "team": "PAN", "goals": 3 },
+        { "player": "Wilmer Velasquez", "team": "HON", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Luis Tejada", "team": "PAN" }],
+      "golden_glove": [{ "player": "Jaime Penedo", "team": "PAN" }],
+      "fair_play_team": ["HON"]
+    }
+  },
+  {
+    "id": "GC2003",
+    "year": "2003",
+    "name": "Gold Cup 2003 United States-Mexico",
+    "short_name": "United States-Mexico",
+    "tournament_type_id": "GC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA", "MEX"],
+      "logo_filename": "gc_2003.png",
+      "start_date": "2003-07-12",
+      "end_date": "2003-07-27",
+      "color": "#24a45f",
+      "team_count": 12,
+      "confed_count": 2,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Azteca, Mexico City",
+        "filename": "Estadio_Azteca_07a.jpg",
+        "text": "The Estadio Azteca hosted the final"
+      },
+      {
+        "name": "Orange Bowl, Miami",
+        "filename": "Orange_Bowl.jpg",
+        "text": "The Orange Bowl hosted the semi-final United States vs Brazil"
+      },
+      {
+        "name": "Gillette Stadium, Foxboro",
+        "filename": "Gillette_Stadium02.jpg",
+        "text": "The Gillette Stadium hosted the quarter-final United States vs Cuba"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "BRA", "third_place": "USA", "fourth_place": "CRC" },
+    "statistics": { "total_matches": 20, "total_goals": 50 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Walter Centeno", "team": "CRC", "goals": 4 },
+        { "player": "Landon Donovan", "team": "USA", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Jesús Arellano", "team": "MEX" }],
+      "golden_glove": [{ "player": "Oswaldo Sánchez", "team": "MEX" }],
+      "fair_play_team": ["USA"]
+    }
+  },
+  {
+    "id": "GC2002",
+    "year": "2002",
+    "name": "Gold Cup 2002 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2002.png",
+      "start_date": "2002-01-18",
+      "end_date": "2002-02-02",
+      "color": "#eb1821",
+      "team_count": 12,
+      "confed_count": 3,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Rose Bowl, Pasadena",
+        "filename": "Rose_Bowl,_panorama.jpg",
+        "text": "The Rose Bowl hosted the final"
+      },
+      {
+        "name": "Orange Bowl, Miami",
+        "filename": "Orange_Bowl.jpg",
+        "text": "The Orange Bowl hosted 2 quarter-finals"
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "CRC", "third_place": "CAN", "fourth_place": "KOR" },
+    "statistics": { "total_matches": 20, "total_goals": 39 },
+    "awards": {
+      "golden_boot": [{ "player": "Brian McBride", "team": "USA", "goals": 4 }],
+      "golden_ball": [{ "player": "Brian McBride", "team": "USA" }],
+      "golden_glove": [{ "player": "Lars Hirschfeld", "team": "CAN" }],
+      "fair_play_team": ["CRC"]
+    }
+  },
+  {
+    "id": "GC2000",
+    "year": "2000",
+    "name": "Gold Cup 2000 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_2000.png",
+      "start_date": "2000-02-12",
+      "end_date": "2000-02-27",
+      "color": "#0f246a",
+      "team_count": 12,
+      "confed_count": 3,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Los Angeles Memorial Coliseum, Los Angeles",
+        "filename": "Usctrojans.jpg",
+        "text": "The Los Angeles Memorial Coliseum hosted the final"
+      },
+      {
+        "name": "Qualcomm Stadium, San Diego",
+        "filename": "Qualcomm_Stadium.jpg",
+        "text": "The Qualcomm Stadium hosted the semi-final Colombia vs Peru"
+      },
+      {
+        "name": "Orange Bowl, Miami",
+        "filename": "Orange_Bowl.jpg",
+        "text": "The Orange Bowl hosted 2 quarter-finals"
+      }
+    ],
+    "final_standings": { "champions": "CAN", "runners_up": "COL", "semi_finalist1": "PER", "semi_finalist2": "TRI" },
+    "statistics": { "total_matches": 19, "total_goals": 55, "attendance": 695087 },
+    "awards": {
+      "golden_boot": [{ "player": "Carlo Corazzin", "team": "CAN", "goals": 4 }],
+      "golden_ball": [{ "player": "Craig Forrest", "team": "CAN" }],
+      "best_young_player": { "player": "Richard Hastings", "team": "CAN" },
+      "golden_glove": [{ "player": "Craig Forrest", "team": "CAN" }],
+      "fair_play_team": ["CAN"]
+    }
+  },
+  {
+    "id": "GC1998",
+    "year": "1998",
+    "name": "Gold Cup 1998 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_1998.png",
+      "start_date": "1998-02-01",
+      "end_date": "1998-02-15",
+      "color": "#e6bf7a",
+      "team_count": 10,
+      "confed_count": 2,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Los Angeles Memorial Coliseum, Los Angeles",
+        "filename": "11-11-06-LA-Coliseum-USC-UO.jpg",
+        "text": "The Los Angeles Memorial Coliseum hosted the final"
+      },
+      {
+        "name": "Orange Bowl, Miami",
+        "filename": "Orange_Bowl.jpg",
+        "text": "The Orange Bowl hosted group A matches"
+      },
+      {
+        "name": "Oakland Coliseum, Oakland",
+        "filename": "Oakland_Coliseum_field_from_Mt._Davis.jpeg",
+        "text": "The Oakland Coliseum hosted group C matches"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "USA", "third_place": "BRA", "fourth_place": "JAM" },
+    "statistics": { "total_matches": 16, "total_goals": 44 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Paulo Wanchope", "team": "CRC", "goals": 4 },
+        { "player": "Luis Hernández", "team": "MEX", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Kasey Keller", "team": "USA" }]
+    }
+  },
+  {
+    "id": "GC1996",
+    "year": "1996",
+    "name": "Gold Cup 1996 United States",
+    "short_name": "United States",
+    "tournament_type_id": "GC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_1996.png",
+      "start_date": "1996-01-10",
+      "end_date": "1996-01-21",
+      "color": "#eb1821",
+      "team_count": 9,
+      "confed_count": 2,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Los Angeles Memorial Coliseum, Los Angeles",
+        "filename": "11-11-06-LA-Coliseum-USC-UO.jpg",
+        "text": "The Los Angeles Memorial Coliseum hosted the final"
+      },
+      {
+        "name": "Jack Murphy Stadium, San Diego",
+        "filename": "Qualcomm_Stadium.jpg",
+        "text": "The Jack Murphy Stadium hosted the semi-final Mexico vs Guatemala"
+      },
+      {
+        "name": "Anaheim Stadium, Anaheim",
+        "filename": "Anaheim_Stadium_1986.jpg",
+        "text": "The Anaheim Stadium hosted group C matches"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "BRA", "third_place": "USA", "fourth_place": "GUA" },
+    "statistics": { "total_matches": 13, "total_goals": 42, "attendance": 487439 },
+    "awards": {
+      "golden_boot": [{ "player": "Eric Wynalda", "team": "USA", "goals": 4 }],
+      "golden_ball": [{ "player": "Raúl Lara", "team": "MEX" }]
+    }
+  },
+  {
+    "id": "GC1993",
+    "year": "1993",
+    "name": "Gold Cup 1993 United States-Mexico",
+    "short_name": "United States-Mexico",
+    "tournament_type_id": "GC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA", "MEX"],
+      "logo_filename": "gc_1993.jpg",
+      "start_date": "1993-07-10",
+      "end_date": "1993-07-25",
+      "color": "#24a45f",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Azteca, Mexico City",
+        "filename": "Estadio_Azteca_07a.jpg",
+        "text": "The Estadio Azteca hosted the final"
+      },
+      {
+        "name": "Cotton Bowl, Dallas",
+        "filename": "Image_of_TX_OU_Red_River_Shootout_in_Cotton_Bowl_seen_from_fair_grounds_-_original.jpg",
+        "text": "The Cotton Bowl hosted group A matches"
+      }
+    ],
+    "final_standings": {
+      "champions": "MEX",
+      "runners_up": "USA",
+      "third_place": ["CRC", "JAM"],
+      "third_place_text": "Tied 1-1 at the end of extra time. Both teams shared the third place."
+    },
+    "statistics": { "total_matches": 16, "total_goals": 60, "attendance": 709348 },
+    "awards": {
+      "golden_boot": [{ "player": "Zaguinho", "team": "MEX", "goals": 11 }],
+      "golden_ball": [{ "player": "Ramón Ramírez", "team": "MEX" }]
+    }
+  },
+  {
+    "id": "GC1991",
+    "year": "1991",
+    "name": "Gold Cup 1991 United States",
+    "short_name": "1991 United States",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "gc_1991.jpg",
+      "start_date": "1991-06-28",
+      "end_date": "1991-07-07",
+      "color": "#0f246a",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Memorial Coliseum, Los Angeles",
+        "filename": "11-11-06-LA-Coliseum-USC-UO.jpg",
+        "text": "The Memorial Coliseum hosted the final"
+      },
+      {
+        "name": "Rose Bowl, Pasadena",
+        "filename": "Rose_Bowl,_panorama.jpg",
+        "text": "The Rose Bowl hosted group B matches"
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "HON", "third_place": "MEX", "fourth_place": "CRC" },
+    "statistics": { "total_matches": 16, "total_goals": 50, "attendance": 397124 },
+    "awards": {
+      "golden_boot": [{ "player": "Benjamín Galindo", "team": "MEX", "goals": 4 }],
+      "golden_ball": [{ "player": "Tony Meola", "team": "USA" }]
+    }
+  },
+  {
+    "id": "GC1989",
+    "year": "1989",
+    "name": "CONCACAF Championship 1989",
+    "short_name": "1989",
+    "era": "CONCACAF Championship",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1989-03-19",
+      "end_date": "1989-11-19",
+      "color": "#d5ba81",
+      "team_count": 5,
+      "confed_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Mateo Flores, Guatemala City",
+        "filename": "Tribuna_Mateo_Flores.jpg",
+        "text": "Estadio Mateo Flores, Guatemala City"
+      },
+      {
+        "name": "Saint Louis Soccer Park, Fenton",
+        "filename": "World_Wide_Technology_Soccer_Park_.jpg",
+        "text": "Saint Louis Soccer Park, Fenton"
+      },
+      {
+        "name": "National Stadium, Port of Spain",
+        "filename": "HCStadium2013.jpg",
+        "text": "National Stadium, Port of Spain, Trinidad and Tobago"
+      },
+      {
+        "name": "Estadio Nacional, Tegucigalpa",
+        "filename": "Estadio_Carías.jpg",
+        "text": "Estadio Nacional, Tegucigalpa, Honduras"
+      }
+    ],
+    "final_standings": { "champions": "CRC", "runners_up": "USA", "third_place": "TRI", "fourth_place": "GUA" },
+    "statistics": { "total_matches": 18, "total_goals": 29 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Evaristo Coronado", "team": "CRC", "goals": 2 },
+        { "player": "Juan Arnoldo Cayasso", "team": "CRC", "goals": 2 },
+        { "player": "Leónidas Flores", "team": "CRC", "goals": 2 },
+        { "player": "Raúl Chacón", "team": "GUA", "goals": 2 },
+        { "player": "Julio Rodas", "team": "GUA", "goals": 2 },
+        { "player": "Leonson Lewis", "team": "TRI", "goals": 2 },
+        { "player": "Kerry Jamerson", "team": "TRI", "goals": 2 },
+        { "player": "Philibert Jones", "team": "TRI", "goals": 2 }
+      ]
+    }
+  },
+  {
+    "id": "GC1985",
+    "year": "1985",
+    "name": "CONCACAF Championship 1985",
+    "short_name": "1985",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1985-02-24",
+      "end_date": "1985-09-14",
+      "color": "#d5ba81",
+      "team_count": 9,
+      "confed_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Varsity Stadium, Toronto, Canada",
+        "filename": "Varsity_Centre.jpeg",
+        "text": "Varsity Stadium, Toronto, Canada"
+      },
+      {
+        "name": "Tegucigalpa, Honduras",
+        "filename": "Tegucigalpa-INE_Building.jpg",
+        "text": "Tegucigalpa, Honduras"
+      },
+      {
+        "name": "Torrance, United States",
+        "filename": "Torranceca.jpg",
+        "text": "Torrance, United States"
+      },
+      {
+        "name": "Alajuela, Costa Rica",
+        "filename": "Alajuela,_Costa_Rica_-_Night_Skyline.png",
+        "text": "Alajuela, Costa Rica"
+      }
+    ],
+    "final_standings": { "champions": "CAN", "runners_up": "HON", "third_place": "CRC", "fourth_place": "SLV" },
+    "statistics": { "total_matches": 24, "total_goals": 54 },
+    "awards": {
+      "golden_boot": [{ "player": "Roberto Figueroa", "team": "HON", "goals": 5 }]
+    }
+  },
+  {
+    "id": "GC1981",
+    "year": "1981",
+    "name": "CONCACAF Championship 1981 Honduras",
+    "short_name": "1981 Honduras",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["HON"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1981-11-01",
+      "end_date": "1981-11-22",
+      "color": "#1d5f9a",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Tiburcio Carías Andino, Tegucigalpa",
+        "filename": "Estadio_Carías.jpg",
+        "text": "The national stadium of Honduras in Tegucigalpa (Estadio Nacional de Tegucigalpa) also known as Estadio Tiburcio Carías Andino."
+      }
+    ],
+    "final_standings": { "champions": "HON", "runners_up": "SLV", "third_place": "MEX", "fourth_place": "CAN" },
+    "statistics": { "total_matches": 15, "total_goals": 28 },
+    "awards": {
+      "golden_boot": [{ "player": "Hugo Sánchez", "team": "MEX", "goals": 3 }]
+    }
+  },
+  {
+    "id": "GC1977",
+    "year": "1977",
+    "name": "CONCACAF Championship 1977 Mexico",
+    "short_name": "1977 Mexico",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["MEX"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1977-10-08",
+      "end_date": "1977-10-23",
+      "color": "#24a45f",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Azteca, Mexico City",
+        "filename": "Estadio_Azteca_07a.jpg",
+        "text": "Estadio Azteca, Mexico City"
+      },
+      {
+        "name": "Estadio Universitario, Monterrey",
+        "filename": "Estadio_Universitario_UANL.jpg",
+        "text": "Estadio Universitario, Monterrey"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "HAI-1964-1986", "third_place": "SLV", "fourth_place": "CAN" },
+    "statistics": { "total_matches": 15, "total_goals": 55 },
+    "awards": {
+      "golden_boot": [{ "player": "Víctor Rangel", "team": "MEX", "goals": 6 }]
+    }
+  },
+  {
+    "id": "GC1973",
+    "year": "1973",
+    "name": "CONCACAF Championship 1973 Haiti",
+    "short_name": "1973 Haiti",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["HAI-1964-1986"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1973-11-29",
+      "end_date": "1973-12-18",
+      "color": "#01209f",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Stade Sylvio Cator, Port-au-Prince",
+        "filename": "US_Navy_100117-N-4275C-190_Haitian_citizens_seek_refuge_at_the_Stade_Sylvio_Cator,_the_national_soccer_stadium,_in_Port-au-Prince,_Haiti.jpg",
+        "text": "The Stade Sylvio Cator hosted all of the tournament matches."
+      },
+      {
+        "name": "Port-au-Prince, Haiti",
+        "filename": "Port-au-Prince_Montage.jpg",
+        "text": "Port-au-Prince, Haiti"
+      }
+    ],
+    "final_standings": { "champions": "HAI-1964-1986", "runners_up": "TRI", "third_place": "MEX", "fourth_place": "HON" },
+    "statistics": { "total_matches": 15, "total_goals": 43 },
+    "awards": {
+      "golden_boot": [{ "player": "Steve David", "team": "TRI", "goals": 7 }]
+    }
+  },
+  {
+    "id": "GC1971",
+    "year": "1971",
+    "name": "CONCACAF Championship 1971 Trinidad and Tobago",
+    "short_name": "1971 Trinidad and Tobago",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["TRI"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1971-11-20",
+      "end_date": "1971-12-05",
+      "color": "#fa2200",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Queen's Park Oval, Port of Spain",
+        "filename": "Port_of_Spain.jpeg",
+        "text": "Queen's Park Oval, Port of Spain, Trinidad and Tobago"
+      },
+      {
+        "name": "Port of Spain, Trinidad and Tobago",
+        "filename": "POSMontage.png",
+        "text": "Port of Spain, Trinidad and Tobago"
+      },
+      {
+        "name": "Arima Velodrome, Arima",
+        "filename": "TnT_Arima_Velodrome_1.jpg",
+        "text": "Arima Velodrome, Arima"
+      },
+      {
+        "name": "Arima, Trinidad and Tobago",
+        "filename": "TnT_Arima_The_Dial.jpg",
+        "text": "Arima, Trinidad and Tobago"
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "HAI-1964-1986", "third_place": "CRC", "fourth_place": "CUB" },
+    "statistics": { "total_matches": 15, "total_goals": 37 }
+  },
+  {
+    "id": "GC1969",
+    "year": "1969",
+    "name": "CONCACAF Championship 1969 Costa Rica",
+    "short_name": "1969 Costa Rica",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["CRC"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1969-11-23",
+      "end_date": "1969-12-07",
+      "color": "#2251a2",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Costa Rica",
+        "filename": "Costa_Rican_Football_Federation_logo.svg",
+        "text": "Costa Rica"
+      }
+    ],
+    "final_standings": { "champions": "CRC", "runners_up": "GUA", "third_place": "ANT-1959-1986", "fourth_place": "MEX" },
+    "statistics": { "total_matches": 15, "total_goals": 43 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Nelson Melgar", "team": "GUA", "goals": 3 },
+        { "player": "Marco Fión", "team": "GUA", "goals": 3 },
+        { "player": "Victor Manuel Ruiz", "team": "CRC", "goals": 3 }
+      ]
+    }
+  },
+  {
+    "id": "GC1967",
+    "year": "1967",
+    "name": "CONCACAF Championship 1967 Honduras",
+    "short_name": "1967 Honduras",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["HON"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1967-03-05",
+      "end_date": "1967-03-19",
+      "color": "#1d5f9a",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Tiburcio Carías Andino, Tegucigalpa",
+        "filename": "Estadio_Carías.jpg",
+        "text": "The national stadium of Honduras in Tegucigalpa (Estadio Nacional de Tegucigalpa) also known as Estadio Tiburcio Carías Andino."
+      },
+      {
+        "name": "Tegucigalpa, Honduras",
+        "filename": "Tegucigalpa-INE_Building.jpg",
+        "text": "Tegucigalpa, Honduras"
+      }
+    ],
+    "final_standings": { "champions": "GUA", "runners_up": "MEX", "third_place": "HON", "fourth_place": "TRI" },
+    "statistics": { "total_matches": 15, "total_goals": 35 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Luis Estrada", "team": "MEX", "goals": 4 },
+        { "player": "Manuel Recinos", "team": "GUA", "goals": 4 }
+      ]
+    }
+  },
+  {
+    "id": "GC1965",
+    "year": "1965",
+    "name": "CONCACAF Championship 1965 Guatemala",
+    "short_name": "1965 Guatemala",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["GUA"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1965-03-28",
+      "end_date": "1965-04-11",
+      "color": "#5795de",
+      "team_count": 6,
+      "confed_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Mateo Flores, Guatemala City",
+        "filename": "Cremas-calentando.jpg",
+        "text": "Estadio Mateo Flores, Guatemala City"
+      },
+      {
+        "name": "Guatemala City",
+        "filename": "Guatemala_City_-_Guatemala.jpg",
+        "text": "Guatemala City is the biggest and most populated city in central america."
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "GUA", "third_place": "CRC", "fourth_place": "SLV" },
+    "statistics": { "total_matches": 15, "total_goals": 49 },
+    "awards": {
+      "golden_boot": [{ "player": "Ernesto Cisneros", "team": "MEX", "goals": 5 }]
+    }
+  },
+  {
+    "id": "GC1963",
+    "year": "1963",
+    "name": "CONCACAF Championship 1963 El Salvador",
+    "short_name": "1963 El Salvador",
+    "tournament_type_id": "GC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "details": {
+      "host": ["SLV"],
+      "logo_filename": "CONCACAF.png",
+      "start_date": "1963-03-23",
+      "end_date": "1963-04-07",
+      "color": "#2470b4",
+      "team_count": 9,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Nacional Flor Blanca, San Salvador",
+        "filename": "ESTADIO_Magico_Gonzales.jpeg",
+        "text": "Estadio Nacional Flor Blanca, San Salvador"
+      },
+      {
+        "name": "San Salvador, El Salvador",
+        "filename": "SanSalvador-Photomontage.png",
+        "text": "San Salvador, El Salvador"
+      },
+      {
+        "name": "Estadio Santaneco, Santa Ana",
+        "filename": "Estadio_Oscar_Quiteño.jpg",
+        "text": "Estadio Santaneco, Santa Ana"
+      },
+      {
+        "name": "Santa Ana, El Salvador",
+        "filename": "Santa_Ana_ES_Photomontage.jpg",
+        "text": "Santa Ana, El Salvador"
+      }
+    ],
+    "final_standings": { "champions": "CRC", "runners_up": "SLV", "third_place": "ANT-1959-1986", "fourth_place": "HON" },
+    "statistics": { "total_matches": 22, "total_goals": 76 },
+    "awards": {
+      "golden_boot": [{ "player": "Eduardo Hernández", "team": "SLV", "goals": 6 }]
+    }
+  }
+]

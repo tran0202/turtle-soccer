@@ -1,0 +1,808 @@
+[
+  {
+    "id": "AAC2023",
+    "year": "2023",
+    "name": "AFC Asian Cup China 2023",
+    "tournament_type_id": "AAC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["CHN"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "2023-06-16",
+      "end_date": "2023-07-16",
+      "color": "#217553",
+      "team_count": 24,
+      "confed_count": 1,
+      "venue_count": 10,
+      "city_count": 10
+    },
+    "hero_images": [
+      {
+        "name": "TEDA Football Stadium, Tianjin",
+        "filename": "Tianjin_TEDA_Soccer_Stadium.jpg",
+        "text": "The TEDA Football Stadium will host matches of the tournament."
+      }
+    ]
+  },
+  {
+    "id": "AAC2019",
+    "year": "2019",
+    "name": "AFC Asian Cup United Arab Emirates 2019",
+    "tournament_type_id": "AAC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
+    "no_third_place": true,
+    "details": {
+      "host": ["UAE"],
+      "logo_filename": "aac_2019.png",
+      "mascot_filename": "mascot_UAE_2019_Athletic-Pride.jpg",
+      "start_date": "2019-01-05",
+      "end_date": "2019-02-01",
+      "color": "#ff0000",
+      "team_count": 24,
+      "confed_count": 1,
+      "venue_count": 8,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Qatar_-_Japan,_AFC_Asian_Cup_2019_56.jpg",
+        "text": "Qatar"
+      },
+      {
+        "name": "Qatar",
+        "filename": "Qatar_-_Japan,_AFC_Asian_Cup_2019_05.jpg",
+        "text": "Qatar's starting lineup for the final"
+      },
+      {
+        "name": "Japan",
+        "filename": "IRN-JPN_20190128_02.jpg",
+        "text": "Japan's starting lineup for the semi-final match against Iran"
+      },
+      {
+        "name": "Golden Boot",
+        "filename": "Qatar_v_Japan_–_AFC_Asian_Cup_2019_final_32.jpg",
+        "text": "Almoez Ali won the top scorer award as well as the MVP award as the best player of the tournament."
+      }
+    ],
+    "final_standings": { "champions": "QAT", "runners_up": "JPN", "semi_finalist1": "IRN", "semi_finalist2": "UAE" },
+    "statistics": { "total_matches": 51, "total_goals": 130, "attendance": 644307 },
+    "awards": {
+      "golden_boot": [{ "player": "Almoez Ali", "team": "QAT", "goals": 9 }],
+      "golden_ball": [{ "player": "Almoez Ali", "team": "QAT" }],
+      "golden_glove": [{ "player": "Saad Al Sheeb", "team": "QAT" }],
+      "fair_play_team": ["JPN"]
+    }
+  },
+  {
+    "id": "AAC2015",
+    "year": "2015",
+    "name": "AFC Asian Cup Australia 2015",
+    "tournament_type_id": "AAC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
+    "details": {
+      "host": ["AUS"],
+      "logo_filename": "aac_2015.png",
+      "mascot_filename": "mascot_Australia_2015.jpg",
+      "start_date": "2015-01-09",
+      "end_date": "2015-01-31",
+      "color": "#00008b",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "2015_Asian_Cup_Final.jpg",
+        "text": "2015 AFC Asian Cup Final"
+      },
+      {
+        "name": "Opening match",
+        "filename": "2015_AFC_Asian_Cup_opening_match_Australia_Kuwait,_9_January_2015_(11).jpg",
+        "text": "Opening match between Australia and Kuwait"
+      },
+      {
+        "name": "Opening ceremony",
+        "filename": "AFC_Asian_Cup_Australia_2015.jpg",
+        "text": "Asian Cup opening ceremony"
+      },
+      {
+        "name": "Group C",
+        "filename": "AAMI_Park_2015_AFC_Asian_Cup_Iran_v_Bahrain.jpg",
+        "text": "Iran v Bahrain during the 2015 AFC Asian Cup"
+      }
+    ],
+    "final_standings": { "champions": "AUS", "runners_up": "KOR", "third_place": "UAE", "fourth_place": "IRQ" },
+    "statistics": { "total_matches": 32, "total_goals": 85, "attendance": 705705 },
+    "awards": {
+      "golden_boot": [{ "player": "Ali Mabkhout", "team": "UAE", "goals": 5 }],
+      "golden_ball": [{ "player": "Massimo Luongo", "team": "AUS" }],
+      "golden_glove": [{ "player": "Mathew Ryan", "team": "AUS" }],
+      "fair_play_team": ["AUS"]
+    }
+  },
+  {
+    "id": "AAC2011",
+    "year": "2011",
+    "name": "AFC Asian Cup Qatar 2011",
+    "tournament_type_id": "AAC",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "penalty", "fairplaylight", "lot"],
+    "details": {
+      "host": ["QAT"],
+      "logo_filename": "aac_2011.png",
+      "start_date": "2011-01-07",
+      "end_date": "2011-01-29",
+      "color": "#79003c",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 5,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Khalifa International Stadium, Doha",
+        "filename": "Khalifa_Stadium,_Doha,_Brazil_vs_Argentina_(2010).jpg",
+        "text": "The Khalifa International Stadium hosted the final."
+      },
+      {
+        "name": "Al-Gharafa Stadium, Doha",
+        "filename": "Entrance_to_Thani_bin_Jassim_Stadium.jpg",
+        "text": "The Al-Gharafa Stadium hosted the semi-final Japan vs Korea Republic."
+      },
+      {
+        "name": "Jassim Bin Hamad Stadium, Doha",
+        "filename": "Save_the_Dream_at_the_Supercoppa_(30394071002).jpg",
+        "text": "The Jassim Bin Hamad Stadium hosted the quarter-final Australia vs Iraq."
+      },
+      {
+        "name": "Qatar SC Stadium, Doha",
+        "filename": "Interior_view_of_Suheim_Bin_Hamad_Stadium_in_2020.jpg",
+        "text": "The Qatar SC Stadium hosted the quarter-final Iran vs Korea Republic"
+      }
+    ],
+    "final_standings": { "champions": "JPN", "runners_up": "AUS", "third_place": "KOR", "fourth_place": "UZB" },
+    "statistics": { "total_matches": 32, "total_goals": 90, "attendance": 405361 },
+    "awards": {
+      "golden_boot": [{ "player": "Koo Ja-cheol", "team": "KOR", "goals": 5 }],
+      "golden_ball": [{ "player": "Keisuke Honda", "team": "JPN" }],
+      "fair_play_team": ["KOR"]
+    }
+  },
+  {
+    "id": "AAC2007",
+    "year": "2007",
+    "name": "AFC Asian Cup Indonesia-Malaysia-Thailand-Vietnam 2007",
+    "tournament_type_id": "AAC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["IDN", "MAS", "THA", "VIE"],
+      "logo_filename": "aac_2007.png",
+      "start_date": "2007-07-07",
+      "end_date": "2007-07-29",
+      "color": "#105f49",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 8,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Group A",
+        "filename": "Asian_Cup_2007-Australia-Oman.jpg",
+        "text": "Players from Oman and Australia line up during the national anthems."
+      },
+      {
+        "name": "Group A",
+        "filename": "Asian_Cup_Australia-Iraq_II.jpg",
+        "text": "During the Iraq V Australia match. Iraq won 3:1"
+      },
+      {
+        "name": "Group A",
+        "filename": "Asian_Cup_Thailand-Oman.jpg",
+        "text": "Thailand vs Oman"
+      },
+      {
+        "name": "Gelora Bung Karno Stadium, Jakarta",
+        "filename": "BungKarno-indonoob.jpeg",
+        "text": "The Gelora Bung Karno Stadium hosted the final."
+      }
+    ],
+    "final_standings": { "champions": "IRQ-2004-2008", "runners_up": "KSA", "third_place": "KOR", "fourth_place": "JPN" },
+    "statistics": { "total_matches": 32, "total_goals": 84, "attendance": 724222 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Younis Mahmoud", "team": "IRQ-2004-2008", "goals": 4 },
+        { "player": "Naohiro Takahara", "team": "JPN", "goals": 4 },
+        { "player": "Yasser Al-Qahtani", "team": "KSA", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Younis Mahmoud", "team": "IRQ-2004-2008" }],
+      "golden_glove": [{ "player": "Noor Sabri", "team": "IRQ-2004-2008" }],
+      "fair_play_team": ["JPN"]
+    }
+  },
+  {
+    "id": "AAC2004",
+    "year": "2004",
+    "name": "AFC Asian Cup China 2004",
+    "tournament_type_id": "AAC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CHN"],
+      "logo_filename": "aac_2004.png",
+      "start_date": "2004-07-17",
+      "end_date": "2004-08-07",
+      "color": "#ee2c29",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Workers Stadium, Beijing",
+        "filename": "Workers_Stadium.jpg",
+        "text": "The Workers Stadium hosted the final."
+      },
+      {
+        "name": "Shandong Sports Center, Jinan",
+        "filename": "SHANGDONGSPORTS.jpg",
+        "text": "The Shandong Sports Center hosted the semi-final Bahrain vs Japan."
+      },
+      {
+        "name": "Chongqing Olympic Sports Center, Chongqing",
+        "filename": "Chongqing_Olympic_Stadium.jpg",
+        "text": "The Chongqing Olympic Sports Center hosted the quarter-final Japan vs Jordan."
+      },
+      {
+        "name": "Chengdu, China",
+        "filename": "Niushikou,_Jinjiang,_Chengdu,_Sichuan,_China_-_panoramio_(cropped).jpg",
+        "text": "Chengdu, China"
+      }
+    ],
+    "final_standings": { "champions": "JPN", "runners_up": "CHN", "third_place": "IRN", "fourth_place": "BHR" },
+    "statistics": { "total_matches": 32, "total_goals": 96, "attendance": 937650 },
+    "awards": {
+      "golden_boot": [
+        { "player": "A'ala Hubail", "team": "BHR", "goals": 5 },
+        { "player": "Ali Karimi", "team": "IRN", "goals": 5 }
+      ],
+      "golden_ball": [{ "player": "Shunsuke Nakamura", "team": "JPN" }],
+      "fair_play_team": ["CHN"]
+    }
+  },
+  {
+    "id": "AAC2000",
+    "year": "2000",
+    "name": "AFC Asian Cup Lebanon 2000",
+    "tournament_type_id": "AAC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["LBN"],
+      "logo_filename": "aac_2000.png",
+      "start_date": "2000-10-12",
+      "end_date": "2000-10-29",
+      "color": "#149552",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Sports City Stadium, Beirut",
+        "filename": "Camille_Chamoun_Sports_City_Stadium_2018_-_Beirut_derby_(Nejmeh_fans).png",
+        "text": "The Sports City Stadium hosted the final."
+      },
+      {
+        "name": "Saida International Stadium, Sidon",
+        "filename": "Saida_International_Stadium_with_beachgoers.jpg",
+        "text": "The Saida International Stadium hosted the quarter-final China PR vs Qatar."
+      },
+      {
+        "name": "Beirut, Lebanon",
+        "filename": "Beirut,_Mohammed_al-Amin_Mosque_(6822615915).jpg",
+        "text": "Beirut, Lebanon"
+      },
+      {
+        "name": "Tripoli, Lebanon",
+        "filename": "Tripoli_(Lebanon)_-_El_Marad_1.jpg",
+        "text": "Tripoli, Lebanon"
+      }
+    ],
+    "final_standings": { "champions": "JPN", "runners_up": "KSA", "third_place": "KOR", "fourth_place": "CHN" },
+    "statistics": { "total_matches": 26, "total_goals": 77, "attendance": 276488 },
+    "awards": {
+      "golden_boot": [{ "player": "Lee Dong-Gook", "team": "KOR", "goals": 6 }],
+      "golden_ball": [{ "player": "Hiroshi Nanami", "team": "JPN" }],
+      "golden_glove": [{ "player": "Jiang Jin", "team": "CHN" }],
+      "fair_play_team": ["KSA"]
+    }
+  },
+  {
+    "id": "AAC1996",
+    "year": "1996",
+    "name": "AFC Asian Cup United Arab Emirates 1996",
+    "tournament_type_id": "AAC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["UAE"],
+      "logo_filename": "aac_1996.png",
+      "start_date": "1996-12-04",
+      "end_date": "1996-12-21",
+      "color": "#ff0000",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Sheikh Zayed Stadium, Abu Dhabi",
+        "filename": "Gulf_Cup_(36).jpg",
+        "text": "The Sheikh Zayed Stadium hosted the final."
+      },
+      {
+        "name": "Al-Maktoum Stadium, Dubai",
+        "filename": "Al_Maktoum_Stadium_20190110.jpg",
+        "text": "The Al-Maktoum Stadium hosted the quarter-final Korea Republic vs Iran."
+      },
+      {
+        "name": "Abu Dhabi, United Arab Emirates",
+        "filename": "Abu_dhabi_skylines_2014.jpg",
+        "text": "Abu Dhabi skyline"
+      },
+      {
+        "name": "Al Ain, United Arab Emirates",
+        "filename": "Al-AinMontageII.png",
+        "text": "Clockwise, from top: Qasr Al-Muwaiji, Al-Murabba Fort, Street in Al-Ain, Sheikha Salama Mosque, Hazza Bin Zayed Stadium"
+      }
+    ],
+    "final_standings": { "champions": "KSA", "runners_up": "UAE", "third_place": "IRN", "fourth_place": "KUW" },
+    "statistics": { "total_matches": 26, "total_goals": 80, "attendance": 448000 },
+    "awards": {
+      "golden_boot": [{ "player": "Ali Daei", "team": "IRN", "goals": 8 }],
+      "golden_ball": [{ "player": "Khodadad Azizi", "team": "IRN" }],
+      "golden_glove": [{ "player": "Mohamed Al-Deayea", "team": "KSA" }],
+      "fair_play_team": ["IRN"]
+    }
+  },
+  {
+    "id": "AAC1992",
+    "year": "1992",
+    "name": "AFC Asian Cup Japan 1992",
+    "short_name": "Japan 1992",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["JPN"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1992-10-29",
+      "end_date": "1992-11-08",
+      "color": "#fa2200",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Hiroshima Big Arch, Hiroshima",
+        "filename": "Bigarch050423.jpg",
+        "text": "The Hiroshima Big Arch hosted the final."
+      },
+      {
+        "name": "Hiroshima Stadium, Hiroshima",
+        "filename": "HIROSHIMA_Sogo_Ground_1988.jpg",
+        "text": "The Hiroshima Stadium hosted the semi-final Saudi Arabia vs United Arab Emirates."
+      },
+      {
+        "name": "Bingo Sports Park, Onomichi",
+        "filename": "Bingoriku1.jpg",
+        "text": "The Bingo Sports Park hosted several group matches."
+      },
+      {
+        "name": "Hiroshima, Japan",
+        "filename": "Hiroshima_Peace_Memorial_2008_02_(cropped).JPG",
+        "text": "Hiroshima Peace Memorial"
+      }
+    ],
+    "final_standings": { "champions": "JPN", "runners_up": "KSA", "third_place": "CHN", "fourth_place": "UAE" },
+    "statistics": { "total_matches": 16, "total_goals": 31, "attendance": 316496 },
+    "awards": {
+      "golden_boot": [{ "player": "Fahad Al-Bishi", "team": "KSA", "goals": 3 }],
+      "golden_ball": [{ "player": "Kazuyoshi Miura", "team": "JPN" }]
+    }
+  },
+  {
+    "id": "AAC1988",
+    "year": "1988",
+    "name": "AFC Asian Cup Qatar 1988",
+    "short_name": "Qatar 1988",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["QAT"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1988-12-02",
+      "end_date": "1988-12-18",
+      "color": "#671637",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Qatar SC Stadium, Doha",
+        "filename": "Interior_view_of_Suheim_Bin_Hamad_Stadium_in_2020.jpg",
+        "text": "Qatar SC Stadium, Doha"
+      },
+      {
+        "name": "Doha, Qatar",
+        "filename": "Doha_skyline_in_the_morning_(12544910974)_(cropped).jpg",
+        "text": "Doha skyline in the morning"
+      }
+    ],
+    "final_standings": { "champions": "KSA", "runners_up": "KOR", "third_place": "IRN", "fourth_place": "CHN" },
+    "statistics": { "total_matches": 24, "total_goals": 40 },
+    "awards": {
+      "golden_boot": [{ "player": "Lee Tae-Ho", "team": "KOR", "goals": 3 }],
+      "golden_ball": [{ "player": "Kim Joo-Sung", "team": "KOR" }],
+      "golden_glove": [{ "player": "Zhang Huikang", "team": "CHN" }]
+    }
+  },
+  {
+    "id": "AAC1984",
+    "year": "1984",
+    "name": "AFC Asian Cup Singapore 1984",
+    "short_name": "Singapore 1984",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SIN"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1984-12-01",
+      "end_date": "1984-12-16",
+      "color": "#f93127",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "National Stadium, Kallang",
+        "filename": "National_stadium_kallang_sg_z.JPG",
+        "text": "The National Stadium hosted all the matches."
+      },
+      {
+        "name": "Kallang, Singapore",
+        "filename": "Condos_and_the_Singapore_Flyer_by_the_Kallang_River.jpg",
+        "text": "A cluster of condos near the East Coast Expressway, Singapore. On the right is the \"Singapore Flyer\", a giant observation wheel that features brilliant engineering breakthroughs and is set to be Asia's most visible iconic visitor attraction."
+      }
+    ],
+    "final_standings": { "champions": "KSA", "runners_up": "CHN", "third_place": "KUW", "fourth_place": "IRN" },
+    "statistics": { "total_matches": 24, "total_goals": 44 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Shahrokh Bayani", "team": "IRN", "goals": 3 },
+        { "player": "Nasser Mohammadkhani", "team": "IRN", "goals": 3 },
+        { "player": "Jia Xiuquan", "team": "CHN", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Jia Xiuquan", "team": "CHN" }],
+      "golden_glove": [{ "player": "Abdullah Al-Deayea", "team": "KSA" }],
+      "fair_play_team": ["CHN"]
+    }
+  },
+  {
+    "id": "AAC1980",
+    "year": "1980",
+    "name": "AFC Asian Cup Kuwait 1980",
+    "short_name": "Kuwait 1980",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KUW"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1980-09-15",
+      "end_date": "1980-09-30",
+      "color": "#4fb24a",
+      "team_count": 10,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Sabah Al-Salem Stadium, Kuwait City",
+        "filename": "ArabiStagium.jpg",
+        "text": "The Sabah Al-Salem Stadium hosted all the matches."
+      },
+      {
+        "name": "Kuwait City, Kuwait",
+        "filename": "Kuwait_montage.png",
+        "text": "Kuwait City, Kuwait"
+      }
+    ],
+    "final_standings": { "champions": "KUW", "runners_up": "KOR", "third_place": "IRN", "fourth_place": "PRK" },
+    "statistics": { "total_matches": 24, "total_goals": 76 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Behtash Fariba", "team": "IRN", "goals": 7 },
+        { "player": "Choi Soon-ho", "team": "KOR", "goals": 7 }
+      ]
+    }
+  },
+  {
+    "id": "AAC1976",
+    "year": "1976",
+    "name": "AFC Asian Cup Iran 1976",
+    "short_name": "Iran 1976",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["IRN-1964-1980"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1976-06-03",
+      "end_date": "1976-06-13",
+      "color": "#089748",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Aryamehr Stadium, Tehran",
+        "filename": "Azadi_Stadium_ACL_2018.jpg",
+        "text": "The Aryamehr Stadium hosted the final."
+      },
+      {
+        "name": "Tehran, Iran",
+        "filename": "Tehran_sky.jpg",
+        "text": "Tehran, Iran"
+      },
+      {
+        "name": "Bagh Shomal Stadium, Tabriz",
+        "filename": "Takhti_Stadium_Tabriz.jpg",
+        "text": "The Bagh Shomal Stadium hosted group A matches."
+      },
+      {
+        "name": "Tabriz, Iran",
+        "filename": "Panorama_of_Tabriz.jpg",
+        "text": "Tabriz, Iran"
+      }
+    ],
+    "final_standings": { "champions": "IRN-1964-1980", "runners_up": "KUW", "third_place": "CHN", "fourth_place": "IRQ-1963-1991" },
+    "statistics": { "total_matches": 10, "total_goals": 25 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Fathi Kamel", "team": "KUW", "goals": 3 },
+        { "player": "Gholam Hossein Mazloumi", "team": "IRN-1964-1980", "goals": 3 },
+        { "player": "Nasser Nouraei", "team": "IRN-1964-1980", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Ali Parvin", "team": "IRN-1964-1980" }]
+    }
+  },
+  {
+    "id": "AAC1972",
+    "year": "1972",
+    "name": "AFC Asian Cup Thailand 1972",
+    "short_name": "Thailand 1972",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["THA"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1972-05-07",
+      "end_date": "1972-05-19",
+      "color": "#2251a2",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "National Stadium, Bangkok",
+        "filename": "Suphachalasai_3116.JPG",
+        "text": "The National Stadium hosted all the matches."
+      },
+      {
+        "name": "Bangkok, Thailand",
+        "filename": "Bangkok_montage_3.jpg",
+        "text": "Clockwise from top: Si Lom–Sathon business district, the Giant Swing, Victory Monument, Rama VIII Bridge, Wat Arun, and the Grand Palace"
+      }
+    ],
+    "final_standings": { "champions": "IRN-1964-1980", "runners_up": "KOR", "third_place": "THA", "fourth_place": "CAM-1970-1975" },
+    "statistics": { "total_matches": 13, "total_goals": 38 },
+    "awards": {
+      "golden_boot": [{ "player": "Hossein Kalani", "team": "IRN-1964-1980", "goals": 5 }],
+      "golden_ball": [{ "player": "Ebrahim Ashtiani", "team": "IRN-1964-1980" }]
+    }
+  },
+  {
+    "id": "AAC1968",
+    "year": "1968",
+    "name": "AFC Asian Cup Iran 1968",
+    "short_name": "Iran 1968",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["IRN-1964-1980"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1968-05-10",
+      "end_date": "1968-05-19",
+      "color": "#089748",
+      "team_count": 5,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Amjadieh Stadium, Tehran",
+        "filename": "Amjadieh_Stadium.jpg",
+        "text": "The Amjadieh Stadium hosted all the matches."
+      },
+      {
+        "name": "Tehran, Iran",
+        "filename": "Azadi_Tower_(29358497718)_(cropped).jpg",
+        "text": "The Azadi Tower"
+      }
+    ],
+    "final_standings": { "champions": "IRN-1964-1980", "runners_up": "BUR-1948-1974", "third_place": "ISR", "fourth_place": "TPE-1960-1979" },
+    "statistics": { "total_matches": 10, "total_goals": 32 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Homayoun Behzadi", "team": "IRN-1964-1980", "goals": 4 },
+        { "player": "Moshe Romano", "team": "ISR", "goals": 4 },
+        { "player": "Giora Spiegel", "team": "ISR", "goals": 4 }
+      ]
+    }
+  },
+  {
+    "id": "AAC1964",
+    "year": "1964",
+    "name": "AFC Asian Cup Israel 1964",
+    "short_name": "Israel 1964",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ISR"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1964-05-26",
+      "end_date": "1964-06-03",
+      "color": "#15296d",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Flickr_-_Government_Press_Office_(GPO)_-_The_Asian_Cup.jpg",
+        "text": "The Israeli soccer team holds the Asian Cup after its victory over South Korea at Ramat Gan stadium."
+      },
+      {
+        "name": "Ramat Gan Stadium, Ramat Gan",
+        "filename": "Ramat_Gan_Stadium.jpg",
+        "text": "The Ramat Gan Stadium hosted a group match."
+      },
+      {
+        "name": "Kiryat Eliezer Stadium, Haifa",
+        "filename": "Qiryat_Eliezer_Stadium.jpg",
+        "text": "The Kiryat Eliezer Stadium hosted a group match."
+      },
+      {
+        "name": "Bloomfield Stadium, Tel Aviv",
+        "filename": "Bloomfield_Stadium21.jpg",
+        "text": "The Bloomfield Stadium hosted a group match."
+      }
+    ],
+    "final_standings": { "champions": "ISR", "runners_up": "IND", "third_place": "KOR", "fourth_place": "HKG-1959-1997" },
+    "statistics": { "total_matches": 6, "total_goals": 13 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Inder Singh", "team": "IND", "goals": 2 },
+        { "player": "Mordechai Spiegler", "team": "ISR", "goals": 2 }
+      ]
+    }
+  },
+  {
+    "id": "AAC1960",
+    "year": "1960",
+    "name": "AFC Asian Cup Korea Republic 1960",
+    "short_name": "Korea Republic 1960",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KOR"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1960-10-14",
+      "end_date": "1960-10-23",
+      "color": "#fa2200",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Hyochang Stadium, Seoul",
+        "filename": "Hyochang_Stadium.jpeg",
+        "text": "The Hyochang Stadium hosted a group match."
+      },
+      {
+        "name": "Seoul, Korea Republic",
+        "filename": "Seoul,_the_capital_of_South_Korea_(cropped).jpg",
+        "text": "Seoul, Korea Republic"
+      }
+    ],
+    "final_standings": { "champions": "KOR", "runners_up": "ISR", "third_place": "TPE-1960-1979", "fourth_place": "VSO" },
+    "statistics": { "total_matches": 6, "total_goals": 19 },
+    "awards": {
+      "golden_boot": [{ "player": "Cho Yoon-ok", "team": "KOR", "goals": 4 }]
+    }
+  },
+  {
+    "id": "AAC1956",
+    "year": "1956",
+    "name": "AFC Asian Cup Hong Kong 1956",
+    "short_name": "Hong Kong 1956",
+    "tournament_type_id": "AAC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["HKG-1955-1959"],
+      "logo_filename": "AFC_Asian_Cup.png",
+      "start_date": "1956-09-01",
+      "end_date": "1956-09-15",
+      "color": "#fa300f",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Government Stadium, Hong Kong",
+        "filename": "Hong_Kong_Stadium-1.jpg",
+        "text": "The Government Stadium hosted all matches."
+      },
+      {
+        "name": "Hong Kong",
+        "filename": "Hong_Kong_Island_Skyline_201108.jpg",
+        "text": "Hong Kong Skyline"
+      }
+    ],
+    "final_standings": { "champions": "KOR", "runners_up": "ISR", "third_place": "HKG-1955-1959", "fourth_place": "VSO" },
+    "statistics": { "total_matches": 6, "total_goals": 27, "attendance": 136000 },
+    "awards": {
+      "golden_boot": [{ "player": "Nahum Stelmach", "team": "ISR", "goals": 4 }]
+    }
+  }
+]

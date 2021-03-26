@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "WC2022",
+    "year": "2022",
+    "name": "FIFA World Cup Qatar 2022",
+    "tournament_type_id": "WC",
+    "active": true,
+    "points_for_win": 3,
+    "details": {
+      "host": ["QAT"],
+      "logo_filename": "2022_FIFA_World_Cup.svg",
+      "start_date": "2022-11-21",
+      "end_date": "2022-12-18",
+      "color": "#8a1538",
+      "team_count": 32,
+      "confed_count": "5 or 6",
+      "venue_count": 8,
+      "city_count": 5
+    },
+    "hero_images": [{ "name": "Ras Abu Aboud Stadium", "filename": "CG_rendering_of_Ras_Abu_Aboud_Stadium_crop.jpg", "text": "Ras Abu Aboud Stadium" }]
+  },
+  {
+    "id": "WC2018",
+    "year": "2018",
+    "name": "FIFA World Cup Russia 2018",
+    "tournament_type_id": "WC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["RUS"],
+      "logo_filename": "2018_FIFA_World_Cup.svg",
+      "mascot_filename": "Zabivaka_(mascot).jpg",
+      "start_date": "2018-06-14",
+      "end_date": "2018-07-15",
+      "color": "#930c10",
+      "team_count": 32,
+      "confed_count": 5,
+      "venue_count": 12,
+      "city_count": 11
+    },
+    "hero_images": [
+      { "name": "Champions", "filename": "France_champion_of_the_Football_World_Cup_Russia_2018.jpg", "text": "The France team holds the World Cup trophy" },
+      { "name": "France", "filename": "France_WC2018_final.jpg", "text": "France's starting line-up for the World Cup Final" },
+      { "name": "Croatia", "filename": "Croatia_WC2018_final.jpg", "text": "Croatia's starting eleven for the 2018 World Cup Final" },
+      { "name": "Belgium - Tunisia", "filename": "Bel-Tun_(6).jpg", "text": "Belgium v Tunisia in group G" },
+      {
+        "name": "England - Colombia",
+        "filename": "FWC_2018_-_Round_of_16_-_COL_v_ENG_-_Photo_132.jpg",
+        "text": "Eric Dier scores the winning goal in England's first World Cup penalty shoot-out victory, having lost thrice before."
+      },
+      {
+        "name": "Harry Kane",
+        "filename": "Harry_Kane_FWC_2018_-_Round_of_16_-_COL_v_ENG_-_Photo_027.jpg",
+        "text": "Golden Boot"
+      },
+      { "name": "Luka Modrić", "filename": "Luka_Modric_ISL-HRV_(7).jpg", "text": "Golden Ball" },
+      { "name": "Kylian Mbappé", "filename": "Kylian_Mbappe_World_Cup_Trophy.jpg", "text": "Best Young Player" },
+      { "name": "Thibaut Courtois", "filename": "Courtois_2018_(cropped).jpg", "text": "Golden Glove" }
+    ],
+    "final_standings": { "champions": "FRA", "runners_up": "CRO", "third_place": "BEL", "fourth_place": "ENG" },
+    "statistics": { "total_matches": 64, "total_goals": 169, "attendance": 3031768 },
+    "awards": {
+      "golden_boot": [{ "player": "Harry Kane", "team": "ENG", "goals": 6 }],
+      "silver_boot": [{ "player": "Antoine Griezmann", "team": "FRA", "goals": 4, "assists": 2 }],
+      "bronze_boot": [{ "player": "Romelu Lukaku", "team": "BEL", "goals": 4, "assists": 1 }],
+      "golden_ball": [
+        { "player": "Luka Modrić", "team": "CRO" },
+        { "player": "Eden Hazard", "team": "BEL" },
+        { "player": "Antoine Griezmann", "team": "FRA" }
+      ],
+      "best_young_player": { "player": "Kylian Mbappé", "team": "FRA" },
+      "golden_glove": [{ "player": "Thibaut Courtois", "team": "BEL" }],
+      "fair_play_team": ["ESP"]
+    }
+  },
+  {
+    "id": "WC2014",
+    "year": "2014",
+    "name": "FIFA World Cup Brazil 2014",
+    "tournament_type_id": "WC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "2014_FIFA_World_Cup.svg",
+      "mascot_filename": "Fuleco.png",
+      "start_date": "2014-06-12",
+      "end_date": "2014-07-13",
+      "color": "#15611e",
+      "team_count": 32,
+      "confed_count": 5,
+      "venue_count": 12,
+      "city_count": 12
+    },
+    "hero_images": [
+      { "name": "Champions", "filename": "Philipp_Lahm_lifts_the_2014_FIFA_World_Cup.jpg", "text": "Germany captain Philipp Lahm lifts the World Cup trophy" },
+      {
+        "name": "Germany",
+        "filename": "Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_(6).jpg",
+        "text": "Germany's Mario Götze scores the match-winning goal in the 113th minute"
+      },
+      {
+        "name": "Argentina",
+        "filename": "Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_(36).jpg",
+        "text": "Argentina striker Gonzalo Higuaín challenging Germany goalkeeper Manuel Neuer"
+      },
+      {
+        "name": "James Rodríguez",
+        "filename": "James_Rodriguez.jpg",
+        "text": "Golden Boot. James celebrates after scoring a penalty against Brazil at the 2014 World Cup. He became the first player to score in every single game he played since Rivaldo at the 2002 edition."
+      },
+      {
+        "name": "Lionel Messi",
+        "filename": "Messi_in_Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_(24).jpg",
+        "text": "Golden Ball. Argentina's Lionel Messi (front) battles Germany's Mats Hummels for the ball."
+      },
+      { "name": "Paul Pogba", "filename": "FRA-ARG_(11)_-_Paul_Pogba_(cropped).jpg", "text": "Best Young Player" },
+      {
+        "name": "Manuel Neuer",
+        "filename": "Award_ceremony_of_the_World_Cup_in_Brazil_04.jpg",
+        "text": "Golden Glove. Neuer celebrating after Germany's 1–0 victory over Argentina in the FIFA World Cup Final."
+      }
+    ],
+    "final_standings": { "champions": "GER", "runners_up": "ARG", "third_place": "NED", "fourth_place": "BRA" },
+    "statistics": { "total_matches": 64, "total_goals": 171, "attendance": 3429873 },
+    "awards": {
+      "golden_boot": [{ "player": "James Rodríguez", "team": "COL", "goals": 6 }],
+      "silver_boot": [{ "player": "Thomas Muller", "team": "GER", "goals": 5 }],
+      "bronze_boot": [{ "player": "Neymar", "team": "BRA", "goals": 4, "minutes": 480 }],
+      "golden_ball": [
+        { "player": "Lionel Messi", "team": "ARG" },
+        { "player": "Thomas Muller", "team": "GER" },
+        { "player": "Arjen Robben", "team": "NED" }
+      ],
+      "best_young_player": { "player": "Paul Pogba", "team": "FRA" },
+      "golden_glove": [{ "player": "Manuel Neuer", "team": "GER" }],
+      "fair_play_team": ["COL"]
+    }
+  },
+  {
+    "id": "WC2010",
+    "year": "2010",
+    "name": "FIFA World Cup South Africa 2010",
+    "tournament_type_id": "WC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["RSA"],
+      "logo_filename": "2010_FIFA_World_Cup.svg",
+      "mascot_filename": "Zakumi.svg",
+      "start_date": "2010-06-11",
+      "end_date": "2010-07-11",
+      "color": "#237832",
+      "team_count": 32,
+      "confed_count": 6,
+      "venue_count": 10,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "FIFA_World_Cup_2010_Spain_with_cup.jpg",
+        "text": "Manager Vicente del Bosque lifting the trophy with the Spanish players"
+      },
+      {
+        "name": "Spain",
+        "filename": "Spain_and_Portugal_match_at_the_FIFA_World_Cup_2010-06-29_7.jpg",
+        "text": "Sergio Ramos of Spain tries to pass the ball to Fernando Torres as Portugal's Fábio Coentrão, Bruno Alves and Cristiano Ronaldo look on"
+      },
+      {
+        "name": "Final",
+        "filename": "FIFA_World_Cup_2010_Final_Line-ups.jpg",
+        "text": "South African president Jacob Zuma and other dignitaries shaking hands with the lined-up teams before kick-off"
+      },
+      {
+        "name": "Thomas Müller",
+        "filename": "Thomas_Muller,_Germany_national_football_team_(03).jpg",
+        "text": "Golden Boot. Best Young Player. Thomas Müller wears number 13 for Germany, a number famously worn by German legend Gerd Müller who said of his namesake; \"he's going to be a great player\""
+      },
+      {
+        "name": "Diego Forlán",
+        "filename": "Suarez_Forlan.jpg",
+        "text": "Golden Ball. Forlán (right) with Luis Suárez at the 2010 World Cup."
+      },
+      {
+        "name": "David Villa",
+        "filename": "Spain-Tahiti,_Confederations_Cup_2013_(02)_(Villa_crop).jpg",
+        "text": "Silver Boot."
+      },
+      {
+        "name": "Wesley Sneijder",
+        "filename": "Sneijder,_Robben_and_de_Jong_Netherlands-Germany_Euro_2012.jpeg",
+        "text": "Bronze Boot. Sneijder (left) with Arjen Robben and Nigel de Jong lining up for the Netherlands in 2012"
+      },
+      {
+        "name": "Iker Casillas",
+        "filename": "Casillas_besando_la_Copa_del_Mundo_de_futbol.jpg",
+        "text": "Golden Glove. Casillas with the World Cup trophy during celebrations in Spain, July 2010."
+      }
+    ],
+    "final_standings": { "champions": "ESP", "runners_up": "NED", "third_place": "GER", "fourth_place": "URU" },
+    "statistics": { "total_matches": 64, "total_goals": 145, "attendance": 3178856 },
+    "awards": {
+      "golden_boot": [{ "player": "Thomas Muller", "team": "GER", "goals": 5, "assists": 3 }],
+      "silver_boot": [{ "player": "David Villa", "team": "ESP", "goals": 5, "assists": 1, "minutes": 635 }],
+      "bronze_boot": [{ "player": "Wesley Sneijder", "team": "NED", "goals": 5, "assists": 1, "minutes": 652 }],
+      "golden_ball": [
+        { "player": "Diego Forlan", "team": "URU" },
+        { "player": "Wesley Sneijder", "team": "NED" },
+        { "player": "David Villa", "team": "ESP" }
+      ],
+      "best_young_player": { "player": "Thomas Muller", "team": "GER" },
+      "golden_glove": [{ "player": "Iker Casillas", "team": "ESP" }],
+      "fair_play_team": ["ESP"]
+    }
+  },
+  {
+    "id": "WC2006",
+    "year": "2006",
+    "name": "FIFA World Cup Germany 2006",
+    "tournament_type_id": "WC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GER"],
+      "logo_filename": "2006_FIFA_World_Cup.svg",
+      "mascot_filename": "2006-goleo-vi-and-pille.png",
+      "start_date": "2006-06-09",
+      "end_date": "2006-07-09",
+      "color": "#1d1d1b",
+      "team_count": 32,
+      "confed_count": 6,
+      "venue_count": 12,
+      "city_count": 12
+    },
+    "hero_images": [
+      { "name": "Champions", "filename": "ItalyWC2006win.jpg", "text": "Cannavaro lifting the World Cup trophy for Italy." },
+      {
+        "name": "Miroslav Klose",
+        "filename": "Miroslav_Klose_Portrait.jpeg",
+        "text": "Golden Boot. Klose during the 2006 FIFA World Cup."
+      },
+      {
+        "name": "Zinedine Zidane",
+        "filename": "Zinedine_zidane_wcf_2006-edit.jpg",
+        "text": "Golden Ball. Zidane during the 2006 World Cup Final."
+      },
+      {
+        "name": "Gianluigi Buffon",
+        "filename": "2006_FIFA_World_Cup_-_Italy_-_Buffon,_Materazzi_and_Perrotta.jpg",
+        "text": "Golden Glove. Buffon with Italy during the 2006 World Cup."
+      }
+    ],
+    "final_standings": { "champions": "ITA", "runners_up": "FRA", "third_place": "GER", "fourth_place": "POR" },
+    "statistics": { "total_matches": 64, "total_goals": 147, "attendance": 3359439 },
+    "awards": {
+      "golden_boot": [{ "player": "Miroslav Klose", "team": "GER", "goals": 5 }],
+      "silver_boot": [{ "player": "Hernan Crespo", "team": "ARG", "goals": 3, "assists": 1, "minutes": 308 }],
+      "bronze_boot": [{ "player": "Ronaldo", "team": "BRA", "goals": 3, "assists": 1, "minutes": 411 }],
+      "golden_ball": [
+        { "player": "Zinedine Zidane", "team": "FRA" },
+        { "player": "Fabio Cannavaro", "team": "ITA" },
+        { "player": "Andrea Pirlo", "team": "ITA" }
+      ],
+      "best_young_player": { "player": "Lukas Podolski", "team": "GER" },
+      "golden_glove": [{ "player": "Gianluigi Buffon", "team": "ITA" }],
+      "fair_play_team": ["BRA", "ESP"]
+    }
+  },
+  {
+    "id": "WC2002",
+    "year": "2002",
+    "name": "FIFA World Cup Korea-Japan 2002",
+    "tournament_type_id": "WC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KOR", "JPN"],
+      "logo_filename": "2002_FIFA_World_Cup.svg",
+      "mascot_filename": "2002-ato-kaz-and-nik.png",
+      "start_date": "2002-05-31",
+      "end_date": "2002-06-30",
+      "color": "#04428d",
+      "team_count": 32,
+      "confed_count": 5,
+      "venue_count": 20,
+      "city_count": 20
+    },
+    "hero_images": [
+      { "name": "International Stadium Yokohama", "filename": "NISSANSTADIUM20080608.jpeg", "text": "The final was played at International Stadium Yokohama." },
+      {
+        "name": "Seoul Plaza",
+        "filename": "Seoul_Plaza_2002_FIFA_World_Cup.jpg",
+        "text": "South Koreans watching their country playing in a knock out game on the big screens in Seoul Plaza."
+      },
+      {
+        "name": "Japanese Coin",
+        "filename": "FIFA2002-10000yen.jpg",
+        "text": "Japanese 10,000 yen coin for the 2002 FIFA World Cup."
+      },
+      {
+        "name": "Korean Air",
+        "filename": "Boeing_747-4B5,_Korean_Air_AN0241562.jpg",
+        "text": "Korean Air Boeing 747 adorned with 2002 World Cup livery marking South Korea as co-hosts."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "GER", "third_place": "TUR", "fourth_place": "KOR" },
+    "statistics": { "total_matches": 64, "total_goals": 161, "attendance": 2705197 },
+    "awards": {
+      "golden_boot": [{ "player": "Ronaldo", "team": "BRA", "goals": 8 }],
+      "silver_boot": [
+        { "player": "Rivaldo", "team": "BRA", "goals": 5 },
+        { "player": "Miroslav Klose", "team": "GER", "goals": 5 }
+      ],
+      "golden_ball": [
+        { "player": "Oliver Kahn", "team": "GER" },
+        { "player": "Ronaldo", "team": "BRA" },
+        { "player": "Hong Myungbo", "team": "KOR" }
+      ],
+      "best_young_player": { "player": "Landon Donovan", "team": "USA" },
+      "golden_glove": [{ "player": "Oliver Kahn", "team": "GER" }],
+      "fair_play_team": ["BEL"]
+    }
+  },
+  {
+    "id": "WC1998",
+    "year": "1998",
+    "name": "FIFA World Cup France 1998",
+    "tournament_type_id": "WC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["FRA"],
+      "logo_filename": "1998_FIFA_World_Cup.svg",
+      "mascot_filename": "1998-footix.png",
+      "start_date": "1998-06-10",
+      "end_date": "1998-07-12",
+      "color": "#103d69",
+      "team_count": 32,
+      "confed_count": 5,
+      "venue_count": 10,
+      "city_count": 10
+    },
+    "hero_images": [
+      {
+        "name": "Stade de France, Saint-Denis",
+        "filename": "Euro_2016_stade_de_France_France-Roumanie_(27307532960).jpg",
+        "text": "The Stade de France held the final."
+      },
+      {
+        "name": "Coca-Cola",
+        "filename": "Coca_cola_world_cup_1998.jpg",
+        "text": "Coca-Cola was one of the sponsors of FIFA World Cup 1998."
+      },
+      {
+        "name": "Stade Vélodrome, Marseille",
+        "filename": "Vue_du_virage_Depé.jpg",
+        "text": "The Stade Vélodrome held the semi-final."
+      },
+      {
+        "name": "Parc des Princes, Paris",
+        "filename": "Paris-Parc-des-Princes.jpg",
+        "text": "Parc des Princes held Germany versus United States."
+      }
+    ],
+    "final_standings": { "champions": "FRA", "runners_up": "BRA", "third_place": "CRO", "fourth_place": "NED" },
+    "statistics": { "total_matches": 64, "total_goals": 171, "attendance": 2784687 },
+    "awards": {
+      "golden_boot": [{ "player": "Davor Šuker", "team": "CRO", "goals": 6 }],
+      "silver_boot": [
+        { "player": "Gabriel Batistuta", "team": "ARG", "goals": 5 },
+        { "player": "Christian Vieri", "team": "ITA", "goals": 5 }
+      ],
+      "golden_ball": [
+        { "player": "Ronaldo", "team": "BRA" },
+        { "player": "Davor Šuker", "team": "CRO" },
+        { "player": "Lilian Thuram", "team": "FRA" }
+      ],
+      "best_young_player": { "player": "Michael Owen", "team": "ENG" },
+      "golden_glove": [{ "player": "Fabien Barthez", "team": "FRA" }],
+      "fair_play_team": ["ENG", "FRA"]
+    }
+  },
+  {
+    "id": "WC1994",
+    "year": "1994",
+    "name": "FIFA World Cup USA 1994",
+    "tournament_type_id": "WC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA"],
+      "logo_filename": "1994_FIFA_World_Cup.svg",
+      "mascot_filename": "1994-striker.png",
+      "start_date": "1994-06-17",
+      "end_date": "1994-07-17",
+      "color": "#0f246a",
+      "team_count": 24,
+      "confed_count": 5,
+      "venue_count": 9,
+      "city_count": 9
+    },
+    "hero_images": [
+      { "name": "Champions", "filename": "Brasil_seleccion_1994.jpg", "text": "The Brazilian squad" },
+      {
+        "name": "Quarter-final",
+        "filename": "WorldCup1994BulgariaGermany.jpg",
+        "text": "Lothar Matthäus scoring a penalty kick in Germany's quarter-final against Bulgaria at Giants Stadium on July 10. Bulgaria came back to win the game."
+      },
+      {
+        "name": "Round of 16",
+        "filename": "FIFA_WM_Football_(Soccer)_1994_03.jpg",
+        "text": "Republic of Ireland in attack in the game against the Netherlands."
+      },
+      {
+        "name": "Group E",
+        "filename": "ItalyVsNorway1994inUSA.jpg",
+        "text": "Italy and Norway getting ready to play at Giants Stadium."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "ITA", "third_place": "SWE", "fourth_place": "BUL" },
+    "statistics": { "total_matches": 52, "total_goals": 141, "attendance": 3597042 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Hristo Stoichkov", "team": "BUL", "goals": 6, "assists": 1 },
+        { "player": "Oleg Salenko", "team": "RUS", "goals": 6, "assists": 1 }
+      ],
+      "bronze_boot": [
+        { "player": "Romário", "team": "BRA", "goals": 5, "assists": 3 },
+        { "player": "Kennet Andersson", "team": "SWE", "goals": 5, "assists": 3 }
+      ],
+      "golden_ball": [
+        { "player": "Romário", "team": "BRA" },
+        { "player": "Roberto Baggio", "team": "ITA" },
+        { "player": "Hristo Stoichkov", "team": "BUL" }
+      ],
+      "best_young_player": { "player": "Marc Overmars", "team": "NED" },
+      "golden_glove": [{ "player": "Michel Preud'homme", "team": "BEL" }],
+      "fair_play_team": ["BRA"]
+    }
+  },
+  {
+    "id": "WC1990",
+    "year": "1990",
+    "name": "FIFA World Cup Italy 1990",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ITA"],
+      "logo_filename": "1990_FIFA_World_Cup.svg",
+      "mascot_filename": "1990-ciao.png",
+      "start_date": "1990-06-08",
+      "end_date": "1990-07-08",
+      "color": "#3d8e2b",
+      "team_count": 24,
+      "confed_count": 5,
+      "venue_count": 12,
+      "city_count": 12
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Argetnina_formacion_vs_alemania_final.jpg",
+        "text": "Players of Argentina before the match: Juan Simón, goalkeeper Sergio Goycochea and Diego Maradona"
+      },
+      {
+        "name": "Ciao",
+        "filename": "Mascotte_di_italia_90.jpeg",
+        "text": "Ciao, a stick figure in the colours of the Italy Tricolore, was the mascot for the 1990 FIFA World Cup."
+      },
+      {
+        "name": "San Siro, Milan",
+        "filename": "San_Siro_-_panoramio_(2).jpg",
+        "text": "The San Siro held the opening macth."
+      },
+      {
+        "name": "Stadio Olimpico, Rome",
+        "filename": "Stadio_Olimpico_2008.jpeg",
+        "text": "The Stadio Olimpico held the final."
+      }
+    ],
+    "final_standings": { "champions": "GER-1949-1990", "runners_up": "ARG", "third_place": "ITA", "fourth_place": "ENG" },
+    "statistics": { "total_matches": 52, "total_goals": 115, "attendance": 2516215 },
+    "awards": {
+      "golden_boot": [{ "player": "Salvatore Schillaci", "team": "ITA", "goals": 6 }],
+      "silver_boot": [{ "player": "Tomas Skuhravy", "team": "TCH", "goals": 5 }],
+      "bronze_boot": [
+        { "player": "Roger Milla", "team": "CMR", "goals": 4 },
+        { "player": "Gary Lineker", "team": "ENG", "goals": 4 }
+      ],
+      "golden_ball": [
+        { "player": "Salvatore Schillaci", "team": "ITA" },
+        { "player": "Lothar Matthaeus", "team": "GER-1949-1990" },
+        { "player": "Diego Maradona", "team": "ARG" }
+      ],
+      "best_young_player": { "player": "Robert Prosinečki", "team": "YUG-1945-1992" },
+      "fair_play_team": ["ENG"]
+    }
+  },
+  {
+    "id": "WC1986",
+    "year": "1986",
+    "name": "FIFA World Cup Mexico 1986",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["MEX"],
+      "logo_filename": "1986_FIFA_World_Cup.svg",
+      "mascot_filename": "1986-pique.png",
+      "start_date": "1986-05-31",
+      "end_date": "1986-06-29",
+      "color": "#24a45f",
+      "team_count": 24,
+      "confed_count": 5,
+      "venue_count": 12,
+      "city_count": 11
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_celebrando_copa.jpg",
+        "text": "Diego Maradona (with the World Cup) and other players celebrating the title."
+      },
+      {
+        "name": "Final",
+        "filename": "Argentina_germany_entering.jpg",
+        "text": "Argentina and West Germany entering to the field to play the final."
+      },
+      {
+        "name": "Diego Maradona",
+        "filename": "Maradona-Mundial_86_con_la_copa.jpeg",
+        "text": "Diego Maradona celebrating with the Trophy. Argentina won the tournament unbeaten."
+      },
+      {
+        "name": "Jorge Burruchaga",
+        "filename": "Burru_gol_a_alemania.jpg",
+        "text": "Jorge Burruchaga scoring the third goal for the Argentine win"
+      },
+      {
+        "name": "Group B",
+        "filename": "Cruz_vs_cabanas.jpg",
+        "text": "Cruz and Cabañas going for the ball in Mexico v Paraguay"
+      },
+      {
+        "name": "Group E",
+        "filename": "Alzamendi_gol_alemania.jpg",
+        "text": "Antonio Alzamendi scoring for Uruguay v West Germany"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "GER-1949-1990", "third_place": "FRA", "fourth_place": "BEL" },
+    "statistics": { "total_matches": 52, "total_goals": 132, "attendance": 2394031 },
+    "awards": {
+      "golden_boot": [{ "player": "Gary Lineker", "team": "ENG", "goals": 6 }],
+      "silver_boot": [
+        { "player": "Careca", "team": "BRA", "goals": 5 },
+        { "player": "Emilio Butragueno", "team": "ESP", "goals": 5 },
+        { "player": "Diego Maradona", "team": "ARG", "goals": 5 }
+      ],
+      "golden_ball": [
+        { "player": "Diego Maradona", "team": "ARG" },
+        { "player": "Harald Schumacher", "team": "GER-1949-1990" },
+        { "player": "Preben Elkjær Larsen", "team": "DEN" }
+      ],
+      "best_young_player": { "player": "Enzo Scifo", "team": "BEL" },
+      "fair_play_team": ["BRA"]
+    }
+  },
+  {
+    "id": "WC1982",
+    "year": "1982",
+    "name": "FIFA World Cup Spain 1982",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "details": {
+      "host": ["ESP"],
+      "logo_filename": "1982_FIFA_World_Cup.svg",
+      "mascot_filename": "1982-naranjito.png",
+      "start_date": "1982-06-13",
+      "end_date": "1982-07-11",
+      "color": "#da010c",
+      "team_count": 24,
+      "confed_count": 6,
+      "venue_count": 17,
+      "city_count": 14
+    },
+    "hero_images": [
+      {
+        "name": "Tango España",
+        "filename": "Adidas_Tango_España.jpg",
+        "text": "Adidas Tango España, official match ball of Spain '82"
+      },
+      {
+        "name": "Camp Nou, Barcelona",
+        "filename": "Camp_Nou_aerial_(cropped).jpg",
+        "text": "The Camp Nou held the opening match"
+      },
+      {
+        "name": "Santiago Bernabeu",
+        "filename": "The_Santiago_Bernabeu_Stadium_-_U-g-g-B-o-y.jpg",
+        "text": "The Santiago Bernabéu Stadium held the final"
+      }
+    ],
+    "final_standings": { "champions": "ITA", "runners_up": "GER-1949-1990", "third_place": "POL", "fourth_place": "FRA" },
+    "statistics": { "total_matches": 52, "total_goals": 146, "attendance": 2109723 },
+    "awards": {
+      "golden_boot": [{ "player": "Paolo Rossi", "team": "ITA", "goals": 6 }],
+      "silver_boot": [{ "player": "Karl-Heinz Rummenigge", "team": "GER-1949-1990", "goals": 5 }],
+      "bronze_boot": [{ "player": "Zico", "team": "BRA", "goals": 4 }],
+      "golden_ball": [
+        { "player": "Paolo Rossi", "team": "ITA" },
+        { "player": "Falcao", "team": "BRA" },
+        { "player": "Karl-Heinz Rummenigge", "team": "GER-1949-1990" }
+      ],
+      "best_young_player": { "player": "Manuel Amoros", "team": "FRA" },
+      "fair_play_team": ["BRA"]
+    }
+  },
+  {
+    "id": "WC1978",
+    "year": "1978",
+    "name": "FIFA World Cup Argentina 1978",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "details": {
+      "host": ["ARG"],
+      "logo_filename": "1978_FIFA_World_Cup.png",
+      "mascot_filename": "1978-gauchito.png",
+      "start_date": "1978-06-01",
+      "end_date": "1978-06-25",
+      "color": "#63b7e8",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Passarella_world_cup.jpg",
+        "text": "Captain Daniel Passarella raising the trophy"
+      },
+      {
+        "name": "Final",
+        "filename": "Kempes_versus_Holanda3.jpeg",
+        "text": "Mario Kempes scoring the first goal of the match"
+      },
+      {
+        "name": "Second round - Group B",
+        "filename": "Kempes_mano_vs_polonia.jpg",
+        "text": "Mario Kempes saving Argentina goal with his hand so the referee awarded a penalty kick to Poland"
+      },
+      {
+        "name": "First round - Group 1",
+        "filename": "France_vs_hungary_kimberley.jpg",
+        "text": "France (wearing Club Kimberley jerseys) v Hungary. Jean Petit carrying the ball"
+      },
+      {
+        "name": "First round - Group 4",
+        "filename": "WC78_PER-SCO_2.jpg",
+        "text": "Teófilo Cubillas's free kick for a Peru goal v Scotland"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "NED", "third_place": "BRA", "fourth_place": "ITA" },
+    "statistics": { "total_matches": 38, "total_goals": 102, "attendance": 1545791 },
+    "awards": {
+      "golden_boot": [{ "player": "Mario Kempes", "team": "ARG", "goals": 6 }],
+      "silver_boot": [{ "player": "Teofilo Cubillas", "team": "PER", "goals": 5 }],
+      "bronze_boot": [{ "player": "Rob Rensenbrink", "team": "NED", "goals": 5 }],
+      "golden_ball": [
+        { "player": "Mario Kempes", "team": "ARG" },
+        { "player": "Paolo Rossi", "team": "ITA" },
+        { "player": "Dirceu", "team": "BRA" }
+      ],
+      "best_young_player": { "player": "Antonio Cabrini", "team": "ITA" },
+      "fair_play_team": ["ARG"]
+    }
+  },
+  {
+    "id": "WC1974",
+    "year": "1974",
+    "name": "FIFA World Cup Germany 1974",
+    "short_name": "Germany 1974",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "lot"],
+    "details": {
+      "host": ["GER-1949-1990"],
+      "logo_filename": "1974_FIFA_World_Cup.svg",
+      "mascot_filename": "1974-tip-and-tap.png",
+      "start_date": "1974-06-13",
+      "end_date": "1974-07-07",
+      "color": "#1d1d1b",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 9,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "Second round - Group A",
+        "filename": "Bundesarchiv_Bild_183-N0704-308,_Fußball-WM,_DDR_-_Argentinien_1-1.jpg",
+        "text": "Streich heads East Germany into the lead v. Argentina"
+      },
+      {
+        "name": "First round - Group 1",
+        "filename": "Bundesarchiv_Bild_183-N0615-0011,_X._Fußball-WM,_DDR-Nationalmannschaft.jpg",
+        "text": "East German line-up v. Australia"
+      },
+      {
+        "name": "First round - Group 2",
+        "filename": "Bundesarchiv_Bild_183-N0622-0031,_Fußball-WM,_Zaire_-_Brasilien_0-3.jpg",
+        "text": "Jairzinho's goal against Zaire"
+      },
+      {
+        "name": "First round - Group 4",
+        "filename": "Bundesarchiv_Bild_183-N0615-0032,_Fußball-WM,_Italien_-_Haiti_3-1.jpg",
+        "text": "Capello (No.8) is brought down v. Haiti"
+      }
+    ],
+    "final_standings": { "champions": "GER-1949-1990", "runners_up": "NED", "third_place": "POL", "fourth_place": "BRA" },
+    "statistics": { "total_matches": 38, "total_goals": 97, "attendance": 1865762 },
+    "awards": {
+      "golden_boot": [{ "player": "Grzegorz Lato", "team": "POL", "goals": 7 }],
+      "silver_boot": [
+        { "player": "Johan Neeskens", "team": "NED", "goals": 5 },
+        { "player": "Andrzej Szarmach", "team": "POL", "goals": 5 }
+      ],
+      "best_young_player": { "player": "Władysław Żmuda", "team": "POL" },
+      "fair_play_team": ["GER-1949-1990"]
+    }
+  },
+  {
+    "id": "WC1970",
+    "year": "1970",
+    "name": "FIFA World Cup Mexico 1970",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["pointandgoaldifference", "lot"],
+    "details": {
+      "host": ["MEX"],
+      "logo_filename": "1970_FIFA_World_Cup.svg",
+      "mascot_filename": "1970-juanito.png",
+      "start_date": "1970-05-31",
+      "end_date": "1970-06-21",
+      "color": "#24a45f",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Champion",
+        "filename": "Pele_celebrating_1970.jpg",
+        "text": "Pelé celebrating after winning the match. It was the last World Cup for him so he would retire from the national team one year after."
+      },
+      {
+        "name": "Azteca Stadium",
+        "filename": "Estadio_Azteca_(2011-09-25).jpg",
+        "text": "The Azteca Stadium held the opening match and the final."
+      },
+      {
+        "name": "Estadio Jalisco, Guadalajara",
+        "filename": "Estadio_jalisco.jpg",
+        "text": "The Estadio Jalisco held the semi-final Brazil vs Uruguay."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "ITA", "third_place": "GER-1949-1990", "fourth_place": "URU" },
+    "statistics": { "total_matches": 32, "total_goals": 95, "attendance": 1604065 },
+    "awards": {
+      "golden_boot": [{ "player": "Gerd Müller", "team": "GER-1949-1990", "goals": 10 }],
+      "silver_boot": [{ "player": "Jairzinho", "team": "BRA", "goals": 7 }],
+      "bronze_boot": [{ "player": "Teófilo Cubillas", "team": "PER", "goals": 5 }],
+      "best_young_player": { "player": "Teófilo Cubillas", "team": "PER" },
+      "fair_play_team": ["PER"]
+    }
+  },
+  {
+    "id": "WC1966",
+    "year": "1966",
+    "name": "FIFA World Cup England 1966",
+    "short_name": "England 1966",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["goalratio", "lot"],
+    "details": {
+      "host": ["ENG"],
+      "logo_filename": "1966_FIFA_World_Cup.png",
+      "mascot_filename": "1966-world-cup-willie.png",
+      "start_date": "1966-07-11",
+      "end_date": "1966-07-30",
+      "color": "#c61422",
+      "team_count": 16,
+      "confed_count": 4,
+      "venue_count": 8,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Champion",
+        "filename": "The_Queen_presents_the_1966_World_Cup_to_England_Captain,_Bobby_Moore._(7936243534).jpg",
+        "text": "Elizabeth II presents the Jules Rimet Trophy to England's team captain Bobby Moore."
+      },
+      {
+        "name": "Final",
+        "filename": "England_germany_entering_pitch.jpg",
+        "text": "Both teams entering the pitch"
+      },
+      {
+        "name": "Final",
+        "filename": "Ghost_Goal_World_Cup_1966.jpg",
+        "text": "Geoff Hurst's \"Wembley Goal\""
+      },
+      {
+        "name": "Group 2",
+        "filename": "Weber_x_artime.jpeg",
+        "text": "Wolfgang Weber (left) and Luis Artime during the match West Germany vs Argentina in Birmingham"
+      }
+    ],
+    "final_standings": { "champions": "ENG", "runners_up": "GER-1949-1990", "third_place": "POR", "fourth_place": "URS" },
+    "statistics": { "total_matches": 32, "total_goals": 89, "attendance": 1563135 },
+    "awards": {
+      "golden_boot": [{ "player": "Eusébio", "team": "POR", "goals": 9 }],
+      "silver_boot": [{ "player": "Helmut Haller", "team": "GER-1949-1990", "goals": 6 }],
+      "bronze_boot": [
+        { "player": "Valeriy Porkuyan", "team": "URS", "goals": 4 },
+        { "player": "Franz Beckenbauer", "team": "GER-1949-1990", "goals": 4 },
+        { "player": "Ferenc Bene", "team": "HUN", "goals": 4 },
+        { "player": "Geoff Hurst", "team": "ENG", "goals": 4 }
+      ],
+      "best_young_player": { "player": "Franz Beckenbauer", "team": "GER-1949-1990" }
+    }
+  },
+  {
+    "id": "WC1962",
+    "year": "1962",
+    "name": "FIFA World Cup Chile 1962",
+    "short_name": "Chile 1962",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["goalratio", "lot"],
+    "details": {
+      "host": ["CHI"],
+      "logo_filename": "1962_FIFA_World_Cup.jpg",
+      "start_date": "1962-05-30",
+      "end_date": "1962-06-17",
+      "color": "#fa300f",
+      "team_count": 16,
+      "confed_count": 3,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champion",
+        "filename": "lossy-page1-1615px-Seleção_Brasileira_de_Futebol_na_Copa_do_Mundo_de_1962.tiff.jpg",
+        "text": "Brazil national football team in the World Cup 1962."
+      },
+      {
+        "name": "Poster",
+        "filename": "1962_Football_World_Cup_poster.jpg",
+        "text": "Official 1962 FIFA World Cup poster"
+      },
+      {
+        "name": "Estadio Nacional de Chile, Santiago",
+        "filename": "Estadio_Nacional_de_Chile_-_vista_desde_Av._Grecia.jpg",
+        "text": "The Estadio Nacional de Chile held the opening match and the final"
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "TCH", "third_place": "CHI", "fourth_place": "YUG-1945-1992" },
+    "statistics": { "total_matches": 32, "total_goals": 89, "attendance": 893172 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Garrincha", "team": "BRA", "goals": 4 },
+        { "player": "Vava", "team": "BRA", "goals": 4 },
+        { "player": "Leonel Sánchez", "team": "CHI", "goals": 4 },
+        { "player": "Flórián Albert", "team": "HUN", "goals": 4 },
+        { "player": "Valentin Ivanov", "team": "URS", "goals": 4 },
+        { "player": "Dražan Jerković", "team": "YUG-1945-1992", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Garrincha", "team": "BRA" }],
+      "best_young_player": { "player": "Flórián Albert", "team": "HUN" }
+    }
+  },
+  {
+    "id": "WC1958",
+    "year": "1958",
+    "name": "FIFA World Cup Sweden 1958",
+    "short_name": "Sweden 1958",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["goalratiogroupplayoff", "lot"],
+    "details": {
+      "host": ["SWE"],
+      "logo_filename": "1958_FIFA_World_Cup.jpg",
+      "start_date": "1958-06-08",
+      "end_date": "1958-06-29",
+      "color": "#1d5f9a",
+      "team_count": 16,
+      "confed_count": 3,
+      "venue_count": 12,
+      "city_count": 12
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Gilmar_and_Hamrin_1958_WC_final.jpg",
+        "text": "Brazilian goalkeeper Gilmar faces the Swedish forward Hamrin during the 1958 World Cup final."
+      },
+      {
+        "name": "Poster",
+        "filename": "1958_Football_World_Cup_poster.jpg",
+        "text": "Official 1958 FIFA World Cup poster"
+      },
+      {
+        "name": "Råsunda Stadium, Solna",
+        "filename": "Råsunda_February_2013_01.jpg",
+        "text": "The Råsunda Stadium held the opening match and the final"
+      },
+      {
+        "name": "Ullevi Stadium, Gothenburg",
+        "filename": "Ullevi_1959-06-03.jpg",
+        "text": "The Ullevi Stadium held the semi-final match Sweden vs Germany"
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "SWE", "third_place": "FRA", "fourth_place": "GER-1949-1990" },
+    "statistics": { "total_matches": 35, "total_goals": 126, "attendance": 819810 },
+    "awards": {
+      "golden_boot": [{ "player": "Just Fontaine", "team": "FRA", "goals": 13 }],
+      "silver_boot": [
+        { "player": "Helmut Rahn", "team": "GER-1949-1990", "goals": 6 },
+        { "player": "Pele", "team": "BRA", "goals": 6 }
+      ],
+      "golden_ball": [{ "player": "Didi", "team": "BRA" }],
+      "best_young_player": { "player": "Pele", "team": "BRA" }
+    }
+  },
+  {
+    "id": "WC1954",
+    "year": "1954",
+    "name": "FIFA World Cup Switzerland 1954",
+    "short_name": "Switzerland 1954",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["lotgroupplayoff"],
+    "details": {
+      "host": ["SUI"],
+      "logo_filename": "1954_FIFA_World_Cup.jpg",
+      "start_date": "1954-06-16",
+      "end_date": "1954-07-04",
+      "color": "#dc171e",
+      "team_count": 16,
+      "confed_count": 4,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Les_deux_capitaines_de_la_finale_de_Coupe_du_monde_de_football_1954_(G._Walter,_D._Puskas,_arbitre_Orlandini).jpg",
+        "text": "The captains Fritz Walter and Ferenc Puskás with referee Ling (Liebig football card from 1966)"
+      },
+      {
+        "name": "Wankdorf Stadium, Bern",
+        "filename": "lossy-page1-2722px-ETH-BIB-Bern,_Wankdorf-Stadion,_Fussballspiel-LBS_H1-016067_crop.tif.jpg",
+        "text": "The Wankdorf Stadium held the final"
+      },
+      {
+        "name": "St. Jakob Stadium, Basel",
+        "filename": "lossy-page1-3129px-ETH-BIB-Basel,_St._Jakob,_Stadion,_Fussballspiel-LBS_H1-016082.tif.jpg",
+        "text": "The St. Jakob Stadium held the semi-final match Sweden vs Germany"
+      }
+    ],
+    "final_standings": { "champions": "GER-1949-1990", "runners_up": "HUN-1949-1956", "third_place": "AUT", "fourth_place": "URU" },
+    "statistics": { "total_matches": 26, "total_goals": 140, "attendance": 768607 },
+    "awards": {
+      "golden_boot": [{ "player": "Sándor Kocsis", "team": "HUN-1949-1956", "goals": 11 }],
+      "silver_boot": [
+        { "player": "Erich Probst", "team": "AUT", "goals": 6 },
+        { "player": "Josef Hügi", "team": "SUI", "goals": 6 },
+        { "player": "Max Morlock", "team": "GER-1949-1990", "goals": 6 }
+      ]
+    }
+  },
+  {
+    "id": "WC1950",
+    "year": "1950",
+    "name": "FIFA World Cup Brazil 1950",
+    "short_name": "Brazil 1950",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["1stplaceplayoff"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "1950.png",
+      "start_date": "1950-06-24",
+      "end_date": "1950-07-16",
+      "color": "#15611e",
+      "team_count": 13,
+      "confed_count": 3,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Gol_ghiggia_vs_brasil.jpg",
+        "text": "Uruguayan forward Alcides Ghiggia celebrates after scoring the 2nd goal"
+      },
+      {
+        "name": "Maracana Stadium, Rio de Janeiro",
+        "filename": "lossy-page1-1521px-Jogo_no_Estádio_do_Maracanã,_antes_da_Copa_do_Mundo_de_1950.tif.jpg",
+        "text": "The Maracana Stadium held the opening match and the final round."
+      },
+      {
+        "name": "Brazil 1950 stamp",
+        "filename": "Selo_da_Copa_de_1950_Cr_1,20.jpg",
+        "text": "A 1950 Brazilian stamp promoting the tournament."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "BRA", "third_place": "SWE", "fourth_place": "ESP-1945-1977" },
+    "statistics": { "total_matches": 22, "total_goals": 88, "attendance": 1045246 },
+    "awards": {
+      "golden_boot": [{ "player": "Ademir", "team": "BRA", "goals": 8 }],
+      "silver_boot": [{ "player": "Óscar Míguez", "team": "URU", "goals": 5 }],
+      "bronze_boot": [
+        { "player": "Alcides Ghiggia", "team": "URU", "goals": 4 },
+        { "player": "Chico", "team": "BRA", "goals": 4 },
+        { "player": "Estanislau Basora", "team": "ESP-1945-1977", "goals": 4 },
+        { "player": "Telmo Zarra", "team": "ESP-1945-1977", "goals": 4 }
+      ]
+    }
+  },
+  {
+    "id": "WC1938",
+    "year": "1938",
+    "name": "FIFA World Cup France 1938",
+    "short_name": "France 1938",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "details": {
+      "host": ["FRA"],
+      "logo_filename": "1938_FIFA_World_Cup.jpg",
+      "start_date": "1938-06-04",
+      "end_date": "1938-06-19",
+      "color": "#103d69",
+      "team_count": 15,
+      "confed_count": 4,
+      "venue_count": 10,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "France 1938 Ball",
+        "filename": "Pallone_del_mondiale_di_francia_1938.jpeg",
+        "text": "A ball from the tournament"
+      },
+      {
+        "name": "Stade Olympique de Colombes",
+        "filename": "Stade_de_Colombes_1924.jpg",
+        "text": "The Stade Olympique de Colombes held the final."
+      },
+      {
+        "name": "Parc des Princes, Paris",
+        "filename": "1932_Le_parc_des_princes_v1.jpg",
+        "text": "The Parc des Princes held the semi-final Hungary vs Sweden."
+      }
+    ],
+    "final_standings": { "champions": "ITA-1861-1946", "runners_up": "HUN-1919-1946", "third_place": "BRA", "fourth_place": "SWE" },
+    "statistics": { "total_matches": 18, "total_goals": 84, "attendance": 374835 },
+    "awards": {
+      "golden_boot": [{ "player": "Leônidas", "team": "BRA", "goals": 7 }],
+      "silver_boot": [
+        { "player": "György Sárosi", "team": "HUN-1919-1946", "goals": 5 },
+        { "player": "Gyula Zsengellér", "team": "HUN-1919-1946", "goals": 5 },
+        { "player": "Silvio Piola", "team": "ITA-1861-1946", "goals": 5 }
+      ]
+    }
+  },
+  {
+    "id": "WC1934",
+    "year": "1934",
+    "name": "FIFA World Cup Italy 1934",
+    "short_name": "Italy 1934",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "details": {
+      "host": ["ITA-1861-1946"],
+      "logo_filename": "1934_FIFA_World_Cup.jpg",
+      "start_date": "1934-05-27",
+      "end_date": "1934-06-10",
+      "color": "#3d8e2b",
+      "team_count": 16,
+      "confed_count": 4,
+      "venue_count": 8,
+      "city_count": 8
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "1934_FIFA_World_Cup_Final_-_Italy_v_Czechoslovakia_-_Pozzo,_Monzeglio,_Bertolini,_Combi,_Monti_and_Carcano.jpg",
+        "text": "From left to right: Italian manager Pozzo, Monzeglio, Bertolini, the goalkeeper and captain Combi, Monti (half-hidden) and the assistant manager Carcano (behind) before the start of extra time in the victorius final versus Czechoslovakia"
+      },
+      {
+        "name": "Stadio Nazionale PNF, Rome",
+        "filename": "Stadio_Pnf.jpg",
+        "text": "The Stadio Nazionale PNF held the final."
+      },
+      {
+        "name": "Stadio San Siro, Milan",
+        "filename": "StadioMilano1934.jpg",
+        "text": "The Stadio San Siro held the semi-final Italy vs Austria."
+      }
+    ],
+    "final_standings": { "champions": "ITA-1861-1946", "runners_up": "TCH", "third_place": "GER-1933-1935", "fourth_place": "AUT" },
+    "statistics": { "total_matches": 17, "total_goals": 70, "attendance": 363000 },
+    "awards": {
+      "golden_boot": [{ "player": "Oldřich Nejedlý", "team": "TCH", "goals": 5 }],
+      "silver_boot": [
+        { "player": "Edmund Conen", "team": "GER-1933-1935", "goals": 4 },
+        { "player": "Angelo Schiavio", "team": "ITA-1861-1946", "goals": 4 }
+      ]
+    }
+  },
+  {
+    "id": "WC1930",
+    "year": "1930",
+    "name": "FIFA World Cup Uruguay 1930",
+    "short_name": "Uruguay 1930",
+    "tournament_type_id": "WC",
+    "points_for_win": 2,
+    "tiebreakers": ["points"],
+    "details": {
+      "host": ["URU"],
+      "logo_filename": "1930_FIFA_World_Cup.jpg",
+      "start_date": "1930-07-13",
+      "end_date": "1930-07-30",
+      "color": "#259bc2",
+      "team_count": 13,
+      "confed_count": 3,
+      "venue_count": 3,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Uruguay_goal_v_argentina_1930.jpg",
+        "text": "The 4th goal of Uruguay v. Argentina national team scored by Héctor Castro."
+      },
+      {
+        "name": "Estadio Centenario, Montevideo",
+        "filename": "Estadio_Centenario_1930.jpg",
+        "text": "The Estadio Centenario held the final."
+      },
+      {
+        "name": "Estadio Gran Parque Central, Montevideo",
+        "filename": "Gran_Parque_Central_1900.jpg",
+        "text": "The Estadio Gran Parque Central held one of the 2 opening matches USA vs Belgium."
+      }
+    ],
+    "final_standings": { "champions": "URU", "runners_up": "ARG", "third_place": "USA", "fourth_place": "YUG-1929-1943" },
+    "statistics": { "total_matches": 18, "total_goals": 70, "attendance": 590549 },
+    "awards": {
+      "golden_boot": [{ "player": "Guillermo Stábile", "team": "ARG", "goals": 8 }],
+      "silver_boot": [{ "player": "Pedro Cea", "team": "URU", "goals": 5 }],
+      "bronze_boot": [{ "player": "Bert Patenaude", "team": "USA", "goals": 4 }]
+    }
+  }
+]

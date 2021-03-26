@@ -1,0 +1,123 @@
+[
+  {
+    "id": "UNL202021",
+    "year": "2020/21",
+    "name": "2020/21 UEFA Nations League",
+    "short_name": "2020/21",
+    "tournament_type_id": "UNL",
+    "active": true,
+    "points_for_win": 3,
+    "show_match_year": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "final_host": ["ITA"],
+      "logo_filename": "UEFA_Nations_League.svg",
+      "start_league_date": "2020-09-03",
+      "end_league_date": "2020-11-18",
+      "start_final_date": "2021-10-06",
+      "end_final_date": "2021-10-10",
+      "start_relegation_date": "2022-03-24",
+      "end_relegation_date": "2022-03-29",
+      "color": "#103d69",
+      "team_count": 55,
+      "final_team_count": 4,
+      "final_venue_count": 2,
+      "final_city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "San Siro, Milan",
+        "filename": "Stadio_Meazza.jpg",
+        "text": "The San Siro will host the final."
+      },
+      {
+        "name": "Milan, Italy",
+        "filename": "Milan.Proper.Wikipedia.Image.png",
+        "text": "Clockwise from top: Porta Nuova, Sforza Castle, La Scala, Galleria Vittorio Emanuele II, Milano Centrale railway station, Arch of Peace and Milan Cathedral."
+      },
+      {
+        "name": "Juventus Stadium, Turin",
+        "filename": "Juventus_v_Real_Madrid,_Champions_League,_Stadium,_Turin,_2013.jpg",
+        "text": "The Juventus Stadium will host the semi-final Belgium vs France"
+      },
+      {
+        "name": "Turin, Italy",
+        "filename": "Turin_at_sunset.jpg",
+        "text": "Panorama of Turin, with the Mole Antonelliana and the Alps, from Monte dei Cappuccini"
+      }
+    ],
+    "statistics": { "total_matches": 160, "total_goals": 362, "attendance": 102538 },
+    "awards": {
+      "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "goals": 6 }]
+    }
+  },
+  {
+    "id": "UNL201819",
+    "year": "2018/19",
+    "name": "2018/19 UEFA Nations League",
+    "tournament_type_id": "UNL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "final_host": ["POR"],
+      "logo_filename": "2019_UEFA_Nations_League_Finals.svg",
+      "start_league_date": "2018-09-06",
+      "end_league_date": "2018-11-20",
+      "start_final_date": "2019-06-05",
+      "end_final_date": "2019-06-09",
+      "color": "#009e4d",
+      "team_count": 55,
+      "final_team_count": 4,
+      "final_venue_count": 2,
+      "final_city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Estádio do Dragão, Porto",
+        "filename": "Estádio_do_Dragão_Aerial.jpg",
+        "text": "The Estádio do Dragão hosted the final."
+      },
+      {
+        "name": "Porto, Portugal",
+        "filename": "Porto_Montage.jpg",
+        "text": "Top to bottom, left to right: View of Ribeira district and Luiz I bridge from Vila Nova de Gaia, Casa da Música concert hall, Porto City Hall, Porto Skyline, Church of Saint Ildefonso"
+      },
+      {
+        "name": "Estádio D. Afonso Henriques, Guimarães",
+        "filename": "Estádio_de_Guimarães.jpeg",
+        "text": "The Estádio D. Afonso Henriques hosted the semi-final Netherlands vs England"
+      },
+      {
+        "name": "Guimarães, Portugal",
+        "filename": "Guimaraes_Portugal_Paço-dos-Duques-de-Bragança-02_(cropped).jpg",
+        "text": "Monument of Alfons I. (1887) in front of Paço dos Duques de Bragança"
+      }
+    ],
+    "final_standings": { "champions": "POR", "runners_up": "NED", "third_place": "ENG", "fourth_place": "SUI" },
+    "statistics": { "total_matches": 142, "total_goals": 342, "attendance": 2467041 },
+    "awards": {
+      "golden_boot": [{ "player": "Aleksandar Mitrović", "team": "SRB", "goals": 6 }]
+    }
+  }
+]

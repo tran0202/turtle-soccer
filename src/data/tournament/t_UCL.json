@@ -1,0 +1,171 @@
+[
+  {
+    "id": "UCL202021",
+    "year": "2020-21",
+    "name": "2020-21 UEFA Champions League",
+    "short_name": "2020-21",
+    "tournament_type_id": "UCL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "no_third_place": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "logo_filename": "UCL.svg",
+      "start_qualifying_date": "2020-08-08",
+      "end_qualifying_date": "2020-09-30",
+      "start_competition_date": "2020-10-20",
+      "end_competition_date": "2021-05-29",
+      "color": "#15611e",
+      "tournament_team_count": 32,
+      "total_team_count": 79,
+      "association_count": 54
+    },
+    "hero_images": [
+      {
+        "name": "Atatürk Olympic Stadium, Istanbul",
+        "filename": "Istanbul_Atatürk_Olympic_Stadium_1.jpg",
+        "text": "The Atatürk Olympic Stadium will host the final."
+      }
+    ],
+    "statistics": { "total_matches": 112, "total_goals": 337, "attendance": 165939 },
+    "awards": {
+      "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "club": "DOR", "goals": 10 }]
+    }
+  },
+  {
+    "id": "UCL201920",
+    "year": "2019-20",
+    "name": "2019-20 UEFA Champions League",
+    "short_name": "2019-20",
+    "tournament_type_id": "UCL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "no_third_place": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "logo_filename": "UCL.svg",
+      "start_qualifying_date": "2019-06-25",
+      "end_qualifying_date": "2019-08-28",
+      "start_competition_date": "2019-09-17",
+      "end_competition_date": "2020-08-23",
+      "color": "#0f246a",
+      "tournament_team_count": 32,
+      "total_team_count": 79,
+      "association_count": 54
+    },
+    "hero_images": [
+      {
+        "name": "Estádio da Luz, Lisbon",
+        "filename": "LuzLissabon.jpg",
+        "text": "The Estádio da Luz in Lisbon hosted the final."
+      },
+      {
+        "name": "Golden Boot",
+        "filename": "Robert_Lewandowski123666.jpg",
+        "text": "Bayern striker Robert Lewandowski was the competition's leading scorer and joint-leading assister with 15 goals and 6 assists en route to the final."
+      },
+      {
+        "name": "Program",
+        "filename": "2020_UEFA_Champions_League_Final_programme.jpg",
+        "text": "This is the official match programme for the 2020 UEFA Champions League Final."
+      },
+      {
+        "name": "Manager",
+        "filename": "Hans-Dieter_Flick,_Germany_national_football_team_(03).jpg",
+        "text": "Bayern Munich manager Hans-Dieter Flick appeared in his second European Cup final, having lost as a player with Bayern in 1987."
+      }
+    ],
+    "final_standings": { "champions": "BAY", "runners_up": "PSG", "semi_finalist1": "LYO", "semi_finalist2": "RBL" },
+    "statistics": { "total_matches": 119, "total_goals": 386, "attendance": 4758398 },
+    "awards": {
+      "golden_boot": [{ "player": "Robert Lewandowski", "team": "POL", "club": "BAY", "goals": 15 }],
+      "golden_glove": [{ "player": "Manuel Neuer", "team": "GER", "club": "BAY" }],
+      "best_defender": [{ "player": "Joshua Kimmich", "team": "GER", "club": "BAY" }],
+      "best_midfielder": [{ "player": "Kevin De Bruyne", "team": "BEL", "club": "MCI" }],
+      "best_forward": [{ "player": "Robert Lewandowski", "team": "POL", "club": "BAY" }]
+    }
+  },
+  {
+    "id": "UCL201819",
+    "year": "2018-19",
+    "name": "2018-19 UEFA Champions League",
+    "short_name": "2018-19",
+    "tournament_type_id": "UCL",
+    "points_for_win": 3,
+    "show_match_year": true,
+    "no_third_place": true,
+    "tiebreakers_collapsed": true,
+    "tiebreakers": [
+      "points",
+      "head2head",
+      "head2headawaygoals",
+      "head2headreapply",
+      "goaldifferenceandgoalscored",
+      "awaygoalswinsawaywins",
+      "fairplaylight",
+      "coefficient"
+    ],
+    "details": {
+      "logo_filename": "UCL.svg",
+      "start_qualifying_date": "2018-06-26",
+      "end_qualifying_date": "2018-08-29",
+      "start_competition_date": "2018-09-18",
+      "end_competition_date": "2019-06-01",
+      "color": "#d50a0a",
+      "tournament_team_count": 32,
+      "total_team_count": 79,
+      "association_count": 54
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "LFC_Parade_2019_01.jpg",
+        "text": "Liverpool players on an open top bus parading the Champions League trophy through the streets of Liverpool the day after the final."
+      },
+      {
+        "name": "Wanda Metropolitano, Madrid",
+        "filename": "Wanda-Metropolitano.jpg",
+        "text": "The Wanda Metropolitano hosted the final."
+      },
+      {
+        "name": "Program",
+        "filename": "2019_UEFA_Champions_League_Final_programme.jpg",
+        "text": "This is the official match programme for the 2019 UEFA Champions League Final."
+      },
+      {
+        "name": "Manager",
+        "filename": "Klopp.jpg",
+        "text": "Liverpool manager Jürgen Klopp won his first Champions League title in his third final."
+      }
+    ],
+    "final_standings": { "champions": "LIV", "runners_up": "TOT", "semi_finalist1": "AJA", "semi_finalist2": "FCB" },
+    "statistics": { "total_matches": 125, "total_goals": 366, "attendance": 6163044 },
+    "awards": {
+      "golden_boot": [{ "player": "Lionel Messi", "team": "ARG", "club": "FCB", "goals": 12 }],
+      "golden_glove": [{ "player": "Alisson", "team": "BRA", "club": "LIV" }],
+      "best_defender": [{ "player": "Virgil van Dijk", "team": "NED", "club": "LIV" }],
+      "best_midfielder": [{ "player": "Frenkie de Jong", "team": "NED", "club": "AJA" }],
+      "best_forward": [{ "player": "Lionel Messi", "team": "ARG", "club": "FCB" }]
+    }
+  }
+]

@@ -30,8 +30,8 @@ class App extends React.Component {
                           Welcome to <span>Turtle Soccer</span>
                         </h2>
                         <p className="animated fadeInUp">It's known as football for the rest of the world. In America, we call it Soccer!</p>
-                        <a href="/confederations" className="btn-get-started animated fadeInUp scrollto">
-                          Confederations
+                        <a href="/competitions" className="btn-get-started animated fadeInUp scrollto">
+                          Competitions
                         </a>
                       </div>
                     </div>

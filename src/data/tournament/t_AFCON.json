@@ -1,0 +1,1529 @@
+[
+  {
+    "id": "AFCON2021",
+    "year": "2021",
+    "name": "Africa Cup of Nations Cameroon 2021",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
+    "details": {
+      "host": ["CMR"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "2022-01-01",
+      "end_date": "2022-02-01",
+      "color": "#e4022e",
+      "team_count": 24,
+      "confed_count": 1,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Paul Biya Stadium, Yaoundé",
+        "filename": "Voies_daccès_au_complexe_multisports_Paul_Biya_dOlembé_01.jpg",
+        "text": "The Paul Biya Stadium will host the final."
+      }
+    ]
+  },
+  {
+    "id": "AFCON2019",
+    "year": "2019",
+    "name": "Africa Cup of Nations Egypt 2019",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
+    "details": {
+      "host": ["EGY"],
+      "logo_filename": "2019_Africa_Cup_of_Nations_logo.svg",
+      "mascot_filename": "_Tut,_Africa_Cup_of_Nations_Egypt_2019_Mascot,_May_2019_.jpeg",
+      "start_date": "2019-06-21",
+      "end_date": "2019-07-19",
+      "color": "#ca0b0f",
+      "team_count": 24,
+      "confed_count": 1,
+      "venue_count": 6,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "806px-V3f2uf9o_algeria-win-afcon-afp_625x300_20_July_19.webp.png",
+        "text": "Algeria"
+      },
+      {
+        "name": "Cairo International Stadium, Cairo",
+        "filename": "Panorma_Cairo_Stadium.jpg",
+        "text": "The Cairo International Stadium in Cairo hosted the final."
+      },
+      {
+        "name": "30 June Stadium, Cairo",
+        "filename": "30_June_Stadium_Cairo.jpg",
+        "text": "The 30 June Stadium hosted the semi-final Senegal vs Tunisia"
+      },
+      { "name": "Al Salam Stadium, Cairo", "filename": "Al_Ahly_Stadium.jpg", "text": "The Al Salam Stadium hosted the quarter-final Madagascar vs Tunisia" }
+    ],
+    "final_standings": { "champions": "ALG", "runners_up": "SEN", "third_place": "NGA", "fourth_place": "TUN" },
+    "statistics": { "total_matches": 52, "total_goals": 102, "attendance": 943053 },
+    "awards": {
+      "golden_boot": [{ "player": "Odion Ighalo", "team": "NGA", "goals": 5 }],
+      "golden_ball": [{ "player": "Ismaël Bennacer", "team": "ALG" }],
+      "best_young_player": { "player": "Krépin Diatta", "team": "SEN" },
+      "golden_glove": [{ "player": "Raïs M'Bolhi", "team": "ALG" }],
+      "fair_play_team": ["SEN"]
+    }
+  },
+  {
+    "id": "AFCON2017",
+    "year": "2017",
+    "name": "Africa Cup of Nations Gabon 2017",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
+    "details": {
+      "host": ["GAB"],
+      "logo_filename": "afcon_2017.png",
+      "mascot_filename": "12472337_1013610275372599_3491603779303180603_n.png",
+      "start_date": "2017-01-14",
+      "end_date": "2017-02-05",
+      "color": "#3775b8",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Cameroon_celebrating_winning_2017_Africa_Cup_of_Nations_(cropped).jpg",
+        "text": "Cameroon celebrating winning 2017 Africa Cup of Nation"
+      },
+      {
+        "name": "Libreville, Gabon",
+        "filename": "Libreville.jpg",
+        "text": "Libreville, Gabon"
+      },
+      {
+        "name": "Franceville, Gabon",
+        "filename": "Franceville.jpg",
+        "text": "Franceville, Gabon"
+      },
+      { "name": "Port-Gentil, Gabon", "filename": "POG-From_The_Air.jpg", "text": "Port-Gentil, Gabon" }
+    ],
+    "final_standings": { "champions": "CMR", "runners_up": "EGY", "third_place": "BFA", "fourth_place": "GHA" },
+    "statistics": { "total_matches": 32, "total_goals": 66 },
+    "awards": {
+      "golden_boot": [{ "player": "Junior Kabananga", "team": "COD", "goals": 5 }],
+      "golden_ball": [{ "player": "Christian Bassogog", "team": "CMR" }],
+      "fair_play_team": ["EGY"]
+    }
+  },
+  {
+    "id": "AFCON2015",
+    "year": "2015",
+    "name": "Africa Cup of Nations Equatorial Guinea 2015",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "lot"],
+    "details": {
+      "host": ["EQG"],
+      "logo_filename": "afcon_2015.png",
+      "mascot_filename": "2021640_mascot_pnglarge_jpeg8f784e2506d7c8ba43738faf6eb50334.jpeg",
+      "start_date": "2015-01-17",
+      "end_date": "2015-02-08",
+      "color": "#2470b5",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Acon_final_2015_(16331506630).jpg",
+        "text": "Ivory Coast celebrating winning 2015 Africa Cup of Nation"
+      },
+      { "name": "Ivory Coast", "filename": "Acon_final_2015_(16511522851).jpg", "text": "The Ivory Coast national team in the final" },
+      {
+        "name": "Ghana",
+        "filename": "Acon_final_2015_(16325527428).jpg",
+        "text": "The Ghana national team in the final"
+      },
+      {
+        "name": "Final",
+        "filename": "Acon_final_2015_(16325795950).jpg",
+        "text": "Ivory Coast vs Ghana"
+      },
+      {
+        "name": "Quarter-final",
+        "filename": "ACON_2015_GHA_GUI_(16511976922).jpg",
+        "text": "Ghana vs Guinea"
+      }
+    ],
+    "final_standings": { "champions": "CIV", "runners_up": "GHA", "third_place": "COD", "fourth_place": "EQG" },
+    "statistics": { "total_matches": 32, "total_goals": 68, "attendance": 617374 },
+    "awards": {
+      "golden_boot": [
+        { "player": "André Ayew", "team": "GHA", "goals": 3 },
+        { "player": "Ahmed Akaïchi", "team": "TUN", "goals": 3 },
+        { "player": "Javier Balboa", "team": "EQG", "goals": 3 },
+        { "player": "Thievy Bifouma", "team": "CGO", "goals": 3 },
+        { "player": "Dieumerci Mbokani", "team": "COD", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Christian Atsu", "team": "GHA" }],
+      "golden_glove": [{ "player": "Sylvain Gbohouo", "team": "CIV" }],
+      "fair_play_team": ["COD"]
+    }
+  },
+  {
+    "id": "AFCON2013",
+    "year": "2013",
+    "name": "Africa Cup of Nations South Africa 2013",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "fairplay", "lot"],
+    "details": {
+      "host": ["RSA"],
+      "logo_filename": "afcon_2013.png",
+      "mascot_filename": "11750_401983089894620_2026646383_n.png",
+      "start_date": "2013-01-19",
+      "end_date": "2013-02-10",
+      "color": "#0d8a5f",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "A_la_coupe_dAfrique_des_Nations.jpg",
+        "text": "Nigeria celebrating winning 2013 Africa Cup of Nation"
+      },
+      {
+        "name": "Group A",
+        "filename": "Angola_vs_Morocco_2013_AFCON.jpg",
+        "text": "Morocco clash with Angola in a Group A game of the 2013 CAN on January 19th."
+      },
+      {
+        "name": "Group D",
+        "filename": "Ivory_Coast_vs_Tunisia_2013_AFCON.jpg",
+        "text": "Even though Cote d'Ivoire beat Tunisia on January 26, the Carthage Eagles have one more chance to reach the next round at CAN."
+      },
+      {
+        "name": "Group D",
+        "filename": "Tunisia_vs_Algeria_2013_AFCON.jpg",
+        "text": "Algeria played Tunisia in the 2013 African Cup of Nations."
+      }
+    ],
+    "final_standings": { "champions": "NGA", "runners_up": "BFA", "third_place": "MLI", "fourth_place": "GHA" },
+    "statistics": { "total_matches": 32, "total_goals": 69, "attendance": 729000 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Emmanuel Emenike", "team": "NGA", "goals": 4 },
+        { "player": "Mubarak Wakaso", "team": "GHA", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Jonathan Pitroipa", "team": "BFA" }]
+    }
+  },
+  {
+    "id": "AFCON2012",
+    "year": "2012",
+    "name": "Africa Cup of Nations Gabon-Equatorial Guinea 2012",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "fairplay", "lot"],
+    "details": {
+      "host": ["GAB", "EQG"],
+      "logo_filename": "afcon_2012.png",
+      "mascot_filename": "high_1297629038.jpg",
+      "start_date": "2012-01-21",
+      "end_date": "2012-02-12",
+      "color": "#3775b8",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Estadio de Bata, Bata",
+        "filename": "Estadio_de_Bata_(15896737884).jpg",
+        "text": "The Estadio de Bata hosted the semi-final Zambia vs Ghana"
+      },
+      {
+        "name": "Nuevo Estadio de Malabo, Malabo",
+        "filename": "Estadio_de_Malabo_Equatorial_Guinea.jpeg",
+        "text": "The Nuevo Estadio de Malabo hosted the quarter-final Ivory Coast vs Equatorial Guinea"
+      }
+    ],
+    "final_standings": { "champions": "ZAM", "runners_up": "CIV", "third_place": "MLI", "fourth_place": "GHA" },
+    "statistics": { "total_matches": 32, "total_goals": 76, "attendance": 456332 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Emmanuel Mayuka", "team": "ZAM", "goals": 3 },
+        { "player": "Manucho", "team": "ANG", "goals": 3 },
+        { "player": "Pierre-Emerick Aubameyang", "team": "GAB", "goals": 3 },
+        { "player": "Didier Drogba", "team": "CIV", "goals": 3 },
+        { "player": "Cheick Diabaté", "team": "MLI", "goals": 3 },
+        { "player": "Houssine Kharja", "team": "MAR", "goals": 3 },
+        { "player": "Christopher Katongo", "team": "ZAM", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Christopher Katongo", "team": "ZAM" }],
+      "fair_play_team": ["CIV"]
+    }
+  },
+  {
+    "id": "AFCON2010",
+    "year": "2010",
+    "name": "Africa Cup of Nations Angola 2010",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "fairplay", "lot"],
+    "details": {
+      "host": ["ANG"],
+      "logo_filename": "2010_Africa_Cup_of_Nations_logo.svg",
+      "mascot_filename": "Palanquinha.svg",
+      "start_date": "2010-01-10",
+      "end_date": "2010-01-31",
+      "color": "#fa2200",
+      "team_count": 15,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Sign",
+        "filename": "Sign_for_African_Nations_Cup.jpg",
+        "text": "Countdown to the Africa Cup soccer tournament to be hosted in Angola at the end of the year."
+      },
+      {
+        "name": "Group D",
+        "filename": "TunisieCamerounAngola2010.jpeg",
+        "text": "Tunisia vs Cameroon"
+      },
+      {
+        "name": "Estádio 11 de Novembro, Luanda",
+        "filename": "Estadio-11Nov-Luanda_05_linke-Seite-Totale_LWS-2011-08-NC_1001.jpg",
+        "text": "The Estádio 11 de Novembro hosted the final"
+      },
+      {
+        "name": "Estádio Nacional de Ombaka, Benguela",
+        "filename": "Estádio_Nacional_de_Ombaka_(19151153514).jpg",
+        "text": "The Estádio Nacional de Ombaka hosted the semi-final Algeria vs Egypt"
+      }
+    ],
+    "final_standings": { "champions": "EGY", "runners_up": "GHA", "third_place": "NGA", "fourth_place": "ALG" },
+    "statistics": { "total_matches": 29, "total_goals": 71, "attendance": 543500 },
+    "awards": {
+      "golden_boot": [{ "player": "Gedo", "team": "EGY", "goals": 5 }],
+      "golden_ball": [{ "player": "Ahmed Hassan", "team": "EGY" }],
+      "golden_glove": [{ "player": "Essam El-Hadary", "team": "EGY" }]
+    }
+  },
+  {
+    "id": "AFCON2008",
+    "year": "2008",
+    "name": "Africa Cup of Nations Ghana 2008",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["points", "head2head", "goaldifferenceandgoalscored", "lot"],
+    "details": {
+      "host": ["GHA"],
+      "logo_filename": "2008_Africa_Cup_of_Nations_logo.svg",
+      "start_date": "2008-01-20",
+      "end_date": "2008-02-10",
+      "color": "#237832",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Ohene Djan Stadium, Accra",
+        "filename": "Ohene_Djan_stadium,_Accra.jpg",
+        "text": "The Ohene Djan Stadium hosted the final."
+      },
+      {
+        "name": "Baba Yara Stadium, Kumasi",
+        "filename": "Baba_Yara_Sports_Stadium_in_Kumasi.jpg",
+        "text": "The Baba Yara Stadium hosted the semi-final Ivory Coast vs Egypt"
+      },
+      {
+        "name": "Tamale Stadium, Tamale",
+        "filename": "Stadium_tamale2.jpg",
+        "text": "The Tamale Stadium hosted the quarter-final Tunisia vs Cameroon"
+      },
+      {
+        "name": "Sekondi Stadium, Sekondi",
+        "filename": "Sekondi-Takoradi_Stadium.jpg",
+        "text": "The Sekondi Stadium hosted the quarter-final Ivory Coast vs Guinea"
+      }
+    ],
+    "final_standings": { "champions": "EGY", "runners_up": "CMR", "third_place": "GHA", "fourth_place": "CIV" },
+    "statistics": { "total_matches": 32, "total_goals": 99, "attendance": 714000 },
+    "awards": {
+      "golden_boot": [{ "player": "Samuel Eto'o", "team": "CMR", "goals": 5 }],
+      "golden_ball": [{ "player": "Hosny Abd Rabo", "team": "EGY" }],
+      "golden_glove": [{ "player": "Essam El-Hadary", "team": "EGY" }]
+    }
+  },
+  {
+    "id": "AFCON2006",
+    "year": "2006",
+    "name": "Africa Cup of Nations Egypt 2006",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["EGY"],
+      "logo_filename": "2006_Africa_Cup_of_Nations_logo.svg",
+      "mascot_filename": "Croconile.jpg",
+      "start_date": "2006-01-20",
+      "end_date": "2006-02-10",
+      "color": "#ca0b0f",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 6,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Cairo International Stadium, Cairo",
+        "filename": "Crowd_in_Cairo_Stadium.jpg",
+        "text": "The Cairo International Stadium hosted the final."
+      },
+      {
+        "name": "Harras El-Hedoud Stadium, Alexandria",
+        "filename": "Harras_El-Hedoud_Stadium.jpg",
+        "text": "The Harras El-Hedoud Stadium hosted the semi-final Nigeria vs Ivory Coast"
+      },
+      {
+        "name": "Cairo Military Academy Stadium, Cairo",
+        "filename": "EGY_x_GUI._August_12,_2009.jpg",
+        "text": "The Cairo Military Academy Stadium hosted the quarter-final Cameroon vs Ivory Coast"
+      },
+      {
+        "name": "Ismailia Stadium, Ismailia",
+        "filename": "Ismailia_Stadium.jpg",
+        "text": "The Ismailia Stadium hosted group D matches"
+      }
+    ],
+    "final_standings": { "champions": "EGY", "runners_up": "CIV", "third_place": "NGA", "fourth_place": "SEN" },
+    "statistics": { "total_matches": 32, "total_goals": 73, "attendance": 714054 },
+    "awards": {
+      "golden_boot": [{ "player": "Samuel Eto'o", "team": "CMR", "goals": 5 }],
+      "golden_ball": [{ "player": "Ahmed Hassan", "team": "EGY" }]
+    }
+  },
+  {
+    "id": "AFCON2004",
+    "year": "2004",
+    "name": "Africa Cup of Nations Tunisia 2004",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["TUN"],
+      "logo_filename": "2004_Africa_Cup_of_Nations_logo.svg",
+      "start_date": "2004-01-24",
+      "end_date": "2004-02-14",
+      "color": "#0089cc",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Stade Olympique de Radès, Radès",
+        "filename": "Tunisia_-_Netherlands_(Stade_de_Radès).jpg",
+        "text": "The Stade Olympique de Radès hosted the final."
+      },
+      {
+        "name": "Stade Olympique de Sousse, Sousse",
+        "filename": "Stade_olympique_de_Sousse.jpg",
+        "text": "The Stade Olympique de Sousse hosted the semi-final Morocco vs Mali"
+      },
+      {
+        "name": "Stade Mustapha Ben Jannet, Monastir",
+        "filename": "Stade_Mustapha-Ben-Jennet.jpg",
+        "text": "The Stade Mustapha Ben Jannet hosted the quarter-final Cameroon vs Nigeria"
+      },
+      {
+        "name": "Stade El Menzah, Tunis",
+        "filename": "Stade_El_Menzah.jpg",
+        "text": "The Stade El Menzah hosted the quarter-final Mali vs Guinea"
+      }
+    ],
+    "final_standings": { "champions": "TUN", "runners_up": "MAR", "third_place": "NGA", "fourth_place": "MLI" },
+    "statistics": { "total_matches": 32, "total_goals": 88, "attendance": 553500 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Frédéric Kanouté", "team": "MLI", "goals": 4 },
+        { "player": "Patrick Mboma", "team": "CMR", "goals": 4 },
+        { "player": "Youssef Mokhtari", "team": "MAR", "goals": 4 },
+        { "player": "Jay-Jay Okocha", "team": "NGA", "goals": 4 },
+        { "player": "Francileudo dos Santos", "team": "TUN", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Jay-Jay Okocha", "team": "NGA" }]
+    }
+  },
+  {
+    "id": "AFCON2002",
+    "year": "2002",
+    "name": "Africa Cup of Nations Mali 2002",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["MLI"],
+      "logo_filename": "afcon_2002.png",
+      "start_date": "2002-01-19",
+      "end_date": "2002-02-10",
+      "color": "#29398c",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Stade du 26 Mars, Bamako",
+        "filename": "Stade_de_26-mars.png",
+        "text": "The Stade du 26 Mars hosted the final."
+      },
+      {
+        "name": "Stade Modibo Kéïta, Bamako",
+        "filename": "Stade_modibo_keita.jpg",
+        "text": "The Stade Modibo Kéïta hosted the semi-final Nigeria vs Senegal"
+      },
+      {
+        "name": "Bamako, Mali",
+        "filename": "Bamako_night_hills_may_2007.jpg",
+        "text": "Bamako at night. The capital of Mali, seen from the hills surrounding it, May 2007"
+      },
+      {
+        "name": "Mopti, Mali",
+        "filename": "Mosque_Mopti.jpg",
+        "text": "Mosque in Mopti, Mali"
+      }
+    ],
+    "final_standings": { "champions": "CMR", "runners_up": "SEN", "third_place": "NGA", "fourth_place": "MLI" },
+    "statistics": { "total_matches": 32, "total_goals": 48, "attendance": 570000 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Julius Aghahowa", "team": "NGA", "goals": 3 },
+        { "player": "Patrick Mboma", "team": "CMR", "goals": 3 },
+        { "player": "Salomon Olembé", "team": "CMR", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Rigobert Song", "team": "CMR" }]
+    }
+  },
+  {
+    "id": "AFCON2000",
+    "year": "2000",
+    "name": "Africa Cup of Nations Ghana-Nigeria 2000",
+    "short_name": "Ghana-Nigeria 2000",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GHA", "NGA"],
+      "logo_filename": "afcon_2000.png",
+      "start_date": "2000-01-22",
+      "end_date": "2000-02-13",
+      "color": "#008040",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "National Stadium, Lagos, Nigeria",
+        "filename": "A_side_view_of_the_National_Stadium.jpg",
+        "text": "The National Stadium hosted the final."
+      },
+      {
+        "name": "Accra Sports Stadium, Accra, Ghana",
+        "filename": "Ohene_Djan_stadium,_Accra.jpg",
+        "text": "The Accra Sports Stadium hosted the semi-final Cameroon vs Tunisia"
+      },
+      {
+        "name": "Kano, Nigeria",
+        "filename": "KanofromDalaHill.jpg",
+        "text": "Kano from Dala Hill"
+      },
+      {
+        "name": "Kumasi Sports Stadium, Kumasi, Ghana",
+        "filename": "Baba_Yara_Sports_Stadium_in_Kumasi.jpg",
+        "text": "The Kumasi Sports Stadium hosted the quarter-final South Africa vs Ghana"
+      }
+    ],
+    "final_standings": { "champions": "CMR", "runners_up": "NGA", "third_place": "RSA", "fourth_place": "TUN" },
+    "statistics": { "total_matches": 32, "total_goals": 73, "attendance": 677500 },
+    "awards": {
+      "golden_boot": [{ "player": "Shaun Bartlett", "team": "RSA", "goals": 5 }],
+      "golden_ball": [{ "player": "Lauren", "team": "CMR" }]
+    }
+  },
+  {
+    "id": "AFCON1998",
+    "year": "1998",
+    "name": "Africa Cup of Nations Burkina Faso 1998",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["BFA"],
+      "logo_filename": "afcon_1998.png",
+      "start_date": "1998-02-07",
+      "end_date": "1998-02-28",
+      "color": "#fa2200",
+      "team_count": 16,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade du 4 Août, Ouagadougou",
+        "filename": "Stade_du_4-Août,_Burkina_Faso,_2009.jpg",
+        "text": "The Stade du 4 Août hosted the final."
+      },
+      {
+        "name": "Stade Municipal, Bobo-Dioulasso",
+        "filename": "Stadiumbobodioulasso1.jpg",
+        "text": "The Stade Municipal hosted the semi-final Burkina Faso vs Egypt"
+      },
+      {
+        "name": "Stade Municipal, Ouagadougou",
+        "filename": "Stademunicipal.png",
+        "text": "The Stade Municipal hosted the quarter-final Morocco vs South Africa"
+      },
+      {
+        "name": "Ouagadougou, Burkina Faso",
+        "filename": "OUAGADOUGOU3.jpeg",
+        "text": "Ouagadougou skyline"
+      }
+    ],
+    "final_standings": { "champions": "EGY", "runners_up": "RSA", "third_place": "COD-1997-2003", "fourth_place": "BFA" },
+    "statistics": { "total_matches": 32, "total_goals": 93, "attendance": 412800 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Hossam Hassan", "team": "EGY", "goals": 7 },
+        { "player": "Benni McCarthy", "team": "RSA", "goals": 7 }
+      ],
+      "golden_ball": [{ "player": "Benni McCarthy", "team": "RSA" }]
+    }
+  },
+  {
+    "id": "AFCON1996",
+    "year": "1996",
+    "name": "Africa Cup of Nations South Africa 1996",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["RSA"],
+      "logo_filename": "afcon_1996.jpg",
+      "start_date": "1996-01-13",
+      "end_date": "1996-02-03",
+      "color": "#178338",
+      "team_count": 15,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "FNB Stadium, Johannesburg",
+        "filename": "FNB-Stadion.jpg",
+        "text": "The FNB Stadium hosted the final."
+      },
+      {
+        "name": "Kings Park Stadium, Durban",
+        "filename": "King's_Park_Stadium,_Durban.jpg",
+        "text": "The Kings Park Stadium hosted the semi-final Zambia vs Tunisia"
+      },
+      {
+        "name": "Port Elizabeth, South Africa",
+        "filename": "City_Hall_Port_Elizabeth-003.jpg",
+        "text": "City Hall, Market Square, Port Elizabeth"
+      },
+      {
+        "name": "Free State Stadium, Bloemfontein",
+        "filename": "Free_State_Stadium1.jpg",
+        "text": "The Free State Stadium hosted the quarter-final Zambia vs Egypt"
+      }
+    ],
+    "final_standings": { "champions": "RSA", "runners_up": "TUN", "third_place": "ZAM", "fourth_place": "GHA" },
+    "statistics": { "total_matches": 29, "total_goals": 78, "attendance": 640880 },
+    "awards": {
+      "golden_boot": [{ "player": "Kalusha Bwalya", "team": "ZAM", "goals": 5 }],
+      "golden_ball": [{ "player": "Kalusha Bwalyay", "team": "ZAM" }]
+    }
+  },
+  {
+    "id": "AFCON1994",
+    "year": "1994",
+    "name": "Africa Cup of Nations Tunisia 1994",
+    "short_name": "Tunisia 1994",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["TUN"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1994-03-26",
+      "end_date": "1994-04-10",
+      "color": "#fa2200",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade El Menzah, Tunis",
+        "filename": "Stade_Olympique_dEl_Menzah.jpg",
+        "text": "The Stade El Menzah hosted the final."
+      },
+      {
+        "name": "Stade Olympique de Sousse, Sousse",
+        "filename": "Stade_olympique_de_Sousse.jpg",
+        "text": "The Stade Olympique de Sousse hosted the quarter-final Ghana vs Ivory Coast"
+      },
+      {
+        "name": "Sousse, Tunisia",
+        "filename": "Sousse_Ribat_Aussicht.jpeg",
+        "text": "View from the tower of the Ribat of Sousse, Tunisia"
+      },
+      {
+        "name": "Stade Chedli Zouiten, Tunis",
+        "filename": "Tnplaces_12.jpg",
+        "text": "The Stade Chedli Zouite hosted group B matches"
+      }
+    ],
+    "final_standings": { "champions": "NGA", "runners_up": "ZAM", "third_place": "CIV", "fourth_place": "MLI" },
+    "statistics": { "total_matches": 20, "total_goals": 44, "attendance": 273000 },
+    "awards": {
+      "golden_boot": [{ "player": "Rashidi Yekini", "team": "NGA", "goals": 5 }],
+      "golden_ball": [{ "player": "Rashidi Yekini", "team": "NGA" }]
+    }
+  },
+  {
+    "id": "AFCON1992",
+    "year": "1992",
+    "name": "Africa Cup of Nations Senegal 1992",
+    "short_name": "Senegal 1992",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SEN"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1992-01-12",
+      "end_date": "1992-01-26",
+      "color": "#24a45f",
+      "team_count": 12,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade de l'Amitié, Dakar",
+        "filename": "Senegal_1_-_Cameroon_0_-_Stade_Léopold_Sédar_Senghor.jpg",
+        "text": "The Stade de l'Amitié hosted the final."
+      },
+      {
+        "name": "Dakar, Senegal",
+        "filename": "Dakar_-_Panorama_urbain.jpg",
+        "text": "Skyline of Dakar, Senegal"
+      },
+      {
+        "name": "Ziguinchor, Senegal",
+        "filename": "Ziguinchor6.JPG",
+        "text": "Downtown of Ziguinchor"
+      }
+    ],
+    "final_standings": { "champions": "CIV", "runners_up": "GHA", "third_place": "NGA", "fourth_place": "CMR" },
+    "statistics": { "total_matches": 20, "total_goals": 34 },
+    "awards": {
+      "golden_boot": [{ "player": "Rashidi Yekini", "team": "NGA", "goals": 4 }],
+      "golden_ball": [{ "player": "Abedi Pele", "team": "GHA" }],
+      "golden_glove": [{ "player": "Alain Gouaméné", "team": "CIV" }]
+    }
+  },
+  {
+    "id": "AFCON1990",
+    "year": "1990",
+    "name": "Africa Cup of Nations Algeria 1990",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ALG"],
+      "logo_filename": "afcon_1990.png",
+      "start_date": "1990-03-02",
+      "end_date": "1990-03-16",
+      "color": "#c80724",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade 5 Juillet 1962, Algiers",
+        "filename": "Olimpiai_Komplexum,_szemben_az_1962._július_5.-e_Stadion._Fortepan_100571.jpg",
+        "text": "The Stade 5 Juillet 1962 hosted the final."
+      },
+      {
+        "name": "Algiers, Algeria",
+        "filename": "Algiers_Montage.png",
+        "text": "Clockwise: Buildings along the Mediterranean coast of Algiers, Martyrs Memorial, Notre-Dame d'Afrique, Ketchaoua Mosque, Casbah, the Grand Post Office and the Ministry of Finance of Algeria"
+      },
+      {
+        "name": "Stade 19 Mai 1956, Annaba",
+        "filename": "Stade_19_Mai_1956_(Annaba).jpg",
+        "text": "The Stade 19 Mai 1956 hosted the semi-final Zambia vs Nigeria."
+      },
+      {
+        "name": "Annaba, Algeria",
+        "filename": "Annaba,_algeria04.jpg",
+        "text": "Annaba, Algeria"
+      }
+    ],
+    "final_standings": { "champions": "ALG", "runners_up": "NGA", "third_place": "ZAM", "fourth_place": "SEN" },
+    "statistics": { "total_matches": 16, "total_goals": 30, "attendance": 768000 },
+    "awards": {
+      "golden_boot": [{ "player": "Djamel Menad", "team": "ALG", "goals": 4 }],
+      "golden_ball": [{ "player": "Rabah Madjer", "team": "ALG" }]
+    }
+  },
+  {
+    "id": "AFCON1988",
+    "year": "1988",
+    "name": "Africa Cup of Nations Morocco 1988",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["MAR"],
+      "logo_filename": "afcon_1988.png",
+      "start_date": "1988-03-13",
+      "end_date": "1988-03-27",
+      "color": "#f55535",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade Mohamed V, Casablanca",
+        "filename": "Raja_de_Casablanca_vs_Mouloudia_dOujda,_November_02_2008-04.jpg",
+        "text": "The Stade Mohamed V hosted the final."
+      },
+      {
+        "name": "Casablanca, Morocco",
+        "filename": "La_grande_mosquée_hassan_II.jpg",
+        "text": "Casablanca, Morocco"
+      },
+      {
+        "name": "Stade Moulay Abdellah, Rabat",
+        "filename": "FAR_Rabat_vs_AS_Sale,_November_6_2012-2.jpg",
+        "text": "The Stade Moulay Abdellah hosted the semi-final Nigeria vs Algeria."
+      },
+      {
+        "name": "Rabat, Morocco",
+        "filename": "Morocco_-_Rabat_(31387775324).jpg",
+        "text": "Rabat, Morocco"
+      }
+    ],
+    "final_standings": { "champions": "CMR", "runners_up": "NGA", "third_place": "ALG", "fourth_place": "MAR" },
+    "statistics": { "total_matches": 16, "total_goals": 23 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Lakhdar Belloumi", "team": "ALG", "goals": 2 },
+        { "player": "Roger Milla", "team": "CMR", "goals": 2 },
+        { "player": "Gamal Abdelhamid", "team": "EGY", "goals": 2 },
+        { "player": "Abdoulaye Traoré", "team": "CIV", "goals": 2 }
+      ],
+      "golden_ball": [{ "player": "Aziz Bouderbala", "team": "MAR" }],
+      "golden_glove": [{ "player": "Joseph-Antoine Bell", "team": "CMR" }]
+    }
+  },
+  {
+    "id": "AFCON1986",
+    "year": "1986",
+    "name": "Africa Cup of Nations Egypt 1986",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["EGY"],
+      "logo_filename": "CAN_1986_(logo).png",
+      "start_date": "1986-03-07",
+      "end_date": "1986-03-21",
+      "color": "#ca0b0f",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Cairo International Stadium, Cairo",
+        "filename": "In_Cairo_Stadium.jpg",
+        "text": "The Cairo International Stadium hosted the final."
+      },
+      {
+        "name": "Cairo, Egypt",
+        "filename": "Cairo-Nile-2020(1).jpg",
+        "text": "Cairo, Egypt"
+      },
+      {
+        "name": "Alexandria Stadium, Alexandria",
+        "filename": "GD-EG-Alex-Stade002.jpeg",
+        "text": "The Alexandria Stadium hosted the semi-final Cameroon vs Ivory Coast."
+      },
+      {
+        "name": "Alexandria, Egypt",
+        "filename": "Suez_canalst-Alexandria,_Egypt.jpg",
+        "text": "Suez Canal St. in Alexandria, Egypt"
+      }
+    ],
+    "final_standings": { "champions": "EGY", "runners_up": "CMR", "third_place": "CIV", "fourth_place": "MAR" },
+    "statistics": { "total_matches": 16, "total_goals": 31 },
+    "awards": {
+      "golden_boot": [{ "player": "Roger Milla", "team": "CMR", "goals": 4 }],
+      "golden_ball": [{ "player": "Roger Milla", "team": "CMR" }]
+    }
+  },
+  {
+    "id": "AFCON1984",
+    "year": "1984",
+    "name": "Africa Cup of Nations Ivory Coast 1984",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CIV"],
+      "logo_filename": "afcon_1984.png",
+      "start_date": "1984-03-04",
+      "end_date": "1984-03-18",
+      "color": "#e98611",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade Félix Houphouët-Boigny, Abidjan",
+        "filename": "StadeFHB.jpg",
+        "text": "The Stade Félix Houphouët-Boigny hosted the final."
+      },
+      {
+        "name": "Abidjan, Ivory Coast",
+        "filename": "Abidjan_Ville_Collage.jpg",
+        "text": "City of Abidjan"
+      },
+      {
+        "name": "Stade Bouaké, Bouaké",
+        "filename": "Stade_de_la_paix_en_reconstruction.png",
+        "text": "The Stade Bouaké hosted the semi-final Algeria vs Cameroon"
+      },
+      {
+        "name": "Bouaké, Ivory Coast",
+        "filename": "Bouaké_Montage.jpg",
+        "text": "Bouaké, Ivory Coast"
+      }
+    ],
+    "final_standings": { "champions": "CMR", "runners_up": "NGA", "third_place": "ALG", "fourth_place": "EGY" },
+    "statistics": { "total_matches": 16, "total_goals": 39 },
+    "awards": {
+      "golden_boot": [{ "player": "Taher Abouzaid", "team": "EGY", "goals": 4 }],
+      "golden_ball": [{ "player": "Théophile Abega", "team": "CMR" }],
+      "golden_glove": [{ "player": "Joseph-Antoine Bell", "team": "CMR" }]
+    }
+  },
+  {
+    "id": "AFCON1982",
+    "year": "1982",
+    "name": "Africa Cup of Nations Libya 1982",
+    "short_name": "Libya 1982",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["LBY-1977-2011"],
+      "logo_filename": "afcon_1982.png",
+      "start_date": "1982-03-05",
+      "end_date": "1982-03-19",
+      "color": "#01004b",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "11 June Stadium, Tripoli",
+        "filename": "11_June_Stadium_BenTaher.jpg",
+        "text": "The 11 June Stadium hosted the final."
+      },
+      {
+        "name": "Tripoli, Libya",
+        "filename": "Tripoli_Montage.jpg",
+        "text": "Top:: That El Emad Towers; Middle: Martyrs' Square; Bottom left: Marcus Aurelius Arch; Bottom right: Souq al-Mushir – Tripoli Medina"
+      },
+      {
+        "name": "28 March Stadium, Benghazi",
+        "filename": "28_March_Stadium_BenTaher_2007.jpg",
+        "text": "The 28 March Stadium hosted the semi-final Ghana vs Algeria"
+      },
+      {
+        "name": "Benghazi, Libya",
+        "filename": "Al_Daawa_alIslamiyah2.jpeg",
+        "text": "Benghazi seafront"
+      }
+    ],
+    "final_standings": { "champions": "GHA", "runners_up": "LBY-1977-2011", "third_place": "ZAM", "fourth_place": "ALG" },
+    "statistics": { "total_matches": 16, "total_goals": 32 },
+    "awards": {
+      "golden_boot": [{ "player": "George Alhassan", "team": "GHA", "goals": 4 }],
+      "golden_ball": [{ "player": "Fawzi Al-Issawi", "team": "LBY-1977-2011" }]
+    }
+  },
+  {
+    "id": "AFCON1980",
+    "year": "1980",
+    "name": "Africa Cup of Nations Nigeria 1980",
+    "short_name": "Nigeria 1980",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["NGA"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1980-03-08",
+      "end_date": "1980-03-22",
+      "color": "#568629",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Surulere Stadium, Lagos",
+        "filename": "A_side_view_of_the_National_Stadium.jpg",
+        "text": "The Surulere Stadium hosted the final."
+      },
+      {
+        "name": "Lagos, Nigeria",
+        "filename": "2014_Victoria_Island_Lagos_Nigeria_15006436297.jpg",
+        "text": "Victoria Island, Lagos, Nigeria"
+      },
+      {
+        "name": "Ibadan, Nigeria",
+        "filename": "Nigerias_Oyo_state,_Ibadan_has_beautiful_place_by_kingknx.jpg",
+        "text": "Sango, Ibadan"
+      }
+    ],
+    "final_standings": { "champions": "NGA", "runners_up": "ALG", "third_place": "MAR", "fourth_place": "EGY" },
+    "statistics": { "total_matches": 16, "total_goals": 33 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Khaled Labied", "team": "MAR", "goals": 3 },
+        { "player": "Segun Odegbami", "team": "NGA", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Christian Chukwu", "team": "NGA" }]
+    }
+  },
+  {
+    "id": "AFCON1978",
+    "year": "1978",
+    "name": "Africa Cup of Nations Ghana 1978",
+    "short_name": "Ghana 1978",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GHA"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1978-03-05",
+      "end_date": "1978-03-16",
+      "color": "#fa2200",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Accra Sports Stadium, Accra",
+        "filename": "Ohene_Djan_stadium,_Accra.jpg",
+        "text": "The Accra Sports Stadium hosted the final."
+      },
+      {
+        "name": "Accra, Ghana",
+        "filename": "A_drone_footage_of_Accra_central,_Ghana.jpg",
+        "text": "Accra, Ghana"
+      },
+      {
+        "name": "Kumasi Sports Stadium, Kumasi",
+        "filename": "Kumasi900.jpeg",
+        "text": "The Kumasi Sports Stadium hosted the semi-final Uganda vs Nigeria."
+      },
+      {
+        "name": "Kumasi, Ghana",
+        "filename": "St_Peters_Cathedral_Basilica_Kumasi_(4).jpg",
+        "text": "St Peter's Cathedral Basilica, Kumasi"
+      }
+    ],
+    "final_standings": { "champions": "GHA", "runners_up": "UGA", "third_place": "NGA", "fourth_place": "TUN" },
+    "statistics": { "total_matches": 16, "total_goals": 38 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Opoku Afriyie", "team": "GHA", "goals": 3 },
+        { "player": "Segun Odegbami", "team": "NGA", "goals": 3 },
+        { "player": "Phillip Omondi", "team": "UGA", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Karim Abdul Razak", "team": "GHA" }]
+    }
+  },
+  {
+    "id": "AFCON1976",
+    "year": "1976",
+    "name": "Africa Cup of Nations Ethiopia 1976",
+    "short_name": "Ethiopia 1976",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ETH-1975-1987"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1976-02-29",
+      "end_date": "1976-03-14",
+      "color": "#078930",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Addis Ababa Stadium, Addis Ababa",
+        "filename": "Addis_Ababa_Stadium.jpg",
+        "text": "The Addis Ababa Stadium hosted the final round."
+      },
+      {
+        "name": "Addis Ababa, Ethiopia",
+        "filename": "Addis_abeba_meskele_square.jpg",
+        "text": "Addis Ababa, Ethiopia"
+      },
+      {
+        "name": "Dire Dawa, Ethiopia",
+        "filename": "ET-Dire_Dawa,_Ethiopia_(13).jpeg",
+        "text": "Dire Dawa, Ethiopia"
+      }
+    ],
+    "final_standings": { "champions": "MAR", "runners_up": "GUI", "third_place": "NGA", "fourth_place": "EGY" },
+    "statistics": { "total_matches": 18, "total_goals": 54 },
+    "awards": {
+      "golden_boot": [{ "player": "N'Jo Léa", "team": "GUI", "goals": 4 }],
+      "golden_ball": [{ "player": "Ahmed Faras", "team": "MAR" }]
+    }
+  },
+  {
+    "id": "AFCON1974",
+    "year": "1974",
+    "name": "Africa Cup of Nations Egypt 1974",
+    "short_name": "Egypt 1974",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["EGY"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1974-03-01",
+      "end_date": "1974-03-14",
+      "color": "#ca0b0f",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Cairo International Stadium, Cairo",
+        "filename": "Cairo_International_Stadium.jpg",
+        "text": "The Cairo International Stadium hosted the final."
+      },
+      {
+        "name": "Alexandria Stadium, Alexandria",
+        "filename": "GD-EG-Alex-Stade002.jpeg",
+        "text": "The Alexandria Stadium hosted the semi-final Congo vs Zambia"
+      },
+      {
+        "name": "El Mahalla Stadium, El-Mahalla El-Kubra",
+        "filename": "El_Mahalla_El_Kobra_gate.jpeg",
+        "text": "The El Mahalla Stadium hosted group A matches"
+      },
+      {
+        "name": "Damanhour, Egypt",
+        "filename": "Opera_damanhour.jpg",
+        "text": "Opera Damanhour"
+      }
+    ],
+    "final_standings": { "champions": "ZAI", "runners_up": "ZAM", "third_place": "EGY", "fourth_place": "CGO-1970-1991" },
+    "statistics": { "total_matches": 17, "total_goals": 54 },
+    "awards": {
+      "golden_boot": [{ "player": "Ndaye Mulamba", "team": "ZAI", "goals": 9 }],
+      "golden_ball": [{ "player": "Ndaye Mulamba", "team": "ZAI" }]
+    }
+  },
+  {
+    "id": "AFCON1972",
+    "year": "1972",
+    "name": "Africa Cup of Nations Cameroon 1972",
+    "short_name": "Cameroon 1972",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CMR-1961-1975"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1972-02-23",
+      "end_date": "1972-03-05",
+      "color": "#24a45f",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Stade Omnisports, Yaoundé",
+        "filename": "Ahmadou_Ahidjo_stadium.jpg",
+        "text": "The Stade Omnisports hosted the final."
+      },
+      {
+        "name": "Yaoundé, Cameroon",
+        "filename": "Ngousso_Ntem.jpg",
+        "text": "Yaoundé, Cameroon"
+      },
+      {
+        "name": "Douala, Cameroon",
+        "filename": "Ars&Urbis_International_Workshop_-_Emiliano_Gandolfi_36.jpeg",
+        "text": "Douala, Cameroon"
+      }
+    ],
+    "final_standings": { "champions": "CGO-1970-1991", "runners_up": "MLI", "third_place": "CMR-1961-1975", "fourth_place": "ZAI" },
+    "statistics": { "total_matches": 16, "total_goals": 53 },
+    "awards": {
+      "golden_boot": [{ "player": "Fantamady Keita", "team": "MLI", "goals": 5 }],
+      "golden_ball": [{ "player": "François M'Pelé", "team": "CGO-1970-1991" }]
+    }
+  },
+  {
+    "id": "AFCON1970",
+    "year": "1970",
+    "name": "Africa Cup of Nations Sudan 1970",
+    "short_name": "Sudan 1970",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SDN-1956-1970"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1970-02-06",
+      "end_date": "1970-02-16",
+      "color": "#fa2200",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Khartoum, Sudan",
+        "filename": "Khartoumdowntown.jpg",
+        "text": "Khartoum at night"
+      },
+      {
+        "name": "Wad Medani, Sudan",
+        "filename": "Wad_Medani_Blue_Nile.jpg",
+        "text": "Tourist boats on the Blue Nile at Wad Medani"
+      }
+    ],
+    "final_standings": { "champions": "SDN-1956-1970", "runners_up": "GHA", "third_place": "UAR", "fourth_place": "CIV" },
+    "statistics": { "total_matches": 16, "total_goals": 51 },
+    "awards": {
+      "golden_boot": [{ "player": "Laurent Pokou", "team": "CIV", "goals": 8 }],
+      "golden_ball": [{ "player": "Laurent Pokou", "team": "CIV" }]
+    }
+  },
+  {
+    "id": "AFCON1968",
+    "year": "1968",
+    "name": "Africa Cup of Nations Ethiopia 1968",
+    "short_name": "Ethiopia 1968",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ETH-1941-1974"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1968-01-12",
+      "end_date": "1968-01-21",
+      "color": "#0e9061",
+      "team_count": 8,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Hailé Sélassié Stadium, Addis Ababa",
+        "filename": "ET_Addis_asv2018-01_img02_Stadium.jpg",
+        "text": "The Hailé Sélassié Stadium hosted the final"
+      },
+      {
+        "name": "Addis Ababa, Ethiopia",
+        "filename": "AddisView.jpg",
+        "text": "Partial view of Addis Ababa skyline from Sheger park"
+      },
+      {
+        "name": "Asmara, Eritrea",
+        "filename": "Asmara_Montage.png",
+        "text": "Clockwise from top: Cityscape, Sunset view over Asmara, Church of Our Lady of the Rosary, Fiat Tagliero Building sign, 23d ISCOE East Africa conference in Asmara 2019"
+      }
+    ],
+    "final_standings": { "champions": "COD-1966-1971", "runners_up": "GHA", "third_place": "CIV", "fourth_place": "ETH-1941-1974" },
+    "statistics": { "total_matches": 16, "total_goals": 52 },
+    "awards": {
+      "golden_boot": [{ "player": "Laurent Pokou", "team": "CIV", "goals": 6 }],
+      "golden_ball": [{ "player": "Kazadi Mwamba", "team": "COD-1966-1971" }]
+    }
+  },
+  {
+    "id": "AFCON1965",
+    "year": "1965",
+    "name": "Africa Cup of Nations Tunisia 1965",
+    "short_name": "Tunisia 1965",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["pointslot"],
+    "details": {
+      "host": ["TUN"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1965-11-12",
+      "end_date": "1965-11-21",
+      "color": "#fa2200",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Stade Chedli Zouiten, Tunis",
+        "filename": "Tunis_-_Stade_Municipal_Géo_André.jpg",
+        "text": "The Stade Chedli Zouite hosted the final"
+      },
+      {
+        "name": "Stade Taïeb Mhiri, Sfax",
+        "filename": "Stade_taieb_mehiri.jpeg",
+        "text": "The Stade Taïeb Mhiri hosted group B match Ivory Coast vs Congo-Léopoldville"
+      },
+      {
+        "name": "Sousse, Tunisia",
+        "filename": "Grande_Mosquée_sousah.jpg",
+        "text": "Sousse, Tunisia"
+      },
+      {
+        "name": "Bizerte, Tunisia",
+        "filename": "CityHallBizerte.jpeg",
+        "text": "Bizerte City Hall in Belgique Street area"
+      }
+    ],
+    "final_standings": { "champions": "GHA-1964-1966", "runners_up": "TUN", "third_place": "CIV", "fourth_place": "SEN" },
+    "statistics": { "total_matches": 8, "total_goals": 31 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Ben Acheampong", "team": "GHA-1964-1966", "goals": 3 },
+        { "player": "Osei Kofi", "team": "GHA-1964-1966", "goals": 3 },
+        { "player": "Eustache Manglé", "team": "CIV", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Osei Kofi", "team": "GHA-1964-1966" }]
+    }
+  },
+  {
+    "id": "AFCON1963",
+    "year": "1963",
+    "name": "Africa Cup of Nations Ghana 1963",
+    "short_name": "Ghana 1963",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GHA-1964-1966"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1963-11-24",
+      "end_date": "1963-12-01",
+      "color": "#fcd20f",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Accra Sports Stadium, Accra",
+        "filename": "Ohene_Djan_stadium,_Accra.jpg",
+        "text": "The Accra Sports Stadium hosted the final"
+      },
+      {
+        "name": "Accra, Ghana",
+        "filename": "National_Theatre.jpg",
+        "text": "The National Theater was built by a Chinese contractor as part of an effort to increase patronage of the performing arts in Ghana. It houses the National Orchestra which plays using traditional instruments."
+      },
+      {
+        "name": "Kumasi Sports Stadium, Kumasi",
+        "filename": "Baba_Yara_Sports_Stadium_in_Kumasi.jpg",
+        "text": "The Kumasi Sports Stadium hosted group B matches"
+      },
+      {
+        "name": "Kumasi, Ghana",
+        "filename": "Komfo_Anokye_Teaching_Hospital,_Kumasi,_Ghana.jpg",
+        "text": "Komfo Anokye Teaching Hospital"
+      }
+    ],
+    "final_standings": { "champions": "GHA-1964-1966", "runners_up": "SDN-1956-1970", "third_place": "UAR", "fourth_place": "ETH-1941-1974" },
+    "statistics": { "total_matches": 8, "total_goals": 33 },
+    "awards": {
+      "golden_boot": [{ "player": "Hassan El-Shazly", "team": "UAR", "goals": 6 }],
+      "golden_ball": [{ "player": "Hassan El-Shazly", "team": "UAR" }]
+    }
+  },
+  {
+    "id": "AFCON1962",
+    "year": "1962",
+    "name": "Africa Cup of Nations Ethiopia 1962",
+    "short_name": "Ethiopia 1962",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ETH-1941-1974"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1962-01-14",
+      "end_date": "1962-01-21",
+      "color": "#0e9061",
+      "team_count": 4,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Hailé Sélassié Stadium, Addis Ababa",
+        "filename": "ET_Addis_asv2018-01_img02_Stadium.jpg",
+        "text": "The Hailé Sélassié Stadium hosted all the matches."
+      },
+      {
+        "name": "Addis Ababa, Ethiopia",
+        "filename": "Holy_trinty_cathedral_church.jpg",
+        "text": "Addis Ababa, Ethiopia"
+      }
+    ],
+    "final_standings": { "champions": "ETH-1941-1974", "runners_up": "UAR", "third_place": "TUN", "fourth_place": "UGA-1914-1962" },
+    "statistics": { "total_matches": 4, "total_goals": 18 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Badawi Abdel Fattah", "team": "UAR", "goals": 3 },
+        { "player": "Mengistu Worku", "team": "ETH-1941-1974", "goals": 3 }
+      ],
+      "golden_ball": [{ "player": "Mengistu Worku", "team": "ETH-1941-1974" }]
+    }
+  },
+  {
+    "id": "AFCON1959",
+    "year": "1959",
+    "name": "Africa Cup of Nations United Arab Republic 1959",
+    "short_name": "United Arab Republic 1959",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["UAR"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1959-05-22",
+      "end_date": "1959-05-29",
+      "color": "#ca0b0f",
+      "team_count": 3,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Prince Farouk Stadium, Cairo",
+        "filename": "Mokhtar_El_tetsh_stadium.jpg",
+        "text": "The Prince Farouk Stadium hosted all the matches."
+      },
+      {
+        "name": "Cairo, Egypt",
+        "filename": "Muizz_Street_-_Egypt.jpg",
+        "text": "Cairo, Egypt"
+      }
+    ],
+    "final_standings": { "champions": "UAR", "runners_up": "SDN-1956-1970", "third_place": "ETH-1941-1974" },
+    "statistics": { "total_matches": 3, "total_goals": 8 },
+    "awards": {
+      "golden_boot": [{ "player": "Mahmoud El-Gohary", "team": "UAR", "goals": 3 }],
+      "golden_ball": [{ "player": "Mahmoud El-Gohary", "team": "UAR" }]
+    }
+  },
+  {
+    "id": "AFCON1957",
+    "year": "1957",
+    "name": "Africa Cup of Nations Sudan 1957",
+    "short_name": "Sudan 1957",
+    "tournament_type_id": "AFCON",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SDN-1956-1970"],
+      "logo_filename": "Africa_Cup_of_Nations.png",
+      "start_date": "1957-02-10",
+      "end_date": "1957-02-16",
+      "color": "#fa2200",
+      "team_count": 3,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Khartoum, Sudan",
+        "filename": "University_of_Khartoum_001.jpeg",
+        "text": "The University of Khartoum"
+      }
+    ],
+    "final_standings": { "champions": "EGY-1953-1958", "runners_up": "ETH-1941-1974", "third_place": "SDN-1956-1970" },
+    "statistics": { "total_matches": 2, "total_goals": 7 },
+    "awards": {
+      "golden_boot": [{ "player": "Ad-Diba", "team": "EGY-1953-1958", "goals": 5 }],
+      "golden_ball": [{ "player": "Ad-Diba", "team": "EGY-1953-1958" }]
+    }
+  }
+]

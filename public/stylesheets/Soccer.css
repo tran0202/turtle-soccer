@@ -1052,7 +1052,8 @@
   border-radius: 0.25rem;
 }
 
-.conf-logo {
+.conf-logo,
+.comp-logo {
   max-height: 100px;
   max-width: 100px;
 }

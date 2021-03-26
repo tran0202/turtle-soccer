@@ -1,0 +1,321 @@
+[
+  {
+    "id": "WOFT2020",
+    "year": "2020",
+    "name": "Women's Olympic Football Tournament Tokyo 2020",
+    "tournament_type_id": "WOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["JPN_U23WNT"],
+      "logo_filename": "2020_Summer_Olympics_logo_new.svg",
+      "start_date": "2021-07-21",
+      "end_date": "2021-08-06",
+      "color": "#202b5a",
+      "team_count": 12,
+      "confed_count": 6,
+      "venue_count": 7,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "National Stadium, Tokyo",
+        "filename": "New_national_stadium_tokyo_1.jpg",
+        "text": "The National Stadium will host the final."
+      }
+    ]
+  },
+  {
+    "id": "WOFT2016",
+    "year": "2016",
+    "name": "Women's Olympic Football Tournament Rio 2016",
+    "tournament_type_id": "WOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["BRA_U23WNT"],
+      "logo_filename": "2016_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_Rio_2016.png",
+      "start_date": "2016-08-03",
+      "end_date": "2016-08-19",
+      "color": "#15611e",
+      "team_count": 12,
+      "confed_count": 6,
+      "venue_count": 7,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Semi-final",
+        "filename": "Alemanha_x_Canadá_-_Futebol_feminino_-_Olimpíada_Rio_2016_(28592213900).jpg",
+        "text": "Germany vs Canada"
+      },
+      {
+        "name": "Semi-final",
+        "filename": "Futebol_feminino_olímpico-_Brasil_e_Suécia_no_Maracanã_(28746917250).jpg",
+        "text": "Brazil vs Sweden"
+      },
+      {
+        "name": "Quarter-final",
+        "filename": "Chloe_Logarzo_in_action_at_2016_Rio_Olympics.jpeg",
+        "text": "Brazil vs Australia"
+      },
+      {
+        "name": "Group E",
+        "filename": "China_x_Suécia_-_Futebol_feminino_-_Olimpíada_Rio_2016_(28266134914).jpg",
+        "text": "China vs Sweden"
+      },
+      {
+        "name": "Group F",
+        "filename": "Seleções_feminina_do_Canadá_e_Austrália_enfrentam-se_em_SP_(28643707552).jpg",
+        "text": "Canada vs Australia"
+      }
+    ],
+    "final_standings": { "champions": "GER_U23WNT", "runners_up": "SWE_U23WNT", "third_place": "CAN_U23WNT", "fourth_place": "BRA_U23WNT" },
+    "statistics": { "total_matches": 26, "total_goals": 66, "attendance": 635885 },
+    "awards": {
+      "golden_boot": [{ "player": "Melanie Behringer", "team": "GER_U23WNT", "goals": 5 }],
+      "fair_play_team": ["SWE_U23WNT"]
+    }
+  },
+  {
+    "id": "WOFT2012",
+    "year": "2012",
+    "name": "Women's Olympic Football Tournament London 2012",
+    "tournament_type_id": "WOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GBR_U23WNT"],
+      "logo_filename": "2012_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_London_2012.png",
+      "start_date": "2012-07-25",
+      "end_date": "2012-08-09",
+      "color": "#15296d",
+      "team_count": 12,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Great Britain",
+        "filename": "Team_GB_during_anthem.jpg",
+        "text": "Team GB during anthem before a match between Team GB and New Zealand at the Olympics."
+      },
+      {
+        "name": "Group E",
+        "filename": "Players_coming_out_GBR_v_New_Zealand.jpg",
+        "text": "Players coming out for match between Team GB and New Zealand at the Olympics."
+      },
+      {
+        "name": "Group E",
+        "filename": "Millennium_Stadium_GBR-NZL.jpg",
+        "text": "Great Britain vs New Zealand"
+      },
+      {
+        "name": "Group E",
+        "filename": "Player_taking_a_shot.jpg",
+        "text": "Great Britain vs New Zealand - GB player taking a shot"
+      }
+    ],
+    "final_standings": { "champions": "USA_U23WNT", "runners_up": "JPN_U23WNT", "third_place": "CAN_U23WNT", "fourth_place": "FRA_U23WNT" },
+    "statistics": { "total_matches": 26, "total_goals": 71, "attendance": 661016 },
+    "awards": {
+      "golden_boot": [{ "player": "Christine Sinclair", "team": "CAN_U23WNT", "goals": 6 }],
+      "fair_play_team": ["USA_U23WNT"]
+    }
+  },
+  {
+    "id": "WOFT2008",
+    "year": "2008",
+    "name": "Women's Olympic Football Tournament Beijing 2008",
+    "tournament_type_id": "WOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CHN_U23WNT"],
+      "logo_filename": "2008_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_at_the_2008_Summer_Olympics.jpg",
+      "start_date": "2008-08-06",
+      "end_date": "2008-08-21",
+      "color": "#fa2200",
+      "team_count": 12,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Workers' Stadium, Beijing",
+        "filename": "Beijing_Workers_Stadium,_August_19,_2008.jpg",
+        "text": "The Workers' Stadium held the gold medal match"
+      },
+      {
+        "name": "Shanghai Stadium",
+        "filename": "Shanghai_Stadium_2008.jpeg",
+        "text": "The Shanghai Stadium held the semi-final match Brazil vs Germany"
+      },
+      {
+        "name": "Qinhuangdao Olympic Stadium",
+        "filename": "秦皇岛奥体中心（尼日利亚—科特迪瓦）_-_panoramio.jpg",
+        "text": "The Qinhuangdao Olympic Stadium held the quarter-final match China vs Japan"
+      },
+      {
+        "name": "Shenyang Olympic Stadium",
+        "filename": "Олимпийский_стадион_Шэньян2.jpeg",
+        "text": "The Shenyang Olympic Stadium held the quarter-final match Sweden vs Germany"
+      }
+    ],
+    "final_standings": { "champions": "USA_U23WNT", "runners_up": "BRA_U23WNT", "third_place": "GER_U23WNT", "fourth_place": "JPN_U23WNT" },
+    "statistics": { "total_matches": 26, "total_goals": 66, "attendance": 740014 },
+    "awards": {
+      "golden_boot": [{ "player": "Cristiane", "team": "BRA_U23WNT", "goals": 5 }]
+    }
+  },
+  {
+    "id": "WOFT2004",
+    "year": "2004",
+    "name": "Women's Olympic Football Tournament Athens 2004",
+    "tournament_type_id": "WOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GRE_U23WNT"],
+      "logo_filename": "2004_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_Athens_2004.png",
+      "start_date": "2004-08-11",
+      "end_date": "2004-08-26",
+      "color": "#2251a2",
+      "team_count": 10,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Karaiskakis Stadium, Athens",
+        "filename": "Argentina_Vs_Italy_3-0_2004_Olympics_Athens.jpg",
+        "text": "The Karaiskakis Stadium held the gold medal match"
+      },
+      {
+        "name": "Pampeloponnisiako Stadium, Patras",
+        "filename": "Pampeloponisiako_Olympic_Stadium(1).jpg",
+        "text": "The Pampeloponnisiako Stadium held the semi-final match Brazil vs Sweden"
+      },
+      {
+        "name": "Pankritio Stadium, Heraklion",
+        "filename": "Pagkritio.jpg",
+        "text": "The Pankritio Stadium held the semi-final match United States vs Germany"
+      },
+      {
+        "name": "Kaftanzoglio Stadium, Thessaloniki",
+        "filename": "Kaftanzoglio_west_stand.jpg",
+        "text": "The Kaftanzoglio Stadium held the quarter-final match United States vs Japan"
+      }
+    ],
+    "final_standings": { "champions": "USA_U23WNT", "runners_up": "BRA_U23WNT", "third_place": "GER_U23WNT", "fourth_place": "SWE_U23WNT" },
+    "statistics": { "total_matches": 20, "total_goals": 55, "attendance": 208637 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Cristiane", "team": "BRA_U23WNT", "goals": 5 },
+        { "player": "Birgit Prinz", "team": "GER_U23WNT", "goals": 5 }
+      ]
+    }
+  },
+  {
+    "id": "WOFT2000",
+    "year": "2000",
+    "name": "Women's Olympic Football Tournament Sydney 2000",
+    "tournament_type_id": "WOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["AUS_U23WNT"],
+      "logo_filename": "2000_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_Sydney_2000.png",
+      "start_date": "2000-09-15",
+      "end_date": "2000-09-28",
+      "color": "#15296d",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Sydney Football Stadium",
+        "filename": "Allianz_Stadium_-_13_October_2012.jpg",
+        "text": "The Sydney Football Stadium held the gold medal match"
+      },
+      {
+        "name": "Bruce Stadium, Canberra",
+        "filename": "BruceStadium19032005.jpeg",
+        "text": "The Bruce Stadium held the semi-final match United States vs Brazil"
+      },
+      {
+        "name": "Melbourne Cricket Ground",
+        "filename": "MCG_stadium.jpg",
+        "text": "The Melbourne Cricket Ground held group F matches"
+      }
+    ],
+    "final_standings": { "champions": "NOR_U23WNT", "runners_up": "USA_U23WNT", "third_place": "GER_U23WNT", "fourth_place": "BRA_U23WNT" },
+    "statistics": { "total_matches": 16, "total_goals": 42, "attendance": 326215 },
+    "awards": {
+      "golden_boot": [{ "player": "Sun Wen", "team": "CHN_U23WNT", "goals": 4 }],
+      "fair_play_team": ["GER_U23WNT"]
+    }
+  },
+  {
+    "id": "WOFT1996",
+    "year": "1996",
+    "name": "Women's Olympic Football Tournament Atlanta 1996",
+    "tournament_type_id": "WOFT",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA_U23WNT"],
+      "logo_filename": "1996_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1996-07-21",
+      "end_date": "1996-08-01",
+      "color": "#e12631",
+      "team_count": 8,
+      "confed_count": 4,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Sanford Stadium, Athens, Georgia",
+        "filename": "Football_game_kickoff_(Georgia_vs_South_Carolina),_Sanford_Stadium,_September_2007.jpg",
+        "text": "The Sanford Stadium held the gold medal match"
+      },
+      {
+        "name": "Orange Bowl, Miami",
+        "filename": "Orange_Bowl.jpg",
+        "text": "The Orange Bowl held group E matches"
+      },
+      {
+        "name": "Robert F. Kennedy Stadium, Washington, D.C.",
+        "filename": "RFK_Stadium_aerial_photo,_1988.jpeg",
+        "text": "The Robert F. Kennedy Stadium held group F matches"
+      },
+      {
+        "name": "Legion Field, Birmingham",
+        "filename": "Legion_Field_-_with_upper_deck.jpg",
+        "text": "The Legion Field held group F matches"
+      }
+    ],
+    "final_standings": { "champions": "USA_U23WNT", "runners_up": "CHN_U23WNT", "third_place": "NOR_U23WNT", "fourth_place": "BRA_U23WNT" },
+    "statistics": { "total_matches": 16, "total_goals": 53, "attendance": 691762 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Ann Kristin Aarønes", "team": "NOR_U23WNT", "goals": 4 },
+        { "player": "Linda Medalen", "team": "NOR_U23WNT", "goals": 4 },
+        { "player": "Pretinha", "team": "BRA_U23WNT", "goals": 4 }
+      ]
+    }
+  }
+]

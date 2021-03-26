@@ -1,0 +1,1215 @@
+[
+  {
+    "id": "MOFT2020",
+    "year": "2020",
+    "name": "Men's Olympic Football Tournament Tokyo 2020",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["JPN_U23MNT"],
+      "logo_filename": "2020_Summer_Olympics_logo_new.svg",
+      "start_date": "2021-07-22",
+      "end_date": "2021-08-07",
+      "color": "#202b5a",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "International Stadium, Yokohama",
+        "filename": "Nissan_International_Stadium_Yokohama.jpg",
+        "text": "The International Stadium will host the final."
+      }
+    ]
+  },
+  {
+    "id": "MOFT2016",
+    "year": "2016",
+    "name": "Men's Olympic Football Tournament Rio 2016",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["BRA_U23MNT"],
+      "logo_filename": "2016_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_Rio_2016.png",
+      "start_date": "2016-08-04",
+      "end_date": "2016-08-20",
+      "color": "#15611e",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 7,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Brazil_mens_football_team_2016_Olympics.jpg",
+        "text": "The Brazil Olympic football team"
+      },
+      {
+        "name": "Final",
+        "filename": "Brasil_conquista_primeiro_ouro_olímpico_no_futebol_1039229-20082016-_mg_2821_01a.jpg",
+        "text": "Brazil vs Germany"
+      },
+      {
+        "name": "Semi-final",
+        "filename": "Seleção_masculina_Alemã_de_futebol_vence_a_Nigéria_(28433503884).jpg",
+        "text": "Nigeria vs Germany"
+      },
+      {
+        "name": "Quarter-final",
+        "filename": "Portugal_x_Alemanha_-_Futebol_masculino_-_Olimpíadas_Rio_2016_(28342817733).jpg",
+        "text": "Portugal vs Germany"
+      },
+      {
+        "name": "Group A",
+        "filename": "Brasil_estreia_contra_a_África_do_Sul_no_Mané_Garrincha_(28484668410).jpg",
+        "text": "Brazil vs South Africa"
+      },
+      {
+        "name": "Group B",
+        "filename": "Colômbia_e_Nigéria_na_Arena_Corinthians_em_São_Paulo_1036783-10082016-dsc_2337.jpg",
+        "text": "Nigeria vs Columbia"
+      },
+      {
+        "name": "Group C",
+        "filename": "Coréia_do_Sul_x_México_-_Futebol_masculino_-_Olimpíada_Rio_2016_(28614421050).jpg",
+        "text": "South Korea vs Mexico"
+      },
+      {
+        "name": "Group D",
+        "filename": "Argentina_x_Honduras_-_Futebol_masculino_-_Olimpíadas_Rio_2016_(28279215254).jpg",
+        "text": "Argentina vs Honduras"
+      },
+      {
+        "name": "Iraq",
+        "filename": "Iraq_mens_football_team_2016_Olympics.jpg",
+        "text": "The Iraq Olympic football team"
+      }
+    ],
+    "final_standings": { "champions": "BRA_U23MNT", "runners_up": "GER_U23MNT", "third_place": "NGA_U23MNT", "fourth_place": "HON_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 104, "attendance": 1008426 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Serge Gnabry", "team": "GER_U23MNT", "goals": 6 },
+        { "player": "Nils Petersen", "team": "GER_U23MNT", "goals": 6 }
+      ],
+      "fair_play_team": ["DEN_U23MNT"]
+    }
+  },
+  {
+    "id": "MOFT2012",
+    "year": "2012",
+    "name": "Men's Olympic Football Tournament London 2012",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GBR_U23MNT"],
+      "logo_filename": "2012_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_London_2012.png",
+      "start_date": "2012-07-26",
+      "end_date": "2012-08-11",
+      "color": "#15296d",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Group A",
+        "filename": "Football_at_the_2012_Summer_Olympics_–_Mens_tournament.jpeg",
+        "text": "The match of Great Britain against Senegal in Old Trafford, Manchester"
+      },
+      {
+        "name": "Group C",
+        "filename": "Brazil_Belarus_kickoff.jpeg",
+        "text": "Brazil (yellow) and Belarus (red) kick off their preliminary Olympic football match at Old Trafford on 29 July 2012"
+      },
+      {
+        "name": "Group D",
+        "filename": "2012_Olympic_Football_-_Spain_v_Japan.jpg",
+        "text": "Juan Mata taking a corner in the match between Spain and Japan"
+      },
+      {
+        "name": "Group D",
+        "filename": "2012_Olympic_Football_-_Mens_tournament_-_Honduras_Vs_Morocco.jpg",
+        "text": "Football at the 2012 Summer Olympics – Men's tournament - Preliminary round (Honduras Vs Morocco)"
+      }
+    ],
+    "final_standings": { "champions": "MEX_U23MNT", "runners_up": "BRA_U23MNT", "third_place": "KOR_U23MNT", "fourth_place": "JPN_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 76, "attendance": 1525134 },
+    "awards": {
+      "golden_boot": [{ "player": "Leandro Damião", "team": "BRA_U23MNT", "goals": 6 }],
+      "fair_play_team": ["JPN_U23MNT"]
+    }
+  },
+  {
+    "id": "MOFT2008",
+    "year": "2008",
+    "name": "Men's Olympic Football Tournament Beijing 2008",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CHN_U23MNT"],
+      "logo_filename": "2008_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_at_the_2008_Summer_Olympics.jpg",
+      "start_date": "2008-08-07",
+      "end_date": "2008-08-23",
+      "color": "#fa2200",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Gold medal",
+        "filename": "Argentina_Campeones_Beijing.jpg",
+        "text": "Argentina celebration"
+      },
+      {
+        "name": "Semi-final",
+        "filename": "Olymics_semi-final_2008.jpg",
+        "text": "Messi plays in the semifinal of the 2008 Olympic Games."
+      },
+      {
+        "name": "Semi-final",
+        "filename": "Messi_olympics-soccer-11.jpg",
+        "text": "Messi plays in the semifinal of the 2008 Olympic Games"
+      },
+      {
+        "name": "Semi-final",
+        "filename": "Argentina_Brasil_-_Gol_de_Riquelme.jpg",
+        "text": "Penalty kick by Riquelme"
+      },
+      {
+        "name": "Group D",
+        "filename": "2008_Olympic_Football_Korea_Republic_vs_Honduras_(1).jpg",
+        "text": "2008 Olympic Football Korea Republic vs Honduras"
+      }
+    ],
+    "final_standings": { "champions": "ARG_U23MNT", "runners_up": "NGA_U23MNT", "third_place": "BRA_U23MNT", "fourth_place": "BEL_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 75, "attendance": 1404254 },
+    "awards": {
+      "golden_boot": [{ "player": "Giuseppe Rossi", "team": "ITA_U23MNT", "goals": 4 }],
+      "fair_play_team": ["CIV_U23MNT"]
+    }
+  },
+  {
+    "id": "MOFT2004",
+    "year": "2004",
+    "name": "Men's Olympic Football Tournament Athens 2004",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GRE_U23MNT"],
+      "logo_filename": "2004_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_Athens_2004.png",
+      "start_date": "2004-08-11",
+      "end_date": "2004-08-28",
+      "color": "#2251a2",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Semi-final",
+        "filename": "Argentina_Vs_Italy_3-0_2004_Olympics_Athens.jpg",
+        "text": "Argentina Vs Italy 3-0 2004 Olympics Athens"
+      },
+      {
+        "name": "Pankritio Stadium, Heraklion",
+        "filename": "Pagkritio.jpg",
+        "text": "The Pankritio Stadium during a 2004 Olympic Games soccer match"
+      },
+      {
+        "name": "Panthessaliko Stadium, Volos",
+        "filename": "Volos,_Greece_stadium_at_2004_Olympic_Games.jpg",
+        "text": "The Panthessaliko Stadium held Group D matches"
+      }
+    ],
+    "final_standings": { "champions": "ARG_U23MNT", "runners_up": "PAR_U23MNT", "third_place": "ITA_U23MNT", "fourth_place": "IRQ-2004-2008_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 101, "attendance": 401415 },
+    "awards": {
+      "golden_boot": [{ "player": "Carlos Tevez", "team": "ARG_U23MNT", "goals": 8 }],
+      "fair_play_team": ["ARG_U23MNT", "IRQ-2004-2008_U23MNT"]
+    }
+  },
+  {
+    "id": "MOFT2000",
+    "year": "2000",
+    "name": "Men's Olympic Football Tournament Sydney 2000",
+    "tournament_type_id": "MOFT",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["AUS_U23MNT"],
+      "logo_filename": "2000_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football,_Sydney_2000.png",
+      "start_date": "2000-09-15",
+      "end_date": "2000-09-30",
+      "color": "#15296d",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Olympic Stadium, Sydney",
+        "filename": "Womens-long-jump-final.jpg",
+        "text": "The Olympic Stadium held the gold medal match."
+      },
+      {
+        "name": "Sydney Football Stadium",
+        "filename": "Allianz_Stadium_-_13_October_2012.jpg",
+        "text": "The Sydney Football Stadium held the bronze medal match"
+      },
+      {
+        "name": "Melbourne Cricket Ground",
+        "filename": "MCG_stadium.jpg",
+        "text": "The Melbourne Cricket Ground held the semi-final Chile vs Cameroon"
+      },
+      {
+        "name": "Hindmarsh Stadium, Adelaide",
+        "filename": "HindmarshStadium.jpeg",
+        "text": "The Hindmarsh Stadium held the quarter-final United States vs Japan"
+      }
+    ],
+    "final_standings": { "champions": "CMR_U23MNT", "runners_up": "ESP_U23MNT", "third_place": "CHI_U23MNT", "fourth_place": "USA_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 103, "attendance": 1034500 },
+    "awards": {
+      "golden_boot": [{ "player": "Iván Zamorano", "team": "CHI_U23MNT", "goals": 6 }],
+      "fair_play_team": ["BRA_U23MNT"]
+    }
+  },
+  {
+    "id": "MOFT1996",
+    "year": "1996",
+    "name": "Men's Olympic Football Tournament Atlanta 1996",
+    "tournament_type_id": "MOFT",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA_U23MNT"],
+      "logo_filename": "1996_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1996-07-20",
+      "end_date": "1996-08-03",
+      "color": "#e12631",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Sanford Stadium, Athens",
+        "filename": "Football_game_kickoff_(Georgia_vs_South_Carolina),_Sanford_Stadium,_September_2007.jpg",
+        "text": "The Sanford Stadium held the gold medal match."
+      },
+      {
+        "name": "Orange Bowl, Miami",
+        "filename": "Orange_Bowl.jpg",
+        "text": "The Orange Bowl held the quarter-final match Portugal vs France"
+      },
+      {
+        "name": "Legion Field, Birmingham",
+        "filename": "Legion_Field_-_with_upper_deck.jpg",
+        "text": "The Legion Field held the quarter-final Argentina vs Spain"
+      },
+      {
+        "name": "Citrus Bowl, Orlando",
+        "filename": "Citrus_Bowl_aerial_view.jpg",
+        "text": "The Citrus Bowl held group D matches"
+      }
+    ],
+    "final_standings": { "champions": "NGA_U23MNT", "runners_up": "ARG_U23MNT", "third_place": "BRA_U23MNT", "fourth_place": "POR_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 90, "attendance": 1364142 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Bebeto", "team": "BRA_U23MNT", "goals": 6 },
+        { "player": "Hernán Crespo", "team": "ARG_U23MNT", "goals": 6 }
+      ]
+    }
+  },
+  {
+    "id": "MOFT1992",
+    "year": "1992",
+    "name": "Men's Olympic Football Tournament Barcelona 1992",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ESP_U23MNT"],
+      "logo_filename": "1992_Summer_Olympics_logo.svg",
+      "mascot_filename": "Olympic_rings_without_rims.svg",
+      "start_date": "1992-07-24",
+      "end_date": "1992-08-08",
+      "color": "#da010c",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Camp Nou, Barcelona",
+        "filename": "Camp_Nou_aerial_(cropped).jpg",
+        "text": "The Camp Nou held the gold medal match."
+      },
+      {
+        "name": "Estadio Luis Casanova, Valencia",
+        "filename": "Mestalla_trofeu_taronja_120811.jpg",
+        "text": "The Estadio Luis Casanova held the semi-final match Spain vs Ghana"
+      },
+      {
+        "name": "Estadio La Romareda, Zaragoza",
+        "filename": "La_Romareda_en_día_de_partido.jpg",
+        "text": "The Estadio La Romareda held the quarter-final Paraguay vs Ghana"
+      },
+      {
+        "name": "Estadi de la Nova Creu Alta, Sabadell",
+        "filename": "Estadinovacreualta_2.jpg",
+        "text": "The Estadi de la Nova Creu Alta held group D matches"
+      }
+    ],
+    "final_standings": { "champions": "ESP_U23MNT", "runners_up": "POL_U23MNT", "third_place": "GHA_U23MNT", "fourth_place": "AUS_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 87, "attendance": 466300 },
+    "awards": {
+      "golden_boot": [{ "player": "Andrzej Juskowiak", "team": "POL_U23MNT", "goals": 7 }]
+    }
+  },
+  {
+    "id": "MOFT1988",
+    "year": "1988",
+    "name": "Men's Olympic Football Tournament Seoul 1988",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KOR_U23MNT"],
+      "logo_filename": "1988_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1988-09-17",
+      "end_date": "1988-10-01",
+      "color": "#e62b27",
+      "team_count": 16,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Olympic Stadium, Seoul",
+        "filename": "Seoul_Olympic_Stadium_.jpg",
+        "text": "The Olympic Stadium held the gold medal match."
+      },
+      {
+        "name": "Busan Stadium, Busan",
+        "filename": "Gudeok_Stadium_3.jpeg",
+        "text": "The Busan Stadium held the semi-final match Soviet Union vs Italy."
+      },
+      {
+        "name": "Daegu Stadium, Daegu",
+        "filename": "DaeguCivil_stadium2.jpeg",
+        "text": "The Daegu Stadium held the quarter-final Sweden vs Italy"
+      },
+      {
+        "name": "Daejeon Stadium, Daejeon",
+        "filename": "Gwangju_Mudeung_Stadium.jpeg",
+        "text": "The Daejeon Stadium held group B matches"
+      }
+    ],
+    "final_standings": { "champions": "URS_U23MNT", "runners_up": "BRA_U23MNT", "third_place": "GER-1949-1990_U23MNT", "fourth_place": "ITA_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 95, "attendance": 729000 },
+    "awards": {
+      "golden_boot": [{ "player": "Romario", "team": "BRA_U23MNT", "goals": 7 }]
+    }
+  },
+  {
+    "id": "MOFT1984",
+    "year": "1984",
+    "name": "Men's Olympic Football Tournament Los Angeles 1984",
+    "short_name": "Los Angeles 1984",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["USA_U23MNT"],
+      "logo_filename": "1984.png",
+      "mascot_filename": "Olympic_rings_without_rims.svg",
+      "start_date": "1984-07-29",
+      "end_date": "1984-08-11",
+      "color": "#e12631",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Opening Ceremony",
+        "filename": "George_H._W._Bush_participates_in_the_Opening_Ceremonies_for_Olympic_Soccer.jpg",
+        "text": "Vice President George H. W. Bush participates in the Opening Ceremonies for Olympic Soccer, Boston, MA."
+      },
+      {
+        "name": "Rose Bowl, Pasadena",
+        "filename": "Inter_vs_Chelsea_at_the_Rose_Bowl.jpg",
+        "text": "The Rose Bowl held the gold medal match."
+      },
+      {
+        "name": "Stanford Stadium",
+        "filename": "StanfordStadium2004.jpg",
+        "text": "The Stanford Stadium held the semi-final match Italy vs Brazil."
+      },
+      {
+        "name": "Harvard Stadium, Boston",
+        "filename": "Harvard_Stadium_aerial_axonometric.jpeg",
+        "text": "The Harvard Stadium held group B matches"
+      }
+    ],
+    "final_standings": { "champions": "FRA_U23MNT", "runners_up": "BRA_U23MNT", "third_place": "YUG-1945-1992_U23MNT", "fourth_place": "ITA_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 84, "attendance": 1425181 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Borislav Cvetković", "team": "YUG-1945-1992_U23MNT", "goals": 5 },
+        { "player": "Stjepan Deverić", "team": "YUG-1945-1992_U23MNT", "goals": 5 },
+        { "player": "Daniel Xuereb", "team": "FRA_U23MNT", "goals": 5 }
+      ]
+    }
+  },
+  {
+    "id": "MOFT1980",
+    "year": "1980",
+    "name": "Men's Olympic Football Tournament Moscow 1980",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["URS_U23MNT"],
+      "logo_filename": "Emblem_of_the_1980_Summer_Olympics.svg",
+      "mascot_filename": "Misha1980.jpeg",
+      "start_date": "1980-07-20",
+      "end_date": "1980-08-02",
+      "color": "#930c10",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 5,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Opening Ceremony",
+        "filename": "RIAN_archive_487039_Opening_ceremony_of_the_1980_Olympic_Games.jpg",
+        "text": "Opening ceremony of the 1980 Olympic Games. Parade of nations. View on the Central Lenin Stadium in Luzhniki."
+      },
+      {
+        "name": "Dynamo Stadium, Moscow",
+        "filename": "Dynamo_Stadium.jpg",
+        "text": "The Dynamo Stadium held the semi-final match Czechoslovakia vs Yugoslavia"
+      },
+      {
+        "name": "Republican Stadium, Kiev",
+        "filename": "Фінал_Євро-2012._НСК_«Олімпійський»._3_хвилини_після_фінального_свистка.jpeg",
+        "text": "The Republican Stadium held the quarter-final match Germany DR vs Iraq."
+      },
+      {
+        "name": "Kirov Stadium, Leningrad",
+        "filename": "Kirov_stadium.jpg",
+        "text": "The Kirow Stadium held group B matches"
+      }
+    ],
+    "final_standings": { "champions": "TCH_U23MNT", "runners_up": "GDR_U23MNT", "third_place": "URS_U23MNT", "fourth_place": "YUG-1945-1992_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 82, "attendance": 1821624 },
+    "awards": {
+      "golden_boot": [{ "player": "Sergey Andreyev", "team": "URS_U23MNT", "goals": 5 }]
+    }
+  },
+  {
+    "id": "MOFT1976",
+    "year": "1976",
+    "name": "Men's Olympic Football Tournament Montreal 1976",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["CAN_U23MNT"],
+      "logo_filename": "1976_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1976-07-18",
+      "end_date": "1976-07-31",
+      "color": "#f72337",
+      "team_count": 13,
+      "confed_count": 4,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Olympic Stadium, Montreal",
+        "filename": "Le_Stade_Olympique_3.jpg",
+        "text": "The Olympic Stadium held the gold medal match"
+      },
+      {
+        "name": "Varsity Stadium, Toronto",
+        "filename": "Varsity_Centre.jpeg",
+        "text": "The Varsity Stadium held the semi-final match Poland vs Brazil."
+      },
+      {
+        "name": "Lansdowne Park, Ottawa",
+        "filename": "Lansdowne_Park_3.jpg",
+        "text": "The Lansdowne Park held group B matches"
+      }
+    ],
+    "final_standings": { "champions": "GDR_U23MNT", "runners_up": "POL_U23MNT", "third_place": "URS_U23MNT", "fourth_place": "BRA_U23MNT" },
+    "statistics": { "total_matches": 23, "total_goals": 66, "attendance": 580156 },
+    "awards": {
+      "golden_boot": [{ "player": "Andrzej Szarmach", "team": "POL_U23MNT", "goals": 6 }]
+    }
+  },
+  {
+    "id": "MOFT1972",
+    "year": "1972",
+    "name": "Men's Olympic Football Tournament Munich 1972",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GER-1949-1990_U23MNT"],
+      "logo_filename": "1972_Summer_Olympics_logo.svg",
+      "mascot_filename": "Olympic_rings_without_rims.svg",
+      "start_date": "1972-08-27",
+      "end_date": "1972-09-10",
+      "color": "#1d1d1b",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Olympiastadion, Munich",
+        "filename": "2014_Olympiastadion_Munich.jpg",
+        "text": "The Olympiastadion held the gold medal match"
+      },
+      {
+        "name": "Dreiflüssestadion, Passau",
+        "filename": "Dreiflüssestadion_2.jpeg",
+        "text": "The Dreiflüssestadion held Second Round, Group 1 matches."
+      },
+      {
+        "name": "Frankenstadion, Nuremberg",
+        "filename": "Frankenstadion_4.jpeg",
+        "text": "The Frankenstadion held Second Round, Group 2 matches."
+      },
+      {
+        "name": "Jahnstadion, Regensburg",
+        "filename": "Jahnstadion_(Regensburg)-_Jahn_vs._Unterhaching_2010.jpg",
+        "text": "The Jahnstadion held group B matches"
+      }
+    ],
+    "final_standings": {
+      "champions": "POL_U23MNT",
+      "runners_up": "HUN_U23MNT",
+      "third_place": ["GDR_U23MNT", "URS_U23MNT"],
+      "third_place_text": "Tied 2–2 at the end of extra time. Both teams were awarded bronze medals."
+    },
+    "statistics": { "total_matches": 38, "total_goals": 135 },
+    "awards": {
+      "golden_boot": [{ "player": "Kazimierz Deyna", "team": "POL_U23MNT", "goals": 9 }]
+    }
+  },
+  {
+    "id": "MOFT1968",
+    "year": "1968",
+    "name": "Men's Olympic Football Tournament Mexico City 1968",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["MEX_U23MNT"],
+      "logo_filename": "1968_Mexico_emblem.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1968-10-13",
+      "end_date": "1968-10-26",
+      "color": "#24a45f",
+      "team_count": 16,
+      "confed_count": 5,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Azteca Stadium, Mexico City",
+        "filename": "Estadio_Azteca1706p2.jpg",
+        "text": "The Azteca Stadium held the gold medal match"
+      },
+      {
+        "name": "Estadio Jalisco, Guadalajara",
+        "filename": "Barra_51.jpg",
+        "text": "The Estadio Jalisco held the semi-final match Mexico vs Bulgaria."
+      },
+      {
+        "name": "Estadio Cuauhtémoc, Puebla",
+        "filename": "Estadio_Cuauhtémoc_Innenansicht.jpg",
+        "text": "The Estadio Cuauhtémoc held the quarter-final match Mexico vs Spain."
+      },
+      {
+        "name": "Estadio León, León",
+        "filename": "Estadio_León_(Nou_Camp),_León,_Guanajuato,_México_-Imagen_Actual-_2013-12-10_14-09.jpg",
+        "text": "The Estadio León held group C matches"
+      }
+    ],
+    "final_standings": { "champions": "HUN_U23MNT", "runners_up": "BUL-1967-1971_U23MNT", "third_place": "JPN_U23MNT", "fourth_place": "MEX_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 116 },
+    "awards": {
+      "golden_boot": [{ "player": "Kunishige Kamamoto", "team": "JPN_U23MNT", "goals": 7 }]
+    }
+  },
+  {
+    "id": "MOFT1964",
+    "year": "1964",
+    "name": "Men's Olympic Football Tournament Tokyo 1964",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["JPN_U23MNT"],
+      "logo_filename": "Tokyo_1964_Summer_Olympics_logo.svg",
+      "mascot_filename": "1964_Olympics_football_stamp_of_Japan.jpg",
+      "start_date": "1964-10-11",
+      "end_date": "1964-10-23",
+      "color": "#619ae0",
+      "team_count": 14,
+      "confed_count": 5,
+      "venue_count": 8,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "National Olympic Stadium, Tokyo",
+        "filename": "Yamazaki-nabisco-Cup_final_2004.jpg",
+        "text": "The National Olympic Stadium held the gold medal match"
+      },
+      {
+        "name": "Komazawa Olympic Park Stadium, Setagaya, Tokyo",
+        "filename": "Komazawa_feeld.jpg",
+        "text": "The Komazawa Olympic Park Stadium held the semi-final match Czechoslovakia vs Germany."
+      },
+      {
+        "name": "Ōmiya Park Soccer Stadium, Omiya, Saitama",
+        "filename": "Ōmiya_Park_Soccer_Stadium,_R1068484.jpg",
+        "text": "The Ōmiya Park Soccer Stadium held the quarter-final match United Arab Republic vs Ghana."
+      },
+      {
+        "name": "Mitsuzawa Soccer Stadium, Yokohama, Kanagawa",
+        "filename": "Mitsuzawa1.jpg",
+        "text": "The Mitsuzawa Soccer Stadium held group A matches"
+      }
+    ],
+    "final_standings": { "champions": "HUN_U23MNT", "runners_up": "TCH_U23MNT", "third_place": "GER_U23MNT", "fourth_place": "EGY-1958-1971_U23MNT" },
+    "statistics": { "total_matches": 29, "total_goals": 123 },
+    "awards": {
+      "golden_boot": [{ "player": "Ferenc Bene", "team": "HUN_U23MNT", "goals": 12 }]
+    }
+  },
+  {
+    "id": "MOFT1960",
+    "year": "1960",
+    "name": "Men's Olympic Football Tournament Rome 1960",
+    "short_name": "Rome 1960",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["ITA_U23MNT"],
+      "logo_filename": "1960_Summer_Olympics_logo.png",
+      "mascot_filename": "Olympic_rings_without_rims.svg",
+      "start_date": "1960-08-26",
+      "end_date": "1960-09-10",
+      "color": "#3d8e2b",
+      "team_count": 16,
+      "confed_count": 4,
+      "venue_count": 7,
+      "city_count": 7
+    },
+    "hero_images": [
+      {
+        "name": "Stadio Flaminio, Rome",
+        "filename": "Stadio_Flaminio_a_Roma.jpg",
+        "text": "The Stadio Flaminio held the gold medal match"
+      },
+      {
+        "name": "Stadio San Paolo, Naples",
+        "filename": "San_Paolo_-_Curva_A.jpg",
+        "text": "The Stadio San Paolo held the semi-final match Italy vs Yugoslavia."
+      },
+      {
+        "name": "Stadio Olimpico Comunale, Grosseto",
+        "filename": "20100410GrStadioVonCurvaNord.jpeg",
+        "text": "The Stadio Olimpico Comunale held a group A match Bulgaria vs Turkey."
+      },
+      {
+        "name": "Stadio Comunale, L'Aquila",
+        "filename": "Stadio_fattori.jpeg",
+        "text": "The Stadio Comunale held a group C match Denmark vs Tunisia"
+      }
+    ],
+    "final_standings": { "champions": "YUG-1945-1992_U23MNT", "runners_up": "DEN_U23MNT", "third_place": "HUN_U23MNT", "fourth_place": "ITA_U23MNT" },
+    "statistics": { "total_matches": 28, "total_goals": 120 },
+    "awards": {
+      "golden_boot": [{ "player": "Harald Nielsen", "team": "DEN_U23MNT", "goals": 8 }]
+    }
+  },
+  {
+    "id": "MOFT1956",
+    "year": "1956",
+    "name": "Men's Olympic Football Tournament Melbourne 1956",
+    "short_name": "Melbourne 1956",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["AUS_U23MNT"],
+      "logo_filename": "1956_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1956-11-24",
+      "end_date": "1956-12-08",
+      "color": "#15296d",
+      "team_count": 11,
+      "venue_count": 2,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Bronze medal match",
+        "filename": "India_national_football_team_at1956_Olympics.png",
+        "text": "Indian team at a tussle against Bulgaria in the bronze-medal match."
+      },
+      {
+        "name": "Melbourne Cricket Ground",
+        "filename": "VFL_Grand_Final_in_1945_at_the_MCG.jpg",
+        "text": "The Melbourne Cricket Ground held the gold medal match"
+      },
+      {
+        "name": "Olympic Park Stadium, Melbourne",
+        "filename": "Olympicparkmel.jpeg",
+        "text": "The Olympic Park Stadium held the semi-final match Soviet Union vs Bulgaria."
+      }
+    ],
+    "final_standings": { "champions": "URS_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "BUL-1948-1967_U23MNT", "fourth_place": "IND_U23MNT" },
+    "statistics": { "total_matches": 12, "total_goals": 53, "attendance": 194333 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Neville D'Souza", "team": "IND_U23MNT", "goals": 4 },
+        { "player": "Todor Veselinović", "team": "YUG-1945-1992_U23MNT", "goals": 4 },
+        { "player": "Dimitar Milanov", "team": "BUL-1948-1967_U23MNT", "goals": 4 }
+      ]
+    }
+  },
+  {
+    "id": "MOFT1952",
+    "year": "1952",
+    "name": "Men's Olympic Football Tournament Helsinki 1952",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["FIN_U23MNT"],
+      "logo_filename": "1952_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_at_the_1952_Summer_Olympics_Finnish_stamp.jpg",
+      "start_date": "1952-07-15",
+      "end_date": "1952-08-02",
+      "color": "#1d4d93",
+      "team_count": 25,
+      "confed_count": 5,
+      "venue_count": 6,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Kuusela_Hungary_1952.jpg",
+        "text": "Miss Universe 1952 Armi Kuusela awarding the Hungarian team"
+      },
+      {
+        "name": "Olympic Stadium, Helsinki",
+        "filename": "Suomi-Portugali_lämmittely.jpg",
+        "text": "The Olympic Stadium held the gold medal match"
+      },
+      {
+        "name": "Kotkan Urheilukeskus, Kotka",
+        "filename": "Arto_Tolsa_-areena_1.jpg",
+        "text": "The Kotkan urheilukeskus held the quarter-final match Hungary vs Turkey."
+      },
+      {
+        "name": "Kupittaan Jalkapallostadion, Turku",
+        "filename": "Veritas_Stadion_23.7.2015.jpg",
+        "text": "The Kupittaan Jalkapallostadion held the first round matches."
+      }
+    ],
+    "final_standings": { "champions": "HUN-1949-1956_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "SWE_U23MNT", "fourth_place": "GER_U23MNT" },
+    "statistics": { "total_matches": 26, "total_goals": 135 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Rajko Mitić", "team": "YUG-1945-1992_U23MNT", "goals": 7 },
+        { "player": "Branko Zebec", "team": "YUG-1945-1992_U23MNT", "goals": 7 }
+      ]
+    }
+  },
+  {
+    "id": "MOFT1948",
+    "year": "1948",
+    "name": "Men's Olympic Football Tournament London 1948",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GBR_U23MNT"],
+      "logo_filename": "1948_Summer_Olympics_logos.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1948-07-26",
+      "end_date": "1948-08-13",
+      "color": "#15296d",
+      "team_count": 18,
+      "confed_count": 5,
+      "venue_count": 13,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Swedennationalfootballteamolympic1948.jpg",
+        "text": "Swedish gold medal team"
+      },
+      {
+        "name": "Ireland",
+        "filename": "1948_Eire_Olympic_Soccer_Team.jpg",
+        "text": "The Irish team"
+      },
+      {
+        "name": "India",
+        "filename": "India_national_team_at_Olympics_1948.jpg",
+        "text": "Indian team at 1948 Olympics, captain T. Ao at the centre of first row, goal scorer S. Raman next to Ao and coach Balaidas Chatterjee to the extreme right."
+      },
+      {
+        "name": "Match Ball",
+        "filename": "1948_Olympic_football_final_match_ball.jpg",
+        "text": "The final match ball."
+      }
+    ],
+    "final_standings": { "champions": "SWE_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "DEN_U23MNT", "fourth_place": "GBR_U23MNT" },
+    "statistics": { "total_matches": 18, "total_goals": 102 },
+    "awards": {
+      "golden_boot": [
+        { "player": "John Hansen", "team": "DEN_U23MNT", "goals": 7 },
+        { "player": "Gunnar Nordahl", "team": "SWE_U23MNT", "goals": 7 }
+      ]
+    }
+  },
+  {
+    "id": "MOFT1936",
+    "year": "1936",
+    "name": "Men's Olympic Football Tournament Berlin 1936",
+    "short_name": "Berlin 1936",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GER-1935-1945_U23MNT"],
+      "logo_filename": "1936.png",
+      "mascot_filename": "Olympic_rings_without_rims.svg",
+      "start_date": "1936-08-03",
+      "end_date": "1936-08-15",
+      "color": "#1d1d1b",
+      "team_count": 16,
+      "confed_count": 4,
+      "venue_count": 4,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Italy1936_olympic.jpg",
+        "text": "The Italian squad that won the Gold Medal"
+      },
+      {
+        "name": "Quarter-final",
+        "filename": "Peru_v_Austria_1936_Valdivieso.png",
+        "text": "Peruvian goalkeeper Juan Valdivieso reaches out for the football during match between Austria and Peru."
+      },
+      {
+        "name": "Peru",
+        "filename": "Peru_Football_1936_Olympics.png",
+        "text": "The Peru national football team that participated in the 1936 Berlin Olympics. The squad, also known as \"The Black Roller\" (Spanish: El Rodillo Negro), stands prior to its quarterfinals match against Austria. Front: Adelfo Magallanes, Jorge Alcalde, Teodoro Fernández, José Morales, and Alejandro Villanueva. Back: Carlos Tovar, Víctor Guarderas Lavalle, Juan Valdivieso, Arturo Fernández, Segundo Castillo, and Orestes Jordán."
+      },
+      {
+        "name": "Olympiastadion, Berlin",
+        "filename": "Bundesarchiv_Bild_183-R82532,_Berlin,_Olympia-Stadion_(Luftaufnahme).jpg",
+        "text": "The Olympiastadion held the gold medal match"
+      }
+    ],
+    "final_standings": { "champions": "ITA-1861-1946_U23MNT", "runners_up": "AUT_U23MNT", "third_place": "NOR_U23MNT", "fourth_place": "POL_U23MNT" },
+    "statistics": { "total_matches": 16, "total_goals": 78 },
+    "awards": {
+      "golden_boot": [{ "player": "Annibale Frossi", "team": "ITA-1861-1946_U23MNT", "goals": 7 }]
+    }
+  },
+  {
+    "id": "MOFT1928",
+    "year": "1928",
+    "name": "Men's Olympic Football Tournament Amsterdam 1928",
+    "short_name": "Amsterdam 1928",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["NED_U23MNT"],
+      "logo_filename": "1928.jpg",
+      "mascot_filename": "1928_Summer_Olympics_stamp_of_the_Netherlands_football.jpg",
+      "start_date": "1928-05-27",
+      "end_date": "1928-06-13",
+      "color": "#f93127",
+      "team_count": 17,
+      "confed_count": 5,
+      "venue_count": 2,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay_1928_olympics.jpg",
+        "text": "Uruguay, winner of the tournament"
+      },
+      {
+        "name": "Silver Medal",
+        "filename": "Argentina_football_team_Olympics_1928.jpg",
+        "text": "The Argentina team won the Silver Medal"
+      },
+      {
+        "name": "Final",
+        "filename": "Final_football_Argentina_vs_Uruguay_Olympics_1928.jpg",
+        "text": "Uruguay-Argentina captains, referee Johannes Mutters and linesmen before the final match"
+      },
+      {
+        "name": "Egypt",
+        "filename": "1928_Egyptian_Olympic_football_team.jpg",
+        "text": "The Egyptian squad"
+      }
+    ],
+    "final_standings": { "champions": "URU_U23MNT", "runners_up": "ARG_U23MNT", "third_place": "ITA-1861-1946_U23MNT", "fourth_place": "EGY-1922-1953_U23MNT" },
+    "statistics": { "total_matches": 19, "total_goals": 116 },
+    "awards": {
+      "golden_boot": [{ "player": "Domingo Tarasconi", "team": "ARG_U23MNT", "goals": 11 }]
+    }
+  },
+  {
+    "id": "MOFT1924",
+    "year": "1924",
+    "name": "Men's Olympic Football Tournament Paris 1924",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["FRA_U23MNT"],
+      "logo_filename": "1924_Summer_Olympics_logo.svg",
+      "mascot_filename": "Football_pictogram_1948.svg",
+      "start_date": "1924-05-25",
+      "end_date": "1924-06-09",
+      "color": "#103d69",
+      "team_count": 22,
+      "confed_count": 4,
+      "venue_count": 4,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Uruguay1924_olympic.jpg",
+        "text": "The Uruguayan team that won its first Gold Medal"
+      },
+      {
+        "name": "Uruguay",
+        "filename": "Uruguay_1923.jpg",
+        "text": "The Uruguay team had won the Sudamericano one year before the Games"
+      },
+      {
+        "name": "Semi-finalist",
+        "filename": "Netherlands_football_team_1924.jpg",
+        "text": "The Netherlands were defeated by Uruguay at the semifinal stage"
+      },
+      {
+        "name": "Quarter-finalist",
+        "filename": "France_football_1924_olympics.jpg",
+        "text": "The French squad, eliminated by Uruguay"
+      },
+      {
+        "name": "Yugoslavia",
+        "filename": "Yugoslavia_football_team_1924.jpg",
+        "text": "The Yugoslavia side had a poor showing"
+      }
+    ],
+    "final_standings": { "champions": "URU_U23MNT", "runners_up": "SUI_U23MNT", "third_place": "SWE_U23MNT", "fourth_place": "NED_U23MNT" },
+    "statistics": { "total_matches": 16, "total_goals": 66, "attendance": 210424 },
+    "awards": {
+      "golden_boot": [{ "player": "Pedro Petrone", "team": "URU_U23MNT", "goals": 7 }]
+    }
+  },
+  {
+    "id": "MOFT1920",
+    "year": "1920",
+    "name": "Men's Olympic Football Tournament Antwerp 1920",
+    "short_name": "Antwerp 1920",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["BEL_U23MNT"],
+      "logo_filename": "1920_olympics_poster.jpg",
+      "mascot_filename": "Olympic_rings_without_rims.svg",
+      "start_date": "1920-08-28",
+      "end_date": "1920-09-05",
+      "color": "#dc171e",
+      "team_count": 14,
+      "confed_count": 2,
+      "venue_count": 4,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Belgium_02-09-1920.jpg",
+        "text": "Hosts and tournament winners Belgium before the final"
+      },
+      {
+        "name": "Silver medalists",
+        "filename": "Selección_española_-_Amberes_1920.jpg",
+        "text": "Team of Spain, silver medalist"
+      },
+      {
+        "name": "Final",
+        "filename": "1920_Olympic_football_final_(Belgium_v._Czechoslovakia),_penalty_Coppée.jpg",
+        "text": "Belgian player Robert Coppée opens the scoring of the final, with a penalty kick against goalkeeper Rudolf Klapka"
+      },
+      {
+        "name": "Golden Boot",
+        "filename": "Swefootball_hcarlsson1919netherlands24aug.jpg",
+        "text": "Topscorer Herbert Carlsson"
+      }
+    ],
+    "final_standings": { "champions": "BEL_U23MNT", "runners_up": "ESP-1875-1931_U23MNT", "third_place": "NED_U23MNT", "fourth_place": "FRA_U23MNT" },
+    "statistics": { "total_matches": 17, "total_goals": 70 },
+    "awards": {
+      "golden_boot": [{ "player": "Herbert Karlsson", "team": "SWE_U23MNT", "goals": 7 }]
+    }
+  },
+  {
+    "id": "MOFT1912",
+    "year": "1912",
+    "name": "Men's Olympic Football Tournament Stockholm 1912",
+    "short_name": "Stockholm 1912",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["SWE_U23MNT"],
+      "logo_filename": "1912_Summer_Olympics_poster.jpg",
+      "mascot_filename": "Football_at_the_1912_Summer_Olympics.jpeg",
+      "start_date": "1912-06-29",
+      "end_date": "1912-07-04",
+      "color": "#1d5f9a",
+      "team_count": 11,
+      "confed_count": 1,
+      "venue_count": 3,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Football_at_the_1912_Summer_Olympics_-_UK_squad.jpeg",
+        "text": "Great Britain, Gold Medal"
+      },
+      {
+        "name": "Silver medalists",
+        "filename": "Football_at_the_1912_Summer_Olympics_-_Denmark_squad.jpeg",
+        "text": "Denmark team, Silver Medal winner"
+      },
+      {
+        "name": "Bronze medalists",
+        "filename": "Football_at_the_1912_Summer_Olympics_-_Netherlands_squad.jpeg",
+        "text": "The Netherlands team, Bronze Medal"
+      },
+      {
+        "name": "Golden Boot",
+        "filename": "Gottfried_Fuchs.jpg",
+        "text": "German player Gottfried Fuchs was the topscorer of the tournament with 10 goals"
+      }
+    ],
+    "final_standings": { "champions": "GBR_U23MNT", "runners_up": "DEN_U23MNT", "third_place": "NED_U23MNT", "fourth_place": "FIN-1809-1917_U23MNT" },
+    "statistics": { "total_matches": 17, "total_goals": 94 },
+    "awards": {
+      "golden_boot": [{ "player": "Gottfried Fuchs", "team": "GER-1866-1918_U23MNT", "goals": 10 }]
+    }
+  },
+  {
+    "id": "MOFT1908",
+    "year": "1908",
+    "name": "Men's Olympic Football Tournament London 1908",
+    "short_name": "London 1908",
+    "tournament_type_id": "MOFT",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GBR_U23MNT"],
+      "logo_filename": "Olympic_games_1908_London.jpg",
+      "mascot_filename": "London_1908_Football_Challenge_Cup.jpg",
+      "start_date": "1908-10-19",
+      "end_date": "1908-10-24",
+      "color": "#15296d",
+      "team_count": 6,
+      "confed_count": 1,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "London_1908_English_Amateur_Football_National_Team.jpg",
+        "text": "Great Britain won the Gold Medal after beating Denmark at the final"
+      },
+      {
+        "name": "Silver medalists",
+        "filename": "DK_football1908.jpg",
+        "text": "Denmark won the Silver Medal"
+      },
+      {
+        "name": "White City Stadium",
+        "filename": "White_City_Stadium_1908.jpg",
+        "text": "The White City Stadium hosted all the matches"
+      },
+      {
+        "name": "Certificate",
+        "filename": "Olympic_football_certificate_1908.jpg",
+        "text": "Winner's certificate"
+      }
+    ],
+    "final_standings": { "champions": "GBR_U23MNT", "runners_up": "DEN_U23MNT", "third_place": "NED_U23MNT", "fourth_place": "SWE_U23MNT" },
+    "statistics": { "total_matches": 6, "total_goals": 48 },
+    "awards": {
+      "golden_boot": [{ "player": "Sophus Nielsen", "team": "DEN_U23MNT", "goals": 11 }]
+    }
+  }
+]

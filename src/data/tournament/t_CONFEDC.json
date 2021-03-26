@@ -1,0 +1,502 @@
+[
+  {
+    "id": "CONFEDC2017",
+    "year": "2017",
+    "name": "FIFA Confederations Cup Russia 2017",
+    "tournament_type_id": "CONFEDC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
+    "details": {
+      "host": ["RUS"],
+      "logo_filename": "2017_FIFA_Confederations_Cup.svg",
+      "start_date": "2017-06-17",
+      "end_date": "2017-07-02",
+      "color": "#930c10",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Germany",
+        "filename": "Chile_-_Germany_(3).jpg",
+        "text": "Germany lineup"
+      },
+      {
+        "name": "Ceremony",
+        "filename": "2017_Confederations_Cup_-_Final_-_Victory_Ceremony.jpg",
+        "text": "Victory ceremony"
+      },
+      {
+        "name": "Final",
+        "filename": "2017_Confederations_Cup_-_Final.jpg",
+        "text": "Panoramic view of the match from the stands"
+      },
+      {
+        "name": "Krestovsky Stadium, Saint Petersburg",
+        "filename": "RUS-2016-Aerial-SPB-Krestovsky_Stadium_01.jpg",
+        "text": "The Krestovsky Stadium hosted the final."
+      }
+    ],
+    "final_standings": { "champions": "GER", "runners_up": "CHI", "third_place": "POR", "fourth_place": "MEX" },
+    "statistics": { "total_matches": 16, "total_goals": 43, "attendance": 628304 },
+    "awards": {
+      "golden_boot": [{ "player": "Timo Werner", "team": "GER", "goals": 3, "assists": 2 }],
+      "silver_boot": [{ "player": "Leon Goretzka", "team": "GER", "goals": 3, "assists": 0 }],
+      "bronze_boot": [{ "player": "Lars Stindl", "team": "GER", "goals": 3, "assists": 0 }],
+      "golden_ball": [
+        { "player": "Julian Draxler", "team": "GER" },
+        { "player": "Alexis Sánchez", "team": "CHI" },
+        { "player": "Leon Goretzka", "team": "GER" }
+      ],
+      "golden_glove": [{ "player": "Claudio Bravo", "team": "CHI" }],
+      "fair_play_team": ["GER"]
+    }
+  },
+  {
+    "id": "CONFEDC2013",
+    "year": "2013",
+    "name": "FIFA Confederations Cup Brazil 2013",
+    "tournament_type_id": "CONFEDC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["BRA"],
+      "logo_filename": "2013_FIFA_Confederations_Cup.svg",
+      "start_date": "2013-06-15",
+      "end_date": "2013-06-30",
+      "color": "#477c16",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Confed.Cup2013Champions.jpg",
+        "text": "Brazil won the competition after beating Spain 3–0 in the final."
+      },
+      {
+        "name": "Golden Ball",
+        "filename": "Neymargoldenball.jpg",
+        "text": "Golden Ball winner Neymar"
+      },
+      {
+        "name": "Maracanã",
+        "filename": "Maracanã_stadium.jpg",
+        "text": "The iconic Maracanã Stadium"
+      },
+      {
+        "name": "Belo Horizonte",
+        "filename": "Estadio_Mineirao_placar_eletronico_dez_2012.jpeg",
+        "text": "Internal view of the stadium in Belo Horizonte."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "ESP", "third_place": "ITA", "fourth_place": "URU" },
+    "statistics": { "total_matches": 16, "total_goals": 68, "attendance": 804659 },
+    "awards": {
+      "golden_boot": [{ "player": "Fernando Torres", "team": "ESP", "goals": 5, "assists": 1, "minutes": 273 }],
+      "silver_boot": [{ "player": "Fred", "team": "BRA", "goals": 5, "assists": 1, "minutes": 423 }],
+      "bronze_boot": [{ "player": "Neymar", "team": "BRA", "goals": 4 }],
+      "golden_ball": [
+        { "player": "Neymar", "team": "BRA" },
+        { "player": "Andrés Iniesta", "team": "ESP" },
+        { "player": "Paulinho", "team": "BRA" }
+      ],
+      "golden_glove": [{ "player": "Júlio César", "team": "BRA" }],
+      "fair_play_team": ["ESP"]
+    }
+  },
+  {
+    "id": "CONFEDC2009",
+    "year": "2009",
+    "name": "FIFA Confederations Cup South Africa 2009",
+    "tournament_type_id": "CONFEDC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["RSA"],
+      "logo_filename": "2009_FIFA_Confederations_Cup.svg",
+      "start_date": "2009-06-14",
+      "end_date": "2009-06-28",
+      "color": "#0c733b",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 4,
+      "city_count": 4
+    },
+    "hero_images": [
+      {
+        "name": "Ellis Park Stadium, Johannesburg",
+        "filename": "Ellis_Park_Stadium.jpg",
+        "text": "The Ellis Park Stadium hosted the final."
+      },
+      {
+        "name": "Golden Boot",
+        "filename": "JSP_0799.jpeg",
+        "text": "Luís Fabiano scored two goals during Brazil's second-half comeback to win the final"
+      },
+      {
+        "name": "Bronze Ball",
+        "filename": "Clint_Dempsey_20110622.jpg",
+        "text": "Clint Dempsey scored the second goal for the United States in their semi-final upset of Spain."
+      },
+      {
+        "name": "Match Ball",
+        "filename": "2009_FIFA_Confederations_Cup_ball_by_adidas.jpeg",
+        "text": "A replica of The Adidas Kopanya (the official match ball of the 2009 FIFA Confederations Cup) with the traditional 32-panel structure. The official match ball has the same structure and surface as the Adidas Europass."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "USA", "third_place": "ESP", "fourth_place": "RSA" },
+    "statistics": { "total_matches": 16, "total_goals": 44, "attendance": 584894 },
+    "awards": {
+      "golden_boot": [{ "player": "Luís Fabiano", "team": "BRA", "goals": 5 }],
+      "silver_boot": [{ "player": "Fernando Torres", "team": "ESP", "goals": 3 }],
+      "bronze_boot": [{ "player": "David Villa", "team": "ESP", "goals": 3 }],
+      "golden_ball": [
+        { "player": "Kaká", "team": "BRA" },
+        { "player": "Luís Fabiano", "team": "ESP" },
+        { "player": "Clint Dempsey", "team": "USA" }
+      ],
+      "golden_glove": [{ "player": "Tim Howard", "team": "USA" }],
+      "fair_play_team": ["BRA"]
+    }
+  },
+  {
+    "id": "CONFEDC2005",
+    "year": "2005",
+    "name": "FIFA Confederations Cup Germany 2005",
+    "tournament_type_id": "CONFEDC",
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["GER"],
+      "logo_filename": "cc_2005.jpg",
+      "start_date": "2005-06-15",
+      "end_date": "2005-06-29",
+      "color": "#281e1d",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 5,
+      "city_count": 5
+    },
+    "hero_images": [
+      {
+        "name": "Final",
+        "filename": "Confed-Cup_Finale.jpeg",
+        "text": "Brazil vs Argentina"
+      },
+      {
+        "name": "Group A",
+        "filename": "Confed-Cup_2005_Argentinien_-_Deutschland.jpg",
+        "text": "Argentina vs Germany"
+      },
+      {
+        "name": "Group A",
+        "filename": "Confed-Cup_2005_Eröffnungsspiel_(Freistoß_Australien).jpeg",
+        "text": "Germany vs Australia"
+      },
+      {
+        "name": "Group A",
+        "filename": "Deutschland_-_Tunesien_Aufwärmen.jpeg",
+        "text": "The football team of Germany while warming up before the match against Tunisia during the Confederations Cup 2005."
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "ARG", "third_place": "GER", "fourth_place": "MEX" },
+    "statistics": { "total_matches": 16, "total_goals": 56, "attendance": 603106 },
+    "awards": {
+      "golden_boot": [{ "player": "Adriano", "team": "BRA", "goals": 5 }],
+      "silver_boot": [{ "player": "Michael Ballack", "team": "GER", "goals": 4 }],
+      "bronze_boot": [{ "player": "John Aloisi", "team": "AUS", "goals": 4 }],
+      "golden_ball": [
+        { "player": "Adriano", "team": "BRA" },
+        { "player": "Riquelme", "team": "ARG" },
+        { "player": "Ronaldinho", "team": "BRA" }
+      ],
+      "golden_glove": [{ "player": "Oswaldo Sánchez", "team": "MEX" }],
+      "fair_play_team": ["GRE"]
+    }
+  },
+  {
+    "id": "CONFEDC2003",
+    "year": "2003",
+    "name": "FIFA Confederations Cup France 2003",
+    "tournament_type_id": "CONFEDC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["FRA"],
+      "logo_filename": "cc_2003.jpg",
+      "start_date": "2003-06-18",
+      "end_date": "2003-06-29",
+      "color": "#0015de",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 3,
+      "city_count": 3
+    },
+    "hero_images": [
+      {
+        "name": "Stade de France, Saint-Denis",
+        "filename": "Finale_Coupe_de_France_2010-2011_(Lille_LOSC_vs_Paris_SG_PSG).jpg",
+        "text": "The Stade de France hosted the final."
+      },
+      {
+        "name": "Saint-Denis, France",
+        "filename": "SAINT-DENIS_-_Canal_St_Denis,_Pont_Tournant_&_Basilique.jpeg",
+        "text": "The Canal Saint-Denis with swing bridge, pedestrian overpass leading to the Stade de France and the Basilique Saint-Denis in the background."
+      },
+      {
+        "name": "Stade de Gerland, Lyon",
+        "filename": "Stade-Gerland-RWC2007.jpeg",
+        "text": "The Stade de Gerland hosted the semi-final Cameroon vs Colombia."
+      },
+      {
+        "name": "Stade Geoffroy-Guichard, Saint-Étienne",
+        "filename": "Stade-GeoffroyGuichard-RWC2007.jpeg",
+        "text": "The Stade Geoffroy-Guichard hosted group matches."
+      }
+    ],
+    "final_standings": { "champions": "FRA", "runners_up": "CMR", "third_place": "TUR", "fourth_place": "COL" },
+    "statistics": { "total_matches": 16, "total_goals": 37, "attendance": 491700 },
+    "awards": {
+      "golden_boot": [{ "player": "Thierry Henry", "team": "FRA", "goals": 4 }],
+      "silver_boot": [{ "player": "Tuncay", "team": "TUR", "goals": 3, "assists": 1 }],
+      "bronze_boot": [{ "player": "Shunsuke Nakamura", "team": "JPN", "goals": 3, "assists": "0", "minutes": 170 }],
+      "golden_ball": [
+        { "player": "Thierry Henry", "team": "FRA" },
+        { "player": "Tuncay", "team": "TUR" },
+        { "player": "Marc-Vivien Foé", "team": "CMR" }
+      ],
+      "fair_play_team": ["JPN"]
+    }
+  },
+  {
+    "id": "CONFEDC2001",
+    "year": "2001",
+    "name": "FIFA Confederations Cup Korea-Japan 2001",
+    "tournament_type_id": "CONFEDC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KOR", "JPN"],
+      "logo_filename": "cc_2001.jpg",
+      "start_date": "2001-05-30",
+      "end_date": "2001-06-10",
+      "color": "#e2952b",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 6,
+      "city_count": 6
+    },
+    "hero_images": [
+      {
+        "name": "International Stadium Yokohama, Yokohama",
+        "filename": "NISSANSTADIUM20080608.jpeg",
+        "text": "The International Stadium Yokohama hosted the final."
+      },
+      {
+        "name": "Suwon World Cup Stadium, Suwon",
+        "filename": "Suwon_right.jpeg",
+        "text": "The Suwon World Cup Stadium hosted the semi-final France vs Brazil."
+      },
+      {
+        "name": "Niigata Stadium, Niigata",
+        "filename": "Bigswan080628.jpeg",
+        "text": "The Niigata Stadium hosted group B matches."
+      },
+      {
+        "name": "Ulsan Munsu Football Stadium, Ulsan",
+        "filename": "Munsu_20121110_204310_5.jpg",
+        "text": "The Ulsan Munsu Football Stadium hosted group A matches."
+      }
+    ],
+    "final_standings": { "champions": "FRA", "runners_up": "JPN", "third_place": "AUS", "fourth_place": "BRA" },
+    "statistics": { "total_matches": 16, "total_goals": 31, "attendance": 557191 },
+    "awards": {
+      "golden_boot": [{ "player": "Robert Pires", "team": "FRA", "goals": 2 }],
+      "silver_boot": [{ "player": "Éric Carrière", "team": "FRA", "goals": 2 }],
+      "bronze_boot": [{ "player": "Hwang Sun-hong", "team": "KOR", "goals": 2 }],
+      "golden_ball": [
+        { "player": "Robert Pires", "team": "FRA" },
+        { "player": "Patrick Vieira", "team": "FRA" },
+        { "player": "Hidetoshi Nakata", "team": "JPN" }
+      ],
+      "fair_play_team": ["JPN"]
+    }
+  },
+  {
+    "id": "CONFEDC1999",
+    "year": "1999",
+    "name": "FIFA Confederations Cup Mexico 1999",
+    "tournament_type_id": "CONFEDC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["MEX"],
+      "logo_filename": "cc_1999.jpg",
+      "start_date": "1999-07-24",
+      "end_date": "1999-08-04",
+      "color": "#009865",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 2,
+      "city_count": 2
+    },
+    "hero_images": [
+      {
+        "name": "Estadio Azteca, Mexico City",
+        "filename": "Estadio_Azteca_07a.jpg",
+        "text": "The Estadio Azteca hosted the final."
+      },
+      {
+        "name": "Mexico City, Mexico",
+        "filename": "Montaje.Ciudad_de_México.jpg",
+        "text": "From top and left: Angel of Independence, Mexico City Metropolitan Cathedral, Paseo de la Reforma, Torre Latinoamericana, National Palace, Parque La Mexicana in Santa Fe, Monumento a la Revolución, Chapultepec Castle, Palacio de Bellas Artes and Paseo de la Reforma"
+      },
+      {
+        "name": "Estadio Jalisco, Guadalajara",
+        "filename": "Estadio_jalisco.jpg",
+        "text": "The Estadio Jalisco hosted the semi-final Brazil vs Saudi Arabia."
+      },
+      {
+        "name": "Guadalajara, Mexico",
+        "filename": "Montaje_de_la_ciudad_metropolitana_de_Guadalajara.jpg",
+        "text": "From top and left: Torre Icon 23, Teatro Degollado, Palacio de Gobierno, La Minerva, Templo Expiatorio, Hospicio Cabañas, University of Guadalajara, Puerta de Hierro, Guadalajara Cathedral, historic center; Founder's Monument; Arcos de Guadalajara."
+      }
+    ],
+    "final_standings": { "champions": "MEX", "runners_up": "BRA", "third_place": "USA", "fourth_place": "KSA" },
+    "statistics": { "total_matches": 16, "total_goals": 55, "attendance": 970000 },
+    "awards": {
+      "golden_boot": [{ "player": "Ronaldinho", "team": "BRA", "goals": 6 }],
+      "silver_boot": [{ "player": "Cuauhtémoc Blanco", "team": "MEX", "goals": 6 }],
+      "bronze_boot": [{ "player": "Marzouk Al-Otaibi", "team": "KSA", "goals": 6 }],
+      "golden_ball": [
+        { "player": "Ronaldinho", "team": "BRA" },
+        { "player": "Cuauhtémoc Blanco", "team": "MEX" },
+        { "player": "Marzouk Al-Otaibi", "team": "KSA" }
+      ],
+      "fair_play_team": ["BRA"]
+    }
+  },
+  {
+    "id": "CONFEDC1997",
+    "year": "1997",
+    "name": "FIFA Confederations Cup Saudi Arabia 1997",
+    "tournament_type_id": "CONFEDC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KSA"],
+      "logo_filename": "cc_1997.png",
+      "start_date": "1997-12-12",
+      "end_date": "1997-12-21",
+      "color": "#177700",
+      "team_count": 8,
+      "confed_count": 6,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "King Fahd Stadium, Riyadh",
+        "filename": "King_Fahd_Int._Stadium-_Opening_Arabian_Gulf_Cup_2014.jpg",
+        "text": "The King Fahd Stadium hosted all the tournament matches."
+      },
+      {
+        "name": "Riyadh, Saudi Arabia",
+        "filename": "Riyadh,_Saudi_Arabia_(2048x1367)_(36864830374).jpg",
+        "text": "Riyadh skyline"
+      }
+    ],
+    "final_standings": { "champions": "BRA", "runners_up": "AUS", "third_place": "CZE", "fourth_place": "URU" },
+    "statistics": { "total_matches": 16, "total_goals": 52, "attendance": 333500 },
+    "awards": {
+      "golden_boot": [{ "player": "Romário", "team": "BRA", "goals": 7 }],
+      "silver_boot": [{ "player": "Vladimír Šmicer", "team": "CZE", "goals": 5 }],
+      "bronze_boot": [{ "player": "Ronaldo", "team": "BRA", "goals": 4 }],
+      "golden_ball": [
+        { "player": "Denílson", "team": "BRA" },
+        { "player": "Romário", "team": "BRA" },
+        { "player": "Vladimír Šmicer", "team": "CZE" }
+      ],
+      "fair_play_team": ["RSA"]
+    }
+  },
+  {
+    "id": "CONFEDC1995",
+    "year": "1995",
+    "name": "King Fahd Cup Saudi Arabia 1995",
+    "short_name": "Saudi Arabia 1995",
+    "tournament_type_id": "CONFEDC",
+    "golden_goal_rule": true,
+    "points_for_win": 3,
+    "tiebreakers": ["team", "head2head", "penalty"],
+    "details": {
+      "host": ["KSA"],
+      "logo_filename": "Confederations_Cup.png",
+      "start_date": "1995-01-06",
+      "end_date": "1995-01-13",
+      "color": "#0e4676",
+      "team_count": 6,
+      "confed_count": 5,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Riyadh, Saudi Arabia",
+        "filename": "Lake_at_Wadi_Hanifah_(5218227168).jpg",
+        "text": "Lake at the 120 km long Wadi Hanifa valley that cuts through Riyadh"
+      }
+    ],
+    "final_standings": { "champions": "DEN", "runners_up": "ARG", "third_place": "MEX", "fourth_place": "NGA" },
+    "statistics": { "total_matches": 8, "total_goals": 19, "attendance": 165000 },
+    "awards": {
+      "golden_boot": [{ "player": "Luis García", "team": "MEX", "goals": 3 }],
+      "golden_ball": [{ "player": "Brian Laudrup", "team": "DEN" }]
+    }
+  },
+  {
+    "id": "CONFEDC1992",
+    "year": "1992",
+    "name": "King Fahd Cup Saudi Arabia 1992",
+    "short_name": "Saudi Arabia 1992",
+    "tournament_type_id": "CONFEDC",
+    "points_for_win": 2,
+    "tiebreakers": ["team", "head2head", "lot"],
+    "details": {
+      "host": ["KSA"],
+      "logo_filename": "Confederations_Cup.png",
+      "start_date": "1992-10-15",
+      "end_date": "1992-10-20",
+      "color": "#9a7633",
+      "team_count": 4,
+      "confed_count": 4,
+      "venue_count": 1,
+      "city_count": 1
+    },
+    "hero_images": [
+      {
+        "name": "Riyadh, Saudi Arabia",
+        "filename": "Saudi-desert.gif",
+        "text": "The An Nafud desert in the outskirts of Riyadh with the Jabal Tuwaiq in the background"
+      }
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "KSA", "third_place": "USA", "fourth_place": "CIV" },
+    "statistics": { "total_matches": 4, "total_goals": 18, "attendance": 196500 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Gabriel Batistuta", "team": "ARG", "goals": 2 },
+        { "player": "Bruce Murray", "team": "USA", "goals": 2 }
+      ],
+      "golden_ball": [{ "player": "Fernando Redondo", "team": "ARG" }]
+    }
+  }
+]
