@@ -1044,6 +1044,19 @@
   text-align: left;
 }
 
+.conf-box {
+  vertical-align: middle;
+  border: 1px solid #a2a9b1;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.conf-logo {
+  max-height: 100px;
+  max-width: 100px;
+}
+
 /* ========== Nav Tabs Override ========== */
 
 .nav-link.disabled {

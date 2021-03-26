@@ -1,0 +1,207 @@
+[
+  {
+    "id": "WC",
+    "name": "FIFA World Cup",
+    "color": "rgb(9, 54, 151)",
+    "team_type_id": "MNT",
+    "confederation_id": "FIFA",
+    "logo_path": "wc_logos",
+    "trophy_filename": "FIFA_Trophy.jpg",
+    "show_successors": true,
+    "description": [
+      "The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of the FIFA. The championship has been awarded every four years since 1930, except in 1942 and 1946. The current champion is France, which won its second title in Russia 2018.",
+      "The current format involves a qualification phase, which takes place over the preceding three years, to determine which teams qualify for the tournament phase. In the tournament phase, 32 teams, including the automatically qualifying host nation(s), compete for the title at venues within the host nation(s) over about a month.",
+      "The 21 World Cup tournaments have been won by eight national teams. Brazil have won five times, and they are the only team to have played in every tournament. The other World Cup winners are Germany and Italy, with four titles each; Argentina, France, and inaugural winner Uruguay, with two titles each; and England and Spain, with one title each."
+    ]
+  },
+  {
+    "id": "WWC",
+    "name": "FIFA Women's World Cup",
+    "color": "rgb(250, 34, 0)",
+    "team_type_id": "WNT",
+    "confederation_id": "FIFA",
+    "logo_path": "wwc_logos",
+    "trophy_filename": "women_world_cup_trophy.jpg",
+    "description": [
+      "The FIFA Women's World Cup is an international football competition contested by the senior women's national teams of the members of Fédération Internationale de Football Association (FIFA), the sport's international governing body. The competition has been held every four years since 1991.",
+      "The eight FIFA Women's World Cup tournaments have been won by four national teams. The United States has won four times, and is the current champion after winning it at the 2019 tournament in France. The other winners are Germany, with two titles, and Japan and Norway with one title each."
+    ]
+  },
+  {
+    "id": "MOFT",
+    "name": "Men's Olympic Football Tournament",
+    "color": "rgb(21, 97, 30)",
+    "team_type_id": "U23MNT",
+    "confederation_id": "FIFA",
+    "logo_path": "olympic_logos",
+    "trophy_filename": "Medalhas_Rio_2016.jpg",
+    "description": [
+      "Football at the Summer Olympics, commonly known as football or soccer, has been included in every Summer Olympic Games as a men's competition sport, except 1896 and 1932.",
+      "The competition consists of a round-robin group stage followed by a knockout stage. Teams are placed into groups of 4 teams, with each team playing each other team in its group once. Teams earn 3 points for a win, 1 point for a draw, and 0 points for a loss. The top two teams in each group advance to the knockout rounds. The knockout rounds are a single-elimination tournament consisting of quarterfinals, semifinals, and the gold and bronze medal matches.",
+      "The qualifying tournament, like that for the World Cup, is organised along continental lines. Most continental confederations organise a special Under-23 qualifying tournament, although the European qualifiers are drawn from the finalists of the UEFA Under-21 Championship and South American qualifiers from the South American Youth Championship, which is a U-20 tournament. Teams participating in the preliminary and final competitions must be composed of U-23 players, with up to three players who are at least 23."
+    ]
+  },
+  {
+    "id": "WOFT",
+    "name": "Women's Olympic Football Tournament",
+    "color": "rgb(243, 146, 5)",
+    "team_type_id": "U23WNT",
+    "confederation_id": "FIFA",
+    "logo_path": "olympic_logos",
+    "trophy_filename": "Beijing_2008.png",
+    "description": [
+      "Women's football at the Summer Olympics was added to the official program at the 1996 Atlanta Games.",
+      "The competition consists of a round-robin group stage followed by a knockout stage. Teams are placed into groups of 4 teams, with each team playing each other team in its group once. Teams earn 3 points for a win, 1 point for a draw, and 0 points for a loss. The top two teams in each group and the top two third-place finishers advance to the knockout rounds. The knockout rounds are a single-elimination tournament consisting of quarterfinals, semifinals, and the gold and bronze medal matches.",
+      "The women's tournament is contested between full national sides, with no age restrictions. One place is reserved for the host country. Of the remaining teams, as in World Cup contests a specific number of places are reserved for teams from each continental region; the European (UEFA) teams are chosen from the most successful European teams in the previous year's World Cup, whilst the other continental regions host their own qualifying tournaments in the build-up to the Olympics."
+    ]
+  },
+  {
+    "id": "CONFEDC",
+    "name": "FIFA Confederations Cup",
+    "color": "rgb(0, 2, 166)",
+    "team_type_id": "MNT",
+    "confederation_id": "FIFA",
+    "logo_path": "cc_logos",
+    "trophy_filename": "Confederations_Cup_trophy.jpg",
+    "description": [
+      "The FIFA Confederations Cup was an international association football tournament for men's national teams, held every four years by FIFA. It was contested by the holders of each of the six continental championships (AFC, CAF, CONCACAF, CONMEBOL, OFC and UEFA), along with the current FIFA World Cup holder and the host nation, to bring the number of teams up to eight.",
+      "Between 2001 and 2017 (with an exception of 2003), the tournament was held in the country that would host the World Cup next year, acting as a test event for the larger tournament.",
+      "The last champions were Germany, who won the 2017 FIFA Confederations Cup by defeating Chile 1–0 in the final to win their only title.",
+      "In March 2019, FIFA confirmed that the tournament would no longer be staged, with its slot replaced by an expansion of the FIFA Club World Cup in 2021, as well as the 2021 FIFA Arab Cup as a prelude to the 2022 FIFA World Cup."
+    ]
+  },
+  {
+    "id": "EURO",
+    "name": "UEFA European Championship",
+    "color": "rgb(250, 4, 24)",
+    "team_type_id": "MNT",
+    "confederation_id": "UEFA",
+    "logo_path": "euro_logos",
+    "trophy_filename": "Coupe_Henri_Delaunay_2017.jpg",
+    "show_successors": true,
+    "description": [
+      "The UEFA European Football Championship, commonly known as the UEFA European Championship and informally as the Euros, is the primary association football competition contested by the senior men's national teams of the members of the Union of European Football Associations (UEFA), determining the continental champion of Europe.",
+      "The 15 European Championship tournaments have been won by ten national teams: Germany and Spain each have won three titles, France has two titles, and the Soviet Union, Italy, Czechoslovakia, Netherlands, Denmark, Greece and Portugal have won one title each. To date, Spain is the only team in history to have won consecutive titles, doing so in 2008 and 2012.",
+      "The most recent championship, hosted by France in 2016, was won by Portugal, who beat France 1–0 in the final at the Stade de France in Saint-Denis after extra time. The final also averaged 284 million viewers which is the second most viewed game in European tournament history."
+    ]
+  },
+  {
+    "id": "UNL",
+    "name": "UEFA Nations League",
+    "color": "rgb(255, 165, 0)",
+    "team_type_id": "MNT",
+    "confederation_id": "UEFA",
+    "logo_path": "unl_logos",
+    "trophy_filename": "uefa-nations-league-trophy.jpg",
+    "description": [
+      "The UEFA Nations League is a biennial international football competition contested by the senior men's national teams of the member associations of UEFA, the sport's European governing body.",
+      "The first tournament began in September 2018, following the 2018 FIFA World Cup. The four group winners from League A qualified for the finals, played in Portugal in June 2019. Four nations, one from each League, also qualified for the UEFA Euro 2020 finals."
+    ]
+  },
+  {
+    "id": "UCL",
+    "name": "UEFA Champions League",
+    "color": "rgb(9, 54, 151)",
+    "team_type_id": "CLUB",
+    "confederation_id": "UEFA",
+    "logo_path": "club_logos",
+    "trophy_filename": "Trofeo_UEFA_Champions_League.jpg",
+    "description": [
+      "The UEFA Champions League (abbreviated as UCL) is an annual club football competition organised by the Union of European Football Associations (UEFA) and contested by top-division European clubs, deciding the competition winners through a group and knockout format. It is one of the most prestigious football tournaments in the world and the most prestigious club competition in European football, played by the national league champions (and, for some nations, one or more runners-up) of their national associations.",
+      "Introduced in 1955 as the European Champion Clubs' Cup, commonly known as European Cup, it was initially a straight knockout tournament open only to the champions of Europe's domestic leagues, with its winner reckoned as the European club champion. The competition took on its current name in 1992, adding a round-robin group stage in 1991 and allowing multiple entrants from certain countries since 1997. It has since been expanded, and while most of Europe's national leagues can still only enter their champion, the strongest leagues now provide up to four teams.",
+      "Real Madrid is the most successful club in the tournament's history, having won it 13 times, including its first five seasons."
+    ]
+  },
+  {
+    "id": "UEL",
+    "name": "UEFA Europa League",
+    "color": "rgb(21, 97, 30)",
+    "team_type_id": "CLUB",
+    "confederation_id": "UEFA",
+    "logo_path": "club_logos",
+    "trophy_filename": "UEL_Trophy.jpg",
+    "description": [
+      "The UEFA Europa League (abbreviated as UEL) is an annual football club competition organised by UEFA since 1971 for eligible European football clubs. Clubs qualify for the competition based on their performance in their national leagues and cup competitions. It is now the second-tier competition of European club football, ranking below the UEFA Champions League and above the UEFA Europa Conference League after being a third-tier competition from 1971 to 1999 before the UEFA Cup Winners' Cup was discontinued. Previously called the UEFA Cup, the competition has been known as the Europa League since the 2009–10 season, following a change in format."
+    ]
+  },
+  {
+    "id": "COPA",
+    "name": "CONMEBOL Copa America",
+    "color": "rgb(0, 92, 164)",
+    "team_type_id": "MNT",
+    "confederation_id": "CONMEBOL",
+    "logo_path": "copa_logos",
+    "trophy_filename": "Copa_america_trofeo.jpg",
+    "description": [
+      "CONMEBOL Copa América is the main men's football tournament contested among national teams from CONMEBOL. It is the oldest international football competition, and is the third most watched competition. The competition determines the champions of South America. It was known as the South American Football Championship until 1975 when it officially acquired the name Copa América.",
+      "Since 1993, the tournament has generally featured 12 teams – all 10 CONMEBOL teams and two additional teams from other confederations. The 2016 version of the event, Copa América Centenario, featured sixteen teams, with six teams from CONCACAF in addition to the 10 from CONMEBOL. Mexico's two runner-up finishes are the highest for a non-CONMEBOL side.",
+      "Eight of the ten CONMEBOL national teams have won the tournament at least once in its 46 stagings since the event's inauguration in 1916, with only Ecuador and Venezuela yet to win. Uruguay has the most championships in the tournament's history, with 15 cups, followed by Argentina with 14 cups; while the current champion, Brazil, has nine cups."
+    ]
+  },
+  {
+    "id": "GC",
+    "name": "CONCACAF Gold Cup",
+    "color": "rgb(213, 186, 129)",
+    "team_type_id": "MNT",
+    "confederation_id": "CONCACAF",
+    "logo_path": "gc_logos",
+    "trophy_filename": "901410497_6.jpg",
+    "show_successors": true,
+    "description": [
+      "The CONCACAF Gold Cup is the main association football competition of the men's national football teams governed by CONCACAF, determining the continental champion of North America, Central America, and the Caribbean. The Gold Cup is held every two years. It was previously referred to as the CONCACAF Championship before being renamed to the CONCACAF Gold Cup starting in 1991.",
+      "CONCACAF was founded in 1961 through the merging of NAFC and CCCF which resulted in a single championship being held for the continent. The first CONCACAF tournament was held in 1963 in El Salvador with Costa Rica becoming the first champion. The CONCACAF Campeonato de Naciones, as it was called, was held every two years from 1963 to 1973.",
+      "In 1990, CONCACAF renamed and restructured the CONCACAF Championship as the CONCACAF Gold Cup, with the United States hosting the first competition in 1991, and hosting or co-hosting every subsequent iteration of the tournament (as of 2019). The host country was the inaugural champion of the eight-team tournament.",
+      "Starting with the 2000 Gold Cup, the tournament field was increased to twelve teams and for the 2007 tournament, the Gold Cup again was contested exclusively by nations within CONCACAF. In January 2017, Victor Montagliani announced the expansion of the Gold Cup from 12 to 16 teams, starting with the 2019 tournament."
+    ]
+  },
+  {
+    "id": "AFCON",
+    "name": "CAF Africa Cup of Nations",
+    "color": "rgb(26, 159, 75)",
+    "team_type_id": "MNT",
+    "confederation_id": "CAF",
+    "logo_path": "afcon_logos",
+    "trophy_filename": "Coppa_Africa.svg",
+    "show_successors": true,
+    "description": [
+      "The CAF Africa Cup of Nations, officially CAN, also referred to as AFCON, is the main international men's association football competition in Africa. It is sanctioned by the Confederation of African Football (CAF) and was first held in 1957. Since 1968 it has been held every two years, switching to odd-numbered years in 2013.",
+      "In the first edition in 1957 there were only three participating nations: Egypt, Sudan and Ethiopia. Since then the tournament has grown greatly, making it necessary to hold a qualifying tournament. The number of participants in the final tournament reached 16 in 1998 and until 2017, the format had been unchanged, with the sixteen teams being drawn into four groups of four teams each, with the top two teams of each group advancing to a \"knock-out\" stage. On 20 July 2017, the Africa Cup of Nations was moved from January to June and expanded from 16 to 24 teams.",
+      "Egypt is the most successful nation in the cup's history, winning the tournament a record of seven times (including when Egypt was known as the United Arab Republic between 1958 and 1961). Three different trophies have been awarded during the tournament's history, with Ghana and Cameroon winning the first two versions to keep after each of them won a tournament three times. The current trophy was first awarded in 2002 and with Egypt winning it indefinitely after winning their unprecedented third consecutive title in 2010.",
+      "As of 2013, the tournament was switched to being held in odd-numbered years so as not to clash with the FIFA World Cup."
+    ]
+  },
+  {
+    "id": "AAC",
+    "name": "AFC Asian Cup",
+    "color": "rgb(0, 35, 149)",
+    "team_type_id": "MNT",
+    "confederation_id": "AFC",
+    "logo_path": "aac_logos",
+    "trophy_filename": "AFC_Asian_Cup_at_Fed_Square.jpg",
+    "description": [
+      "The AFC Asian Cup is an international association football tournament run by the Asian Football Confederation (AFC). It is the second oldest continental football championship in the world after Copa América. The winning team becomes the champion of Asia.",
+      "The Asian Cup was held once every four years from the 1956 edition in Hong Kong until the 2004 tournament in China. However, since the Summer Olympic Games and the European Football Championship were also scheduled in the same year as the Asian Cup, the AFC decided to move their championship to a less crowded cycle. After 2004, the tournament was next held in 2007 when it was co-hosted by four nations: Indonesia, Malaysia, Thailand and Vietnam. Thereafter, it has been held every four years."
+    ]
+  },
+  {
+    "id": "ONC",
+    "name": "OFC Nations Cup",
+    "color": "rgb(26, 51, 116)",
+    "team_type_id": "MNT",
+    "confederation_id": "OFC",
+    "logo_path": "onc_logos",
+    "trophy_filename": "ofc_nations_cup_trophy.jpg",
+    "description": [
+      "The OFC Nations Cup is an international association football tournament held among the OFC member nations. It was held every two years from 1996 to 2004. Before 1996 there were two other tournaments held at irregular intervals, under the name Oceania Nations Cup. No competition was held in 2006, but in the 2008 edition, which also acted as a qualification tournament for the 2009 FIFA Confederations Cup and for a play-off for the 2010 FIFA World Cup, the New Zealand national football team emerged as winners.",
+      "Historically, a very large gulf separated New Zealand from the smaller island competitors, and little attention was paid to the tournament by the rest of the football world. In fact, after the first eight editions the trophy had been won only by two teams: Australia and New Zealand. In the 2012 OFC Nations Cup, Tahiti became the first team other than New Zealand to be crowned champions of Oceania."
+    ]
+  },
+  {
+    "id": "WCQ",
+    "name": "FIFA World Cup Qualification",
+    "team_type_id": "MNT",
+    "confederation_id": "FIFA",
+    "tournament_subtype": "qualification",
+    "logo_path": "wc_logos"
+  }
+]

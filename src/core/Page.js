@@ -1,16 +1,11 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'animate.css/animate.min.css'
-import 'aos/dist/aos.css'
-import '../stylesheets/icofont/icofont.min.css'
-import '../stylesheets/venobox/venobox.css'
-import '../stylesheets/common.css'
-import '../stylesheets/Page.css'
-import '../stylesheets/Soccer.css'
-import turtleLogo from '../images/Turtle_Soccer_logo.png'
 import { Container, Row, Col } from 'reactstrap'
 
 class Page extends React.Component {
+  constructor(props) {
+    super(props)
+    this.turtleLogo = '/images/logos/Turtle_Soccer_logo.png'
+  }
   render() {
     return (
       <React.Fragment>
@@ -20,7 +15,7 @@ class Page extends React.Component {
               <Col sm="7" md="5">
                 <div className="logo float-left">
                   <a href="/">
-                    <img src={turtleLogo} alt="Turtle Soccer" className="img-fluid" title="Turtle Soccer" />
+                    <img src={this.turtleLogo} alt="Turtle Soccer" className="img-fluid" title="Turtle Soccer" />
                   </a>
                 </div>
               </Col>
@@ -31,7 +26,7 @@ class Page extends React.Component {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/soccer">Tournaments</a>
+                      <a href="/confederations">Confederations</a>
                     </li>
                   </ul>
                 </nav>

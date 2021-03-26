@@ -30,8 +30,8 @@ class App extends React.Component {
                           Welcome to <span>Turtle Soccer</span>
                         </h2>
                         <p className="animated fadeInUp">It's known as football for the rest of the world. In America, we call it Soccer!</p>
-                        <a href="/soccer" className="btn-get-started animated fadeInUp scrollto">
-                          Tournaments
+                        <a href="/confederations" className="btn-get-started animated fadeInUp scrollto">
+                          Confederations
                         </a>
                       </div>
                     </div>
@@ -52,8 +52,8 @@ class App extends React.Component {
                           Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
                           quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
                         </p>
-                        <a href="/soccer" className="btn-get-started animated fadeInUp scrollto">
-                          Tournaments
+                        <a href="/confederations" className="btn-get-started animated fadeInUp scrollto">
+                          Confederations
                         </a>
                       </div>
                     </div>
@@ -74,8 +74,8 @@ class App extends React.Component {
                           Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia
                           ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
                         </p>
-                        <a href="/tennis" className="btn-get-started animated fadeInUp scrollto">
-                          Tournaments
+                        <a href="/confederations" className="btn-get-started animated fadeInUp scrollto">
+                          Confederations
                         </a>
                       </div>
                     </div>
