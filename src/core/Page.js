@@ -31,6 +31,9 @@ class Page extends React.Component {
                     <li>
                       <a href="/confederations">Confederations</a>
                     </li>
+                    <li>
+                      <a href="/associations">Associations</a>
+                    </li>
                   </ul>
                 </nav>
               </Col>

@@ -600,3 +600,22 @@ export const setTournamentDetails = (t) => {
   delete t.statistics
   delete t.year
 }
+
+export const setNationDetails = (n) => {
+  n.details = {
+    code: n.code ? n.code : '',
+    end_date: n.end_date,
+    flag_filename: n.flag_filename,
+    flag_max_width: n.flag_max_width ? n.flag_max_width : '',
+    name: n.name,
+    official_name: n.official_name,
+    start_date: n.start_date,
+  }
+  delete n.code
+  delete n.end_date
+  delete n.flag_filename
+  delete n.flag_max_width
+  delete n.name
+  delete n.official_name
+  delete n.start_date
+}

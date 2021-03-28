@@ -73,8 +73,8 @@ class ConfederationsApp extends React.Component {
                       <ul className="list-group">
                         {c.competitions &&
                           c.competitions.map((x) => (
-                            <li className="list-group-item" key={x.id} style={{ color: x.details ? x.details.color : '' }}>
-                              {x.details ? x.details.name : ''}
+                            <li className="list-group-item" key={x.id} style={{ color: x.details && x.details.color ? x.details.color : '' }}>
+                              {x.details && x.details.name ? x.details.name : ''}
                             </li>
                           ))}
                       </ul>

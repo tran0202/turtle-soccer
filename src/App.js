@@ -74,8 +74,8 @@ class App extends React.Component {
                           Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia
                           ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
                         </p>
-                        <a href="/confederations" className="btn-get-started animated fadeInUp scrollto">
-                          Confederations
+                        <a href="/associations" className="btn-get-started animated fadeInUp scrollto">
+                          Associations
                         </a>
                       </div>
                     </div>

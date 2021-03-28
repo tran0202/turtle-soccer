@@ -72,7 +72,7 @@ class CompetitionsApp extends React.Component {
               return (
                 <Row className="mt-3 mb-3 text-left conf-box" key={c.id}>
                   <Col sm="12" md="2" className="mb-2">
-                    {c.details.trophy_filename && (
+                    {c.details && c.details.trophy_filename && (
                       <img
                         src={`/images/${c.details.logo_path}/${c.details.trophy_filename}`}
                         alt={`${c.details.name}`}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import App from './App'
 import ConfederationsApp from './ConfederationsApp'
 import CompetitionsApp from './CompetitionsApp'
+import AssociationsApp from './AssociationsApp'
 // import CompetitionApp from './soccer/CompetitionApp'
 // import TournamentApp from './soccer/TournamentApp'
 
@@ -29,6 +30,7 @@ export default function Routing() {
         <Route exact path="/" children={<App />} />
         <Route exact path="/confederations" children={<ConfederationsApp />} />
         <Route exact path="/competitions" children={<CompetitionsApp />} />
+        <Route exact path="/associations" children={<AssociationsApp />} />
         {/* <Route exact path="/soccer/competition/:id" children={<CompetitionRoute />} />
         <Route path="/soccer/competition/:id/alltimestandings" children={<CompetitionRoute page="alltimestandings" />} />
         <Route exact path="/soccer/tournament/:id" children={<TournamentRoute />} />
