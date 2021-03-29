@@ -201,7 +201,7 @@
     "name": "FIFA World Cup Qualification",
     "team_type_id": "MNT",
     "confederation_id": "FIFA",
-    "tournament_subtype": "qualification",
+    "qualification": true,
     "logo_path": "wc_logos"
   }
 ]

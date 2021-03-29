@@ -1,0 +1,2731 @@
+{
+  "id": "UCL201920",
+  "stages": [
+    {
+      "name": "Preliminary Round",
+      "type": "knockout",
+      "teams": [{ "id": "TRP" }, { "id": "SAC" }, { "id": "FRN" }, { "id": "LRI" }],
+      "rounds": [
+        {
+          "name": "Preliminary Semi-finals",
+          "short_name": "1/2P",
+          "eliminateCount": 77,
+          "next_round": "Preliminary Final",
+          "matches": [
+            {
+              "home_team": "TRP",
+              "away_team": "SAC",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-06-25",
+              "time": "15:00",
+              "stadium": "Fadil Vokrri Stadium",
+              "city": "Pristina",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "FRN",
+              "away_team": "LRI",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2019-06-25",
+              "time": "20:45",
+              "stadium": "Fadil Vokrri Stadium",
+              "city": "Pristina",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Preliminary Final",
+          "short_name": "1stP",
+          "eliminateCount": 76,
+          "next_round": "First Qualifying First Leg",
+          "bye_teams": [
+            { "id": "NOM" },
+            { "id": "KFS" },
+            { "id": "SMA" },
+            { "id": "RSB" },
+            { "id": "ARA" },
+            { "id": "AIK" },
+            { "id": "AST" },
+            { "id": "CFR" },
+            { "id": "FER" },
+            { "id": "LUD" },
+            { "id": "TIR" },
+            { "id": "QAR" },
+            { "id": "SKS" },
+            { "id": "SUJ" },
+            { "id": "SAR" },
+            { "id": "CEL" },
+            { "id": "SHE" },
+            { "id": "SAB" },
+            { "id": "F91" },
+            { "id": "VFC" },
+            { "id": "LNF" },
+            { "id": "RBK" },
+            { "id": "VRE" },
+            { "id": "MRB" },
+            { "id": "DUN" },
+            { "id": "RIG" },
+            { "id": "TNS" },
+            { "id": "HJK" },
+            { "id": "HBT" },
+            { "id": "BBO" },
+            { "id": "GLI" }
+          ],
+          "matches": [
+            {
+              "home_team": "FRN",
+              "away_team": "SAC",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-06-28",
+              "time": "20:45",
+              "stadium": "Fadil Vokrri Stadium",
+              "city": "Pristina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "First Qualifying Round",
+      "type": "knockout2legged",
+      "rounds": [
+        {
+          "name": "First Qualifying First Leg",
+          "round_type": "firstleg",
+          "next_round": "First Qualifying Second Leg",
+          "matches": [
+            {
+              "home_team": "NOM",
+              "away_team": "KFS",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-07-09",
+              "time": "18:00",
+              "stadium": "Kadriorg Stadium",
+              "city": "Tallinn"
+            },
+            {
+              "home_team": "SMA",
+              "away_team": "RSB",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2019-07-09",
+              "time": "20:00",
+              "stadium": "Sūduva Stadium",
+              "city": "Marijampolė"
+            },
+            {
+              "home_team": "ARA",
+              "away_team": "AIK",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-09",
+              "time": "16:00",
+              "stadium": "Yerevan Football Academy Stadium",
+              "city": "Yerevan"
+            },
+            {
+              "home_team": "AST",
+              "away_team": "CFR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2019-07-09",
+              "time": "15:00",
+              "stadium": "Astana Arena",
+              "city": "Nur-Sultan"
+            },
+            {
+              "home_team": "FER",
+              "away_team": "LUD",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-10",
+              "time": "20:00",
+              "stadium": "Groupama Arena",
+              "city": "Budapest"
+            },
+            {
+              "home_team": "TIR",
+              "away_team": "QAR",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2019-07-10",
+              "time": "17:30",
+              "stadium": "Selman Stërmasi Stadium",
+              "city": "Tirana"
+            },
+            {
+              "home_team": "SKS",
+              "away_team": "SUJ",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-07-10",
+              "time": "20:15",
+              "stadium": "Tehelné pole",
+              "city": "Bratislava"
+            },
+            {
+              "home_team": "SAR",
+              "away_team": "CEL",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "2019-07-09",
+              "time": "19:45",
+              "stadium": "Koševo City Stadium",
+              "city": "Sarajevo"
+            },
+            {
+              "home_team": "SHE",
+              "away_team": "SAB",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2019-07-10",
+              "time": "19:00",
+              "stadium": "Sheriff Stadium",
+              "city": "Tiraspol"
+            },
+            {
+              "home_team": "F91",
+              "away_team": "VFC",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2019-07-09",
+              "time": "20:00",
+              "stadium": "Stade Josy Barthel",
+              "city": "Luxembourg City"
+            },
+            {
+              "home_team": "LNF",
+              "away_team": "RBK",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2019-07-10",
+              "time": "20:45",
+              "stadium": "Windsor Park",
+              "city": "Belfast"
+            },
+            {
+              "home_team": "VRE",
+              "away_team": "MRB",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2019-07-10",
+              "time": "22:00",
+              "stadium": "Hlíðarendi",
+              "city": "Reykjavík"
+            },
+            {
+              "home_team": "DUN",
+              "away_team": "RIG",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2019-07-10",
+              "time": "20:45",
+              "stadium": "Oriel Park",
+              "city": "Dundalk"
+            },
+            {
+              "home_team": "TNS",
+              "away_team": "FRN",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2019-07-09",
+              "time": "20:00",
+              "stadium": "Park Hall",
+              "city": "Oswestry"
+            },
+            {
+              "home_team": "HJK",
+              "away_team": "HBT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2019-07-09",
+              "time": "18:00",
+              "stadium": "Telia 5G -areena",
+              "city": "Helsinki"
+            },
+            {
+              "home_team": "BBO",
+              "away_team": "GLI",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-07-10",
+              "time": "19:00",
+              "stadium": "Borisov Arena",
+              "city": "Barysaw"
+            }
+          ]
+        },
+        {
+          "name": "First Qualifying Second Leg",
+          "round_type": "secondleg",
+          "eliminateCount": 60,
+          "next_round": "Second Qualifying First Leg",
+          "bye_teams": [{ "id": "MTA" }, { "id": "COP" }, { "id": "DZA" }, { "id": "APO" }, { "id": "VPL" }, { "id": "OLY" }, { "id": "PSV" }, { "id": "BAS" }],
+          "matches": [
+            {
+              "home_team": "KFS",
+              "away_team": "NOM",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2019-07-16",
+              "time": "17:00",
+              "stadium": "Toše Proeski Arena",
+              "city": "Skopje"
+            },
+            {
+              "home_team": "RSB",
+              "away_team": "SMA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-16",
+              "time": "20:45",
+              "stadium": "Red Star Stadium",
+              "city": "Belgrade"
+            },
+            {
+              "home_team": "AIK",
+              "away_team": "ARA",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2019-07-17",
+              "time": "19:00",
+              "stadium": "Friends Arena",
+              "city": "Solna"
+            },
+            {
+              "home_team": "CFR",
+              "away_team": "AST",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2019-07-17",
+              "time": "20:00",
+              "stadium": "Stadionul Dr. Constantin Rădulescu",
+              "city": "Cluj-Napoca"
+            },
+            {
+              "home_team": "LUD",
+              "away_team": "FER",
+              "home_score": 2,
+              "away_score": 3,
+              "date": "2019-07-17",
+              "time": "19:30",
+              "stadium": "Ludogorets Arena",
+              "city": "Razgrad"
+            },
+            {
+              "home_team": "QAR",
+              "away_team": "TIR",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-07-17",
+              "time": "19:00",
+              "stadium": "Dalga Arena",
+              "city": "Baku"
+            },
+            {
+              "home_team": "SUJ",
+              "away_team": "SKS",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 3,
+              "away_penalty_score": 2,
+              "date": "2019-07-17",
+              "time": "20:15",
+              "stadium": "Stadion kraj Bistrice",
+              "city": "Nikšić"
+            },
+            {
+              "home_team": "CEL",
+              "away_team": "SAR",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-17",
+              "time": "20:45",
+              "stadium": "Celtic Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "SAB",
+              "away_team": "SHE",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "2019-07-16",
+              "time": "19:30",
+              "stadium": "Mikheil Meskhi Stadium",
+              "city": "Tbilisi"
+            },
+            {
+              "home_team": "VFC",
+              "away_team": "F91",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-07-16",
+              "time": "20:00",
+              "stadium": "Centenary Stadium",
+              "city": "Ta' Qali"
+            },
+            {
+              "home_team": "RBK",
+              "away_team": "LNF",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "2019-07-17",
+              "time": "19:00",
+              "stadium": "Lerkendal Stadion",
+              "city": "Trondheim"
+            },
+            {
+              "home_team": "MRB",
+              "away_team": "VRE",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-07-17",
+              "time": "20:15",
+              "stadium": "Ljudski vrt",
+              "city": "Maribor"
+            },
+            {
+              "home_team": "RIG",
+              "away_team": "DUN",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 4,
+              "away_penalty_score": 5,
+              "date": "2019-07-17",
+              "time": "18:30",
+              "stadium": "Skonto Stadium",
+              "city": "Riga"
+            },
+            {
+              "home_team": "FRN",
+              "away_team": "TNS",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-07-16",
+              "time": "20:45",
+              "stadium": "Fadil Vokrri Stadium",
+              "city": "Pristina"
+            },
+            {
+              "home_team": "HBT",
+              "away_team": "HJK",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2019-07-16",
+              "time": "20:00",
+              "stadium": "Gundadalur",
+              "city": "Tórshavn"
+            },
+            {
+              "home_team": "GLI",
+              "away_team": "BBO",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2019-07-17",
+              "time": "20:00",
+              "stadium": "Stadion Piast",
+              "city": "Gliwice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Second Qualifying Round",
+      "type": "knockout2legged",
+      "multiple_paths": true,
+      "rounds": [
+        {
+          "name": "Second Qualifying First Leg",
+          "round_type": "firstleg",
+          "next_round": "Second Qualifying Second Leg",
+          "matches": [
+            {
+              "home_team": "CFR",
+              "away_team": "MTA",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2019-07-24",
+              "time": "20:00",
+              "stadium": "Stadionul Dr. Constantin Rădulescu",
+              "city": "Cluj-Napoca",
+              "path": "Champions"
+            },
+            {
+              "home_team": "BBO",
+              "away_team": "RBK",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-24",
+              "time": "19:00",
+              "stadium": "Borisov Arena",
+              "city": "Barysaw",
+              "path": "Champions"
+            },
+            {
+              "home_team": "TNS",
+              "away_team": "COP",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2019-07-23",
+              "time": "20:00",
+              "stadium": "Park Hall",
+              "city": "Oswestry",
+              "path": "Champions"
+            },
+            {
+              "home_team": "FER",
+              "away_team": "VFC",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2019-07-24",
+              "time": "20:00",
+              "stadium": "Groupama Arena",
+              "city": "Budapest",
+              "path": "Champions"
+            },
+            {
+              "home_team": "DUN",
+              "away_team": "QAR",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-07-24",
+              "time": "20:45",
+              "stadium": "Oriel Park",
+              "city": "Dundalk",
+              "path": "Champions"
+            },
+            {
+              "home_team": "SAB",
+              "away_team": "DZA",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2019-07-23",
+              "time": "19:30",
+              "stadium": "Mikheil Meskhi Stadium",
+              "city": "Tbilisi",
+              "path": "Champions"
+            },
+            {
+              "home_team": "CEL",
+              "away_team": "NOM",
+              "home_score": 5,
+              "away_score": 0,
+              "date": "2019-07-24",
+              "time": "20:45",
+              "stadium": "Celtic Park",
+              "city": "Glasgow",
+              "path": "Champions"
+            },
+            {
+              "home_team": "RSB",
+              "away_team": "HJK",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-07-24",
+              "time": "20:45",
+              "stadium": "Red Star Stadium",
+              "city": "Belgrade",
+              "path": "Champions"
+            },
+            {
+              "home_team": "SUJ",
+              "away_team": "APO",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-07-23",
+              "time": "20:15",
+              "stadium": "Stadion kraj Bistrice",
+              "city": "Nikšić",
+              "path": "Champions"
+            },
+            {
+              "home_team": "MRB",
+              "away_team": "AIK",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-24",
+              "time": "20:15",
+              "stadium": "Ljudski vrt",
+              "city": "Maribor",
+              "path": "Champions"
+            },
+            {
+              "home_team": "VPL",
+              "away_team": "OLY",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2019-07-23",
+              "time": "19:00",
+              "stadium": "Doosan Arena",
+              "city": "Plzeň",
+              "path": "League"
+            },
+            {
+              "home_team": "PSV",
+              "away_team": "BAS",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2019-07-23",
+              "time": "20:00",
+              "stadium": "Philips Stadion",
+              "city": "Eindhoven",
+              "path": "League"
+            }
+          ]
+        },
+        {
+          "name": "Second Qualifying Second Leg",
+          "round_type": "secondleg",
+          "eliminateCount": 48,
+          "next_round": "Third Qualifying First Leg",
+          "bye_teams": [{ "id": "PAO" }, { "id": "AJA" }, { "id": "IBA" }, { "id": "KRA" }, { "id": "PTO" }, { "id": "BRG" }, { "id": "DYK" }, { "id": "LIN" }],
+          "matches": [
+            {
+              "home_team": "MTA",
+              "away_team": "CFR",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2019-07-30",
+              "time": "19:00",
+              "stadium": "Netanya Stadium",
+              "city": "Netanya",
+              "path": "Champions"
+            },
+            {
+              "home_team": "RBK",
+              "away_team": "BBO",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-07-31",
+              "time": "19:00",
+              "stadium": "Lerkendal Stadion",
+              "city": "Trondheima",
+              "path": "Champions"
+            },
+            {
+              "home_team": "COP",
+              "away_team": "TNS",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2019-07-31",
+              "time": "19:45",
+              "stadium": "Parken Stadium",
+              "city": "Copenhagen",
+              "path": "Champions"
+            },
+            {
+              "home_team": "VFC",
+              "away_team": "FER",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-07-30",
+              "time": "20:00",
+              "stadium": "Centenary Stadium",
+              "city": "Ta' Qali",
+              "path": "Champions"
+            },
+            {
+              "home_team": "QAR",
+              "away_team": "DUN",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2019-07-31",
+              "time": "19:00",
+              "stadium": "Dalga Arena",
+              "city": "Baku",
+              "path": "Champions"
+            },
+            {
+              "home_team": "DZA",
+              "away_team": "SAB",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2019-07-30",
+              "time": "20:00",
+              "stadium": "Stadion Maksimir",
+              "city": "Zagreb",
+              "path": "Champions"
+            },
+            {
+              "home_team": "NOM",
+              "away_team": "CEL",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2019-07-30",
+              "time": "19:00",
+              "stadium": "A. Le Coq Arena",
+              "city": "Tallinn",
+              "path": "Champions"
+            },
+            {
+              "home_team": "HJK",
+              "away_team": "RSB",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-31",
+              "time": "18:00",
+              "stadium": "Telia 5G -areena",
+              "city": "Helsinki",
+              "path": "Champions"
+            },
+            {
+              "home_team": "APO",
+              "away_team": "SUJ",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2019-07-30",
+              "time": "19:00",
+              "stadium": "GSP Stadium",
+              "city": "Nicosia",
+              "path": "Champions"
+            },
+            {
+              "home_team": "AIK",
+              "away_team": "MRB",
+              "home_score": 2,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 1,
+              "date": "2019-07-31",
+              "time": "19:00",
+              "stadium": "Friends Arena",
+              "city": "Solna",
+              "path": "Champions"
+            },
+            {
+              "home_team": "OLY",
+              "away_team": "VPL",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "2019-07-30",
+              "time": "20:30",
+              "stadium": "Karaiskakis Stadium",
+              "city": "Piraeus",
+              "path": "League"
+            },
+            {
+              "home_team": "BAS",
+              "away_team": "PSV",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-07-30",
+              "time": "20:00",
+              "stadium": "St. Jakob-Park",
+              "city": "Basel",
+              "path": "League"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Third Qualifying Round",
+      "type": "knockout2legged",
+      "multiple_paths": true,
+      "rounds": [
+        {
+          "name": "Third Qualifying First Leg",
+          "round_type": "firstleg",
+          "next_round": "Third Qualifying Second Leg",
+          "matches": [
+            {
+              "home_team": "CFR",
+              "away_team": "CEL",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-08-07",
+              "time": "20:00",
+              "stadium": "Stadionul Dr. Constantin Rădulescu",
+              "city": "Cluj-Napoca",
+              "path": "Champions"
+            },
+            {
+              "home_team": "APO",
+              "away_team": "QAR",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2019-08-06",
+              "time": "19:00",
+              "stadium": "GSP Stadium",
+              "city": "Nicosia",
+              "path": "Champions"
+            },
+            {
+              "home_team": "PAO",
+              "away_team": "AJA",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2019-08-06",
+              "time": "19:00",
+              "stadium": "Toumba Stadium",
+              "city": "Thessaloniki",
+              "path": "Champions"
+            },
+            {
+              "home_team": "DZA",
+              "away_team": "FER",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-08-06",
+              "time": "20:00",
+              "stadium": "Stadion Maksimir",
+              "city": "Zagreb",
+              "path": "Champions"
+            },
+            {
+              "home_team": "RSB",
+              "away_team": "COP",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-08-06",
+              "time": "20:45",
+              "stadium": "Red Star Stadium",
+              "city": "Belgrade",
+              "path": "Champions"
+            },
+            {
+              "home_team": "MRB",
+              "away_team": "RBK",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "2019-08-07",
+              "time": "20:15",
+              "stadium": "Ljudski vrt",
+              "city": "Maribor",
+              "path": "Champions"
+            },
+            {
+              "home_team": "IBA",
+              "away_team": "OLY",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-08-07",
+              "time": "19:45",
+              "stadium": "Başakşehir Fatih Terim Stadium",
+              "city": "Istanbul",
+              "path": "League"
+            },
+            {
+              "home_team": "KRA",
+              "away_team": "PTO",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-08-07",
+              "time": "19:00",
+              "stadium": "Krasnodar Stadium",
+              "city": "Krasnodar",
+              "path": "League"
+            },
+            {
+              "home_team": "BRG",
+              "away_team": "DYK",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2019-08-06",
+              "time": "20:30",
+              "stadium": "Jan Breydel Stadium",
+              "city": "Bruges",
+              "path": "League"
+            },
+            {
+              "home_team": "BAS",
+              "away_team": "LIN",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2019-08-07",
+              "time": "20:00",
+              "stadium": "St. Jakob-Park",
+              "city": "Basel",
+              "path": "League"
+            }
+          ]
+        },
+        {
+          "name": "Third Qualifying Second Leg",
+          "round_type": "secondleg",
+          "eliminateCount": 38,
+          "next_round": "Play-off First Leg",
+          "bye_teams": [{ "id": "SLP" }, { "id": "YBO" }],
+          "matches": [
+            {
+              "home_team": "CEL",
+              "away_team": "CFR",
+              "home_score": 3,
+              "away_score": 4,
+              "date": "2019-08-13",
+              "time": "20:45",
+              "stadium": "Celtic Park",
+              "city": "Glasgow",
+              "path": "Champions"
+            },
+            {
+              "home_team": "QAR",
+              "away_team": "APO",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2019-08-13",
+              "time": "18:30",
+              "stadium": "Tofiq Bahramov Republican Stadium",
+              "city": "Baku",
+              "path": "Champions"
+            },
+            {
+              "home_team": "AJA",
+              "away_team": "PAO",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2019-08-13",
+              "time": "20:30",
+              "stadium": "Johan Cruyff Arena",
+              "city": "Amsterdam",
+              "path": "Champions"
+            },
+            {
+              "home_team": "FER",
+              "away_team": "DZA",
+              "home_score": 0,
+              "away_score": 4,
+              "date": "2019-08-13",
+              "time": "20:00",
+              "stadium": "Groupama Arena",
+              "city": "Budapest",
+              "path": "Champions"
+            },
+            {
+              "home_team": "COP",
+              "away_team": "RSB",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 6,
+              "away_penalty_score": 7,
+              "date": "2019-08-13",
+              "time": "20:00",
+              "stadium": "Parken Stadium",
+              "city": "Copenhagen",
+              "path": "Champions"
+            },
+            {
+              "home_team": "RBK",
+              "away_team": "MRB",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2019-08-13",
+              "time": "19:00",
+              "stadium": "Lerkendal Stadion",
+              "city": "Trondheim",
+              "path": "Champions"
+            },
+            {
+              "home_team": "OLY",
+              "away_team": "IBA",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-08-13",
+              "time": "20:30",
+              "stadium": "Karaiskakis Stadium",
+              "city": "Piraeus",
+              "path": "League"
+            },
+            {
+              "home_team": "PTO",
+              "away_team": "KRA",
+              "home_score": 2,
+              "away_score": 3,
+              "date": "2019-08-13",
+              "time": "21:00",
+              "stadium": "Estádio do Dragão",
+              "city": "Porto",
+              "path": "League"
+            },
+            {
+              "home_team": "DYK",
+              "away_team": "BRG",
+              "home_score": 3,
+              "away_score": 3,
+              "date": "2019-08-13",
+              "time": "19:30",
+              "stadium": "NSC Olimpiyskiy",
+              "city": "Kyiv",
+              "path": "League"
+            },
+            {
+              "home_team": "LIN",
+              "away_team": "BAS",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2019-08-13",
+              "time": "20:30",
+              "stadium": "Linzer Stadion",
+              "city": "Linz",
+              "path": "League"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Play-off Round",
+      "type": "knockout2legged",
+      "multiple_paths": true,
+      "rounds": [
+        {
+          "name": "Play-off First Leg",
+          "round_type": "firstleg",
+          "next_round": "Play-off Second Leg",
+          "matches": [
+            {
+              "home_team": "DZA",
+              "away_team": "RBK",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-08-21",
+              "time": "21:00",
+              "stadium": "Stadion Maksimir",
+              "city": "Zagreb",
+              "path": "Champions"
+            },
+            {
+              "home_team": "CFR",
+              "away_team": "SLP",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-08-20",
+              "time": "21:00",
+              "stadium": "Stadionul Dr. Constantin Rădulescu",
+              "city": "Cluj-Napoca",
+              "path": "Champions"
+            },
+            {
+              "home_team": "YBO",
+              "away_team": "RSB",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2019-08-21",
+              "time": "21:00",
+              "stadium": "Stade de Suisse",
+              "city": "Bern",
+              "path": "Champions"
+            },
+            {
+              "home_team": "APO",
+              "away_team": "AJA",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2019-08-20",
+              "time": "21:00",
+              "stadium": "GSP Stadium",
+              "city": "Nicosia",
+              "path": "Champions"
+            },
+            {
+              "home_team": "LIN",
+              "away_team": "BRG",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2019-08-20",
+              "time": "21:00",
+              "stadium": "Linzer Stadion",
+              "city": "Linz",
+              "path": "League"
+            },
+            {
+              "home_team": "OLY",
+              "away_team": "KRA",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "2019-08-21",
+              "time": "21:00",
+              "stadium": "Karaiskakis Stadium",
+              "city": "Piraeus",
+              "path": "League"
+            }
+          ]
+        },
+        {
+          "name": "Play-off Second Leg",
+          "round_type": "secondleg",
+          "eliminateCount": 32,
+          "next_round": "Group Stage",
+          "bye_teams": [],
+          "matches": [
+            {
+              "home_team": "RBK",
+              "away_team": "DZA",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-08-27",
+              "time": "21:00",
+              "stadium": "Lerkendal Stadion",
+              "city": "Trondheim",
+              "path": "Champions"
+            },
+            {
+              "home_team": "SLP",
+              "away_team": "CFR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2019-08-28",
+              "time": "21:00",
+              "stadium": "Sinobo Stadium",
+              "city": "Prague",
+              "path": "Champions"
+            },
+            {
+              "home_team": "RSB",
+              "away_team": "YBO",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2019-08-27",
+              "time": "21:00",
+              "stadium": "Red Star Stadium",
+              "city": "Belgrade",
+              "path": "Champions"
+            },
+            {
+              "home_team": "AJA",
+              "away_team": "APO",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2019-08-28",
+              "time": "21:00",
+              "stadium": "Johan Cruyff Arena",
+              "city": "Amsterdam",
+              "path": "Champions"
+            },
+            {
+              "home_team": "BRG",
+              "away_team": "LIN",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2019-08-28",
+              "time": "21:00",
+              "stadium": "Jan Breydel Stadium",
+              "city": "Bruges",
+              "path": "League"
+            },
+            {
+              "home_team": "KRA",
+              "away_team": "OLY",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2019-08-27",
+              "time": "21:00",
+              "stadium": "Krasnodar Stadium",
+              "city": "Krasnodar",
+              "path": "League"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Group Stage",
+      "type": "roundrobinmatchday",
+      "eliminateCount": 16,
+      "home_and_away": true,
+      "next_round": "Round of 16",
+      "advancement": {
+        "teams": {
+          "auto": [1, 2],
+          "transferred": [3],
+          "eliminated": [4],
+          "text": "The top 2 teams would advance to the Round of 16.The third-placed teams would transfer to the Europa League Round of 32."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "BRG" }, { "id": "GAL" }, { "id": "PSG" }, { "id": "RMA" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "BRG",
+                  "away_team": "GAL",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2019-09-18",
+                  "time": "18:55",
+                  "stadium": "Jan Breydel Stadium",
+                  "city": "Bruges"
+                },
+                {
+                  "home_team": "PSG",
+                  "away_team": "RMA",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2019-09-18",
+                  "time": "21:00",
+                  "stadium": "Parc des Princes",
+                  "city": "Paris"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "RMA",
+                  "away_team": "BRG",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-10-01",
+                  "time": "18:55",
+                  "stadium": "Santiago Bernabéu",
+                  "city": "Madrid"
+                },
+                {
+                  "home_team": "GAL",
+                  "away_team": "PSG",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2019-10-01",
+                  "time": "21:00",
+                  "stadium": "Türk Telekom Stadium",
+                  "city": "Istanbul"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "GAL",
+                  "away_team": "RMA",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2019-10-22",
+                  "time": "21:00",
+                  "stadium": "Türk Telekom Stadium",
+                  "city": "Istanbul"
+                },
+                {
+                  "home_team": "BRG",
+                  "away_team": "PSG",
+                  "home_score": 0,
+                  "away_score": 5,
+                  "date": "2019-10-22",
+                  "time": "21:00",
+                  "stadium": "Jan Breydel Stadium",
+                  "city": "Bruges"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "RMA",
+                  "away_team": "GAL",
+                  "home_score": 6,
+                  "away_score": 0,
+                  "date": "2019-11-06",
+                  "time": "21:00",
+                  "stadium": "Santiago Bernabéu",
+                  "city": "Madrid"
+                },
+                {
+                  "home_team": "PSG",
+                  "away_team": "BRG",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "2019-11-06",
+                  "time": "21:00",
+                  "stadium": "Parc des Princes",
+                  "city": "Paris"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "GAL",
+                  "away_team": "BRG",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-11-26",
+                  "time": "18:55",
+                  "stadium": "Türk Telekom Stadium",
+                  "city": "Istanbul"
+                },
+                {
+                  "home_team": "RMA",
+                  "away_team": "PSG",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-11-26",
+                  "time": "21:00",
+                  "stadium": "Santiago Bernabéu",
+                  "city": "Madrid"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "BRG",
+                  "away_team": "RMA",
+                  "home_score": 1,
+                  "away_score": 3,
+                  "date": "2019-12-11",
+                  "time": "21:00",
+                  "stadium": "Jan Breydel Stadium",
+                  "city": "Bruges"
+                },
+                {
+                  "home_team": "PSG",
+                  "away_team": "GAL",
+                  "home_score": 5,
+                  "away_score": 0,
+                  "date": "2019-12-11",
+                  "time": "21:00",
+                  "stadium": "Parc des Princes",
+                  "city": "Paris"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "OLY" }, { "id": "TOT" }, { "id": "BAY" }, { "id": "RSB" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "OLY",
+                  "away_team": "TOT",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-09-18",
+                  "time": "18:55",
+                  "stadium": "Karaiskakis Stadium",
+                  "city": "Piraeus"
+                },
+                {
+                  "home_team": "BAY",
+                  "away_team": "RSB",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2019-09-18",
+                  "time": "21:00",
+                  "stadium": "Allianz Arena",
+                  "city": "Munich"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "RSB",
+                  "away_team": "OLY",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2019-10-01",
+                  "time": "21:00",
+                  "stadium": "Red Star Stadium",
+                  "city": "Belgrade"
+                },
+                {
+                  "home_team": "TOT",
+                  "away_team": "BAY",
+                  "home_score": 2,
+                  "away_score": 7,
+                  "date": "2019-10-01",
+                  "time": "21:00",
+                  "stadium": "Tottenham Hotspur Stadium",
+                  "city": "London"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "TOT",
+                  "away_team": "RSB",
+                  "home_score": 5,
+                  "away_score": 0,
+                  "date": "2019-10-22",
+                  "time": "21:00",
+                  "stadium": "Tottenham Hotspur Stadium",
+                  "city": "London"
+                },
+                {
+                  "home_team": "OLY",
+                  "away_team": "BAY",
+                  "home_score": 2,
+                  "away_score": 3,
+                  "date": "2019-10-22",
+                  "time": "21:00",
+                  "stadium": "Karaiskakis Stadium",
+                  "city": "Piraeus"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "BAY",
+                  "away_team": "OLY",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-11-06",
+                  "time": "18:55",
+                  "stadium": "Allianz Arena",
+                  "city": "Munich"
+                },
+                {
+                  "home_team": "RSB",
+                  "away_team": "TOT",
+                  "home_score": 0,
+                  "away_score": 4,
+                  "date": "2019-11-06",
+                  "time": "21:00",
+                  "stadium": "Red Star Stadium",
+                  "city": "Belgrade"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "TOT",
+                  "away_team": "OLY",
+                  "home_score": 4,
+                  "away_score": 2,
+                  "date": "2019-11-26",
+                  "time": "21:00",
+                  "stadium": "Tottenham Hotspur Stadium",
+                  "city": "London"
+                },
+                {
+                  "home_team": "RSB",
+                  "away_team": "BAY",
+                  "home_score": 0,
+                  "away_score": 6,
+                  "date": "2019-11-26",
+                  "time": "21:00",
+                  "stadium": "Red Star Stadium",
+                  "city": "Belgrade"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "OLY",
+                  "away_team": "RSB",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "2019-12-11",
+                  "time": "21:00",
+                  "stadium": "Karaiskakis Stadium",
+                  "city": "Piraeus"
+                },
+                {
+                  "home_team": "BAY",
+                  "away_team": "TOT",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2019-12-11",
+                  "time": "21:00",
+                  "stadium": "Allianz Arena",
+                  "city": "Munich"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [{ "id": "SHK" }, { "id": "MCI" }, { "id": "DZA" }, { "id": "ATT" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "SHK",
+                  "away_team": "MCI",
+                  "home_score": 0,
+                  "away_score": 3,
+                  "date": "2019-09-18",
+                  "time": "21:00",
+                  "stadium": "Metalist Stadium",
+                  "city": "Kharkiv"
+                },
+                {
+                  "home_team": "DZA",
+                  "away_team": "ATT",
+                  "home_score": 4,
+                  "away_score": 0,
+                  "date": "2019-09-18",
+                  "time": "21:00",
+                  "stadium": "Stadion Maksimir",
+                  "city": "Zagreb"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "ATT",
+                  "away_team": "SHK",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-10-01",
+                  "time": "18:55",
+                  "stadium": "San Siro",
+                  "city": "Milan"
+                },
+                {
+                  "home_team": "MCI",
+                  "away_team": "DZA",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-10-01",
+                  "time": "21:00",
+                  "stadium": "City of Manchester Stadium",
+                  "city": "Manchester"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "SHK",
+                  "away_team": "DZA",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-10-22",
+                  "time": "18:55",
+                  "stadium": "Metalist Stadium",
+                  "city": "Kharkiv"
+                },
+                {
+                  "home_team": "MCI",
+                  "away_team": "ATT",
+                  "home_score": 5,
+                  "away_score": 1,
+                  "date": "2019-10-22",
+                  "time": "21:00",
+                  "stadium": "City of Manchester Stadium",
+                  "city": "Manchester"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "ATT",
+                  "away_team": "MCI",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-11-06",
+                  "time": "21:00",
+                  "stadium": "San Siro",
+                  "city": "Milan"
+                },
+                {
+                  "home_team": "DZA",
+                  "away_team": "SHK",
+                  "home_score": 3,
+                  "away_score": 3,
+                  "date": "2019-11-06",
+                  "time": "21:00",
+                  "stadium": "Stadion Maksimir",
+                  "city": "Zagreb"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "MCI",
+                  "away_team": "SHK",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-11-26",
+                  "time": "21:00",
+                  "stadium": "City of Manchester Stadium",
+                  "city": "Manchester"
+                },
+                {
+                  "home_team": "ATT",
+                  "away_team": "DZA",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-11-26",
+                  "time": "21:00",
+                  "stadium": "San Siro",
+                  "city": "Milan"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "SHK",
+                  "away_team": "ATT",
+                  "home_score": 0,
+                  "away_score": 3,
+                  "date": "2019-12-11",
+                  "time": "18:55",
+                  "stadium": "Metalist Stadium",
+                  "city": "Kharkiv"
+                },
+                {
+                  "home_team": "DZA",
+                  "away_team": "MCI",
+                  "home_score": 1,
+                  "away_score": 4,
+                  "date": "2019-12-11",
+                  "time": "18:55",
+                  "stadium": "Stadion Maksimir",
+                  "city": "Zagreb"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [{ "id": "ATM" }, { "id": "JUV" }, { "id": "B04" }, { "id": "LMO" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "ATM",
+                  "away_team": "JUV",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-09-18",
+                  "time": "21:00",
+                  "stadium": "Wanda Metropolitano",
+                  "city": "Madrid"
+                },
+                {
+                  "home_team": "B04",
+                  "away_team": "LMO",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-09-18",
+                  "time": "21:00",
+                  "stadium": "BayArena",
+                  "city": "Leverkusen"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "LMO",
+                  "away_team": "ATM",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-10-01",
+                  "time": "21:00",
+                  "stadium": "RZD Arena",
+                  "city": "Moscow"
+                },
+                {
+                  "home_team": "JUV",
+                  "away_team": "B04",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2019-10-01",
+                  "time": "21:00",
+                  "stadium": "Juventus Stadium",
+                  "city": "Turin"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "ATM",
+                  "away_team": "B04",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "2019-10-22",
+                  "time": "18:55",
+                  "stadium": "Wanda Metropolitano",
+                  "city": "Madrid"
+                },
+                {
+                  "home_team": "JUV",
+                  "away_team": "LMO",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-10-22",
+                  "time": "21:00",
+                  "stadium": "Juventus Stadium",
+                  "city": "Turin"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "LMO",
+                  "away_team": "JUV",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-11-06",
+                  "time": "18:55",
+                  "stadium": "RZD Arena",
+                  "city": "Moscow"
+                },
+                {
+                  "home_team": "B04",
+                  "away_team": "ATM",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-11-06",
+                  "time": "21:00",
+                  "stadium": "BayArena",
+                  "city": "Leverkusen"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "LMO",
+                  "away_team": "B04",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-11-26",
+                  "time": "18:55",
+                  "stadium": "RZD Arena",
+                  "city": "Moscow"
+                },
+                {
+                  "home_team": "JUV",
+                  "away_team": "ATM",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "2019-11-26",
+                  "time": "21:00",
+                  "stadium": "Juventus Stadium",
+                  "city": "Turin"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "ATM",
+                  "away_team": "LMO",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-12-11",
+                  "time": "21:00",
+                  "stadium": "Wanda Metropolitano",
+                  "city": "Madrid"
+                },
+                {
+                  "home_team": "B04",
+                  "away_team": "JUV",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-12-11",
+                  "time": "21:00",
+                  "stadium": "BayArena",
+                  "city": "Leverkusen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group E",
+          "teams": [{ "id": "RBS" }, { "id": "GNK" }, { "id": "NAP" }, { "id": "LIV" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "RBS",
+                  "away_team": "GNK",
+                  "home_score": 6,
+                  "away_score": 2,
+                  "date": "2019-09-17",
+                  "time": "21:00",
+                  "stadium": "Stadion Wals-Siezenheim",
+                  "city": "Wals-Siezenheim"
+                },
+                {
+                  "home_team": "NAP",
+                  "away_team": "LIV",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-09-17",
+                  "time": "21:00",
+                  "stadium": "Stadio San Paolo",
+                  "city": "Naples"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "GNK",
+                  "away_team": "NAP",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2019-10-02",
+                  "time": "18:55",
+                  "stadium": "Luminus Arena",
+                  "city": "Genk"
+                },
+                {
+                  "home_team": "LIV",
+                  "away_team": "RBS",
+                  "home_score": 4,
+                  "away_score": 3,
+                  "date": "2019-10-02",
+                  "time": "21:00",
+                  "stadium": "Anfield",
+                  "city": "Liverpool"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "GNK",
+                  "away_team": "LIV",
+                  "home_score": 1,
+                  "away_score": 4,
+                  "date": "2019-10-23",
+                  "time": "21:00",
+                  "stadium": "Luminus Arena",
+                  "city": "Genk"
+                },
+                {
+                  "home_team": "RBS",
+                  "away_team": "NAP",
+                  "home_score": 2,
+                  "away_score": 3,
+                  "date": "2019-10-23",
+                  "time": "21:00",
+                  "stadium": "Stadion Wals-Siezenheim",
+                  "city": "Wals-Siezenheim"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "LIV",
+                  "away_team": "GNK",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-11-05",
+                  "time": "21:00",
+                  "stadium": "Anfield",
+                  "city": "Liverpool"
+                },
+                {
+                  "home_team": "NAP",
+                  "away_team": "RBS",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-11-05",
+                  "time": "21:00",
+                  "stadium": "Stadio San Paolo",
+                  "city": "Naples"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "GNK",
+                  "away_team": "RBS",
+                  "home_score": 1,
+                  "away_score": 4,
+                  "date": "2019-11-27",
+                  "time": "21:00",
+                  "stadium": "Luminus Arena",
+                  "city": "Genk"
+                },
+                {
+                  "home_team": "LIV",
+                  "away_team": "NAP",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-11-27",
+                  "time": "21:00",
+                  "stadium": "Anfield",
+                  "city": "Liverpool"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "RBS",
+                  "away_team": "LIV",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-12-10",
+                  "time": "18:55",
+                  "stadium": "Stadion Wals-Siezenheim",
+                  "city": "Wals-Siezenheim"
+                },
+                {
+                  "home_team": "NAP",
+                  "away_team": "GNK",
+                  "home_score": 4,
+                  "away_score": 0,
+                  "date": "2019-12-10",
+                  "time": "18:55",
+                  "stadium": "Stadio San Paolo",
+                  "city": "Naples"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group F",
+          "teams": [{ "id": "INT" }, { "id": "SLP" }, { "id": "DOR" }, { "id": "FCB" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "INT",
+                  "away_team": "SLP",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-09-17",
+                  "time": "18:55",
+                  "stadium": "San Siro",
+                  "city": "Milan"
+                },
+                {
+                  "home_team": "DOR",
+                  "away_team": "FCB",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2019-09-17",
+                  "time": "21:00",
+                  "stadium": "Westfalenstadion",
+                  "city": "Dortmund"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "SLP",
+                  "away_team": "DOR",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-10-02",
+                  "time": "18:55",
+                  "stadium": "Sinobo Stadium",
+                  "city": "Prague"
+                },
+                {
+                  "home_team": "FCB",
+                  "away_team": "INT",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-10-02",
+                  "time": "21:00",
+                  "stadium": "Camp Nou",
+                  "city": "Barcelona"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "SLP",
+                  "away_team": "FCB",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-10-23",
+                  "time": "21:00",
+                  "stadium": "Sinobo Stadium",
+                  "city": "Prague"
+                },
+                {
+                  "home_team": "INT",
+                  "away_team": "DOR",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-10-23",
+                  "time": "21:00",
+                  "stadium": "San Siro",
+                  "city": "Milan"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "FCB",
+                  "away_team": "SLP",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2019-11-05",
+                  "time": "18:55",
+                  "stadium": "Camp Nou",
+                  "city": "Barcelona"
+                },
+                {
+                  "home_team": "DOR",
+                  "away_team": "INT",
+                  "home_score": 3,
+                  "away_score": 2,
+                  "date": "2019-11-05",
+                  "time": "21:00",
+                  "stadium": "Westfalenstadion",
+                  "city": "Dortmund"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "SLP",
+                  "away_team": "INT",
+                  "home_score": 1,
+                  "away_score": 3,
+                  "date": "2019-11-27",
+                  "time": "21:00",
+                  "stadium": "Sinobo Stadium",
+                  "city": "Prague"
+                },
+                {
+                  "home_team": "FCB",
+                  "away_team": "DOR",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2019-11-27",
+                  "time": "21:00",
+                  "stadium": "Camp Nou",
+                  "city": "Barcelona"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "INT",
+                  "away_team": "FCB",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-12-10",
+                  "time": "21:00",
+                  "stadium": "San Siro",
+                  "city": "Milan"
+                },
+                {
+                  "home_team": "DOR",
+                  "away_team": "SLP",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-12-10",
+                  "time": "21:00",
+                  "stadium": "Westfalenstadion",
+                  "city": "Dortmund"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group G",
+          "teams": [{ "id": "LYO" }, { "id": "ZSP" }, { "id": "SLB" }, { "id": "RBL" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "LYO",
+                  "away_team": "ZSP",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-09-17",
+                  "time": "18:55",
+                  "stadium": "Parc Olympique Lyonnais",
+                  "city": "Décines-Charpieu"
+                },
+                {
+                  "home_team": "SLB",
+                  "away_team": "RBL",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-09-17",
+                  "time": "21:00",
+                  "stadium": "Estádio da Luz",
+                  "city": "Lisbon"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "ZSP",
+                  "away_team": "SLB",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2019-10-02",
+                  "time": "21:00",
+                  "stadium": "Krestovsky Stadium",
+                  "city": "Saint Petersburg"
+                },
+                {
+                  "home_team": "RBL",
+                  "away_team": "LYO",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-10-02",
+                  "time": "21:00",
+                  "stadium": "Red Bull Arena",
+                  "city": "Leipzig"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "RBL",
+                  "away_team": "ZSP",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-10-23",
+                  "time": "18:55",
+                  "stadium": "Red Bull Arena",
+                  "city": "Leipzig"
+                },
+                {
+                  "home_team": "SLB",
+                  "away_team": "LYO",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-10-23",
+                  "time": "21:00",
+                  "stadium": "Estádio da Luz",
+                  "city": "Lisbon"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "ZSP",
+                  "away_team": "RBL",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-11-05",
+                  "time": "18:55",
+                  "stadium": "Krestovsky Stadium",
+                  "city": "Saint Petersburg"
+                },
+                {
+                  "home_team": "LYO",
+                  "away_team": "SLB",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2019-11-05",
+                  "time": "21:00",
+                  "stadium": "Parc Olympique Lyonnais",
+                  "city": "Décines-Charpieu"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "ZSP",
+                  "away_team": "LYO",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2019-11-27",
+                  "time": "18:55",
+                  "stadium": "Krestovsky Stadium",
+                  "city": "Saint Petersburg"
+                },
+                {
+                  "home_team": "RBL",
+                  "away_team": "SLB",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-11-27",
+                  "time": "21:00",
+                  "stadium": "Red Bull Arena",
+                  "city": "Leipzig"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "SLB",
+                  "away_team": "ZSP",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2019-12-10",
+                  "time": "21:00",
+                  "stadium": "Estádio da Luz",
+                  "city": "Lisbon"
+                },
+                {
+                  "home_team": "LYO",
+                  "away_team": "RBL",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-12-10",
+                  "time": "21:00",
+                  "stadium": "Parc Olympique Lyonnais",
+                  "city": "Décines-Charpieu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group H",
+          "teams": [{ "id": "AJA" }, { "id": "LIL" }, { "id": "CHE" }, { "id": "VAL" }],
+          "matchdays": [
+            {
+              "name": "Matchday 1",
+              "matches": [
+                {
+                  "home_team": "AJA",
+                  "away_team": "LIL",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2019-09-17",
+                  "time": "21:00",
+                  "stadium": "Johan Cruyff Arena",
+                  "city": "Amsterdam"
+                },
+                {
+                  "home_team": "CHE",
+                  "away_team": "VAL",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2019-09-17",
+                  "time": "21:00",
+                  "stadium": "Stamford Bridge",
+                  "city": "London"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 2",
+              "matches": [
+                {
+                  "home_team": "VAL",
+                  "away_team": "AJA",
+                  "home_score": 0,
+                  "away_score": 3,
+                  "date": "2019-10-02",
+                  "time": "21:00",
+                  "stadium": "Mestalla",
+                  "city": "Valencia"
+                },
+                {
+                  "home_team": "LIL",
+                  "away_team": "CHE",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2019-10-02",
+                  "time": "21:00",
+                  "stadium": "Stade Pierre-Mauroy",
+                  "city": "Villeneuve-d'Ascq"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 3",
+              "matches": [
+                {
+                  "home_team": "AJA",
+                  "away_team": "CHE",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2019-10-23",
+                  "time": "18:55",
+                  "stadium": "Johan Cruyff Arena",
+                  "city": "Amsterdam"
+                },
+                {
+                  "home_team": "LIL",
+                  "away_team": "VAL",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2019-10-23",
+                  "time": "21:00",
+                  "stadium": "Stade Pierre-Mauroy",
+                  "city": "Villeneuve-d'Ascq"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 4",
+              "matches": [
+                {
+                  "home_team": "VAL",
+                  "away_team": "LIL",
+                  "home_score": 4,
+                  "away_score": 1,
+                  "date": "2019-11-05",
+                  "time": "21:00",
+                  "stadium": "Mestalla",
+                  "city": "Valencia"
+                },
+                {
+                  "home_team": "CHE",
+                  "away_team": "AJA",
+                  "home_score": 4,
+                  "away_score": 4,
+                  "date": "2019-11-05",
+                  "time": "21:00",
+                  "stadium": "Stamford Bridge",
+                  "city": "London"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 5",
+              "matches": [
+                {
+                  "home_team": "VAL",
+                  "away_team": "CHE",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "2019-11-27",
+                  "time": "18:55",
+                  "stadium": "Mestalla",
+                  "city": "Valencia"
+                },
+                {
+                  "home_team": "LIL",
+                  "away_team": "AJA",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2019-11-27",
+                  "time": "21:00",
+                  "stadium": "Stade Pierre-Mauroy",
+                  "city": "Villeneuve-d'Ascq"
+                }
+              ]
+            },
+            {
+              "name": "Matchday 6",
+              "matches": [
+                {
+                  "home_team": "AJA",
+                  "away_team": "VAL",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2019-12-10",
+                  "time": "21:00",
+                  "stadium": "Johan Cruyff Arena",
+                  "city": "Amsterdam"
+                },
+                {
+                  "home_team": "CHE",
+                  "away_team": "LIL",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2019-12-10",
+                  "time": "21:00",
+                  "stadium": "Stamford Bridge",
+                  "city": "London"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockoutmultiple2legged",
+      "rounds": [
+        {
+          "name": "Round of 16",
+          "short_name": "1/8",
+          "eliminateCount": 8,
+          "next_round": "Quarter-finals",
+          "pairs": [
+            {
+              "matches": [
+                {
+                  "home_team": "DOR",
+                  "away_team": "PSG",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2020-02-18",
+                  "time": "21:00",
+                  "stadium": "Westfalenstadion",
+                  "city": "Dortmund",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "PSG",
+                  "away_team": "DOR",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2020-03-11",
+                  "time": "21:00",
+                  "stadium": "Parc des Princes",
+                  "city": "Paris",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 4
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "RMA",
+                  "away_team": "MCI",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2020-02-26",
+                  "time": "21:00",
+                  "stadium": "Santiago Bernabéu",
+                  "city": "Madrid",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "MCI",
+                  "away_team": "RMA",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2020-08-07",
+                  "time": "21:00",
+                  "stadium": "City of Manchester Stadium",
+                  "city": "Manchester",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 5
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "ATT",
+                  "away_team": "VAL",
+                  "home_score": 4,
+                  "away_score": 1,
+                  "date": "2020-02-19",
+                  "time": "21:00",
+                  "stadium": "San Siro",
+                  "city": "Milan",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "VAL",
+                  "away_team": "ATT",
+                  "home_score": 3,
+                  "away_score": 4,
+                  "date": "2020-03-10",
+                  "time": "21:00",
+                  "stadium": "Mestalla",
+                  "city": "Valencia",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 3
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "ATM",
+                  "away_team": "LIV",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "2020-02-18",
+                  "time": "21:00",
+                  "stadium": "Metropolitano Stadium",
+                  "city": "Madrid",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "LIV",
+                  "away_team": "ATM",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "home_extra_score": 1,
+                  "away_extra_score": 3,
+                  "date": "2020-03-11",
+                  "time": "21:00",
+                  "stadium": "Anfield",
+                  "city": "Liverpool",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "CHE",
+                  "away_team": "BAY",
+                  "home_score": 0,
+                  "away_score": 3,
+                  "date": "2020-02-25",
+                  "time": "21:00",
+                  "stadium": "Stamford Bridge",
+                  "city": "London",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "BAY",
+                  "away_team": "CHE",
+                  "home_score": 4,
+                  "away_score": 1,
+                  "date": "2020-08-08",
+                  "time": "21:00",
+                  "stadium": "Allianz Arena",
+                  "city": "Munich",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 8
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "LYO",
+                  "away_team": "JUV",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "2020-02-26",
+                  "time": "21:00",
+                  "stadium": "Parc Olympique Lyonnais",
+                  "city": "Décines-Charpieu",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "JUV",
+                  "away_team": "LYO",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2020-08-07",
+                  "time": "21:00",
+                  "stadium": "Juventus Stadium",
+                  "city": "Turin",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 6
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "TOT",
+                  "away_team": "RBL",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2020-02-19",
+                  "time": "21:00",
+                  "stadium": "Tottenham Hotspur Stadium",
+                  "city": "London",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "RBL",
+                  "away_team": "TOT",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2020-03-10",
+                  "time": "21:00",
+                  "stadium": "Red Bull Arena",
+                  "city": "Leipzig",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "NAP",
+                  "away_team": "FCB",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2020-02-25",
+                  "time": "21:00",
+                  "stadium": "Stadio San Paolo",
+                  "city": "Naples",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "FCB",
+                  "away_team": "NAP",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2020-08-08",
+                  "time": "21:00",
+                  "stadium": "Camp Nou",
+                  "city": "Barcelona",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 7
+            }
+          ]
+        },
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminateCount": 4,
+          "next_round": "Semi-finals",
+          "two_legged": false,
+          "matches": [
+            {
+              "home_team": "MCI",
+              "away_team": "LYO",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "2020-08-15",
+              "time": "21:00",
+              "stadium": "Estádio José Alvalade",
+              "city": "Lisbon",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "RBL",
+              "away_team": "ATM",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2020-08-13",
+              "time": "21:00",
+              "stadium": "Estádio José Alvalade",
+              "city": "Lisbon",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "FCB",
+              "away_team": "BAY",
+              "home_score": 2,
+              "away_score": 8,
+              "date": "2020-08-14",
+              "time": "21:00",
+              "stadium": "Estádio da Luz",
+              "city": "Lisbon",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "ATT",
+              "away_team": "PSG",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2020-08-12",
+              "time": "21:00",
+              "stadium": "Estádio da Luz",
+              "city": "Lisbon",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminateCount": 2,
+          "next_round": "Final",
+          "two_legged": false,
+          "matches": [
+            {
+              "home_team": "LYO",
+              "away_team": "BAY",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2020-08-19",
+              "time": "21:00",
+              "stadium": "Estádio José Alvalade",
+              "city": "Lisbon",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "RBL",
+              "away_team": "PSG",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2020-08-18",
+              "time": "21:00",
+              "stadium": "Estádio da Luz",
+              "city": "Lisbon",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "PSG",
+              "away_team": "BAY",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2020-08-23",
+              "time": "21:00",
+              "stadium": "Estádio da Luz",
+              "city": "Lisbon"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

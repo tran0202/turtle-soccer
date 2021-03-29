@@ -3,15 +3,17 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap
 import classnames from 'classnames'
 
 export const Style = (props) => {
-  const { tournamentType } = props
-  // console.log('tournamentType', tournamentType)
-  if (tournamentType && (tournamentType.id === 'WOFT' || tournamentType.id === 'WWC')) {
+  const { competition } = props
+  if (!competition) return null
+  if (competition.id === 'WOFT' || competition.id === 'WWC') {
     return (
       <style
         dangerouslySetInnerHTML={{
-          __html: `a, .nav-menu a { color: #ff4d94; } 
+          __html: `a, .nav-menu a, .mobile-nav-toggle i { color: #ff4d94; } 
           a:hover, .nav-menu a:hover, .nav-menu li:hover > a { color: #4d94ff; }
-          .nav-link.disabled { color: #ff80b3 }`,
+          .nav-link.disabled { color: #ff80b3 }
+          .mobile-nav { background: #ff4d94 }
+          .mobile-nav-overly { background: rgba(255, 219, 233, 0.4) }`,
         }}
       />
     )

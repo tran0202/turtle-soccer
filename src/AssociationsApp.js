@@ -29,7 +29,7 @@ class AssociationsApp extends React.Component {
   }
 
   render() {
-    const _associations = this.state.associations
+    const { associations } = this.state
     return (
       <Page>
         <Container>
@@ -39,28 +39,27 @@ class AssociationsApp extends React.Component {
               <section className="associations section-bg">
                 <div className="container">
                   <div className="row">
-                    {_associations &&
-                      _associations.map((a) => (
-                        <div key={a.id} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 text-center" data-aos="fade-up">
-                          <div className="associations-box">
-                            {a.details && a.details.flag_filename && (
-                              <img
-                                src={`/images/flags/${a.details.flag_filename}`}
-                                alt={a.details.name}
-                                title={a.details.name}
-                                className="flag-xl mx-auto"
-                                style={{ maxWidth: a.details && a.details.flag_max_width ? a.details.flag_max_width : '' }}
-                              />
-                            )}
-                            <p className="text-center mt-3">
-                              <span className="font-bold">
-                                {a.id} - {a.details.name}
-                              </span>
-                              <br />({a.confederation_id})
-                            </p>
-                          </div>
+                    {associations.map((a) => (
+                      <div key={a.id} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 text-center" data-aos="fade-up">
+                        <div className="associations-box">
+                          {a.details.flag_filename && (
+                            <img
+                              src={`/images/flags/${a.details.flag_filename}`}
+                              alt={a.details.name}
+                              title={a.details.name}
+                              className="flag-xl mx-auto"
+                              style={{ maxWidth: a.details.flag_max_width ? a.details.flag_max_width : '' }}
+                            />
+                          )}
+                          <p className="text-center mt-3">
+                            <span className="font-bold">
+                              {a.id} - {a.details.name}
+                            </span>
+                            <br />({a.confederation_id})
+                          </p>
                         </div>
-                      ))}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </section>

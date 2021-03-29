@@ -1036,6 +1036,12 @@
   border-radius: 0.25rem;
 }
 
+.competition-trophy {
+  width: 100%;
+  border: 1px solid #c7c6c6;
+  border-radius: 0.25rem;
+}
+
 .confed-tab {
   width: 14%;
   text-align: center;
@@ -1080,7 +1086,7 @@
 /* ========== Nav Tabs Override ========== */
 
 .nav-link.disabled {
-  color: #87d977;
+  color: #7f9fff;
 }
 
 .nav-tabs .nav-link:hover {
