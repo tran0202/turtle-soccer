@@ -2,7 +2,7 @@ import React from 'react'
 // import Rankings from './Rankings'
 // import { calculateProgressRankings, collectProgressRankings, sortGroupRankings } from './RankingsHelper'
 // import { getTournamentConfig, getTournamentTypeConfig, getParentTeam, getTeamName, isSuccessor } from './Helper'
-import { Row, Col } from 'reactstrap'
+import { Row } from 'reactstrap'
 
 // const updateRankings = (fr1, fr2) => {
 //   fr1.mp += fr2.mp

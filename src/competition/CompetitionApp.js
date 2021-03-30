@@ -96,6 +96,7 @@ class CompetitionApp extends React.Component {
 
   render() {
     const { competition } = this.state
+    // console.log('competition', competition)
     const { query } = this.props
     const { page } = query
     return (

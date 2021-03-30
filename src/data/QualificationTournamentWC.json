@@ -1,0 +1,83 @@
+[
+  {
+    "id": "WC2022_QUALIFIED",
+    "year": "2022",
+    "name": "2022 FIFA World Cup - All 6 Confederations Qualification",
+    "tournament_type_id": "WCQ",
+    "tournament_id": "WC2022",
+    "confederation_id": "QUALIFIED",
+    "active": true,
+    "points_for_win": 3,
+    "details": {
+      "start_date": "2019-06-06",
+      "end_date": "2022-06-01",
+      "team_count": 211,
+      "confed_count": 6
+    },
+    "statistics": { "total_matches": 155, "total_goals": 437, "attendance": 1776253 },
+    "awards": {
+      "golden_boot": [{ "player": "Omar Al Somah", "team": "SYR", "goals": 7 }]
+    },
+    "qualified": [{ "team": "QAT", "method": "Hosts", "date": "2010-12-02", "appearances": 1 }]
+  },
+  {
+    "id": "WC2022_AFC",
+    "year": "2022",
+    "name": "2022 FIFA World Cup - AFC Qualification",
+    "tournament_type_id": "WCQ",
+    "tournament_id": "WC2022",
+    "confederation_id": "AFC",
+    "active": true,
+    "show_match_year": true,
+    "tiebreakers": ["team", "head2head", "head2headawaygoals", "fairplay", "lot"],
+    "points_for_win": 3,
+    "details": { "start_date": "2019-06-06", "end_date": "2022-03-01", "color": "#e5cf1d", "team_count": 46, "confed_count": 1 },
+    "statistics": { "total_matches": 107, "total_goals": 313, "attendance": 1611133 },
+    "awards": {
+      "golden_boot": [{ "player": "Omar Al Somah", "team": "SYR", "goals": 7 }]
+    },
+    "qualified": [{ "team": "QAT", "method": "Hosts", "date": "2010-12-02", "appearances": 1 }]
+  },
+  {
+    "id": "WC2022_CAF",
+    "year": "2022",
+    "name": "2022 FIFA World Cup - CAF Qualification",
+    "tournament_type_id": "WCQ",
+    "tournament_id": "WC2022",
+    "confederation_id": "CAF",
+    "active": true,
+    "show_match_year": true,
+    "tiebreakers": ["team", "head2head", "head2headawaygoals", "fairplay", "lot"],
+    "points_for_win": 3,
+    "details": { "start_date": "2019-09-04", "end_date": "2021-11-16", "color": "#000000", "team_count": 54, "confed_count": 1 },
+    "statistics": { "total_matches": 28, "total_goals": 57, "attendance": 165000 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Joseph Mendes", "team": "GNB", "goals": 3 },
+        { "player": "Meddie Kagere", "team": "RWA", "goals": 3 },
+        { "player": "Ramadan Agab", "team": "SDN", "goals": 3 }
+      ]
+    }
+  },
+  {
+    "id": "WC2022_CONMEBOL",
+    "year": "2022",
+    "name": "2022 FIFA World Cup - CONMEBOL Qualification",
+    "tournament_type_id": "WCQ",
+    "tournament_id": "WC2022",
+    "confederation_id": "CONMEBOL",
+    "active": true,
+    "show_match_year": true,
+    "tiebreakers": ["team", "head2head", "head2headawaygoals", "fairplay", "lot"],
+    "points_for_win": 3,
+    "details": { "start_date": "2020-10-08", "end_date": "2022-03-29", "color": "#cc0000", "team_count": 10, "confed_count": 1 },
+    "statistics": { "total_matches": 20, "total_goals": 67 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Arturo Vidal", "team": "CHI", "goals": 4 },
+        { "player": "Ángel Romero", "team": "PAR", "goals": 4 },
+        { "player": "Luis Suárez", "team": "URU", "goals": 4 }
+      ]
+    }
+  }
+]

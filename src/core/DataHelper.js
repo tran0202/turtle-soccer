@@ -249,8 +249,8 @@ import td_ONC_2008 from '../data/tournamentData/ONC/td_ONC_2008.json'
 import td_ONC_2012 from '../data/tournamentData/ONC/td_ONC_2012.json'
 import td_ONC_2016 from '../data/tournamentData/ONC/td_ONC_2016.json'
 
-// import QualificationTournamentWCArray from '../data/QualificationTournamentWC.json'
-// import qtd_WC_2022 from '../data/qualTournamentData/qtd_WC_2022.json'
+import QualificationTournamentWCArray from '../data/QualificationTournamentWC.json'
+import qtd_WC_2022 from '../data/qualTournamentData/qtd_WC_2022.json'
 
 import TeamArray from '../data/Team.json'
 import ClubArray from '../data/Club.json'
@@ -286,13 +286,13 @@ export const getTournamentDataArray = () => {
   )
 }
 
-// export const getQualificationTournamentArray = () => {
-//   return QualificationTournamentWCArray
-// }
+export const getQualificationTournamentArray = () => {
+  return QualificationTournamentWCArray
+}
 
-// export const getQualificationTournamentDataArray = () => {
-//   return [].concat(qtd_WC_2022)
-// }
+export const getQualificationTournamentDataArray = () => {
+  return [].concat(qtd_WC_2022)
+}
 
 export const getTournamentDataWC = () => {
   return [].concat(
