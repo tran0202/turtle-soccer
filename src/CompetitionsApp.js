@@ -87,7 +87,11 @@ class CompetitionsApp extends React.Component {
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs="12">{c.details.descriptions && c.details.descriptions.map((d) => <p key={d}>{d}</p>)}</Col>
+                    <Col xs="12">
+                      {c.details.descriptions.map((d) => (
+                        <p key={d}>{d}</p>
+                      ))}
+                    </Col>
                   </Row>
                 </Col>
                 <Col sm="12" md="12">
@@ -97,7 +101,7 @@ class CompetitionsApp extends React.Component {
                         {c.tournaments.map((t) => (
                           <div key={t.id} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 text-center" data-aos="fade-up">
                             <div className="tournament-box">
-                              <a href={`/soccer/tournament/${t.id}`}>
+                              <a href={`/tournament/${t.id}`}>
                                 {t.details.logo_filename && (
                                   <img
                                     src={`/images/${t.config.logo_path}/${t.details.logo_filename}`}
@@ -107,7 +111,7 @@ class CompetitionsApp extends React.Component {
                                   />
                                 )}
                               </a>
-                              <a href={`/soccer/tournament/${t.id}`}>
+                              <a href={`/tournament/${t.id}`}>
                                 <p className="text-center font-bold mt-3">{t.details.name}</p>
                               </a>
                             </div>

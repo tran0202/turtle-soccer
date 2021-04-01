@@ -59,15 +59,19 @@ class ConfederationsApp extends React.Component {
                 </Col>
                 <Col sm="12" md="10">
                   <Row>
-                    <Col xs="12">{c.details.descriptions && c.details.descriptions.map((d) => <p key={d}>{d}</p>)}</Col>
+                    <Col xs="12">
+                      {c.details.descriptions.map((d) => (
+                        <p key={d}>{d}</p>
+                      ))}
+                    </Col>
                   </Row>
                   <Row>
                     <Col xs="12">
                       <h2>Competitions</h2>
                       <ul className="list-group">
                         {c.competitions.map((x) => (
-                          <li className="list-group-item" key={x.id} style={{ color: x.details ? x.details.color : '' }}>
-                            <a href={`/competition/${x.id}`}>{x.details ? x.details.name : ''}</a>
+                          <li className="list-group-item" key={x.id} style={{ color: x.details.color }}>
+                            <a href={`/competition/${x.id}`}>{x.details.name}</a>
                           </li>
                         ))}
                       </ul>

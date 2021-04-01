@@ -40,7 +40,7 @@ class CompetitionApp extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      competition: {},
+      competition: { details: { descriptions: [] }, config: {} },
     }
   }
 
@@ -61,7 +61,7 @@ class CompetitionApp extends React.Component {
     if (comp) {
       setCompetitionDetails(comp)
       setCompetitionConfig(comp)
-      this.setState({ competition: comp })
+      this.setState({ competition: { ...comp, tournaments: [] } })
       const ta = getTournamentArray().filter((t) => t.competition_id === this.props.query.id)
       if (ta) {
         ta.forEach((t) => {
@@ -105,11 +105,8 @@ class CompetitionApp extends React.Component {
         <Container>
           <Row className="mt-3 text-center">
             <Col>
-              <h1
-                className={`text-center mt-3 mb-2 ${getTournamentTitleFont(competition)}`}
-                style={{ color: competition.details ? competition.details.color : '' }}
-              >
-                {competition.details ? competition.details.name : ''}
+              <h1 className={`text-center mt-3 mb-2 ${getTournamentTitleFont(competition)}`} style={{ color: competition.details.color }}>
+                {competition.details.name}
               </h1>
               <CompHeaderLinks query={query} />
             </Col>

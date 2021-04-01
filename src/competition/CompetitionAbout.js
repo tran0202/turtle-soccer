@@ -149,11 +149,15 @@ const CompetitionAbout = (props) => {
       <Row className="mt-3 mb-3 text-left tournament-format">
         <Col xs="9">
           <Row>
-            <Col xs="12">{details && details.descriptions && details.descriptions.map((d) => <p key={d}>{d}</p>)}</Col>
+            <Col xs="12">
+              {details.descriptions.map((d) => (
+                <p key={d}>{d}</p>
+              ))}
+            </Col>
           </Row>
         </Col>
         <Col xs="3">
-          {details && details.trophy_filename && (
+          {details.trophy_filename && (
             <img
               src={`/images/${config.logo_path}/${details.trophy_filename}`}
               alt={`Trophy ${details.name}`}
@@ -168,7 +172,7 @@ const CompetitionAbout = (props) => {
           <div className="h2-ff1 margin-tb-md">Tournament Results</div>
         </Col>
       </Row>
-      {competition && <TournamentTable competition={competition} />}
+      <TournamentTable competition={competition} />
     </React.Fragment>
   )
 }

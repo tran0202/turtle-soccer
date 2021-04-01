@@ -1,6 +1,6 @@
 import React from 'react'
 import Nations from './data/Nations.json'
-import { setNationDetails } from './core/DataHelper'
+import { setNationDetails, setNationConfig } from './core/DataHelper'
 import Page from './core/Page'
 import { Container, Row, Col } from 'reactstrap'
 
@@ -15,8 +15,9 @@ class AssociationsApp extends React.Component {
   getData = () => {
     Nations.forEach((n) => {
       setNationDetails(n)
+      setNationConfig(n)
     })
-    const filtered = Nations.filter((n) => n.parent_nation_id === '' && n.confederation_id !== undefined)
+    const filtered = Nations.filter((n) => n.config.parent_nation_id === '' && n.config.confederation_id !== '')
     this.setState({ associations: filtered })
   }
 
@@ -48,14 +49,14 @@ class AssociationsApp extends React.Component {
                               alt={a.details.name}
                               title={a.details.name}
                               className="flag-xl mx-auto"
-                              style={{ maxWidth: a.details.flag_max_width ? a.details.flag_max_width : '' }}
+                              style={{ maxWidth: a.details.flag_max_width }}
                             />
                           )}
                           <p className="text-center mt-3">
                             <span className="font-bold">
                               {a.id} - {a.details.name}
                             </span>
-                            <br />({a.confederation_id})
+                            <br />({a.config.confederation_id})
                           </p>
                         </div>
                       </div>

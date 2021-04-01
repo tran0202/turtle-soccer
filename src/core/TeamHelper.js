@@ -56,7 +56,9 @@ export const getTeamFlag = (id, config) => {
     <React.Fragment>
       {config.team_type_id === 'CLUB' && getClubLogoImg(id, config)}
       {config.team_type_id === 'CLUB' && getNationSmallFlagImg(id)}
-      {config.team_type_id !== 'CLUB' && <img className="flag-sm flag-md" src={getFlagSrc(id)} alt={id} title={id} />}
+      {config.team_type_id !== 'CLUB' && (
+        <img className="flag-sm flag-md" src={getFlagSrc(id)} alt={`${id} ${getNationOfficialName(id)}`} title={`${id} ${getNationOfficialName(id)}`} />
+      )}
     </React.Fragment>
   )
 }

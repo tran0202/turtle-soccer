@@ -574,10 +574,12 @@ export const setConfederationDetails = (conf) => {
 export const setCompetitionConfig = (comp) => {
   if (!comp) return
   comp.config = {
+    confederation_id: comp.confederation_id ? comp.confederation_id : '',
     logo_path: comp.logo_path ? comp.logo_path : '',
     show_successors: comp.show_successors ? comp.show_successors : false,
     team_type_id: comp.team_type_id ? comp.team_type_id : '',
   }
+  delete comp.confederation_id
   delete comp.logo_path
   delete comp.show_successors
   delete comp.team_type_id
@@ -603,27 +605,32 @@ export const setCompetitionDetails = (comp) => {
 export const setTournamentConfig = (t, comp) => {
   t.config = {
     active: t.active ? t.active : false,
+    competition_id: t.competition_id ? t.competition_id : '',
     golden_goal_rule: t.golden_goal_rule ? t.golden_goal_rule : false,
     logo_path: comp.config.logo_path ? comp.config.logo_path : '',
     multi_league: t.competition_id === 'UNL',
     no_third_place: t.no_third_place ? t.no_third_place : false,
     points_for_win: t.points_for_win,
     show_match_year: t.show_match_year ? t.show_match_year : false,
+    silver_goal_rule: t.silver_goal_rule ? t.silver_goal_rule : false,
     team_type_id: comp.config.team_type_id ? comp.config.team_type_id : '',
     tiebreakers: t.tiebreakers ? t.tiebreakers : [],
     tiebreakers_collapsed: t.tiebreakers_collapsed ? t.tiebreakers_collapsed : false,
   }
   delete t.active
+  delete t.competition_id
   delete t.golden_goal_rule
   delete t.no_third_place
   delete t.points_for_win
   delete t.show_match_year
+  delete t.silver_goal_rule
   delete t.tiebreakers
   delete t.tiebreakers_collapsed
 }
 
 export const setTournamentDetails = (t) => {
   t.details = {
+    color: t.details && t.details.color ? t.details.color : '',
     host: t.details && t.details.host ? t.details.host : [],
     final_host: t.details && t.details.final_host ? t.details.final_host : [],
     logo_filename: t.details && t.details.logo_filename ? t.details.logo_filename : '',
@@ -640,7 +647,6 @@ export const setTournamentDetails = (t) => {
     end_relegation_date: t.details && t.details.end_relegation_date ? t.details.end_relegation_date : '',
     end_qualifying_date: t.details && t.details.end_qualifying_date ? t.details.end_qualifying_date : '',
     end_competition_date: t.details && t.details.end_competition_date ? t.details.end_competition_date : '',
-    color: t.details && t.details.color ? t.details.color : '',
     awards: t.awards
       ? {
           golden_boot: t.awards.golden_boot ? t.awards.golden_boot : [],
@@ -660,11 +666,11 @@ export const setTournamentDetails = (t) => {
       ? {
           champions: t.final_standings.champions ? t.final_standings.champions : '',
           runners_up: t.final_standings.runners_up ? t.final_standings.runners_up : '',
-          semi_finalist1: t.final_standings.semi_finalist1 ? t.final_standings.semi_finalist1 : '',
-          semi_finalist2: t.final_standings.semi_finalist2 ? t.final_standings.semi_finalist2 : '',
           third_place: t.final_standings.third_place ? t.final_standings.third_place : '',
           third_place_text: t.final_standings.third_place_text ? t.final_standings.third_place_text : '',
           fourth_place: t.final_standings.fourth_place ? t.final_standings.fourth_place : '',
+          semi_finalist1: t.final_standings.semi_finalist1 ? t.final_standings.semi_finalist1 : '',
+          semi_finalist2: t.final_standings.semi_finalist2 ? t.final_standings.semi_finalist2 : '',
         }
       : {},
     hero_images: t.hero_images ? t.hero_images : [],
@@ -704,4 +710,15 @@ export const setNationDetails = (n) => {
   delete n.name
   delete n.official_name
   delete n.start_date
+}
+
+export const setNationConfig = (n) => {
+  n.config = {
+    confederation_id: n.confederation_id ? n.confederation_id : '',
+    nation_type_id: n.nation_type_id ? n.nation_type_id : '',
+    parent_nation_id: n.parent_nation_id ? n.parent_nation_id : '',
+  }
+  delete n.confederation_id
+  delete n.nation_type_id
+  delete n.parent_nation_id
 }
