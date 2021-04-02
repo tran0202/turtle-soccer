@@ -252,6 +252,7 @@ import td_ONC_2016 from '../data/tournamentData/ONC/td_ONC_2016.json'
 import QualificationTournamentWCArray from '../data/QualificationTournamentWC.json'
 import qtd_WC_2022 from '../data/qualTournamentData/qtd_WC_2022.json'
 
+import Competitions from '../data/Competitions.json'
 import TeamArray from '../data/Team.json'
 import ClubArray from '../data/Club.json'
 
@@ -561,9 +562,9 @@ export const getTournamentDataONC = () => {
 
 export const setConfederationDetails = (conf) => {
   conf.details = {
-    descriptions: conf.descriptions ? conf.descriptions : [],
-    logo_filename: conf.logo_filename ? conf.logo_filename : '',
-    name: conf.name ? conf.name : '',
+    descriptions: conf.descriptions || [],
+    logo_filename: conf.logo_filename || '',
+    name: conf.name || '',
   }
   delete conf.descriptions
   delete conf.logo_filename
@@ -574,10 +575,10 @@ export const setConfederationDetails = (conf) => {
 export const setCompetitionConfig = (comp) => {
   if (!comp) return
   comp.config = {
-    confederation_id: comp.confederation_id ? comp.confederation_id : '',
-    logo_path: comp.logo_path ? comp.logo_path : '',
-    show_successors: comp.show_successors ? comp.show_successors : false,
-    team_type_id: comp.team_type_id ? comp.team_type_id : '',
+    confederation_id: comp.confederation_id || '',
+    logo_path: comp.logo_path || '',
+    show_successors: comp.show_successors || false,
+    team_type_id: comp.team_type_id || '',
   }
   delete comp.confederation_id
   delete comp.logo_path
@@ -588,37 +589,43 @@ export const setCompetitionConfig = (comp) => {
 export const setCompetitionDetails = (comp) => {
   if (!comp) return
   comp.details = {
-    color: comp.color ? comp.color : '',
-    descriptions: comp.descriptions ? comp.descriptions : [],
-    name: comp.name ? comp.name : '',
-    qualification: comp.qualification ? comp.qualification : false,
-    trophy_filename: comp.trophy_filename ? comp.trophy_filename : '',
+    color: comp.color || '',
+    descriptions: comp.descriptions || [],
+    name: comp.name || '',
+    qualification: comp.qualification || false,
+    trophy_filename: comp.trophy_filename || '',
   }
   delete comp.color
   delete comp.descriptions
   delete comp.name
   delete comp.qualification
   delete comp.trophy_filename
-  // console.log('conf', conf)
 }
 
-export const setTournamentConfig = (t, comp) => {
+export const setTournamentConfig = (t) => {
+  const competition = Competitions.find((c) => c.id === t.competition_id)
+  // console.log('competition', competition)
+  if (!competition) return
+  !competition.config && setCompetitionConfig(competition)
   t.config = {
-    active: t.active ? t.active : false,
-    competition_id: t.competition_id ? t.competition_id : '',
-    golden_goal_rule: t.golden_goal_rule ? t.golden_goal_rule : false,
-    logo_path: comp.config.logo_path ? comp.config.logo_path : '',
+    active: t.active || false,
+    competition_id: t.competition_id || '',
+    confederation_id: t.confederation_id || '',
+    golden_goal_rule: t.golden_goal_rule || false,
+    logo_path: competition.config.logo_path,
     multi_league: t.competition_id === 'UNL',
-    no_third_place: t.no_third_place ? t.no_third_place : false,
+    no_third_place: t.no_third_place || false,
     points_for_win: t.points_for_win,
-    show_match_year: t.show_match_year ? t.show_match_year : false,
-    silver_goal_rule: t.silver_goal_rule ? t.silver_goal_rule : false,
-    team_type_id: comp.config.team_type_id ? comp.config.team_type_id : '',
-    tiebreakers: t.tiebreakers ? t.tiebreakers : [],
-    tiebreakers_collapsed: t.tiebreakers_collapsed ? t.tiebreakers_collapsed : false,
+    show_match_year: t.show_match_year || false,
+    silver_goal_rule: t.silver_goal_rule || false,
+    team_type_id: competition.config.team_type_id,
+    tiebreakers: t.tiebreakers || [],
+    tiebreakers_collapsed: t.tiebreakers_collapsed || false,
+    tournament_id: t.tournament_id || '',
   }
   delete t.active
   delete t.competition_id
+  delete t.confederation_id
   delete t.golden_goal_rule
   delete t.no_third_place
   delete t.points_for_win
@@ -626,60 +633,72 @@ export const setTournamentConfig = (t, comp) => {
   delete t.silver_goal_rule
   delete t.tiebreakers
   delete t.tiebreakers_collapsed
+  delete t.tournament_id
 }
 
 export const setTournamentDetails = (t) => {
   t.details = {
-    color: t.details && t.details.color ? t.details.color : '',
-    host: t.details && t.details.host ? t.details.host : [],
-    final_host: t.details && t.details.final_host ? t.details.final_host : [],
-    logo_filename: t.details && t.details.logo_filename ? t.details.logo_filename : '',
-    mascot_filename: t.details && t.details.mascot_filename ? t.details.mascot_filename : '',
-    start_date: t.details && t.details.start_date ? t.details.start_date : '',
-    start_league_date: t.details && t.details.start_league_date ? t.details.start_league_date : '',
-    start_final_date: t.details && t.details.start_final_date ? t.details.start_final_date : '',
-    start_relegation_date: t.details && t.details.start_relegation_date ? t.details.start_relegation_date : '',
-    start_qualifying_date: t.details && t.details.start_qualifying_date ? t.details.start_qualifying_date : '',
-    start_competition_date: t.details && t.details.start_competition_date ? t.details.start_competition_date : '',
-    end_date: t.details && t.details.end_date ? t.details.end_date : '',
-    end_league_date: t.details && t.details.end_league_date ? t.details.end_league_date : '',
-    end_final_date: t.details && t.details.end_final_date ? t.details.end_final_date : '',
-    end_relegation_date: t.details && t.details.end_relegation_date ? t.details.end_relegation_date : '',
-    end_qualifying_date: t.details && t.details.end_qualifying_date ? t.details.end_qualifying_date : '',
-    end_competition_date: t.details && t.details.end_competition_date ? t.details.end_competition_date : '',
+    color: t.details ? t.details.color || '' : '',
+    host: t.details ? t.details.host || [] : [],
+    final_host: t.details ? t.details.final_host || [] : [],
+    logo_filename: t.details ? t.details.logo_filename || '' : '',
+    mascot_filename: t.details ? t.details.mascot_filename || '' : '',
+    start_date: t.details ? t.details.start_date || '' : '',
+    start_league_date: t.details ? t.details.start_league_date || '' : '',
+    start_final_date: t.details ? t.details.start_final_date || '' : '',
+    start_relegation_date: t.details ? t.details.start_relegation_date || '' : '',
+    start_qualifying_date: t.details ? t.details.start_qualifying_date || '' : '',
+    start_competition_date: t.details ? t.details.start_competition_date || '' : '',
+    end_date: t.details ? t.details.end_date || '' : '',
+    end_league_date: t.details ? t.details.end_league_date || '' : '',
+    end_final_date: t.details ? t.details.end_final_date || '' : '',
+    end_relegation_date: t.details ? t.details.end_relegation_date || '' : '',
+    end_qualifying_date: t.details ? t.details.end_qualifying_date || '' : '',
+    end_competition_date: t.details ? t.details.end_competition_date || '' : '',
+    team_count: t.details ? t.details.team_count || undefined : undefined,
+    confed_count: t.details ? t.details.confed_count || undefined : undefined,
+    venue_count: t.details ? t.details.venue_count || undefined : undefined,
+    final_team_count: t.details ? t.details.final_team_count || undefined : undefined,
+    final_venue_count: t.details ? t.details.final_venue_count || undefined : undefined,
+    final_city_count: t.details ? t.details.final_city_count || undefined : undefined,
+    tournament_team_count: t.details ? t.details.tournament_team_count || undefined : undefined,
+    transfer_team_count: t.details ? t.details.transfer_team_count || undefined : undefined,
+    total_team_count: t.details ? t.details.total_team_count || undefined : undefined,
+    total_transfer_team_count: t.details ? t.details.total_transfer_team_count || undefined : undefined,
+    association_count: t.details ? t.details.association_count || undefined : undefined,
     awards: t.awards
       ? {
-          golden_boot: t.awards.golden_boot ? t.awards.golden_boot : [],
-          silver_boot: t.awards.silver_boot ? t.awards.silver_boot : [],
-          bronze_boot: t.awards.bronze_boot ? t.awards.bronze_boot : [],
-          golden_ball: t.awards.golden_ball ? t.awards.golden_ball : [],
-          best_young_player: t.awards.best_young_player ? t.awards.best_young_player : {},
-          golden_glove: t.awards.golden_glove ? t.awards.golden_glove : [],
-          best_defender: t.awards.best_defender ? t.awards.best_defender : [],
-          best_midfielder: t.awards.best_midfielder ? t.awards.best_midfielder : [],
-          best_forward: t.awards.best_forward ? t.awards.best_forward : [],
-          fair_play_team: t.awards.fair_play_team ? t.awards.fair_play_team : [],
+          golden_boot: t.awards.golden_boot || [],
+          silver_boot: t.awards.silver_boot || [],
+          bronze_boot: t.awards.bronze_boot || [],
+          golden_ball: t.awards.golden_ball || [],
+          best_young_player: t.awards.best_young_player || {},
+          golden_glove: t.awards.golden_glove || [],
+          best_defender: t.awards.best_defender || [],
+          best_midfielder: t.awards.best_midfielder || [],
+          best_forward: t.awards.best_forward || [],
+          fair_play_team: t.awards.fair_play_team || [],
         }
       : {},
-    era: t.era ? t.era : '',
+    era: t.era || '',
     final_standings: t.final_standings
       ? {
-          champions: t.final_standings.champions ? t.final_standings.champions : '',
-          runners_up: t.final_standings.runners_up ? t.final_standings.runners_up : '',
-          third_place: t.final_standings.third_place ? t.final_standings.third_place : '',
-          third_place_text: t.final_standings.third_place_text ? t.final_standings.third_place_text : '',
-          fourth_place: t.final_standings.fourth_place ? t.final_standings.fourth_place : '',
-          semi_finalist1: t.final_standings.semi_finalist1 ? t.final_standings.semi_finalist1 : '',
-          semi_finalist2: t.final_standings.semi_finalist2 ? t.final_standings.semi_finalist2 : '',
+          champions: t.final_standings.champions || '',
+          runners_up: t.final_standings.runners_up || '',
+          third_place: t.final_standings.third_place || '',
+          third_place_text: t.final_standings.third_place_text || '',
+          fourth_place: t.final_standings.fourth_place || '',
+          semi_finalist1: t.final_standings.semi_finalist1 || '',
+          semi_finalist2: t.final_standings.semi_finalist2 || '',
         }
       : {},
-    hero_images: t.hero_images ? t.hero_images : [],
-    name: t.name ? t.name : '',
-    original_name: t.original_name ? t.original_name : '',
-    qualified: t.qualified ? t.qualified : [],
-    short_name: t.short_name ? t.short_name : '',
-    statistics: t.statistics ? t.statistics : {},
-    year: t.year ? t.year : '',
+    hero_images: t.hero_images || [],
+    name: t.name || '',
+    original_name: t.original_name || '',
+    qualified: t.qualified || [],
+    short_name: t.short_name || '',
+    statistics: t.statistics || {},
+    year: t.year || '',
   }
   delete t.awards
   delete t.era
@@ -695,13 +714,13 @@ export const setTournamentDetails = (t) => {
 
 export const setNationDetails = (n) => {
   n.details = {
-    code: n.code ? n.code : '',
-    end_date: n.end_date ? n.end_date : '',
-    flag_filename: n.flag_filename ? n.flag_filename : '',
-    flag_max_width: n.flag_max_width ? n.flag_max_width : '',
-    name: n.name ? n.name : '',
-    official_name: n.official_name ? n.official_name : '',
-    start_date: n.start_date ? n.start_date : '',
+    code: n.code || '',
+    end_date: n.end_date || '',
+    flag_filename: n.flag_filename || '',
+    flag_max_width: n.flag_max_width || '',
+    name: n.name || '',
+    official_name: n.official_name || '',
+    start_date: n.start_date || '',
   }
   delete n.code
   delete n.end_date
@@ -714,9 +733,9 @@ export const setNationDetails = (n) => {
 
 export const setNationConfig = (n) => {
   n.config = {
-    confederation_id: n.confederation_id ? n.confederation_id : '',
-    nation_type_id: n.nation_type_id ? n.nation_type_id : '',
-    parent_nation_id: n.parent_nation_id ? n.parent_nation_id : '',
+    confederation_id: n.confederation_id || '',
+    nation_type_id: n.nation_type_id || '',
+    parent_nation_id: n.parent_nation_id || '',
   }
   delete n.confederation_id
   delete n.nation_type_id

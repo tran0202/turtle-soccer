@@ -8212,6 +8212,11 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
+ordinalize@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ordinalize/-/ordinalize-1.0.2.tgz#c2c6d50c7d68f1eeb87c0c774652de03478c1534"
+  integrity sha512-X9rR5EbZNAXFAruuNJPbsiylMjDRbt4/wSWyI4DPsMsuGFWwjEfbLHT2rDqf/NFhwz0wbohGY2H4j5ZFph1hcQ==
+
 original@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/original/-/original-1.0.2.tgz#e442a61cffe1c5fd20a65f3261c26663b303f25f"

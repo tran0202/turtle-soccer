@@ -24,7 +24,7 @@ class CompetitionsApp extends React.Component {
     const compTournaments = getTournamentArray().filter((t) => t.competition_id === comp.id)
     compTournaments.forEach((ct) => {
       setTournamentDetails(ct)
-      setTournamentConfig(ct, comp)
+      setTournamentConfig(ct)
     })
     if (compTournaments.length <= this.tournamentCount) {
       return compTournaments

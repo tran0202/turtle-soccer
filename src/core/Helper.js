@@ -21,28 +21,6 @@ import moment from 'moment'
 
 /* ========== Tournaments ========== */
 
-export const getTournamentConfig = (tournament) => {
-  return {
-    id: tournament.id,
-    name: tournament.name,
-    year: tournament.year,
-    tournament_type_id: tournament.tournament_type_id,
-    golden_goal_rule: tournament.golden_goal_rule,
-    silver_goal_rule: tournament.silver_goal_rule,
-    tiebreakers_collapsed: tournament.tiebreakers_collapsed,
-    tiebreakers: tournament.tiebreakers,
-    no_third_place: tournament.no_third_place,
-    points_for_win: tournament.points_for_win,
-    show_match_year: tournament.show_match_year,
-    active: tournament.active,
-    hero_images: tournament.hero_images,
-    details: tournament.details,
-    final_standings: tournament.final_standings,
-    statistics: tournament.statistics,
-    awards: tournament.awards,
-  }
-}
-
 export const getTournamentTitleFont = (comp) => {
   let fontClassName = ''
   if (!comp) return fontClassName
@@ -95,13 +73,44 @@ export const getTournamentTitleFont = (comp) => {
   return fontClassName
 }
 
-export const getTournamentTypeConfig = (tournamentType) => {
-  return {
-    team_type_id: tournamentType.team_type_id,
-    confederation_id: tournamentType.confederation_id,
-    logo_path: tournamentType.logo_path,
-    sport_id: tournamentType.sport_id,
-  }
+/* ========== Stages ========== */
+
+export const getAllocationStages = (stages) => {
+  return stages ? stages.filter((s) => s.type === 'allocation') : []
+}
+
+export const getRoundRobinStages = (stages) => {
+  return stages ? stages.filter((s) => s.type === 'roundrobin') : []
+}
+
+export const getRoundRobinMdStages = (stages) => {
+  return stages ? stages.filter((s) => s.type === 'roundrobinmatchday') : []
+}
+
+export const getAllRoundRobinStages = (stages) => {
+  return stages ? stages.filter((s) => s.type === 'roundrobin' || s.type === 'roundrobinmatchday' || s.type === 'roundrobinleaguematchday') : []
+}
+
+export const getRoundRobinLeagueMdStages = (leagues) => {
+  if (!leagues) return null
+  const rrLeagues = []
+  leagues.forEach((l) => {
+    if (l.stages) {
+      const rrStages = l.stages.filter((s) => s.type === 'roundrobinleaguematchday')
+      if (rrStages.length > 0) {
+        rrLeagues.push({ ...l, stages: rrStages })
+      }
+    }
+  })
+  return rrLeagues
+}
+
+export const getKnockoutStages = (stages) => {
+  return stages ? stages.filter((s) => s.type === 'knockout' || s.type === 'knockout2legged') : []
+}
+
+export const getKnockoutMultiple2LeggedStages = (stages) => {
+  return stages ? stages.filter((s) => s.type === 'knockoutmultiple2legged') : []
 }
 
 const getFormat = (rrStage) => {
@@ -118,44 +127,6 @@ export const getStageConfig = (tournament, stage) => {
   return stage.tiebreakers
     ? { ...getTournamentConfig(tournament), ...format, tiebreakers: stage.tiebreakers }
     : { ...getTournamentConfig(tournament), ...format }
-}
-
-export const getAllocationStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'allocation') : null
-}
-
-export const getRoundRobinStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'roundrobin') : null
-}
-
-export const getRoundRobinMdStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'roundrobinmatchday') : null
-}
-
-export const getAllRoundRobinStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'roundrobin' || s.type === 'roundrobinmatchday' || s.type === 'roundrobinleaguematchday') : null
-}
-
-export const getLeagueRoundRobinMdStages = (leagues) => {
-  if (!leagues) return null
-  const rrLeagues = []
-  leagues.forEach((l) => {
-    if (l.stages) {
-      const rrStages = l.stages.filter((s) => s.type === 'roundrobinleaguematchday')
-      if (rrStages.length > 0) {
-        rrLeagues.push({ ...l, stages: rrStages })
-      }
-    }
-  })
-  return rrLeagues
-}
-
-export const getKnockoutStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'knockout' || s.type === 'knockout2legged') : null
-}
-
-export const getKnockoutMultiple2LeggedStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'knockoutmultiple2legged') : null
 }
 
 export const splitPathMatches = (stage, round) => {
@@ -1320,4 +1291,37 @@ export const DisplaySchedule = (props) => {
         ))}
     </React.Fragment>
   )
+}
+
+/* ========== will be deleted ========== */
+
+export const getTournamentConfig = (tournament) => {
+  return {
+    id: tournament.id,
+    name: tournament.name,
+    year: tournament.year,
+    tournament_type_id: tournament.tournament_type_id,
+    golden_goal_rule: tournament.golden_goal_rule,
+    silver_goal_rule: tournament.silver_goal_rule,
+    tiebreakers_collapsed: tournament.tiebreakers_collapsed,
+    tiebreakers: tournament.tiebreakers,
+    no_third_place: tournament.no_third_place,
+    points_for_win: tournament.points_for_win,
+    show_match_year: tournament.show_match_year,
+    active: tournament.active,
+    hero_images: tournament.hero_images,
+    details: tournament.details,
+    final_standings: tournament.final_standings,
+    statistics: tournament.statistics,
+    awards: tournament.awards,
+  }
+}
+
+export const getTournamentTypeConfig = (tournamentType) => {
+  return {
+    team_type_id: tournamentType.team_type_id,
+    confederation_id: tournamentType.confederation_id,
+    logo_path: tournamentType.logo_path,
+    sport_id: tournamentType.sport_id,
+  }
 }
