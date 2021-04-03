@@ -576,11 +576,13 @@ export const setCompetitionConfig = (comp) => {
   if (!comp) return
   comp.config = {
     confederation_id: comp.confederation_id || '',
+    is_qualification: comp.is_qualification || false,
     logo_path: comp.logo_path || '',
     show_successors: comp.show_successors || false,
     team_type_id: comp.team_type_id || '',
   }
   delete comp.confederation_id
+  delete comp.is_qualification
   delete comp.logo_path
   delete comp.show_successors
   delete comp.team_type_id
@@ -592,13 +594,11 @@ export const setCompetitionDetails = (comp) => {
     color: comp.color || '',
     descriptions: comp.descriptions || [],
     name: comp.name || '',
-    qualification: comp.qualification || false,
     trophy_filename: comp.trophy_filename || '',
   }
   delete comp.color
   delete comp.descriptions
   delete comp.name
-  delete comp.qualification
   delete comp.trophy_filename
 }
 

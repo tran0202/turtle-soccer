@@ -13,6 +13,7 @@ import {
 import { getTeamName, getTeamFlag } from '../core/TeamHelper'
 import { isSuccessor } from '../core/Helper'
 import NumberFormat from 'react-number-format'
+import { isEmpty } from 'lodash'
 
 const hasExcludedRankings = (round) => {
   if (!round || !round.final_rankings) return
@@ -213,7 +214,7 @@ const RankingRound = (props) => {
 const Rankings = (props) => {
   const { rounds, config } = props
   // console.log('rounds', rounds)
-  const ranking_type = rounds.length > 0 ? rounds[0].ranking_type : ''
+  const ranking_type = !isEmpty(rounds) ? rounds[0].ranking_type : ''
   const rankingHeadConfig = { ...config, ranking_type }
   return (
     <React.Fragment>

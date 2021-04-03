@@ -2,24 +2,26 @@ import React from 'react'
 import { getAllRoundRobinStages, getRoundRobinLeagueMdStages, getTournamentTitleFont } from '../core/Helper'
 import { Row, Col, Nav, NavItem, NavLink } from 'reactstrap'
 import moment from 'moment'
+import { isEmpty } from 'lodash'
 
 const HeaderLinks = (props) => {
   const { state, query } = props
   const { page } = query
   const { tournament, competition } = state
-  const { id, config, qualification, stages, leagues, previous_tournament, next_tournament } = tournament
+  const { id, config, qualification, stages, leagues, details } = tournament
+  const { previous_tournament, next_tournament } = details
   const showGroupsLink =
-    (!config.multi_league && getAllRoundRobinStages(stages).length > 0) || (config.multi_league && getRoundRobinLeagueMdStages(leagues).length > 0)
+    (!config.multi_league && !isEmpty(getAllRoundRobinStages(stages))) || (config.multi_league && !isEmpty(getRoundRobinLeagueMdStages(leagues)))
   return (
     <Nav className="justify-content-center">
-      {qualification.existed && config.active && (
+      {qualification.config.existed && config.active && (
         <NavItem>
           <NavLink disabled={page === 'qualification'} href={`/tournament/${id}/qualification`}>
             Qualification
           </NavLink>
         </NavItem>
       )}
-      {(stages.length > 0 || leagues.length > 0) && (
+      {(!isEmpty(stages) || !isEmpty(leagues)) && (
         <React.Fragment>
           <NavItem>
             <NavLink disabled={page === 'matches'} href={`/tournament/${id}/matches`}>
@@ -40,7 +42,7 @@ const HeaderLinks = (props) => {
           </NavItem>
         </React.Fragment>
       )}
-      {qualification.existed && !config.active && (
+      {qualification.config.existed && !config.active && (
         <NavItem>
           <NavLink disabled={page === 'qualification'} href={`/tournament/${id}/qualification`}>
             Qualification

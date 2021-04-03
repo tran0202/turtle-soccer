@@ -204,7 +204,7 @@ const About = (props) => {
   const fourth_place = fs4 ? fs4 : final_standings ? final_standings.fourth_place : null
   return (
     <React.Fragment>
-      {hero_images && (
+      {!isEmpty(hero_images) && (
         <section id="hero" className="mt-3">
           <div className="hero-container">
             <div id="heroCarousel" className="carousel slide carousel-fade" data-ride="carousel">
@@ -420,7 +420,7 @@ const About = (props) => {
               <DisplayDetails field={awards.golden_ball[2]} label="Bronze Ball">
                 {getPlayerClubNationName(awards.golden_ball[2], tournament.config)}
               </DisplayDetails>
-              {awards.golden_ball.length > 0 && (
+              {!isEmpty(awards.golden_ball) && (
                 <Row className="margin-top-xs mb-3">
                   <Col lg={{ size: 3, offset: 3 }} md={{ size: 4, offset: 2 }} sm="5" className="font-weight-bold tournament-award"></Col>
                   <Col md="5" sm="7" className="tournament-award-receiver"></Col>

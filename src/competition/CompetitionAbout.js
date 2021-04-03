@@ -2,6 +2,7 @@ import React from 'react'
 import { getShortTeamName, getFlagSrc, getNationSmallFlagImg, getClubLogoImg } from '../core/TeamHelper'
 import { SemifinalistsTooltip, SharedBronzeTooltip } from '../core/TooltipHelper'
 import { Row, Col } from 'reactstrap'
+import { isEmpty } from 'lodash'
 
 const isOlympicTournaments = (id) => {
   return id === 'MOFT' || id === 'WOFT'
@@ -119,7 +120,7 @@ const TournamentTable = (props) => {
   const { competition } = props
   if (!competition) return
   const { tournaments } = competition
-  if (!tournaments || tournaments.length === 0) return null
+  if (!tournaments || isEmpty(tournaments)) return null
   let showHeader = true
   let previousStatus = null
   return (

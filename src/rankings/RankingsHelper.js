@@ -1,4 +1,5 @@
 import { getTeamName } from '../core/TeamHelper'
+import { isEmpty } from 'lodash'
 
 export const findTeam = (teamArray, id) => {
   return teamArray ? teamArray.find((t) => t.id === id) : {}
@@ -631,7 +632,7 @@ export const updateDrawPool = (group, a, b) => {
     const newMatch = pool.matches.find((m) => (m.home_team === a.id && m.away_team === b.id) || (m.home_team === b.id && m.away_team === a.id))
     if (newMatch === undefined) {
       const found = findHeadtoHeadMatch(a, b, false)
-      if (found.length > 0) {
+      if (!isEmpty(found)) {
         pool.matches.push(found[0])
       }
     }
@@ -1000,7 +1001,7 @@ export const collectWildCardRankings = (stage) => {
   let wildCard = { final_rankings: [], ranking_type: 'wildcard' }
   stage.groups &&
     stage.groups.forEach((g) => {
-      if (!g.final_rankings || g.final_rankings.length === 0 || g.final_rankings.length < pos) return
+      if (!g.final_rankings || !isEmpty(g.final_rankings) || g.final_rankings.length < pos) return
       const wcr = cloneRanking(g.final_rankings.find((fr) => fr.r === pos))
       wildCard.final_rankings.push(wcr)
     })
@@ -1122,7 +1123,7 @@ export const getWildCardRowStriped = (row, config) => {
 }
 
 const adjustRankingCount = (rankingBundle) => {
-  if (!rankingBundle || rankingBundle.length === 0) return
+  if (!rankingBundle || isEmpty(rankingBundle)) return
   let min = rankingBundle[0].r
   rankingBundle.forEach((r) => {
     if (min > r.r) {

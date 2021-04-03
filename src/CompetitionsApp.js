@@ -40,7 +40,7 @@ class CompetitionsApp extends React.Component {
   }
 
   getCompetitions = (compArray) => {
-    return compArray.filter((c) => !c.qualification)
+    return compArray.filter((c) => !c.is_qualification)
   }
 
   getData = () => {

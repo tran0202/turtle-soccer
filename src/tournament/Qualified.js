@@ -18,6 +18,7 @@ export const QualifiedHead = () => {
 
 const QualifiedRow = (props) => {
   const { row, count } = props
+  // console.log('row', row)
   return (
     <Row className="no-gutters team-row padding-tb-sm">
       <Col className="col-1">{count + 1}</Col>
@@ -37,6 +38,7 @@ const QualifiedRow = (props) => {
 
 const Qualified = (props) => {
   const { teams } = props
+  // console.log('teams', teams)
   return (
     <React.Fragment>
       <Row className="box-xl mb-5">

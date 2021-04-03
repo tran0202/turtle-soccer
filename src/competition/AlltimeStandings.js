@@ -4,6 +4,7 @@ import { calculateProgressRankings, collectProgressRankings, sortGroupRankings }
 import { getParentTeam, getTeamName } from '../core/TeamHelper'
 import { isSuccessor } from '../core/Helper'
 import { Row, Col } from 'reactstrap'
+import { isEmpty } from 'lodash'
 
 const updateRankings = (fr1, fr2) => {
   fr1.mp += fr2.mp
@@ -243,19 +244,16 @@ const AlltimeStandings = (props) => {
     <React.Fragment>
       <Row className="mt-3"></Row>
       <Rankings rounds={[alltimeRound]} config={competition.config} />
-      {competition.config.show_successors &&
-        competition.successor_rankings &&
-        competition.successor_rankings.successors &&
-        competition.successor_rankings.successors.length > 0 && (
-          <React.Fragment>
-            <Row>
-              <Col>
-                <div className="h2-ff1 margin-top-md">Breakdown of successor teams</div>
-              </Col>
-            </Row>
-            <Rankings rounds={competition.successor_rankings.successors} config={competition.config} />
-          </React.Fragment>
-        )}
+      {competition.config.show_successors && !isEmpty(competition.successor_rankings) && (
+        <React.Fragment>
+          <Row>
+            <Col>
+              <div className="h2-ff1 margin-top-md">Breakdown of successor teams</div>
+            </Col>
+          </Row>
+          <Rankings rounds={competition.successor_rankings.successors} config={competition.config} />
+        </React.Fragment>
+      )}
     </React.Fragment>
   )
 }

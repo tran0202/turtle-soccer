@@ -9,7 +9,7 @@ import About from './About'
 // import Matches from './Matches'
 // import Groups from './Groups'
 // import FinalStandings from './FinalStandings'
-// import Qualification from './Qualification'
+import Qualification from './Qualification'
 import {
   getCurrentTournament,
   getTournamentArray,
@@ -32,6 +32,7 @@ class TournamentApp extends React.Component {
         details: {
           host: [],
           final_host: [],
+          hero_images: [],
           final_standings: {},
           awards: {
             golden_boot: [],
@@ -45,11 +46,11 @@ class TournamentApp extends React.Component {
             fair_play_team: [],
           },
           qualified: [],
+          next_tournament: {},
+          previous_tournament: {},
         },
         leagues: [],
-        next_tournament: {},
-        previous_tournament: {},
-        qualification: {},
+        qualification: { config: { confed_names: [] } },
         stages: [],
       },
       competition: { config: {}, details: {} },
@@ -115,7 +116,8 @@ class TournamentApp extends React.Component {
       setTournamentConfig(qt)
     }
     const existed = qt ? true : false
-    return { existed, ...qt, stages: this.getQualificationTournamentData().stages || [], confed_names }
+    const config = qt ? { ...qt.config, existed, confed_names } : {}
+    return { ...qt, config, stages: this.getQualificationTournamentData().stages || [] }
   }
 
   getTournamentData = () => {
@@ -139,8 +141,11 @@ class TournamentApp extends React.Component {
       this.setState({
         tournament: {
           ...t,
-          previous_tournament: this.getPreviousTournament(t.config.competition_id, this.props.query.id),
-          next_tournament: this.getNextTournament(t.config.competition_id, this.props.query.id),
+          details: {
+            ...t.details,
+            previous_tournament: this.getPreviousTournament(t.config.competition_id, this.props.query.id),
+            next_tournament: this.getNextTournament(t.config.competition_id, this.props.query.id),
+          },
           stages: this.getTournamentData().stages || [],
           leagues: this.getTournamentData().leagues || [],
           qualification: this.getQualificationTournament(),
@@ -177,8 +182,8 @@ class TournamentApp extends React.Component {
           {page === 'about' && <About tournament={tournament} />}
           {/* {page === 'matches' && <Matches tournament={tournament} tournamentType={tournamentType} />}
               {page === 'groups' && <Groups tournament={tournament} tournamentType={tournamentType} />}
-              {page === 'finalstandings' && <FinalStandings tournament={tournament} tournamentType={tournamentType} />}
-              {page === 'qualification' && <Qualification tournament={tournament} tournamentType={tournamentType} query={query} />} */}
+              {page === 'finalstandings' && <FinalStandings tournament={tournament} tournamentType={tournamentType} />} */}
+          {page === 'qualification' && <Qualification state={this.state} query={query} />}
         </Container>
       </Page>
     )

@@ -18,6 +18,7 @@ import {
 } from './TooltipHelper'
 import { Row, Col } from 'reactstrap'
 import moment from 'moment'
+import { isEmpty } from 'lodash'
 
 /* ========== Tournaments ========== */
 
@@ -97,7 +98,7 @@ export const getRoundRobinLeagueMdStages = (leagues) => {
   leagues.forEach((l) => {
     if (l.stages) {
       const rrStages = l.stages.filter((s) => s.type === 'roundrobinleaguematchday')
-      if (rrStages.length > 0) {
+      if (!isEmpty(rrStages)) {
         rrLeagues.push({ ...l, stages: rrStages })
       }
     }
@@ -218,7 +219,7 @@ export const splitPathDatesMatches = (round) => {
 }
 
 export const getDefaultStageTab = (stages) => {
-  if (!stages || stages.length === 0) return 'Group-Stage'
+  if (!stages || isEmpty(stages)) return 'Group-Stage'
   const defaultStageIndex = stages.findIndex((s) => s.default)
   const defaultStageName = defaultStageIndex > -1 ? stages[defaultStageIndex].name : stages[0].name
   return defaultStageName ? defaultStageName.replace(' ', '-') : ''
@@ -226,14 +227,14 @@ export const getDefaultStageTab = (stages) => {
 
 export const getDefaultMdTab = (leagues) => {
   const temp = 'Matchday-1'
-  if (!leagues || leagues.length === 0) return temp
+  if (!leagues || isEmpty(leagues)) return temp
   const _l = leagues.find((l) => l.default_matchday)
   return _l !== undefined ? _l.default_matchday.replace(' ', '-') : temp
 }
 
 export const getDefaultLeagueTab = (leagues) => {
   const temp = 'League-A'
-  if (!leagues || leagues.length === 0) return temp
+  if (!leagues || isEmpty(leagues)) return temp
   const _l = leagues.find((l) => l.default)
   return _l !== undefined ? _l.name.replace(' ', '-') : temp
 }
@@ -342,9 +343,9 @@ export const getMatchArrayByDate = (round, sorted) => {
         tmpPlayoff.push(m)
       }
     })
-  if (tmpPlayoff.length === 0 && tmpReplay.length === 0) {
+  if (isEmpty(tmpPlayoff) && isEmpty(tmpReplay)) {
     return getDateMatchArrayPair(tmp, sorted)
-  } else if (tmpReplay.length > 0) {
+  } else if (!isEmpty(tmpReplay)) {
     return [getDateMatchArrayPair(tmp, sorted), { ...getDateMatchArrayPair(tmpReplay, sorted), name: `${round.name} Replay` }]
   } else {
     return [getDateMatchArrayPair(tmp, sorted), { ...getDateMatchArrayPair(tmpPlayoff, sorted), name: 'Playoff' }]
@@ -509,11 +510,11 @@ export const isKnockout2LeggedStageValid = (stage) => {
   }
   const firstLeg = stage.rounds.find((r) => r.round_type === 'firstleg')
   let secondLeg = stage.rounds.find((r) => r.round_type === 'secondleg')
-  if (!firstLeg.matches || firstLeg.matches.length === 0) {
+  if (!firstLeg.matches || isEmpty(firstLeg.matches)) {
     console.log('No matches in first leg')
     return false
   }
-  if (!secondLeg.matches || secondLeg.matches.length === 0) {
+  if (!secondLeg.matches || isEmpty(secondLeg.matches)) {
     console.log('No matches in second leg')
   }
   return true
@@ -1226,10 +1227,9 @@ export const DisplaySchedule2 = (props) => {
   const { round, config } = props
   const { showMatchYear, hideDateGroup } = config
   const { dates, matches } = round
-  // if (!matches || matches.length === 0) return null
   return (
     <React.Fragment>
-      {dates && dates.length > 0 && config.path_name && (
+      {dates && !isEmpty(dates) && config.path_name && (
         <Row>
           <Col>
             <div className="h3-ff6 margin-top-md">{config.path_name}</div>
