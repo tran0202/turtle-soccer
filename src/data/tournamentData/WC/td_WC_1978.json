@@ -1,1 +1,466 @@
-{ "id": "WC1978", "stages": [ { "name": "First Round", "type": "roundrobin", "eliminateCount": 8, "next_round": "Second Round", "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the second round." } }, "groups": [ { "name": "Group 1", "teams": [{ "id": "ITA" }, { "id": "FRA" }, { "id": "ARG" }, { "id": "HUN" }], "matches": [ { "home_team": "ITA", "away_team": "FRA", "home_score": 2, "away_score": 1, "date": "1978-06-02", "time": "13:45", "stadium": "Estadio José María Minella", "city": "Mar del Plata" }, { "home_team": "ARG", "away_team": "HUN", "home_score": 2, "away_score": 1, "date": "1978-06-02", "time": "19:15", "stadium": "Estadio Monumental", "city": "Buenos Aires" }, { "home_team": "ITA", "away_team": "HUN", "home_score": 3, "away_score": 1, "date": "1978-06-06", "time": "13:45", "stadium": "Estadio José María Minella", "city": "Mar del Plata" }, { "home_team": "ARG", "away_team": "FRA", "home_score": 2, "away_score": 1, "date": "1978-06-06", "time": "19:15", "stadium": "Estadio Monumental", "city": "Buenos Aires" }, { "home_team": "FRA", "away_team": "HUN", "home_score": 3, "away_score": 1, "date": "1978-06-10", "time": "15:10", "stadium": "Estadio José María Minella", "city": "Mar del Plata" }, { "home_team": "ARG", "away_team": "ITA", "home_score": 0, "away_score": 1, "date": "1978-06-10", "time": "19:15", "stadium": "Estadio Monumental", "city": "Buenos Aires" } ] }, { "name": "Group 2", "teams": [{ "id": "GER-1949-1990" }, { "id": "POL" }, { "id": "TUN" }, { "id": "MEX" }], "matches": [ { "home_team": "GER-1949-1990", "away_team": "POL", "home_score": 0, "away_score": 0, "date": "1978-06-01", "time": "15:00", "stadium": "Estadio Monumental", "city": "Buenos Aires" }, { "home_team": "TUN", "away_team": "MEX", "home_score": 3, "away_score": 1, "date": "1978-06-02", "time": "16:45", "stadium": "Estadio Gigante de Arroyito", "city": "Rosario" }, { "home_team": "GER-1949-1990", "away_team": "MEX", "home_score": 6, "away_score": 0, "date": "1978-06-06", "time": "16:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "POL", "away_team": "TUN", "home_score": 1, "away_score": 0, "date": "1978-06-06", "time": "16:45", "stadium": "Estadio Gigante de Arroyito", "city": "Rosario" }, { "home_team": "GER-1949-1990", "away_team": "TUN", "home_score": 0, "away_score": 0, "date": "1978-06-10", "time": "16:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "POL", "away_team": "MEX", "home_score": 3, "away_score": 1, "date": "1978-06-10", "time": "16:45", "stadium": "Estadio Gigante de Arroyito", "city": "Rosario" } ] }, { "name": "Group 3", "teams": [{ "id": "AUT" }, { "id": "ESP-1977-1981" }, { "id": "BRA" }, { "id": "SWE" }], "matches": [ { "home_team": "AUT", "away_team": "ESP-1977-1981", "home_score": 2, "away_score": 1, "date": "1978-06-03", "time": "13:45", "stadium": "José Amalfitani Stadium", "city": "Buenos Aires" }, { "home_team": "BRA", "away_team": "SWE", "home_score": 1, "away_score": 1, "date": "1978-06-03", "time": "13:45", "stadium": "Estadio José María Minella", "city": "Mar del Plata" }, { "home_team": "AUT", "away_team": "SWE", "home_score": 1, "away_score": 0, "date": "1978-06-07", "time": "13:45", "stadium": "José Amalfitani Stadium", "city": "Buenos Aires" }, { "home_team": "BRA", "away_team": "ESP-1977-1981", "home_score": 0, "away_score": 0, "date": "1978-06-07", "time": "13:45", "stadium": "Estadio José María Minella", "city": "Mar del Plata" }, { "home_team": "ESP-1977-1981", "away_team": "SWE", "home_score": 1, "away_score": 0, "date": "1978-06-11", "time": "13:45", "stadium": "José Amalfitani Stadium", "city": "Buenos Aires" }, { "home_team": "BRA", "away_team": "AUT", "home_score": 1, "away_score": 0, "date": "1978-06-11", "time": "13:45", "stadium": "Estadio José María Minella", "city": "Mar del Plata" } ] }, { "name": "Group 4", "teams": [{ "id": "PER" }, { "id": "SCO" }, { "id": "NED" }, { "id": "IRN-1964-1980" }], "matches": [ { "home_team": "PER", "away_team": "SCO", "home_score": 3, "away_score": 1, "date": "1978-06-03", "time": "16:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "NED", "away_team": "IRN-1964-1980", "home_score": 3, "away_score": 0, "date": "1978-06-03", "time": "16:45", "stadium": "Estadio Ciudad de Mendoza", "city": "Mendoza" }, { "home_team": "SCO", "away_team": "IRN-1964-1980", "home_score": 1, "away_score": 1, "date": "1978-06-07", "time": "16:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "NED", "away_team": "PER", "home_score": 0, "away_score": 0, "date": "1978-06-07", "time": "16:45", "stadium": "Estadio Ciudad de Mendoza", "city": "Mendoza" }, { "home_team": "PER", "away_team": "IRN-1964-1980", "home_score": 4, "away_score": 1, "date": "1978-06-11", "time": "16:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "SCO", "away_team": "NED", "home_score": 3, "away_score": 2, "date": "1978-06-11", "time": "16:45", "stadium": "Estadio Ciudad de Mendoza", "city": "Mendoza" } ] } ] }, { "name": "Second Round", "type": "roundrobin", "eliminateCount": 4, "next_round": "Final", "advancement": { "teams": { "auto": [1], "third_place": [2], "eliminated": [3, 4], "text": "The winners would advance to the final. The runners-up would advance to the third-place match." } }, "groups": [ { "name": "Group A", "teams": [{ "id": "AUT" }, { "id": "NED" }, { "id": "ITA" }, { "id": "GER-1949-1990" }], "matches": [ { "home_team": "AUT", "away_team": "NED", "home_score": 1, "away_score": 5, "date": "1978-06-14", "time": "13:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "ITA", "away_team": "GER-1949-1990", "home_score": 0, "away_score": 0, "date": "1978-06-14", "time": "13:45", "stadium": "Estadio Monumental", "city": "Buenos Aires" }, { "home_team": "NED", "away_team": "GER-1949-1990", "home_score": 2, "away_score": 2, "date": "1978-06-18", "time": "16:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "ITA", "away_team": "AUT", "home_score": 1, "away_score": 0, "date": "1978-06-18", "time": "16:45", "stadium": "Estadio Monumental", "city": "Buenos Aires" }, { "home_team": "AUT", "away_team": "GER-1949-1990", "home_score": 3, "away_score": 2, "date": "1978-06-21", "time": "13:45", "stadium": "Estadio Olímpico Chateau Carreras", "city": "Córdoba" }, { "home_team": "ITA", "away_team": "NED", "home_score": 1, "away_score": 2, "date": "1978-06-21", "time": "13:45", "stadium": "Estadio Monumental", "city": "Buenos Aires" } ] }, { "name": "Group B", "teams": [{ "id": "PER" }, { "id": "BRA" }, { "id": "ARG" }, { "id": "POL" }], "matches": [ { "home_team": "PER", "away_team": "BRA", "home_score": 0, "away_score": 3, "date": "1978-06-14", "time": "16:45", "stadium": "Estadio Ciudad de Mendoza", "city": "Mendoza" }, { "home_team": "ARG", "away_team": "POL", "home_score": 2, "away_score": 0, "date": "1978-06-14", "time": "19:15", "stadium": "Estadio Gigante de Arroyito", "city": "Rosario" }, { "home_team": "PER", "away_team": "POL", "home_score": 0, "away_score": 1, "date": "1978-06-18", "time": "13:45", "stadium": "Estadio Ciudad de Mendoza", "city": "Mendoza" }, { "home_team": "ARG", "away_team": "BRA", "home_score": 0, "away_score": 0, "date": "1978-06-18", "time": "19:15", "stadium": "Estadio Gigante de Arroyito", "city": "Rosario" }, { "home_team": "POL", "away_team": "BRA", "home_score": 1, "away_score": 3, "date": "1978-06-21", "time": "16:45", "stadium": "Estadio Ciudad de Mendoza", "city": "Mendoza" }, { "home_team": "ARG", "away_team": "PER", "home_score": 6, "away_score": 0, "date": "1978-06-21", "time": "19:15", "stadium": "Estadio Gigante de Arroyito", "city": "Rosario" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "BRA", "away_team": "ITA", "home_score": 2, "away_score": 1, "date": "1978-06-24", "time": "15:00", "stadium": "Estadio Monumental", "city": "Buenos Aires" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "ARG", "away_team": "NED", "home_score": 1, "away_score": 1, "home_extra_score": 2, "away_extra_score": 0, "date": "1978-06-25", "time": "15:00", "stadium": "Estadio Monumental", "city": "Buenos Aires" } ] } ] } ] }
+{
+  "id": "WC1978",
+  "stages": [
+    {
+      "name": "First Round",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Second Round",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the second round." } },
+      "groups": [
+        {
+          "name": "Group 1",
+          "teams": [{ "id": "ITA" }, { "id": "FRA" }, { "id": "ARG" }, { "id": "HUN" }],
+          "matches": [
+            {
+              "home_team": "ITA",
+              "away_team": "FRA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1978-06-02",
+              "time": "13:45",
+              "stadium": "Estadio José María Minella",
+              "city": "Mar del Plata"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "HUN",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1978-06-02",
+              "time": "19:15",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "HUN",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1978-06-06",
+              "time": "13:45",
+              "stadium": "Estadio José María Minella",
+              "city": "Mar del Plata"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "FRA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1978-06-06",
+              "time": "19:15",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "FRA",
+              "away_team": "HUN",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1978-06-10",
+              "time": "15:10",
+              "stadium": "Estadio José María Minella",
+              "city": "Mar del Plata"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "ITA",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1978-06-10",
+              "time": "19:15",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            }
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [{ "id": "GER-1949-1990" }, { "id": "POL" }, { "id": "TUN" }, { "id": "MEX" }],
+          "matches": [
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "POL",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1978-06-01",
+              "time": "15:00",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "TUN",
+              "away_team": "MEX",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1978-06-02",
+              "time": "16:45",
+              "stadium": "Estadio Gigante de Arroyito",
+              "city": "Rosario"
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "MEX",
+              "home_score": 6,
+              "away_score": 0,
+              "date": "1978-06-06",
+              "time": "16:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "POL",
+              "away_team": "TUN",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1978-06-06",
+              "time": "16:45",
+              "stadium": "Estadio Gigante de Arroyito",
+              "city": "Rosario"
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "TUN",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1978-06-10",
+              "time": "16:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "POL",
+              "away_team": "MEX",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1978-06-10",
+              "time": "16:45",
+              "stadium": "Estadio Gigante de Arroyito",
+              "city": "Rosario"
+            }
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [{ "id": "AUT" }, { "id": "ESP-1977-1981" }, { "id": "BRA" }, { "id": "SWE" }],
+          "matches": [
+            {
+              "home_team": "AUT",
+              "away_team": "ESP-1977-1981",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1978-06-03",
+              "time": "13:45",
+              "stadium": "José Amalfitani Stadium",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "SWE",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1978-06-03",
+              "time": "13:45",
+              "stadium": "Estadio José María Minella",
+              "city": "Mar del Plata"
+            },
+            {
+              "home_team": "AUT",
+              "away_team": "SWE",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1978-06-07",
+              "time": "13:45",
+              "stadium": "José Amalfitani Stadium",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "ESP-1977-1981",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1978-06-07",
+              "time": "13:45",
+              "stadium": "Estadio José María Minella",
+              "city": "Mar del Plata"
+            },
+            {
+              "home_team": "ESP-1977-1981",
+              "away_team": "SWE",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1978-06-11",
+              "time": "13:45",
+              "stadium": "José Amalfitani Stadium",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "AUT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1978-06-11",
+              "time": "13:45",
+              "stadium": "Estadio José María Minella",
+              "city": "Mar del Plata"
+            }
+          ]
+        },
+        {
+          "name": "Group 4",
+          "teams": [{ "id": "PER" }, { "id": "SCO" }, { "id": "NED" }, { "id": "IRN-1964-1980" }],
+          "matches": [
+            {
+              "home_team": "PER",
+              "away_team": "SCO",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1978-06-03",
+              "time": "16:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "IRN-1964-1980",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1978-06-03",
+              "time": "16:45",
+              "stadium": "Estadio Ciudad de Mendoza",
+              "city": "Mendoza"
+            },
+            {
+              "home_team": "SCO",
+              "away_team": "IRN-1964-1980",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1978-06-07",
+              "time": "16:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "PER",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1978-06-07",
+              "time": "16:45",
+              "stadium": "Estadio Ciudad de Mendoza",
+              "city": "Mendoza"
+            },
+            {
+              "home_team": "PER",
+              "away_team": "IRN-1964-1980",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1978-06-11",
+              "time": "16:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "SCO",
+              "away_team": "NED",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1978-06-11",
+              "time": "16:45",
+              "stadium": "Estadio Ciudad de Mendoza",
+              "city": "Mendoza"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Second Round",
+      "type": "roundrobin",
+      "eliminate_count": 4,
+      "next_round": "Final",
+      "advancement": {
+        "teams": {
+          "auto": [1],
+          "third_place": [2],
+          "eliminated": [3, 4],
+          "text": "The winners would advance to the final. The runners-up would advance to the third-place match."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "AUT" }, { "id": "NED" }, { "id": "ITA" }, { "id": "GER-1949-1990" }],
+          "matches": [
+            {
+              "home_team": "AUT",
+              "away_team": "NED",
+              "home_score": 1,
+              "away_score": 5,
+              "date": "1978-06-14",
+              "time": "13:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "GER-1949-1990",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1978-06-14",
+              "time": "13:45",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "GER-1949-1990",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "1978-06-18",
+              "time": "16:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "AUT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1978-06-18",
+              "time": "16:45",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            },
+            {
+              "home_team": "AUT",
+              "away_team": "GER-1949-1990",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1978-06-21",
+              "time": "13:45",
+              "stadium": "Estadio Olímpico Chateau Carreras",
+              "city": "Córdoba"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "NED",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "1978-06-21",
+              "time": "13:45",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "PER" }, { "id": "BRA" }, { "id": "ARG" }, { "id": "POL" }],
+          "matches": [
+            {
+              "home_team": "PER",
+              "away_team": "BRA",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "1978-06-14",
+              "time": "16:45",
+              "stadium": "Estadio Ciudad de Mendoza",
+              "city": "Mendoza"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "POL",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1978-06-14",
+              "time": "19:15",
+              "stadium": "Estadio Gigante de Arroyito",
+              "city": "Rosario"
+            },
+            {
+              "home_team": "PER",
+              "away_team": "POL",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1978-06-18",
+              "time": "13:45",
+              "stadium": "Estadio Ciudad de Mendoza",
+              "city": "Mendoza"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "BRA",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1978-06-18",
+              "time": "19:15",
+              "stadium": "Estadio Gigante de Arroyito",
+              "city": "Rosario"
+            },
+            {
+              "home_team": "POL",
+              "away_team": "BRA",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "1978-06-21",
+              "time": "16:45",
+              "stadium": "Estadio Ciudad de Mendoza",
+              "city": "Mendoza"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "PER",
+              "home_score": 6,
+              "away_score": 0,
+              "date": "1978-06-21",
+              "time": "19:15",
+              "stadium": "Estadio Gigante de Arroyito",
+              "city": "Rosario"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "BRA",
+              "away_team": "ITA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1978-06-24",
+              "time": "15:00",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "ARG",
+              "away_team": "NED",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 2,
+              "away_extra_score": 0,
+              "date": "1978-06-25",
+              "time": "15:00",
+              "stadium": "Estadio Monumental",
+              "city": "Buenos Aires"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

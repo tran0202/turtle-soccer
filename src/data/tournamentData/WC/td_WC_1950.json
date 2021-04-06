@@ -1,1 +1,274 @@
-{ "id": "WC1950", "stages": [ { "name": "First Round", "type": "roundrobin", "eliminateCount": 4, "next_round": "Final Round", "advancement": { "teams": { "auto": [1], "eliminated": [2, 3, 4], "text": "The winners would advance to the final round." } }, "groups": [ { "name": "Group 1", "teams": [{ "id": "BRA" }, { "id": "MEX" }, { "id": "YUG-1945-1992" }, { "id": "SUI" }], "matches": [ { "home_team": "BRA", "away_team": "MEX", "home_score": 4, "away_score": 0, "date": "1950-06-24", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "YUG-1945-1992", "away_team": "SUI", "home_score": 3, "away_score": 0, "date": "1950-06-25", "time": "15:00", "stadium": "Estádio Independência", "city": "Belo Horizonte" }, { "home_team": "BRA", "away_team": "SUI", "home_score": 2, "away_score": 2, "date": "1950-06-28", "time": "15:00", "stadium": "Estádio do Pacaembu", "city": "São Paulo" }, { "home_team": "YUG-1945-1992", "away_team": "MEX", "home_score": 4, "away_score": 1, "date": "1950-06-28", "time": "15:00", "stadium": "Estádio dos Eucaliptos", "city": "Porto Alegre" }, { "home_team": "BRA", "away_team": "YUG-1945-1992", "home_score": 2, "away_score": 0, "date": "1950-07-01", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "SUI", "away_team": "MEX", "home_score": 2, "away_score": 1, "date": "1950-07-02", "time": "15:40", "stadium": "Estádio dos Eucaliptos", "city": "Porto Alegre" } ] }, { "name": "Group 2", "teams": [{ "id": "ENG" }, { "id": "CHI" }, { "id": "ESP-1945-1977" }, { "id": "USA" }], "matches": [ { "home_team": "ENG", "away_team": "CHI", "home_score": 2, "away_score": 0, "date": "1950-06-25", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "ESP-1945-1977", "away_team": "USA", "home_score": 3, "away_score": 1, "date": "1950-06-25", "time": "15:00", "stadium": "Estádio Durival de Britto", "city": "Curitiba" }, { "home_team": "ESP-1945-1977", "away_team": "CHI", "home_score": 2, "away_score": 0, "date": "1950-06-29", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "USA", "away_team": "ENG", "home_score": 1, "away_score": 0, "date": "1950-06-29", "time": "15:00", "stadium": "Estádio Independência", "city": "Belo Horizonte" }, { "home_team": "ESP-1945-1977", "away_team": "ENG", "home_score": 1, "away_score": 0, "date": "1950-07-02", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "CHI", "away_team": "USA", "home_score": 5, "away_score": 2, "date": "1950-07-02", "time": "15:00", "stadium": "Estádio Ilha do Retiro", "city": "Recife" } ] }, { "name": "Group 3", "teams": [{ "id": "SWE" }, { "id": "ITA" }, { "id": "PAR" }], "matches": [ { "home_team": "SWE", "away_team": "ITA", "home_score": 3, "away_score": 2, "date": "1950-06-25", "time": "15:00", "stadium": "Estádio do Pacaembu", "city": "São Paulo" }, { "home_team": "SWE", "away_team": "PAR", "home_score": 2, "away_score": 2, "date": "1950-06-29", "time": "15:30", "stadium": "Estádio Durival de Britto", "city": "Curitiba" }, { "home_team": "ITA", "away_team": "PAR", "home_score": 2, "away_score": 0, "date": "1950-07-02", "time": "15:00", "stadium": "Estádio do Pacaembu", "city": "São Paulo" } ] }, { "name": "Group 4", "teams": [{ "id": "URU" }, { "id": "BOL" }], "matches": [ { "home_team": "URU", "away_team": "BOL", "home_score": 8, "away_score": 0, "date": "1950-07-02", "time": "15:00", "stadium": "Estádio Independência", "city": "Belo Horizonte" } ] } ] }, { "name": "Final Round", "type": "roundrobin", "championship_round": true, "eliminateCount": 0, "tiebreakers": ["points"], "advancement": { "teams": { "text": "The winner would win the World Cup." } }, "groups": [ { "name": "Final Round", "teams": [{ "id": "URU" }, { "id": "ESP-1945-1977" }, { "id": "BRA" }, { "id": "SWE" }], "matches": [ { "home_team": "URU", "away_team": "ESP-1945-1977", "home_score": 2, "away_score": 2, "date": "1950-07-09", "time": "15:00", "stadium": "Estádio do Pacaembu", "city": "São Paulo" }, { "home_team": "BRA", "away_team": "SWE", "home_score": 7, "away_score": 1, "date": "1950-07-09", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "BRA", "away_team": "ESP-1945-1977", "home_score": 6, "away_score": 1, "date": "1950-07-13", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" }, { "home_team": "URU", "away_team": "SWE", "home_score": 3, "away_score": 2, "date": "1950-07-13", "time": "15:00", "stadium": "Estádio do Pacaembu", "city": "São Paulo" }, { "home_team": "SWE", "away_team": "ESP-1945-1977", "home_score": 3, "away_score": 1, "date": "1950-07-16", "time": "15:00", "stadium": "Estádio do Pacaembu", "city": "São Paulo" }, { "home_team": "URU", "away_team": "BRA", "home_score": 2, "away_score": 1, "date": "1950-07-16", "time": "15:00", "stadium": "Estádio do Maracanã", "city": "Rio de Janeiro" } ] } ] } ] }
+{
+  "id": "WC1950",
+  "stages": [
+    {
+      "name": "First Round",
+      "type": "roundrobin",
+      "eliminate_count": 4,
+      "next_round": "Final Round",
+      "advancement": { "teams": { "auto": [1], "eliminated": [2, 3, 4], "text": "The winners would advance to the final round." } },
+      "groups": [
+        {
+          "name": "Group 1",
+          "teams": [{ "id": "BRA" }, { "id": "MEX" }, { "id": "YUG-1945-1992" }, { "id": "SUI" }],
+          "matches": [
+            {
+              "home_team": "BRA",
+              "away_team": "MEX",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "1950-06-24",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "YUG-1945-1992",
+              "away_team": "SUI",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1950-06-25",
+              "time": "15:00",
+              "stadium": "Estádio Independência",
+              "city": "Belo Horizonte"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "SUI",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "1950-06-28",
+              "time": "15:00",
+              "stadium": "Estádio do Pacaembu",
+              "city": "São Paulo"
+            },
+            {
+              "home_team": "YUG-1945-1992",
+              "away_team": "MEX",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1950-06-28",
+              "time": "15:00",
+              "stadium": "Estádio dos Eucaliptos",
+              "city": "Porto Alegre"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "YUG-1945-1992",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1950-07-01",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "SUI",
+              "away_team": "MEX",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1950-07-02",
+              "time": "15:40",
+              "stadium": "Estádio dos Eucaliptos",
+              "city": "Porto Alegre"
+            }
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [{ "id": "ENG" }, { "id": "CHI" }, { "id": "ESP-1945-1977" }, { "id": "USA" }],
+          "matches": [
+            {
+              "home_team": "ENG",
+              "away_team": "CHI",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1950-06-25",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "ESP-1945-1977",
+              "away_team": "USA",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1950-06-25",
+              "time": "15:00",
+              "stadium": "Estádio Durival de Britto",
+              "city": "Curitiba"
+            },
+            {
+              "home_team": "ESP-1945-1977",
+              "away_team": "CHI",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1950-06-29",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "USA",
+              "away_team": "ENG",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1950-06-29",
+              "time": "15:00",
+              "stadium": "Estádio Independência",
+              "city": "Belo Horizonte"
+            },
+            {
+              "home_team": "ESP-1945-1977",
+              "away_team": "ENG",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1950-07-02",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "CHI",
+              "away_team": "USA",
+              "home_score": 5,
+              "away_score": 2,
+              "date": "1950-07-02",
+              "time": "15:00",
+              "stadium": "Estádio Ilha do Retiro",
+              "city": "Recife"
+            }
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [{ "id": "SWE" }, { "id": "ITA" }, { "id": "PAR" }],
+          "matches": [
+            {
+              "home_team": "SWE",
+              "away_team": "ITA",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1950-06-25",
+              "time": "15:00",
+              "stadium": "Estádio do Pacaembu",
+              "city": "São Paulo"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "PAR",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "1950-06-29",
+              "time": "15:30",
+              "stadium": "Estádio Durival de Britto",
+              "city": "Curitiba"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "PAR",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1950-07-02",
+              "time": "15:00",
+              "stadium": "Estádio do Pacaembu",
+              "city": "São Paulo"
+            }
+          ]
+        },
+        {
+          "name": "Group 4",
+          "teams": [{ "id": "URU" }, { "id": "BOL" }],
+          "matches": [
+            {
+              "home_team": "URU",
+              "away_team": "BOL",
+              "home_score": 8,
+              "away_score": 0,
+              "date": "1950-07-02",
+              "time": "15:00",
+              "stadium": "Estádio Independência",
+              "city": "Belo Horizonte"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Final Round",
+      "type": "roundrobin",
+      "championship_round": true,
+      "eliminate_count": 0,
+      "tiebreakers": ["points"],
+      "advancement": { "teams": { "text": "The winner would win the World Cup." } },
+      "groups": [
+        {
+          "name": "Final Round",
+          "teams": [{ "id": "URU" }, { "id": "ESP-1945-1977" }, { "id": "BRA" }, { "id": "SWE" }],
+          "matches": [
+            {
+              "home_team": "URU",
+              "away_team": "ESP-1945-1977",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "1950-07-09",
+              "time": "15:00",
+              "stadium": "Estádio do Pacaembu",
+              "city": "São Paulo"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "SWE",
+              "home_score": 7,
+              "away_score": 1,
+              "date": "1950-07-09",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "ESP-1945-1977",
+              "home_score": 6,
+              "away_score": 1,
+              "date": "1950-07-13",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "URU",
+              "away_team": "SWE",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1950-07-13",
+              "time": "15:00",
+              "stadium": "Estádio do Pacaembu",
+              "city": "São Paulo"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "ESP-1945-1977",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1950-07-16",
+              "time": "15:00",
+              "stadium": "Estádio do Pacaembu",
+              "city": "São Paulo"
+            },
+            {
+              "home_team": "URU",
+              "away_team": "BRA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1950-07-16",
+              "time": "15:00",
+              "stadium": "Estádio do Maracanã",
+              "city": "Rio de Janeiro"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

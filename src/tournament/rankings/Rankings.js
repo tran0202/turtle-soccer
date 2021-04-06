@@ -9,9 +9,9 @@ import {
   DrawLotTooltip,
   ExcludedFourthPlaceTooltip,
   ExcludedQualfyingRoundsTooltip,
-} from '../core/TooltipHelper'
-import { getTeamName, getTeamFlag } from '../core/TeamHelper'
-import { isSuccessor } from '../core/Helper'
+} from '../../core/TooltipHelper'
+import { getTeamName, getTeamFlag } from '../../core/TeamHelper'
+import { isSuccessor } from '../../core/Helper'
 import NumberFormat from 'react-number-format'
 import { isEmpty } from 'lodash'
 

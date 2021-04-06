@@ -77,19 +77,21 @@ export const getTournamentTitleFont = (comp) => {
 /* ========== Stages ========== */
 
 export const getAllocationStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'allocation') : []
+  return stages ? stages.filter((s) => s.config.type === 'allocation') : []
 }
 
 export const getRoundRobinStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'roundrobin') : []
+  return stages ? stages.filter((s) => s.config.type === 'roundrobin') : []
 }
 
 export const getRoundRobinMdStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'roundrobinmatchday') : []
+  return stages ? stages.filter((s) => s.config.type === 'roundrobinmatchday') : []
 }
 
 export const getAllRoundRobinStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'roundrobin' || s.type === 'roundrobinmatchday' || s.type === 'roundrobinleaguematchday') : []
+  return stages
+    ? stages.filter((s) => s.config.type === 'roundrobin' || s.config.type === 'roundrobinmatchday' || s.config.type === 'roundrobinleaguematchday')
+    : []
 }
 
 export const getRoundRobinLeagueMdStages = (leagues) => {
@@ -97,7 +99,7 @@ export const getRoundRobinLeagueMdStages = (leagues) => {
   const rrLeagues = []
   leagues.forEach((l) => {
     if (l.stages) {
-      const rrStages = l.stages.filter((s) => s.type === 'roundrobinleaguematchday')
+      const rrStages = l.stages.filter((s) => s.config.type === 'roundrobinleaguematchday')
       if (!isEmpty(rrStages)) {
         rrLeagues.push({ ...l, stages: rrStages })
       }
@@ -107,11 +109,32 @@ export const getRoundRobinLeagueMdStages = (leagues) => {
 }
 
 export const getKnockoutStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'knockout' || s.type === 'knockout2legged') : []
+  return stages ? stages.filter((s) => s.config.type === 'knockout' || s.config.type === 'knockout2legged') : []
 }
 
 export const getKnockoutMultiple2LeggedStages = (stages) => {
-  return stages ? stages.filter((s) => s.type === 'knockoutmultiple2legged') : []
+  return stages ? stages.filter((s) => s.config.type === 'knockoutmultiple2legged') : []
+}
+
+export const getDefaultStageTab = (stages) => {
+  if (!stages || isEmpty(stages)) return 'Group-Stage'
+  const defaultStageIndex = stages.findIndex((s) => s.config.default === true)
+  const defaultStageName = defaultStageIndex > -1 ? stages[defaultStageIndex].details.name : stages[0].details.name
+  return defaultStageName ? defaultStageName.replace(' ', '-') : 'Group-Stage'
+}
+
+export const getDefaultMdTab = (leagues) => {
+  const temp = 'Matchday-1'
+  if (!leagues || isEmpty(leagues)) return temp
+  const _l = leagues.find((l) => l.config.default_matchday)
+  return _l !== undefined ? _l.default_matchday.replace(' ', '-') : temp
+}
+
+export const getDefaultLeagueTab = (leagues) => {
+  const temp = 'League-A'
+  if (!leagues || isEmpty(leagues)) return temp
+  const _l = leagues.find((l) => l.config.default)
+  return _l !== undefined ? _l.name.replace(' ', '-') : temp
 }
 
 const getFormat = (rrStage) => {
@@ -124,7 +147,6 @@ const getFormat = (rrStage) => {
 export const getStageConfig = (tournament, stage) => {
   if (!stage) return
   const format = getFormat(stage)
-  // console.log('format', format)
   return stage.tiebreakers
     ? { ...getTournamentConfig(tournament), ...format, tiebreakers: stage.tiebreakers }
     : { ...getTournamentConfig(tournament), ...format }
@@ -216,27 +238,6 @@ export const splitPathDatesMatches = (round) => {
     { path: 'League', dates: _leagueDates, matches: _leagueMatches },
     { path: 'Main', dates: _mainDates, matches: _mainMatches },
   ]
-}
-
-export const getDefaultStageTab = (stages) => {
-  if (!stages || isEmpty(stages)) return 'Group-Stage'
-  const defaultStageIndex = stages.findIndex((s) => s.default)
-  const defaultStageName = defaultStageIndex > -1 ? stages[defaultStageIndex].name : stages[0].name
-  return defaultStageName ? defaultStageName.replace(' ', '-') : ''
-}
-
-export const getDefaultMdTab = (leagues) => {
-  const temp = 'Matchday-1'
-  if (!leagues || isEmpty(leagues)) return temp
-  const _l = leagues.find((l) => l.default_matchday)
-  return _l !== undefined ? _l.default_matchday.replace(' ', '-') : temp
-}
-
-export const getDefaultLeagueTab = (leagues) => {
-  const temp = 'League-A'
-  if (!leagues || isEmpty(leagues)) return temp
-  const _l = leagues.find((l) => l.default)
-  return _l !== undefined ? _l.name.replace(' ', '-') : temp
 }
 
 export const isSharedBronze = (match) => {

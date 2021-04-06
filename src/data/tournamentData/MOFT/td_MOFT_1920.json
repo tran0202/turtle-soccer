@@ -1,1 +1,293 @@
-{ "id": "MOFT1920", "stages": [ { "name": "Knockout Stage", "type": "knockout", "consolation_round": true, "teams": [ { "id": "TCH_U23MNT" }, { "id": "YUG-1918-1929_U23MNT" }, { "id": "ESP-1875-1931_U23MNT" }, { "id": "DEN_U23MNT" }, { "id": "ITA-1861-1946_U23MNT" }, { "id": "EGY-1914-1922_U23MNT" }, { "id": "NOR_U23MNT" }, { "id": "GBR_U23MNT" }, { "id": "NED_U23MNT" }, { "id": "LUX_U23MNT" }, { "id": "SWE_U23MNT" }, { "id": "GRE_U23MNT" }, { "id": "BEL_U23MNT" }, { "id": "POL_U23MNT" }, { "id": "FRA_U23MNT" } ], "rounds": [ { "name": "First round", "short_name": "1/8", "eliminateCount": 7, "next_round": "Quarter-finals", "bye_teams": [{ "id": "FRA_U23MNT" }, { "id": "BEL_U23MNT" }], "matches": [ { "home_team": "FRA_U23MNT", "away_team": "", "home_bye": true, "bye_notes": "Switzerland withdrew before the first round draw had been made", "date": "1920-08-27", "bracket_order": 7 }, { "home_team": "BEL_U23MNT", "away_team": "POL_U23MNT", "home_score": 2, "away_score": 0, "away_withdrew": true, "home_awarded_score_not_counted": true, "awarded_text": "Awarded: Poland failed to arrive due to the ongoing Polish–Soviet War.", "date": "1920-08-27", "bracket_order": 1 }, { "home_team": "TCH_U23MNT", "away_team": "YUG-1918-1929_U23MNT", "home_score": 7, "away_score": 0, "date": "1920-08-28", "time": "10:00", "stadium": "Stadion Broodstraat", "city": "Antwerp", "bracket_order": 5 }, { "home_team": "ESP-1875-1931_U23MNT", "away_team": "DEN_U23MNT", "home_score": 1, "away_score": 0, "date": "1920-08-28", "time": "15:30", "stadium": "La Butte", "city": "Brussels", "bracket_order": 2 }, { "home_team": "ITA-1861-1946_U23MNT", "away_team": "EGY-1914-1922_U23MNT", "home_score": 2, "away_score": 1, "date": "1920-08-28", "time": "10:00", "stadium": "Jules Ottenstadion", "city": "Ghent", "bracket_order": 8 }, { "home_team": "NOR_U23MNT", "away_team": "GBR_U23MNT", "home_score": 3, "away_score": 1, "date": "1920-08-28", "time": "15:30", "stadium": "Olympic Stadium", "city": "Antwerp", "bracket_order": 6 }, { "home_team": "NED_U23MNT", "away_team": "LUX_U23MNT", "home_score": 3, "away_score": 0, "date": "1920-08-28", "time": "17:30", "stadium": "La Butte", "city": "Brussels", "bracket_order": 3 }, { "home_team": "SWE_U23MNT", "away_team": "GRE_U23MNT", "home_score": 9, "away_score": 0, "date": "1920-08-28", "time": "17:30", "stadium": "Olympic Stadium", "city": "Antwerp", "bracket_order": 4 } ] }, { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 3, "next_round": "Semi-finals", "next_consolation_round": "Playoff First Round", "matches": [ { "home_team": "NED_U23MNT", "away_team": "SWE_U23MNT", "home_score": 4, "away_score": 4, "home_extra_score": 1, "away_extra_score": 0, "date": "1920-08-29", "time": "10:00", "stadium": "Stadion Broodstraat", "city": "Antwerp", "bracket_order": 2 }, { "home_team": "TCH_U23MNT", "away_team": "NOR_U23MNT", "home_score": 4, "away_score": 0, "date": "1920-08-29", "time": "16:30", "stadium": "La Butte", "city": "Brussels", "bracket_order": 3 }, { "home_team": "FRA_U23MNT", "away_team": "ITA-1861-1946_U23MNT", "home_score": 3, "away_score": 1, "date": "1920-08-29", "time": "15:00", "stadium": "Olympic Stadium", "city": "Antwerp", "bracket_order": 4 }, { "home_team": "BEL_U23MNT", "away_team": "ESP-1875-1931_U23MNT", "home_score": 3, "away_score": 1, "date": "1920-08-29", "time": "17:00", "stadium": "Olympic Stadium", "city": "Antwerp", "bracket_order": 1 } ] }, { "name": "Playoff First Round", "short_name": "Po1", "consolation_notes": "Played by losing quarter-finalists", "eliminateCount": 5, "next_round": "Playoff Second Round", "matches": [ { "home_team": "ITA-1861-1946_U23MNT", "away_team": "NOR_U23MNT", "home_score": 1, "away_score": 1, "home_extra_score": 1, "away_extra_score": 0, "extra_140": true, "date": "1920-08-31", "time": "10:00", "stadium": "Stadion Broodstraat", "city": "Antwerp", "bracket_order": 1 }, { "home_team": "ESP-1875-1931_U23MNT", "away_team": "SWE_U23MNT", "home_score": 2, "away_score": 1, "date": "1920-09-01", "time": "12:00", "stadium": "Stadion Broodstraat", "city": "Antwerp", "bracket_order": 2 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "TCH_U23MNT", "away_team": "FRA_U23MNT", "home_score": 4, "away_score": 1, "date": "1920-08-31", "time": "15:35", "stadium": "Olympic Stadium", "city": "Antwerp", "bracket_order": 2 }, { "home_team": "BEL_U23MNT", "away_team": "NED_U23MNT", "home_score": 3, "away_score": 0, "date": "1920-08-31", "time": "17:25", "stadium": "Olympic Stadium", "city": "Antwerp", "bracket_order": 1 } ] }, { "name": "Playoff Second Round", "short_name": "Po2", "next_round": "Silver medal match", "matches": [ { "home_team": "ITA-1861-1946_U23MNT", "away_team": "ESP-1875-1931_U23MNT", "home_score": 0, "away_score": 2, "date": "1920-09-02", "time": "12:00", "stadium": "Olympic Stadium", "city": "Antwerp" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "BEL_U23MNT", "away_team": "TCH_U23MNT", "home_score": 2, "away_score": 0, "away_disqualified": true, "disqualified_notes": "Czechoslovakia walked off the field in the 40th minute to protest the officiating", "date": "1920-09-02", "time": "17:30", "stadium": "Olympic Stadium", "city": "Antwerp" } ] }, { "name": "Silver medal match", "short_name": "2nd", "matches": [ { "home_team": "ESP-1875-1931_U23MNT", "away_team": "NED_U23MNT", "home_score": 3, "away_score": 1, "date": "1920-09-05", "time": "15:00", "stadium": "Olympic Stadium", "city": "Antwerp" } ] } ] } ] }
+{
+  "id": "MOFT1920",
+  "stages": [
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "consolation_round": true,
+      "teams": [
+        { "id": "TCH_U23MNT" },
+        { "id": "YUG-1918-1929_U23MNT" },
+        { "id": "ESP-1875-1931_U23MNT" },
+        { "id": "DEN_U23MNT" },
+        { "id": "ITA-1861-1946_U23MNT" },
+        { "id": "EGY-1914-1922_U23MNT" },
+        { "id": "NOR_U23MNT" },
+        { "id": "GBR_U23MNT" },
+        { "id": "NED_U23MNT" },
+        { "id": "LUX_U23MNT" },
+        { "id": "SWE_U23MNT" },
+        { "id": "GRE_U23MNT" },
+        { "id": "BEL_U23MNT" },
+        { "id": "POL_U23MNT" },
+        { "id": "FRA_U23MNT" }
+      ],
+      "rounds": [
+        {
+          "name": "First round",
+          "short_name": "1/8",
+          "eliminate_count": 7,
+          "next_round": "Quarter-finals",
+          "bye_teams": [{ "id": "FRA_U23MNT" }, { "id": "BEL_U23MNT" }],
+          "matches": [
+            {
+              "home_team": "FRA_U23MNT",
+              "away_team": "",
+              "home_bye": true,
+              "bye_notes": "Switzerland withdrew before the first round draw had been made",
+              "date": "1920-08-27",
+              "bracket_order": 7
+            },
+            {
+              "home_team": "BEL_U23MNT",
+              "away_team": "POL_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "away_withdrew": true,
+              "home_awarded_score_not_counted": true,
+              "awarded_text": "Awarded: Poland failed to arrive due to the ongoing Polish–Soviet War.",
+              "date": "1920-08-27",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "TCH_U23MNT",
+              "away_team": "YUG-1918-1929_U23MNT",
+              "home_score": 7,
+              "away_score": 0,
+              "date": "1920-08-28",
+              "time": "10:00",
+              "stadium": "Stadion Broodstraat",
+              "city": "Antwerp",
+              "bracket_order": 5
+            },
+            {
+              "home_team": "ESP-1875-1931_U23MNT",
+              "away_team": "DEN_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1920-08-28",
+              "time": "15:30",
+              "stadium": "La Butte",
+              "city": "Brussels",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "EGY-1914-1922_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1920-08-28",
+              "time": "10:00",
+              "stadium": "Jules Ottenstadion",
+              "city": "Ghent",
+              "bracket_order": 8
+            },
+            {
+              "home_team": "NOR_U23MNT",
+              "away_team": "GBR_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1920-08-28",
+              "time": "15:30",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp",
+              "bracket_order": 6
+            },
+            {
+              "home_team": "NED_U23MNT",
+              "away_team": "LUX_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1920-08-28",
+              "time": "17:30",
+              "stadium": "La Butte",
+              "city": "Brussels",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "SWE_U23MNT",
+              "away_team": "GRE_U23MNT",
+              "home_score": 9,
+              "away_score": 0,
+              "date": "1920-08-28",
+              "time": "17:30",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp",
+              "bracket_order": 4
+            }
+          ]
+        },
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 3,
+          "next_round": "Semi-finals",
+          "next_consolation_round": "Playoff First Round",
+          "matches": [
+            {
+              "home_team": "NED_U23MNT",
+              "away_team": "SWE_U23MNT",
+              "home_score": 4,
+              "away_score": 4,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "1920-08-29",
+              "time": "10:00",
+              "stadium": "Stadion Broodstraat",
+              "city": "Antwerp",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "TCH_U23MNT",
+              "away_team": "NOR_U23MNT",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "1920-08-29",
+              "time": "16:30",
+              "stadium": "La Butte",
+              "city": "Brussels",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "FRA_U23MNT",
+              "away_team": "ITA-1861-1946_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1920-08-29",
+              "time": "15:00",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "BEL_U23MNT",
+              "away_team": "ESP-1875-1931_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1920-08-29",
+              "time": "17:00",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Playoff First Round",
+          "short_name": "Po1",
+          "consolation_notes": "Played by losing quarter-finalists",
+          "eliminate_count": 5,
+          "next_round": "Playoff Second Round",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "NOR_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "extra_140": true,
+              "date": "1920-08-31",
+              "time": "10:00",
+              "stadium": "Stadion Broodstraat",
+              "city": "Antwerp",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ESP-1875-1931_U23MNT",
+              "away_team": "SWE_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1920-09-01",
+              "time": "12:00",
+              "stadium": "Stadion Broodstraat",
+              "city": "Antwerp",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "TCH_U23MNT",
+              "away_team": "FRA_U23MNT",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1920-08-31",
+              "time": "15:35",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "BEL_U23MNT",
+              "away_team": "NED_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1920-08-31",
+              "time": "17:25",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Playoff Second Round",
+          "short_name": "Po2",
+          "next_round": "Silver medal match",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "ESP-1875-1931_U23MNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "1920-09-02",
+              "time": "12:00",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "BEL_U23MNT",
+              "away_team": "TCH_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "away_disqualified": true,
+              "disqualified_notes": "Czechoslovakia walked off the field in the 40th minute to protest the officiating",
+              "date": "1920-09-02",
+              "time": "17:30",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp"
+            }
+          ]
+        },
+        {
+          "name": "Silver medal match",
+          "short_name": "2nd",
+          "matches": [
+            {
+              "home_team": "ESP-1875-1931_U23MNT",
+              "away_team": "NED_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1920-09-05",
+              "time": "15:00",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,9 +6,9 @@ import Page from '../core/Page'
 import { Style } from '../core/Utilities'
 import Header from './Header'
 import About from './About'
-// import Matches from './Matches'
-// import Groups from './Groups'
-// import FinalStandings from './FinalStandings'
+import Matches from './Matches'
+import Groups from './groups/Groups'
+import FinalStandings from './FinalStandings'
 import Qualification from './Qualification'
 import {
   getCurrentTournament,
@@ -19,6 +19,10 @@ import {
   setCompetitionDetails,
   setTournamentDetails,
   setTournamentConfig,
+  setStageDetails,
+  setStageConfig,
+  setAllLeagues,
+  setAllStages,
 } from '../core/DataHelper'
 import { Container } from 'reactstrap'
 
@@ -51,7 +55,7 @@ class TournamentApp extends React.Component {
         },
         leagues: [],
         qualification: { config: { confed_names: [] } },
-        stages: [],
+        stages: [{ config: {}, details: {} }],
       },
       competition: { config: {}, details: {} },
     }
@@ -117,7 +121,10 @@ class TournamentApp extends React.Component {
     }
     const existed = qt ? true : false
     const config = qt ? { ...qt.config, existed, confed_names } : {}
-    return { ...qt, config, stages: this.getQualificationTournamentData().stages || [] }
+    const qtd = this.getQualificationTournamentData()
+    const qtd_stages = qtd.stages || []
+    setAllStages(qtd_stages)
+    return { ...qt, config, stages: qtd_stages }
   }
 
   getTournamentData = () => {
@@ -138,6 +145,11 @@ class TournamentApp extends React.Component {
       setTournamentDetails(t)
       setTournamentConfig(t)
       // console.log('Tournament', t)
+      const td = this.getTournamentData()
+      const td_stages = td.stages || []
+      const td_leagues = td.leagues || []
+      setAllStages(td_stages)
+      setAllLeagues(td_leagues)
       this.setState({
         tournament: {
           ...t,
@@ -146,8 +158,8 @@ class TournamentApp extends React.Component {
             previous_tournament: this.getPreviousTournament(t.config.competition_id, this.props.query.id),
             next_tournament: this.getNextTournament(t.config.competition_id, this.props.query.id),
           },
-          stages: this.getTournamentData().stages || [],
-          leagues: this.getTournamentData().leagues || [],
+          stages: td_stages,
+          leagues: td_leagues,
           qualification: this.getQualificationTournament(),
         },
       })
@@ -180,9 +192,9 @@ class TournamentApp extends React.Component {
         <Container>
           <Header state={this.state} query={query} />
           {page === 'about' && <About tournament={tournament} />}
-          {/* {page === 'matches' && <Matches tournament={tournament} tournamentType={tournamentType} />}
-              {page === 'groups' && <Groups tournament={tournament} tournamentType={tournamentType} />}
-              {page === 'finalstandings' && <FinalStandings tournament={tournament} tournamentType={tournamentType} />} */}
+          {page === 'matches' && <Matches state={this.state} />}
+          {page === 'groups' && <Groups state={this.state} />}
+          {page === 'finalstandings' && <FinalStandings state={this.state} />}
           {page === 'qualification' && <Qualification state={this.state} query={query} />}
         </Container>
       </Page>

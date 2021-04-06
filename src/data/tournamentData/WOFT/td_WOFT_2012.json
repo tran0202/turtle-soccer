@@ -1,1 +1,341 @@
-{ "id": "WOFT2012", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 8, "next_round": "Quarter-finals", "advancement": { "teams": { "auto": [1, 2], "wild_card": { "pos": 3, "count": 2 }, "eliminated": [4], "text": "The top 2 teams and the 2 best third-placed teams would advance to the Quarter-finals." } }, "groups": [ { "name": "Group E", "teams": [{ "id": "GBR_U23WNT" }, { "id": "NZL_U23WNT" }, { "id": "CMR_U23WNT" }, { "id": "BRA_U23WNT" }], "matches": [ { "home_team": "GBR_U23WNT", "away_team": "NZL_U23WNT", "home_score": 1, "away_score": 0, "date": "2012-07-25", "time": "16:00", "stadium": "Millennium Stadium", "city": "Cardiffe" }, { "home_team": "CMR_U23WNT", "away_team": "BRA_U23WNT", "home_score": 0, "away_score": 5, "date": "2012-07-25", "time": "18:45", "stadium": "Millennium Stadium", "city": "Cardiffe" }, { "home_team": "NZL_U23WNT", "away_team": "BRA_U23WNT", "home_score": 0, "away_score": 1, "date": "2012-07-28", "time": "14:30", "stadium": "Millennium Stadium", "city": "Cardiffe" }, { "home_team": "GBR_U23WNT", "away_team": "CMR_U23WNT", "home_score": 3, "away_score": 0, "date": "2012-07-28", "time": "17:15", "stadium": "Millennium Stadium", "city": "Cardiffe" }, { "home_team": "NZL_U23WNT", "away_team": "CMR_U23WNT", "home_score": 3, "away_score": 1, "date": "2012-07-31", "time": "19:45", "stadium": "City of Coventry Stadium", "city": "Coventry" }, { "home_team": "GBR_U23WNT", "away_team": "BRA_U23WNT", "home_score": 1, "away_score": 0, "date": "2012-07-31", "time": "19:45", "stadium": "Wembley Stadium", "city": "London" } ] }, { "name": "Group F", "teams": [{ "id": "JPN_U23WNT" }, { "id": "CAN_U23WNT" }, { "id": "SWE_U23WNT" }, { "id": "RSA_U23WNT" }], "matches": [ { "home_team": "JPN_U23WNT", "away_team": "CAN_U23WNT", "home_score": 2, "away_score": 1, "date": "2012-07-25", "time": "17:00", "stadium": "City of Coventry Stadium", "city": "Coventry" }, { "home_team": "SWE_U23WNT", "away_team": "RSA_U23WNT", "home_score": 4, "away_score": 1, "date": "2012-07-25", "time": "19:45", "stadium": "City of Coventry Stadium", "city": "Coventry" }, { "home_team": "JPN_U23WNT", "away_team": "SWE_U23WNT", "home_score": 0, "away_score": 0, "date": "2012-07-28", "time": "12:00", "stadium": "City of Coventry Stadium", "city": "Coventry" }, { "home_team": "CAN_U23WNT", "away_team": "RSA_U23WNT", "home_score": 3, "away_score": 0, "date": "2012-07-28", "time": "14:45", "stadium": "City of Coventry Stadium", "city": "Coventry" }, { "home_team": "JPN_U23WNT", "away_team": "RSA_U23WNT", "home_score": 0, "away_score": 0, "date": "2012-07-31", "time": "14:30", "stadium": "Millennium Stadium", "city": "Cardiffe" }, { "home_team": "CAN_U23WNT", "away_team": "SWE_U23WNT", "home_score": 2, "away_score": 2, "date": "2012-07-31", "time": "14:30", "stadium": "St James' Park", "city": "Newcastle" } ] }, { "name": "Group G", "teams": [{ "id": "USA_U23WNT" }, { "id": "FRA_U23WNT" }, { "id": "COL_U23WNT" }, { "id": "PRK_U23WNT" }], "matches": [ { "home_team": "USA_U23WNT", "away_team": "FRA_U23WNT", "home_score": 4, "away_score": 2, "date": "2012-07-25", "time": "17:00", "stadium": "Hampden Park", "city": "Glasgow" }, { "home_team": "COL_U23WNT", "away_team": "PRK_U23WNT", "home_score": 0, "away_score": 2, "date": "2012-07-25", "time": "20:50", "stadium": "Hampden Park", "city": "Glasgow" }, { "home_team": "USA_U23WNT", "away_team": "COL_U23WNT", "home_score": 3, "away_score": 0, "date": "2012-07-28", "time": "17:00", "stadium": "Hampden Park", "city": "Glasgow" }, { "home_team": "FRA_U23WNT", "away_team": "PRK_U23WNT", "home_score": 5, "away_score": 0, "date": "2012-07-28", "time": "19:45", "stadium": "Hampden Park", "city": "Glasgow" }, { "home_team": "USA_U23WNT", "away_team": "PRK_U23WNT", "home_score": 1, "away_score": 0, "date": "2012-07-31", "time": "17:15", "stadium": "Old Trafford", "city": "Manchester" }, { "home_team": "FRA_U23WNT", "away_team": "COL_U23WNT", "home_score": 1, "away_score": 0, "date": "2012-07-31", "time": "17:15", "stadium": "St James' Park", "city": "Newcastle" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "SWE_U23WNT", "away_team": "FRA_U23WNT", "home_score": 1, "away_score": 2, "date": "2012-08-03", "time": "12:00", "stadium": "Hampden Park", "city": "Glasgow", "bracket_order": 3 }, { "home_team": "USA_U23WNT", "away_team": "NZL_U23WNT", "home_score": 2, "away_score": 0, "date": "2012-08-03", "time": "14:30", "stadium": "St James' Park", "city": "Newcastle", "bracket_order": 2 }, { "home_team": "BRA_U23WNT", "away_team": "JPN_U23WNT", "home_score": 0, "away_score": 2, "date": "2012-08-03", "time": "17:00", "stadium": "Millennium Stadium", "city": "Cardiffe", "bracket_order": 4 }, { "home_team": "GBR_U23WNT", "away_team": "CAN_U23WNT", "home_score": 0, "away_score": 2, "date": "2012-08-03", "time": "19:30", "stadium": "City of Coventry Stadium", "city": "Coventry", "bracket_order": 1 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "FRA_U23WNT", "away_team": "JPN_U23WNT", "home_score": 1, "away_score": 2, "date": "2012-08-06", "time": "17:00", "stadium": "Wembley Stadium", "city": "London", "bracket_order": 2 }, { "home_team": "CAN_U23WNT", "away_team": "USA_U23WNT", "home_score": 3, "away_score": 3, "home_extra_score": 0, "away_extra_score": 1, "date": "2012-08-06", "time": "19:45", "stadium": "Old Trafford", "city": "Manchester", "bracket_order": 1 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "CAN_U23WNT", "away_team": "FRA_U23WNT", "home_score": 1, "away_score": 0, "date": "2012-08-09", "time": "13:00", "stadium": "City of Coventry Stadium", "city": "Coventry" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "USA_U23WNT", "away_team": "JPN_U23WNT", "home_score": 2, "away_score": 1, "date": "2012-08-09", "time": "19:45", "stadium": "Wembley Stadium", "city": "London" } ] } ] } ] }
+{
+  "id": "WOFT2012",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": {
+        "teams": {
+          "auto": [1, 2],
+          "wild_card": { "pos": 3, "count": 2 },
+          "eliminated": [4],
+          "text": "The top 2 teams and the 2 best third-placed teams would advance to the Quarter-finals."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group E",
+          "teams": [{ "id": "GBR_U23WNT" }, { "id": "NZL_U23WNT" }, { "id": "CMR_U23WNT" }, { "id": "BRA_U23WNT" }],
+          "matches": [
+            {
+              "home_team": "GBR_U23WNT",
+              "away_team": "NZL_U23WNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2012-07-25",
+              "time": "16:00",
+              "stadium": "Millennium Stadium",
+              "city": "Cardiffe"
+            },
+            {
+              "home_team": "CMR_U23WNT",
+              "away_team": "BRA_U23WNT",
+              "home_score": 0,
+              "away_score": 5,
+              "date": "2012-07-25",
+              "time": "18:45",
+              "stadium": "Millennium Stadium",
+              "city": "Cardiffe"
+            },
+            {
+              "home_team": "NZL_U23WNT",
+              "away_team": "BRA_U23WNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2012-07-28",
+              "time": "14:30",
+              "stadium": "Millennium Stadium",
+              "city": "Cardiffe"
+            },
+            {
+              "home_team": "GBR_U23WNT",
+              "away_team": "CMR_U23WNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2012-07-28",
+              "time": "17:15",
+              "stadium": "Millennium Stadium",
+              "city": "Cardiffe"
+            },
+            {
+              "home_team": "NZL_U23WNT",
+              "away_team": "CMR_U23WNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2012-07-31",
+              "time": "19:45",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry"
+            },
+            {
+              "home_team": "GBR_U23WNT",
+              "away_team": "BRA_U23WNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2012-07-31",
+              "time": "19:45",
+              "stadium": "Wembley Stadium",
+              "city": "London"
+            }
+          ]
+        },
+        {
+          "name": "Group F",
+          "teams": [{ "id": "JPN_U23WNT" }, { "id": "CAN_U23WNT" }, { "id": "SWE_U23WNT" }, { "id": "RSA_U23WNT" }],
+          "matches": [
+            {
+              "home_team": "JPN_U23WNT",
+              "away_team": "CAN_U23WNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2012-07-25",
+              "time": "17:00",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry"
+            },
+            {
+              "home_team": "SWE_U23WNT",
+              "away_team": "RSA_U23WNT",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "2012-07-25",
+              "time": "19:45",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry"
+            },
+            {
+              "home_team": "JPN_U23WNT",
+              "away_team": "SWE_U23WNT",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2012-07-28",
+              "time": "12:00",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry"
+            },
+            {
+              "home_team": "CAN_U23WNT",
+              "away_team": "RSA_U23WNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2012-07-28",
+              "time": "14:45",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry"
+            },
+            {
+              "home_team": "JPN_U23WNT",
+              "away_team": "RSA_U23WNT",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2012-07-31",
+              "time": "14:30",
+              "stadium": "Millennium Stadium",
+              "city": "Cardiffe"
+            },
+            {
+              "home_team": "CAN_U23WNT",
+              "away_team": "SWE_U23WNT",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2012-07-31",
+              "time": "14:30",
+              "stadium": "St James' Park",
+              "city": "Newcastle"
+            }
+          ]
+        },
+        {
+          "name": "Group G",
+          "teams": [{ "id": "USA_U23WNT" }, { "id": "FRA_U23WNT" }, { "id": "COL_U23WNT" }, { "id": "PRK_U23WNT" }],
+          "matches": [
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "FRA_U23WNT",
+              "home_score": 4,
+              "away_score": 2,
+              "date": "2012-07-25",
+              "time": "17:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "COL_U23WNT",
+              "away_team": "PRK_U23WNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2012-07-25",
+              "time": "20:50",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "COL_U23WNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2012-07-28",
+              "time": "17:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "FRA_U23WNT",
+              "away_team": "PRK_U23WNT",
+              "home_score": 5,
+              "away_score": 0,
+              "date": "2012-07-28",
+              "time": "19:45",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "PRK_U23WNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2012-07-31",
+              "time": "17:15",
+              "stadium": "Old Trafford",
+              "city": "Manchester"
+            },
+            {
+              "home_team": "FRA_U23WNT",
+              "away_team": "COL_U23WNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2012-07-31",
+              "time": "17:15",
+              "stadium": "St James' Park",
+              "city": "Newcastle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "SWE_U23WNT",
+              "away_team": "FRA_U23WNT",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2012-08-03",
+              "time": "12:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "NZL_U23WNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2012-08-03",
+              "time": "14:30",
+              "stadium": "St James' Park",
+              "city": "Newcastle",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "BRA_U23WNT",
+              "away_team": "JPN_U23WNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2012-08-03",
+              "time": "17:00",
+              "stadium": "Millennium Stadium",
+              "city": "Cardiffe",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "GBR_U23WNT",
+              "away_team": "CAN_U23WNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2012-08-03",
+              "time": "19:30",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "FRA_U23WNT",
+              "away_team": "JPN_U23WNT",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2012-08-06",
+              "time": "17:00",
+              "stadium": "Wembley Stadium",
+              "city": "London",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "CAN_U23WNT",
+              "away_team": "USA_U23WNT",
+              "home_score": 3,
+              "away_score": 3,
+              "home_extra_score": 0,
+              "away_extra_score": 1,
+              "date": "2012-08-06",
+              "time": "19:45",
+              "stadium": "Old Trafford",
+              "city": "Manchester",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "CAN_U23WNT",
+              "away_team": "FRA_U23WNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2012-08-09",
+              "time": "13:00",
+              "stadium": "City of Coventry Stadium",
+              "city": "Coventry"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "JPN_U23WNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2012-08-09",
+              "time": "19:45",
+              "stadium": "Wembley Stadium",
+              "city": "London"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,289 @@
-{ "id": "GC1985", "stages": [ { "name": "First Round", "type": "roundrobin", "home_and_away": true, "eliminateCount": 3, "next_round": "Final Round", "advancement": { "teams": { "auto": [1], "eliminated": [2, 3], "text": "The winners would advance to the final round." } }, "groups": [ { "name": "Group 1", "teams": [{ "id": "SUR" }, { "id": "SLV" }, { "id": "HON" }], "matches": [ { "home_team": "SUR", "away_team": "SLV", "home_score": 0, "away_score": 3, "date": "1985-02-24", "time": "12:00", "stadium": "", "city": "San Salvador, El Salvador" }, { "home_team": "SLV", "away_team": "SUR", "home_score": 3, "away_score": 0, "date": "1985-02-27", "time": "12:00", "stadium": "", "city": "San Salvador, El Salvador" }, { "home_team": "SUR", "away_team": "HON", "home_score": 1, "away_score": 1, "date": "1985-03-03", "time": "12:00", "stadium": "", "city": "Tegucigalpa, Honduras" }, { "home_team": "HON", "away_team": "SUR", "home_score": 2, "away_score": 1, "date": "1985-03-06", "time": "12:00", "stadium": "", "city": "Tegucigalpa, Honduras" }, { "home_team": "SLV", "away_team": "HON", "home_score": 1, "away_score": 2, "date": "1985-03-10", "time": "12:00", "stadium": "Estadio Cuscatlán", "city": "San Salvador, El Salvador" }, { "home_team": "HON", "away_team": "SLV", "home_score": 0, "away_score": 0, "date": "1985-03-14", "time": "12:00", "stadium": "", "city": "Tegucigalpa, Honduras" } ] }, { "name": "Group 2", "teams": [{ "id": "CAN" }, { "id": "HAI-1964-1986" }, { "id": "GUA" }], "matches": [ { "home_team": "CAN", "away_team": "HAI-1964-1986", "home_score": 2, "away_score": 0, "date": "1985-04-13", "time": "12:00", "stadium": "", "city": "Victoria, Canada" }, { "home_team": "CAN", "away_team": "GUA", "home_score": 2, "away_score": 1, "date": "1985-04-20", "time": "12:00", "stadium": "", "city": "Victoria, Canada" }, { "home_team": "HAI-1964-1986", "away_team": "GUA", "home_score": 0, "away_score": 1, "date": "1985-04-26", "time": "12:00", "stadium": "", "city": "Port-au-Prince, Haiti" }, { "home_team": "GUA", "away_team": "CAN", "home_score": 1, "away_score": 1, "date": "1985-05-05", "time": "12:00", "stadium": "", "city": "Guatemala City, Guatemala" }, { "home_team": "HAI-1964-1986", "away_team": "CAN", "home_score": 0, "away_score": 2, "date": "1985-05-08", "time": "12:00", "stadium": "", "city": "Port-au-Prince, Haiti" }, { "home_team": "GUA", "away_team": "HAI-1964-1986", "home_score": 4, "away_score": 0, "date": "1985-05-15", "time": "12:00", "stadium": "", "city": "Guatemala City, Guatemala" } ] }, { "name": "Group 3", "teams": [{ "id": "TRI" }, { "id": "CRC" }, { "id": "USA" }], "matches": [ { "home_team": "TRI", "away_team": "CRC", "home_score": 0, "away_score": 3, "date": "1985-04-24", "time": "12:00", "stadium": "", "city": "San José, Costa Rica" }, { "home_team": "CRC", "away_team": "TRI", "home_score": 1, "away_score": 1, "date": "1985-04-28", "time": "12:00", "stadium": "", "city": "San José, Costa Rica" }, { "home_team": "TRI", "away_team": "USA", "home_score": 1, "away_score": 2, "date": "1985-05-15", "time": "12:00", "stadium": "", "city": "St. Louis, United States" }, { "home_team": "USA", "away_team": "TRI", "home_score": 1, "away_score": 0, "date": "1985-05-19", "time": "12:00", "stadium": "Murdock Stadium", "city": "Torrance, United States" }, { "home_team": "CRC", "away_team": "USA", "home_score": 1, "away_score": 1, "date": "1985-05-26", "time": "12:00", "stadium": "", "city": "Alajuela, Costa Rica" }, { "home_team": "USA", "away_team": "CRC", "home_score": 0, "away_score": 1, "date": "1985-05-31", "time": "12:00", "stadium": "Murdock Stadium", "city": "Torrance, United States" } ] } ] }, { "name": "Final Round", "type": "roundrobin", "championship_round": true, "home_and_away": true, "eliminateCount": 0, "advancement": { "teams": { "text": "The winner would win the CONCACAF Championship." } }, "groups": [ { "name": "Final Round", "teams": [{ "id": "CRC" }, { "id": "HON" }, { "id": "CAN" }], "matches": [ { "home_team": "CRC", "away_team": "HON", "home_score": 2, "away_score": 2, "date": "1985-08-11", "time": "12:00", "stadium": "", "city": "San José, Costa Rica" }, { "home_team": "CAN", "away_team": "CRC", "home_score": 1, "away_score": 1, "date": "1985-08-17", "time": "12:00", "stadium": "Varsity Stadium", "city": "Toronto, Canada" }, { "home_team": "HON", "away_team": "CAN", "home_score": 0, "away_score": 1, "date": "1985-08-25", "time": "12:00", "stadium": "Estadio Tiburcio Carías Andino", "city": "Tegucigalpa, Honduras" }, { "home_team": "CRC", "away_team": "CAN", "home_score": 0, "away_score": 0, "date": "1985-09-01", "time": "12:00", "stadium": "Estadio Nacional", "city": "San José, Costa Rica" }, { "home_team": "HON", "away_team": "CRC", "home_score": 3, "away_score": 1, "date": "1985-09-08", "time": "12:00", "stadium": "", "city": "Tegucigalpa, Honduras" }, { "home_team": "CAN", "away_team": "HON", "home_score": 2, "away_score": 1, "date": "1985-09-14", "time": "12:00", "stadium": "King George V Park", "city": "St. John's, Canada" } ] } ] } ] }
+{
+  "id": "GC1985",
+  "stages": [
+    {
+      "name": "First Round",
+      "type": "roundrobin",
+      "home_and_away": true,
+      "eliminate_count": 3,
+      "next_round": "Final Round",
+      "advancement": { "teams": { "auto": [1], "eliminated": [2, 3], "text": "The winners would advance to the final round." } },
+      "groups": [
+        {
+          "name": "Group 1",
+          "teams": [{ "id": "SUR" }, { "id": "SLV" }, { "id": "HON" }],
+          "matches": [
+            {
+              "home_team": "SUR",
+              "away_team": "SLV",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "1985-02-24",
+              "time": "12:00",
+              "stadium": "",
+              "city": "San Salvador, El Salvador"
+            },
+            {
+              "home_team": "SLV",
+              "away_team": "SUR",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1985-02-27",
+              "time": "12:00",
+              "stadium": "",
+              "city": "San Salvador, El Salvador"
+            },
+            {
+              "home_team": "SUR",
+              "away_team": "HON",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1985-03-03",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Tegucigalpa, Honduras"
+            },
+            {
+              "home_team": "HON",
+              "away_team": "SUR",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1985-03-06",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Tegucigalpa, Honduras"
+            },
+            {
+              "home_team": "SLV",
+              "away_team": "HON",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "1985-03-10",
+              "time": "12:00",
+              "stadium": "Estadio Cuscatlán",
+              "city": "San Salvador, El Salvador"
+            },
+            {
+              "home_team": "HON",
+              "away_team": "SLV",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1985-03-14",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Tegucigalpa, Honduras"
+            }
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [{ "id": "CAN" }, { "id": "HAI-1964-1986" }, { "id": "GUA" }],
+          "matches": [
+            {
+              "home_team": "CAN",
+              "away_team": "HAI-1964-1986",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1985-04-13",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Victoria, Canada"
+            },
+            {
+              "home_team": "CAN",
+              "away_team": "GUA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1985-04-20",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Victoria, Canada"
+            },
+            {
+              "home_team": "HAI-1964-1986",
+              "away_team": "GUA",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1985-04-26",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Port-au-Prince, Haiti"
+            },
+            {
+              "home_team": "GUA",
+              "away_team": "CAN",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1985-05-05",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Guatemala City, Guatemala"
+            },
+            {
+              "home_team": "HAI-1964-1986",
+              "away_team": "CAN",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "1985-05-08",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Port-au-Prince, Haiti"
+            },
+            {
+              "home_team": "GUA",
+              "away_team": "HAI-1964-1986",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "1985-05-15",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Guatemala City, Guatemala"
+            }
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [{ "id": "TRI" }, { "id": "CRC" }, { "id": "USA" }],
+          "matches": [
+            {
+              "home_team": "TRI",
+              "away_team": "CRC",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "1985-04-24",
+              "time": "12:00",
+              "stadium": "",
+              "city": "San José, Costa Rica"
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "TRI",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1985-04-28",
+              "time": "12:00",
+              "stadium": "",
+              "city": "San José, Costa Rica"
+            },
+            {
+              "home_team": "TRI",
+              "away_team": "USA",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "1985-05-15",
+              "time": "12:00",
+              "stadium": "",
+              "city": "St. Louis, United States"
+            },
+            {
+              "home_team": "USA",
+              "away_team": "TRI",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1985-05-19",
+              "time": "12:00",
+              "stadium": "Murdock Stadium",
+              "city": "Torrance, United States"
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "USA",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1985-05-26",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Alajuela, Costa Rica"
+            },
+            {
+              "home_team": "USA",
+              "away_team": "CRC",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1985-05-31",
+              "time": "12:00",
+              "stadium": "Murdock Stadium",
+              "city": "Torrance, United States"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Final Round",
+      "type": "roundrobin",
+      "championship_round": true,
+      "home_and_away": true,
+      "eliminate_count": 0,
+      "advancement": { "teams": { "text": "The winner would win the CONCACAF Championship." } },
+      "groups": [
+        {
+          "name": "Final Round",
+          "teams": [{ "id": "CRC" }, { "id": "HON" }, { "id": "CAN" }],
+          "matches": [
+            {
+              "home_team": "CRC",
+              "away_team": "HON",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "1985-08-11",
+              "time": "12:00",
+              "stadium": "",
+              "city": "San José, Costa Rica"
+            },
+            {
+              "home_team": "CAN",
+              "away_team": "CRC",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1985-08-17",
+              "time": "12:00",
+              "stadium": "Varsity Stadium",
+              "city": "Toronto, Canada"
+            },
+            {
+              "home_team": "HON",
+              "away_team": "CAN",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1985-08-25",
+              "time": "12:00",
+              "stadium": "Estadio Tiburcio Carías Andino",
+              "city": "Tegucigalpa, Honduras"
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "CAN",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1985-09-01",
+              "time": "12:00",
+              "stadium": "Estadio Nacional",
+              "city": "San José, Costa Rica"
+            },
+            {
+              "home_team": "HON",
+              "away_team": "CRC",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1985-09-08",
+              "time": "12:00",
+              "stadium": "",
+              "city": "Tegucigalpa, Honduras"
+            },
+            {
+              "home_team": "CAN",
+              "away_team": "HON",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1985-09-14",
+              "time": "12:00",
+              "stadium": "King George V Park",
+              "city": "St. John's, Canada"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

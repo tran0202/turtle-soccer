@@ -1,1 +1,248 @@
-{ "id": "MOFT1936", "stages": [ { "name": "Knockout Stage", "type": "knockout", "teams": [ { "id": "ITA-1861-1946_U23MNT" }, { "id": "USA_U23MNT" }, { "id": "NOR_U23MNT" }, { "id": "TUR_U23MNT" }, { "id": "JPN_U23MNT" }, { "id": "SWE_U23MNT" }, { "id": "GER-1935-1945_U23MNT" }, { "id": "LUX_U23MNT" }, { "id": "POL_U23MNT" }, { "id": "HUN-1919-1946_U23MNT" }, { "id": "AUT_U23MNT" }, { "id": "EGY-1922-1953_U23MNT" }, { "id": "PER_U23MNT" }, { "id": "FIN_U23MNT" }, { "id": "GBR_U23MNT" }, { "id": "TPE-1924-1949_U23MNT" } ], "rounds": [ { "name": "First round", "short_name": "1/8", "eliminateCount": 8, "next_round": "Quarter-finals", "matches": [ { "home_team": "ITA-1861-1946_U23MNT", "away_team": "USA_U23MNT", "home_score": 1, "away_score": 0, "date": "1936-08-03", "time": "17:30", "stadium": "Poststadion", "city": "Berlin", "bracket_order": 1 }, { "home_team": "NOR_U23MNT", "away_team": "TUR_U23MNT", "home_score": 4, "away_score": 0, "date": "1936-08-03", "time": "17:30", "stadium": "Mommsenstadion", "city": "Berlin", "bracket_order": 3 }, { "home_team": "JPN_U23MNT", "away_team": "SWE_U23MNT", "home_score": 3, "away_score": 2, "date": "1936-08-04", "time": "17:30", "stadium": "Hertha-BSC-Platz", "city": "Berlin", "bracket_order": 2 }, { "home_team": "GER-1935-1945_U23MNT", "away_team": "LUX_U23MNT", "home_score": 9, "away_score": 0, "date": "1936-08-04", "time": "17:30", "stadium": "Poststadion", "city": "Berlin", "bracket_order": 4 }, { "home_team": "POL_U23MNT", "away_team": "HUN-1919-1946_U23MNT", "home_score": 3, "away_score": 0, "date": "1936-08-05", "time": "17:30", "stadium": "Poststadion", "city": "Berlin", "bracket_order": 7 }, { "home_team": "AUT_U23MNT", "away_team": "EGY-1922-1953_U23MNT", "home_score": 3, "away_score": 1, "date": "1936-08-05", "time": "17:30", "stadium": "Mommsenstadion", "city": "Berlin", "bracket_order": 5 }, { "home_team": "PER_U23MNT", "away_team": "FIN_U23MNT", "home_score": 7, "away_score": 3, "date": "1936-08-06", "time": "17:30", "stadium": "Hertha-BSC-Platz", "city": "Berlin", "bracket_order": 6 }, { "home_team": "GBR_U23MNT", "away_team": "TPE-1924-1949_U23MNT", "home_score": 2, "away_score": 0, "date": "1936-08-06", "time": "17:30", "stadium": "Mommsenstadion", "city": "Berlin", "bracket_order": 8 } ] }, { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "ITA-1861-1946_U23MNT", "away_team": "JPN_U23MNT", "home_score": 8, "away_score": 0, "date": "1936-08-07", "time": "17:30", "stadium": "Mommsenstadion", "city": "Berlin", "bracket_order": 1 }, { "home_team": "GER-1935-1945_U23MNT", "away_team": "NOR_U23MNT", "home_score": 0, "away_score": 2, "date": "1936-08-07", "time": "17:30", "stadium": "Poststadion", "city": "Berlin", "bracket_order": 2 }, { "home_team": "POL_U23MNT", "away_team": "GBR_U23MNT", "home_score": 5, "away_score": 4, "date": "1936-08-08", "time": "17:30", "stadium": "Poststadion", "city": "Berlin", "bracket_order": 4 }, { "home_team": "PER_U23MNT", "away_team": "AUT_U23MNT", "home_score": 2, "away_score": 2, "home_extra_score": 2, "away_extra_score": 0, "match_void": true, "void_notes": "Due to a pitch invasion, the match was declared null and void, and ordered to be replayed. Peru objected to the replay decision and withdrew from the tournament.", "home_withdrew": true, "date": "1936-08-08", "time": "17:30", "stadium": "Hertha-BSC-Platz", "city": "Berlin", "bracket_order": 3 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "ITA-1861-1946_U23MNT", "away_team": "NOR_U23MNT", "home_score": 1, "away_score": 1, "home_extra_score": 1, "away_extra_score": 0, "date": "1936-08-10", "time": "17:00", "stadium": "Olympic Stadium", "city": "Berlin", "bracket_order": 1 }, { "home_team": "AUT_U23MNT", "away_team": "POL_U23MNT", "home_score": 3, "away_score": 1, "date": "1936-08-11", "time": "17:00", "stadium": "Olympic Stadium", "city": "Berlin", "bracket_order": 1 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "NOR_U23MNT", "away_team": "POL_U23MNT", "home_score": 3, "away_score": 2, "date": "1936-08-13", "time": "16:00", "stadium": "Olympic Stadium", "city": "Berlin" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "ITA-1861-1946_U23MNT", "away_team": "AUT_U23MNT", "home_score": 1, "away_score": 1, "home_extra_score": 1, "away_extra_score": 0, "date": "1936-08-15", "time": "16:00", "stadium": "Olympic Stadium", "city": "Berlin" } ] } ] } ] }
+{
+  "id": "MOFT1936",
+  "stages": [
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "teams": [
+        { "id": "ITA-1861-1946_U23MNT" },
+        { "id": "USA_U23MNT" },
+        { "id": "NOR_U23MNT" },
+        { "id": "TUR_U23MNT" },
+        { "id": "JPN_U23MNT" },
+        { "id": "SWE_U23MNT" },
+        { "id": "GER-1935-1945_U23MNT" },
+        { "id": "LUX_U23MNT" },
+        { "id": "POL_U23MNT" },
+        { "id": "HUN-1919-1946_U23MNT" },
+        { "id": "AUT_U23MNT" },
+        { "id": "EGY-1922-1953_U23MNT" },
+        { "id": "PER_U23MNT" },
+        { "id": "FIN_U23MNT" },
+        { "id": "GBR_U23MNT" },
+        { "id": "TPE-1924-1949_U23MNT" }
+      ],
+      "rounds": [
+        {
+          "name": "First round",
+          "short_name": "1/8",
+          "eliminate_count": 8,
+          "next_round": "Quarter-finals",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "USA_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1936-08-03",
+              "time": "17:30",
+              "stadium": "Poststadion",
+              "city": "Berlin",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "NOR_U23MNT",
+              "away_team": "TUR_U23MNT",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "1936-08-03",
+              "time": "17:30",
+              "stadium": "Mommsenstadion",
+              "city": "Berlin",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "JPN_U23MNT",
+              "away_team": "SWE_U23MNT",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1936-08-04",
+              "time": "17:30",
+              "stadium": "Hertha-BSC-Platz",
+              "city": "Berlin",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "GER-1935-1945_U23MNT",
+              "away_team": "LUX_U23MNT",
+              "home_score": 9,
+              "away_score": 0,
+              "date": "1936-08-04",
+              "time": "17:30",
+              "stadium": "Poststadion",
+              "city": "Berlin",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "POL_U23MNT",
+              "away_team": "HUN-1919-1946_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1936-08-05",
+              "time": "17:30",
+              "stadium": "Poststadion",
+              "city": "Berlin",
+              "bracket_order": 7
+            },
+            {
+              "home_team": "AUT_U23MNT",
+              "away_team": "EGY-1922-1953_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1936-08-05",
+              "time": "17:30",
+              "stadium": "Mommsenstadion",
+              "city": "Berlin",
+              "bracket_order": 5
+            },
+            {
+              "home_team": "PER_U23MNT",
+              "away_team": "FIN_U23MNT",
+              "home_score": 7,
+              "away_score": 3,
+              "date": "1936-08-06",
+              "time": "17:30",
+              "stadium": "Hertha-BSC-Platz",
+              "city": "Berlin",
+              "bracket_order": 6
+            },
+            {
+              "home_team": "GBR_U23MNT",
+              "away_team": "TPE-1924-1949_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1936-08-06",
+              "time": "17:30",
+              "stadium": "Mommsenstadion",
+              "city": "Berlin",
+              "bracket_order": 8
+            }
+          ]
+        },
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "JPN_U23MNT",
+              "home_score": 8,
+              "away_score": 0,
+              "date": "1936-08-07",
+              "time": "17:30",
+              "stadium": "Mommsenstadion",
+              "city": "Berlin",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "GER-1935-1945_U23MNT",
+              "away_team": "NOR_U23MNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "1936-08-07",
+              "time": "17:30",
+              "stadium": "Poststadion",
+              "city": "Berlin",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "POL_U23MNT",
+              "away_team": "GBR_U23MNT",
+              "home_score": 5,
+              "away_score": 4,
+              "date": "1936-08-08",
+              "time": "17:30",
+              "stadium": "Poststadion",
+              "city": "Berlin",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "PER_U23MNT",
+              "away_team": "AUT_U23MNT",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 2,
+              "away_extra_score": 0,
+              "match_void": true,
+              "void_notes": "Due to a pitch invasion, the match was declared null and void, and ordered to be replayed. Peru objected to the replay decision and withdrew from the tournament.",
+              "home_withdrew": true,
+              "date": "1936-08-08",
+              "time": "17:30",
+              "stadium": "Hertha-BSC-Platz",
+              "city": "Berlin",
+              "bracket_order": 3
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "NOR_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "1936-08-10",
+              "time": "17:00",
+              "stadium": "Olympic Stadium",
+              "city": "Berlin",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "AUT_U23MNT",
+              "away_team": "POL_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1936-08-11",
+              "time": "17:00",
+              "stadium": "Olympic Stadium",
+              "city": "Berlin",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "NOR_U23MNT",
+              "away_team": "POL_U23MNT",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1936-08-13",
+              "time": "16:00",
+              "stadium": "Olympic Stadium",
+              "city": "Berlin"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "AUT_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "1936-08-15",
+              "time": "16:00",
+              "stadium": "Olympic Stadium",
+              "city": "Berlin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

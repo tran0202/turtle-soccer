@@ -1,1 +1,405 @@
-{ "id": "WC1970", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 8, "next_round": "Quarter-finals", "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } }, "groups": [ { "name": "Group 1", "tiebreak_pts_gd": true, "teams": [{ "id": "MEX" }, { "id": "URS" }, { "id": "BEL" }, { "id": "SLV" }], "matches": [ { "home_team": "MEX", "away_team": "URS", "home_score": 0, "away_score": 0, "date": "1970-05-31", "time": "12:00", "stadium": "Estadio Azteca", "city": "Mexico City" }, { "home_team": "BEL", "away_team": "SLV", "home_score": 3, "away_score": 0, "date": "1970-06-03", "time": "16:00", "stadium": "Estadio Azteca", "city": "Mexico City" }, { "home_team": "URS", "away_team": "BEL", "home_score": 4, "away_score": 1, "date": "1970-06-06", "time": "16:00", "stadium": "Estadio Azteca", "city": "Mexico City" }, { "home_team": "MEX", "away_team": "SLV", "home_score": 4, "away_score": 0, "date": "1970-06-07", "time": "12:00", "stadium": "Estadio Azteca", "city": "Mexico City" }, { "home_team": "URS", "away_team": "SLV", "home_score": 2, "away_score": 0, "date": "1970-06-10", "time": "16:00", "stadium": "Estadio Azteca", "city": "Mexico City" }, { "home_team": "MEX", "away_team": "BEL", "home_score": 1, "away_score": 0, "date": "1970-06-11", "time": "16:00", "stadium": "Estadio Azteca", "city": "Mexico City" } ] }, { "name": "Group 2", "teams": [{ "id": "URU" }, { "id": "ISR" }, { "id": "ITA" }, { "id": "SWE" }], "matches": [ { "home_team": "URU", "away_team": "ISR", "home_score": 2, "away_score": 0, "date": "1970-06-02", "time": "16:00", "stadium": "Estadio Cuauhtemoc", "city": "Puebla" }, { "home_team": "ITA", "away_team": "SWE", "home_score": 1, "away_score": 0, "date": "1970-06-03", "time": "16:00", "stadium": "Estadio Luis Dosal", "city": "Toluca" }, { "home_team": "URU", "away_team": "ITA", "home_score": 0, "away_score": 0, "date": "1970-06-06", "time": "16:00", "stadium": "Estadio Cuauhtemoc", "city": "Puebla" }, { "home_team": "SWE", "away_team": "ISR", "home_score": 1, "away_score": 1, "date": "1970-06-07", "time": "12:00", "stadium": "Estadio Luis Dosal", "city": "Toluca" }, { "home_team": "SWE", "away_team": "URU", "home_score": 1, "away_score": 0, "date": "1970-06-10", "time": "16:00", "stadium": "Estadio Cuauhtemoc", "city": "Puebla" }, { "home_team": "ITA", "away_team": "ISR", "home_score": 0, "away_score": 0, "date": "1970-06-11", "time": "16:00", "stadium": "Estadio Luis Dosal", "city": "Toluca" } ] }, { "name": "Group 3", "teams": [{ "id": "ROU-1965-1989" }, { "id": "ENG" }, { "id": "TCH" }, { "id": "BRA" }], "matches": [ { "home_team": "ENG", "away_team": "ROU-1965-1989", "home_score": 1, "away_score": 0, "date": "1970-06-02", "time": "16:00", "stadium": "Estadio Jalisco", "city": "Guadalajara" }, { "home_team": "BRA", "away_team": "TCH", "home_score": 4, "away_score": 1, "date": "1970-06-03", "time": "16:00", "stadium": "Estadio Jalisco", "city": "Guadalajara" }, { "home_team": "ROU-1965-1989", "away_team": "TCH", "home_score": 2, "away_score": 1, "date": "1970-06-06", "time": "16:00", "stadium": "Estadio Jalisco", "city": "Guadalajara" }, { "home_team": "BRA", "away_team": "ENG", "home_score": 1, "away_score": 0, "date": "1970-06-07", "time": "12:00", "stadium": "Estadio Jalisco", "city": "Guadalajara" }, { "home_team": "BRA", "away_team": "ROU-1965-1989", "home_score": 3, "away_score": 2, "date": "1970-06-10", "time": "16:00", "stadium": "Estadio Jalisco", "city": "Guadalajara" }, { "home_team": "ENG", "away_team": "TCH", "home_score": 1, "away_score": 0, "date": "1970-06-11", "time": "16:00", "stadium": "Estadio Jalisco", "city": "Guadalajara" } ] }, { "name": "Group 4", "teams": [{ "id": "PER" }, { "id": "BUL-1967-1971" }, { "id": "GER-1949-1990" }, { "id": "MAR" }], "matches": [ { "home_team": "PER", "away_team": "BUL-1967-1971", "home_score": 3, "away_score": 2, "date": "1970-06-02", "time": "16:00", "stadium": "Estadio Nou Camp", "city": "León" }, { "home_team": "GER-1949-1990", "away_team": "MAR", "home_score": 2, "away_score": 1, "date": "1970-06-03", "time": "16:00", "stadium": "Estadio Nou Camp", "city": "León" }, { "home_team": "PER", "away_team": "MAR", "home_score": 3, "away_score": 0, "date": "1970-06-06", "time": "16:00", "stadium": "Estadio Nou Camp", "city": "León" }, { "home_team": "GER-1949-1990", "away_team": "BUL-1967-1971", "home_score": 5, "away_score": 2, "date": "1970-06-07", "time": "12:00", "stadium": "Estadio Nou Camp", "city": "León" }, { "home_team": "GER-1949-1990", "away_team": "PER", "home_score": 3, "away_score": 1, "date": "1970-06-10", "time": "16:00", "stadium": "Estadio Nou Camp", "city": "León" }, { "home_team": "BUL-1967-1971", "away_team": "MAR", "home_score": 1, "away_score": 1, "date": "1970-06-11", "time": "16:00", "stadium": "Estadio Nou Camp", "city": "León" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "URS", "away_team": "URU", "home_score": 0, "away_score": 0, "home_extra_score": 0, "away_extra_score": 1, "date": "1970-06-14", "time": "12:00", "stadium": "Estadio Azteca", "city": "Mexico City", "bracket_order": 1 }, { "home_team": "ITA", "away_team": "MEX", "home_score": 4, "away_score": 1, "date": "1970-06-14", "time": "12:00", "stadium": "Estadio Luis Dosal", "city": "Toluca", "bracket_order": 3 }, { "home_team": "BRA", "away_team": "PER", "home_score": 4, "away_score": 2, "date": "1970-06-14", "time": "12:00", "stadium": "Estadio Jalisco", "city": "Guadalajara", "bracket_order": 2 }, { "home_team": "GER-1949-1990", "away_team": "ENG", "home_score": 2, "away_score": 2, "home_extra_score": 1, "away_extra_score": 0, "date": "1970-06-14", "time": "12:00", "stadium": "Estadio Nou Camp", "city": "León", "bracket_order": 4 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "URU", "away_team": "BRA", "home_score": 1, "away_score": 3, "date": "1970-06-17", "time": "16:00", "stadium": "Estadio Jalisco", "city": "Guadalajara", "bracket_order": 1 }, { "home_team": "ITA", "away_team": "GER-1949-1990", "home_score": 1, "away_score": 1, "home_extra_score": 3, "away_extra_score": 2, "date": "1970-06-17", "time": "16:00", "stadium": "Estadio Azteca", "city": "Mexico City", "bracket_order": 2 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "URU", "away_team": "GER-1949-1990", "home_score": 0, "away_score": 1, "date": "1970-06-20", "time": "16:00", "stadium": "Estadio Azteca", "city": "Mexico City" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "BRA", "away_team": "ITA", "home_score": 4, "away_score": 1, "date": "1970-06-21", "time": "12:00", "stadium": "Estadio Azteca", "city": "Mexico City" } ] } ] } ] }
+{
+  "id": "WC1970",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } },
+      "groups": [
+        {
+          "name": "Group 1",
+          "tiebreak_pts_gd": true,
+          "teams": [{ "id": "MEX" }, { "id": "URS" }, { "id": "BEL" }, { "id": "SLV" }],
+          "matches": [
+            {
+              "home_team": "MEX",
+              "away_team": "URS",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1970-05-31",
+              "time": "12:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            },
+            {
+              "home_team": "BEL",
+              "away_team": "SLV",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1970-06-03",
+              "time": "16:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            },
+            {
+              "home_team": "URS",
+              "away_team": "BEL",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1970-06-06",
+              "time": "16:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            },
+            {
+              "home_team": "MEX",
+              "away_team": "SLV",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "1970-06-07",
+              "time": "12:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            },
+            {
+              "home_team": "URS",
+              "away_team": "SLV",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1970-06-10",
+              "time": "16:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            },
+            {
+              "home_team": "MEX",
+              "away_team": "BEL",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1970-06-11",
+              "time": "16:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            }
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [{ "id": "URU" }, { "id": "ISR" }, { "id": "ITA" }, { "id": "SWE" }],
+          "matches": [
+            {
+              "home_team": "URU",
+              "away_team": "ISR",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1970-06-02",
+              "time": "16:00",
+              "stadium": "Estadio Cuauhtemoc",
+              "city": "Puebla"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "SWE",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1970-06-03",
+              "time": "16:00",
+              "stadium": "Estadio Luis Dosal",
+              "city": "Toluca"
+            },
+            {
+              "home_team": "URU",
+              "away_team": "ITA",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1970-06-06",
+              "time": "16:00",
+              "stadium": "Estadio Cuauhtemoc",
+              "city": "Puebla"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "ISR",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1970-06-07",
+              "time": "12:00",
+              "stadium": "Estadio Luis Dosal",
+              "city": "Toluca"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "URU",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1970-06-10",
+              "time": "16:00",
+              "stadium": "Estadio Cuauhtemoc",
+              "city": "Puebla"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "ISR",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1970-06-11",
+              "time": "16:00",
+              "stadium": "Estadio Luis Dosal",
+              "city": "Toluca"
+            }
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [{ "id": "ROU-1965-1989" }, { "id": "ENG" }, { "id": "TCH" }, { "id": "BRA" }],
+          "matches": [
+            {
+              "home_team": "ENG",
+              "away_team": "ROU-1965-1989",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1970-06-02",
+              "time": "16:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "TCH",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1970-06-03",
+              "time": "16:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara"
+            },
+            {
+              "home_team": "ROU-1965-1989",
+              "away_team": "TCH",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1970-06-06",
+              "time": "16:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "ENG",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1970-06-07",
+              "time": "12:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "ROU-1965-1989",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1970-06-10",
+              "time": "16:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara"
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "TCH",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1970-06-11",
+              "time": "16:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara"
+            }
+          ]
+        },
+        {
+          "name": "Group 4",
+          "teams": [{ "id": "PER" }, { "id": "BUL-1967-1971" }, { "id": "GER-1949-1990" }, { "id": "MAR" }],
+          "matches": [
+            {
+              "home_team": "PER",
+              "away_team": "BUL-1967-1971",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1970-06-02",
+              "time": "16:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León"
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "MAR",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1970-06-03",
+              "time": "16:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León"
+            },
+            {
+              "home_team": "PER",
+              "away_team": "MAR",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1970-06-06",
+              "time": "16:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León"
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "BUL-1967-1971",
+              "home_score": 5,
+              "away_score": 2,
+              "date": "1970-06-07",
+              "time": "12:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León"
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "PER",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1970-06-10",
+              "time": "16:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León"
+            },
+            {
+              "home_team": "BUL-1967-1971",
+              "away_team": "MAR",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "1970-06-11",
+              "time": "16:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "URS",
+              "away_team": "URU",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 1,
+              "date": "1970-06-14",
+              "time": "12:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "MEX",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1970-06-14",
+              "time": "12:00",
+              "stadium": "Estadio Luis Dosal",
+              "city": "Toluca",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "PER",
+              "home_score": 4,
+              "away_score": 2,
+              "date": "1970-06-14",
+              "time": "12:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "ENG",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "1970-06-14",
+              "time": "12:00",
+              "stadium": "Estadio Nou Camp",
+              "city": "León",
+              "bracket_order": 4
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "URU",
+              "away_team": "BRA",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "1970-06-17",
+              "time": "16:00",
+              "stadium": "Estadio Jalisco",
+              "city": "Guadalajara",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "GER-1949-1990",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 3,
+              "away_extra_score": 2,
+              "date": "1970-06-17",
+              "time": "16:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "URU",
+              "away_team": "GER-1949-1990",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1970-06-20",
+              "time": "16:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "BRA",
+              "away_team": "ITA",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1970-06-21",
+              "time": "12:00",
+              "stadium": "Estadio Azteca",
+              "city": "Mexico City"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

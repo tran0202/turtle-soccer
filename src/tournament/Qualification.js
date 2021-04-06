@@ -1,8 +1,8 @@
 import React from 'react'
 import About from './About'
 import QualificationHeader from './QualificationHeader'
-// import Matches from './Matches'
-// import Groups from './Groups'
+import Matches from './Matches'
+import Groups from './groups/Groups'
 import { Nav, NavItem, NavLink, Row } from 'reactstrap'
 
 const ConfederationLinks = (props) => {
@@ -32,6 +32,7 @@ const Qualification = (props) => {
   const { cid, qPage } = query
   const { qualification } = tournament
   const qState = { qualification, competition }
+  const qState2 = { tournament: qualification, competition }
   // console.log('qualification', qualification)
 
   return (
@@ -42,14 +43,8 @@ const Qualification = (props) => {
           <ConfederationLinks query={query} config={qualification.config} />
           {cid !== 'QUALIFIED' && <QualificationHeader qState={qState} query={query} />}
           {qPage === 'about' && <About tournament={qualification} />}
-          {/* {qualification.existed && (
-            <React.Fragment>
-              {cid !== 'QUALIFIED' && <QualificationHeader qTournament={qualification} query={query} tournamentType={tournamentType} />}
-              {qPage === 'about' && <About tournament={qualification} tournamentType={tournamentType} />}
-              {qPage === 'matches' && <Matches tournament={qualification} tournamentType={tournamentType} />}
-              {(qPage === 'groups' || qPage === 'standings') && <Groups tournament={qualification} tournamentType={tournamentType} />}
-            </React.Fragment>
-          )} */}
+          {qPage === 'matches' && <Matches state={qState2} />}
+          {(qPage === 'groups' || qPage === 'standings') && <Groups state={qState2} />}
         </React.Fragment>
       )}
     </React.Fragment>

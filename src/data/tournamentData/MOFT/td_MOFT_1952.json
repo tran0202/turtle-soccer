@@ -1,1 +1,375 @@
-{ "id": "MOFT1952", "stages": [ { "name": "Knockout Stage", "type": "knockout", "teams": [ { "id": "POL_U23MNT" }, { "id": "FRA_U23MNT" }, { "id": "HUN-1949-1956_U23MNT" }, { "id": "ROU-1952-1965_U23MNT" }, { "id": "YUG-1945-1992_U23MNT" }, { "id": "IND_U23MNT" }, { "id": "DEN_U23MNT" }, { "id": "GRE_U23MNT" }, { "id": "URS_U23MNT" }, { "id": "BUL-1948-1967_U23MNT" }, { "id": "ITA_U23MNT" }, { "id": "USA_U23MNT" }, { "id": "BRA_U23MNT" }, { "id": "NED_U23MNT" }, { "id": "LUX_U23MNT" }, { "id": "GBR_U23MNT" }, { "id": "EGY-1922-1953_U23MNT" }, { "id": "CHI_U23MNT" }, { "id": "FIN_U23MNT" }, { "id": "AUT_U23MNT" }, { "id": "GER_U23MNT" }, { "id": "SWE_U23MNT" }, { "id": "NOR_U23MNT" }, { "id": "TUR_U23MNT" }, { "id": "ANT-1959-1986_U23MNT" } ], "rounds": [ { "name": "Preliminary Round", "short_name": "1/16", "eliminateCount": 16, "next_round": "First Round", "bye_teams": [ { "id": "FIN_U23MNT" }, { "id": "AUT_U23MNT" }, { "id": "GER_U23MNT" }, { "id": "SWE_U23MNT" }, { "id": "NOR_U23MNT" }, { "id": "TUR_U23MNT" }, { "id": "ANT-1959-1986_U23MNT" } ], "matches": [ { "home_team": "POL_U23MNT", "away_team": "FRA_U23MNT", "home_score": 2, "away_score": 1, "date": "1952-07-15", "time": "19:00", "stadium": "Lahden kisapuisto", "city": "Lahti" }, { "home_team": "HUN-1949-1956_U23MNT", "away_team": "ROU-1952-1965_U23MNT", "home_score": 2, "away_score": 1, "date": "1952-07-15", "time": "19:00", "stadium": "Kupittaa", "city": "Turku" }, { "home_team": "YUG-1945-1992_U23MNT", "away_team": "IND_U23MNT", "home_score": 10, "away_score": 1, "date": "1952-07-15", "time": "19:00", "stadium": "Töölön Pallokenttä", "city": "Helsinki" }, { "home_team": "DEN_U23MNT", "away_team": "GRE_U23MNT", "home_score": 2, "away_score": 1, "date": "1952-07-15", "time": "19:00", "stadium": "Ratina Stadion", "city": "Tampere" }, { "home_team": "URS_U23MNT", "away_team": "BUL-1948-1967_U23MNT", "home_score": 0, "away_score": 0, "home_extra_score": 2, "away_extra_score": 1, "date": "1952-07-15", "time": "19:00", "stadium": "Kotkan Urheilukeskus", "city": "Kotka" }, { "home_team": "ITA_U23MNT", "away_team": "USA_U23MNT", "home_score": 8, "away_score": 0, "date": "1952-07-16", "time": "19:00", "stadium": "Ratina Stadion", "city": "Tampere" }, { "home_team": "BRA_U23MNT", "away_team": "NED_U23MNT", "home_score": 5, "away_score": 1, "date": "1952-07-16", "time": "19:00", "stadium": "Kupittaa", "city": "Turku" }, { "home_team": "LUX_U23MNT", "away_team": "GBR_U23MNT", "home_score": 1, "away_score": 1, "home_extra_score": 4, "away_extra_score": 2, "date": "1952-07-16", "time": "12:00", "stadium": "Lahden kisapuisto", "city": "Lahti" }, { "home_team": "EGY-1922-1953_U23MNT", "away_team": "CHI_U23MNT", "home_score": 5, "away_score": 4, "date": "1952-07-16", "time": "19:00", "stadium": "Kotkan Urheilukeskus", "city": "Kotka" } ] }, { "name": "First Round", "short_name": "1/8", "eliminateCount": 8, "next_round": "Quarter-finals", "matches": [ { "home_team": "FIN_U23MNT", "away_team": "AUT_U23MNT", "home_score": 3, "away_score": 4, "date": "1952-07-19", "time": "19:00", "stadium": "Olympic Stadium", "city": "Helsinki", "bracket_order": 4 }, { "home_team": "BRA_U23MNT", "away_team": "LUX_U23MNT", "home_score": 2, "away_score": 1, "date": "1952-07-20", "time": "19:00", "stadium": "Kotkan Urheilukeskus", "city": "Kotka", "bracket_order": 7 }, { "home_team": "YUG-1945-1992_U23MNT", "away_team": "URS_U23MNT", "home_score": 5, "away_score": 5, "home_extra_score": 0, "away_extra_score": 0, "date": "1952-07-20", "time": "19:00", "stadium": "Ratina Stadion", "city": "Tampere", "bracket_order": 6 }, { "home_team": "YUG-1945-1992_U23MNT", "away_team": "URS_U23MNT", "home_score": 3, "away_score": 1, "date": "1952-07-22", "time": "19:00", "stadium": "Ratina Stadion", "city": "Tampere", "replay": true, "bracket_order": 6 }, { "home_team": "GER_U23MNT", "away_team": "EGY-1922-1953_U23MNT", "home_score": 3, "away_score": 1, "date": "1952-07-20", "time": "12:00", "stadium": "Kupittaa", "city": "Turku", "bracket_order": 8 }, { "home_team": "DEN_U23MNT", "away_team": "POL_U23MNT", "home_score": 2, "away_score": 0, "date": "1952-07-21", "time": "19:00", "stadium": "Kupittaa", "city": "Turku", "bracket_order": 5 }, { "home_team": "SWE_U23MNT", "away_team": "NOR_U23MNT", "home_score": 4, "away_score": 1, "date": "1952-07-21", "time": "19:00", "stadium": "Ratina Stadion", "city": "Tampere", "bracket_order": 3 }, { "home_team": "HUN-1949-1956_U23MNT", "away_team": "ITA_U23MNT", "home_score": 3, "away_score": 0, "date": "1952-07-21", "time": "19:00", "stadium": "Töölön Pallokenttä", "city": "Helsinki", "bracket_order": 1 }, { "home_team": "TUR_U23MNT", "away_team": "ANT-1959-1986_U23MNT", "home_score": 2, "away_score": 1, "date": "1952-07-21", "time": "19:00", "stadium": "Lahden kisapuisto", "city": "Lahti", "bracket_order": 2 } ] }, { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "SWE_U23MNT", "away_team": "AUT_U23MNT", "home_score": 3, "away_score": 1, "date": "1952-07-23", "time": "19:00", "stadium": "Töölön Pallokenttä", "city": "Helsinki", "bracket_order": 2 }, { "home_team": "BRA_U23MNT", "away_team": "GER_U23MNT", "home_score": 2, "away_score": 2, "home_extra_score": 0, "away_extra_score": 2, "date": "1952-07-24", "time": "12:00", "stadium": "Töölön Pallokenttä", "city": "Helsinki", "bracket_order": 4 }, { "home_team": "HUN-1949-1956_U23MNT", "away_team": "TUR_U23MNT", "home_score": 7, "away_score": 1, "date": "1952-07-24", "time": "19:00", "stadium": "Kotkan Urheilukeskus", "city": "Kotka", "bracket_order": 1 }, { "home_team": "DEN_U23MNT", "away_team": "YUG-1945-1992_U23MNT", "home_score": 3, "away_score": 5, "date": "1952-07-25", "time": "19:00", "stadium": "Töölön Pallokenttä", "city": "Helsinki", "bracket_order": 3 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "HUN-1949-1956_U23MNT", "away_team": "SWE_U23MNT", "home_score": 6, "away_score": 0, "date": "1952-07-28", "time": "19:00", "stadium": "Olympic Stadium", "city": "Helsinki", "bracket_order": 1 }, { "home_team": "YUG-1945-1992_U23MNT", "away_team": "GER_U23MNT", "home_score": 3, "away_score": 1, "date": "1952-07-29", "time": "19:00", "stadium": "Olympic Stadium", "city": "Helsinki", "bracket_order": 2 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "SWE_U23MNT", "away_team": "GER_U23MNT", "home_score": 2, "away_score": 0, "date": "1952-08-01", "time": "19:00", "stadium": "Olympic Stadium", "city": "Helsinki" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "HUN-1949-1956_U23MNT", "away_team": "YUG-1945-1992_U23MNT", "home_score": 2, "away_score": 0, "date": "1952-08-02", "time": "19:00", "stadium": "Olympic Stadium", "city": "Helsinki" } ] } ] } ] }
+{
+  "id": "MOFT1952",
+  "stages": [
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "teams": [
+        { "id": "POL_U23MNT" },
+        { "id": "FRA_U23MNT" },
+        { "id": "HUN-1949-1956_U23MNT" },
+        { "id": "ROU-1952-1965_U23MNT" },
+        { "id": "YUG-1945-1992_U23MNT" },
+        { "id": "IND_U23MNT" },
+        { "id": "DEN_U23MNT" },
+        { "id": "GRE_U23MNT" },
+        { "id": "URS_U23MNT" },
+        { "id": "BUL-1948-1967_U23MNT" },
+        { "id": "ITA_U23MNT" },
+        { "id": "USA_U23MNT" },
+        { "id": "BRA_U23MNT" },
+        { "id": "NED_U23MNT" },
+        { "id": "LUX_U23MNT" },
+        { "id": "GBR_U23MNT" },
+        { "id": "EGY-1922-1953_U23MNT" },
+        { "id": "CHI_U23MNT" },
+        { "id": "FIN_U23MNT" },
+        { "id": "AUT_U23MNT" },
+        { "id": "GER_U23MNT" },
+        { "id": "SWE_U23MNT" },
+        { "id": "NOR_U23MNT" },
+        { "id": "TUR_U23MNT" },
+        { "id": "ANT-1959-1986_U23MNT" }
+      ],
+      "rounds": [
+        {
+          "name": "Preliminary Round",
+          "short_name": "1/16",
+          "eliminate_count": 16,
+          "next_round": "First Round",
+          "bye_teams": [
+            { "id": "FIN_U23MNT" },
+            { "id": "AUT_U23MNT" },
+            { "id": "GER_U23MNT" },
+            { "id": "SWE_U23MNT" },
+            { "id": "NOR_U23MNT" },
+            { "id": "TUR_U23MNT" },
+            { "id": "ANT-1959-1986_U23MNT" }
+          ],
+          "matches": [
+            {
+              "home_team": "POL_U23MNT",
+              "away_team": "FRA_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1952-07-15",
+              "time": "19:00",
+              "stadium": "Lahden kisapuisto",
+              "city": "Lahti"
+            },
+            {
+              "home_team": "HUN-1949-1956_U23MNT",
+              "away_team": "ROU-1952-1965_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1952-07-15",
+              "time": "19:00",
+              "stadium": "Kupittaa",
+              "city": "Turku"
+            },
+            {
+              "home_team": "YUG-1945-1992_U23MNT",
+              "away_team": "IND_U23MNT",
+              "home_score": 10,
+              "away_score": 1,
+              "date": "1952-07-15",
+              "time": "19:00",
+              "stadium": "Töölön Pallokenttä",
+              "city": "Helsinki"
+            },
+            {
+              "home_team": "DEN_U23MNT",
+              "away_team": "GRE_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1952-07-15",
+              "time": "19:00",
+              "stadium": "Ratina Stadion",
+              "city": "Tampere"
+            },
+            {
+              "home_team": "URS_U23MNT",
+              "away_team": "BUL-1948-1967_U23MNT",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 2,
+              "away_extra_score": 1,
+              "date": "1952-07-15",
+              "time": "19:00",
+              "stadium": "Kotkan Urheilukeskus",
+              "city": "Kotka"
+            },
+            {
+              "home_team": "ITA_U23MNT",
+              "away_team": "USA_U23MNT",
+              "home_score": 8,
+              "away_score": 0,
+              "date": "1952-07-16",
+              "time": "19:00",
+              "stadium": "Ratina Stadion",
+              "city": "Tampere"
+            },
+            {
+              "home_team": "BRA_U23MNT",
+              "away_team": "NED_U23MNT",
+              "home_score": 5,
+              "away_score": 1,
+              "date": "1952-07-16",
+              "time": "19:00",
+              "stadium": "Kupittaa",
+              "city": "Turku"
+            },
+            {
+              "home_team": "LUX_U23MNT",
+              "away_team": "GBR_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 4,
+              "away_extra_score": 2,
+              "date": "1952-07-16",
+              "time": "12:00",
+              "stadium": "Lahden kisapuisto",
+              "city": "Lahti"
+            },
+            {
+              "home_team": "EGY-1922-1953_U23MNT",
+              "away_team": "CHI_U23MNT",
+              "home_score": 5,
+              "away_score": 4,
+              "date": "1952-07-16",
+              "time": "19:00",
+              "stadium": "Kotkan Urheilukeskus",
+              "city": "Kotka"
+            }
+          ]
+        },
+        {
+          "name": "First Round",
+          "short_name": "1/8",
+          "eliminate_count": 8,
+          "next_round": "Quarter-finals",
+          "matches": [
+            {
+              "home_team": "FIN_U23MNT",
+              "away_team": "AUT_U23MNT",
+              "home_score": 3,
+              "away_score": 4,
+              "date": "1952-07-19",
+              "time": "19:00",
+              "stadium": "Olympic Stadium",
+              "city": "Helsinki",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "BRA_U23MNT",
+              "away_team": "LUX_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1952-07-20",
+              "time": "19:00",
+              "stadium": "Kotkan Urheilukeskus",
+              "city": "Kotka",
+              "bracket_order": 7
+            },
+            {
+              "home_team": "YUG-1945-1992_U23MNT",
+              "away_team": "URS_U23MNT",
+              "home_score": 5,
+              "away_score": 5,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "date": "1952-07-20",
+              "time": "19:00",
+              "stadium": "Ratina Stadion",
+              "city": "Tampere",
+              "bracket_order": 6
+            },
+            {
+              "home_team": "YUG-1945-1992_U23MNT",
+              "away_team": "URS_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1952-07-22",
+              "time": "19:00",
+              "stadium": "Ratina Stadion",
+              "city": "Tampere",
+              "replay": true,
+              "bracket_order": 6
+            },
+            {
+              "home_team": "GER_U23MNT",
+              "away_team": "EGY-1922-1953_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1952-07-20",
+              "time": "12:00",
+              "stadium": "Kupittaa",
+              "city": "Turku",
+              "bracket_order": 8
+            },
+            {
+              "home_team": "DEN_U23MNT",
+              "away_team": "POL_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1952-07-21",
+              "time": "19:00",
+              "stadium": "Kupittaa",
+              "city": "Turku",
+              "bracket_order": 5
+            },
+            {
+              "home_team": "SWE_U23MNT",
+              "away_team": "NOR_U23MNT",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1952-07-21",
+              "time": "19:00",
+              "stadium": "Ratina Stadion",
+              "city": "Tampere",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "HUN-1949-1956_U23MNT",
+              "away_team": "ITA_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1952-07-21",
+              "time": "19:00",
+              "stadium": "Töölön Pallokenttä",
+              "city": "Helsinki",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "TUR_U23MNT",
+              "away_team": "ANT-1959-1986_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1952-07-21",
+              "time": "19:00",
+              "stadium": "Lahden kisapuisto",
+              "city": "Lahti",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "SWE_U23MNT",
+              "away_team": "AUT_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1952-07-23",
+              "time": "19:00",
+              "stadium": "Töölön Pallokenttä",
+              "city": "Helsinki",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "BRA_U23MNT",
+              "away_team": "GER_U23MNT",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 0,
+              "away_extra_score": 2,
+              "date": "1952-07-24",
+              "time": "12:00",
+              "stadium": "Töölön Pallokenttä",
+              "city": "Helsinki",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "HUN-1949-1956_U23MNT",
+              "away_team": "TUR_U23MNT",
+              "home_score": 7,
+              "away_score": 1,
+              "date": "1952-07-24",
+              "time": "19:00",
+              "stadium": "Kotkan Urheilukeskus",
+              "city": "Kotka",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "DEN_U23MNT",
+              "away_team": "YUG-1945-1992_U23MNT",
+              "home_score": 3,
+              "away_score": 5,
+              "date": "1952-07-25",
+              "time": "19:00",
+              "stadium": "Töölön Pallokenttä",
+              "city": "Helsinki",
+              "bracket_order": 3
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "HUN-1949-1956_U23MNT",
+              "away_team": "SWE_U23MNT",
+              "home_score": 6,
+              "away_score": 0,
+              "date": "1952-07-28",
+              "time": "19:00",
+              "stadium": "Olympic Stadium",
+              "city": "Helsinki",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "YUG-1945-1992_U23MNT",
+              "away_team": "GER_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1952-07-29",
+              "time": "19:00",
+              "stadium": "Olympic Stadium",
+              "city": "Helsinki",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "SWE_U23MNT",
+              "away_team": "GER_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1952-08-01",
+              "time": "19:00",
+              "stadium": "Olympic Stadium",
+              "city": "Helsinki"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "HUN-1949-1956_U23MNT",
+              "away_team": "YUG-1945-1992_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1952-08-02",
+              "time": "19:00",
+              "stadium": "Olympic Stadium",
+              "city": "Helsinki"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -712,6 +712,134 @@ export const setTournamentDetails = (t) => {
   delete t.year
 }
 
+export const setAllLeagues = (ls) => {
+  const td_leagues = ls || []
+  td_leagues.forEach((l) => {
+    setLeagueDetails(l)
+    setLeagueConfig(l)
+    setAllStages(l.stages)
+  })
+}
+
+export const setLeagueDetails = (l) => {
+  l.details = {
+    name: l.name || '',
+  }
+  delete l.name
+}
+
+export const setLeagueConfig = (l) => {
+  l.config = {
+    default: l.default || false,
+    default_matchday: l.default_matchday || '',
+    standing_count: l.standing_count || l.standing_count === 0 ? l.standing_count : undefined,
+  }
+  delete l.default
+  delete l.default_matchday
+  delete l.standing_count
+}
+
+export const setAllStages = (ss) => {
+  const td_stages = ss || []
+  td_stages.forEach((s) => {
+    setStageDetails(s)
+    setStageConfig(s)
+    setAllRounds(s.rounds)
+    setAllGroups(s.groups)
+  })
+}
+
+export const setStageDetails = (s) => {
+  s.details = {
+    name: s.name || '',
+  }
+  delete s.name
+}
+
+export const setStageConfig = (s) => {
+  s.config = {
+    advancement: s.advancement || {},
+    default: s.default || false,
+    eliminate_count: s.eliminate_count || undefined,
+    home_and_away: s.home_and_away || false,
+    next_round: s.next_round || '',
+    type: s.type || '',
+  }
+  delete s.advancement
+  delete s.default
+  delete s.eliminate_count
+  delete s.home_and_away
+  delete s.next_round
+  delete s.type
+}
+
+export const setAllRounds = (rs) => {
+  const td_rounds = rs || []
+  td_rounds.forEach((r) => {
+    setRoundDetails(r)
+    setRoundConfig(r)
+  })
+}
+
+export const setRoundDetails = (r) => {
+  r.details = {
+    name: r.name || '',
+    short_name: r.short_name || '',
+  }
+  delete r.name
+  delete r.short_name
+}
+
+export const setRoundConfig = (r) => {
+  r.config = {
+    eliminate_count: r.eliminate_count || undefined,
+    next_round: r.next_round || '',
+    round_type: r.round_type || '',
+  }
+  delete r.eliminate_count
+  delete r.next_round
+  delete r.round_type
+}
+
+export const setAllGroups = (gs) => {
+  const td_groups = gs || []
+  td_groups.forEach((g) => {
+    setGroupDetails(g)
+    setGroupConfig(g)
+    setAllMatchdays(g.matchdays)
+  })
+}
+
+export const setGroupDetails = (g) => {
+  g.details = {
+    name: g.name || '',
+  }
+  delete g.name
+}
+
+export const setGroupConfig = (g) => {
+  g.config = {}
+}
+
+export const setAllMatchdays = (mds) => {
+  const td_matchdays = mds || []
+  td_matchdays.forEach((md) => {
+    setMatchdayDetails(md)
+    setMatchdayConfig(md)
+  })
+}
+
+export const setMatchdayDetails = (md) => {
+  md.details = {
+    name: md.name || '',
+  }
+  delete md.name
+}
+
+export const setMatchdayConfig = (s) => {
+  s.config = {}
+}
+
 export const setNationDetails = (n) => {
   n.details = {
     code: n.code || '',

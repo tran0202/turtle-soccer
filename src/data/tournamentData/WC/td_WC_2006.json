@@ -1,1 +1,778 @@
-{ "id": "WC2006", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 16, "next_round": "Round of 16", "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4] } }, "groups": [ { "name": "Group A", "teams": [{ "id": "GER" }, { "id": "CRC" }, { "id": "POL" }, { "id": "ECU" }], "matches": [ { "home_team": "GER", "away_team": "CRC", "home_score": 4, "away_score": 2, "date": "2006-06-09", "time": "18:00", "stadium": "Allianz Arena", "city": "Munich" }, { "home_team": "POL", "away_team": "ECU", "home_score": 0, "away_score": 2, "date": "2006-06-09", "time": "21:00", "stadium": "Veltins Arena", "city": "Gelsenkirchen" }, { "home_team": "GER", "away_team": "POL", "home_score": 1, "away_score": 0, "date": "2006-06-14", "time": "21:00", "stadium": "Signal-Iduna-Park", "city": "Dortmund" }, { "home_team": "ECU", "away_team": "CRC", "home_score": 3, "away_score": 0, "date": "2006-06-15", "time": "15:00", "stadium": "Volksparkstadion", "city": "Hamburg" }, { "home_team": "ECU", "away_team": "GER", "home_score": 0, "away_score": 3, "date": "2006-06-20", "time": "16:00", "stadium": "Olympiastadion", "city": "Berlin" }, { "home_team": "CRC", "away_team": "POL", "home_score": 1, "away_score": 2, "date": "2006-06-20", "time": "16:00", "stadium": "HDI-Arena", "city": "Hanover" } ] }, { "name": "Group B", "teams": [{ "id": "ENG" }, { "id": "PAR" }, { "id": "TRI" }, { "id": "SWE" }], "matches": [ { "home_team": "ENG", "away_team": "PAR", "home_score": 1, "away_score": 0, "date": "2006-06-10", "time": "15:00", "stadium": "Commerzbank Arena", "city": "Frankfurt" }, { "home_team": "TRI", "away_team": "SWE", "home_score": 0, "away_score": 0, "date": "2006-06-10", "time": "18:00", "stadium": "Signal-Iduna-Park", "city": "Dortmund" }, { "home_team": "ENG", "away_team": "TRI", "home_score": 2, "away_score": 0, "date": "2006-06-15", "time": "18:00", "stadium": "Max-Morlock-Stadion", "city": "Nuremberg" }, { "home_team": "SWE", "away_team": "PAR", "home_score": 1, "away_score": 0, "date": "2006-06-15", "time": "21:00", "stadium": "Olympiastadion", "city": "Berlin" }, { "home_team": "SWE", "away_team": "ENG", "home_score": 2, "away_score": 2, "date": "2006-06-20", "time": "21:00", "stadium": "Rhein Energie Stadium", "city": "Cologne" }, { "home_team": "PAR", "away_team": "TRI", "home_score": 2, "away_score": 0, "date": "2006-06-20", "time": "21:00", "stadium": "Fritz-Walter-Stadion", "city": "Kaiserslautern" } ] }, { "name": "Group C", "teams": [{ "id": "ARG" }, { "id": "CIV" }, { "id": "SRB-2003-2006" }, { "id": "NED" }], "matches": [ { "home_team": "ARG", "away_team": "CIV", "home_score": 2, "away_score": 1, "date": "2006-06-10", "time": "21:00", "stadium": "Volksparkstadion", "city": "Hamburg" }, { "home_team": "SRB-2003-2006", "away_team": "NED", "home_score": 0, "away_score": 1, "date": "2006-06-11", "time": "15:00", "stadium": "Red Bull Arena", "city": "Leipzig" }, { "home_team": "ARG", "away_team": "SRB-2003-2006", "home_score": 6, "away_score": 0, "date": "2006-06-16", "time": "15:00", "stadium": "Veltins Arena", "city": "Gelsenkirchen" }, { "home_team": "NED", "away_team": "CIV", "home_score": 2, "away_score": 1, "date": "2006-06-16", "time": "18:00", "stadium": "Mercedes-Benz Arena", "city": "Stuttgart" }, { "home_team": "NED", "away_team": "ARG", "home_score": 0, "away_score": 0, "date": "2006-06-21", "time": "21:00", "stadium": "Commerzbank Arena", "city": "Frankfurt" }, { "home_team": "CIV", "away_team": "SRB-2003-2006", "home_score": 3, "away_score": 2, "date": "2006-06-21", "time": "21:00", "stadium": "Allianz Arena", "city": "Munich" } ] }, { "name": "Group D", "teams": [{ "id": "MEX" }, { "id": "IRN" }, { "id": "ANG" }, { "id": "POR" }], "matches": [ { "home_team": "MEX", "away_team": "IRN", "home_score": 3, "away_score": 1, "date": "2006-06-11", "time": "18:00", "stadium": "Max-Morlock-Stadion", "city": "Nuremberg" }, { "home_team": "ANG", "away_team": "POR", "home_score": 0, "away_score": 1, "date": "2006-06-11", "time": "21:00", "stadium": "Rhein Energie Stadium", "city": "Cologne" }, { "home_team": "MEX", "away_team": "ANG", "home_score": 0, "away_score": 0, "date": "2006-06-16", "time": "21:00", "stadium": "HDI-Arena", "city": "Hanover" }, { "home_team": "POR", "away_team": "IRN", "home_score": 2, "away_score": 0, "date": "2006-06-17", "time": "15:00", "stadium": "Commerzbank Arena", "city": "Frankfurt" }, { "home_team": "POR", "away_team": "MEX", "home_score": 2, "away_score": 1, "date": "2006-06-21", "time": "16:00", "stadium": "Veltins Arena", "city": "Gelsenkirchen" }, { "home_team": "IRN", "away_team": "ANG", "home_score": 1, "away_score": 1, "date": "2006-06-21", "time": "16:00", "stadium": "Red Bull Arena", "city": "Leipzig" } ] }, { "name": "Group E", "teams": [{ "id": "USA" }, { "id": "CZE" }, { "id": "ITA" }, { "id": "GHA" }], "matches": [ { "home_team": "USA", "away_team": "CZE", "home_score": 0, "away_score": 3, "date": "2006-06-12", "time": "18:00", "stadium": "Veltins Arena", "city": "Gelsenkirchen" }, { "home_team": "ITA", "away_team": "GHA", "home_score": 2, "away_score": 0, "date": "2006-06-12", "time": "21:00", "stadium": "HDI-Arena", "city": "Hanover" }, { "home_team": "CZE", "away_team": "GHA", "home_score": 0, "away_score": 2, "date": "2006-06-17", "time": "18:00", "stadium": "Rhein Energie Stadium", "city": "Cologne" }, { "home_team": "ITA", "away_team": "USA", "home_score": 1, "away_score": 1, "date": "2006-06-17", "time": "21:00", "stadium": "Fritz-Walter-Stadion", "city": "Kaiserslautern" }, { "home_team": "CZE", "away_team": "ITA", "home_score": 0, "away_score": 2, "date": "2006-06-22", "time": "16:00", "stadium": "Volksparkstadion", "city": "Hamburg" }, { "home_team": "GHA", "away_team": "USA", "home_score": 2, "away_score": 1, "date": "2006-06-22", "time": "16:00", "stadium": "Max-Morlock-Stadion", "city": "Nuremberg" } ] }, { "name": "Group F", "teams": [{ "id": "AUS" }, { "id": "JPN" }, { "id": "BRA" }, { "id": "CRO" }], "matches": [ { "home_team": "AUS", "away_team": "JPN", "home_score": 3, "away_score": 1, "date": "2006-06-12", "time": "15:00", "stadium": "Fritz-Walter-Stadion", "city": "Kaiserslautern" }, { "home_team": "BRA", "away_team": "CRO", "home_score": 1, "away_score": 0, "date": "2006-06-13", "time": "21:00", "stadium": "Olympiastadion", "city": "Berlin" }, { "home_team": "JPN", "away_team": "CRO", "home_score": 0, "away_score": 0, "date": "2006-06-18", "time": "15:00", "stadium": "Max-Morlock-Stadion", "city": "Nuremberg" }, { "home_team": "BRA", "away_team": "AUS", "home_score": 2, "away_score": 0, "date": "2006-06-18", "time": "18:00", "stadium": "Allianz Arena", "city": "Munich" }, { "home_team": "JPN", "away_team": "BRA", "home_score": 1, "away_score": 4, "date": "2006-06-22", "time": "21:00", "stadium": "Signal-Iduna-Park", "city": "Dortmund" }, { "home_team": "CRO", "away_team": "AUS", "home_score": 2, "away_score": 2, "date": "2006-06-22", "time": "21:00", "stadium": "Mercedes-Benz Arena", "city": "Stuttgart" } ] }, { "name": "Group G", "teams": [{ "id": "KOR" }, { "id": "TOG" }, { "id": "FRA" }, { "id": "SUI" }], "matches": [ { "home_team": "KOR", "away_team": "TOG", "home_score": 2, "away_score": 1, "date": "2006-06-13", "time": "15:00", "stadium": "Commerzbank Arena", "city": "Frankfurt" }, { "home_team": "FRA", "away_team": "SUI", "home_score": 0, "away_score": 0, "date": "2006-06-13", "time": "18:00", "stadium": "Mercedes-Benz Arena", "city": "Stuttgart" }, { "home_team": "FRA", "away_team": "KOR", "home_score": 1, "away_score": 1, "date": "2006-06-18", "time": "21:00", "stadium": "Red Bull Arena", "city": "Leipzig" }, { "home_team": "TOG", "away_team": "SUI", "home_score": 0, "away_score": 2, "date": "2006-06-19", "time": "15:00", "stadium": "Signal-Iduna-Park", "city": "Dortmund" }, { "home_team": "TOG", "away_team": "FRA", "home_score": 0, "away_score": 2, "date": "2006-06-23", "time": "21:00", "stadium": "Rhein Energie Stadium", "city": "Cologne" }, { "home_team": "SUI", "away_team": "KOR", "home_score": 2, "away_score": 0, "date": "2006-06-23", "time": "21:00", "stadium": "HDI-Arena", "city": "Hanover" } ] }, { "name": "Group H", "teams": [{ "id": "ESP" }, { "id": "UKR" }, { "id": "TUN" }, { "id": "KSA" }], "matches": [ { "home_team": "ESP", "away_team": "UKR", "home_score": 4, "away_score": 0, "date": "2006-06-14", "time": "15:00", "stadium": "Red Bull Arena", "city": "Leipzig" }, { "home_team": "TUN", "away_team": "KSA", "home_score": 2, "away_score": 2, "date": "2006-06-14", "time": "18:00", "stadium": "Allianz Arena", "city": "Munich" }, { "home_team": "KSA", "away_team": "UKR", "home_score": 0, "away_score": 4, "date": "2006-06-19", "time": "18:00", "stadium": "Volksparkstadion", "city": "Hamburg" }, { "home_team": "ESP", "away_team": "TUN", "home_score": 3, "away_score": 1, "date": "2006-06-19", "time": "21:00", "stadium": "Mercedes-Benz Arena", "city": "Stuttgart" }, { "home_team": "KSA", "away_team": "ESP", "home_score": 0, "away_score": 1, "date": "2006-06-23", "time": "16:00", "stadium": "Fritz-Walter-Stadion", "city": "Kaiserslautern" }, { "home_team": "UKR", "away_team": "TUN", "home_score": 1, "away_score": 0, "date": "2006-06-23", "time": "16:00", "stadium": "Olympiastadion", "city": "Berlin" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Round of 16", "short_name": "1/8", "eliminateCount": 8, "next_round": "Quarter-finals", "matches": [ { "home_team": "GER", "away_team": "SWE", "home_score": 2, "away_score": 0, "date": "2006-06-24", "time": "17:00", "stadium": "Allianz Arena", "city": "Munich", "bracket_order": 1 }, { "home_team": "ARG", "away_team": "MEX", "home_score": 1, "away_score": 1, "home_extra_score": 1, "away_extra_score": 0, "date": "2006-06-24", "time": "21:00", "stadium": "Red Bull Arena", "city": "Leipzig", "bracket_order": 2 }, { "home_team": "ENG", "away_team": "ECU", "home_score": 1, "away_score": 0, "date": "2006-06-25", "time": "17:00", "stadium": "Mercedes-Benz Arena", "city": "Stuttgart", "bracket_order": 5 }, { "home_team": "POR", "away_team": "NED", "home_score": 1, "away_score": 0, "date": "2006-06-25", "time": "21:00", "stadium": "Max-Morlock-Stadion", "city": "Nuremberg", "bracket_order": 6 }, { "home_team": "ITA", "away_team": "AUS", "home_score": 1, "away_score": 0, "date": "2006-06-26", "time": "17:00", "stadium": "Fritz-Walter-Stadion", "city": "Kaiserslautern", "bracket_order": 3 }, { "home_team": "SUI", "away_team": "UKR", "home_score": 0, "away_score": 0, "home_extra_score": 0, "away_extra_score": 0, "home_penalty_score": 0, "away_penalty_score": 3, "date": "2006-06-26", "time": "21:00", "stadium": "Rhein Energie Stadium", "city": "Cologne", "bracket_order": 4 }, { "home_team": "BRA", "away_team": "GHA", "home_score": 3, "away_score": 0, "date": "2006-06-27", "time": "17:00", "stadium": "Signal-Iduna-Park", "city": "Dortmund", "bracket_order": 7 }, { "home_team": "ESP", "away_team": "FRA", "home_score": 1, "away_score": 3, "date": "2006-06-27", "time": "21:00", "stadium": "HDI-Arena", "city": "Hanover", "bracket_order": 8 } ] }, { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "GER", "away_team": "ARG", "home_score": 1, "away_score": 1, "home_extra_score": 0, "away_extra_score": 0, "home_penalty_score": 4, "away_penalty_score": 2, "date": "2006-06-30", "time": "17:00", "stadium": "Olympiastadion", "city": "Berlin", "bracket_order": 1 }, { "home_team": "ITA", "away_team": "UKR", "home_score": 3, "away_score": 0, "date": "2006-06-30", "time": "21:00", "stadium": "Volksparkstadion", "city": "Hamburg", "bracket_order": 2 }, { "home_team": "ENG", "away_team": "POR", "home_score": 0, "away_score": 0, "home_extra_score": 0, "away_extra_score": 0, "home_penalty_score": 1, "away_penalty_score": 3, "date": "2006-07-01", "time": "17:00", "stadium": "Veltins Arena", "city": "Gelsenkirchen", "bracket_order": 3 }, { "home_team": "BRA", "away_team": "FRA", "home_score": 0, "away_score": 1, "date": "2006-07-01", "time": "21:00", "stadium": "Commerzbank Arena", "city": "Frankfurt", "bracket_order": 4 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "GER", "away_team": "ITA", "home_score": 0, "away_score": 0, "home_extra_score": 0, "away_extra_score": 2, "date": "2006-07-04", "time": "21:00", "stadium": "Signal-Iduna-Park", "city": "Dortmund", "bracket_order": 1 }, { "home_team": "POR", "away_team": "FRA", "home_score": 0, "away_score": 1, "date": "2006-07-05", "time": "21:00", "stadium": "Allianz Arena", "city": "Munich", "bracket_order": 2 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "GER", "away_team": "POR", "home_score": 3, "away_score": 1, "date": "2006-07-08", "time": "21:00", "stadium": "Mercedes-Benz Arena", "city": "Stuttgart" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "ITA", "away_team": "FRA", "home_score": 1, "away_score": 1, "home_extra_score": 0, "away_extra_score": 0, "home_penalty_score": 5, "away_penalty_score": 3, "date": "2006-07-09", "time": "20:00", "stadium": "Olympiastadion", "city": "Berlin" } ] } ] } ] }
+{
+  "id": "WC2006",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 16,
+      "next_round": "Round of 16",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4] } },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "GER" }, { "id": "CRC" }, { "id": "POL" }, { "id": "ECU" }],
+          "matches": [
+            {
+              "home_team": "GER",
+              "away_team": "CRC",
+              "home_score": 4,
+              "away_score": 2,
+              "date": "2006-06-09",
+              "time": "18:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            },
+            {
+              "home_team": "POL",
+              "away_team": "ECU",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-06-09",
+              "time": "21:00",
+              "stadium": "Veltins Arena",
+              "city": "Gelsenkirchen"
+            },
+            {
+              "home_team": "GER",
+              "away_team": "POL",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-14",
+              "time": "21:00",
+              "stadium": "Signal-Iduna-Park",
+              "city": "Dortmund"
+            },
+            {
+              "home_team": "ECU",
+              "away_team": "CRC",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2006-06-15",
+              "time": "15:00",
+              "stadium": "Volksparkstadion",
+              "city": "Hamburg"
+            },
+            {
+              "home_team": "ECU",
+              "away_team": "GER",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2006-06-20",
+              "time": "16:00",
+              "stadium": "Olympiastadion",
+              "city": "Berlin"
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "POL",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2006-06-20",
+              "time": "16:00",
+              "stadium": "HDI-Arena",
+              "city": "Hanover"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "ENG" }, { "id": "PAR" }, { "id": "TRI" }, { "id": "SWE" }],
+          "matches": [
+            {
+              "home_team": "ENG",
+              "away_team": "PAR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-10",
+              "time": "15:00",
+              "stadium": "Commerzbank Arena",
+              "city": "Frankfurt"
+            },
+            {
+              "home_team": "TRI",
+              "away_team": "SWE",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-06-10",
+              "time": "18:00",
+              "stadium": "Signal-Iduna-Park",
+              "city": "Dortmund"
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "TRI",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-15",
+              "time": "18:00",
+              "stadium": "Max-Morlock-Stadion",
+              "city": "Nuremberg"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "PAR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-15",
+              "time": "21:00",
+              "stadium": "Olympiastadion",
+              "city": "Berlin"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "ENG",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2006-06-20",
+              "time": "21:00",
+              "stadium": "Rhein Energie Stadium",
+              "city": "Cologne"
+            },
+            {
+              "home_team": "PAR",
+              "away_team": "TRI",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-20",
+              "time": "21:00",
+              "stadium": "Fritz-Walter-Stadion",
+              "city": "Kaiserslautern"
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [{ "id": "ARG" }, { "id": "CIV" }, { "id": "SRB-2003-2006" }, { "id": "NED" }],
+          "matches": [
+            {
+              "home_team": "ARG",
+              "away_team": "CIV",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-06-10",
+              "time": "21:00",
+              "stadium": "Volksparkstadion",
+              "city": "Hamburg"
+            },
+            {
+              "home_team": "SRB-2003-2006",
+              "away_team": "NED",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-06-11",
+              "time": "15:00",
+              "stadium": "Red Bull Arena",
+              "city": "Leipzig"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "SRB-2003-2006",
+              "home_score": 6,
+              "away_score": 0,
+              "date": "2006-06-16",
+              "time": "15:00",
+              "stadium": "Veltins Arena",
+              "city": "Gelsenkirchen"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "CIV",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-06-16",
+              "time": "18:00",
+              "stadium": "Mercedes-Benz Arena",
+              "city": "Stuttgart"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "ARG",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-06-21",
+              "time": "21:00",
+              "stadium": "Commerzbank Arena",
+              "city": "Frankfurt"
+            },
+            {
+              "home_team": "CIV",
+              "away_team": "SRB-2003-2006",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2006-06-21",
+              "time": "21:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [{ "id": "MEX" }, { "id": "IRN" }, { "id": "ANG" }, { "id": "POR" }],
+          "matches": [
+            {
+              "home_team": "MEX",
+              "away_team": "IRN",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2006-06-11",
+              "time": "18:00",
+              "stadium": "Max-Morlock-Stadion",
+              "city": "Nuremberg"
+            },
+            {
+              "home_team": "ANG",
+              "away_team": "POR",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-06-11",
+              "time": "21:00",
+              "stadium": "Rhein Energie Stadium",
+              "city": "Cologne"
+            },
+            {
+              "home_team": "MEX",
+              "away_team": "ANG",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-06-16",
+              "time": "21:00",
+              "stadium": "HDI-Arena",
+              "city": "Hanover"
+            },
+            {
+              "home_team": "POR",
+              "away_team": "IRN",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-17",
+              "time": "15:00",
+              "stadium": "Commerzbank Arena",
+              "city": "Frankfurt"
+            },
+            {
+              "home_team": "POR",
+              "away_team": "MEX",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-06-21",
+              "time": "16:00",
+              "stadium": "Veltins Arena",
+              "city": "Gelsenkirchen"
+            },
+            {
+              "home_team": "IRN",
+              "away_team": "ANG",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2006-06-21",
+              "time": "16:00",
+              "stadium": "Red Bull Arena",
+              "city": "Leipzig"
+            }
+          ]
+        },
+        {
+          "name": "Group E",
+          "teams": [{ "id": "USA" }, { "id": "CZE" }, { "id": "ITA" }, { "id": "GHA" }],
+          "matches": [
+            {
+              "home_team": "USA",
+              "away_team": "CZE",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2006-06-12",
+              "time": "18:00",
+              "stadium": "Veltins Arena",
+              "city": "Gelsenkirchen"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "GHA",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-12",
+              "time": "21:00",
+              "stadium": "HDI-Arena",
+              "city": "Hanover"
+            },
+            {
+              "home_team": "CZE",
+              "away_team": "GHA",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-06-17",
+              "time": "18:00",
+              "stadium": "Rhein Energie Stadium",
+              "city": "Cologne"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "USA",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2006-06-17",
+              "time": "21:00",
+              "stadium": "Fritz-Walter-Stadion",
+              "city": "Kaiserslautern"
+            },
+            {
+              "home_team": "CZE",
+              "away_team": "ITA",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-06-22",
+              "time": "16:00",
+              "stadium": "Volksparkstadion",
+              "city": "Hamburg"
+            },
+            {
+              "home_team": "GHA",
+              "away_team": "USA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-06-22",
+              "time": "16:00",
+              "stadium": "Max-Morlock-Stadion",
+              "city": "Nuremberg"
+            }
+          ]
+        },
+        {
+          "name": "Group F",
+          "teams": [{ "id": "AUS" }, { "id": "JPN" }, { "id": "BRA" }, { "id": "CRO" }],
+          "matches": [
+            {
+              "home_team": "AUS",
+              "away_team": "JPN",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2006-06-12",
+              "time": "15:00",
+              "stadium": "Fritz-Walter-Stadion",
+              "city": "Kaiserslautern"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "CRO",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-13",
+              "time": "21:00",
+              "stadium": "Olympiastadion",
+              "city": "Berlin"
+            },
+            {
+              "home_team": "JPN",
+              "away_team": "CRO",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-06-18",
+              "time": "15:00",
+              "stadium": "Max-Morlock-Stadion",
+              "city": "Nuremberg"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "AUS",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-18",
+              "time": "18:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            },
+            {
+              "home_team": "JPN",
+              "away_team": "BRA",
+              "home_score": 1,
+              "away_score": 4,
+              "date": "2006-06-22",
+              "time": "21:00",
+              "stadium": "Signal-Iduna-Park",
+              "city": "Dortmund"
+            },
+            {
+              "home_team": "CRO",
+              "away_team": "AUS",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2006-06-22",
+              "time": "21:00",
+              "stadium": "Mercedes-Benz Arena",
+              "city": "Stuttgart"
+            }
+          ]
+        },
+        {
+          "name": "Group G",
+          "teams": [{ "id": "KOR" }, { "id": "TOG" }, { "id": "FRA" }, { "id": "SUI" }],
+          "matches": [
+            {
+              "home_team": "KOR",
+              "away_team": "TOG",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-06-13",
+              "time": "15:00",
+              "stadium": "Commerzbank Arena",
+              "city": "Frankfurt"
+            },
+            {
+              "home_team": "FRA",
+              "away_team": "SUI",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-06-13",
+              "time": "18:00",
+              "stadium": "Mercedes-Benz Arena",
+              "city": "Stuttgart"
+            },
+            {
+              "home_team": "FRA",
+              "away_team": "KOR",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2006-06-18",
+              "time": "21:00",
+              "stadium": "Red Bull Arena",
+              "city": "Leipzig"
+            },
+            {
+              "home_team": "TOG",
+              "away_team": "SUI",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-06-19",
+              "time": "15:00",
+              "stadium": "Signal-Iduna-Park",
+              "city": "Dortmund"
+            },
+            {
+              "home_team": "TOG",
+              "away_team": "FRA",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-06-23",
+              "time": "21:00",
+              "stadium": "Rhein Energie Stadium",
+              "city": "Cologne"
+            },
+            {
+              "home_team": "SUI",
+              "away_team": "KOR",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-23",
+              "time": "21:00",
+              "stadium": "HDI-Arena",
+              "city": "Hanover"
+            }
+          ]
+        },
+        {
+          "name": "Group H",
+          "teams": [{ "id": "ESP" }, { "id": "UKR" }, { "id": "TUN" }, { "id": "KSA" }],
+          "matches": [
+            {
+              "home_team": "ESP",
+              "away_team": "UKR",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "2006-06-14",
+              "time": "15:00",
+              "stadium": "Red Bull Arena",
+              "city": "Leipzig"
+            },
+            {
+              "home_team": "TUN",
+              "away_team": "KSA",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2006-06-14",
+              "time": "18:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            },
+            {
+              "home_team": "KSA",
+              "away_team": "UKR",
+              "home_score": 0,
+              "away_score": 4,
+              "date": "2006-06-19",
+              "time": "18:00",
+              "stadium": "Volksparkstadion",
+              "city": "Hamburg"
+            },
+            {
+              "home_team": "ESP",
+              "away_team": "TUN",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2006-06-19",
+              "time": "21:00",
+              "stadium": "Mercedes-Benz Arena",
+              "city": "Stuttgart"
+            },
+            {
+              "home_team": "KSA",
+              "away_team": "ESP",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-06-23",
+              "time": "16:00",
+              "stadium": "Fritz-Walter-Stadion",
+              "city": "Kaiserslautern"
+            },
+            {
+              "home_team": "UKR",
+              "away_team": "TUN",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-23",
+              "time": "16:00",
+              "stadium": "Olympiastadion",
+              "city": "Berlin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Round of 16",
+          "short_name": "1/8",
+          "eliminate_count": 8,
+          "next_round": "Quarter-finals",
+          "matches": [
+            {
+              "home_team": "GER",
+              "away_team": "SWE",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-06-24",
+              "time": "17:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "MEX",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "2006-06-24",
+              "time": "21:00",
+              "stadium": "Red Bull Arena",
+              "city": "Leipzig",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "ECU",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-25",
+              "time": "17:00",
+              "stadium": "Mercedes-Benz Arena",
+              "city": "Stuttgart",
+              "bracket_order": 5
+            },
+            {
+              "home_team": "POR",
+              "away_team": "NED",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-25",
+              "time": "21:00",
+              "stadium": "Max-Morlock-Stadion",
+              "city": "Nuremberg",
+              "bracket_order": 6
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "AUS",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-06-26",
+              "time": "17:00",
+              "stadium": "Fritz-Walter-Stadion",
+              "city": "Kaiserslautern",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "SUI",
+              "away_team": "UKR",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 0,
+              "away_penalty_score": 3,
+              "date": "2006-06-26",
+              "time": "21:00",
+              "stadium": "Rhein Energie Stadium",
+              "city": "Cologne",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "GHA",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2006-06-27",
+              "time": "17:00",
+              "stadium": "Signal-Iduna-Park",
+              "city": "Dortmund",
+              "bracket_order": 7
+            },
+            {
+              "home_team": "ESP",
+              "away_team": "FRA",
+              "home_score": 1,
+              "away_score": 3,
+              "date": "2006-06-27",
+              "time": "21:00",
+              "stadium": "HDI-Arena",
+              "city": "Hanover",
+              "bracket_order": 8
+            }
+          ]
+        },
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "GER",
+              "away_team": "ARG",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 4,
+              "away_penalty_score": 2,
+              "date": "2006-06-30",
+              "time": "17:00",
+              "stadium": "Olympiastadion",
+              "city": "Berlin",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "UKR",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2006-06-30",
+              "time": "21:00",
+              "stadium": "Volksparkstadion",
+              "city": "Hamburg",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "POR",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 1,
+              "away_penalty_score": 3,
+              "date": "2006-07-01",
+              "time": "17:00",
+              "stadium": "Veltins Arena",
+              "city": "Gelsenkirchen",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "FRA",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-07-01",
+              "time": "21:00",
+              "stadium": "Commerzbank Arena",
+              "city": "Frankfurt",
+              "bracket_order": 4
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "GER",
+              "away_team": "ITA",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 2,
+              "date": "2006-07-04",
+              "time": "21:00",
+              "stadium": "Signal-Iduna-Park",
+              "city": "Dortmund",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "POR",
+              "away_team": "FRA",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-07-05",
+              "time": "21:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "GER",
+              "away_team": "POR",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2006-07-08",
+              "time": "21:00",
+              "stadium": "Mercedes-Benz Arena",
+              "city": "Stuttgart"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "ITA",
+              "away_team": "FRA",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 5,
+              "away_penalty_score": 3,
+              "date": "2006-07-09",
+              "time": "20:00",
+              "stadium": "Olympiastadion",
+              "city": "Berlin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

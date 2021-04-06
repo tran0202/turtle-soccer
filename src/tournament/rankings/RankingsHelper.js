@@ -1,4 +1,4 @@
-import { getTeamName } from '../core/TeamHelper'
+import { getTeamName } from '../../core/TeamHelper'
 import { isEmpty } from 'lodash'
 
 export const findTeam = (teamArray, id) => {

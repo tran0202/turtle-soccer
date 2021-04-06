@@ -1,1 +1,411 @@
-{ "id": "AFCON2006", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 8, "next_round": "Quarter-finals", "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the Quarter-finals." } }, "groups": [ { "name": "Group A", "teams": [{ "id": "EGY" }, { "id": "LBY-1977-2011" }, { "id": "MAR" }, { "id": "CIV" }], "matches": [ { "home_team": "EGY", "away_team": "LBY-1977-2011", "home_score": 3, "away_score": 0, "date": "2006-01-20", "time": "19:00", "stadium": "Cairo International Stadium", "city": "Cairo" }, { "home_team": "MAR", "away_team": "CIV", "home_score": 0, "away_score": 1, "date": "2006-01-21", "time": "14:00", "stadium": "Cairo International Stadium", "city": "Cairo" }, { "home_team": "LBY-1977-2011", "away_team": "CIV", "home_score": 1, "away_score": 2, "date": "2006-01-24", "time": "17:15", "stadium": "Cairo International Stadium", "city": "Cairo" }, { "home_team": "EGY", "away_team": "MAR", "home_score": 0, "away_score": 0, "date": "2006-01-24", "time": "20:00", "stadium": "Cairo International Stadium", "city": "Cairo" }, { "home_team": "EGY", "away_team": "CIV", "home_score": 3, "away_score": 1, "date": "2006-01-28", "time": "19:00", "stadium": "Cairo International Stadium", "city": "Cairo" }, { "home_team": "LBY-1977-2011", "away_team": "MAR", "home_score": 0, "away_score": 0, "date": "2006-01-28", "time": "19:00", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" } ] }, { "name": "Group B", "teams": [{ "id": "CMR" }, { "id": "ANG" }, { "id": "TOG" }, { "id": "COD-2003-2006" }], "matches": [ { "home_team": "CMR", "away_team": "ANG", "home_score": 3, "away_score": 1, "date": "2006-01-21", "time": "17:15", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" }, { "home_team": "TOG", "away_team": "COD-2003-2006", "home_score": 0, "away_score": 2, "date": "2006-01-21", "time": "20:00", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" }, { "home_team": "ANG", "away_team": "COD-2003-2006", "home_score": 0, "away_score": 0, "date": "2006-01-25", "time": "17:15", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" }, { "home_team": "CMR", "away_team": "TOG", "home_score": 2, "away_score": 0, "date": "2006-01-25", "time": "20:00", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" }, { "home_team": "ANG", "away_team": "TOG", "home_score": 3, "away_score": 2, "date": "2006-01-29", "time": "19:00", "stadium": "Cairo International Stadium", "city": "Cairo" }, { "home_team": "CMR", "away_team": "COD-2003-2006", "home_score": 2, "away_score": 0, "date": "2006-01-29", "time": "19:00", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" } ] }, { "name": "Group C", "teams": [{ "id": "TUN" }, { "id": "ZAM" }, { "id": "RSA" }, { "id": "GUI" }], "matches": [ { "home_team": "TUN", "away_team": "ZAM", "home_score": 4, "away_score": 1, "date": "2006-01-22", "time": "17:15", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria" }, { "home_team": "RSA", "away_team": "GUI", "home_score": 0, "away_score": 2, "date": "2006-01-22", "time": "20:00", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria" }, { "home_team": "ZAM", "away_team": "GUI", "home_score": 1, "away_score": 2, "date": "2006-01-26", "time": "17:15", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria" }, { "home_team": "TUN", "away_team": "RSA", "home_score": 2, "away_score": 0, "date": "2006-01-26", "time": "20:00", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria" }, { "home_team": "TUN", "away_team": "GUI", "home_score": 0, "away_score": 3, "date": "2006-01-30", "time": "19:00", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria" }, { "home_team": "ZAM", "away_team": "RSA", "home_score": 1, "away_score": 0, "date": "2006-01-30", "time": "19:00", "stadium": "Alexandria Stadium", "city": "Alexandria" } ] }, { "name": "Group D", "teams": [{ "id": "NGA" }, { "id": "GHA" }, { "id": "ZIM" }, { "id": "SEN" }], "three_way_tied": true, "matches": [ { "home_team": "NGA", "away_team": "GHA", "home_score": 1, "away_score": 0, "date": "2006-01-23", "time": "17:15", "stadium": "Port Said Stadium", "city": "Port Said" }, { "home_team": "ZIM", "away_team": "SEN", "home_score": 0, "away_score": 2, "date": "2006-01-23", "time": "20:00", "stadium": "Port Said Stadium", "city": "Port Said" }, { "home_team": "GHA", "away_team": "SEN", "home_score": 1, "away_score": 0, "date": "2006-01-27", "time": "17:15", "stadium": "Port Said Stadium", "city": "Port Said" }, { "home_team": "NGA", "away_team": "ZIM", "home_score": 2, "away_score": 0, "date": "2006-01-27", "time": "20:00", "stadium": "Port Said Stadium", "city": "Port Said" }, { "home_team": "NGA", "away_team": "SEN", "home_score": 2, "away_score": 1, "date": "2006-01-31", "time": "19:00", "stadium": "Port Said Stadium", "city": "Port Said" }, { "home_team": "GHA", "away_team": "ZIM", "home_score": 1, "away_score": 2, "date": "2006-01-31", "time": "19:00", "stadium": "Ismailia Stadium", "city": "Ismailia" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "GUI", "away_team": "SEN", "home_score": 2, "away_score": 3, "date": "2006-02-03", "time": "15:00", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria", "bracket_order": 2 }, { "home_team": "EGY", "away_team": "COD-2003-2006", "home_score": 4, "away_score": 1, "date": "2006-02-03", "time": "19:00", "stadium": "Cairo International Stadium", "city": "Cairo", "bracket_order": 1 }, { "home_team": "NGA", "away_team": "TUN", "home_score": 1, "away_score": 1, "home_extra_score": 0, "away_extra_score": 0, "home_penalty_score": 6, "away_penalty_score": 5, "date": "2006-02-04", "time": "15:00", "stadium": "Port Said Stadium", "city": "Port Said", "bracket_order": 4 }, { "home_team": "CMR", "away_team": "CIV", "home_score": 0, "away_score": 0, "home_extra_score": 1, "away_extra_score": 1, "home_penalty_score": 11, "away_penalty_score": 12, "date": "2006-02-04", "time": "19:00", "stadium": "Cairo Military Academy Stadium", "city": "Cairo", "bracket_order": 3 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "EGY", "away_team": "SEN", "home_score": 2, "away_score": 1, "date": "2006-02-07", "time": "19:00", "stadium": "Cairo International Stadium", "city": "Cairo", "bracket_order": 1 }, { "home_team": "NGA", "away_team": "CIV", "home_score": 0, "away_score": 1, "date": "2006-02-07", "time": "15:00", "stadium": "Harras El-Hedoud Stadium", "city": "Alexandria", "bracket_order": 2 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "SEN", "away_team": "NGA", "home_score": 0, "away_score": 1, "date": "2006-02-09", "time": "18:00", "stadium": "Cairo Military Academy Stadium", "city": "Cairo" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "EGY", "away_team": "CIV", "home_score": 0, "away_score": 0, "home_extra_score": 0, "away_extra_score": 0, "home_penalty_score": 4, "away_penalty_score": 2, "date": "2006-02-10", "time": "18:00", "stadium": "Cairo International Stadium", "city": "Cairo" } ] } ] } ] }
+{
+  "id": "AFCON2006",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the Quarter-finals." } },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "EGY" }, { "id": "LBY-1977-2011" }, { "id": "MAR" }, { "id": "CIV" }],
+          "matches": [
+            {
+              "home_team": "EGY",
+              "away_team": "LBY-1977-2011",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2006-01-20",
+              "time": "19:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "MAR",
+              "away_team": "CIV",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-01-21",
+              "time": "14:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "LBY-1977-2011",
+              "away_team": "CIV",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2006-01-24",
+              "time": "17:15",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "EGY",
+              "away_team": "MAR",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-01-24",
+              "time": "20:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "EGY",
+              "away_team": "CIV",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2006-01-28",
+              "time": "19:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "LBY-1977-2011",
+              "away_team": "MAR",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-01-28",
+              "time": "19:00",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "CMR" }, { "id": "ANG" }, { "id": "TOG" }, { "id": "COD-2003-2006" }],
+          "matches": [
+            {
+              "home_team": "CMR",
+              "away_team": "ANG",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2006-01-21",
+              "time": "17:15",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "TOG",
+              "away_team": "COD-2003-2006",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-01-21",
+              "time": "20:00",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "ANG",
+              "away_team": "COD-2003-2006",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2006-01-25",
+              "time": "17:15",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "CMR",
+              "away_team": "TOG",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-01-25",
+              "time": "20:00",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "ANG",
+              "away_team": "TOG",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2006-01-29",
+              "time": "19:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            },
+            {
+              "home_team": "CMR",
+              "away_team": "COD-2003-2006",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-01-29",
+              "time": "19:00",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [{ "id": "TUN" }, { "id": "ZAM" }, { "id": "RSA" }, { "id": "GUI" }],
+          "matches": [
+            {
+              "home_team": "TUN",
+              "away_team": "ZAM",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "2006-01-22",
+              "time": "17:15",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria"
+            },
+            {
+              "home_team": "RSA",
+              "away_team": "GUI",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-01-22",
+              "time": "20:00",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria"
+            },
+            {
+              "home_team": "ZAM",
+              "away_team": "GUI",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2006-01-26",
+              "time": "17:15",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria"
+            },
+            {
+              "home_team": "TUN",
+              "away_team": "RSA",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-01-26",
+              "time": "20:00",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria"
+            },
+            {
+              "home_team": "TUN",
+              "away_team": "GUI",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2006-01-30",
+              "time": "19:00",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria"
+            },
+            {
+              "home_team": "ZAM",
+              "away_team": "RSA",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-01-30",
+              "time": "19:00",
+              "stadium": "Alexandria Stadium",
+              "city": "Alexandria"
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [{ "id": "NGA" }, { "id": "GHA" }, { "id": "ZIM" }, { "id": "SEN" }],
+          "three_way_tied": true,
+          "matches": [
+            {
+              "home_team": "NGA",
+              "away_team": "GHA",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-01-23",
+              "time": "17:15",
+              "stadium": "Port Said Stadium",
+              "city": "Port Said"
+            },
+            {
+              "home_team": "ZIM",
+              "away_team": "SEN",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2006-01-23",
+              "time": "20:00",
+              "stadium": "Port Said Stadium",
+              "city": "Port Said"
+            },
+            {
+              "home_team": "GHA",
+              "away_team": "SEN",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2006-01-27",
+              "time": "17:15",
+              "stadium": "Port Said Stadium",
+              "city": "Port Said"
+            },
+            {
+              "home_team": "NGA",
+              "away_team": "ZIM",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2006-01-27",
+              "time": "20:00",
+              "stadium": "Port Said Stadium",
+              "city": "Port Said"
+            },
+            {
+              "home_team": "NGA",
+              "away_team": "SEN",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-01-31",
+              "time": "19:00",
+              "stadium": "Port Said Stadium",
+              "city": "Port Said"
+            },
+            {
+              "home_team": "GHA",
+              "away_team": "ZIM",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2006-01-31",
+              "time": "19:00",
+              "stadium": "Ismailia Stadium",
+              "city": "Ismailia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "GUI",
+              "away_team": "SEN",
+              "home_score": 2,
+              "away_score": 3,
+              "date": "2006-02-03",
+              "time": "15:00",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "EGY",
+              "away_team": "COD-2003-2006",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "2006-02-03",
+              "time": "19:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "NGA",
+              "away_team": "TUN",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 6,
+              "away_penalty_score": 5,
+              "date": "2006-02-04",
+              "time": "15:00",
+              "stadium": "Port Said Stadium",
+              "city": "Port Said",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "CMR",
+              "away_team": "CIV",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 1,
+              "away_extra_score": 1,
+              "home_penalty_score": 11,
+              "away_penalty_score": 12,
+              "date": "2006-02-04",
+              "time": "19:00",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo",
+              "bracket_order": 3
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "EGY",
+              "away_team": "SEN",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2006-02-07",
+              "time": "19:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "NGA",
+              "away_team": "CIV",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-02-07",
+              "time": "15:00",
+              "stadium": "Harras El-Hedoud Stadium",
+              "city": "Alexandria",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "SEN",
+              "away_team": "NGA",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2006-02-09",
+              "time": "18:00",
+              "stadium": "Cairo Military Academy Stadium",
+              "city": "Cairo"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "EGY",
+              "away_team": "CIV",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 4,
+              "away_penalty_score": 2,
+              "date": "2006-02-10",
+              "time": "18:00",
+              "stadium": "Cairo International Stadium",
+              "city": "Cairo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

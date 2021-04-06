@@ -1,6 +1,6 @@
 import React from 'react'
-import Rankings from '../rankings/Rankings'
-import { calculateProgressRankings, collectProgressRankings, sortGroupRankings } from '../rankings/RankingsHelper'
+import Rankings from '../tournament/rankings/Rankings'
+import { calculateProgressRankings, collectProgressRankings, sortGroupRankings } from '../tournament/rankings/RankingsHelper'
 import { getParentTeam, getTeamName } from '../core/TeamHelper'
 import { isSuccessor } from '../core/Helper'
 import { Row, Col } from 'reactstrap'

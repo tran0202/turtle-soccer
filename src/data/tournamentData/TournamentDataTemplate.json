@@ -9,7 +9,7 @@
         {
           "name": "Preliminary Semi-finals",
           "short_name": "1/2P",
-          "eliminateCount": 77,
+          "eliminate_count": 77,
           "next_round": "Preliminary Final",
           "matches": [
             {
@@ -39,7 +39,7 @@
         {
           "name": "Preliminary Final",
           "short_name": "1stP",
-          "eliminateCount": 76,
+          "eliminate_count": 76,
           "next_round": "First Qualifying First Leg",
           "bye_teams": [
             { "id": "NOM" },
@@ -263,7 +263,7 @@
         {
           "name": "First Qualifying Second Leg",
           "round_type": "secondleg",
-          "eliminateCount": 60,
+          "eliminate_count": 60,
           "next_round": "Second Qualifying First Leg",
           "bye_teams": [{ "id": "MTA" }, { "id": "COP" }, { "id": "DZA" }, { "id": "APO" }, { "id": "VPL" }, { "id": "OLY" }, { "id": "PSV" }, { "id": "BAS" }],
           "matches": [
@@ -586,7 +586,7 @@
         {
           "name": "Second Qualifying Second Leg",
           "round_type": "secondleg",
-          "eliminateCount": 48,
+          "eliminate_count": 48,
           "next_round": "Third Qualifying First Leg",
           "bye_teams": [{ "id": "PAO" }, { "id": "AJA" }, { "id": "IBA" }, { "id": "KRA" }, { "id": "PTO" }, { "id": "BRG" }, { "id": "DYK" }, { "id": "LIN" }],
           "matches": [
@@ -853,7 +853,7 @@
         {
           "name": "Third Qualifying Second Leg",
           "round_type": "secondleg",
-          "eliminateCount": 38,
+          "eliminate_count": 38,
           "next_round": "Play-off First Leg",
           "bye_teams": [{ "id": "SLP" }, { "id": "YBO" }],
           "matches": [
@@ -1056,7 +1056,7 @@
         {
           "name": "Play-off Second Leg",
           "round_type": "secondleg",
-          "eliminateCount": 32,
+          "eliminate_count": 32,
           "next_round": "Group Stage",
           "bye_teams": [],
           "matches": [
@@ -1133,7 +1133,7 @@
     {
       "name": "Group Stage",
       "type": "roundrobinmatchday",
-      "eliminateCount": 16,
+      "eliminate_count": 16,
       "home_and_away": true,
       "next_round": "Round of 16",
       "advancement": {
@@ -2402,7 +2402,7 @@
         {
           "name": "Round of 16",
           "short_name": "1/8",
-          "eliminateCount": 8,
+          "eliminate_count": 8,
           "next_round": "Quarter-finals",
           "pairs": [
             {
@@ -2628,7 +2628,7 @@
         {
           "name": "Quarter-finals",
           "short_name": "1/4",
-          "eliminateCount": 4,
+          "eliminate_count": 4,
           "next_round": "Semi-finals",
           "two_legged": false,
           "matches": [
@@ -2681,7 +2681,7 @@
         {
           "name": "Semi-finals",
           "short_name": "1/2",
-          "eliminateCount": 2,
+          "eliminate_count": 2,
           "next_round": "Final",
           "two_legged": false,
           "matches": [

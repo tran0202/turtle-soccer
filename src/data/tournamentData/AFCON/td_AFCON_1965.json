@@ -1,1 +1,133 @@
-{ "id": "AFCON1965", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 4, "next_round": "Final", "advancement": { "teams": { "auto": [1], "third_place": [2], "eliminated": [3], "text": "The winners would advance to the final. The runners-up would advance to the third-place match." } }, "groups": [ { "name": "Group A", "teams": [{ "id": "TUN" }, { "id": "ETH-1941-1974" }, { "id": "SEN" }], "matches": [ { "home_team": "TUN", "away_team": "ETH-1941-1974", "home_score": 4, "away_score": 0, "date": "1965-11-12", "time": "12:00", "stadium": "Stade Chedli Zouiten", "city": "Tunis" }, { "home_team": "SEN", "away_team": "TUN", "home_score": 0, "away_score": 0, "date": "1965-11-14", "time": "12:00", "stadium": "Stade Chedli Zouiten", "city": "Tunis" }, { "home_team": "SEN", "away_team": "ETH-1941-1974", "home_score": 5, "away_score": 1, "date": "1965-11-19", "time": "12:00", "stadium": "Stade Chedli Zouiten", "city": "Tunis" } ] }, { "name": "Group B", "teams": [{ "id": "GHA-1964-1966" }, { "id": "COD-1964-1966" }, { "id": "CIV" }], "matches": [ { "home_team": "GHA-1964-1966", "away_team": "COD-1964-1966", "home_score": 5, "away_score": 2, "date": "1965-11-12", "time": "12:00", "stadium": "Stade Bou Ali Lahouar", "city": "Sousse" }, { "home_team": "CIV", "away_team": "COD-1964-1966", "home_score": 3, "away_score": 0, "date": "1965-11-14", "time": "12:00", "stadium": "Stade Taïeb Mhiri", "city": "Sfax" }, { "home_team": "GHA-1964-1966", "away_team": "CIV", "home_score": 4, "away_score": 1, "date": "1965-11-19", "time": "12:00", "stadium": "Stade Ahmed Bsiri", "city": "Bizerte" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "SEN", "away_team": "CIV", "home_score": 0, "away_score": 1, "date": "1965-11-21", "time": "12:00", "stadium": "Stade Chedli Zouiten", "city": "Tunis" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "GHA-1964-1966", "away_team": "TUN", "home_score": 2, "away_score": 2, "home_extra_score": 1, "away_extra_score": 0, "date": "1965-11-21", "time": "15:00", "stadium": "Stade Chedli Zouiten", "city": "Tunis" } ] } ] } ] }
+{
+  "id": "AFCON1965",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 4,
+      "next_round": "Final",
+      "advancement": {
+        "teams": {
+          "auto": [1],
+          "third_place": [2],
+          "eliminated": [3],
+          "text": "The winners would advance to the final. The runners-up would advance to the third-place match."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "TUN" }, { "id": "ETH-1941-1974" }, { "id": "SEN" }],
+          "matches": [
+            {
+              "home_team": "TUN",
+              "away_team": "ETH-1941-1974",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "1965-11-12",
+              "time": "12:00",
+              "stadium": "Stade Chedli Zouiten",
+              "city": "Tunis"
+            },
+            {
+              "home_team": "SEN",
+              "away_team": "TUN",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "1965-11-14",
+              "time": "12:00",
+              "stadium": "Stade Chedli Zouiten",
+              "city": "Tunis"
+            },
+            {
+              "home_team": "SEN",
+              "away_team": "ETH-1941-1974",
+              "home_score": 5,
+              "away_score": 1,
+              "date": "1965-11-19",
+              "time": "12:00",
+              "stadium": "Stade Chedli Zouiten",
+              "city": "Tunis"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "GHA-1964-1966" }, { "id": "COD-1964-1966" }, { "id": "CIV" }],
+          "matches": [
+            {
+              "home_team": "GHA-1964-1966",
+              "away_team": "COD-1964-1966",
+              "home_score": 5,
+              "away_score": 2,
+              "date": "1965-11-12",
+              "time": "12:00",
+              "stadium": "Stade Bou Ali Lahouar",
+              "city": "Sousse"
+            },
+            {
+              "home_team": "CIV",
+              "away_team": "COD-1964-1966",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1965-11-14",
+              "time": "12:00",
+              "stadium": "Stade Taïeb Mhiri",
+              "city": "Sfax"
+            },
+            {
+              "home_team": "GHA-1964-1966",
+              "away_team": "CIV",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1965-11-19",
+              "time": "12:00",
+              "stadium": "Stade Ahmed Bsiri",
+              "city": "Bizerte"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "SEN",
+              "away_team": "CIV",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1965-11-21",
+              "time": "12:00",
+              "stadium": "Stade Chedli Zouiten",
+              "city": "Tunis"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "GHA-1964-1966",
+              "away_team": "TUN",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "1965-11-21",
+              "time": "15:00",
+              "stadium": "Stade Chedli Zouiten",
+              "city": "Tunis"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

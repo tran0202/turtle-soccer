@@ -1,1 +1,74 @@
-{ "id": "EURO1972", "stages": [ { "name": "Knockout Stage", "type": "knockout", "teams": [{ "id": "HUN" }, { "id": "URS" }, { "id": "BEL" }, { "id": "GER-1949-1990" }], "rounds": [ { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "HUN", "away_team": "URS", "home_score": 0, "away_score": 1, "date": "1972-06-14", "time": "20:00", "stadium": "Stade Émile Versé", "city": "Brussels", "bracket_order": 2 }, { "home_team": "BEL", "away_team": "GER-1949-1990", "home_score": 1, "away_score": 2, "date": "1972-06-14", "time": "20:00", "stadium": "Bosuilstadion", "city": "Antwerp", "bracket_order": 1 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "BEL", "away_team": "HUN", "home_score": 2, "away_score": 1, "date": "1972-06-17", "time": "20:00", "stadium": "Stade Maurice Dufrasne", "city": "Liège" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "GER-1949-1990", "away_team": "URS", "home_score": 3, "away_score": 0, "date": "1972-06-18", "time": "16:00", "stadium": "Heysel Stadium", "city": "Brussels" } ] } ] } ] }
+{
+  "id": "EURO1972",
+  "stages": [
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "teams": [{ "id": "HUN" }, { "id": "URS" }, { "id": "BEL" }, { "id": "GER-1949-1990" }],
+      "rounds": [
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "HUN",
+              "away_team": "URS",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1972-06-14",
+              "time": "20:00",
+              "stadium": "Stade Émile Versé",
+              "city": "Brussels",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "BEL",
+              "away_team": "GER-1949-1990",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "1972-06-14",
+              "time": "20:00",
+              "stadium": "Bosuilstadion",
+              "city": "Antwerp",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "BEL",
+              "away_team": "HUN",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1972-06-17",
+              "time": "20:00",
+              "stadium": "Stade Maurice Dufrasne",
+              "city": "Liège"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "URS",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1972-06-18",
+              "time": "16:00",
+              "stadium": "Heysel Stadium",
+              "city": "Brussels"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

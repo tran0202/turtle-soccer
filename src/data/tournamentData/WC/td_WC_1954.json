@@ -1,1 +1,347 @@
-{ "id": "WC1954", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 8, "next_round": "Quarter-finals", "odd_format": "Each group contained 2 seeded teams and 2 unseeded teams. Only 4 matches were scheduled for each group, each pitting a seeded team against an unseeded team. Another oddity was that extra time would be played in the group matches if the scores were level after 90 minutes. If the scores were still level after 120 minutes, the match would end as a draw.", "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } }, "groups": [ { "name": "Group 1", "teams": [{ "id": "BRA" }, { "id": "MEX" }, { "id": "YUG-1945-1992" }, { "id": "FRA" }], "matches": [ { "home_team": "BRA", "away_team": "MEX", "home_score": 5, "away_score": 0, "date": "1954-06-16", "time": "18:00", "stadium": "Charmilles Stadium", "city": "Geneva" }, { "home_team": "YUG-1945-1992", "away_team": "FRA", "home_score": 1, "away_score": 0, "date": "1954-06-16", "time": "18:00", "stadium": "Stade Olympique de la Pontaise", "city": "Lausanne" }, { "home_team": "BRA", "away_team": "YUG-1945-1992", "home_score": 1, "away_score": 1, "home_extra_score": 0, "away_extra_score": 0, "date": "1954-06-19", "time": "17:00", "stadium": "Stade Olympique de la Pontaise", "city": "Lausanne" }, { "home_team": "FRA", "away_team": "MEX", "home_score": 3, "away_score": 2, "date": "1954-06-19", "time": "17:00", "stadium": "Charmilles Stadium", "city": "Geneva" } ] }, { "name": "Group 2", "teams": [{ "id": "GER-1949-1990" }, { "id": "TUR" }, { "id": "HUN-1949-1956" }, { "id": "KOR" }], "matches": [ { "home_team": "GER-1949-1990", "away_team": "TUR", "home_score": 4, "away_score": 1, "date": "1954-06-17", "time": "18:00", "stadium": "Wankdorf Stadium", "city": "Bern" }, { "home_team": "HUN-1949-1956", "away_team": "KOR", "home_score": 9, "away_score": 0, "date": "1954-06-17", "time": "18:00", "stadium": "Hardturm", "city": "Zurich" }, { "home_team": "HUN-1949-1956", "away_team": "GER-1949-1990", "home_score": 8, "away_score": 3, "date": "1954-06-20", "time": "16:50", "stadium": "St. Jakob Stadium", "city": "Basel" }, { "home_team": "TUR", "away_team": "KOR", "home_score": 7, "away_score": 0, "date": "1954-06-20", "time": "17:00", "stadium": "Charmilles Stadium", "city": "Geneva" }, { "home_team": "GER-1949-1990", "away_team": "TUR", "home_score": 7, "away_score": 2, "date": "1954-06-23", "time": "18:00", "stadium": "Hardturm", "city": "Zurich", "group_playoff": true } ] }, { "name": "Group 3", "teams": [{ "id": "URU" }, { "id": "TCH" }, { "id": "AUT" }, { "id": "SCO" }], "matches": [ { "home_team": "URU", "away_team": "TCH", "home_score": 2, "away_score": 0, "date": "1954-06-16", "time": "18:00", "stadium": "Wankdorf Stadium", "city": "Bern" }, { "home_team": "AUT", "away_team": "SCO", "home_score": 1, "away_score": 0, "date": "1954-06-16", "time": "18:00", "stadium": "Hardturm", "city": "Zurich" }, { "home_team": "URU", "away_team": "SCO", "home_score": 7, "away_score": 0, "date": "1954-06-19", "time": "16:50", "stadium": "St. Jakob Stadium", "city": "Basel" }, { "home_team": "AUT", "away_team": "TCH", "home_score": 5, "away_score": 0, "date": "1954-06-19", "time": "17:00", "stadium": "Hardturm", "city": "Zurich" } ] }, { "name": "Group 4", "teams": [{ "id": "SUI" }, { "id": "ITA" }, { "id": "ENG" }, { "id": "BEL" }], "matches": [ { "home_team": "SUI", "away_team": "ITA", "home_score": 2, "away_score": 1, "date": "1954-06-17", "time": "17:50", "stadium": "Stade Olympique de la Pontaise", "city": "Lausanne" }, { "home_team": "ENG", "away_team": "BEL", "home_score": 3, "away_score": 3, "home_extra_score": 1, "away_extra_score": 1, "date": "1954-06-17", "time": "18:10", "stadium": "St. Jakob Stadium", "city": "Basel" }, { "home_team": "ITA", "away_team": "BEL", "home_score": 4, "away_score": 1, "date": "1954-06-20", "time": "17:00", "stadium": "Cornaredo Stadium", "city": "Lugano" }, { "home_team": "ENG", "away_team": "SUI", "home_score": 2, "away_score": 0, "date": "1954-06-20", "time": "17:10", "stadium": "Wankdorf Stadium", "city": "Bern" }, { "home_team": "SUI", "away_team": "ITA", "home_score": 4, "away_score": 1, "date": "1954-06-23", "time": "18:00", "stadium": "St. Jakob Stadium", "city": "Basel", "group_playoff": true } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "AUT", "away_team": "SUI", "home_score": 7, "away_score": 5, "date": "1954-06-26", "time": "17:00", "stadium": "Stade Olympique de la Pontaise", "city": "Lausanne", "bracket_order": 2 }, { "home_team": "URU", "away_team": "ENG", "home_score": 4, "away_score": 2, "date": "1954-06-26", "time": "17:00", "stadium": "St. Jakob Stadium", "city": "Basel", "bracket_order": 4 }, { "home_team": "GER-1949-1990", "away_team": "YUG-1945-1992", "home_score": 2, "away_score": 0, "date": "1954-06-27", "time": "17:00", "stadium": "Charmilles Stadium", "city": "Geneva", "bracket_order": 1 }, { "home_team": "HUN-1949-1956", "away_team": "BRA", "home_score": 4, "away_score": 2, "date": "1954-06-27", "time": "17:00", "stadium": "Wankdorf Stadium", "city": "Bern", "bracket_order": 3 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "GER-1949-1990", "away_team": "AUT", "home_score": 6, "away_score": 1, "date": "1954-06-30", "time": "18:00", "stadium": "St. Jakob Stadium", "city": "Basel", "bracket_order": 1 }, { "home_team": "HUN-1949-1956", "away_team": "URU", "home_score": 2, "away_score": 2, "home_extra_score": 2, "away_extra_score": 0, "date": "1954-06-30", "time": "18:00", "stadium": "Stade Olympique de la Pontaise", "city": "Lausanne", "bracket_order": 2 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "AUT", "away_team": "URU", "home_score": 3, "away_score": 1, "date": "1954-07-03", "time": "17:00", "stadium": "Hardturm", "city": "Zurich" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "GER-1949-1990", "away_team": "HUN-1949-1956", "home_score": 3, "away_score": 2, "date": "1954-07-04", "time": "17:00", "stadium": "Wankdorf Stadium", "city": "Bern" } ] } ] } ] }
+{
+  "id": "WC1954",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "odd_format": "Each group contained 2 seeded teams and 2 unseeded teams. Only 4 matches were scheduled for each group, each pitting a seeded team against an unseeded team. Another oddity was that extra time would be played in the group matches if the scores were level after 90 minutes. If the scores were still level after 120 minutes, the match would end as a draw.",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } },
+      "groups": [
+        {
+          "name": "Group 1",
+          "teams": [{ "id": "BRA" }, { "id": "MEX" }, { "id": "YUG-1945-1992" }, { "id": "FRA" }],
+          "matches": [
+            {
+              "home_team": "BRA",
+              "away_team": "MEX",
+              "home_score": 5,
+              "away_score": 0,
+              "date": "1954-06-16",
+              "time": "18:00",
+              "stadium": "Charmilles Stadium",
+              "city": "Geneva"
+            },
+            {
+              "home_team": "YUG-1945-1992",
+              "away_team": "FRA",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1954-06-16",
+              "time": "18:00",
+              "stadium": "Stade Olympique de la Pontaise",
+              "city": "Lausanne"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "YUG-1945-1992",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "date": "1954-06-19",
+              "time": "17:00",
+              "stadium": "Stade Olympique de la Pontaise",
+              "city": "Lausanne"
+            },
+            {
+              "home_team": "FRA",
+              "away_team": "MEX",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1954-06-19",
+              "time": "17:00",
+              "stadium": "Charmilles Stadium",
+              "city": "Geneva"
+            }
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [{ "id": "GER-1949-1990" }, { "id": "TUR" }, { "id": "HUN-1949-1956" }, { "id": "KOR" }],
+          "matches": [
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "TUR",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1954-06-17",
+              "time": "18:00",
+              "stadium": "Wankdorf Stadium",
+              "city": "Bern"
+            },
+            {
+              "home_team": "HUN-1949-1956",
+              "away_team": "KOR",
+              "home_score": 9,
+              "away_score": 0,
+              "date": "1954-06-17",
+              "time": "18:00",
+              "stadium": "Hardturm",
+              "city": "Zurich"
+            },
+            {
+              "home_team": "HUN-1949-1956",
+              "away_team": "GER-1949-1990",
+              "home_score": 8,
+              "away_score": 3,
+              "date": "1954-06-20",
+              "time": "16:50",
+              "stadium": "St. Jakob Stadium",
+              "city": "Basel"
+            },
+            {
+              "home_team": "TUR",
+              "away_team": "KOR",
+              "home_score": 7,
+              "away_score": 0,
+              "date": "1954-06-20",
+              "time": "17:00",
+              "stadium": "Charmilles Stadium",
+              "city": "Geneva"
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "TUR",
+              "home_score": 7,
+              "away_score": 2,
+              "date": "1954-06-23",
+              "time": "18:00",
+              "stadium": "Hardturm",
+              "city": "Zurich",
+              "group_playoff": true
+            }
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [{ "id": "URU" }, { "id": "TCH" }, { "id": "AUT" }, { "id": "SCO" }],
+          "matches": [
+            {
+              "home_team": "URU",
+              "away_team": "TCH",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1954-06-16",
+              "time": "18:00",
+              "stadium": "Wankdorf Stadium",
+              "city": "Bern"
+            },
+            {
+              "home_team": "AUT",
+              "away_team": "SCO",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "1954-06-16",
+              "time": "18:00",
+              "stadium": "Hardturm",
+              "city": "Zurich"
+            },
+            {
+              "home_team": "URU",
+              "away_team": "SCO",
+              "home_score": 7,
+              "away_score": 0,
+              "date": "1954-06-19",
+              "time": "16:50",
+              "stadium": "St. Jakob Stadium",
+              "city": "Basel"
+            },
+            {
+              "home_team": "AUT",
+              "away_team": "TCH",
+              "home_score": 5,
+              "away_score": 0,
+              "date": "1954-06-19",
+              "time": "17:00",
+              "stadium": "Hardturm",
+              "city": "Zurich"
+            }
+          ]
+        },
+        {
+          "name": "Group 4",
+          "teams": [{ "id": "SUI" }, { "id": "ITA" }, { "id": "ENG" }, { "id": "BEL" }],
+          "matches": [
+            {
+              "home_team": "SUI",
+              "away_team": "ITA",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1954-06-17",
+              "time": "17:50",
+              "stadium": "Stade Olympique de la Pontaise",
+              "city": "Lausanne"
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "BEL",
+              "home_score": 3,
+              "away_score": 3,
+              "home_extra_score": 1,
+              "away_extra_score": 1,
+              "date": "1954-06-17",
+              "time": "18:10",
+              "stadium": "St. Jakob Stadium",
+              "city": "Basel"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "BEL",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1954-06-20",
+              "time": "17:00",
+              "stadium": "Cornaredo Stadium",
+              "city": "Lugano"
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "SUI",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1954-06-20",
+              "time": "17:10",
+              "stadium": "Wankdorf Stadium",
+              "city": "Bern"
+            },
+            {
+              "home_team": "SUI",
+              "away_team": "ITA",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "1954-06-23",
+              "time": "18:00",
+              "stadium": "St. Jakob Stadium",
+              "city": "Basel",
+              "group_playoff": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "AUT",
+              "away_team": "SUI",
+              "home_score": 7,
+              "away_score": 5,
+              "date": "1954-06-26",
+              "time": "17:00",
+              "stadium": "Stade Olympique de la Pontaise",
+              "city": "Lausanne",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "URU",
+              "away_team": "ENG",
+              "home_score": 4,
+              "away_score": 2,
+              "date": "1954-06-26",
+              "time": "17:00",
+              "stadium": "St. Jakob Stadium",
+              "city": "Basel",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "YUG-1945-1992",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "1954-06-27",
+              "time": "17:00",
+              "stadium": "Charmilles Stadium",
+              "city": "Geneva",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "HUN-1949-1956",
+              "away_team": "BRA",
+              "home_score": 4,
+              "away_score": 2,
+              "date": "1954-06-27",
+              "time": "17:00",
+              "stadium": "Wankdorf Stadium",
+              "city": "Bern",
+              "bracket_order": 3
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "AUT",
+              "home_score": 6,
+              "away_score": 1,
+              "date": "1954-06-30",
+              "time": "18:00",
+              "stadium": "St. Jakob Stadium",
+              "city": "Basel",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "HUN-1949-1956",
+              "away_team": "URU",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 2,
+              "away_extra_score": 0,
+              "date": "1954-06-30",
+              "time": "18:00",
+              "stadium": "Stade Olympique de la Pontaise",
+              "city": "Lausanne",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "AUT",
+              "away_team": "URU",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1954-07-03",
+              "time": "17:00",
+              "stadium": "Hardturm",
+              "city": "Zurich"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "GER-1949-1990",
+              "away_team": "HUN-1949-1956",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "1954-07-04",
+              "time": "17:00",
+              "stadium": "Wankdorf Stadium",
+              "city": "Bern"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

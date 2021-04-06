@@ -1,1 +1,402 @@
-{ "id": "MOFT2008", "stages": [ { "name": "Group Stage", "type": "roundrobin", "eliminateCount": 8, "next_round": "Quarter-finals", "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } }, "groups": [ { "name": "Group A", "teams": [{ "id": "AUS_U23MNT" }, { "id": "SRB_U23MNT" }, { "id": "CIV_U23MNT" }, { "id": "ARG_U23MNT" }], "matches": [ { "home_team": "AUS_U23MNT", "away_team": "SRB_U23MNT", "home_score": 1, "away_score": 1, "date": "2008-08-07", "time": "17:00", "stadium": "Shanghai Stadium", "city": "Shanghai" }, { "home_team": "CIV_U23MNT", "away_team": "ARG_U23MNT", "home_score": 1, "away_score": 2, "date": "2008-08-07", "time": "19:45", "stadium": "Shanghai Stadium", "city": "Shanghai" }, { "home_team": "ARG_U23MNT", "away_team": "AUS_U23MNT", "home_score": 1, "away_score": 0, "date": "2008-08-10", "time": "17:00", "stadium": "Shanghai Stadium", "city": "Shanghai" }, { "home_team": "SRB_U23MNT", "away_team": "CIV_U23MNT", "home_score": 2, "away_score": 4, "date": "2008-08-10", "time": "19:45", "stadium": "Shanghai Stadium", "city": "Shanghai" }, { "home_team": "CIV_U23MNT", "away_team": "AUS_U23MNT", "home_score": 1, "away_score": 0, "date": "2008-08-13", "time": "19:45", "stadium": "Tianjin Olympic Center Stadium", "city": "Tianjin" }, { "home_team": "ARG_U23MNT", "away_team": "SRB_U23MNT", "home_score": 2, "away_score": 0, "date": "2008-08-13", "time": "19:45", "stadium": "Beijing Workers' Stadium", "city": "Beijing" } ] }, { "name": "Group B", "teams": [{ "id": "JPN_U23MNT" }, { "id": "USA_U23MNT" }, { "id": "NED_U23MNT" }, { "id": "NGA_U23MNT" }], "matches": [ { "home_team": "JPN_U23MNT", "away_team": "USA_U23MNT", "home_score": 0, "away_score": 1, "date": "2008-08-07", "time": "17:00", "stadium": "Tianjin Olympic Center Stadium", "city": "Tianjin" }, { "home_team": "NED_U23MNT", "away_team": "NGA_U23MNT", "home_score": 0, "away_score": 0, "date": "2008-08-07", "time": "19:45", "stadium": "Tianjin Olympic Center Stadium", "city": "Tianjin" }, { "home_team": "NGA_U23MNT", "away_team": "JPN_U23MNT", "home_score": 2, "away_score": 1, "date": "2008-08-10", "time": "17:00", "stadium": "Tianjin Olympic Center Stadium", "city": "Tianjin" }, { "home_team": "USA_U23MNT", "away_team": "NED_U23MNT", "home_score": 2, "away_score": 2, "date": "2008-08-10", "time": "19:45", "stadium": "Tianjin Olympic Center Stadium", "city": "Tianjin" }, { "home_team": "NED_U23MNT", "away_team": "JPN_U23MNT", "home_score": 1, "away_score": 0, "date": "2008-08-13", "time": "17:00", "stadium": "Shenyang Olympic Stadium", "city": "Shenyang" }, { "home_team": "NGA_U23MNT", "away_team": "USA_U23MNT", "home_score": 2, "away_score": 1, "date": "2008-08-13", "time": "17:00", "stadium": "Beijing Workers' Stadium", "city": "Beijing" } ] }, { "name": "Group C", "teams": [{ "id": "BRA_U23MNT" }, { "id": "BEL_U23MNT" }, { "id": "CHN_U23MNT" }, { "id": "NZL_U23MNT" }], "matches": [ { "home_team": "BRA_U23MNT", "away_team": "BEL_U23MNT", "home_score": 1, "away_score": 0, "date": "2008-08-07", "time": "17:00", "stadium": "Shenyang Olympic Stadium", "city": "Shenyang" }, { "home_team": "CHN_U23MNT", "away_team": "NZL_U23MNT", "home_score": 1, "away_score": 1, "date": "2008-08-07", "time": "19:45", "stadium": "Shenyang Olympic Stadium", "city": "Shenyang" }, { "home_team": "NZL_U23MNT", "away_team": "BRA_U23MNT", "home_score": 0, "away_score": 5, "date": "2008-08-10", "time": "17:00", "stadium": "Shenyang Olympic Stadium", "city": "Shenyang" }, { "home_team": "BEL_U23MNT", "away_team": "CHN_U23MNT", "home_score": 2, "away_score": 0, "date": "2008-08-10", "time": "19:45", "stadium": "Shenyang Olympic Stadium", "city": "Shenyang" }, { "home_team": "CHN_U23MNT", "away_team": "BRA_U23MNT", "home_score": 0, "away_score": 3, "date": "2008-08-13", "time": "19:45", "stadium": "Qinhuangdao Olympic Sports Center Stadium", "city": "Qinhuangdao" }, { "home_team": "NZL_U23MNT", "away_team": "BEL_U23MNT", "home_score": 0, "away_score": 1, "date": "2008-08-13", "time": "19:45", "stadium": "Shanghai Stadium", "city": "Shanghai" } ] }, { "name": "Group D", "teams": [{ "id": "HON_U23MNT" }, { "id": "ITA_U23MNT" }, { "id": "KOR_U23MNT" }, { "id": "CMR_U23MNT" }], "matches": [ { "home_team": "HON_U23MNT", "away_team": "ITA_U23MNT", "home_score": 0, "away_score": 3, "date": "2008-08-07", "time": "17:00", "stadium": "Qinhuangdao Olympic Sports Center Stadium", "city": "Qinhuangdao" }, { "home_team": "KOR_U23MNT", "away_team": "CMR_U23MNT", "home_score": 1, "away_score": 1, "date": "2008-08-07", "time": "19:45", "stadium": "Qinhuangdao Olympic Sports Center Stadium", "city": "Qinhuangdao" }, { "home_team": "CMR_U23MNT", "away_team": "HON_U23MNT", "home_score": 1, "away_score": 0, "date": "2008-08-10", "time": "17:00", "stadium": "Qinhuangdao Olympic Sports Center Stadium", "city": "Qinhuangdao" }, { "home_team": "ITA_U23MNT", "away_team": "KOR_U23MNT", "home_score": 3, "away_score": 0, "date": "2008-08-10", "time": "19:45", "stadium": "Qinhuangdao Olympic Sports Center Stadium", "city": "Qinhuangdao" }, { "home_team": "KOR_U23MNT", "away_team": "HON_U23MNT", "home_score": 1, "away_score": 0, "date": "2008-08-13", "time": "17:00", "stadium": "Shanghai Stadium", "city": "Shanghai" }, { "home_team": "CMR_U23MNT", "away_team": "ITA_U23MNT", "home_score": 0, "away_score": 0, "date": "2008-08-13", "time": "17:00", "stadium": "Tianjin Olympic Center Stadium", "city": "Tianjin" } ] } ] }, { "name": "Knockout Stage", "type": "knockout", "rounds": [ { "name": "Quarter-finals", "short_name": "1/4", "eliminateCount": 4, "next_round": "Semi-finals", "matches": [ { "home_team": "BRA_U23MNT", "away_team": "CMR_U23MNT", "home_score": 0, "away_score": 0, "home_extra_score": 2, "away_extra_score": 0, "date": "2008-08-16", "time": "18:00", "stadium": "Shenyang Olympic Stadium", "city": "Shenyang", "bracket_order": 4 }, { "home_team": "ITA_U23MNT", "away_team": "BEL_U23MNT", "home_score": 2, "away_score": 3, "date": "2008-08-16", "time": "18:00", "stadium": "Beijing Workers' Stadium", "city": "Beijing", "bracket_order": 2 }, { "home_team": "ARG_U23MNT", "away_team": "NED_U23MNT", "home_score": 1, "away_score": 1, "home_extra_score": 1, "away_extra_score": 0, "date": "2008-08-16", "time": "21:00", "stadium": "Shanghai Stadium", "city": "Shanghai", "bracket_order": 3 }, { "home_team": "NGA_U23MNT", "away_team": "CIV_U23MNT", "home_score": 2, "away_score": 0, "date": "2008-08-16", "time": "21:00", "stadium": "Qinhuangdao Olympic Sports Center Stadium", "city": "Qinhuangdao", "bracket_order": 1 } ] }, { "name": "Semi-finals", "short_name": "1/2", "eliminateCount": 2, "next_round": "Final", "matches": [ { "home_team": "NGA_U23MNT", "away_team": "BEL_U23MNT", "home_score": 4, "away_score": 1, "date": "2008-08-19", "time": "18:00", "stadium": "Shanghai Stadium", "city": "Shanghai", "bracket_order": 1 }, { "home_team": "ARG_U23MNT", "away_team": "BRA_U23MNT", "home_score": 3, "away_score": 0, "date": "2008-08-19", "time": "21:00", "stadium": "Beijing Workers' Stadium", "city": "Beijing", "bracket_order": 2 } ] }, { "name": "Third-place", "short_name": "3rd", "matches": [ { "home_team": "BEL_U23MNT", "away_team": "BRA_U23MNT", "home_score": 0, "away_score": 3, "date": "2008-08-22", "time": "19:00", "stadium": "Shanghai Stadium", "city": "Shanghai" } ] }, { "name": "Final", "short_name": "1st", "matches": [ { "home_team": "NGA_U23MNT", "away_team": "ARG_U23MNT", "home_score": 0, "away_score": 1, "date": "2008-08-23", "time": "12:00", "stadium": "National Stadium", "city": "Beijing" } ] } ] } ] }
+{
+  "id": "MOFT2008",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "AUS_U23MNT" }, { "id": "SRB_U23MNT" }, { "id": "CIV_U23MNT" }, { "id": "ARG_U23MNT" }],
+          "matches": [
+            {
+              "home_team": "AUS_U23MNT",
+              "away_team": "SRB_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2008-08-07",
+              "time": "17:00",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            },
+            {
+              "home_team": "CIV_U23MNT",
+              "away_team": "ARG_U23MNT",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2008-08-07",
+              "time": "19:45",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            },
+            {
+              "home_team": "ARG_U23MNT",
+              "away_team": "AUS_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2008-08-10",
+              "time": "17:00",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            },
+            {
+              "home_team": "SRB_U23MNT",
+              "away_team": "CIV_U23MNT",
+              "home_score": 2,
+              "away_score": 4,
+              "date": "2008-08-10",
+              "time": "19:45",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            },
+            {
+              "home_team": "CIV_U23MNT",
+              "away_team": "AUS_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2008-08-13",
+              "time": "19:45",
+              "stadium": "Tianjin Olympic Center Stadium",
+              "city": "Tianjin"
+            },
+            {
+              "home_team": "ARG_U23MNT",
+              "away_team": "SRB_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2008-08-13",
+              "time": "19:45",
+              "stadium": "Beijing Workers' Stadium",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "JPN_U23MNT" }, { "id": "USA_U23MNT" }, { "id": "NED_U23MNT" }, { "id": "NGA_U23MNT" }],
+          "matches": [
+            {
+              "home_team": "JPN_U23MNT",
+              "away_team": "USA_U23MNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2008-08-07",
+              "time": "17:00",
+              "stadium": "Tianjin Olympic Center Stadium",
+              "city": "Tianjin"
+            },
+            {
+              "home_team": "NED_U23MNT",
+              "away_team": "NGA_U23MNT",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2008-08-07",
+              "time": "19:45",
+              "stadium": "Tianjin Olympic Center Stadium",
+              "city": "Tianjin"
+            },
+            {
+              "home_team": "NGA_U23MNT",
+              "away_team": "JPN_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2008-08-10",
+              "time": "17:00",
+              "stadium": "Tianjin Olympic Center Stadium",
+              "city": "Tianjin"
+            },
+            {
+              "home_team": "USA_U23MNT",
+              "away_team": "NED_U23MNT",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2008-08-10",
+              "time": "19:45",
+              "stadium": "Tianjin Olympic Center Stadium",
+              "city": "Tianjin"
+            },
+            {
+              "home_team": "NED_U23MNT",
+              "away_team": "JPN_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2008-08-13",
+              "time": "17:00",
+              "stadium": "Shenyang Olympic Stadium",
+              "city": "Shenyang"
+            },
+            {
+              "home_team": "NGA_U23MNT",
+              "away_team": "USA_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2008-08-13",
+              "time": "17:00",
+              "stadium": "Beijing Workers' Stadium",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [{ "id": "BRA_U23MNT" }, { "id": "BEL_U23MNT" }, { "id": "CHN_U23MNT" }, { "id": "NZL_U23MNT" }],
+          "matches": [
+            {
+              "home_team": "BRA_U23MNT",
+              "away_team": "BEL_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2008-08-07",
+              "time": "17:00",
+              "stadium": "Shenyang Olympic Stadium",
+              "city": "Shenyang"
+            },
+            {
+              "home_team": "CHN_U23MNT",
+              "away_team": "NZL_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2008-08-07",
+              "time": "19:45",
+              "stadium": "Shenyang Olympic Stadium",
+              "city": "Shenyang"
+            },
+            {
+              "home_team": "NZL_U23MNT",
+              "away_team": "BRA_U23MNT",
+              "home_score": 0,
+              "away_score": 5,
+              "date": "2008-08-10",
+              "time": "17:00",
+              "stadium": "Shenyang Olympic Stadium",
+              "city": "Shenyang"
+            },
+            {
+              "home_team": "BEL_U23MNT",
+              "away_team": "CHN_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2008-08-10",
+              "time": "19:45",
+              "stadium": "Shenyang Olympic Stadium",
+              "city": "Shenyang"
+            },
+            {
+              "home_team": "CHN_U23MNT",
+              "away_team": "BRA_U23MNT",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2008-08-13",
+              "time": "19:45",
+              "stadium": "Qinhuangdao Olympic Sports Center Stadium",
+              "city": "Qinhuangdao"
+            },
+            {
+              "home_team": "NZL_U23MNT",
+              "away_team": "BEL_U23MNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2008-08-13",
+              "time": "19:45",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [{ "id": "HON_U23MNT" }, { "id": "ITA_U23MNT" }, { "id": "KOR_U23MNT" }, { "id": "CMR_U23MNT" }],
+          "matches": [
+            {
+              "home_team": "HON_U23MNT",
+              "away_team": "ITA_U23MNT",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2008-08-07",
+              "time": "17:00",
+              "stadium": "Qinhuangdao Olympic Sports Center Stadium",
+              "city": "Qinhuangdao"
+            },
+            {
+              "home_team": "KOR_U23MNT",
+              "away_team": "CMR_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2008-08-07",
+              "time": "19:45",
+              "stadium": "Qinhuangdao Olympic Sports Center Stadium",
+              "city": "Qinhuangdao"
+            },
+            {
+              "home_team": "CMR_U23MNT",
+              "away_team": "HON_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2008-08-10",
+              "time": "17:00",
+              "stadium": "Qinhuangdao Olympic Sports Center Stadium",
+              "city": "Qinhuangdao"
+            },
+            {
+              "home_team": "ITA_U23MNT",
+              "away_team": "KOR_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2008-08-10",
+              "time": "19:45",
+              "stadium": "Qinhuangdao Olympic Sports Center Stadium",
+              "city": "Qinhuangdao"
+            },
+            {
+              "home_team": "KOR_U23MNT",
+              "away_team": "HON_U23MNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2008-08-13",
+              "time": "17:00",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            },
+            {
+              "home_team": "CMR_U23MNT",
+              "away_team": "ITA_U23MNT",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2008-08-13",
+              "time": "17:00",
+              "stadium": "Tianjin Olympic Center Stadium",
+              "city": "Tianjin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "BRA_U23MNT",
+              "away_team": "CMR_U23MNT",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 2,
+              "away_extra_score": 0,
+              "date": "2008-08-16",
+              "time": "18:00",
+              "stadium": "Shenyang Olympic Stadium",
+              "city": "Shenyang",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "ITA_U23MNT",
+              "away_team": "BEL_U23MNT",
+              "home_score": 2,
+              "away_score": 3,
+              "date": "2008-08-16",
+              "time": "18:00",
+              "stadium": "Beijing Workers' Stadium",
+              "city": "Beijing",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "ARG_U23MNT",
+              "away_team": "NED_U23MNT",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "2008-08-16",
+              "time": "21:00",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "NGA_U23MNT",
+              "away_team": "CIV_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2008-08-16",
+              "time": "21:00",
+              "stadium": "Qinhuangdao Olympic Sports Center Stadium",
+              "city": "Qinhuangdao",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "NGA_U23MNT",
+              "away_team": "BEL_U23MNT",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "2008-08-19",
+              "time": "18:00",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ARG_U23MNT",
+              "away_team": "BRA_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2008-08-19",
+              "time": "21:00",
+              "stadium": "Beijing Workers' Stadium",
+              "city": "Beijing",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "BEL_U23MNT",
+              "away_team": "BRA_U23MNT",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2008-08-22",
+              "time": "19:00",
+              "stadium": "Shanghai Stadium",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "NGA_U23MNT",
+              "away_team": "ARG_U23MNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2008-08-23",
+              "time": "12:00",
+              "stadium": "National Stadium",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

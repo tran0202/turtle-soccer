@@ -6,15 +6,15 @@ import { isEmpty } from 'lodash'
 
 const hasAnyGroups = (qualification) => {
   if (isEmpty(qualification.stages)) return false
-  const rrStage = qualification.stages.find((s) => s.type === 'roundrobin')
+  const rrStage = qualification.stages.find((s) => s.config.type === 'roundrobin')
   if (!rrStage) return false
   return !isEmpty(rrStage.groups)
 }
 
 const hasMdGroups = (qualification) => {
-  if (isEmpty(qualification.stages)) return false
-  const rrmdStage = qualification.stages.find((s) => s.type === 'roundrobinmatchday')
-  if (!rrmdStage) return false
+  if (isEmpty(qualification.stages)) return 0
+  const rrmdStage = qualification.stages.find((s) => s.config.type === 'roundrobinmatchday')
+  if (!rrmdStage) return 0
   return rrmdStage.groups ? rrmdStage.groups.length : 0
 }
 
