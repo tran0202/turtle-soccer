@@ -35,16 +35,6 @@ export const isHead2HeadBeforeGoalDifference = (config) => {
   return tiebreakers.findIndex((tb) => tb === 'head2head') < tiebreakers.findIndex((tb) => tb === 'goaldifferenceandgoalscored')
 }
 
-export const hasGroupPlayoff = (group) => {
-  if (!group.matches) return false
-  return group.matches.find((m) => m.group_playoff) !== undefined
-}
-
-export const hasReplay = (round) => {
-  if (!round.matches) return false
-  return round.matches.find((m) => m.replay) !== undefined
-}
-
 const accumulateRanking2 = (team, match, config) => {
   if (!match || match.home_score === null || match.away_score === null || match.home_extra_score === null || match.away_extra_score === null) return
   const side = match.home_team === team.id ? 'home' : 'away'

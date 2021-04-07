@@ -1,7 +1,7 @@
 import React from 'react'
 import About from './About'
 import QualificationHeader from './QualificationHeader'
-import Matches from './Matches'
+import Matches from './matches/Matches'
 import Groups from './groups/Groups'
 import { Nav, NavItem, NavLink, Row } from 'reactstrap'
 

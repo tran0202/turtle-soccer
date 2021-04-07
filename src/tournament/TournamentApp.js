@@ -6,7 +6,7 @@ import Page from '../core/Page'
 import { Style } from '../core/Utilities'
 import Header from './Header'
 import About from './About'
-import Matches from './Matches'
+import Matches from './matches/Matches'
 import Groups from './groups/Groups'
 import FinalStandings from './FinalStandings'
 import Qualification from './Qualification'
@@ -19,45 +19,19 @@ import {
   setCompetitionDetails,
   setTournamentDetails,
   setTournamentConfig,
-  setStageDetails,
-  setStageConfig,
   setAllLeagues,
   setAllStages,
 } from '../core/DataHelper'
 import { Container } from 'reactstrap'
+import { isEmpty } from 'lodash'
 
 class TournamentApp extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      tournament: {
-        config: {},
-        details: {
-          host: [],
-          final_host: [],
-          hero_images: [],
-          final_standings: {},
-          awards: {
-            golden_boot: [],
-            silver_boot: [],
-            bronze_boot: [],
-            golden_ball: [],
-            golden_glove: [],
-            best_defender: [],
-            best_midfielder: [],
-            best_forward: [],
-            fair_play_team: [],
-          },
-          qualified: [],
-          next_tournament: {},
-          previous_tournament: {},
-        },
-        leagues: [],
-        qualification: { config: { confed_names: [] } },
-        stages: [{ config: {}, details: {} }],
-      },
-      competition: { config: {}, details: {} },
+      tournament: {},
+      competition: {},
     }
   }
 
@@ -141,10 +115,10 @@ class TournamentApp extends React.Component {
 
   getTournament = () => {
     const t = getTournamentArray().find((t) => t.id === this.props.query.id)
+    // console.log('t', t)
     if (t) {
       setTournamentDetails(t)
       setTournamentConfig(t)
-      // console.log('Tournament', t)
       const td = this.getTournamentData()
       const td_stages = td.stages || []
       const td_leagues = td.leagues || []
@@ -190,12 +164,16 @@ class TournamentApp extends React.Component {
       <Page>
         <Style competition={competition} />
         <Container>
-          <Header state={this.state} query={query} />
-          {page === 'about' && <About tournament={tournament} />}
-          {page === 'matches' && <Matches state={this.state} />}
-          {page === 'groups' && <Groups state={this.state} />}
-          {page === 'finalstandings' && <FinalStandings state={this.state} />}
-          {page === 'qualification' && <Qualification state={this.state} query={query} />}
+          {!isEmpty(tournament) && (
+            <React.Fragment>
+              <Header state={this.state} query={query} />
+              {page === 'about' && <About tournament={tournament} />}
+              {page === 'matches' && <Matches tournament={tournament} />}
+              {page === 'groups' && <Groups state={this.state} />}
+              {page === 'finalstandings' && <FinalStandings state={this.state} />}
+              {page === 'qualification' && <Qualification state={this.state} query={query} />}
+            </React.Fragment>
+          )}
         </Container>
       </Page>
     )

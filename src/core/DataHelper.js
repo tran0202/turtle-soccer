@@ -762,6 +762,7 @@ export const setStageConfig = (s) => {
     default: s.default || false,
     eliminate_count: s.eliminate_count || undefined,
     home_and_away: s.home_and_away || false,
+    multiple_paths: s.multiple_paths || false,
     next_round: s.next_round || '',
     type: s.type || '',
   }
@@ -769,6 +770,7 @@ export const setStageConfig = (s) => {
   delete s.default
   delete s.eliminate_count
   delete s.home_and_away
+  delete s.multiple_paths
   delete s.next_round
   delete s.type
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-// import RoundRobin from './RoundRobin'
+import RoundRobin from './RoundRobin'
 // import RoundRobinMatchDay from './RoundRobinMatchDay'
 // import RoundRobinLeagueMatchDay from './RoundRobinLeagueMatchDay'
-// import Knockout from './Knockout'
+import Knockout from './Knockout'
 // import Knockout2Legged from './Knockout2Legged'
 // import KnockoutMultiple2Legged from './KnockoutMultiple2Legged'
-import { getTournamentConfig, getTournamentTypeConfig, getDefaultStageTab, getDefaultMdTab } from '../core/Helper'
+import { getTournamentConfig, getTournamentTypeConfig, getDefaultStageTab, getDefaultMdTab } from '../../core/Helper'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap'
 import classnames from 'classnames'
 import { isEmpty } from 'lodash'
@@ -16,7 +16,7 @@ const collectLeagueMatchdays = (leagues) => {
   leagues.forEach((l) => {
     l.stages &&
       l.stages.forEach((s) => {
-        if (s.type === 'roundrobinleaguematchday') {
+        if (s.config.type === 'roundrobinleaguematchday') {
           s.groups &&
             s.groups.forEach((g) => {
               g.matchdays &&
@@ -24,40 +24,35 @@ const collectLeagueMatchdays = (leagues) => {
                   const _matches = []
                   md.matches &&
                     md.matches.forEach((m) => {
-                      m.league_name = l.name
-                      m.group = g.name
+                      m.league_name = l.details.name
+                      m.group = g.details.name
                       _matches.push({ ...m })
                     })
-                  const _md = matchdays.find((x) => x.name === md.name)
+                  const _md = matchdays.find((x) => x.details.name === md.details.name)
                   if (_md === undefined) {
-                    matchdays.push({ name: md.name, type: s.type, matches: _matches })
+                    matchdays.push({ details: { name: md.details.name }, config: { type: s.config.type }, matches: _matches })
                   } else {
                     _md.matches = _md.matches.concat(_matches)
                   }
                 })
             })
-        } else if (s.type === 'knockout' || s.type === 'knockout2legged') {
-          const _md = matchdays.find((x) => x.name === s.name)
+        } else if (s.config.type === 'knockout' || s.config.type === 'knockout2legged') {
+          const _md = matchdays.find((x) => x.details.name === s.details.name)
           if (_md === undefined) {
-            matchdays.push({ name: s.name, type: s.type, stage: s })
+            matchdays.push({ details: { name: s.details.name }, config: { type: s.config.type }, stage: s })
           }
         }
       })
   })
-  // console.log('matchdays', matchdays)
   return matchdays
 }
 
 const Matches = (props) => {
-  const { state } = props
-  const { tournament, competition } = state
-  const { stages, leagues } = tournament
-  const stageArray = tournament.config.multi_league ? collectLeagueMatchdays(leagues) : stages
-  // const config = { ...getTournamentConfig(tournament), ...getTournamentTypeConfig(tournamentType) }
-  const defaultTab = !isEmpty(stages) ? getDefaultStageTab(stages) : 'Group-Stage' // && tournament.config.multi_league ? getDefaultMdTab(leagues) : getDefaultStageTab(stages)
-  console.log('tournament', tournament)
-  console.log('stages', stages)
-  console.log('defaultTab', defaultTab)
+  const { tournament } = props
+  const { stages, leagues, config } = tournament
+  const stageArray = config.multi_league ? collectLeagueMatchdays(leagues) : stages
+  // console.log('state', state)
+  const defaultTab = config.multi_league ? getDefaultMdTab(leagues) : getDefaultStageTab(stages)
   const [activeTab, setActiveTab] = useState(defaultTab)
   const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab)
@@ -85,20 +80,19 @@ const Matches = (props) => {
             ))}
           </Nav>
           <TabContent activeTab={activeTab}>
-            Tab
-            {/* {stages.map((stage) => (
-              <React.Fragment key={stage.name}>
-                {stage.name && (
-                  <TabPane tabId={stage.name.replace(' ', '-')}>
-                    {(stage.type === 'roundrobin' || stage.type === 'allocation') && <RoundRobin stage={stage} config={config} />}
-                    {stage.type === 'roundrobinmatchday' && <RoundRobinMatchDay stage={stage} config={config} />}
-                    {stage.type === 'knockout' && <Knockout stage={stage} config={config} />}
-                    {stage.type === 'knockout2legged' && <Knockout2Legged stage={stage} config={config} />}
-                    {stage.type === 'knockoutmultiple2legged' && <KnockoutMultiple2Legged stage={stage} config={config} />}
+            {stageArray.map((s) => (
+              <React.Fragment key={s.details.name}>
+                {s.details.name && (
+                  <TabPane tabId={s.details.name.replace(' ', '-')}>
+                    {(s.config.type === 'roundrobin' || s.config.type === 'allocation') && <RoundRobin stage={s} config={config} />}
+                    {/* {stage.type === 'roundrobinmatchday' && <RoundRobinMatchDay stage={stage} config={config} />} */}
+                    {s.config.type === 'knockout' && <Knockout stage={s} config={config} />}
+                    {/* {stage.type === 'knockout2legged' && <Knockout2Legged stage={stage} config={config} />}
+                    {stage.type === 'knockoutmultiple2legged' && <KnockoutMultiple2Legged stage={stage} config={config} />} */}
                   </TabPane>
                 )}
               </React.Fragment>
-            ))} */}
+            ))}
           </TabContent>
         </React.Fragment>
       )}
