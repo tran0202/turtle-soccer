@@ -19,7 +19,7 @@
       ],
       "rounds": [
         {
-          "name": "First round",
+          "name": "First Round",
           "short_name": "1/8",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
@@ -55,7 +55,7 @@
             {
               "home_team": "YUG-1945-1992_U23MNT",
               "away_team": "USA_U23MNT",
-              "postponed": true,
+              "match_postponed": true,
               "postponed_notes": "to the quarter-finals",
               "date": "1956-11-23",
               "bracket_order": 1

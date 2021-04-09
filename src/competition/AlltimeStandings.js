@@ -116,7 +116,7 @@ const collectRankings = (competition) => {
             r.bye_teams && r.bye_teams.forEach((t) => _teams.push(t))
             r.matches &&
               r.matches.forEach((m) => {
-                if (!m.home_bye && !m.away_withdrew && !m.postponed && !m.match_void) {
+                if (!m.home_bye && !m.away_withdrew && !m.match_postponed && !m.match_void) {
                   if (r.round_type === 'secondleg') {
                     _matches.push({ ...m, match_type: 'secondleg' })
                   } else {
@@ -160,7 +160,7 @@ const collectRankings = (competition) => {
                 s.rounds.forEach((r) => {
                   r.matches &&
                     r.matches.forEach((m) => {
-                      if (!m.home_bye && !m.away_withdrew && !m.postponed && !m.match_void) {
+                      if (!m.home_bye && !m.away_withdrew && !m.match_postponed && !m.match_void) {
                         _matches.push(m)
                       }
                     })

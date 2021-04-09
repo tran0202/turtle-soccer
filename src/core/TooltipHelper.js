@@ -126,12 +126,6 @@ export const ConsolationTooltip = (props) => {
   return <TopTooltip target={target} content={content} />
 }
 
-export const PlayoffSecondRoundTooltip = (props) => {
-  const { target } = props
-  const content = `Winner will face Netherlands for the silver medal`
-  return <TopTooltip target={target} content={content} />
-}
-
 export const SemifinalistsTooltip = (props) => {
   const { target } = props
   const content = `No third-place match was played. Semi-finalists are listed in alphabetical order.`

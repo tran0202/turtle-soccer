@@ -1,24 +1,22 @@
 import React from 'react'
-// import { getTeamArray } from './DataHelper'
 import { getTeamName, getTeamFlag } from '../../core/TeamHelper'
-// import {
-//   PlayoffWinTooltip,
-//   WalkoverTooltip,
-//   AwardedTooltip,
-//   AetTooltip,
-//   ByeTooltip,
-//   CancelledTooltip,
-//   GoldenGoalTooltip,
-//   SilverGoalTooltip,
-//   Extra140Tooltip,
-//   DisqualifiedTooltip,
-//   ReplacementTooltip,
-//   ConsolationTooltip,
-//   PlayoffSecondRoundTooltip,
-// } from './TooltipHelper'
+import {
+  PlayoffWinTooltip,
+  WalkoverTooltip,
+  AwardedTooltip,
+  AetTooltip,
+  ByeTooltip,
+  CancelledTooltip,
+  GoldenGoalTooltip,
+  SilverGoalTooltip,
+  Extra140Tooltip,
+  DisqualifiedTooltip,
+  ReplacementTooltip,
+  ConsolationTooltip,
+} from '../../core/TooltipHelper'
 import { Row, Col } from 'reactstrap'
 import moment from 'moment'
-import { isEmpty } from 'lodash'
+import { isEmpty, isUndefined, isNull } from 'lodash'
 
 export const hasGroupPlayoff = (group) => {
   if (!group.matches) return false
@@ -30,11 +28,15 @@ export const hasReplay = (round) => {
   return round.matches.find((m) => m.replay) !== undefined
 }
 
+export const isSharedBronze = (match) => {
+  return match.shared_bronze
+}
+
 export const getRoundMatches = (round, sorted) => {
   if (isEmpty(round)) return []
-  let tmp = []
-  let tmpPlayoff = []
-  let tmpReplay = []
+  const tmp = []
+  const tmpPlayoff = []
+  const tmpReplay = []
   round.matches &&
     round.matches.forEach((m) => {
       if (!m.group_playoff && !m.replay) {
@@ -48,9 +50,10 @@ export const getRoundMatches = (round, sorted) => {
   if (tmpPlayoff.length === 0 && tmpReplay.length === 0) {
     return getDateMatchArray(tmp, sorted)
   } else if (tmpReplay.length > 0) {
-    return [] // [getDateMatchArray(tmp, sorted), { ...getDateMatchArrayPair(tmpReplay, sorted), name: `${round.name} Replay` }]
+    return [getDateMatchArray(tmp, sorted), getDateMatchArray(tmpReplay, sorted)]
   } else {
-    return [] // [getDateMatchArray(tmp, sorted), { ...getDateMatchArrayPair(tmpPlayoff, sorted), name: 'Playoff' }]
+    return [getDateMatchArray(tmp, sorted), getDateMatchArray(tmpPlayoff, sorted)]
+    //return [getDateMatchArray(tmp, sorted), { ...getDateMatchArrayPair(tmpPlayoff, sorted), name: 'Playoff' }]
   }
 }
 
@@ -79,76 +82,250 @@ export const getDateMatchArray = (matches, sorted) => {
   return date_matches
 }
 
-export const isHomeLose = (data) => {
-  const {
-    knockout_match,
-    second_leg_match,
-    aggregate_team,
-    away_team,
-    home_score,
-    away_score,
-    home_extra_score,
-    away_extra_score,
-    home_penalty_score,
-    away_penalty_score,
-    home_aggregate_score,
-    away_aggregate_score,
-    match_void,
-    need_playoff,
-    home_withdrew,
-    away_withdrew,
-    away_walkover,
-    away_coin_toss,
-    round_type,
-    postponed,
-  } = data
-  if (away_walkover || (away_coin_toss && round_type !== 'firstleg') || home_withdrew || postponed) return true
-  if (!knockout_match) return false
-  if (!second_leg_match) {
+const getHomeTooltip = (m) => {
+  return (
+    <React.Fragment>
+      {m.home_bye && <ByeTooltip target={`byeTooltip_${m.home_team}_${m.away_team}`} anchor="(bye)" notes={m.bye_notes} />}
+      {m.home_withdrew && <span className="withdrew-subscript">(withdrew)</span>}
+      {m.home_playoff_win && <PlayoffWinTooltip target={`playoffWin_${m.home_team}_${m.away_team}`} notes={m.playoff_notes} />}
+      {m.home_awarded_adjust && m.awarded_adjust_text && (
+        <AwardedTooltip target={`awardedAdjust_${m.home_team}_${m.away_team}`} content={m.awarded_adjust_text} />
+      )}
+      {m.home_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={m.disqualified_notes} />}
+      {m.home_replacement && <ReplacementTooltip target="replacementTooltip" notes={m.replacement_notes} />}
+    </React.Fragment>
+  )
+}
+
+const getAwayTooltip = (m) => {
+  return (
+    <React.Fragment>
+      {m.away_bye && <ByeTooltip target={`byeTooltip_${m.home_team}_${m.away_team}`} anchor="(bye)" notes={m.bye_notes} />}
+      {m.away_withdrew && <span className="withdrew-subscript">(withdrew)</span>}
+      {m.away_playoff_win && <PlayoffWinTooltip target={`playoffWin_${m.home_team}_${m.away_team}`} notes={m.playoff_notes} />}
+      {m.away_awarded_adjust && m.awarded_adjust_text && (
+        <AwardedTooltip target={`awardedAdjust_${m.home_team}_${m.away_team}`} content={m.awarded_adjust_text} />
+      )}
+      {m.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={m.disqualified_notes} />}
+      {m.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={m.replacement_notes} />}
+    </React.Fragment>
+  )
+}
+
+const getScoreTooltip = (m) => {
+  return (
+    <React.Fragment>
+      {(m.home_walkover || m.away_walkover) && <WalkoverTooltip target={`walkover_${m.home_team}_${m.away_team}`} content={m.walkover_notes} anchor="(w/o)" />}
+      {m.match_postponed && (
+        <React.Fragment>
+          postponed
+          {m.postponed_notes && (
+            <React.Fragment>
+              <br></br>
+              {m.postponed_notes}
+            </React.Fragment>
+          )}
+        </React.Fragment>
+      )}
+      {m.match_cancelled && (
+        <React.Fragment>
+          cancelled
+          <CancelledTooltip target={`cancelled_${m.home_team}_${m.away_team}`} notes={m.cancelled_text} />
+        </React.Fragment>
+      )}
+    </React.Fragment>
+  )
+}
+
+const getExtraTimeResult = (m, config) => {
+  if (isUndefined(m.home_extra_score) || isUndefined(m.away_extra_score)) return ''
+  if (m.home_extra_score === m.away_extra_score && (!isUndefined(m.home_penalty_score) || !isUndefined(m.away_penalty_score))) return 'penalties'
+  if (config.golden_goal_rule) return 'goldengoal'
+  if (config.silver_goal_rule) return 'silvergoal'
+  return 'extratime'
+}
+
+const getExtraTimeTooltip = (m, config) => {
+  let tooltip
+  switch (getExtraTimeResult(m, config)) {
+    case 'goldengoal':
+      tooltip = <GoldenGoalTooltip target="goldengoalTooltip" anchor="(g.g.)" />
+      break
+    case 'silvergoal':
+      tooltip = <SilverGoalTooltip target="silvergoalTooltip" anchor="(s.g.)" />
+      break
+    case 'extratime':
+      tooltip = <AetTooltip target="aetTooltip" anchor="(a.e.t.)" />
+      break
+    default:
+      tooltip = null
+  }
+  return tooltip
+}
+
+const getExtraTimeText = (m, config) => {
+  let text
+  switch (getExtraTimeResult(m, config)) {
+    case 'goldengoal':
+      text = <React.Fragment>&nbsp;won on golden goal</React.Fragment>
+      break
+    case 'silvergoal':
+      text = <React.Fragment>&nbsp;won on silver goal</React.Fragment>
+      break
+    case 'extratime':
+      text = <React.Fragment>&nbsp;won after extra time</React.Fragment>
+      break
+    default:
+      text = <React.Fragment></React.Fragment>
+  }
+  return text
+}
+
+const getOtherTooltip = (m, config) => {
+  return (
+    <React.Fragment>
+      {(m.home_awarded || m.home_awarded_score_not_counted || m.away_awarded) && m.awarded_text && (
+        <AwardedTooltip target={`awarded_${m.home_team}_${m.away_team}`} content={m.awarded_text} />
+      )}
+      {m.extra_140 && <Extra140Tooltip target={`extra140`} />}
+    </React.Fragment>
+  )
+}
+
+// home_walkover|away_walkover: awarded a knockout win, no score given and counted (opponent disqualified before the match) (just like a bye)
+// >>> AFCON_1957
+
+// home_bye|away_bye: have a bye and advance to the next round, no score at all (no opponent/opponent withrew before the match)
+// >>> MOFT_1908, MOFT_1912, MOFT_1920, MOFT_1956
+
+// home_coin_toss|away_coin_toss: determine winner of a (knockout/knockout2legged) match
+// >>> COPA_1975, COPA_1983, EURO_1968, MOFT_1968|MOFT_1960
+
+// home_playoff_win|away_playoff_win: determine winner of the playoff
+// >>> COPA_1979
+
+// home_withdrew|away_withdrew: teams withdrew, to be shown on display match
+// >>> MOFT_1936, MOFT_1956|AFCON_2010, MOFT_1908, MOFT_1920, MOFT_1956
+
+// match_postponed: match postponed, to be shown on display match
+// >>> MOFT_1956
+
+// match_void: score not counted
+// >>> MOFT_1936
+
+// home_awarded_score_not_counted: awarded a knockout win, score given but not counted
+// >>> MOFT_1920
+
+// home_awarded_adjust: awarded a roundrobin win (2pts), score still unchanged
+// >>> COPA_1942, COPA_1953
+
+// home_disqualified|away_disqualified: teams disqualified, to be shown on display match
+// >>> MOFT_1920
+
+// home_replacement|away_replacement: teams replacement, to be shown on display match
+// >>> MOFT_1920
+
+export const isHomeLose = (m) => {
+  if (m.away_walkover || m.away_bye || m.away_coin_toss || m.away_playoff_win || m.home_withdrew || m.match_postponed) return true
+  if (!m.knockout_match) return false
+  if (!m.second_leg_match) {
     return (
-      !(match_void && away_withdrew) &&
-      ((home_score != null && away_score != null && home_score < away_score) ||
-        (home_extra_score != null && away_extra_score != null && home_extra_score < away_extra_score) ||
-        (home_penalty_score != null && home_penalty_score != null && home_penalty_score < away_penalty_score))
+      !(m.match_void && m.away_withdrew) &&
+      (m.home_score < m.away_score || m.home_extra_score < m.away_extra_score || m.home_penalty_score < m.away_penalty_score)
     )
   }
+  return m.home_penalty_score < m.away_penalty_score || (!m.need_playoff && m.home_aggregate_score < m.away_aggregate_score) || m.aggregate_team === m.away_team
+}
+
+export const isAwayLose = (m) => {
+  if (m.home_walkover || m.home_bye || m.home_coin_toss || m.home_playoff_win || m.away_withdrew || m.match_postponed) return true
+  if (!m.knockout_match) return false
+  if (!m.second_leg_match) {
+    return (
+      !(m.match_void && m.home_withdrew) &&
+      (m.home_score > m.away_score || m.home_extra_score > m.away_extra_score || m.home_penalty_score > m.away_penalty_score)
+    )
+  }
+  return m.home_penalty_score > m.away_penalty_score || (!m.need_playoff && m.home_aggregate_score > m.away_aggregate_score) || m.aggregate_team === m.home_team
+}
+
+export const showScore = (m) => {
+  return !m.home_walkover && !m.away_walkover && !m.match_postponed && !m.match_cancelled
+}
+
+const DisplayExtraTimeText = (props) => {
+  const { m, config } = props
+  // console.log('m', m)
   return (
-    (home_penalty_score != null && home_penalty_score != null && home_penalty_score < away_penalty_score) ||
-    (!need_playoff && home_aggregate_score < away_aggregate_score) ||
-    aggregate_team === away_team
+    <React.Fragment>
+      {m.void_notes && <React.Fragment>&gt;&gt;&gt;&nbsp;{m.void_notes}</React.Fragment>}
+      {!m.void_notes && (
+        <React.Fragment>
+          {!isUndefined(m.home_extra_score) && !isUndefined(m.away_extra_score) && (
+            <React.Fragment>
+              {isUndefined(m.home_penalty_score) && isUndefined(m.away_penalty_score) && !m.group_playoff && (
+                <React.Fragment>
+                  {m.home_extra_score !== m.away_extra_score && <React.Fragment>&nbsp;&gt;&gt;&gt;&nbsp;</React.Fragment>}
+                  {m.home_extra_score > m.away_extra_score && (
+                    <React.Fragment>
+                      <b>{getTeamName(m.home_team)}</b>
+                    </React.Fragment>
+                  )}
+                  {m.home_extra_score < m.away_extra_score && (
+                    <React.Fragment>
+                      <b>{getTeamName(m.away_team)}</b>
+                    </React.Fragment>
+                  )}
+                  {m.home_extra_score !== m.away_extra_score && <React.Fragment>{getExtraTimeText(m, config)}</React.Fragment>}
+                </React.Fragment>
+              )}
+            </React.Fragment>
+          )}
+          {!isUndefined(m.home_penalty_score) && !isUndefined(m.away_penalty_score) && (
+            <React.Fragment>
+              &nbsp;&gt;&gt;&gt;&nbsp;
+              {m.home_penalty_score > m.away_penalty_score && (
+                <React.Fragment>
+                  <b>{getTeamName(m.home_team)}</b>
+                </React.Fragment>
+              )}
+              {m.home_penalty_score < m.away_penalty_score && (
+                <React.Fragment>
+                  <b>{getTeamName(m.away_team)}</b>
+                </React.Fragment>
+              )}
+              &nbsp;won on penalties&nbsp;
+              <b>
+                {m.home_penalty_score}-{m.away_penalty_score}
+              </b>
+              {isUndefined(m.home_extra_score) && isUndefined(m.away_extra_score) && <React.Fragment>&nbsp;(No extra time was played)</React.Fragment>}
+            </React.Fragment>
+          )}
+          {m.home_coin_toss && (m.round_type === 'secondleg' || m.round_type === undefined) && (
+            <React.Fragment>
+              &nbsp;&gt;&gt;&gt;&nbsp;<b>{getTeamName(m.home_team)}</b> won on coin toss
+            </React.Fragment>
+          )}
+          {m.away_coin_toss && (m.round_type === 'secondleg' || m.round_type === undefined) && (
+            <React.Fragment>
+              &nbsp;&gt;&gt;&gt;&nbsp;<b>{getTeamName(m.away_team)}</b> won on coin toss
+            </React.Fragment>
+          )}
+        </React.Fragment>
+      )}
+    </React.Fragment>
   )
 }
 
 export const DisplayMatch = (props) => {
   const { m, config } = props
-  //   console.log('m', m)
-  const homeLoseData = {
+  const loseData = {
     ...m,
     ...config,
     aggregate_team: m.aggregate_team_2nd_leg,
     home_aggregate_score: m.home_aggregate_score_2nd_leg,
     away_aggregate_score: m.away_aggregate_score_2nd_leg,
   }
-  //   const awayLoseData = {
-  //     knockoutMatch: config.knockoutMatch,
-  //     secondLegMatch: config.secondLegMatch,
-  //     aggregate_team: m.aggregate_team_2nd_leg,
-  //     home_team: m.home_team,
-  //     home_score: m.home_score,
-  //     away_score: m.away_score,
-  //     home_extra_score: m.home_extra_score,
-  //     away_extra_score: m.away_extra_score,
-  //     home_penalty_score: m.home_penalty_score,
-  //     away_penalty_score: m.away_penalty_score,
-  //     home_aggregate_score: m.home_aggregate_score_2nd_leg,
-  //     away_aggregate_score: m.away_aggregate_score_2nd_leg,
-  //     match_void: m.match_void,
-  //     need_playoff: m.need_playoff,
-  //     home_withdrew: m.home_withdrew,
-  //     away_withdrew: m.away_withdrew,
-  //   }
-  //   // console.log('awayLoseData', awayLoseData)
-  //   // console.log('isAwayLoseAggregate(awayLoseData)', isAwayLoseAggregate(awayLoseData))
   const borderBottomColor = m.match_type === 'secondleg' || m.match_type === 'firstlegonly' ? 'border-bottom-gray2' : 'border-bottom-gray5'
   return (
     <Col sm="12" className={`padding-tb-md ${borderBottomColor}`}>
@@ -174,96 +351,44 @@ export const DisplayMatch = (props) => {
             {m.city}
           </span>
         </Col>
-        <Col sm="3" xs="3" className={`team-name text-uppercase text-right team-name-no-padding-right${isHomeLose(homeLoseData) ? ' gray3' : ''}`}>
+        <Col sm="3" xs="3" className={`team-name text-uppercase text-right team-name-no-padding-right${isHomeLose(loseData) ? ' gray3' : ''}`}>
           {getTeamName(m.home_team)}
-          {/* {m.home_bye && <ByeTooltip target={`byeTooltip_${m.home_team}_${m.away_team}`} anchor="(bye)" notes={m.bye_notes} />}
-          {m.home_withdrew && <span className="withdrew-subscript">(withdrew)</span>}
-          {m.home_playoff_win && <PlayoffWinTooltip target={`playoffWin_${m.home_team}_${m.away_team}`} notes={m.playoff_notes} />}
-          {m.home_awarded_adjust && m.awarded_adjust_text && (
-            <AwardedTooltip target={`awardedAdjust_${m.home_team}_${m.away_team}`} content={m.awarded_adjust_text} />
-          )} */}
+          {getHomeTooltip(m)}
         </Col>
-        {/* <Col sm="1" xs="1" className="padding-top-sm text-center">
+        <Col sm="1" xs="1" className="padding-top-sm text-center">
           {getTeamFlag(m.home_team, config)}
         </Col>
 
-        <Col sm="2" xs="2" className={`score text-center score-no-padding-right${m.postponed ? ' withdrew-subscript gray3' : ''}`}>
-          {(m.home_extra_score == null || m.away_extra_score == null) && (
+        <Col sm="2" xs="2" className={`score text-center score-no-padding-right${m.match_postponed ? ' withdrew-subscript gray3' : ''}`}>
+          {(isUndefined(m.home_extra_score) || isUndefined(m.away_extra_score)) && (
             <React.Fragment>
-              {m.walkover && <WalkoverTooltip target={`walkover_${m.home_team}_${m.away_team}`} content={m.walkover} anchor="(w/o)" />}
-              {m.postponed && (
-                <React.Fragment>
-                  postponed
-                  {m.postponed_notes && (
-                    <React.Fragment>
-                      <br></br>
-                      {m.postponed_notes}
-                    </React.Fragment>
-                  )}
-                </React.Fragment>
-              )}
-              {m.match_cancelled && (
-                <React.Fragment>
-                  cancelled
-                  <CancelledTooltip target={`cancelled_${m.home_team}_${m.away_team}`} notes={m.cancelled_text} />
-                </React.Fragment>
-              )}
-              {!m.walkover && !m.postponed && !m.match_cancelled && (
+              {getScoreTooltip(m)}
+              {showScore(m) && (
                 <React.Fragment>
                   {m.home_score}-{m.away_score}
                 </React.Fragment>
               )}
             </React.Fragment>
           )}
-          {m.home_extra_score != null && m.away_extra_score != null && (
+          {!isUndefined(m.home_extra_score) && !isUndefined(m.away_extra_score) && (
             <React.Fragment>
               {parseInt(m.home_score) + parseInt(m.home_extra_score)}-{parseInt(m.away_score) + parseInt(m.away_extra_score)}
-              {(config.goldenGoal || config.silverGoal) &&
-              (m.home_extra_score !== 0 || m.away_extra_score !== 0) &&
-              m.home_penalty_score == null &&
-              m.away_penalty_score == null ? (
-                config.goldenGoal ? (
-                  <GoldenGoalTooltip target="goldengoalTooltip" anchor="(g.g.)" />
-                ) : (
-                  <SilverGoalTooltip target="silvergoalTooltip" anchor="(s.g.)" />
-                )
-              ) : (
-                <AetTooltip target="aetTooltip" anchor="(a.e.t.)" />
-              )}
+              {getExtraTimeTooltip(m, config)}
             </React.Fragment>
           )}
-          {(m.home_awarded || m.home_awarded_score_not_counted || m.away_awarded) && m.awarded_text && (
-            <AwardedTooltip target={`awarded_${m.home_team}_${m.away_team}`} content={m.awarded_text} />
-          )}
-          {m.extra_140 && <Extra140Tooltip target={`extra140`} />}
+          {getOtherTooltip(m)}
         </Col>
         <Col sm="1" xs="1" className="padding-top-sm text-center flag-no-padding-left">
           {getTeamFlag(m.away_team, config)}
         </Col>
-        <Col
-          sm="3"
-          xs="3"
-          className={`team-name text-uppercase${
-            isAwayLoseAggregate(awayLoseData) ||
-            m.home_walkover ||
-            m.home_playoff_win ||
-            (m.home_coin_toss && m.round_type !== 'firstleg') ||
-            m.home_bye ||
-            m.away_withdrew ||
-            m.postponed
-              ? ' gray3'
-              : ''
-          }`}
-        >
+        <Col sm="3" xs="3" className={`team-name text-uppercase${isAwayLose(loseData) ? ' gray3' : ''}`}>
           {getTeamName(m.away_team)}
-          {m.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={m.disqualified_notes} />}
-          {m.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={m.replacement_notes} />}
-          {m.away_withdrew && <span className="withdrew-subscript">(withdrew)</span>}
-        </Col> */}
+          {getAwayTooltip(m)}
+        </Col>
       </Row>
-      {/* <Row>
+      <Row>
         <Col sm={{ size: 6, offset: 6 }} xs={{ size: 7, offset: 5 }} className="aggregate_text margin-top-sm">
-          {m.home_aggregate_score_2nd_leg != null && m.away_aggregate_score_2nd_leg != null && (
+          {/* {m.home_aggregate_score_2nd_leg != null && m.away_aggregate_score_2nd_leg != null && (
             <React.Fragment>
               Aggregate:&nbsp;
               <b>
@@ -275,27 +400,11 @@ export const DisplayMatch = (props) => {
                 />
               )}
             </React.Fragment>
-          )}
-          <DisplayExtraTimeText
-            param={{
-              home_team: m.home_team,
-              away_team: m.away_team,
-              home_extra_score: m.home_extra_score,
-              away_extra_score: m.away_extra_score,
-              home_penalty_score: m.home_penalty_score,
-              away_penalty_score: m.away_penalty_score,
-              home_coin_toss: m.home_coin_toss,
-              away_coin_toss: m.away_coin_toss,
-              group_playoff: m.group_playoff,
-              round_type: m.round_type,
-              goldenGoal: config.goldenGoal,
-              silverGoal: config.silverGoal,
-              void_notes: m.void_notes,
-            }}
-          />
+          )} */}
+          <DisplayExtraTimeText m={m} config={config} />
           {isSharedBronze(m) && <React.Fragment>&gt;&gt;&gt;&nbsp;{m.shared_bronze_text}</React.Fragment>}
         </Col>
-      </Row> */}
+      </Row>
     </Col>
   )
 }
@@ -343,20 +452,21 @@ export const DisplaySchedule = (props) => {
       return 0
     }
   })
-  //   console.log('round', round)
-  const groupName = !isEmpty(details) ? details.name : ''
-  // name && (config.tournamentTypeId === 'MOFT' || config.tournamentTypeId === 'WOFT')
-  //   ? name.replace('Third-place', 'Bronze medal match').replace('Final', 'Gold medal match')
-  //   : name
+  console.log('details', details)
+  const groupName = !isEmpty(details)
+    ? details.name && (config.competition_id === 'MOFT' || config.competition_id === 'WOFT')
+      ? details.name.replace('Third-place', 'Bronze medal match').replace('Final', 'Gold medal match')
+      : details.name
+    : ''
   return (
     <React.Fragment>
       <Row>
         <Col>
           <div className="h2-ff1 margin-top-md">
             {groupName}
-            {/* {(groupName === 'Consolation First Round' || groupName === 'Consolation Semi-finals' || groupName === 'Playoff First Round') &&
-                consolation_notes && <ConsolationTooltip target="consolationTooltip" notes={consolation_notes} />}
-              {groupName === 'Playoff Second Round' && <PlayoffSecondRoundTooltip target="playoffSecondRoundTooltip" />} */}
+            {details && details.consolation_notes && (
+              <ConsolationTooltip target={`consolationTooltip_${details.short_name.replace(' ', '_')}`} notes={details.consolation_notes} />
+            )}
           </div>
         </Col>
       </Row>

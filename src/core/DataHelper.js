@@ -785,9 +785,11 @@ export const setAllRounds = (rs) => {
 
 export const setRoundDetails = (r) => {
   r.details = {
+    consolation_notes: r.consolation_notes || '',
     name: r.name || '',
     short_name: r.short_name || '',
   }
+  delete r.consolation_notes
   delete r.name
   delete r.short_name
 }

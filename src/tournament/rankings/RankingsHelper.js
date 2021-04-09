@@ -91,7 +91,7 @@ const accumulateRanking = (team, match, config) => {
     match.walkover ||
     match.home_bye ||
     match.home_awarded_score_not_counted ||
-    match.postponed ||
+    match.match_postponed ||
     match.match_void ||
     match.match_cancelled ||
     (match.notes && match.notes.awarded)
@@ -269,7 +269,7 @@ export const calculateRoundRankings = (container, teams, matches, config) => {
     matches.forEach((m) => {
       const hr = findTeam(teams, m.home_team)
       const ar = findTeam(teams, m.away_team)
-      if (!m.walkover && !m.away_withdrew && !m.postponed && !m.match_cancelled) {
+      if (!m.walkover && !m.away_withdrew && !m.match_postponed && !m.match_cancelled) {
         calculateTeamRanking(container, hr, m, config)
         calculateTeamRanking(container, ar, m, config)
         calculateH2hRanking(container, hr, m, config)

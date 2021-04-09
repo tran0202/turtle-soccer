@@ -126,7 +126,7 @@ import { Row } from 'reactstrap'
 //       let nextConsolationRound = findRoundAdvancedTeams(tournament, round.next_consolation_round)
 //       const home_ranking = findTeam(advanced_teams.final_rankings, m.home_team)
 //       const away_ranking = findTeam(advanced_teams.final_rankings, m.away_team)
-//       if (!isWinner('H', m) && !m.walkover && !m.away_withdrew && !m.postponed) {
+//       if (!isWinner('H', m) && !m.walkover && !m.away_withdrew && !m.match_postponed) {
 //         if (!finalStandingRound) {
 //           tournament.final_rankings.rounds.unshift({
 //             name: round.name,
@@ -156,7 +156,7 @@ import { Row } from 'reactstrap'
 //           }
 //           nextConsolationRound.final_rankings = nextConsolationRound.final_rankings.filter((fr) => fr.id !== m.away_team)
 //         }
-//       } else if (m.away_team !== '' && !isWinner('A', m) && !m.walkover && !m.away_withdrew && !m.postponed) {
+//       } else if (m.away_team !== '' && !isWinner('A', m) && !m.walkover && !m.away_withdrew && !m.match_postponed) {
 //         if (!finalStandingRound) {
 //           tournament.final_rankings.rounds.unshift({
 //             name: round.name,
@@ -200,7 +200,7 @@ import { Row } from 'reactstrap'
 //       let nextConsolationRound = findRoundAdvancedTeams(tournament, round.next_consolation_round)
 //       const home_ranking = findTeam(advanced_teams.final_rankings, m.home_team)
 //       const away_ranking = findTeam(advanced_teams.final_rankings, m.away_team)
-//       if (!isAggregateWinner('H', m) && !m.walkover && !m.away_withdrew && !m.postponed) {
+//       if (!isAggregateWinner('H', m) && !m.walkover && !m.away_withdrew && !m.match_postponed) {
 //         if (!finalStandingRound) {
 //           tournament.final_rankings.rounds.unshift({
 //             name: round.name,
@@ -230,7 +230,7 @@ import { Row } from 'reactstrap'
 //           }
 //           nextConsolationRound.final_rankings = nextConsolationRound.final_rankings.filter((fr) => fr.id !== m.away_team)
 //         }
-//       } else if (m.away_team !== '' && !isAggregateWinner('A', m) && !m.walkover && !m.away_withdrew && !m.postponed) {
+//       } else if (m.away_team !== '' && !isAggregateWinner('A', m) && !m.walkover && !m.away_withdrew && !m.match_postponed) {
 //         if (!finalStandingRound) {
 //           tournament.final_rankings.rounds.unshift({
 //             name: round.name,
@@ -284,7 +284,7 @@ import { Row } from 'reactstrap'
 //         } else {
 //           next_round.final_rankings.push(away_ranking)
 //         }
-//       } else if (m.postponed) {
+//       } else if (m.match_postponed) {
 //         if (!next_round) {
 //           tournament.advanced_teams.rounds.push({ name: round.next_round, ranking_type: 'round', final_rankings: [home_ranking, away_ranking] })
 //         } else {
@@ -314,7 +314,7 @@ import { Row } from 'reactstrap'
 //         } else {
 //           next_round.final_rankings.push(away_ranking)
 //         }
-//       } else if (m.postponed) {
+//       } else if (m.match_postponed) {
 //         if (!next_round) {
 //           tournament.advanced_teams.rounds.push({ name: round.next_round, ranking_type: 'round', final_rankings: [home_ranking, away_ranking] })
 //         } else {

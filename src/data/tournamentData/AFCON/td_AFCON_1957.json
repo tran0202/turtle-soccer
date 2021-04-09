@@ -27,7 +27,7 @@
               "home_team": "ETH-1941-1974",
               "away_team": "RSA-1928-1957",
               "home_walkover": true,
-              "walkover": "Walkover: South Africa was disqualified due to apartheid. Ethiopia therefore had a bye to the final.",
+              "walkover_notes": "Walkover: South Africa was disqualified due to apartheid. Ethiopia therefore had a bye to the final.",
               "date": "1957-02-10",
               "time": "15:00",
               "stadium": "Municipal Stadium",

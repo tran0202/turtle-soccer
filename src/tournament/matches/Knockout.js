@@ -1,6 +1,5 @@
 import React from 'react'
 import { DisplaySchedule, getRoundMatches, hasReplay, getBracketStage, getFinalPathStage, getConsolationPathStage } from './MatchHelper'
-// import { hasReplay } from './RankingsHelper'
 // import Bracket from './Bracket'
 
 const Knockout = (props) => {
@@ -34,15 +33,13 @@ const Knockout = (props) => {
         const matchArray = getRoundMatches(r, true)
         // console.log('matchArray', matchArray)
         if (!hasReplay(r)) {
-          return (
-            <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.name} />
-            // <DisplaySchedule round={{ name: r.name, ...matchArray, consolation_notes: r.consolation_notes }} config={displayScheduleConfig} key={r.name} />
-          )
+          return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />
         } else {
+          const replayDetails = { ...r.details, name: `${r.details.name} Replay` }
           return (
-            <React.Fragment key={r.name}>
-              {/* <DisplaySchedule round={{ name: r.name, ...matchArray[0], consolation_notes: r.consolation_notes }} config={displayScheduleConfig} />
-              <DisplaySchedule round={{ ...matchArray[1], consolation_notes: r.consolation_notes }} config={displayScheduleConfig} /> */}
+            <React.Fragment key={r.details.name}>
+              <DisplaySchedule round={matchArray[0]} config={displayScheduleConfig} details={r.details} />
+              <DisplaySchedule round={matchArray[1]} config={displayScheduleConfig} details={replayDetails} />
             </React.Fragment>
           )
         }

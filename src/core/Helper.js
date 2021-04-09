@@ -139,6 +139,8 @@ export const getDefaultLeagueTab = (leagues) => {
   return _l !== undefined ? _l.details.name.replace(' ', '-') : temp
 }
 
+/* ==========  ========== */
+
 const getFormat = (rrStage) => {
   const { groups, advancement, home_and_away, odd_format } = rrStage
   const groupCount = groups ? groups.length : 0
@@ -241,9 +243,9 @@ export const splitPathDatesMatches = (round) => {
   ]
 }
 
-export const isSharedBronze = (match) => {
-  return match.shared_bronze
-}
+// export const isSharedBronze = (match) => {
+//   return match.shared_bronze
+// }
 
 export const isSuccessor = (id) => {
   const team = getTeamArray().find((t) => t.id === id)
@@ -1095,7 +1097,7 @@ export const DisplayKnockout2LeggedMatch = (props) => {
 //           sm="3"
 //           xs="3"
 //           className={`team-name text-uppercase text-right team-name-no-padding-right${
-//             isHomeLoseAggregate(homeLoseData) || m.away_walkover || (m.away_coin_toss && m.round_type !== 'firstleg') || m.home_withdrew || m.postponed
+//             isHomeLoseAggregate(homeLoseData) || m.away_walkover || (m.away_coin_toss && m.round_type !== 'firstleg') || m.home_withdrew || m.match_postponed
 //               ? ' gray3'
 //               : ''
 //           }`}
@@ -1112,17 +1114,17 @@ export const DisplayKnockout2LeggedMatch = (props) => {
 //           {getTeamFlag(m.home_team, config)}
 //         </Col>
 
-//         <Col sm="2" xs="2" className={`score text-center score-no-padding-right${m.postponed ? ' withdrew-subscript gray3' : ''}`}>
+//         <Col sm="2" xs="2" className={`score text-center score-no-padding-right${m.match_postponed ? ' withdrew-subscript gray3' : ''}`}>
 //           {(m.home_extra_score == null || m.away_extra_score == null) && (
 //             <React.Fragment>
 //               {m.walkover && <WalkoverTooltip target={`walkover_${m.home_team}_${m.away_team}`} content={m.walkover} anchor="(w/o)" />}
-//               {m.postponed && (
+//               {m.match_postponed && (
 //                 <React.Fragment>
 //                   postponed
-//                   {m.postponed_notes && (
+//                   {m.match_postponed_notes && (
 //                     <React.Fragment>
 //                       <br></br>
-//                       {m.postponed_notes}
+//                       {m.match_postponed_notes}
 //                     </React.Fragment>
 //                   )}
 //                 </React.Fragment>
@@ -1133,7 +1135,7 @@ export const DisplayKnockout2LeggedMatch = (props) => {
 //                   <CancelledTooltip target={`cancelled_${m.home_team}_${m.away_team}`} notes={m.cancelled_text} />
 //                 </React.Fragment>
 //               )}
-//               {!m.walkover && !m.postponed && !m.match_cancelled && (
+//               {!m.walkover && !m.match_postponed && !m.match_cancelled && (
 //                 <React.Fragment>
 //                   {m.home_score}-{m.away_score}
 //                 </React.Fragment>
@@ -1175,7 +1177,7 @@ export const DisplayKnockout2LeggedMatch = (props) => {
 //             (m.home_coin_toss && m.round_type !== 'firstleg') ||
 //             m.home_bye ||
 //             m.away_withdrew ||
-//             m.postponed
+//             m.match_postponed
 //               ? ' gray3'
 //               : ''
 //           }`}

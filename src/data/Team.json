@@ -134,7 +134,7 @@
   { "id": "JAM", "name": "Jamaica", "team_type_id": "MNT", "nation_id": "JAM", "parent_team_id": "" },
   { "id": "GER-1949-1990", "name": "Germany FR", "short_name": "Germany", "team_type_id": "MNT", "nation_id": "GER-1949-1990", "parent_team_id": "GER" },
   { "id": "YUG-1945-1992", "name": "SFR Yugoslavia", "short_name": "Yugoslavia", "team_type_id": "MNT", "nation_id": "YUG-1945-1992", "parent_team_id": "SRB" },
-  { "id": "TCH", "name": "Czechoslova", "team_type_id": "MNT", "nation_id": "TCH", "parent_team_id": "CZE" },
+  { "id": "TCH", "name": "Czechoslovakia", "team_type_id": "MNT", "nation_id": "TCH", "parent_team_id": "CZE" },
   { "id": "URS", "name": "Soviet Union", "short_name": "USSR", "team_type_id": "MNT", "nation_id": "URS", "parent_team_id": "RUS" },
   { "id": "CAN", "name": "Canada", "team_type_id": "MNT", "nation_id": "CAN", "parent_team_id": "" },
   { "id": "HUN", "name": "Hungary", "team_type_id": "MNT", "nation_id": "HUN", "parent_team_id": "" },

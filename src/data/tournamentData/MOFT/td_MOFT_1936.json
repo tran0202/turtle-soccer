@@ -24,7 +24,7 @@
       ],
       "rounds": [
         {
-          "name": "First round",
+          "name": "First Round",
           "short_name": "1/8",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
