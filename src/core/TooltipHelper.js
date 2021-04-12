@@ -106,7 +106,7 @@ export const DrawLotTooltip = (props) => {
 
 export const AwardedTooltip = (props) => {
   const { target, content } = props
-  return <TopTooltip target={target} content={content} anchor="(awd.)" />
+  return <TopTooltip target={target} content={content} anchor="(awd)" />
 }
 
 export const SharedBronzeTooltip = (props) => {

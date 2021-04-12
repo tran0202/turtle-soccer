@@ -1,5 +1,6 @@
 import React from 'react'
 import { getTeamName, getTeamFlag } from '../../core/TeamHelper'
+import { isAwayGoalsWinner } from '../../core/Helper'
 import {
   PlayoffWinTooltip,
   WalkoverTooltip,
@@ -13,18 +14,25 @@ import {
   DisqualifiedTooltip,
   ReplacementTooltip,
   ConsolationTooltip,
+  PenTooltip,
+  ReplayTooltip,
+  CoinTossTooltip,
+  WithdrewTooltip,
+  MatchPostponedTooltip,
+  SharedBronzeTooltip,
+  MatchVoidedTooltip,
 } from '../../core/TooltipHelper'
 import { Row, Col } from 'reactstrap'
 import moment from 'moment'
 import { isEmpty, isUndefined, isNull } from 'lodash'
 
 export const hasGroupPlayoff = (group) => {
-  if (!group.matches) return false
+  if (isEmpty(group.matches)) return false
   return group.matches.find((m) => m.group_playoff) !== undefined
 }
 
 export const hasReplay = (round) => {
-  if (!round.matches) return false
+  if (isEmpty(round.matches)) return false
   return round.matches.find((m) => m.replay) !== undefined
 }
 
@@ -112,6 +120,47 @@ const getAwayTooltip = (m) => {
   )
 }
 
+export const getHomeBracketTooltip = (m, config) => {
+  // console.log('m.home_replay_score', m.home_replay_score)
+  return (
+    <React.Fragment>
+      {!isNull(m.home_extra_score) && !isNull(m.away_extra_score) && m.home_extra_score > m.away_extra_score && getBracketExtraTimeTooltip(m, config)}
+      {m.home_penalty_score > m.away_penalty_score && <PenTooltip target="penTooltip" anchor="(pen)" />}
+      {m.home_walkover && <WalkoverTooltip target={`walkover_${m.home_team}_${m.away_team}`} content={m.walkover_notes} anchor="(w/o)" />}
+      {!isUndefined(m.home_replay_score) && !isUndefined(m.away_replay_score) && m.home_replay_score > m.away_replay_score && (
+        <ReplayTooltip target="replayTooltip" anchor="(rep)" />
+      )}
+      {m.home_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(coi)" />}
+      {m.home_bye && <ByeTooltip target={`byeTooltip_${m.home_team}_${m.away_team}`} anchor="(bye)" notes={m.bye_notes} />}
+      {m.home_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
+      {isSharedBronze(m) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={m.shared_bronze_text} />}
+      {m.home_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={m.disqualified_notes} />}
+      {m.home_replacement && <ReplacementTooltip target="replacementTooltip" notes={m.replacement_notes} />}
+      {m.match_postponed && <MatchPostponedTooltip target="matchPostponedTooltip" anchor="(ppd)" notes={m.postponed_notes} />}
+      {m.extra_140 && <Extra140Tooltip target={`extra140`} />}
+    </React.Fragment>
+  )
+}
+
+export const getAwayBracketTooltip = (m, config) => {
+  return (
+    <React.Fragment>
+      {!isNull(m.home_extra_score) && !isNull(m.away_extra_score) && m.home_extra_score < m.away_extra_score && getBracketExtraTimeTooltip(m, config)}
+      {m.home_penalty_score < m.away_penalty_score && <PenTooltip target="penTooltip" anchor="(pen.)" />}
+      {m.away_walkover && <WalkoverTooltip target={`walkover_${m.home_team}_${m.away_team}`} content={m.walkover_notes} anchor="(w/o)" />}
+      {!isUndefined(m.home_replay_score) && !isUndefined(m.away_replay_score) && m.home_replay_score < m.away_replay_score && (
+        <ReplayTooltip target="replayTooltip" anchor="(rep)" />
+      )}
+      {m.away_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(coi)" />}
+      {m.away_bye && <ByeTooltip target={`byeTooltip_${m.home_team}_${m.away_team}`} anchor="(bye)" notes={m.bye_notes} />}
+      {m.away_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
+      {isSharedBronze(m) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={m.shared_bronze_text} />}
+      {m.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={m.disqualified_notes} />}
+      {m.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={m.replacement_notes} />}
+    </React.Fragment>
+  )
+}
+
 const getScoreTooltip = (m) => {
   return (
     <React.Fragment>
@@ -137,7 +186,7 @@ const getScoreTooltip = (m) => {
   )
 }
 
-const getExtraTimeResult = (m, config) => {
+export const getExtraTimeResult = (m, config) => {
   if (isUndefined(m.home_extra_score) || isUndefined(m.away_extra_score)) return ''
   if (m.home_extra_score === m.away_extra_score && (!isUndefined(m.home_penalty_score) || !isUndefined(m.away_penalty_score))) return 'penalties'
   if (config.golden_goal_rule) return 'goldengoal'
@@ -156,6 +205,28 @@ const getExtraTimeTooltip = (m, config) => {
       break
     case 'extratime':
       tooltip = <AetTooltip target="aetTooltip" anchor="(a.e.t.)" />
+      break
+    case 'penalties':
+      tooltip = <AetTooltip target="aetTooltip" anchor="(a.e.t.)" />
+      break
+    default:
+      tooltip = null
+  }
+  return tooltip
+}
+
+export const getBracketExtraTimeTooltip = (m, config) => {
+  let tooltip
+  // console.log('m', m)
+  switch (getExtraTimeResult(m, config)) {
+    case 'goldengoal':
+      tooltip = <GoldenGoalTooltip target="goldengoalTooltip" anchor="(g)" />
+      break
+    case 'silvergoal':
+      tooltip = <SilverGoalTooltip target="silvergoalTooltip" anchor="(s)" />
+      break
+    case 'extratime':
+      tooltip = <AetTooltip target="aetTooltip" anchor="(aet)" />
       break
     default:
       tooltip = null
@@ -181,13 +252,32 @@ const getExtraTimeText = (m, config) => {
   return text
 }
 
-const getOtherTooltip = (m, config) => {
+export const getOtherTooltip = (m) => {
   return (
     <React.Fragment>
       {(m.home_awarded || m.home_awarded_score_not_counted || m.away_awarded) && m.awarded_text && (
         <AwardedTooltip target={`awarded_${m.home_team}_${m.away_team}`} content={m.awarded_text} />
       )}
       {m.extra_140 && <Extra140Tooltip target={`extra140`} />}
+    </React.Fragment>
+  )
+}
+
+export const getHomeBracketOtherTooltip = (m) => {
+  return (
+    <React.Fragment>
+      {m.void_notes && <MatchVoidedTooltip target="matchVoidedTooltip" anchor="(v)" notes={m.void_notes} />}
+      {(m.home_awarded || m.home_awarded_score_not_counted) && m.awarded_text && (
+        <AwardedTooltip target={`awarded_${m.home_team}_${m.away_team}`} content={m.awarded_text} />
+      )}
+    </React.Fragment>
+  )
+}
+
+export const getAwayBracketOtherTooltip = (m) => {
+  return (
+    <React.Fragment>
+      {m.away_awarded && m.awarded_text && <AwardedTooltip target={`awarded_${m.home_team}_${m.away_team}`} content={m.awarded_text} />}
     </React.Fragment>
   )
 }
@@ -452,7 +542,7 @@ export const DisplaySchedule = (props) => {
       return 0
     }
   })
-  console.log('details', details)
+  // console.log('details', details)
   const groupName = !isEmpty(details)
     ? details.name && (config.competition_id === 'MOFT' || config.competition_id === 'WOFT')
       ? details.name.replace('Third-place', 'Bronze medal match').replace('Final', 'Gold medal match')

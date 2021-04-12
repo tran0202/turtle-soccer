@@ -697,3 +697,6 @@ a:hover.hover-pointer {
 .bronze {
   background-color: rgb(204, 153, 102);
 }
+.txt-underline {
+  text-decoration: underline;
+}

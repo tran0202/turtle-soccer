@@ -139,6 +139,133 @@ export const getDefaultLeagueTab = (leagues) => {
   return _l !== undefined ? _l.details.name.replace(' ', '-') : temp
 }
 
+export const reorderMatches = (matches) => {
+  matches &&
+    matches.sort((a, b) => {
+      if (a.bracket_order < b.bracket_order) {
+        return -1
+      } else if (a.bracket_order > b.bracket_order) {
+        return 1
+      } else {
+        return 0
+      }
+    })
+  return matches
+}
+
+export const getFinalPathStage = (stage) => {
+  if (!stage.rounds) return
+  const newRounds = stage.rounds.filter(
+    (r) =>
+      r.details.name !== 'Consolation First Round' &&
+      r.details.name !== 'Consolation Semi-finals' &&
+      r.details.name !== 'Fifth-place' &&
+      r.details.name !== 'Playoff First Round' &&
+      r.details.name !== 'Playoff Second Round',
+  )
+  return { ...stage, rounds: newRounds }
+}
+
+export const getConsolationPathStage = (stage) => {
+  if (!stage.rounds) return
+  const newRounds = stage.rounds.filter(
+    (r) =>
+      r.details.name === 'Consolation First Round' ||
+      r.details.name === 'Consolation Semi-finals' ||
+      r.details.name === 'Fifth-place' ||
+      r.details.name === 'Playoff First Round' ||
+      r.details.name === 'Playoff Second Round',
+  )
+  return { ...stage, rounds: newRounds }
+}
+
+export const getBracketStage = (stage) => {
+  if (!stage) return {}
+  const rounds = []
+  stage.rounds &&
+    stage.rounds.forEach((r) => {
+      const roundMatches = []
+      r.matches &&
+        r.matches.forEach((m) => {
+          roundMatches.push(m)
+        })
+      rounds.push({ ...r, matches: reorderMatches(roundMatches) })
+    })
+  return { ...stage, rounds }
+}
+
+/* ========== Matches ========== */
+
+export const isWinner = (who, match) => {
+  // console.log('match', match)
+  if (match) {
+    if (who === 'H') {
+      if (match.match_void) return match.away_withdrew
+      if (match.match_type === 'firstleg') {
+        return (
+          match.home_aggregate_score_1st_leg > match.away_aggregate_score_1st_leg ||
+          match.aggregate_team_1st_leg === match.home_team ||
+          (match.home_aggregate_score_1st_leg === match.away_aggregate_score_1st_leg && match.home_penalty_score_2nd_leg > match.away_penalty_score_2nd_leg)
+        )
+      }
+      return (
+        match.home_walkover ||
+        match.home_coin_toss ||
+        match.home_bye ||
+        match.home_playoff_win ||
+        (!match.second_leg &&
+          (match.home_score > match.away_score ||
+            (match.home_score === match.away_score && match.home_extra_score > match.away_extra_score) ||
+            (match.home_score === match.away_score &&
+              match.home_extra_score === match.away_extra_score &&
+              match.home_penalty_score > match.away_penalty_score) ||
+            match.home_replay_score > match.away_replay_score)) ||
+        (match.second_leg && match.home_aggregate_score_2nd_leg > match.away_aggregate_score_2nd_leg) ||
+        (match.second_leg &&
+          match.home_aggregate_score_2nd_leg === match.away_aggregate_score_2nd_leg &&
+          match.home_penalty_score > match.away_penalty_score) ||
+        (match.second_leg && match.aggregate_team_2nd_leg === match.home_team)
+      )
+    } else {
+      if (match.match_void) return match.home_withdrew
+      if (match.match_type === 'firstleg') {
+        return (
+          match.home_aggregate_score_1st_leg < match.away_aggregate_score_1st_leg ||
+          match.aggregate_team_1st_leg === match.away_team ||
+          (match.home_aggregate_score_1st_leg === match.away_aggregate_score_1st_leg && match.home_penalty_score_2nd_leg < match.away_penalty_score_2nd_leg)
+        )
+      }
+      return (
+        match.away_walkover ||
+        match.away_coin_toss ||
+        (!match.second_leg &&
+          (match.home_score < match.away_score ||
+            (match.home_score === match.away_score && match.home_extra_score < match.away_extra_score) ||
+            (match.home_score === match.away_score &&
+              match.home_extra_score === match.away_extra_score &&
+              match.home_penalty_score < match.away_penalty_score) ||
+            match.home_replay_score < match.away_replay_score)) ||
+        (match.second_leg && match.home_aggregate_score_2nd_leg < match.away_aggregate_score_2nd_leg) ||
+        (match.second_leg &&
+          match.home_aggregate_score_2nd_leg === match.away_aggregate_score_2nd_leg &&
+          match.home_penalty_score < match.away_penalty_score) ||
+        (match.second_leg && match.aggregate_team_2nd_leg === match.away_team)
+      )
+    }
+  }
+}
+
+export const isAwayGoalsWinner = (who, match) => {
+  // console.log('match', match)
+  if (match) {
+    if (who === 'H') {
+      return match.match_type === 'firstleg' && match.aggregate_team_1st_leg === match.home_team
+    } else {
+      return match.match_type === 'firstleg' && match.aggregate_team_1st_leg === match.away_team
+    }
+  }
+}
+
 /* ==========  ========== */
 
 const getFormat = (rrStage) => {
@@ -252,51 +379,6 @@ export const isSuccessor = (id) => {
   return !team.successor ? false : team.successor
 }
 
-export const isWinner = (who, match) => {
-  // console.log('match', match)
-  if (match) {
-    if (who === 'H') {
-      if (match.match_void) return match.away_withdrew
-      return (
-        match.home_walkover ||
-        match.home_coin_toss ||
-        match.home_bye ||
-        match.home_playoff_win ||
-        (!match.second_leg &&
-          (match.home_score > match.away_score ||
-            (match.home_score === match.away_score && match.home_extra_score > match.away_extra_score) ||
-            (match.home_score === match.away_score &&
-              match.home_extra_score === match.away_extra_score &&
-              match.home_penalty_score > match.away_penalty_score) ||
-            match.home_replay_score > match.away_replay_score)) ||
-        (match.second_leg && match.home_aggregate_score_2nd_leg > match.away_aggregate_score_2nd_leg) ||
-        (match.second_leg &&
-          match.home_aggregate_score_2nd_leg === match.away_aggregate_score_2nd_leg &&
-          match.home_penalty_score > match.away_penalty_score) ||
-        (match.second_leg && match.aggregate_team_2nd_leg === match.home_team)
-      )
-    } else {
-      if (match.match_void) return match.home_withdrew
-      return (
-        match.away_walkover ||
-        match.away_coin_toss ||
-        (!match.second_leg &&
-          (match.home_score < match.away_score ||
-            (match.home_score === match.away_score && match.home_extra_score < match.away_extra_score) ||
-            (match.home_score === match.away_score &&
-              match.home_extra_score === match.away_extra_score &&
-              match.home_penalty_score < match.away_penalty_score) ||
-            match.home_replay_score < match.away_replay_scoreg)) ||
-        (match.second_leg && match.home_aggregate_score_2nd_leg < match.away_aggregate_score_2nd_leg) ||
-        (match.second_leg &&
-          match.home_aggregate_score_2nd_leg === match.away_aggregate_score_2nd_leg &&
-          match.home_penalty_score < match.away_penalty_score) ||
-        (match.second_leg && match.aggregate_team_2nd_leg === match.away_team)
-      )
-    }
-  }
-}
-
 export const isAggregateWinner = (who, match) => {
   // console.log('match', match)
   if (match.match_type === 'firstlegonly') {
@@ -317,17 +399,6 @@ export const isAggregateWinner = (who, match) => {
           match.aggregate_team_1st_leg === match.away_team ||
           (match.home_aggregate_score_1st_leg === match.away_aggregate_score_1st_leg && match.home_penalty_score_2nd_leg < match.away_penalty_score_2nd_leg))
       )
-    }
-  }
-}
-
-export const isAwayGoalsWinner = (who, match) => {
-  // console.log('match', match)
-  if (match) {
-    if (who === 'H') {
-      return match.match_type === 'firstleg' && match.aggregate_team_1st_leg === match.home_team
-    } else {
-      return match.match_type === 'firstleg' && match.aggregate_team_1st_leg === match.away_team
     }
   }
 }
@@ -380,61 +451,6 @@ export const getDateMatchArrayPair = (matches_array, sorted) => {
     })
   }
   return { dates, matches }
-}
-
-export const reorderMatches = (matches) => {
-  matches &&
-    matches.sort((a, b) => {
-      if (a.bracket_order < b.bracket_order) {
-        return -1
-      } else if (a.bracket_order > b.bracket_order) {
-        return 1
-      } else {
-        return 0
-      }
-    })
-  return matches
-}
-
-export const getFinalPathStage = (stage) => {
-  if (!stage.rounds) return
-  const newRounds = stage.rounds.filter(
-    (r) =>
-      r.name !== 'Consolation First Round' &&
-      r.name !== 'Consolation Semi-finals' &&
-      r.name !== 'Fifth-place' &&
-      r.name !== 'Playoff First Round' &&
-      r.name !== 'Playoff Second Round',
-  )
-  return { ...stage, rounds: newRounds }
-}
-
-export const getConsolationPathStage = (stage) => {
-  if (!stage.rounds) return
-  const newRounds = stage.rounds.filter(
-    (r) =>
-      r.name === 'Consolation First Round' ||
-      r.name === 'Consolation Semi-finals' ||
-      r.name === 'Fifth-place' ||
-      r.name === 'Playoff First Round' ||
-      r.name === 'Playoff Second Round',
-  )
-  return { ...stage, rounds: newRounds }
-}
-
-export const getBracketStage = (stage) => {
-  if (!stage) return {}
-  const rounds = []
-  stage.rounds &&
-    stage.rounds.forEach((r) => {
-      const roundMatches = []
-      r.matches &&
-        r.matches.forEach((m) => {
-          roundMatches.push(m)
-        })
-      rounds.push({ ...r, matches: reorderMatches(roundMatches) })
-    })
-  return { ...stage, rounds }
 }
 
 export const collectPairMatches = (round) => {

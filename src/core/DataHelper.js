@@ -759,16 +759,20 @@ export const setStageDetails = (s) => {
 export const setStageConfig = (s) => {
   s.config = {
     advancement: s.advancement || {},
+    consolation_round: s.consolation_round || false,
     default: s.default || false,
     eliminate_count: s.eliminate_count || undefined,
+    hide_bracket: s.hide_bracket || false,
     home_and_away: s.home_and_away || false,
     multiple_paths: s.multiple_paths || false,
     next_round: s.next_round || '',
     type: s.type || '',
   }
   delete s.advancement
+  delete s.consolation_round
   delete s.default
   delete s.eliminate_count
+  delete s.hide_bracket
   delete s.home_and_away
   delete s.multiple_paths
   delete s.next_round
@@ -797,10 +801,12 @@ export const setRoundDetails = (r) => {
 export const setRoundConfig = (r) => {
   r.config = {
     eliminate_count: r.eliminate_count || undefined,
+    next_consolation_round: r.next_consolation_round || '',
     next_round: r.next_round || '',
     round_type: r.round_type || '',
   }
   delete r.eliminate_count
+  delete r.next_consolation_round
   delete r.next_round
   delete r.round_type
 }

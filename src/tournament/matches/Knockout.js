@@ -1,25 +1,18 @@
 import React from 'react'
-import { DisplaySchedule, getRoundMatches, hasReplay, getBracketStage, getFinalPathStage, getConsolationPathStage } from './MatchHelper'
-// import Bracket from './Bracket'
+import { DisplaySchedule, getRoundMatches, hasReplay } from './MatchHelper'
+import { getBracketStage, getFinalPathStage, getConsolationPathStage } from '../../core/Helper'
+import Bracket from './Bracket'
+import { Row, Col } from 'reactstrap'
+import { isEmpty } from 'lodash'
 
-const Knockout = (props) => {
+const DisplayPath = (props) => {
   const { stage, config } = props
-  // const final_path_bracket_stage = getBracketStage(getFinalPathStage(stage))
-  // const consolation_path_bracket_stage = getBracketStage(getConsolationPathStage(stage))
-  // const consolationBracketName = stage.rounds && stage.rounds.find((r) => r.name === 'Playoff First Round') !== undefined ? 'Playoff' : 'Consolation'
-  // const bracketConfig = {
-  //   tournamentTypeId: config.tournament_type_id,
-  //   goldenGoal: config.golden_goal_rule,
-  //   silverGoal: config.silver_goal_rule,
-  //   logo_path: config.logo_path,
-  //   team_type_id: config.team_type_id,
-  //   showMatchYear: config.show_match_year,
-  // }
-  // const bracketConsolationConfig = {
-  //   consolation_bracket: true,
-  //   consolation_bracket_name: consolationBracketName,
-  //   ...bracketConfig,
-  // }
+  const bracket_stage = getBracketStage(stage)
+  // console.log('stage', stage)
+  const bracketConsolationConfig = {
+    consolation_bracket: true,
+    ...config,
+  }
   const displayScheduleConfig = {
     knockout_match: true,
     ...config,
@@ -27,11 +20,17 @@ const Knockout = (props) => {
   }
   return (
     <React.Fragment>
-      {/* {!stage.hide_bracket && <Bracket stage={final_path_bracket_stage} config={bracketConfig} />}
-      {stage.consolation_round && <Bracket stage={consolation_path_bracket_stage} config={bracketConsolationConfig} />} */}
+      {config.consolation_path && (
+        <Row>
+          <Col>
+            <div className="h2-ff5 margin-top-lg txt-underline">Consolation Tournament</div>
+          </Col>
+        </Row>
+      )}
+      {!stage.config.hide_bracket && !config.consolation_path && <Bracket stage={bracket_stage} config={config} />}
+      {!stage.config.hide_bracket && config.consolation_path && <Bracket stage={bracket_stage} config={bracketConsolationConfig} />}
       {stage.rounds.map((r) => {
         const matchArray = getRoundMatches(r, true)
-        // console.log('matchArray', matchArray)
         if (!hasReplay(r)) {
           return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />
         } else {
@@ -44,6 +43,19 @@ const Knockout = (props) => {
           )
         }
       })}
+    </React.Fragment>
+  )
+}
+
+const Knockout = (props) => {
+  const { stage, config } = props
+  const finalPathStage = getFinalPathStage(stage)
+  const consolationPathStage = getConsolationPathStage(stage)
+  const consolationConfig = { ...config, consolation_path: true }
+  return (
+    <React.Fragment>
+      <DisplayPath stage={finalPathStage} config={config} />
+      {!isEmpty(consolationPathStage.rounds) && <DisplayPath stage={consolationPathStage} config={consolationConfig} />}
     </React.Fragment>
   )
 }
