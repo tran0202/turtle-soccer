@@ -31,7 +31,7 @@ export const getBracketClubLogoImg = (id, config) => {
       <React.Fragment>
         <img
           className="bracket-logo-xxxs bracket-logo-xxs bracket-logo-xs bracket-logo-sm"
-          src={`/assets/images/${config.logo_path}/${team.logo_filename}`}
+          src={`/images/${config.logo_path}/${team.logo_filename}`}
           alt={id}
           title={id}
         />
