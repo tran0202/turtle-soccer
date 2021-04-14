@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import RoundRobin from './RoundRobin'
 import RoundRobinMatchDay from './RoundRobinMatchDay'
-// import RoundRobinLeagueMatchDay from './RoundRobinLeagueMatchDay'
+import RoundRobinLeagueMatchDay from './RoundRobinLeagueMatchDay'
 import Knockout from './Knockout'
 // import Knockout2Legged from './Knockout2Legged'
 // import KnockoutMultiple2Legged from './KnockoutMultiple2Legged'
@@ -10,9 +10,9 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap'
 import classnames from 'classnames'
 import { isEmpty } from 'lodash'
 
-const collectLeagueMatchdays = (leagues, tournament) => {
+const collectLeagueMdStages = (leagues, tournament) => {
   if (!leagues) return null
-  const matchdays = []
+  const stageArray = []
   leagues.forEach((l) => {
     l.stages &&
       l.stages.forEach((s) => {
@@ -28,29 +28,29 @@ const collectLeagueMatchdays = (leagues, tournament) => {
                       m.group = g.details.name
                       _matches.push({ ...m })
                     })
-                  const _md = matchdays.find((x) => x.details.name === md.details.name)
+                  const _md = stageArray.find((x) => x.details.name === md.details.name)
                   if (_md === undefined) {
-                    matchdays.push({ details: { name: md.details.name }, config: { type: s.config.type }, matches: _matches })
+                    stageArray.push({ details: { name: md.details.name }, config: { type: s.config.type }, matches: _matches })
                   } else {
                     _md.matches = _md.matches.concat(_matches)
                   }
                 })
             })
         } else if (s.config.type === 'knockout' || s.config.type === 'knockout2legged') {
-          const _md = matchdays.find((x) => x.details.name === s.details.name)
+          const _md = stageArray.find((x) => x.details.name === s.details.name)
           if (_md === undefined) {
-            matchdays.push(s)
+            stageArray.push(s)
           }
         }
       })
   })
-  tournament.matchdays = matchdays.filter((md) => md.config.type === 'roundrobinleaguematchday')
-  return matchdays
+  tournament.matchdays = stageArray.filter((md) => md.config.type === 'roundrobinleaguematchday')
+  return stageArray
 }
 
-const collectMatchdays = (stages) => {
+const collectMdStages = (stages) => {
   if (!stages) return null
-  const matchdays = []
+  const stageArray = []
   stages.forEach((s) => {
     if (s.config.type === 'roundrobinmatchday') {
       s.matchdays = []
@@ -77,19 +77,19 @@ const collectMatchdays = (stages) => {
           })
       })
       s.matchdays.forEach((md) => {
-        matchdays.push(md)
+        stageArray.push(md)
       })
     } else {
-      matchdays.push(s)
+      stageArray.push(s)
     }
   })
-  return matchdays
+  return stageArray
 }
 
 const Matches = (props) => {
   const { tournament } = props
   const { stages, leagues, config } = tournament
-  const stageArray = config.multi_league ? collectLeagueMatchdays(leagues, tournament) : collectMatchdays(stages)
+  const stageArray = config.multi_league ? collectLeagueMdStages(leagues, tournament) : collectMdStages(stages)
   // console.log('stageArray', stageArray)
   const defaultTab = config.multi_league ? getDefaultMdTab(leagues) : getDefaultStageTab(stages)
   const [activeTab, setActiveTab] = useState(defaultTab)
@@ -124,10 +124,11 @@ const Matches = (props) => {
                 {s.details.name && (
                   <TabPane tabId={s.details.name.replace(' ', '-')}>
                     {(s.config.type === 'roundrobin' || s.config.type === 'allocation') && <RoundRobin stage={s} config={config} />}
-                    {s.config.type === 'roundrobinmatchday' && <RoundRobinMatchDay stage={s} config={config} />}
+                    {s.config.type === 'roundrobinmatchday' && <RoundRobinMatchDay matchday={s} config={config} />}
                     {s.config.type === 'knockout' && <Knockout stage={s} config={config} />}
                     {/* {stage.type === 'knockout2legged' && <Knockout2Legged stage={stage} config={config} />}
                     {stage.type === 'knockoutmultiple2legged' && <KnockoutMultiple2Legged stage={stage} config={config} />} */}
+                    {s.config.type === 'roundrobinleaguematchday' && <RoundRobinLeagueMatchDay matchday={s} config={config} />}
                   </TabPane>
                 )}
               </React.Fragment>

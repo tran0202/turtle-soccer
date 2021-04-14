@@ -2,9 +2,9 @@ import React from 'react'
 import { DisplaySchedule, getRoundMatches } from './MatchHelper'
 
 const RoundRobinMatchDay = (props) => {
-  const { stage, config } = props
+  const { matchday, config } = props
   // console.log('stage', stage)
-  const matchArray = getRoundMatches(stage, true)
+  const matchArray = getRoundMatches(matchday, true)
   return <DisplaySchedule round={matchArray} config={config} />
 }
 

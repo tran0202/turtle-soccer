@@ -26,6 +26,27 @@ import { Row, Col } from 'reactstrap'
 import moment from 'moment'
 import { isEmpty, isUndefined, isNull } from 'lodash'
 
+const getLeagueClassname = (name) => {
+  let fontClassName
+  switch (name) {
+    case 'League A':
+      fontClassName = 'unl-league-A'
+      break
+    case 'League B':
+      fontClassName = 'unl-league-B'
+      break
+    case 'League C':
+      fontClassName = 'unl-league-C'
+      break
+    case 'League D':
+      fontClassName = 'unl-league-D'
+      break
+    default:
+      fontClassName = 'unl-league-A'
+  }
+  return fontClassName
+}
+
 export const hasGroupPlayoff = (group) => {
   if (isEmpty(group.matches)) return false
   return group.matches.find((m) => m.group_playoff) !== undefined
@@ -502,6 +523,7 @@ export const DisplayMatch = (props) => {
 export const DisplaySchedule2 = (props) => {
   const { round, config } = props
   const { show_match_year, hide_date_grouping } = config
+  // console.log('round', round)
   //   const { dates, matches } = round
   return (
     <React.Fragment>
@@ -519,9 +541,16 @@ export const DisplaySchedule2 = (props) => {
               {show_match_year ? moment(x.date).format('dddd, MMMM D, YYYY') : moment(x.date).format('dddd, MMMM D')}
             </Col>
           )}
-          {x.matches.map((m, index) => (
-            <DisplayMatch m={m} config={config} key={index} />
-          ))}
+          {x.matches && x.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}
+          {x.leagues &&
+            x.leagues.map((l) => (
+              <React.Fragment key={l.name}>
+                <Col sm="12" className={`${getLeagueClassname(l.name)} h5-ff3 margin-top-md`}>
+                  {l.name}
+                </Col>
+                <React.Fragment>{l.matches && l.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}</React.Fragment>
+              </React.Fragment>
+            ))}
         </Row>
       ))}
     </React.Fragment>
@@ -542,7 +571,6 @@ export const DisplaySchedule = (props) => {
       return 0
     }
   })
-  // console.log('details', details)
   const groupName = !isEmpty(details)
     ? details.name && (config.competition_id === 'MOFT' || config.competition_id === 'WOFT')
       ? details.name.replace('Third-place', 'Bronze medal match').replace('Final', 'Gold medal match')
