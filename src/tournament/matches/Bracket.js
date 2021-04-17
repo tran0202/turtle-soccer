@@ -6,7 +6,7 @@ import { hasReplay, getHomeBracketOtherTooltip, getAwayBracketOtherTooltip, getH
 import { getTeamArray } from '../../core/DataHelper'
 import { Row, Col, Collapse, Button } from 'reactstrap'
 import moment from 'moment'
-import { isEmpty, isUndefined, isNull } from 'lodash'
+import { isEmpty, isNull } from 'lodash'
 
 const getMatchDate = (match, config) => {
   if (isEmpty(match)) return
@@ -379,9 +379,9 @@ export const getAwayHalfBoxTooltip = (isPair, m1, m2, config) => {
 }
 
 export const getHomeHalfBoxScores = (isPair, m1, m2, config) => {
-  const m2_away_score =
-    (m2 && !isUndefined(m2.away_score) ? m2.away_score : 0) +
-    parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.away_extra_score) ? m2.away_extra_score : 0)
+  // const m2_away_score =
+  //   (m2 && !isUndefined(m2.away_score) ? m2.away_score : 0) +
+  //   parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.away_extra_score) ? m2.away_extra_score : 0)
   return (
     <React.Fragment>
       {!isPair && (
@@ -427,9 +427,9 @@ export const getHomeHalfBoxScores = (isPair, m1, m2, config) => {
 }
 
 export const getAwayHalfBoxScores = (isPair, m1, m2, config) => {
-  const m2_home_score =
-    (m2 && !isUndefined(m2.home_score) ? m2.home_score : 0) +
-    parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.home_extra_score) ? m2.home_extra_score : 0)
+  // const m2_home_score =
+  //   (m2 && !isUndefined(m2.home_score) ? m2.home_score : 0) +
+  //   parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.home_extra_score) ? m2.home_extra_score : 0)
   return (
     <React.Fragment>
       {!isPair && (
@@ -894,42 +894,42 @@ const DisplayBracket = (props) => {
             )
           }
         }
-        {
-          /* else if (r.matches) {
-              r.matches.sort((a, b) => {
-                if (a.bracket_order > b.bracket_order) {
-                  return 1
-                } else if (a.bracket_order < b.bracket_order) {
-                  return -1
-                } else {
-                  return 0
-                }
-              })
-              const hookCount = r.matches.length % 2 === 0 ? r.matches.length / 2 : (r.matches.length - 1) / 2
-              if (r.name === 'Third-place') {
-                thirdPlace = r
-                return null
-              } else if (r.name === 'Final') {
-                return (
-                  <BracketFinalCol
-                    round={r}
-                    thirdPlace={thirdPlace}
-                    silverMedal={silverMedal}
-                    config={{ ...config, roundCount: filteredRounds.length, two_legged: false }}
-                    key={r.name}
-                  />
-                )
-              } else {
-                return (
-                  <React.Fragment key={r.name}>
-                    <BracketCol round={r} colIndex={index} config={{ ...config, two_legged: false }} />
-                    <BracketHook1 colIndex={index} hookCount={hookCount} config={config} />
-                    <BracketHook2 colIndex={index} hookCount={hookCount} config={config} />
-                  </React.Fragment>
-                )
-              }
-            } */
-        }
+        // {
+        //   /* else if (r.matches) {
+        //       r.matches.sort((a, b) => {
+        //         if (a.bracket_order > b.bracket_order) {
+        //           return 1
+        //         } else if (a.bracket_order < b.bracket_order) {
+        //           return -1
+        //         } else {
+        //           return 0
+        //         }
+        //       })
+        //       const hookCount = r.matches.length % 2 === 0 ? r.matches.length / 2 : (r.matches.length - 1) / 2
+        //       if (r.name === 'Third-place') {
+        //         thirdPlace = r
+        //         return null
+        //       } else if (r.name === 'Final') {
+        //         return (
+        //           <BracketFinalCol
+        //             round={r}
+        //             thirdPlace={thirdPlace}
+        //             silverMedal={silverMedal}
+        //             config={{ ...config, roundCount: filteredRounds.length, two_legged: false }}
+        //             key={r.name}
+        //           />
+        //         )
+        //       } else {
+        //         return (
+        //           <React.Fragment key={r.name}>
+        //             <BracketCol round={r} colIndex={index} config={{ ...config, two_legged: false }} />
+        //             <BracketHook1 colIndex={index} hookCount={hookCount} config={config} />
+        //             <BracketHook2 colIndex={index} hookCount={hookCount} config={config} />
+        //           </React.Fragment>
+        //         )
+        //       }
+        //     } */
+        // }
         return null
       })}
     </Row>

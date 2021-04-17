@@ -6,18 +6,18 @@ import {
   WalkoverTooltip,
   AwardedTooltip,
   AetTooltip,
-  ByeTooltip,
-  CancelledTooltip,
-  GoldenGoalTooltip,
-  SilverGoalTooltip,
-  Extra140Tooltip,
-  DisqualifiedTooltip,
-  ReplacementTooltip,
-  ConsolationTooltip,
-  PlayoffSecondRoundTooltip,
+  // ByeTooltip,
+  // CancelledTooltip,
+  // GoldenGoalTooltip,
+  // SilverGoalTooltip,
+  // Extra140Tooltip,
+  // DisqualifiedTooltip,
+  // ReplacementTooltip,
+  // ConsolationTooltip,
+  // PlayoffSecondRoundTooltip,
 } from './TooltipHelper'
 import { Row, Col } from 'reactstrap'
-import moment from 'moment'
+// import moment from 'moment'
 import { isEmpty, isNull } from 'lodash'
 
 /* ========== Tournaments ========== */

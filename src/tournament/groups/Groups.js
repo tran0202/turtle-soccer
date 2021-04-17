@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+// import React, { useState } from 'react'
 // import TournamentFormat from './TournamentFormat'
 // import GroupStandings from './GroupStandings'
 // import GroupMdStandings from './GroupMdStandings'
@@ -21,8 +22,9 @@ import React, { useState } from 'react'
 //   isGroupPlayoffTiebreaker,
 //   isLotGroupPlayoffTiebreaker,
 // } from './RankingsHelper'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap'
-import classnames from 'classnames'
+import { Row } from 'reactstrap'
+// import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap'
+// import classnames from 'classnames'
 
 // const calculateStageRankings = (tournament, config, stage) => {
 //   const { groups } = stage

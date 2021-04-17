@@ -604,7 +604,6 @@ export const setCompetitionDetails = (comp) => {
 
 export const setTournamentConfig = (t) => {
   const competition = Competitions.find((c) => c.id === t.competition_id)
-  // console.log('competition', competition)
   if (!competition) return
   !competition.config && setCompetitionConfig(competition)
   t.config = {
@@ -744,7 +743,8 @@ export const setAllStages = (ss) => {
   td_stages.forEach((s) => {
     setStageDetails(s)
     setStageConfig(s)
-    setAllRounds(s.rounds)
+    setAllRounds(s.rounds, s)
+    // console.log('s.type', s.config.type)
     setAllGroups(s.groups)
   })
 }
@@ -779,11 +779,11 @@ export const setStageConfig = (s) => {
   delete s.type
 }
 
-export const setAllRounds = (rs) => {
+export const setAllRounds = (rs, s) => {
   const td_rounds = rs || []
   td_rounds.forEach((r) => {
     setRoundDetails(r)
-    setRoundConfig(r)
+    setRoundConfig(r, s)
   })
 }
 
@@ -798,12 +798,12 @@ export const setRoundDetails = (r) => {
   delete r.short_name
 }
 
-export const setRoundConfig = (r) => {
+export const setRoundConfig = (r, s) => {
   r.config = {
     eliminate_count: r.eliminate_count || undefined,
     next_consolation_round: r.next_consolation_round || '',
     next_round: r.next_round || '',
-    round_type: r.round_type || '',
+    round_type: r.round_type || s.config.type || '',
   }
   delete r.eliminate_count
   delete r.next_consolation_round
