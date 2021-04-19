@@ -194,11 +194,12 @@ export const getRoundMatches = (round, sorted) => {
 
 export const getRoundPairs = (round, sorted) => {
   if (isEmpty(round)) return []
+  if (round.matches) return getDateMatchArray(round.matches, sorted)
   round.pairs &&
     round.pairs.forEach((p) => {
       p.matches &&
         p.matches.forEach((m) => {
-          if (m.match_type === 'firstleg') {
+          if (m.match_type === 'firstleg' || m.match_type === 'firstlegonly') {
             p.date = m.date
             p.time = m.time
           }
@@ -242,6 +243,31 @@ export const getDateMatchArray = (matches, sorted) => {
 }
 
 export const splitPathMatches = (round, config) => {
+  if (!config.multiple_paths) return [{ name: '', matches: round.matches }]
+  const championsMatches = []
+  const leagueMatches = []
+  const mainMatches = []
+  // console.log('round', round)
+  round.matches &&
+    round.matches.forEach((m) => {
+      if (m) {
+        if (m.path === 'Champions') {
+          championsMatches.push(m)
+        } else if (m.path === 'League') {
+          leagueMatches.push(m)
+        } else {
+          mainMatches.push(m)
+        }
+      }
+    })
+  return [
+    { name: 'Champions', matches: championsMatches },
+    { name: 'League', matches: leagueMatches },
+    { name: 'Main', matches: mainMatches },
+  ]
+}
+
+export const splitPathPairs = (round, config) => {
   // console.log('round', round)
   if (!config.multiple_paths) return [{ name: '', pairs: round.pairs }]
   const championsPairs = []
@@ -604,6 +630,8 @@ export const DisplayKnockout2LeggedMatch = (props) => {
     ...m,
     ...config,
     aggregate_team: m.aggregate_team_1st_leg,
+    home_penalty_score: m.home_penalty_score_2nd_leg,
+    away_penalty_score: m.away_penalty_score_2nd_leg,
     home_aggregate_score: m.home_aggregate_score_1st_leg,
     away_aggregate_score: m.away_aggregate_score_1st_leg,
   }
@@ -694,7 +722,7 @@ export const DisplayMatch = (props) => {
     home_aggregate_score: m.home_aggregate_score_2nd_leg,
     away_aggregate_score: m.away_aggregate_score_2nd_leg,
   }
-  const borderBottomColor = m.match_type === 'secondleg' || m.match_type === 'firstlegonly' ? 'border-bottom-gray2' : 'border-bottom-gray5'
+  const borderBottomColor = m.match_type === 'secondleg' || m.match_type === 'firstlegonly' ? 'border-bottom-gray4' : 'border-bottom-gray5'
   return (
     <Col sm="12" className={`padding-tb-md ${borderBottomColor}`}>
       <Row>
@@ -820,9 +848,6 @@ export const DisplaySchedule2 = (props) => {
 
 export const DisplaySchedule = (props) => {
   const { round, config, details } = props
-  // const { multiple_paths } = config
-  // const { name, dates, consolation_notes } = round
-  // const pathDatesMatches = multiple_paths ? splitPathDatesMatches(round) : []
   round.sort((a, b) => {
     if (a.date > b.date) {
       return 1
@@ -854,4 +879,11 @@ export const DisplaySchedule = (props) => {
       <DisplaySchedule2 round={round} config={config} details={details} />
     </React.Fragment>
   )
+}
+
+export const PathSchedule = (props) => {
+  const { path, config } = props
+  const pairArray = getRoundPairs(path, true)
+  const pathDetails = { path_name: !isEmpty(path.name) ? `${path.name} Path` : '' }
+  return <DisplaySchedule round={pairArray} config={config} details={pathDetails} />
 }

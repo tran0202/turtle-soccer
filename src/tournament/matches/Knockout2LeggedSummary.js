@@ -1,5 +1,5 @@
 import React from 'react'
-import { DisplayKnockout2LeggedMatch, splitPathMatches } from './MatchHelper'
+import { DisplayKnockout2LeggedMatch, splitPathPairs } from './MatchHelper'
 import { Row, Col } from 'reactstrap'
 import { isEmpty } from 'lodash'
 
@@ -43,7 +43,7 @@ const Knockout2LeggedBox = (props) => {
 
 const Knockout2LeggedSummary = (props) => {
   const { round, config } = props
-  const pathMatches = splitPathMatches(round, config)
+  const pathMatches = splitPathPairs(round, config)
   // console.log('pathMatches', pathMatches)
   return (
     <React.Fragment>

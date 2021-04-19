@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { getFlagSrc, getBracketTeamName, getBracketTeamCode } from '../../core/TeamHelper'
-import { isWinner, isAwayGoalsWinner } from '../../core/Helper'
+import { isWinner, isAwayGoalsWinner, reorderBracketPairs } from '../../core/Helper'
 import { AwayGoalsTooltip, ConsolationTooltip } from '../../core/TooltipHelper'
 import { hasReplay, getHomeBracketOtherTooltip, getAwayBracketOtherTooltip, getHomeBracketTooltip, getAwayBracketTooltip } from './MatchHelper'
 import { getTeamArray } from '../../core/DataHelper'
 import { Row, Col, Collapse, Button } from 'reactstrap'
 import moment from 'moment'
-import { isEmpty, isNull } from 'lodash'
+import { isEmpty, isNull, isUndefined } from 'lodash'
 
 const getMatchDate = (match, config) => {
   if (isEmpty(match)) return
@@ -54,302 +54,6 @@ export const getTeamFlag = (id, config) => {
   )
 }
 
-// const BracketBox = (props) => {
-//   const { match, colIndex, lastBox, config } = props
-//   // console.log('config', config)
-//   return (
-//     <React.Fragment>
-//       <Row className="no-gutters box-sm bracket-box-height">
-//         <Col sm="12" className="bracket-box-header-height border-bottom-gray5">
-//           <Row className="no-gutters">
-//             <Col xs={{ size: 11, offset: 1 }}>
-//               <span className="box-time d-block d-lg-none">
-//                 {getMatchDate(match, config)}
-//                 {match.city ? ` | ${match.city}` : ``}
-//               </span>
-//               <span className="box-time d-none d-lg-block">
-//                 {getMatchDate(match, config)}
-//                 {match.stadium && match.city ? ` | ${match.stadium}, ${match.city}` : ``}
-//               </span>
-//             </Col>
-//           </Row>
-//         </Col>
-//         <Col sm="12" className="bracket-half-box-height border-bottom-gray5">
-//           <Row className="no-gutters h3-ff3">
-//             <Col xs={{ size: 2, offset: 1 }} className="d-none d-lg-block">
-//               {getTeamFlag(match.home_team, config)}
-//             </Col>
-//             <Col xs={{ size: 2, offset: 1 }} className="d-none d-md-block d-lg-none">
-//               {getTeamFlag(match.home_team, config)}
-//             </Col>
-//             <Col xs={{ size: 2, offset: 1 }} className="d-none d-sm-block d-md-none">
-//               {getTeamFlag(match.home_team, config)}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('H', match) ? '' : 'box-team-name-light'} d-none d-xl-block`}>
-//               {getBracketTeamName(match.home_team)}
-//               {match.walkover && match.home_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.home_team}_${match.away_team}`} content={match.walkover} anchor="(w/o)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score > match.away_extra_score &&
-//                 getExtraTimeTooltip(match, config)}
-//               {match.home_penalty_score > match.away_penalty_score && <PenTooltip target="penTooltip1" anchor="(pen.)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score > match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(rep.)" />
-//               )}
-//               {match.home_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(coin.)" />}
-//               {match.home_bye && <ByeTooltip target={`byeTooltip_${match.home_team}_${match.away_team}`} anchor="(bye)" notes={match.bye_notes} />}
-//               {match.home_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.postponed && <MatchPostponedTooltip target="matchPostponedTooltip" anchor="(ppd)" notes={match.postponed_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//               {match.extra_140 && <Extra140Tooltip target={`extra140`} />}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('H', match) ? '' : 'box-team-name-light'} d-none d-lg-block d-xl-none`}>
-//               {getBracketTeamName(match.home_team)}
-//               {match.walkover && match.home_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.home_team}_${match.away_team}`} content={match.walkover} anchor="(w)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score > match.away_extra_score &&
-//                 getExtraTimeTooltip(match, { ...config, shortAnchor: true })}
-//               {match.home_penalty_score > match.away_penalty_score && <PenTooltip target="penTooltip1" anchor="(p)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score > match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(r)" />
-//               )}
-//               {match.home_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(ct)" />}
-//               {match.home_bye && <ByeTooltip target={`byeTooltip_${match.home_team}_${match.away_team}`} anchor="(b)" notes={match.bye_notes} />}
-//               {match.home_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.postponed && <MatchPostponedTooltip target="matchPostponedTooltip" anchor="(ppd)" notes={match.postponed_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//               {match.extra_140 && <Extra140Tooltip target={`extra140`} />}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('H', match) ? '' : 'box-team-name-light'} d-none d-md-block d-lg-none`}>
-//               {getBracketTeamCode(match.home_team, config)}
-//               {match.walkover && match.home_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.home_team}_${match.away_team}`} content={match.walkover} anchor="(w/o)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score > match.away_extra_score &&
-//                 getExtraTimeTooltip(match, config)}
-//               {match.home_penalty_score > match.away_penalty_score && <PenTooltip target="penTooltip1" anchor="(pen.)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score > match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(rep.)" />
-//               )}
-//               {match.home_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(coin.)" />}
-//               {match.home_bye && <ByeTooltip target={`byeTooltip_${match.home_team}_${match.away_team}`} anchor="(bye)" notes={match.bye_notes} />}
-//               {match.home_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.postponed && <MatchPostponedTooltip target="matchPostponedTooltip" anchor="(ppd)" notes={match.postponed_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//               {match.extra_140 && <Extra140Tooltip target={`extra140`} />}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('H', match) ? '' : 'box-team-name-light'} d-none d-sm-block d-md-none`}>
-//               {getBracketTeamCode(match.home_team, config)}
-//               {match.walkover && match.home_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.home_team}_${match.away_team}`} content={match.walkover} anchor="(w)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score > match.away_extra_score &&
-//                 getExtraTimeTooltip(match, { ...config, shortAnchor: true })}
-//               {match.home_penalty_score > match.away_penalty_score && <PenTooltip target="penTooltip1" anchor="(p)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score > match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(r)" />
-//               )}
-//               {match.home_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(ct)" />}
-//               {match.home_bye && <ByeTooltip target={`byeTooltip_${match.home_team}_${match.away_team}`} anchor="(b)" notes={match.bye_notes} />}
-//               {match.home_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.postponed && <MatchPostponedTooltip target="matchPostponedTooltip" anchor="(ppd)" notes={match.postponed_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//               {match.extra_140 && <Extra140Tooltip target={`extra140`} />}
-//             </Col>
-//             <Col xs={{ size: 8, offset: 1 }} className={`box-team-name ${isWinner('H', match) ? '' : 'box-team-name-light'} d-block d-xs-block d-sm-none`}>
-//               {getTeamFlag(match.home_team, config)}
-//               &nbsp;
-//               {getBracketTeamCode(match.home_team, config)}
-//               {match.walkover && match.home_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.home_team}_${match.away_team}`} content={match.walkover} anchor="(w)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score > match.away_extra_score &&
-//                 getExtraTimeTooltip(match, { ...config, shortAnchor: true })}
-//               {match.home_penalty_score > match.away_penalty_score && <PenTooltip target="penTooltip1" anchor="(p)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score > match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(r)" />
-//               )}
-//               {match.home_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(ct)" />}
-//               {match.home_bye && <ByeTooltip target={`byeTooltip_${match.home_team}_${match.away_team}`} anchor="(b)" notes={match.bye_notes} />}
-//               {match.home_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.postponed && <MatchPostponedTooltip target="matchPostponedTooltip" anchor="(ppd)" notes={match.postponed_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//               {match.extra_140 && <Extra140Tooltip target={`extra140`} />}
-//             </Col>
-//             {match.home_extra_score == null && (
-//               <Col xs={{ size: 3 }} className={`box-score ${isWinner('H', match) ? '' : 'box-score-light'}`}>
-//                 {match.home_score}
-//                 {match.home_penalty_score != null && <React.Fragment>&nbsp;({match.home_penalty_score})</React.Fragment>}
-//                 {match.home_replay_score != null && <React.Fragment>({match.home_replay_score})</React.Fragment>}
-//                 {match.void_notes && <MatchVoidedTooltip target="matchVoidedTooltip" anchor="(v)" notes={match.void_notes} />}
-//                 {(match.home_awarded || match.home_awarded_score_not_counted) && match.awarded_text && (
-//                   <AwardedTooltip target={`awarded_${match.home_team}_${match.away_team}`} content={match.awarded_text} />
-//                 )}
-//               </Col>
-//             )}
-//             {match.home_extra_score != null && (
-//               <Col xs={{ size: 3 }} className={`box-score ${isWinner('H', match) ? '' : 'box-score-light'}`}>
-//                 {parseInt(match.home_score) + parseInt(match.home_extra_score)}
-//                 {match.home_penalty_score != null && <React.Fragment>&nbsp;({match.home_penalty_score})</React.Fragment>}
-//                 {match.home_replay_score != null && <React.Fragment>({match.home_replay_score})</React.Fragment>}
-//                 {match.void_notes && <MatchVoidedTooltip target="matchVoidedTooltip" anchor="(v)" notes={match.void_notes} />}
-//                 {(match.home_awarded || match.home_awarded_score_not_counted) && match.awarded_text && (
-//                   <AwardedTooltip target={`awarded_${match.home_team}_${match.away_team}`} content={match.awarded_text} />
-//                 )}
-//               </Col>
-//             )}
-//           </Row>
-//         </Col>
-//         <Col sm="12" className="bracket-half-box-height">
-//           <Row className="no-gutters h4-ff3">
-//             <Col xs={{ size: 2, offset: 1 }} className="d-none d-lg-block">
-//               {getTeamFlag(match.away_team, config)}
-//             </Col>
-//             <Col xs={{ size: 2, offset: 1 }} className="d-none d-md-block d-lg-none">
-//               {getTeamFlag(match.away_team, config)}
-//             </Col>
-//             <Col xs={{ size: 2, offset: 1 }} className="d-none d-sm-block d-md-none">
-//               {getTeamFlag(match.away_team, config)}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('A', match) ? '' : 'box-team-name-light'} d-none d-xl-block`}>
-//               {getBracketTeamName(match.away_team)}
-//               {match.walkover && match.away_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.away_team}_${match.home_team}`} content={match.walkover} anchor="(w/o)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score < match.away_extra_score &&
-//                 getExtraTimeTooltip(match, config)}
-//               {match.home_penalty_score < match.away_penalty_score && <PenTooltip target="penTooltip2" anchor="(pen.)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score < match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(rep.)" />
-//               )}
-//               {match.away_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(coin.)" />}
-//               {match.away_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={match.disqualified_notes} />}
-//               {match.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={match.replacement_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('A', match) ? '' : 'box-team-name-light'} d-none d-lg-block d-xl-none`}>
-//               {getBracketTeamName(match.away_team)}
-//               {match.walkover && match.away_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.away_team}_${match.home_team}`} content={match.walkover} anchor="(w)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score < match.away_extra_score &&
-//                 getExtraTimeTooltip(match, { ...config, shortAnchor: true })}
-//               {match.home_penalty_score < match.away_penalty_score && <PenTooltip target="penTooltip2" anchor="(p)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score < match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(r)" />
-//               )}
-//               {match.away_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(ct)" />}
-//               {match.away_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={match.disqualified_notes} />}
-//               {match.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={match.replacement_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('A', match) ? '' : 'box-team-name-light'} d-none d-md-block d-lg-none`}>
-//               {getBracketTeamCode(match.away_team, config)}
-//               {match.walkover && match.away_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.away_team}_${match.home_team}`} content={match.walkover} anchor="(w/o)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score < match.away_extra_score &&
-//                 getExtraTimeTooltip(match, config)}
-//               {match.home_penalty_score < match.away_penalty_score && <PenTooltip target="penTooltip2" anchor="(pen.)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score < match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(rep.)" />
-//               )}
-//               {match.away_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(coin.)" />}
-//               {match.away_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={match.disqualified_notes} />}
-//               {match.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={match.replacement_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//             </Col>
-//             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('A', match) ? '' : 'box-team-name-light'} d-none d-sm-block d-md-none`}>
-//               {getBracketTeamCode(match.away_team, config)}
-//               {match.walkover && match.away_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.away_team}_${match.home_team}`} content={match.walkover} anchor="(w)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score < match.away_extra_score &&
-//                 getExtraTimeTooltip(match, { ...config, shortAnchor: true })}
-//               {match.home_penalty_score < match.away_penalty_score && <PenTooltip target="penTooltip2" anchor="(p)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score < match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(r)" />
-//               )}
-//               {match.away_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(ct)" />}
-//               {match.away_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={match.disqualified_notes} />}
-//               {match.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={match.replacement_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//             </Col>
-//             <Col xs={{ size: 8, offset: 1 }} className={`box-team-name ${isWinner('A', match) ? '' : 'box-team-name-light'} d-block d-xs-block d-sm-none`}>
-//               {getTeamFlag(match.away_team, config)}
-//               &nbsp;
-//               {getBracketTeamCode(match.away_team, config)}
-//               {match.walkover && match.away_walkover && (
-//                 <WalkoverTooltip target={`walkover_${match.away_team}_${match.home_team}`} content={match.walkover} anchor="(w)" />
-//               )}
-//               {match.home_extra_score != null &&
-//                 match.away_extra_score != null &&
-//                 match.home_extra_score < match.away_extra_score &&
-//                 getExtraTimeTooltip(match, { ...config, shortAnchor: true })}
-//               {match.home_penalty_score < match.away_penalty_score && <PenTooltip target="penTooltip1" anchor="(p)" />}
-//               {match.home_replay_score != null && match.away_replay_score != null && match.home_replay_score < match.away_replay_score && (
-//                 <ReplayTooltip target="replayTooltip" anchor="(r)" />
-//               )}
-//               {match.away_coin_toss && <CoinTossTooltip target="coinTossTooltip" anchor="(ct)" />}
-//               {match.away_withdrew && <WithdrewTooltip target="withdrewTooltip" anchor="(wdr)" />}
-//               {match.away_disqualified && <DisqualifiedTooltip target="disqualifiedTooltip" anchor="(dq)" notes={match.disqualified_notes} />}
-//               {match.away_replacement && <ReplacementTooltip target="replacementTooltip" notes={match.replacement_notes} />}
-//               {isSharedBronze(match) && <SharedBronzeTooltip target="sharedBronzeTooltip" notes={match.shared_bronze_text} />}
-//             </Col>
-//             {match.away_extra_score == null && (
-//               <Col xs={{ size: 3 }} className={`box-score ${isWinner('A', match) ? '' : 'box-score-light'}`}>
-//                 {match.away_score}
-//                 {match.away_penalty_score != null && <React.Fragment>&nbsp;({match.away_penalty_score})</React.Fragment>}
-//                 {match.away_replay_score != null && <React.Fragment>({match.away_replay_score})</React.Fragment>}
-//                 {match.away_awarded && match.awarded_text && (
-//                   <AwardedTooltip target={`awarded_${match.home_team}_${match.away_team}`} content={match.awarded_text} />
-//                 )}
-//               </Col>
-//             )}
-//             {match.away_extra_score != null && (
-//               <Col xs={{ size: 3 }} className={`box-score ${isWinner('A', match) ? '' : 'box-score-light'}`}>
-//                 {parseInt(match.away_score) + parseInt(match.away_extra_score)}
-//                 {match.away_penalty_score != null && <React.Fragment>&nbsp;({match.away_penalty_score})</React.Fragment>}
-//                 {match.away_replay_score != null && <React.Fragment>({match.away_replay_score})</React.Fragment>}
-//                 {match.away_awarded && match.awarded_text && (
-//                   <AwardedTooltip target={`awarded_${match.home_team}_${match.away_team}`} content={match.awarded_text} />
-//                 )}
-//               </Col>
-//             )}
-//           </Row>
-//         </Col>
-//       </Row>
-//       {colIndex === 0 && !lastBox && <Row className="bracket-gap-height-01"></Row>}
-//       {colIndex === 1 && !lastBox && <Row className="bracket-gap-height-11"></Row>}
-//       {colIndex === 2 && !lastBox && <Row className="bracket-gap-height-21"></Row>}
-//       {colIndex === 3 && !lastBox && <Row className="bracket-gap-height-31"></Row>}
-//     </React.Fragment>
-//   )
-// }
-
 export const getHomeHalfBoxTooltip = (isPair, m1, m2, config) => {
   return (
     <React.Fragment>
@@ -379,9 +83,9 @@ export const getAwayHalfBoxTooltip = (isPair, m1, m2, config) => {
 }
 
 export const getHomeHalfBoxScores = (isPair, m1, m2, config) => {
-  // const m2_away_score =
-  //   (m2 && !isUndefined(m2.away_score) ? m2.away_score : 0) +
-  //   parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.away_extra_score) ? m2.away_extra_score : 0)
+  const m2_away_score =
+    (m2 && !isUndefined(m2.away_score) ? m2.away_score : 0) +
+    parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.away_extra_score) ? m2.away_extra_score : 0)
   return (
     <React.Fragment>
       {!isPair && (
@@ -406,11 +110,11 @@ export const getHomeHalfBoxScores = (isPair, m1, m2, config) => {
       )}
       {isPair && (
         <React.Fragment>
-          {/* <Col xs={{ size: 1 }} className={`box-score ${isWinner('H', m1) ? '' : 'box-score-light'}`}>
+          <Col xs={{ size: 1 }} className={`box-score ${isWinner('H', m1) ? '' : 'box-score-light'}`}>
             {m1.home_score}
           </Col>
           <Col xs={{ size: 1 }} className={`box-score ${isWinner('H', m1) ? '' : 'box-score-light'}`}>
-            {m2.away_score !== undefined ? m2_away_score : ''}
+            {!isUndefined(m2.away_score) ? m2_away_score : ''}
           </Col>
           <Col xs={{ size: 1 }} className={`box-score ${isWinner('H', m1) ? '' : 'box-score-light'}`}>
             {m1.home_aggregate_score_1st_leg}
@@ -419,7 +123,7 @@ export const getHomeHalfBoxScores = (isPair, m1, m2, config) => {
             <Col xs={{ size: 1 }} className={`box-score ${isWinner('H', m1) ? '' : 'box-score-light'}`}>
               {m1.home_penalty_score_2nd_leg != null && <React.Fragment>({m1.home_penalty_score_2nd_leg})</React.Fragment>}
             </Col>
-          )} */}
+          )}
         </React.Fragment>
       )}
     </React.Fragment>
@@ -427,9 +131,9 @@ export const getHomeHalfBoxScores = (isPair, m1, m2, config) => {
 }
 
 export const getAwayHalfBoxScores = (isPair, m1, m2, config) => {
-  // const m2_home_score =
-  //   (m2 && !isUndefined(m2.home_score) ? m2.home_score : 0) +
-  //   parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.home_extra_score) ? m2.home_extra_score : 0)
+  const m2_home_score =
+    (m2 && !isUndefined(m2.home_score) ? m2.home_score : 0) +
+    parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.home_extra_score) ? m2.home_extra_score : 0)
   return (
     <React.Fragment>
       {!isPair && (
@@ -454,20 +158,20 @@ export const getAwayHalfBoxScores = (isPair, m1, m2, config) => {
       )}
       {isPair && (
         <React.Fragment>
-          {/* <Col xs={{ size: 1 }} className={`box-score ${isAggregateWinner('A', m1) ? '' : 'box-score-light'}`}>
+          <Col xs={{ size: 1 }} className={`box-score ${isWinner('A', m1) ? '' : 'box-score-light'}`}>
             {m1.away_score}
           </Col>
-          <Col xs={{ size: 1 }} className={`box-score ${isAggregateWinner('A', m1) ? '' : 'box-score-light'}`}>
-            {m2.home_score !== undefined ? m2_home_score : ''}
+          <Col xs={{ size: 1 }} className={`box-score ${isWinner('A', m1) ? '' : 'box-score-light'}`}>
+            {!isUndefined(m2.home_score) ? m2_home_score : ''}
           </Col>
-          <Col xs={{ size: 1 }} className={`box-score ${isAggregateWinner('A', m1) ? '' : 'box-score-light'}`}>
+          <Col xs={{ size: 1 }} className={`box-score ${isWinner('A', m1) ? '' : 'box-score-light'}`}>
             {m2.home_aggregate_score_2nd_leg}
           </Col>
           {m1.away_penalty_score_2nd_leg != null && (
-            <Col xs={{ size: 1 }} className={`box-score ${isAggregateWinner('A', m1) ? '' : 'box-score-light'}`}>
+            <Col xs={{ size: 1 }} className={`box-score ${isWinner('A', m1) ? '' : 'box-score-light'}`}>
               {m1.away_penalty_score_2nd_leg != null && <React.Fragment>({m1.away_penalty_score_2nd_leg})</React.Fragment>}
             </Col>
-          )} */}
+          )}
         </React.Fragment>
       )}
     </React.Fragment>
@@ -493,6 +197,7 @@ const BracketFinalCol = (props) => {
 
 const BracketHook1 = (props) => {
   const { colIndex, hookCount, config } = props
+  // console.log('config.column_count', config.column_count)
   const colClassname = config.column_count === 5 ? 'col-brk-1' : 'col-brk-2'
   return (
     <Col className={colClassname}>
@@ -613,14 +318,7 @@ const BracketBox = (props) => {
   if (pair.matches && pair.matches.length === 0) return null
   const isPair = !isEmpty(pair.matches)
   const m1 = isPair ? pair.matches[0] : pair
-  // console.log('m1', m1)
   const m2 = isPair && pair.matches.length > 1 ? pair.matches[1] : {}
-  // const m2_away_score =
-  //   (m2 && !isUndefined(m2.away_score) ? m2.away_score : 0) +
-  //   parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.away_extra_score) ? m2.away_extra_score : 0)
-  // const m2_home_score =
-  //   (m2 && !isUndefined(m2.home_score) ? m2.home_score : 0) +
-  //   parseInt(m2 && m2.match_type === 'secondleg' && !isUndefined(m2.home_extra_score) ? m2.home_extra_score : 0)
   return (
     <React.Fragment>
       <Row className="no-gutters box-sm bracket-box-height">
@@ -674,15 +372,9 @@ const BracketBox = (props) => {
         </Col>
         <Col sm="12" className="bracket-half-box-height border-bottom-gray5">
           <Row className="no-gutters h3-ff3">
-            <Col xs={{ size: 2 }} className="brk-halfbox-ml d-none d-lg-block">
-              {getTeamFlag(m1.home_team, config)}
-            </Col>
-            <Col xs={{ size: 2 }} className="brk-halfbox-ml d-none d-md-block d-lg-none">
-              {getTeamFlag(m1.home_team, config)}
-            </Col>
-            <Col xs={{ size: 2 }} className="brk-halfbox-ml d-none d-sm-block d-md-none">
-              {getTeamFlag(m1.home_team, config)}
-            </Col>
+            <Col className="col-brk-14 brk-halfbox-ml d-none d-lg-block">{getTeamFlag(m1.home_team, config)}</Col>
+            <Col className="col-brk-14 brk-halfbox-ml d-none d-md-block d-lg-none">{getTeamFlag(m1.home_team, config)}</Col>
+            <Col className="col-brk-14 brk-halfbox-ml d-none d-sm-block d-md-none">{getTeamFlag(m1.home_team, config)}</Col>
             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('H', m1) ? '' : 'box-team-name-light'} d-none d-xl-block`}>
               {getBracketTeamName(m1.home_team)}
               {getHomeHalfBoxTooltip(isPair, m1, m2, config)}
@@ -710,13 +402,11 @@ const BracketBox = (props) => {
         </Col>
         <Col sm="12" className="bracket-half-box-height">
           <Row className="no-gutters h4-ff3">
-            <Col xs={{ size: 2 }} className="brk-halfbox-ml d-none d-lg-block">
+            <Col className="col-brk-14 brk-halfbox-ml d-none d-lg-block">{m1 && <React.Fragment>{getTeamFlag(m1.away_team, config)}</React.Fragment>}</Col>
+            <Col className="col-brk-14 brk-halfbox-ml d-none d-md-block d-lg-none">
               {m1 && <React.Fragment>{getTeamFlag(m1.away_team, config)}</React.Fragment>}
             </Col>
-            <Col xs={{ size: 2 }} className="brk-halfbox-ml d-none d-md-block d-lg-none">
-              {m1 && <React.Fragment>{getTeamFlag(m1.away_team, config)}</React.Fragment>}
-            </Col>
-            <Col xs={{ size: 2 }} className="brk-halfbox-ml d-none d-sm-block d-md-none">
+            <Col className="col-brk-14 brk-halfbox-ml d-none d-sm-block d-md-none">
               {m1 && <React.Fragment>{getTeamFlag(m1.away_team, config)}</React.Fragment>}
             </Col>
             <Col xs={{ size: 6 }} className={`box-team-name ${isWinner('A', m1) ? '' : 'box-team-name-light'} d-none d-xl-block`}>
@@ -809,12 +499,6 @@ const BracketColInner = (props) => {
       {pairs.map((p, index) => (
         <BracketBox pair={p} colIndex={colIndex} lastBox={index === pairs.length - 1} config={config} key={index} />
       ))}
-      {/* {!config.two_legged &&
-        round.matches &&
-        round.matches.map((m, index) => <BracketBox match={m} colIndex={colIndex} lastBox={index === round.matches.length - 1} config={config} key={index} />)}
-      {config.two_legged &&
-        round.pairs &&
-        round.pairs.map((p, index) => <BracketPairBox pair={p} colIndex={colIndex} lastBox={index === round.pairs.length - 1} config={config} key={index} />)} */}
     </React.Fragment>
   )
 }
@@ -868,68 +552,23 @@ const DisplayBracket = (props) => {
     <Row className="no-gutters mb-5">
       {filteredRounds.map((_r, index) => {
         const r = hasReplay(_r) ? attachReplayMatches(_r) : _r
-        // reorderMatches(r.matches)
         if (!isEmpty(r.pairs) || !isEmpty(r.matches)) {
           const pairs = r.pairs || r.matches
+          reorderBracketPairs(pairs)
           // console.log('pairs', pairs)
           const hookCount = pairs.length % 2 === 0 ? pairs.length / 2 : (pairs.length - 1) / 2
           if (r.details.name === 'Final') {
-            return (
-              <BracketFinalCol
-                round={r}
-                thirdPlace={thirdPlace}
-                silverMedal={silverMedal}
-                config={roundConfig}
-                // config={{ ...config, roundCount: filteredRounds.length, two_legged: false }}
-                key={r.details.name}
-              />
-            )
+            return <BracketFinalCol round={r} thirdPlace={thirdPlace} silverMedal={silverMedal} config={roundConfig} key={r.details.name} />
           } else if (r.details.name !== 'Third-place') {
             return (
               <React.Fragment key={r.details.name}>
                 <BracketCol round={r} colIndex={index} config={roundConfig} />
-                <BracketHook1 colIndex={index} hookCount={hookCount} config={config} />
-                <BracketHook2 colIndex={index} hookCount={hookCount} config={config} />
+                <BracketHook1 colIndex={index} hookCount={hookCount} config={roundConfig} />
+                <BracketHook2 colIndex={index} hookCount={hookCount} config={roundConfig} />
               </React.Fragment>
             )
           }
         }
-        // {
-        //   /* else if (r.matches) {
-        //       r.matches.sort((a, b) => {
-        //         if (a.bracket_order > b.bracket_order) {
-        //           return 1
-        //         } else if (a.bracket_order < b.bracket_order) {
-        //           return -1
-        //         } else {
-        //           return 0
-        //         }
-        //       })
-        //       const hookCount = r.matches.length % 2 === 0 ? r.matches.length / 2 : (r.matches.length - 1) / 2
-        //       if (r.name === 'Third-place') {
-        //         thirdPlace = r
-        //         return null
-        //       } else if (r.name === 'Final') {
-        //         return (
-        //           <BracketFinalCol
-        //             round={r}
-        //             thirdPlace={thirdPlace}
-        //             silverMedal={silverMedal}
-        //             config={{ ...config, roundCount: filteredRounds.length, two_legged: false }}
-        //             key={r.name}
-        //           />
-        //         )
-        //       } else {
-        //         return (
-        //           <React.Fragment key={r.name}>
-        //             <BracketCol round={r} colIndex={index} config={{ ...config, two_legged: false }} />
-        //             <BracketHook1 colIndex={index} hookCount={hookCount} config={config} />
-        //             <BracketHook2 colIndex={index} hookCount={hookCount} config={config} />
-        //           </React.Fragment>
-        //         )
-        //       }
-        //     } */
-        // }
         return null
       })}
     </Row>
@@ -964,52 +603,9 @@ const Bracket = (props) => {
       </Row>
       <Collapse isOpen={collapse} onEntering={onEntering} onEntered={onEntered} onExiting={onExiting} onExited={onExited}>
         <DisplayBracket stage={stage} config={config} />
-        {/* {!config.two_legged && <BracketMatches stage={stage} config={{ ...config, column_count: filteredRounds.length }} />}
-        {config.two_legged && <BracketPairs stage={stage} config={{ ...config, column_count: filteredRounds.length }} />} */}
       </Collapse>
     </React.Fragment>
   )
 }
-
-// const BracketMatches = (props) => {
-//   const { stage, config } = props
-//   let silverMedal = stage.rounds ? stage.rounds.find((s) => s.name === 'Silver medal match') : {}
-//   const filteredRounds = stage.rounds ? stage.rounds.filter((r) => r.name !== 'Preliminary Round' && r.name !== 'Silver medal match') : []
-//   let thirdPlace = filteredRounds.find((s) => s.name === 'Third-place')
-//   return (
-//     <Row className="no-gutters mb-5">
-//       {filteredRounds &&
-//         filteredRounds.map((_r, index) => {
-//           const r = hasReplay(_r) ? attachReplayMatches(_r) : _r
-//           if (r.matches) {
-//             const hookCount = r.matches.length % 2 === 0 ? r.matches.length / 2 : (r.matches.length - 1) / 2
-//             if (r.name === 'Third-place') {
-//               thirdPlace = r
-//               return null
-//             } else if (r.name === 'Final') {
-//               return (
-//                 <BracketFinalCol
-//                   round={r}
-//                   thirdPlace={thirdPlace}
-//                   silverMedal={silverMedal}
-//                   config={{ ...config, roundCount: filteredRounds.length }}
-//                   key={r.name}
-//                 />
-//               )
-//             } else {
-//               return (
-//                 <React.Fragment key={r.name}>
-//                   <BracketCol round={r} colIndex={index} config={config} />
-//                   <BracketHook1 colIndex={index} hookCount={hookCount} config={config} />
-//                   <BracketHook2 colIndex={index} hookCount={hookCount} config={config} />
-//                 </React.Fragment>
-//               )
-//             }
-//           }
-//           return null
-//         })}
-//     </Row>
-//   )
-// }
 
 export default Bracket

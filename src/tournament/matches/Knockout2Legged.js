@@ -1,21 +1,12 @@
 import React from 'react'
 import Knockout2LeggedSummary from './Knockout2LeggedSummary'
-import { DisplaySchedule, getRoundPairs, calculateAggregateScore, splitPathMatches } from './MatchHelper'
+import { PathSchedule, calculateAggregateScore, splitPathPairs } from './MatchHelper'
 import { Row, Col } from 'reactstrap'
-import { isEmpty } from 'lodash'
-
-const PathSchedule = (props) => {
-  const { path, config } = props
-  const pairArray = getRoundPairs(path, true)
-  const pathDetails = { path_name: !isEmpty(path.name) ? `${path.name} Path` : '' }
-  // console.log('path', path)
-  return <DisplaySchedule round={pairArray} config={config} details={pathDetails} />
-}
 
 const Knockout2Legged = (props) => {
   const { round, config } = props
   calculateAggregateScore(round)
-  const pathMatches = splitPathMatches(round, config)
+  const pathPairs = splitPathPairs(round, config)
   return (
     <React.Fragment>
       {round.details && (
@@ -26,7 +17,7 @@ const Knockout2Legged = (props) => {
         </Row>
       )}
       <Knockout2LeggedSummary round={round} config={config} />
-      {pathMatches.map((p) => (
+      {pathPairs.map((p) => (
         <PathSchedule path={p} config={config} key={p.name} />
       ))}
     </React.Fragment>

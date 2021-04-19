@@ -577,153 +577,184 @@
     },
     {
       "name": "Play-off Round",
-      "type": "knockout2legged",
+      "type": "knockout",
       "multiple_paths": true,
+      "hide_bracket": true,
       "rounds": [
         {
-          "name": "Play-off First Leg",
-          "round_type": "firstleg",
-          "next_round": "Play-off Second Leg",
-          "matches": [
-            {
-              "home_team": "SLP",
-              "away_team": "FCM",
-              "home_score": 0,
-              "away_score": 0,
-              "date": "2020-09-22",
-              "time": "21:00",
-              "stadium": "Sinobo Stadium",
-              "city": "Prague",
-              "path": "Champions"
-            },
-            {
-              "home_team": "MTA",
-              "away_team": "RBS",
-              "home_score": 1,
-              "away_score": 2,
-              "date": "2020-09-22",
-              "time": "21:00",
-              "stadium": "Bloomfield Stadium",
-              "city": "Tel Aviv",
-              "path": "Champions"
-            },
-            {
-              "home_team": "OLY",
-              "away_team": "OMO",
-              "home_score": 2,
-              "away_score": 0,
-              "date": "2020-09-23",
-              "time": "21:00",
-              "stadium": "Karaiskakis Stadium",
-              "city": "Piraeus",
-              "path": "Champions"
-            },
-            {
-              "home_team": "MOL",
-              "away_team": "FER",
-              "home_score": 3,
-              "away_score": 3,
-              "date": "2020-09-23",
-              "time": "21:00",
-              "stadium": "Aker Stadion",
-              "city": "Molde",
-              "path": "Champions"
-            },
-            {
-              "home_team": "KRA",
-              "away_team": "PAO",
-              "home_score": 2,
-              "away_score": 1,
-              "date": "2020-09-22",
-              "time": "21:00",
-              "stadium": "Krasnodar Stadium",
-              "city": "Krasnodar",
-              "path": "League"
-            },
-            {
-              "home_team": "GNT",
-              "away_team": "DYK",
-              "home_score": 1,
-              "away_score": 2,
-              "date": "2020-09-23",
-              "time": "21:00",
-              "stadium": "Ghelamco Arena",
-              "city": "Ghent",
-              "path": "League"
-            }
-          ]
-        },
-        {
-          "name": "Play-off Second Leg",
-          "round_type": "secondleg",
+          "name": "Play-off Round",
+          "round_type": "knockout2legged",
           "eliminate_count": 32,
           "next_round": "Group Stage",
-          "matches": [
+          "bye_teams": [],
+          "pairs": [
             {
-              "home_team": "FCM",
-              "away_team": "SLP",
-              "home_score": 4,
-              "away_score": 1,
-              "date": "2020-09-30",
-              "time": "21:00",
-              "stadium": "MCH Arena",
-              "city": "Herning",
-              "path": "Champions"
+              "matches": [
+                {
+                  "home_team": "SLP",
+                  "away_team": "FCM",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2020-09-22",
+                  "time": "21:00",
+                  "stadium": "Sinobo Stadium",
+                  "city": "Prague",
+                  "path": "Champions",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "FCM",
+                  "away_team": "SLP",
+                  "home_score": 4,
+                  "away_score": 1,
+                  "date": "2020-09-30",
+                  "time": "21:00",
+                  "stadium": "MCH Arena",
+                  "city": "Herning",
+                  "path": "Champions",
+                  "match_type": "secondleg"
+                }
+              ]
             },
             {
-              "home_team": "RBS",
-              "away_team": "MTA",
-              "home_score": 3,
-              "away_score": 1,
-              "date": "2020-09-30",
-              "time": "21:00",
-              "stadium": "Stadion Wals-Siezenheim",
-              "city": "Wals-Siezenheim",
-              "path": "Champions"
+              "matches": [
+                {
+                  "home_team": "MTA",
+                  "away_team": "RBS",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2020-09-22",
+                  "time": "21:00",
+                  "stadium": "Bloomfield Stadium",
+                  "city": "Tel Aviv",
+                  "path": "Champions",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "RBS",
+                  "away_team": "MTA",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2020-09-30",
+                  "time": "21:00",
+                  "stadium": "Stadion Wals-Siezenheim",
+                  "city": "Wals-Siezenheim",
+                  "path": "Champions",
+                  "match_type": "secondleg"
+                }
+              ]
             },
             {
-              "home_team": "OMO",
-              "away_team": "OLY",
-              "home_score": 0,
-              "away_score": 0,
-              "date": "2020-09-29",
-              "time": "21:00",
-              "stadium": "GSP Stadium",
-              "city": "Nicosia",
-              "path": "Champions"
+              "matches": [
+                {
+                  "home_team": "OLY",
+                  "away_team": "OMO",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2020-09-23",
+                  "time": "21:00",
+                  "stadium": "Karaiskakis Stadium",
+                  "city": "Piraeus",
+                  "path": "Champions",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "OMO",
+                  "away_team": "OLY",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2020-09-29",
+                  "time": "21:00",
+                  "stadium": "GSP Stadium",
+                  "city": "Nicosia",
+                  "path": "Champions",
+                  "match_type": "secondleg"
+                }
+              ]
             },
             {
-              "home_team": "FER",
-              "away_team": "MOL",
-              "home_score": 0,
-              "away_score": 0,
-              "date": "2020-09-29",
-              "time": "21:00",
-              "stadium": "Groupama Arena",
-              "city": "Budapest",
-              "path": "Champions"
+              "matches": [
+                {
+                  "home_team": "MOL",
+                  "away_team": "FER",
+                  "home_score": 3,
+                  "away_score": 3,
+                  "date": "2020-09-23",
+                  "time": "21:00",
+                  "stadium": "Aker Stadion",
+                  "city": "Molde",
+                  "path": "Champions",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "FER",
+                  "away_team": "MOL",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2020-09-29",
+                  "time": "21:00",
+                  "stadium": "Groupama Arena",
+                  "city": "Budapest",
+                  "path": "Champions",
+                  "match_type": "secondleg"
+                }
+              ]
             },
             {
-              "home_team": "PAO",
-              "away_team": "KRA",
-              "home_score": 1,
-              "away_score": 2,
-              "date": "2020-09-30",
-              "time": "21:00",
-              "stadium": "Toumba Stadium",
-              "city": "Thessaloniki",
-              "path": "League"
+              "matches": [
+                {
+                  "home_team": "KRA",
+                  "away_team": "PAO",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2020-09-22",
+                  "time": "21:00",
+                  "stadium": "Krasnodar Stadium",
+                  "city": "Krasnodar",
+                  "path": "League",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "PAO",
+                  "away_team": "KRA",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2020-09-30",
+                  "time": "21:00",
+                  "stadium": "Toumba Stadium",
+                  "city": "Thessaloniki",
+                  "path": "League",
+                  "match_type": "secondleg"
+                }
+              ]
             },
             {
-              "home_team": "DYK",
-              "away_team": "GNT",
-              "home_score": 3,
-              "away_score": 0,
-              "date": "2020-09-29",
-              "time": "21:00",
-              "stadium": "NSC Olimpiyskiy",
-              "city": "Kyiv",
-              "path": "League"
+              "matches": [
+                {
+                  "home_team": "GNT",
+                  "away_team": "DYK",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2020-09-23",
+                  "time": "21:00",
+                  "stadium": "Ghelamco Arena",
+                  "city": "Ghent",
+                  "path": "League",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "DYK",
+                  "away_team": "GNT",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "2020-09-29",
+                  "time": "21:00",
+                  "stadium": "NSC Olimpiyskiy",
+                  "city": "Kyiv",
+                  "path": "League",
+                  "match_type": "secondleg"
+                }
+              ]
             }
           ]
         }
@@ -1996,12 +2027,13 @@
     },
     {
       "name": "Knockout Stage",
-      "type": "knockoutmultiple2legged",
+      "type": "knockout",
       "default": true,
       "rounds": [
         {
           "name": "Round of 16",
           "short_name": "1/8",
+          "round_type": "knockout2legged",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
           "pairs": [

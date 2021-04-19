@@ -1,5 +1,5 @@
 import React from 'react'
-import { DisplaySchedule, getRoundMatches, hasReplay } from './MatchHelper'
+import { DisplaySchedule, PathSchedule, getRoundMatches, hasReplay, splitPathMatches } from './MatchHelper'
 import { getBracketStage, getFinalPathStage, getConsolationPathStage } from '../../core/Helper'
 import Bracket from './Bracket'
 import Knockout2Legged from './Knockout2Legged'
@@ -36,7 +36,26 @@ const DisplayPath = (props) => {
           if (r.config.round_type === 'knockout') {
             const matchArray = getRoundMatches(r, true)
             if (!hasReplay(r)) {
-              return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />
+              if (!stage.config.multiple_paths) {
+                return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />
+              } else {
+                const pathMatches = splitPathMatches(r, displayScheduleConfig)
+                // console.log('pathMatches', pathMatches)
+                return (
+                  <React.Fragment key={r.details.name}>
+                    {r.details && (
+                      <Row>
+                        <Col>
+                          <div className="h2-ff1 margin-top-md">{r.details.name}</div>
+                        </Col>
+                      </Row>
+                    )}
+                    {pathMatches.map((p) => (
+                      <PathSchedule path={p} config={displayScheduleConfig} key={p.name} />
+                    ))}
+                  </React.Fragment>
+                )
+              }
             } else {
               const replayDetails = { ...r.details, name: `${r.details.name} Replay` }
               return (

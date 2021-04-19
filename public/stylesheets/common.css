@@ -135,7 +135,7 @@ a:hover {
   color: #858585;
 }
 .gray4 {
-  color: #c7c6c6;
+  color: #b3b2b2;
 }
 .gray5 {
   color: #e6e7e9;
@@ -358,8 +358,14 @@ a:hover {
 .border-right-gray2 {
   border-right: 1px solid #5c6066;
 }
+.border-bottom-gray3 {
+  border-bottom: 1px solid #858585;
+}
 .border-gray4 {
-  border: 1px solid #c7c6c6;
+  border: 1px solid #b3b2b2;
+}
+.border-bottom-gray4 {
+  border-bottom: 1px solid #b3b2b2;
 }
 .border-top-gray5 {
   border-top: 1px solid #e6e7e9;
