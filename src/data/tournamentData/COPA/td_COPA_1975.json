@@ -218,62 +218,70 @@
     },
     {
       "name": "Semi-finals",
-      "type": "knockout2legged",
+      "type": "knockout",
       "rounds": [
         {
-          "name": "Semi-finals First Leg",
-          "round_type": "firstleg",
-          "next_round": "Semi-finals Second Leg",
-          "matches": [
-            {
-              "home_team": "COL",
-              "away_team": "URU",
-              "home_score": 3,
-              "away_score": 0,
-              "date": "1975-09-21",
-              "time": "12:00",
-              "stadium": "Estadio El Campín",
-              "city": "Bogotá"
-            },
-            {
-              "home_team": "BRA",
-              "away_team": "PER",
-              "home_score": 1,
-              "away_score": 3,
-              "date": "1975-09-30",
-              "time": "12:00",
-              "stadium": "Mineirão",
-              "city": "Belo Horizonte"
-            }
-          ]
-        },
-        {
-          "name": "Semi-finals Second Leg",
-          "round_type": "secondleg",
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "round_type": "knockout2legged",
           "eliminate_count": 2,
-          "next_round": "Final First Leg",
-          "matches": [
+          "next_round": "Final",
+          "pairs": [
             {
-              "home_team": "URU",
-              "away_team": "COL",
-              "home_score": 1,
-              "away_score": 0,
-              "date": "1975-10-01",
-              "time": "12:00",
-              "stadium": "Estadio Centenario",
-              "city": "Montevideo"
+              "matches": [
+                {
+                  "home_team": "COL",
+                  "away_team": "URU",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "1975-09-21",
+                  "time": "12:00",
+                  "stadium": "Estadio El Campín",
+                  "city": "Bogotá",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "URU",
+                  "away_team": "COL",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "1975-10-01",
+                  "time": "12:00",
+                  "stadium": "Estadio Centenario",
+                  "city": "Montevideo",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
             },
             {
-              "home_team": "PER",
-              "away_team": "BRA",
-              "home_score": 0,
-              "away_score": 2,
-              "home_coin_toss": true,
-              "bypass_away_goals": true,
-              "date": "1975-10-04",
-              "time": "12:00",
-              "stadium": "Estadio Alianza Lima",
-              "city": "Lima"
+              "matches": [
+                {
+                  "home_team": "BRA",
+                  "away_team": "PER",
+                  "home_score": 1,
+                  "away_score": 3,
+                  "date": "1975-09-30",
+                  "time": "12:00",
+                  "stadium": "Mineirão",
+                  "city": "Belo Horizonte",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "PER",
+                  "away_team": "BRA",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "home_coin_toss": true,
+                  "bypass_away_goals": true,
+                  "date": "1975-10-04",
+                  "time": "12:00",
+                  "stadium": "Estadio Alianza Lima",
+                  "city": "Lima",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
             }
           ]
         }
@@ -281,56 +289,50 @@
     },
     {
       "name": "Final",
-      "type": "knockout2legged",
+      "type": "knockout",
       "rounds": [
         {
-          "name": "Final First Leg",
-          "round_type": "firstleg",
-          "next_round": "Final Second Leg",
-          "matches": [
+          "name": "Final",
+          "short_name": "1st",
+          "round_type": "knockout2legged",
+          "pairs": [
             {
-              "home_team": "COL",
-              "away_team": "PER",
-              "home_score": 1,
-              "away_score": 0,
-              "date": "1975-10-16",
-              "time": "12:00",
-              "stadium": "Estadio El Campín",
-              "city": "Bogotá"
-            }
-          ]
-        },
-        {
-          "name": "Final Second Leg",
-          "round_type": "secondleg",
-          "next_round": "Final Playoff",
-          "matches": [
-            {
-              "home_team": "PER",
-              "away_team": "COL",
-              "home_score": 2,
-              "away_score": 0,
-              "need_playoff": true,
-              "date": "1975-10-22",
-              "time": "12:00",
-              "stadium": "Estadio Nacional",
-              "city": "Lima"
-            }
-          ]
-        },
-        {
-          "name": "Final Playoff",
-          "round_type": "playoffleg",
-          "matches": [
-            {
-              "home_team": "PER",
-              "away_team": "COL",
-              "home_score": 1,
-              "away_score": 0,
-              "date": "1975-10-28",
-              "time": "12:00",
-              "stadium": "Estadio Olímpico",
-              "city": "Caracas"
+              "matches": [
+                {
+                  "home_team": "COL",
+                  "away_team": "PER",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "1975-10-16",
+                  "time": "12:00",
+                  "stadium": "Estadio El Campín",
+                  "city": "Bogotá",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "PER",
+                  "away_team": "COL",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "need_playoff": true,
+                  "date": "1975-10-22",
+                  "time": "12:00",
+                  "stadium": "Estadio Nacional",
+                  "city": "Lima",
+                  "match_type": "secondleg"
+                },
+                {
+                  "home_team": "PER",
+                  "away_team": "COL",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "date": "1975-10-28",
+                  "time": "12:00",
+                  "stadium": "Estadio Olímpico",
+                  "city": "Caracas",
+                  "match_type": "playoffleg"
+                }
+              ]
             }
           ]
         }

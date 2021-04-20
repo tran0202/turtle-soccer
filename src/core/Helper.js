@@ -112,9 +112,9 @@ export const getKnockoutStages = (stages) => {
   return stages ? stages.filter((s) => s.config.type === 'knockout' || s.config.type === 'knockout2legged') : []
 }
 
-export const getKnockoutMultiple2LeggedStages = (stages) => {
-  return stages ? stages.filter((s) => s.config.type === 'knockoutmultiple2legged') : []
-}
+// export const getKnockoutMultiple2LeggedStages = (stages) => {
+//   return stages ? stages.filter((s) => s.config.type === 'knockoutmultiple2legged') : []
+// }
 
 export const getDefaultStageTab = (stages) => {
   const temp = 'Group-Stage'

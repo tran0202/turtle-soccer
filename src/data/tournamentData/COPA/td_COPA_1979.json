@@ -218,60 +218,68 @@
     },
     {
       "name": "Semi-finals",
-      "type": "knockout2legged",
+      "type": "knockout",
       "rounds": [
         {
-          "name": "Semi-finals First Leg",
-          "round_type": "firstleg",
-          "next_round": "Semi-finals Second Leg",
-          "matches": [
-            {
-              "home_team": "PER",
-              "away_team": "CHI",
-              "home_score": 1,
-              "away_score": 2,
-              "date": "1979-10-17",
-              "time": "12:00",
-              "stadium": "Estadio Nacional",
-              "city": "Lima"
-            },
-            {
-              "home_team": "PAR",
-              "away_team": "BRA",
-              "home_score": 2,
-              "away_score": 1,
-              "date": "1979-10-24",
-              "time": "12:00",
-              "stadium": "Defensores del Chaco",
-              "city": "Asunción"
-            }
-          ]
-        },
-        {
-          "name": "Semi-finals Second Leg",
-          "round_type": "secondleg",
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "round_type": "knockout2legged",
           "eliminate_count": 2,
-          "next_round": "Final First Leg",
-          "matches": [
+          "next_round": "Final",
+          "pairs": [
             {
-              "home_team": "CHI",
-              "away_team": "PER",
-              "home_score": 0,
-              "away_score": 0,
-              "date": "1979-10-24",
-              "time": "12:00",
-              "stadium": "Estadio Nacional",
-              "city": "Santiago"
+              "matches": [
+                {
+                  "home_team": "PER",
+                  "away_team": "CHI",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "1979-10-17",
+                  "time": "12:00",
+                  "stadium": "Estadio Nacional",
+                  "city": "Lima",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "CHI",
+                  "away_team": "PER",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "1979-10-24",
+                  "time": "12:00",
+                  "stadium": "Estadio Nacional",
+                  "city": "Santiago",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
             },
             {
-              "home_team": "BRA",
-              "away_team": "PAR",
-              "home_score": 2,
-              "away_score": 2,
-              "date": "1979-10-31",
-              "time": "12:00",
-              "stadium": "Estadio do Maracanã",
-              "city": "Rio de Janeiro"
+              "matches": [
+                {
+                  "home_team": "PAR",
+                  "away_team": "BRA",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "1979-10-24",
+                  "time": "12:00",
+                  "stadium": "Defensores del Chaco",
+                  "city": "Asunción",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "BRA",
+                  "away_team": "PAR",
+                  "home_score": 2,
+                  "away_score": 2,
+                  "date": "1979-10-31",
+                  "time": "12:00",
+                  "stadium": "Estadio do Maracanã",
+                  "city": "Rio de Janeiro",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
             }
           ]
         }
@@ -279,60 +287,54 @@
     },
     {
       "name": "Final",
-      "type": "knockout2legged",
+      "type": "knockout",
       "rounds": [
         {
-          "name": "Final First Leg",
-          "round_type": "firstleg",
-          "next_round": "Final Second Leg",
-          "matches": [
+          "name": "Final",
+          "short_name": "1st",
+          "round_type": "knockout2legged",
+          "pairs": [
             {
-              "home_team": "PAR",
-              "away_team": "CHI",
-              "home_score": 3,
-              "away_score": 0,
-              "date": "1979-11-28",
-              "time": "12:00",
-              "stadium": "Defensores del Chaco",
-              "city": "Asunción"
-            }
-          ]
-        },
-        {
-          "name": "Final Second Leg",
-          "round_type": "secondleg",
-          "next_round": "Final Playoff",
-          "matches": [
-            {
-              "home_team": "CHI",
-              "away_team": "PAR",
-              "home_score": 1,
-              "away_score": 0,
-              "need_playoff": true,
-              "date": "1979-12-05",
-              "time": "12:00",
-              "stadium": "Estadio Nacional",
-              "city": "Santiago"
-            }
-          ]
-        },
-        {
-          "name": "Final Playoff",
-          "round_type": "playoffleg",
-          "matches": [
-            {
-              "home_team": "PAR",
-              "away_team": "CHI",
-              "home_score": 0,
-              "away_score": 0,
-              "home_extra_score": 0,
-              "away_extra_score": 0,
-              "home_playoff_win": true,
-              "playoff_notes": "As both teams finished tied on points, Paraguay won the playoff on aggregate goals from the first and second legs (3–1)",
-              "date": "1979-12-11",
-              "time": "12:00",
-              "stadium": "José Amalfitani",
-              "city": "Buenos Aires"
+              "matches": [
+                {
+                  "home_team": "PAR",
+                  "away_team": "CHI",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "1979-11-28",
+                  "time": "12:00",
+                  "stadium": "Defensores del Chaco",
+                  "city": "Asunción",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "CHI",
+                  "away_team": "PAR",
+                  "home_score": 1,
+                  "away_score": 0,
+                  "need_playoff": true,
+                  "date": "1979-12-05",
+                  "time": "12:00",
+                  "stadium": "Estadio Nacional",
+                  "city": "Santiago",
+                  "match_type": "secondleg"
+                },
+                {
+                  "home_team": "PAR",
+                  "away_team": "CHI",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "home_extra_score": 0,
+                  "away_extra_score": 0,
+                  "home_playoff_win": true,
+                  "playoff_notes": "As both teams finished tied on points, Paraguay won the playoff on aggregate goals from the first and second legs (3–1)",
+                  "date": "1979-12-11",
+                  "time": "12:00",
+                  "stadium": "José Amalfitani",
+                  "city": "Buenos Aires",
+                  "match_type": "playoffleg"
+                }
+              ]
             }
           ]
         }

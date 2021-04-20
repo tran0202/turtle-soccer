@@ -780,6 +780,9 @@
   flex: 0 0 22%;
   max-width: 22%;
 }
+.brk-halfbox-ml {
+  margin-left: 5px;
+}
 
 @media (min-width: 576px) {
   .col-brk-sm-1 {
@@ -803,7 +806,7 @@
     max-width: 22%;
   }
   .brk-halfbox-ml {
-    margin-left: 3px;
+    margin-left: 5px;
   }
 }
 
@@ -829,7 +832,7 @@
     max-width: 22%;
   }
   .brk-halfbox-ml {
-    margin-left: 3px;
+    margin-left: 5px;
   }
 }
 
@@ -855,7 +858,7 @@
     max-width: 22%;
   }
   .brk-halfbox-ml {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }
 
@@ -881,7 +884,7 @@
     max-width: 22%;
   }
   .brk-halfbox-ml {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }
 

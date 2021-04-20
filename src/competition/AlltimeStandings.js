@@ -106,7 +106,7 @@ const collectRankings = (competition) => {
               })
           })
       }
-      if (s.type === 'knockout' || s.type === 'knockout2legged' || s.type === 'knockoutmultiple2legged') {
+      if (s.type === 'knockout' || s.type === 'knockout2legged') {
         s.teams &&
           s.teams.forEach((t) => {
             _teams.push(t)

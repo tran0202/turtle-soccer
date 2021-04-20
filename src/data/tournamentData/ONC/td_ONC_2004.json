@@ -168,38 +168,38 @@
     },
     {
       "name": "Knockout Stage",
-      "type": "knockout2legged",
+      "type": "knockout",
       "rounds": [
         {
-          "name": "Final First Leg",
-          "round_type": "firstleg",
-          "next_round": "Final Second Leg",
-          "matches": [
+          "name": "Final",
+          "short_name": "1st",
+          "round_type": "knockout2legged",
+          "pairs": [
             {
-              "home_team": "SOL",
-              "away_team": "AUS",
-              "home_score": 1,
-              "away_score": 5,
-              "date": "2004-10-09",
-              "time": "12:00",
-              "stadium": "Lawson Tama Stadium",
-              "city": "Honiara"
-            }
-          ]
-        },
-        {
-          "name": "Final Second Leg",
-          "round_type": "secondleg",
-          "matches": [
-            {
-              "home_team": "AUS",
-              "away_team": "SOL",
-              "home_score": 6,
-              "away_score": 0,
-              "date": "2004-10-12",
-              "time": "12:00",
-              "stadium": "Sydney Football Stadium",
-              "city": "Sydney"
+              "matches": [
+                {
+                  "home_team": "SOL",
+                  "away_team": "AUS",
+                  "home_score": 1,
+                  "away_score": 5,
+                  "date": "2004-10-09",
+                  "time": "12:00",
+                  "stadium": "Lawson Tama Stadium",
+                  "city": "Honiara",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "AUS",
+                  "away_team": "SOL",
+                  "home_score": 6,
+                  "away_score": 0,
+                  "date": "2004-10-12",
+                  "time": "12:00",
+                  "stadium": "Sydney Football Stadium",
+                  "city": "Sydney",
+                  "match_type": "secondleg"
+                }
+              ]
             }
           ]
         }

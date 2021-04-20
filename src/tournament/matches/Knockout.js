@@ -40,7 +40,6 @@ const DisplayPath = (props) => {
                 return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />
               } else {
                 const pathMatches = splitPathMatches(r, displayScheduleConfig)
-                // console.log('pathMatches', pathMatches)
                 return (
                   <React.Fragment key={r.details.name}>
                     {r.details && (

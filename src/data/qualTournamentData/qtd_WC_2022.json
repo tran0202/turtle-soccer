@@ -4,139 +4,171 @@
     "stages": [
       {
         "name": "First Round",
-        "type": "knockout2legged",
+        "type": "knockout",
         "rounds": [
           {
-            "name": "First Leg",
-            "round_type": "firstleg",
-            "matches": [
+            "name": "First Round",
+            "short_name": "1stR",
+            "round_type": "knockout2legged",
+            "next_round": "Second Round",
+            "pairs": [
               {
-                "home_team": "MNG",
-                "away_team": "BRU",
-                "home_score": 2,
-                "away_score": 0,
-                "date": "2019-06-06",
-                "time": "17:00",
-                "stadium": "MFF Football Centre",
-                "city": "Ulaanbaatar"
+                "matches": [
+                  {
+                    "home_team": "MNG",
+                    "away_team": "BRU",
+                    "home_score": 2,
+                    "away_score": 0,
+                    "date": "2019-06-06",
+                    "time": "17:00",
+                    "stadium": "MFF Football Centre",
+                    "city": "Ulaanbaatar",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "BRU",
+                    "away_team": "MNG",
+                    "home_score": 2,
+                    "away_score": 1,
+                    "date": "2019-06-11",
+                    "time": "20:15",
+                    "stadium": "Hassanal Bolkiah National Stadium",
+                    "city": "Bandar Seri Begawan",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "MAC",
-                "away_team": "SRI",
-                "home_score": 1,
-                "away_score": 0,
-                "date": "2019-06-06",
-                "time": "19:30",
-                "stadium": "Zhuhai Sports Center Stadium",
-                "city": "Zhuhai (China)"
+                "matches": [
+                  {
+                    "home_team": "MAC",
+                    "away_team": "SRI",
+                    "home_score": 1,
+                    "away_score": 0,
+                    "date": "2019-06-06",
+                    "time": "19:30",
+                    "stadium": "Zhuhai Sports Center Stadium",
+                    "city": "Zhuhai (China)",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "SRI",
+                    "away_team": "MAC",
+                    "home_score": 3,
+                    "away_score": 0,
+                    "home_awarded": true,
+                    "awarded_text": "Awarded: Macau did not send their team for the second leg due to safety reasons following the 2019 Sri Lanka Easter bombings. FIFA announced on June 27, 2019 that the match was declared a 3–0 forfeit victory to Sri Lanka, and consequently qualifying Sri Lanka to the second round.",
+                    "date": "2019-06-11",
+                    "time": "15:30",
+                    "stadium": "Sugathadasa Stadium",
+                    "city": "Colombo",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "LAO",
-                "away_team": "BAN",
-                "home_score": 0,
-                "away_score": 1,
-                "date": "2019-06-06",
-                "time": "18:30",
-                "stadium": "New Laos National Stadium",
-                "city": "Vientiane"
+                "matches": [
+                  {
+                    "home_team": "LAO",
+                    "away_team": "BAN",
+                    "home_score": 0,
+                    "away_score": 1,
+                    "date": "2019-06-06",
+                    "time": "18:30",
+                    "stadium": "New Laos National Stadium",
+                    "city": "Vientiane",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "BAN",
+                    "away_team": "LAO",
+                    "home_score": 0,
+                    "away_score": 0,
+                    "date": "2019-06-11",
+                    "time": "19:00",
+                    "stadium": "Bangabandhu National Stadium",
+                    "city": "Dhaka",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "MAS",
-                "away_team": "TLS",
-                "home_score": 7,
-                "away_score": 1,
-                "date": "2019-06-07",
-                "time": "20:45",
-                "stadium": "Bukit Jalil National Stadium",
-                "city": "Kuala Lumpur"
+                "matches": [
+                  {
+                    "home_team": "MAS",
+                    "away_team": "TLS",
+                    "home_score": 7,
+                    "away_score": 1,
+                    "date": "2019-06-07",
+                    "time": "20:45",
+                    "stadium": "Bukit Jalil National Stadium",
+                    "city": "Kuala Lumpur",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "TLS",
+                    "away_team": "MAS",
+                    "home_score": 1,
+                    "away_score": 5,
+                    "date": "2019-06-11",
+                    "time": "20:45",
+                    "stadium": "Bukit Jalil National Stadium",
+                    "city": "Kuala Lumpur (Malaysia)",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "CAM",
-                "away_team": "PAK",
-                "home_score": 2,
-                "away_score": 0,
-                "date": "2019-06-06",
-                "time": "18:30",
-                "stadium": "Olympic Stadium",
-                "city": "Phnom Penh"
+                "matches": [
+                  {
+                    "home_team": "CAM",
+                    "away_team": "PAK",
+                    "home_score": 2,
+                    "away_score": 0,
+                    "date": "2019-06-06",
+                    "time": "18:30",
+                    "stadium": "Olympic Stadium",
+                    "city": "Phnom Penh",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "PAK",
+                    "away_team": "CAM",
+                    "home_score": 1,
+                    "away_score": 2,
+                    "date": "2019-06-11",
+                    "time": "19:00",
+                    "stadium": "Hamad bin Khalifa Stadium",
+                    "city": "Doha (Qatar)",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "BHU",
-                "away_team": "GUM",
-                "home_score": 1,
-                "away_score": 0,
-                "date": "2019-06-06",
-                "time": "18:00",
-                "stadium": "Changlimithang Stadium",
-                "city": "Thimphu"
-              }
-            ]
-          },
-          {
-            "name": "Second Leg",
-            "round_type": "secondleg",
-            "matches": [
-              {
-                "home_team": "BRU",
-                "away_team": "MNG",
-                "home_score": 2,
-                "away_score": 1,
-                "date": "2019-06-11",
-                "time": "20:15",
-                "stadium": "Hassanal Bolkiah National Stadium",
-                "city": "Bandar Seri Begawan"
-              },
-              {
-                "home_team": "SRI",
-                "away_team": "MAC",
-                "home_score": 3,
-                "away_score": 0,
-                "home_awarded": true,
-                "awarded_text": "Awarded: Macau did not send their team for the second leg due to safety reasons following the 2019 Sri Lanka Easter bombings. FIFA announced on June 27, 2019 that the match was declared a 3–0 forfeit victory to Sri Lanka, and consequently qualifying Sri Lanka to the second round.",
-                "date": "2019-06-11",
-                "time": "15:30",
-                "stadium": "Sugathadasa Stadium",
-                "city": "Colombo"
-              },
-              {
-                "home_team": "BAN",
-                "away_team": "LAO",
-                "home_score": 0,
-                "away_score": 0,
-                "date": "2019-06-11",
-                "time": "19:00",
-                "stadium": "Bangabandhu National Stadium",
-                "city": "Dhaka"
-              },
-              {
-                "home_team": "TLS",
-                "away_team": "MAS",
-                "home_score": 1,
-                "away_score": 5,
-                "date": "2019-06-11",
-                "time": "20:45",
-                "stadium": "Bukit Jalil National Stadium",
-                "city": "Kuala Lumpur (Malaysia)"
-              },
-              {
-                "home_team": "PAK",
-                "away_team": "CAM",
-                "home_score": 1,
-                "away_score": 2,
-                "date": "2019-06-11",
-                "time": "19:00",
-                "stadium": "Hamad bin Khalifa Stadium",
-                "city": "Doha (Qatar)"
-              },
-              {
-                "home_team": "GUM",
-                "away_team": "BHU",
-                "home_score": 5,
-                "away_score": 0,
-                "date": "2019-06-11",
-                "time": "15:15",
-                "stadium": "Guam F.A. National Training Center",
-                "city": "Dededo"
+                "matches": [
+                  {
+                    "home_team": "BHU",
+                    "away_team": "GUM",
+                    "home_score": 1,
+                    "away_score": 0,
+                    "date": "2019-06-06",
+                    "time": "18:00",
+                    "stadium": "Changlimithang Stadium",
+                    "city": "Thimphu",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "GUM",
+                    "away_team": "BHU",
+                    "home_score": 5,
+                    "away_score": 0,
+                    "date": "2019-06-11",
+                    "time": "15:15",
+                    "stadium": "Guam F.A. National Training Center",
+                    "city": "Dededo",
+                    "match_type": "secondleg"
+                  }
+                ]
               }
             ]
           }
@@ -1180,301 +1212,380 @@
     "stages": [
       {
         "name": "First Round",
-        "type": "knockout2legged",
+        "type": "knockout",
         "rounds": [
           {
-            "name": "First Leg",
-            "round_type": "firstleg",
-            "matches": [
+            "name": "First Round",
+            "short_name": "1stR",
+            "round_type": "knockout2legged",
+            "next_round": "Second Round",
+            "pairs": [
               {
-                "home_team": "ETH",
-                "away_team": "LES",
-                "home_score": 0,
-                "away_score": 0,
-                "date": "2019-09-04",
-                "time": "16:00",
-                "stadium": "Bahir Dar Stadium",
-                "city": "Bahir Dar"
+                "matches": [
+                  {
+                    "home_team": "ETH",
+                    "away_team": "LES",
+                    "home_score": 0,
+                    "away_score": 0,
+                    "date": "2019-09-04",
+                    "time": "16:00",
+                    "stadium": "Bahir Dar Stadium",
+                    "city": "Bahir Dar",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "LES",
+                    "away_team": "ETH",
+                    "home_score": 1,
+                    "away_score": 1,
+                    "date": "2019-09-08",
+                    "time": "15:00",
+                    "stadium": "Setsoto Stadium",
+                    "city": "Maseru",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "SOM",
-                "away_team": "ZIM",
-                "home_score": 1,
-                "away_score": 0,
-                "date": "2019-09-05",
-                "time": "18:00",
-                "stadium": "El-Hadj Hassan Gouled Aptidon Stadium",
-                "city": "Djibouti (Djibouti)"
+                "matches": [
+                  {
+                    "home_team": "SOM",
+                    "away_team": "ZIM",
+                    "home_score": 1,
+                    "away_score": 0,
+                    "date": "2019-09-05",
+                    "time": "18:00",
+                    "stadium": "El-Hadj Hassan Gouled Aptidon Stadium",
+                    "city": "Djibouti (Djibouti)",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "ZIM",
+                    "away_team": "SOM",
+                    "home_score": 3,
+                    "away_score": 1,
+                    "date": "2019-09-10",
+                    "time": "15:00",
+                    "stadium": "National Sports Stadium",
+                    "city": "Harare",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "ERI",
-                "away_team": "NAM",
-                "home_score": 1,
-                "away_score": 2,
-                "date": "2019-09-04",
-                "time": "16:00",
-                "stadium": "Denden Stadium",
-                "city": "Asmara"
+                "matches": [
+                  {
+                    "home_team": "ERI",
+                    "away_team": "NAM",
+                    "home_score": 1,
+                    "away_score": 2,
+                    "date": "2019-09-04",
+                    "time": "16:00",
+                    "stadium": "Denden Stadium",
+                    "city": "Asmara",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "NAM",
+                    "away_team": "ERI",
+                    "home_score": 2,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "19:00",
+                    "stadium": "Sam Nujoma Stadium",
+                    "city": "Windhoek",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "BDI",
-                "away_team": "TAN",
-                "home_score": 1,
-                "away_score": 1,
-                "date": "2019-09-04",
-                "time": "15:00",
-                "stadium": "Prince Louis Rwagasore Stadium",
-                "city": "Bujumbura"
+                "matches": [
+                  {
+                    "home_team": "BDI",
+                    "away_team": "TAN",
+                    "home_score": 1,
+                    "away_score": 1,
+                    "date": "2019-09-04",
+                    "time": "15:00",
+                    "stadium": "Prince Louis Rwagasore Stadium",
+                    "city": "Bujumbura",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "TAN",
+                    "away_team": "BDI",
+                    "home_score": 1,
+                    "away_score": 1,
+                    "home_extra_score": 0,
+                    "away_extra_score": 0,
+                    "home_penalty_score": 3,
+                    "away_penalty_score": 0,
+                    "date": "2019-09-08",
+                    "time": "16:00",
+                    "stadium": "National Stadium",
+                    "city": "Dar es Salaam",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "DJI",
-                "away_team": "SWZ",
-                "home_score": 2,
-                "away_score": 1,
-                "date": "2019-09-04",
-                "time": "18:00",
-                "stadium": "El-Hadj Hassan Gouled Aptidon Stadium",
-                "city": "Djibouti"
+                "matches": [
+                  {
+                    "home_team": "DJI",
+                    "away_team": "SWZ",
+                    "home_score": 2,
+                    "away_score": 1,
+                    "date": "2019-09-04",
+                    "time": "18:00",
+                    "stadium": "El-Hadj Hassan Gouled Aptidon Stadium",
+                    "city": "Djibouti",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "SWZ",
+                    "away_team": "DJI",
+                    "home_score": 0,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "15:00",
+                    "stadium": "Mavuso Sports Centre",
+                    "city": "Manzini",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "GAM",
-                "away_team": "ANG",
-                "home_score": 0,
-                "away_score": 1,
-                "date": "2019-09-06",
-                "time": "17:00",
-                "stadium": "Independence Stadium",
-                "city": "Bakau"
+                "matches": [
+                  {
+                    "home_team": "GAM",
+                    "away_team": "ANG",
+                    "home_score": 0,
+                    "away_score": 1,
+                    "date": "2019-09-06",
+                    "time": "17:00",
+                    "stadium": "Independence Stadium",
+                    "city": "Bakau",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "ANG",
+                    "away_team": "GAM",
+                    "home_score": 2,
+                    "away_score": 1,
+                    "date": "2019-09-10",
+                    "time": "16:00",
+                    "stadium": "Estádio 11 de Novembro",
+                    "city": "Luanda",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "BOT",
-                "away_team": "MWI",
-                "home_score": 0,
-                "away_score": 0,
-                "date": "2019-09-07",
-                "time": "16:00",
-                "stadium": "Francistown Stadium",
-                "city": "Francistown"
+                "matches": [
+                  {
+                    "home_team": "BOT",
+                    "away_team": "MWI",
+                    "home_score": 0,
+                    "away_score": 0,
+                    "date": "2019-09-07",
+                    "time": "16:00",
+                    "stadium": "Francistown Stadium",
+                    "city": "Francistown",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "MWI",
+                    "away_team": "BOT",
+                    "home_score": 1,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "14:00",
+                    "stadium": "Kamuzu Stadium",
+                    "city": "Blantyre",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "LBR",
-                "away_team": "SLE",
-                "home_score": 3,
-                "away_score": 1,
-                "date": "2019-09-04",
-                "time": "18:00",
-                "stadium": "Samuel Kanyon Doe Sports Complex",
-                "city": "Paynesville"
+                "matches": [
+                  {
+                    "home_team": "LBR",
+                    "away_team": "SLE",
+                    "home_score": 3,
+                    "away_score": 1,
+                    "date": "2019-09-04",
+                    "time": "18:00",
+                    "stadium": "Samuel Kanyon Doe Sports Complex",
+                    "city": "Paynesville",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "SLE",
+                    "away_team": "LBR",
+                    "home_score": 1,
+                    "away_score": 0,
+                    "date": "2019-09-08",
+                    "time": "16:30",
+                    "stadium": "Siaka Stevens Stadium",
+                    "city": "Freetown",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "MRI",
-                "away_team": "MOZ",
-                "home_score": 0,
-                "away_score": 1,
-                "date": "2019-09-04",
-                "time": "18:30",
-                "stadium": "Stade Anjalay",
-                "city": "Belle Vue"
+                "matches": [
+                  {
+                    "home_team": "MRI",
+                    "away_team": "MOZ",
+                    "home_score": 0,
+                    "away_score": 1,
+                    "date": "2019-09-04",
+                    "time": "18:30",
+                    "stadium": "Stade Anjalay",
+                    "city": "Belle Vue",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "MOZ",
+                    "away_team": "MRI",
+                    "home_score": 2,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "16:00",
+                    "stadium": "Estádio do Zimpeto",
+                    "city": "Maputo",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "STP",
-                "away_team": "GNB",
-                "home_score": 0,
-                "away_score": 1,
-                "date": "2019-09-04",
-                "time": "15:30",
-                "stadium": "Estádio Nacional 12 de Julho",
-                "city": "São Tomé"
+                "matches": [
+                  {
+                    "home_team": "STP",
+                    "away_team": "GNB",
+                    "home_score": 0,
+                    "away_score": 1,
+                    "date": "2019-09-04",
+                    "time": "15:30",
+                    "stadium": "Estádio Nacional 12 de Julho",
+                    "city": "São Tomé",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "GNB",
+                    "away_team": "STP",
+                    "home_score": 2,
+                    "away_score": 1,
+                    "date": "2019-09-10",
+                    "time": "16:30",
+                    "stadium": "Estádio 24 de Setembro",
+                    "city": "Bissau",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "SSD",
-                "away_team": "EQG",
-                "home_score": 1,
-                "away_score": 1,
-                "date": "2019-09-04",
-                "time": "16:00",
-                "stadium": "Al-Hilal Stadium",
-                "city": "Omdurman (Sudan)"
+                "matches": [
+                  {
+                    "home_team": "SSD",
+                    "away_team": "EQG",
+                    "home_score": 1,
+                    "away_score": 1,
+                    "date": "2019-09-04",
+                    "time": "16:00",
+                    "stadium": "Al-Hilal Stadium",
+                    "city": "Omdurman (Sudan)",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "EQG",
+                    "away_team": "SSD",
+                    "home_score": 1,
+                    "away_score": 0,
+                    "date": "2019-09-08",
+                    "time": "17:00",
+                    "stadium": "Nuevo Estadio de Malabo",
+                    "city": "Malabo",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "COM",
-                "away_team": "TOG",
-                "home_score": 1,
-                "away_score": 1,
-                "date": "2019-09-06",
-                "time": "15:00",
-                "stadium": "Stade de Moroni",
-                "city": "Moroni"
+                "matches": [
+                  {
+                    "home_team": "COM",
+                    "away_team": "TOG",
+                    "home_score": 1,
+                    "away_score": 1,
+                    "date": "2019-09-06",
+                    "time": "15:00",
+                    "stadium": "Stade de Moroni",
+                    "city": "Moroni",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "TOG",
+                    "away_team": "COM",
+                    "home_score": 2,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "16:00",
+                    "stadium": "Stade de Kégué",
+                    "city": "Lomé",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "CHA",
-                "away_team": "SDN",
-                "home_score": 1,
-                "away_score": 3,
-                "date": "2019-09-05",
-                "time": "15:30",
-                "stadium": "Stade Omnisports Idriss Mahamat Ouya",
-                "city": "N'Djamena"
+                "matches": [
+                  {
+                    "home_team": "CHA",
+                    "away_team": "SDN",
+                    "home_score": 1,
+                    "away_score": 3,
+                    "date": "2019-09-05",
+                    "time": "15:30",
+                    "stadium": "Stade Omnisports Idriss Mahamat Ouya",
+                    "city": "N'Djamena",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "SDN",
+                    "away_team": "CHA",
+                    "home_score": 0,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "19:00",
+                    "stadium": "Al-Merrikh Stadium",
+                    "city": "Omdurman",
+                    "match_type": "secondleg"
+                  }
+                ]
               },
               {
-                "home_team": "SEY",
-                "away_team": "RWA",
-                "home_score": 0,
-                "away_score": 3,
-                "date": "2019-09-05",
-                "time": "16:00",
-                "stadium": "Stade Linité",
-                "city": "Victoria"
-              }
-            ]
-          },
-          {
-            "name": "Second Leg",
-            "round_type": "secondleg",
-            "matches": [
-              {
-                "home_team": "LES",
-                "away_team": "ETH",
-                "home_score": 1,
-                "away_score": 1,
-                "date": "2019-09-08",
-                "time": "15:00",
-                "stadium": "Setsoto Stadium",
-                "city": "Maseru"
-              },
-              {
-                "home_team": "ZIM",
-                "away_team": "SOM",
-                "home_score": 3,
-                "away_score": 1,
-                "date": "2019-09-10",
-                "time": "15:00",
-                "stadium": "National Sports Stadium",
-                "city": "Harare"
-              },
-              {
-                "home_team": "NAM",
-                "away_team": "ERI",
-                "home_score": 2,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "19:00",
-                "stadium": "Sam Nujoma Stadium",
-                "city": "Windhoek"
-              },
-              {
-                "home_team": "TAN",
-                "away_team": "BDI",
-                "home_score": 1,
-                "away_score": 1,
-                "home_extra_score": 0,
-                "away_extra_score": 0,
-                "home_penalty_score": 3,
-                "away_penalty_score": 0,
-                "date": "2019-09-08",
-                "time": "16:00",
-                "stadium": "National Stadium",
-                "city": "Dar es Salaam"
-              },
-              {
-                "home_team": "SWZ",
-                "away_team": "DJI",
-                "home_score": 0,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "15:00",
-                "stadium": "Mavuso Sports Centre",
-                "city": "Manzini"
-              },
-              {
-                "home_team": "MWI",
-                "away_team": "BOT",
-                "home_score": 1,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "14:00",
-                "stadium": "Kamuzu Stadium",
-                "city": "Blantyre"
-              },
-              {
-                "home_team": "ANG",
-                "away_team": "GAM",
-                "home_score": 2,
-                "away_score": 1,
-                "date": "2019-09-10",
-                "time": "16:00",
-                "stadium": "Estádio 11 de Novembro",
-                "city": "Luanda"
-              },
-              {
-                "home_team": "SLE",
-                "away_team": "LBR",
-                "home_score": 1,
-                "away_score": 0,
-                "date": "2019-09-08",
-                "time": "16:30",
-                "stadium": "Siaka Stevens Stadium",
-                "city": "Freetown"
-              },
-              {
-                "home_team": "MOZ",
-                "away_team": "MRI",
-                "home_score": 2,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "16:00",
-                "stadium": "Estádio do Zimpeto",
-                "city": "Maputo"
-              },
-              {
-                "home_team": "GNB",
-                "away_team": "STP",
-                "home_score": 2,
-                "away_score": 1,
-                "date": "2019-09-10",
-                "time": "16:30",
-                "stadium": "Estádio 24 de Setembro",
-                "city": "Bissau"
-              },
-              {
-                "home_team": "EQG",
-                "away_team": "SSD",
-                "home_score": 1,
-                "away_score": 0,
-                "date": "2019-09-08",
-                "time": "17:00",
-                "stadium": "Nuevo Estadio de Malabo",
-                "city": "Malabo"
-              },
-              {
-                "home_team": "TOG",
-                "away_team": "COM",
-                "home_score": 2,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "16:00",
-                "stadium": "Stade de Kégué",
-                "city": "Lomé"
-              },
-              {
-                "home_team": "SDN",
-                "away_team": "CHA",
-                "home_score": 0,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "19:00",
-                "stadium": "Al-Merrikh Stadium",
-                "city": "Omdurman"
-              },
-              {
-                "home_team": "RWA",
-                "away_team": "SEY",
-                "home_score": 7,
-                "away_score": 0,
-                "date": "2019-09-10",
-                "time": "18:00",
-                "stadium": "Stade Régional Nyamirambo",
-                "city": "Kigali"
+                "matches": [
+                  {
+                    "home_team": "SEY",
+                    "away_team": "RWA",
+                    "home_score": 0,
+                    "away_score": 3,
+                    "date": "2019-09-05",
+                    "time": "16:00",
+                    "stadium": "Stade Linité",
+                    "match_type": "firstleg"
+                  },
+                  {
+                    "home_team": "RWA",
+                    "away_team": "SEY",
+                    "home_score": 7,
+                    "away_score": 0,
+                    "date": "2019-09-10",
+                    "time": "18:00",
+                    "stadium": "Stade Régional Nyamirambo",
+                    "city": "Kigali",
+                    "match_type": "secondleg"
+                  }
+                ]
               }
             ]
           }

@@ -159,7 +159,7 @@ export const hasGroupPlayoff = (group) => {
 }
 
 export const hasReplay = (round) => {
-  if (isEmpty(round.matches)) return false
+  if (isEmpty(round) || isEmpty(round.matches)) return false
   return round.matches.find((m) => m.replay) !== undefined
 }
 
@@ -517,23 +517,24 @@ export const getAwayBracketOtherTooltip = (m) => {
 // >>> MOFT_1920
 
 export const isHomeLose = (m) => {
-  if (m.away_walkover || m.away_bye || m.away_coin_toss || m.away_playoff_win || m.home_withdrew || m.match_postponed) return true
+  // console.log('m', m)
+  if (m.away_walkover || m.away_bye || (m.away_coin_toss && m.match_type !== 'firstleg') || m.away_playoff_win || m.home_withdrew || m.match_postponed)
+    return true
   if (!m.knockout_match) return false
-  if (isEmpty(m.match_type) || m.match_type === 'firstlegonly') {
+  if (isEmpty(m.match_type) || m.match_type === 'firstlegonly' || m.match_type === 'playoffleg') {
     return (
       !(m.match_void && m.away_withdrew) &&
       (m.home_score < m.away_score || m.home_extra_score < m.away_extra_score || m.home_penalty_score < m.away_penalty_score)
     )
   }
-  // console.log('m', m)
   return m.home_penalty_score < m.away_penalty_score || (!m.need_playoff && m.home_aggregate_score < m.away_aggregate_score) || m.aggregate_team === m.away_team
 }
 
 export const isAwayLose = (m) => {
-  if (m.home_walkover || m.home_bye || m.home_coin_toss || m.home_playoff_win || m.away_withdrew || m.match_postponed) return true
-  // console.log('m', m)
+  if (m.home_walkover || m.home_bye || (m.home_coin_toss && m.match_type !== 'firstleg') || m.home_playoff_win || m.away_withdrew || m.match_postponed)
+    return true
   if (!m.knockout_match) return false
-  if (isEmpty(m.match_type) || m.match_type === 'firstlegonly') {
+  if (isEmpty(m.match_type) || m.match_type === 'firstlegonly' || m.match_type === 'playoffleg') {
     return (
       !(m.match_void && m.home_withdrew) &&
       (m.home_score > m.away_score || m.home_extra_score > m.away_extra_score || m.home_penalty_score > m.away_penalty_score)
@@ -563,6 +564,7 @@ const DisplayAwayGoalsText = (props) => {
 
 const DisplayExtraTimeText = (props) => {
   const { m, config } = props
+  // console.log('m', m)
   return (
     <React.Fragment>
       {m.void_notes && <React.Fragment>&gt;&gt;&gt;&nbsp;{m.void_notes}</React.Fragment>}
@@ -608,12 +610,12 @@ const DisplayExtraTimeText = (props) => {
               {isUndefined(m.home_extra_score) && isUndefined(m.away_extra_score) && <React.Fragment>&nbsp;(No extra time was played)</React.Fragment>}
             </React.Fragment>
           )}
-          {m.home_coin_toss && (m.round_type === 'secondleg' || m.round_type === undefined) && (
+          {m.home_coin_toss && (m.match_type === 'secondleg' || m.match_type === '2legged' || m.match_type === undefined) && (
             <React.Fragment>
               &nbsp;&gt;&gt;&gt;&nbsp;<b>{getTeamName(m.home_team)}</b> won on coin toss
             </React.Fragment>
           )}
-          {m.away_coin_toss && (m.round_type === 'secondleg' || m.round_type === undefined) && (
+          {m.away_coin_toss && (m.match_type === 'secondleg' || m.match_type === '2legged' || m.match_type === undefined) && (
             <React.Fragment>
               &nbsp;&gt;&gt;&gt;&nbsp;<b>{getTeamName(m.away_team)}</b> won on coin toss
             </React.Fragment>
@@ -703,6 +705,7 @@ export const DisplayKnockout2LeggedMatch = (props) => {
               away_extra_score: m.away_extra_score_2nd_leg,
               home_penalty_score: m.home_penalty_score_2nd_leg,
               away_penalty_score: m.away_penalty_score_2nd_leg,
+              match_type: '2legged',
             }}
             config={config}
           />
@@ -727,7 +730,19 @@ export const DisplayMatch = (props) => {
     <Col sm="12" className={`padding-tb-md ${borderBottomColor}`}>
       <Row>
         <Col sm="2" xs="1" className="font-10 margin-top-time-xs">
-          {(config.hide_date_grouping || m.match_type === 'secondleg') && (
+          {m.match_type === 'secondleg' && (
+            <React.Fragment>
+              <span className="txt-underline">2nd leg</span>
+              <br />
+            </React.Fragment>
+          )}
+          {m.match_type === 'playoffleg' && (
+            <React.Fragment>
+              <span className="txt-underline">Playoff leg</span>
+              <br />
+            </React.Fragment>
+          )}
+          {(m.match_type === 'secondleg' || m.match_type === 'playoffleg') && (
             <React.Fragment>
               <span className="txt-underline">
                 {config.show_match_year ? moment(m.date).format('dddd, MMMM D, YYYY') : moment(m.date).format('dddd, MMMM D')}
@@ -807,12 +822,13 @@ export const DisplayMatch = (props) => {
 
 export const DisplaySchedule2 = (props) => {
   const { round, config, details } = props
+  // console.log('details', details)
   if (isEmpty(round)) return null
   const { show_match_year, hide_date_grouping } = config
   //   const { dates, matches } = round
   return (
     <React.Fragment>
-      {!isEmpty(details.path_name) && (
+      {details && details.path_name && (
         <Row>
           <Col>
             <div className="h3-ff6 margin-top-md">{details.path_name}</div>
@@ -848,6 +864,7 @@ export const DisplaySchedule2 = (props) => {
 
 export const DisplaySchedule = (props) => {
   const { round, config, details } = props
+  // console.log('details', details)
   round.sort((a, b) => {
     if (a.date > b.date) {
       return 1

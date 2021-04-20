@@ -2,101 +2,103 @@
   "id": "ONC1996",
   "stages": [
     {
-      "name": "Semi-finals",
-      "type": "knockout2legged",
+      "name": "Final Tournament",
+      "type": "knockout",
       "teams": [{ "id": "NZL" }, { "id": "AUS" }, { "id": "SOL" }, { "id": "TAH" }],
       "rounds": [
         {
-          "name": "Semi-finals First Leg",
-          "round_type": "firstleg",
-          "next_round": "Semi-finals Second Leg",
-          "matches": [
-            {
-              "home_team": "NZL",
-              "away_team": "AUS",
-              "home_score": 0,
-              "away_score": 0,
-              "date": "1995-11-10",
-              "time": "12:00",
-              "stadium": "Queen Elizabeth II Park",
-              "city": "Christchurch"
-            },
-            {
-              "home_team": "SOL",
-              "away_team": "TAH",
-              "home_score": 0,
-              "away_score": 1,
-              "date": "1995-11-17",
-              "time": "12:00",
-              "stadium": "Lawson Tama Stadium",
-              "city": "Honiara"
-            }
-          ]
-        },
-        {
-          "name": "Semi-finals Second Leg",
-          "round_type": "secondleg",
-          "next_round": "Final First Leg",
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "round_type": "knockout2legged",
           "eliminate_count": 2,
-          "matches": [
+          "next_round": "Final",
+          "pairs": [
             {
-              "home_team": "AUS",
-              "away_team": "NZL",
-              "home_score": 3,
-              "away_score": 0,
-              "date": "1995-11-15",
-              "time": "12:00",
-              "stadium": "Breakers Stadium",
-              "city": "Newcastle"
+              "matches": [
+                {
+                  "home_team": "NZL",
+                  "away_team": "AUS",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "1995-11-10",
+                  "time": "12:00",
+                  "stadium": "Queen Elizabeth II Park",
+                  "city": "Christchurch",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "AUS",
+                  "away_team": "NZL",
+                  "home_score": 3,
+                  "away_score": 0,
+                  "date": "1995-11-15",
+                  "time": "12:00",
+                  "stadium": "Breakers Stadium",
+                  "city": "Newcastle",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
             },
             {
-              "home_team": "TAH",
-              "away_team": "SOL",
-              "home_score": 2,
-              "away_score": 1,
-              "date": "1996-05-11",
-              "time": "12:00",
-              "stadium": "Stade Pater",
-              "city": "Papeete"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Final",
-      "type": "knockout2legged",
-      "rounds": [
-        {
-          "name": "Final First Leg",
-          "round_type": "firstleg",
-          "next_round": "Final Second Leg",
-          "matches": [
-            {
-              "home_team": "TAH",
-              "away_team": "AUS",
-              "home_score": 0,
-              "away_score": 6,
-              "date": "1996-10-27",
-              "time": "12:00",
-              "stadium": "Olympic Stadium",
-              "city": "Papeete"
+              "matches": [
+                {
+                  "home_team": "SOL",
+                  "away_team": "TAH",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "1995-11-17",
+                  "time": "12:00",
+                  "stadium": "Lawson Tama Stadium",
+                  "city": "Honiara",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "TAH",
+                  "away_team": "SOL",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "1996-05-11",
+                  "time": "12:00",
+                  "stadium": "Stade Pater",
+                  "city": "Papeete",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
             }
           ]
         },
         {
-          "name": "Final Second Leg",
-          "round_type": "secondleg",
-          "matches": [
+          "name": "Final",
+          "short_name": "1st",
+          "round_type": "knockout2legged",
+          "pairs": [
             {
-              "home_team": "AUS",
-              "away_team": "TAH",
-              "home_score": 5,
-              "away_score": 0,
-              "date": "1996-11-01",
-              "time": "12:00",
-              "stadium": "Bruce Stadium",
-              "city": "Canberra"
+              "matches": [
+                {
+                  "home_team": "AUS",
+                  "away_team": "TAH",
+                  "home_score": 6,
+                  "away_score": 0,
+                  "date": "1996-10-27",
+                  "time": "12:00",
+                  "stadium": "Olympic Stadium",
+                  "city": "Papeete",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "TAH",
+                  "away_team": "AUS",
+                  "home_score": 0,
+                  "away_score": 5,
+                  "date": "1996-11-01",
+                  "time": "12:00",
+                  "stadium": "Bruce Stadium",
+                  "city": "Canberra",
+                  "match_type": "secondleg"
+                }
+              ]
             }
           ]
         }
