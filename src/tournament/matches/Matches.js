@@ -105,9 +105,9 @@ const Matches = (props) => {
               <NavItem key={s.details.name}>
                 {s.details.name && (
                   <NavLink
-                    className={classnames({ active: activeTab === `${s.details.name.replace(' ', '-')}` })}
+                    className={classnames({ active: activeTab === `${s.details.name.replace(/ /g, '-')}` })}
                     onClick={() => {
-                      toggle(`${s.details.name.replace(' ', '-')}`)
+                      toggle(`${s.details.name.replace(/ /g, '-')}`)
                     }}
                   >
                     {s.details.name}
@@ -120,7 +120,7 @@ const Matches = (props) => {
             {stageArray.map((s) => (
               <React.Fragment key={s.details.name}>
                 {s.details.name && (
-                  <TabPane tabId={s.details.name.replace(' ', '-')}>
+                  <TabPane tabId={s.details.name.replace(/ /g, '-')}>
                     {(s.config.type === 'roundrobin' || s.config.type === 'allocation') && <RoundRobin stage={s} config={config} />}
                     {s.config.type === 'roundrobinmatchday' && <RoundRobinMatchDay matchday={s} config={config} />}
                     {s.config.type === 'roundrobinleaguematchday' && <RoundRobinLeagueMatchDay matchday={s} config={config} />}

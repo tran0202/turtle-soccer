@@ -1,4 +1,5 @@
 import { getTeamName } from '../../core/TeamHelper'
+import { hasGroupPlayoff } from '../matches/MatchHelper'
 import { isEmpty } from 'lodash'
 
 export const findTeam = (teamArray, id) => {
@@ -18,6 +19,7 @@ export const isGroupPlayoffTiebreaker = (config) => {
 }
 
 export const isLotGroupPlayoffTiebreaker = (config) => {
+  // console.log('config', config)
   const { tiebreakers } = config
   if (!tiebreakers) return false
   return tiebreakers.find((tb) => tb.indexOf('lotgroupplayoff') !== -1) != null
@@ -86,7 +88,6 @@ const accumulateRanking2 = (team, match, config) => {
 
 const accumulateRanking = (team, match, config) => {
   if (!team) return
-  // console.log('config', config)
   if (
     match.walkover ||
     match.home_bye ||
@@ -199,6 +200,8 @@ const accumulateRanking = (team, match, config) => {
   team.h2hm.forEach((m) => newH2h.push(m))
   newH2h.push(match)
   team.h2hm = newH2h
+  // team.h2hm.push(match)
+  // console.log('team.h2hm', team.h2hm)
 }
 
 export const getBlankRanking = (teamId) => {
@@ -264,7 +267,8 @@ const calculateH2hRanking = (container, team, match, config) => {
   _team.h2h_rankings.push(newRanking)
 }
 
-export const calculateRoundRankings = (container, teams, matches, config) => {
+export const calculateGroupRankings = (container, group, config) => {
+  const { teams, matches } = group
   matches &&
     matches.forEach((m) => {
       const hr = findTeam(teams, m.home_team)
@@ -278,19 +282,20 @@ export const calculateRoundRankings = (container, teams, matches, config) => {
     })
 }
 
-export const calculateProgressRankings = (tournament, teams, matches, config) => {
+export const calculateProgressRankings = (tournament, group) => {
   if (!tournament.progress_rankings) {
     tournament.progress_rankings = {}
   }
   if (!tournament.progress_rankings.teams) {
     tournament.progress_rankings.teams = []
   }
-  calculateRoundRankings(tournament.progress_rankings.teams, teams, matches, config)
+  const config = { ...tournament.config, ...tournament.details }
+  calculateGroupRankings(tournament.progress_rankings.teams, group, config)
 }
 
-export const calculateGroupRankings = (container, teams, matches, config) => {
-  calculateRoundRankings(container, teams, matches, config)
-}
+// export const calculateGroupRankings = (container, group, config) => {
+//   // calculateRoundRankings(container, teams, matches, config)
+// }
 
 const calculateKnockoutTeamRanking = (team, match, config) => {
   accumulateRanking(team, match, config)
@@ -375,7 +380,6 @@ const drawingLots = (a, b) => {
 
 const compareFairPoints = (a, b) => {
   // console.log('a', a)
-  // console.log('b', b)
   if (!a.fp || !b.fp) return 0
   if (a.fp > b.fp) {
     a.fp_notes = `${getTeamName(a.id)} ${a.fp}`
@@ -485,7 +489,6 @@ const createHomeAwayH2hNotes = (a, b, drawFunction) => {
   if (!a.h2h_rankings || !b.h2h_rankings) return drawFunction()
   const a_ranking = a.h2h_rankings.find((hr) => hr.id === a.id && hr.oppid === b.id)
   const b_ranking = b.h2h_rankings.find((hr) => hr.id === b.id && hr.oppid === a.id)
-  // console.log('a_ranking', a_ranking)
   if (a_ranking === undefined || b_ranking === undefined) return drawFunction()
   if (a_ranking.pts > b_ranking.pts) {
     a.h2h_notes = `Points >>> ${getTeamName(a.id)} ${a_ranking.pts} | ${getTeamName(b.id)} ${b_ranking.pts}`
@@ -540,6 +543,7 @@ const createHomeAwayH2hNotes = (a, b, drawFunction) => {
 
 const compareH2h = (a, b, group_playoff, drawFunction) => {
   const found = findHeadtoHeadMatch(a, b, group_playoff)
+  // console.log('found', found)
   if (found.length === 1) {
     const h2hMatch = found[0]
     return createH2hNotes(h2hMatch, a, b, drawFunction)
@@ -666,7 +670,6 @@ export const sortDrawPoolRankings = (pool) => {
 
 export const createDrawPools = (group, startingIndex, config) => {
   if (!group || !group.final_rankings) return
-  // console.log('group', group)
   group.final_rankings.forEach((fr) => {
     if (!group.draw_pools) {
       group.draw_pools = []
@@ -711,7 +714,7 @@ export const createDrawPools = (group, startingIndex, config) => {
       } else if (dp.teams && dp.teams.length === 2) {
         console.log('dp.teams.length', dp.teams.length)
       } else if (dp.teams && dp.teams.length === 3) {
-        calculateGroupRankings(dp.teams, dp.teams, dp.matches, config)
+        calculateGroupRankings(dp.teams, dp, config)
         collectGroupRankings(dp, 2)
         let gd_tied = false
         dp.final_rankings.sort((a, b) => {
@@ -842,7 +845,6 @@ export const sortGroupRankings = (group, startingIndex, config) => {
         }
       })
       group.final_rankings.forEach((t, index) => {
-        // console.log('t', t)
         if (t) {
           t.r = group.name === 'Semi-finals' || group.name === 'Semi-finals Second Leg' ? startingIndex : index + startingIndex
         }
@@ -855,7 +857,7 @@ export const sortGroupRankings = (group, startingIndex, config) => {
           p.teams.forEach((t, index) => {
             allTeamNames = `${allTeamNames}${getTeamName(t.id)}${index < p.teams.length - 2 ? ',' : ''}${index === p.teams.length - 2 ? ' & ' : ''} `
           })
-          calculateGroupRankings(p.teams, p.teams, p.matches, config)
+          calculateGroupRankings(p.teams, p, config)
           collectGroupRankings(p, 3)
           sortDrawPoolRankings(p)
           p.final_rankings.forEach((fr, index) => {
@@ -891,29 +893,30 @@ const excludeRankings = (a, b) => {
   a.pts = a.pts - b.pts
 }
 
+// page_excluded = false on Groups | Calculate all rankings
+// page_excluded = true on Final Standings | Exclude the matches vs the last-placed team
 export const createGroupFinalRankings = (tournament, group, matchDay, page_excluded) => {
   if (!group.teams) return
   collectGroupRankings(group, matchDay)
   collectH2hRankings(group)
   const config = {
-    isGoalRatioTiebreaker: isGoalRatioTiebreaker(tournament),
-    isLotGroupPlayoffTiebreaker: isLotGroupPlayoffTiebreaker(tournament),
-    isPointsLotTiebreaker: isPointsLotTiebreaker(tournament),
-    isHead2HeadBeforeGoalDifference: isHead2HeadBeforeGoalDifference(tournament),
-    points_for_win: tournament.points_for_win,
+    isGoalRatioTiebreaker: isGoalRatioTiebreaker(tournament.config),
+    isLotGroupPlayoffTiebreaker: isLotGroupPlayoffTiebreaker(tournament.config),
+    isPointsLotTiebreaker: isPointsLotTiebreaker(tournament.config),
+    isHead2HeadBeforeGoalDifference: isHead2HeadBeforeGoalDifference(tournament.config),
+    points_for_win: tournament.config.points_for_win,
   }
   sortGroupRankings(group, 1, config)
-  // console.log('group', group)
-  if (group.final_standings_excluded && page_excluded) {
+  if (group.config.final_standings_excluded && page_excluded) {
     group.h2h_rankings &&
       group.h2h_rankings.forEach((hr) => {
-        if (hr.oppid === group.final_standings_excluded) {
+        if (hr.oppid === group.config.final_standings_excluded) {
           const _fr = group.final_rankings.find((fr) => fr.id === hr.id)
           excludeRankings(_fr, hr)
         }
       })
   }
-  if (tournament.id === 'GC2002' && group.name === 'Group D') {
+  if (tournament.id === 'GC2002' && group.details.name === 'Group D') {
     group.final_rankings[0].r = 3
     group.final_rankings[0].h2h_notes = null
     group.final_rankings[0].draw_lot_notes =
@@ -944,12 +947,25 @@ export const collectGroupRankings = (group, matchDay) => {
         const newRankings = []
         newRankings.push(rankings)
         group.final_rankings = newRankings
-        group.ranking_type = 'group'
+        group.config.ranking_type = 'group'
       } else {
         group.final_rankings.push(rankings)
       }
     }
   })
+  if (hasGroupPlayoff(group)) {
+    const found = group.matches.find((m) => m.group_playoff)
+    const team1 = group.teams.find((t) => t.id === found.home_team)
+    const team2 = group.teams.find((t) => t.id === found.away_team)
+    const ranking1 = team1.rankings.find((r) => r.md === matchDay + 1)
+    const ranking2 = team2.rankings.find((r) => r.md === matchDay + 1)
+    const final_ranking1 = group.final_rankings.find((fr) => fr.id === found.home_team)
+    const final_ranking2 = group.final_rankings.find((fr) => fr.id === found.away_team)
+    final_ranking1.h2hm = ranking1.h2hm
+    final_ranking2.h2hm = ranking2.h2hm
+    // console.log('final_ranking1', final_ranking1)
+    // console.log('final_ranking2', final_ranking2)
+  }
 }
 
 export const collectH2hRankings = (group) => {
@@ -987,11 +1003,12 @@ export const collectProgressRankings = (tournament, teams, matchDay) => {
 }
 
 export const collectWildCardRankings = (stage) => {
-  const pos = stage.groups && hasWildCardAdvancement(stage) ? stage.advancement.teams.wild_card.pos : 3
+  const pos = stage.groups && hasWildCardAdvancement(stage.config) ? stage.config.advancement.teams.wild_card.pos : 3
   let wildCard = { final_rankings: [], ranking_type: 'wildcard' }
   stage.groups &&
     stage.groups.forEach((g) => {
-      if (!g.final_rankings || !isEmpty(g.final_rankings) || g.final_rankings.length < pos) return
+      // console.log('g', g)
+      if (isEmpty(g.final_rankings) || g.final_rankings.length < pos) return
       const wcr = cloneRanking(g.final_rankings.find((fr) => fr.r === pos))
       wildCard.final_rankings.push(wcr)
     })
@@ -999,14 +1016,14 @@ export const collectWildCardRankings = (stage) => {
   return wildCard
 }
 
-export const hasWildCardAdvancement = (stage) => {
+export const hasWildCardAdvancement = (config) => {
   return (
-    stage &&
-    stage.advancement &&
-    stage.advancement.teams &&
-    stage.advancement.teams.wild_card &&
-    stage.advancement.teams.wild_card.pos &&
-    stage.advancement.teams.wild_card.count
+    config &&
+    config.advancement &&
+    config.advancement.teams &&
+    config.advancement.teams.wild_card &&
+    config.advancement.teams.wild_card.pos &&
+    config.advancement.teams.wild_card.count
   )
 }
 
@@ -1100,6 +1117,7 @@ export const getRowStriped = (row, config) => {
 // Wild card rankings
 export const getWildCardRowStriped = (row, config) => {
   if (!row) return ''
+  // console.log('row', row)
   if (hasWildCardAdvancement(config)) {
     if (row.r <= config.advancement.teams.wild_card.count) {
       return ' advanced-wild-card-striped'

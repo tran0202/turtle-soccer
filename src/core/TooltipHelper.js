@@ -174,7 +174,7 @@ export const SuccessorTooltip = (props) => {
       return (
         <React.Fragment>
           As a successor, {parent_team}'s rankings might include ones' that it succeeded.&nbsp;
-          <a href={`#successor_${parent_team.replace(' ', '_')}`}>See breakdown below.</a>
+          <a href={`#successor_${parent_team.replace(/ /g, '_')}`}>See breakdown below.</a>
         </React.Fragment>
       )
     }
@@ -199,7 +199,7 @@ export const SuccessorTooltip = (props) => {
             </React.Fragment>
           )
         })}
-        &nbsp;<a href={`#successor_${parent_team.replace(' ', '_')}`}>See breakdown below.</a>
+        &nbsp;<a href={`#successor_${parent_team.replace(/ /g, '_')}`}>See breakdown below.</a>
       </React.Fragment>
     )
   }

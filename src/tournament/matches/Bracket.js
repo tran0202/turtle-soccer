@@ -477,7 +477,7 @@ const BracketColInner = (props) => {
   const roundconsolationTooltip = (
     <React.Fragment>
       {(roundName === 'Consol 1st' || roundName === 'Consol Semi' || roundName === 'P/o 1st' || roundName === 'P/o 2nd') && round.details.consolation_notes && (
-        <ConsolationTooltip target={`consolationBracketTooltip_${round.details.short_name.replace(' ', '_')}`} notes={round.details.consolation_notes} />
+        <ConsolationTooltip target={`consolationBracketTooltip_${round.details.short_name.replace(/ /g, '_')}`} notes={round.details.consolation_notes} />
       )}
     </React.Fragment>
   )

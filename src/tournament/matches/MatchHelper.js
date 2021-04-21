@@ -887,7 +887,7 @@ export const DisplaySchedule = (props) => {
             <div className="h2-ff1 margin-top-md">
               {groupName}
               {details && details.consolation_notes && (
-                <ConsolationTooltip target={`consolationTooltip_${details.short_name.replace(' ', '_')}`} notes={details.consolation_notes} />
+                <ConsolationTooltip target={`consolationTooltip_${details.short_name.replace(/ /g, '_')}`} notes={details.consolation_notes} />
               )}
             </div>
           </Col>

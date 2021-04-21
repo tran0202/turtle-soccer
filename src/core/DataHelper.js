@@ -759,6 +759,7 @@ export const setStageDetails = (s) => {
 export const setStageConfig = (s) => {
   s.config = {
     advancement: s.advancement || {},
+    championship_round: s.championship_round || false,
     consolation_round: s.consolation_round || false,
     default: s.default || false,
     eliminate_count: s.eliminate_count || undefined,
@@ -766,9 +767,11 @@ export const setStageConfig = (s) => {
     home_and_away: s.home_and_away || false,
     multiple_paths: s.multiple_paths || false,
     next_round: s.next_round || '',
+    odd_format: s.odd_format || '',
     type: s.type || '',
   }
   delete s.advancement
+  delete s.championship_round
   delete s.consolation_round
   delete s.default
   delete s.eliminate_count
@@ -776,6 +779,7 @@ export const setStageConfig = (s) => {
   delete s.home_and_away
   delete s.multiple_paths
   delete s.next_round
+  delete s.odd_format
   delete s.type
 }
 
@@ -828,7 +832,10 @@ export const setGroupDetails = (g) => {
 }
 
 export const setGroupConfig = (g) => {
-  g.config = {}
+  g.config = {
+    final_standings_excluded: g.final_standings_excluded || '',
+  }
+  delete g.final_standings_excluded
 }
 
 export const setAllMatchdays = (mds) => {

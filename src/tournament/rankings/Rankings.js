@@ -57,7 +57,7 @@ const RankingRowSeparate = (props) => {
       <Row className="no-gutters ranking-tbl team-row padding-tb-md text-center">
         <Col xs="12" className="font-italic gray3">
           {round.ranking_type !== 'successorround' && <React.Fragment>{roundName}</React.Fragment>}
-          {round.ranking_type === 'successorround' && <div id={`successor_${roundName.replace(' ', '_')}`}>{roundName}</div>}
+          {round.ranking_type === 'successorround' && <div id={`successor_${roundName.replace(/ /g, '_')}`}>{roundName}</div>}
           {hasExcludedRankings(round) && <ExcludedFourthPlaceTooltip target="excludedFourthPlaceTooltip" />}
           {(config.tournament_type_id === 'UCL' || config.tournament_type_id === 'UEL') && roundName === 'Group Stage' && (
             <ExcludedQualfyingRoundsTooltip target="excludedQualfyingRoundsTooltip" />
@@ -99,7 +99,7 @@ export const RankingHead = (props) => {
 const RankingRow2 = (props) => {
   const { row, config } = props
   const { ranking_type } = config
-  // console.log('config', config)
+  // console.log('row', row)
   return (
     <Row className="no-gutters">
       <Col className="col-box-10">{getTeamFlag(row.id, config)}</Col>
@@ -194,11 +194,9 @@ export const RankingRow = (props) => {
 }
 
 const RankingRound = (props) => {
-  const { round } = props
-  const { config } = props
-  const rankingRowConfig = round.advancement
-    ? { ...config, ranking_type: round.ranking_type, advancement: round.advancement }
-    : { ...config, ranking_type: round.ranking_type }
+  const { round, config } = props
+  const rankingType = !isEmpty(round.config) ? round.config.ranking_type : round.ranking_type
+  const rankingRowConfig = { ...config, ranking_type: rankingType }
   updateFinalRankings(round)
   if (config.no_third_place && (round.name === 'Semi-finals' || round.name === 'Semi-finals Second Leg')) {
     createSemifinalistsPool(round)
@@ -213,7 +211,6 @@ const RankingRound = (props) => {
 
 const Rankings = (props) => {
   const { rounds, config } = props
-  // console.log('rounds', rounds)
   const ranking_type = !isEmpty(rounds) ? rounds[0].ranking_type : ''
   const rankingHeadConfig = { ...config, ranking_type }
   return (

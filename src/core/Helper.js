@@ -121,7 +121,7 @@ export const getDefaultStageTab = (stages) => {
   if (!stages || isEmpty(stages)) return temp
   const defaultStageIndex = stages.findIndex((s) => s.config.default)
   const defaultStageName = defaultStageIndex > -1 ? stages[defaultStageIndex].details.name : stages[0].details.name
-  return defaultStageName ? defaultStageName.replace(' ', '-') : temp
+  return defaultStageName ? defaultStageName.replace(/ /g, '-') : temp
 }
 
 export const getDefaultMdTab = (leagues) => {
@@ -129,14 +129,14 @@ export const getDefaultMdTab = (leagues) => {
   if (!leagues || isEmpty(leagues)) return temp
   const _l = leagues.find((l) => !isNull(l.config.default_matchday))
   // console.log('_l', _l)
-  return _l !== undefined ? _l.config.default_matchday.replace(' ', '-') : temp
+  return _l !== undefined ? _l.config.default_matchday.replace(/ /g, '-') : temp
 }
 
 export const getDefaultLeagueTab = (leagues) => {
   const temp = 'League-A'
   if (!leagues || isEmpty(leagues)) return temp
   const _l = leagues.find((l) => l.config.default)
-  return _l !== undefined ? _l.details.name.replace(' ', '-') : temp
+  return _l !== undefined ? _l.details.name.replace(/ /g, '-') : temp
 }
 
 export const reorderBracketPairs = (pairs) => {
@@ -268,20 +268,20 @@ export const isAwayGoalsWinner = (who, match) => {
 
 /* ==========  ========== */
 
-const getFormat = (rrStage) => {
-  const { groups, advancement, home_and_away, odd_format } = rrStage
-  const groupCount = groups ? groups.length : 0
-  const teamCount = groups && groups[0] && groups[0].teams ? groups[0].teams.length : 0
-  return { groupCount, teamCount, totalCount: groupCount * teamCount, advancement, home_and_away, odd_format }
-}
+// const getFormat = (rrStage) => {
+//   const { groups, advancement, home_and_away, odd_format } = rrStage
+//   const groupCount = groups ? groups.length : 0
+//   const teamCount = groups && groups[0] && groups[0].teams ? groups[0].teams.length : 0
+//   return { groupCount, teamCount, totalCount: groupCount * teamCount, advancement, home_and_away, odd_format }
+// }
 
-export const getStageConfig = (tournament, stage) => {
-  if (!stage) return
-  const format = getFormat(stage)
-  return stage.tiebreakers
-    ? { ...getTournamentConfig(tournament), ...format, tiebreakers: stage.tiebreakers }
-    : { ...getTournamentConfig(tournament), ...format }
-}
+// export const getStageConfig = (tournament, stage) => {
+//   if (!stage) return
+//   const format = getFormat(stage)
+//   return stage.tiebreakers
+//     ? { ...getTournamentConfig(tournament), ...format, tiebreakers: stage.tiebreakers }
+//     : { ...getTournamentConfig(tournament), ...format }
+// }
 
 // export const splitPathMatches = (stage, round) => {
 //   if (!stage.multiple_paths || !round || !round.matches) return []

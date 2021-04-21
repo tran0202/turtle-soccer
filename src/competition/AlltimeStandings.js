@@ -78,9 +78,9 @@ const collectRankings = (competition) => {
   let successorRankings = { final_rankings: successor_rankings, ranking_type: 'alltimeround' }
 
   tournaments.forEach((t) => {
-    const config = { ...t.config, ...t.details }
     let _teams = []
     let _matches = []
+    const _group = { teams: _teams, matches: _matches }
 
     t.stages.forEach((s) => {
       if (s.type === 'allocation' || s.type === 'roundrobin' || s.type === 'roundrobinmatchday') {
@@ -169,7 +169,7 @@ const collectRankings = (competition) => {
           })
       })
     // console.log('_teams', _teams)
-    calculateProgressRankings(t, _teams, _matches, config)
+    calculateProgressRankings(t, _group)
     // collecting the teams' progress rankings and creating the tournament's final_rankings
     collectProgressRankings(t, _teams, 18)
 

@@ -115,7 +115,6 @@ class TournamentApp extends React.Component {
 
   getTournament = () => {
     const t = getTournamentArray().find((t) => t.id === this.props.query.id)
-    // console.log('t', t)
     if (t) {
       setTournamentDetails(t)
       setTournamentConfig(t)
