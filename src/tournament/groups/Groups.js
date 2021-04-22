@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Format from './Format'
 import GroupStandings from './GroupStandings'
-// import GroupMdStandings from './GroupMdStandings'
-// import GroupLeagueMdStandings from './GroupLeagueMdStandings'
 import { getDefaultStageTab, getAllRoundRobinStages, getDefaultLeagueTab, collectMdMatches } from '../../core/Helper'
 import {
   calculateGroupRankings,
@@ -57,9 +55,7 @@ const DisplayStage = (props) => {
   return (
     <React.Fragment>
       {tournament && <Format config={config} details={tournament.details} />}
-      {stage.config.type === 'roundrobin' && <GroupStandings stage={stage} config={config} />}
-      {/* {stage.type === 'roundrobinmatchday' && <GroupMdStandings config={config} stage={stage} />}
-      {stage.type === 'roundrobinleaguematchday' && <GroupLeagueMdStandings config={config} stage={stage} />} */}
+      <GroupStandings stage={stage} config={config} />
     </React.Fragment>
   )
 }

@@ -744,7 +744,6 @@ export const setAllStages = (ss) => {
     setStageDetails(s)
     setStageConfig(s)
     setAllRounds(s.rounds, s)
-    // console.log('s.type', s.config.type)
     setAllGroups(s.groups)
   })
 }

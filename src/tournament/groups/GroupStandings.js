@@ -9,7 +9,6 @@ const GroupStandings = (props) => {
   const { stage, config } = props
   const { groups } = stage
   const wildCardPos = groups && hasWildCardAdvancement(stage.config) ? config.advancement.teams.wild_card.pos : 3
-  // console.log('wildCardPos', wildCardPos)
   return (
     <React.Fragment>
       {groups && groups.map((g) => <GroupPlay group={g} config={config} key={g.details.name} />)}

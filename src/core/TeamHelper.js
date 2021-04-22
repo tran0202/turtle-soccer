@@ -139,3 +139,8 @@ export const getBracketTeamCode = (id, config) => {
     return nation.code
   }
 }
+
+export const isSuccessor = (id) => {
+  const team = getTeamArray().find((t) => t.id === id)
+  return !team.successor ? false : team.successor
+}

@@ -1,8 +1,7 @@
 import React from 'react'
 import Rankings from '../tournament/rankings/Rankings'
 import { calculateProgressRankings, collectProgressRankings, sortGroupRankings } from '../tournament/rankings/RankingsHelper'
-import { getParentTeam, getTeamName } from '../core/TeamHelper'
-import { isSuccessor } from '../core/Helper'
+import { getParentTeam, getTeamName, isSuccessor } from '../core/TeamHelper'
 import { Row, Col } from 'reactstrap'
 import { isEmpty } from 'lodash'
 

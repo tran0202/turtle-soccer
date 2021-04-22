@@ -5,6 +5,7 @@ import { Collapse, Row, Col, Button } from 'reactstrap'
 
 const GroupCollapse = (props) => {
   const { group, config } = props
+  // console.log('config', config)
   const matchArray = getRoundMatches(group, true)
   const [collapse, setCollapse] = useState(false)
   const [status, setStatus] = useState('Closed')
@@ -28,11 +29,19 @@ const GroupCollapse = (props) => {
         </Col>
       </Row>
       <Collapse isOpen={collapse} onEntering={onEntering} onEntered={onEntered} onExiting={onExiting} onExited={onExited}>
-        {!hasGroupPlayoff(group) && <DisplaySchedule round={matchArray} config={config} />}
-        {hasGroupPlayoff(group) && (
+        {config.type === 'roundrobin' && !hasGroupPlayoff(group) && <DisplaySchedule round={matchArray} config={config} />}
+        {config.type === 'roundrobin' && hasGroupPlayoff(group) && (
           <React.Fragment>
             <DisplaySchedule round={matchArray[0]} config={config} />
             <DisplaySchedule round={matchArray[1]} config={config} details={{ name: 'Playoff' }} />
+          </React.Fragment>
+        )}
+        {(config.type === 'roundrobinmatchday' || config.type === 'roundrobinleaguematchday') && (
+          <React.Fragment>
+            {group.matchdays.map((md) => {
+              const mdMatches = getRoundMatches(md, true)
+              return <DisplaySchedule round={mdMatches} config={config} details={md.details} key={md.details.name} />
+            })}
           </React.Fragment>
         )}
         <Row className="mb-5"></Row>

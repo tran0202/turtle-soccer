@@ -1,23 +1,4 @@
-// import React from 'react'
 import { getTeamArray } from './DataHelper'
-// import { getTeamName, getTeamFlag } from './TeamHelper'
-// import {
-//   PlayoffWinTooltip,
-//   WalkoverTooltip,
-//   AwardedTooltip,
-//   AetTooltip,
-//   // ByeTooltip,
-//   // CancelledTooltip,
-//   // GoldenGoalTooltip,
-//   // SilverGoalTooltip,
-//   // Extra140Tooltip,
-//   // DisqualifiedTooltip,
-//   // ReplacementTooltip,
-//   // ConsolationTooltip,
-//   // PlayoffSecondRoundTooltip,
-// } from './TooltipHelper'
-// import { Row, Col } from 'reactstrap'
-// import moment from 'moment'
 import { isEmpty, isNull } from 'lodash'
 
 /* ========== Tournaments ========== */
@@ -109,7 +90,8 @@ export const getRoundRobinLeagueMdStages = (leagues) => {
 }
 
 export const getKnockoutStages = (stages) => {
-  return stages ? stages.filter((s) => s.config.type === 'knockout' || s.config.type === 'knockout2legged') : []
+  return stages ? stages.filter((s) => s.config.type === 'knockout') : []
+  // return stages ? stages.filter((s) => s.config.type === 'knockout' || s.config.type === 'knockout2legged') : []
 }
 
 // export const getKnockoutMultiple2LeggedStages = (stages) => {
@@ -137,20 +119,6 @@ export const getDefaultLeagueTab = (leagues) => {
   if (!leagues || isEmpty(leagues)) return temp
   const _l = leagues.find((l) => l.config.default)
   return _l !== undefined ? _l.details.name.replace(/ /g, '-') : temp
-}
-
-export const reorderBracketPairs = (pairs) => {
-  pairs &&
-    pairs.sort((a, b) => {
-      if (a.bracket_order < b.bracket_order) {
-        return -1
-      } else if (a.bracket_order > b.bracket_order) {
-        return 1
-      } else {
-        return 0
-      }
-    })
-  return pairs
 }
 
 export const getFinalPathStage = (stage) => {
@@ -194,7 +162,46 @@ export const getBracketStage = (stage) => {
   return { ...stage, rounds }
 }
 
-/* ========== Matches ========== */
+/* ========== Pairs & Matches ========== */
+
+export const reorderBracketPairs = (pairs) => {
+  pairs &&
+    pairs.sort((a, b) => {
+      if (a.bracket_order < b.bracket_order) {
+        return -1
+      } else if (a.bracket_order > b.bracket_order) {
+        return 1
+      } else {
+        return 0
+      }
+    })
+  return pairs
+}
+
+// export const collectPairMatches = (round) => {
+//   if (!round || !round.pairs) return []
+//   const matches = []
+//   round.pairs.forEach((p) => {
+//     p &&
+//       p.matches &&
+//       p.matches.forEach((m) => {
+//         matches.push(m)
+//       })
+//   })
+//   round.matches = matches
+// }
+
+export const collectMdMatches = (group) => {
+  let matches = []
+  group.matchdays &&
+    group.matchdays.forEach((md) => {
+      md.matches &&
+        md.matches.forEach((m) => {
+          matches.push(m)
+        })
+    })
+  group.matches = matches
+}
 
 export const isWinner = (who, match) => {
   // console.log('match', match)
@@ -374,11 +381,6 @@ export const isAwayGoalsWinner = (who, match) => {
 //   return match.shared_bronze
 // }
 
-export const isSuccessor = (id) => {
-  const team = getTeamArray().find((t) => t.id === id)
-  return !team.successor ? false : team.successor
-}
-
 // export const isAggregateWinner = (who, match) => {
 //   // console.log('match', match)
 //   if (match.match_type === 'firstlegonly') {
@@ -452,31 +454,6 @@ export const isSuccessor = (id) => {
 //   }
 //   return { dates, matches }
 // }
-
-export const collectPairMatches = (round) => {
-  if (!round || !round.pairs) return []
-  const matches = []
-  round.pairs.forEach((p) => {
-    p &&
-      p.matches &&
-      p.matches.forEach((m) => {
-        matches.push(m)
-      })
-  })
-  round.matches = matches
-}
-
-export const collectMdMatches = (group) => {
-  let matches = []
-  group.matchdays &&
-    group.matchdays.forEach((md) => {
-      md.matches &&
-        md.matches.forEach((m) => {
-          matches.push(m)
-        })
-    })
-  group.matches = matches
-}
 
 // export const collectMdMatchesPair = (stage) => {
 //   const { groups } = stage
