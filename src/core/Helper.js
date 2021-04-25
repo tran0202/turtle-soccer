@@ -1,4 +1,3 @@
-import { getTeamArray } from './DataHelper'
 import { isEmpty, isNull } from 'lodash'
 
 /* ========== Tournaments ========== */

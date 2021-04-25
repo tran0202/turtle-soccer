@@ -6,7 +6,7 @@
       "type": "roundrobin",
       "home_and_away": true,
       "eliminate_count": 4,
-      "next_round": "Semi-finals First Leg",
+      "next_round": "Semi-finals",
       "bye_teams": [{ "id": "PAR" }],
       "advancement": {
         "teams": {

@@ -40,7 +40,7 @@
           "name": "Preliminary Final",
           "short_name": "1stP",
           "eliminate_count": 76,
-          "next_round": "First Qualifying First Leg",
+          "next_round": "First Qualifying Round",
           "bye_teams": [
             { "id": "NOM" },
             { "id": "KFS" },
@@ -1196,7 +1196,6 @@
           "round_type": "knockout2legged",
           "eliminate_count": 32,
           "next_round": "Group Stage",
-          "bye_teams": [],
           "pairs": [
             {
               "matches": [

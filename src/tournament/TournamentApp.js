@@ -8,7 +8,7 @@ import Header from './Header'
 import About from './About'
 import Matches from './matches/Matches'
 import Groups from './groups/Groups'
-import FinalStandings from './FinalStandings'
+import FinalStandings from './rankings/FinalStandings'
 import Qualification from './Qualification'
 import {
   getCurrentTournament,

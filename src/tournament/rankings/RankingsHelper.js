@@ -1,6 +1,6 @@
 import { getTeamName } from '../../core/TeamHelper'
 import { hasGroupPlayoff } from '../matches/MatchHelper'
-import { isEmpty } from 'lodash'
+import { isEmpty, isUndefined } from 'lodash'
 
 export const findTeam = (teamArray, id) => {
   return teamArray ? teamArray.find((t) => t.id === id) : {}
@@ -284,37 +284,48 @@ export const calculateGroupRankings = (container, group, config) => {
 
 export const calculateProgressRankings = (tournament, group) => {
   if (!tournament.progress_rankings) {
-    tournament.progress_rankings = {}
-  }
-  if (!tournament.progress_rankings.teams) {
-    tournament.progress_rankings.teams = []
+    tournament.progress_rankings = []
   }
   const config = { ...tournament.config, ...tournament.details }
-  calculateGroupRankings(tournament.progress_rankings.teams, group, config)
+  calculateGroupRankings(tournament.progress_rankings, group, config)
 }
 
 // export const calculateGroupRankings = (container, group, config) => {
 //   // calculateRoundRankings(container, teams, matches, config)
 // }
 
-const calculateKnockoutTeamRanking = (team, match, config) => {
-  accumulateRanking(team, match, config)
-}
+// const calculateKnockoutTeamRanking = (team, match, config) => {
+//   accumulateRanking(team, match, config)
+// }
 
-export const calculateKnockoutRankings = (advanced_teams, round, config) => {
+export const calculateKnockoutRankings = (tournament, round, config) => {
+  const at_round = findRoundAdvancedTeams(tournament, round.details.name)
   round.matches &&
     round.matches.forEach((m) => {
-      calculateKnockoutTeamRanking(findTeam(advanced_teams.final_rankings, m.home_team), m, { ...config, match_type: round.round_type })
-      calculateKnockoutTeamRanking(findTeam(advanced_teams.final_rankings, m.away_team), m, { ...config, match_type: round.round_type })
+      const home_rankings = findTeam(at_round.rankings, m.home_team)
+      const away_rankings = findTeam(at_round.rankings, m.away_team)
+      // console.log('home_rankings', home_rankings)
+      accumulateRanking(home_rankings, m, config)
+      accumulateRanking(away_rankings, m, config)
     })
 }
 
-export const calculateLeagueKnockoutRankings = (advanced_teams, round, config) => {
-  round.matches &&
-    round.matches.forEach((m) => {
-      calculateKnockoutTeamRanking(findTeam(advanced_teams.final_rankings, m.home_team), m, config)
-      calculateKnockoutTeamRanking(findTeam(advanced_teams.final_rankings, m.away_team), m, config)
-    })
+// export const calculateLeagueKnockoutRankings = (advanced_teams, round, config) => {
+//   round.matches &&
+//     round.matches.forEach((m) => {
+//       calculateKnockoutTeamRanking(findTeam(advanced_teams.rankings, m.home_team), m, config)
+//       calculateKnockoutTeamRanking(findTeam(advanced_teams.rankings, m.away_team), m, config)
+//     })
+// }
+
+export const findRoundAdvancedTeams = (tournament, name) => {
+  if (!tournament.advanced_teams) return
+  return tournament.advanced_teams.find((r) => r.name === name)
+}
+
+export const findRoundFinalRankings = (tournament, name) => {
+  if (!tournament.final_rankings) return
+  return tournament.final_rankings.find((r) => r.name === name)
 }
 
 const findHeadtoHeadMatch = (a, b, group_playoff) => {
@@ -379,7 +390,6 @@ const drawingLots = (a, b) => {
 }
 
 const compareFairPoints = (a, b) => {
-  // console.log('a', a)
   if (!a.fp || !b.fp) return 0
   if (a.fp > b.fp) {
     a.fp_notes = `${getTeamName(a.id)} ${a.fp}`
@@ -634,8 +644,8 @@ export const updateDrawPool = (group, a, b) => {
 }
 
 export const updateH2h = (group, a, b) => {
-  if (!group || !group.final_rankings || !group.h2h_rankings) return
-  group.final_rankings.forEach((fr) => {
+  if (!group || !group.rankings || !group.h2h_rankings) return
+  group.rankings.forEach((fr) => {
     const hra = group.h2h_rankings.filter((hr) => hr.id === fr.id)
     fr.h2h_rankings = []
     hra.forEach((hr) => {
@@ -645,8 +655,8 @@ export const updateH2h = (group, a, b) => {
 }
 
 export const sortDrawPoolRankings = (pool) => {
-  if (!pool || !pool.final_rankings) return
-  pool.final_rankings.sort((a, b) => {
+  if (!pool || !pool.rankings) return
+  pool.rankings.sort((a, b) => {
     if (a.pts > b.pts) {
       return -1
     } else if (a.pts < b.pts) {
@@ -669,8 +679,8 @@ export const sortDrawPoolRankings = (pool) => {
 }
 
 export const createDrawPools = (group, startingIndex, config) => {
-  if (!group || !group.final_rankings) return
-  group.final_rankings.forEach((fr) => {
+  if (!group || !group.rankings) return
+  group.rankings.forEach((fr) => {
     if (!group.draw_pools) {
       group.draw_pools = []
     }
@@ -707,9 +717,9 @@ export const createDrawPools = (group, startingIndex, config) => {
   group.draw_pools &&
     group.draw_pools.forEach((dp) => {
       if (dp.teams && dp.teams.length === 1) {
-        const _fr = group.final_rankings.find((fr) => fr.id === dp.teams[0].id)
+        const _fr = group.rankings.find((fr) => fr.id === dp.teams[0].id)
         if (_fr !== undefined) {
-          dp.final_rankings = [_fr]
+          dp.rankings = [_fr]
         }
       } else if (dp.teams && dp.teams.length === 2) {
         console.log('dp.teams.length', dp.teams.length)
@@ -717,7 +727,7 @@ export const createDrawPools = (group, startingIndex, config) => {
         calculateGroupRankings(dp.teams, dp, config)
         collectGroupRankings(dp, 2)
         let gd_tied = false
-        dp.final_rankings.sort((a, b) => {
+        dp.rankings.sort((a, b) => {
           return comparePoints(a, b, () => {
             return compareGoalDifference(a, b, true, () => {
               gd_tied = true
@@ -727,7 +737,7 @@ export const createDrawPools = (group, startingIndex, config) => {
             })
           })
         })
-        dp.final_rankings.forEach((fr) => {
+        dp.rankings.forEach((fr) => {
           let allTeamNames = ``
           dp.teams.forEach((t, index) => {
             allTeamNames = `${allTeamNames}${getTeamName(t.id)}${index < dp.teams.length - 2 ? ',' : ''}${index === dp.teams.length - 2 ? ' & ' : ''} `
@@ -744,20 +754,20 @@ export const createDrawPools = (group, startingIndex, config) => {
     })
   group.draw_pools &&
     group.draw_pools.forEach((dp) => {
-      dp.final_rankings &&
-        dp.final_rankings.forEach((fr) => {
-          if (!group.final_rankings2) {
-            group.final_rankings2 = []
+      dp.rankings &&
+        dp.rankings.forEach((fr) => {
+          if (!group.rankings2) {
+            group.rankings2 = []
           }
-          const _fr = group.final_rankings.find((fr2) => fr2.id === fr.id)
+          const _fr = group.rankings.find((fr2) => fr2.id === fr.id)
           if (_fr !== undefined) {
             _fr.h2h_notes = fr.h2h_notes
-            group.final_rankings2.push(_fr)
+            group.rankings2.push(_fr)
           }
         })
     })
-  group.final_rankings = group.final_rankings2
-  group.final_rankings.forEach((t, index) => {
+  group.rankings = group.rankings2
+  group.rankings.forEach((t, index) => {
     if (t) {
       t.r = group.name === 'Semi-finals' || group.name === 'Semi-finals Second Leg' ? startingIndex : index + startingIndex
     }
@@ -765,7 +775,7 @@ export const createDrawPools = (group, startingIndex, config) => {
 }
 
 export const sortGroupRankings = (group, startingIndex, config) => {
-  if (group && group.final_rankings) {
+  if (group && group.rankings) {
     const isGoalRatioTiebreaker = config ? config.isGoalRatioTiebreaker : false
     const isLotGroupPlayoffTiebreaker = config ? config.isLotGroupPlayoffTiebreaker : false
     const isPointsLotTiebreaker = config ? config.isPointsLotTiebreaker : false
@@ -774,7 +784,7 @@ export const sortGroupRankings = (group, startingIndex, config) => {
     if (group.three_way_tied) {
       createDrawPools(group, startingIndex, config)
     } else {
-      group.final_rankings.sort((a, b) => {
+      group.rankings.sort((a, b) => {
         if (group.name === 'Semi-finals' || group.name === 'Semi-finals Second Leg') {
           return getTeamName(a.id) > getTeamName(b.id) ? 1 : -1
         } else if (a.pts > b.pts) {
@@ -844,7 +854,7 @@ export const sortGroupRankings = (group, startingIndex, config) => {
           }
         }
       })
-      group.final_rankings.forEach((t, index) => {
+      group.rankings.forEach((t, index) => {
         if (t) {
           t.r = group.name === 'Semi-finals' || group.name === 'Semi-finals Second Leg' ? startingIndex : index + startingIndex
         }
@@ -860,16 +870,16 @@ export const sortGroupRankings = (group, startingIndex, config) => {
           calculateGroupRankings(p.teams, p, config)
           collectGroupRankings(p, 3)
           sortDrawPoolRankings(p)
-          p.final_rankings.forEach((fr, index) => {
+          p.rankings.forEach((fr, index) => {
             fr.r = index + 1
             fr.h2h_notes = `Teams ${allTeamNames} all tied on points (${fr.pts}) and goal difference (${fr.gd}). Goals >>> ${getTeamName(fr.id)} ${fr.gf}`
           })
         }
       })
-      group.final_rankings.forEach((fr) => {
+      group.rankings.forEach((fr) => {
         const pool = group.draw_pools.find((p) => p.pts === fr.pts)
-        if (pool !== undefined && pool.final_rankings) {
-          const team = pool.final_rankings.find((pfr) => pfr.id === fr.id)
+        if (pool !== undefined && pool.rankings) {
+          const team = pool.rankings.find((pfr) => pfr.id === fr.id)
           if (team !== undefined) {
             fr.r = team.r
             fr.h2h_notes = team.h2h_notes
@@ -911,25 +921,25 @@ export const createGroupFinalRankings = (tournament, group, matchDay, page_exclu
     group.h2h_rankings &&
       group.h2h_rankings.forEach((hr) => {
         if (hr.oppid === group.config.final_standings_excluded) {
-          const _fr = group.final_rankings.find((fr) => fr.id === hr.id)
+          const _fr = group.rankings.find((fr) => fr.id === hr.id)
           excludeRankings(_fr, hr)
         }
       })
   }
   if (tournament.id === 'GC2002' && group.details.name === 'Group D') {
-    group.final_rankings[0].r = 3
-    group.final_rankings[0].h2h_notes = null
-    group.final_rankings[0].draw_lot_notes =
+    group.rankings[0].r = 3
+    group.rankings[0].h2h_notes = null
+    group.rankings[0].draw_lot_notes =
       'Ecuador took 3rd place after finished identical records (points, goal difference and goad forward) with Canada and Haiti.'
-    group.final_rankings[1].r = 1
-    group.final_rankings[1].h2h_notes = null
-    group.final_rankings[1].draw_lot_notes =
+    group.rankings[1].r = 1
+    group.rankings[1].h2h_notes = null
+    group.rankings[1].draw_lot_notes =
       'Canada took 1st place after finished identical records (points, goal difference and goad forward) with Haiti and Ecuador.'
-    group.final_rankings[2].r = 2
-    group.final_rankings[2].h2h_notes = null
-    group.final_rankings[2].draw_lot_notes =
+    group.rankings[2].r = 2
+    group.rankings[2].h2h_notes = null
+    group.rankings[2].draw_lot_notes =
       'Haiti took 2nd place after finished identical records (points, goal difference and goad forward) with Canada and Ecuador.'
-    group.final_rankings.sort((a, b) => {
+    group.rankings.sort((a, b) => {
       if (a.r < b.r) return -1
       else if (a.r > b.r) return 1
       else return 0
@@ -938,18 +948,21 @@ export const createGroupFinalRankings = (tournament, group, matchDay, page_exclu
 }
 
 export const collectGroupRankings = (group, matchDay) => {
+  // console.log('group', group)
   if (!group.teams) return
   group.teams.forEach((team) => {
     if (team.rankings) {
       const md = team.rankings.length <= matchDay ? team.rankings.length : matchDay
       const rankings = team.rankings.find((r) => r.md === md)
-      if (!group.final_rankings) {
+      if (!group.rankings) {
         const newRankings = []
         newRankings.push(rankings)
-        group.final_rankings = newRankings
-        group.config.ranking_type = 'group'
+        group.rankings = newRankings
+        if (group.config) {
+          group.config.ranking_type = 'group'
+        }
       } else {
-        group.final_rankings.push(rankings)
+        group.rankings.push(rankings)
       }
     }
   })
@@ -959,12 +972,12 @@ export const collectGroupRankings = (group, matchDay) => {
     const team2 = group.teams.find((t) => t.id === found.away_team)
     const ranking1 = team1.rankings.find((r) => r.md === matchDay + 1)
     const ranking2 = team2.rankings.find((r) => r.md === matchDay + 1)
-    const final_ranking1 = group.final_rankings.find((fr) => fr.id === found.home_team)
-    const final_ranking2 = group.final_rankings.find((fr) => fr.id === found.away_team)
-    final_ranking1.h2hm = ranking1.h2hm
-    final_ranking2.h2hm = ranking2.h2hm
-    // console.log('final_ranking1', final_ranking1)
-    // console.log('final_ranking2', final_ranking2)
+    const final_ranking1 = group.rankings.find((fr) => fr.id === found.home_team)
+    const final_ranking2 = group.rankings.find((fr) => fr.id === found.away_team)
+    if (!isUndefined(ranking1) && !isUndefined(ranking2)) {
+      final_ranking1.h2hm = ranking1.h2hm
+      final_ranking2.h2hm = ranking2.h2hm
+    }
   }
 }
 
@@ -984,9 +997,9 @@ export const collectH2hRankings = (group) => {
 
 export const collectProgressRankings = (tournament, teams, matchDay) => {
   if (!teams) return
-  if (!tournament || !tournament.progress_rankings || !tournament.progress_rankings.teams) return
+  if (!tournament || !tournament.progress_rankings) return
   teams.forEach((t) => {
-    const team = tournament.progress_rankings.teams.find((t2) => t2.id === t.id)
+    const team = tournament.progress_rankings.find((t2) => t2.id === t.id)
     if (team && team.rankings) {
       const md = team.rankings.length <= matchDay ? team.rankings.length : matchDay
       const rankings = team.rankings.find((r) => r.md === md)
@@ -1002,15 +1015,15 @@ export const collectProgressRankings = (tournament, teams, matchDay) => {
   })
 }
 
-export const collectWildCardRankings = (stage) => {
-  const pos = stage.groups && hasWildCardAdvancement(stage.config) ? stage.config.advancement.teams.wild_card.pos : 3
-  let wildCard = { final_rankings: [], ranking_type: 'wildcard' }
-  stage.groups &&
-    stage.groups.forEach((g) => {
+export const collectWildCardRankings = (round) => {
+  const pos = round.groups && hasWildCardAdvancement(round.config) ? round.config.advancement.teams.wild_card.pos : 3
+  let wildCard = { rankings: [], ranking_type: 'wildcard' }
+  round.groups &&
+    round.groups.forEach((g) => {
       // console.log('g', g)
-      if (isEmpty(g.final_rankings) || g.final_rankings.length < pos) return
-      const wcr = cloneRanking(g.final_rankings.find((fr) => fr.r === pos))
-      wildCard.final_rankings.push(wcr)
+      if (isEmpty(g.rankings) || g.rankings.length < pos) return
+      const wcr = cloneRanking(g.rankings.find((fr) => fr.r === pos))
+      wildCard.rankings.push(wcr)
     })
   sortGroupRankings(wildCard, 1, { noSavingDraws: true })
   return wildCard
@@ -1143,11 +1156,11 @@ const adjustRankingCount = (rankingBundle) => {
 
 export const updateFinalRankings = (round) => {
   if (round.ranking_type !== 'round' && round.ranking_type !== 'alltimeround') return
-  if (!round.final_rankings) return
+  if (!round.rankings) return
   const identicals = []
   const runningIds = []
   const newFinalRankings = []
-  round.final_rankings.forEach((fr) => {
+  round.rankings.forEach((fr) => {
     if (!fr.draws) {
       identicals.push({ ids: [fr.id], rankings: [fr] })
       runningIds.push(fr.id)
@@ -1163,7 +1176,7 @@ export const updateFinalRankings = (round) => {
             const found = i.ids.find((y) => y === fr.id)
             if (found !== undefined) {
               i.ids.push(d)
-              const r2 = round.final_rankings.find((fr2) => fr2.id === d)
+              const r2 = round.rankings.find((fr2) => fr2.id === d)
               i.rankings.push(r2)
             }
           })
@@ -1185,17 +1198,17 @@ export const updateFinalRankings = (round) => {
       newFinalRankings.push(i.rankings)
     }
   })
-  round.final_rankings = newFinalRankings
+  round.rankings = newFinalRankings
 }
 
 export const createSemifinalistsPool = (round) => {
-  if (!round.final_rankings) return
+  if (!round.rankings) return
   let pool = []
-  round.final_rankings.forEach((fr) => {
+  round.rankings.forEach((fr) => {
     pool.push(fr)
   })
-  round.final_rankings = []
-  round.final_rankings.push(pool)
+  round.rankings = []
+  round.rankings.push(pool)
 }
 
 export const cloneRanking = (ranking) => {

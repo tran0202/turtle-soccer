@@ -471,7 +471,7 @@
       "rounds": [
         {
           "name": "Third Qualifying Round",
-          "next_round": "Play-off First Leg",
+          "next_round": "Play-off Round",
           "eliminate_count": 38,
           "bye_teams": [{ "id": "SLP" }, { "id": "RBS" }, { "id": "OLY" }, { "id": "KRA" }],
           "matches": [
@@ -586,7 +586,6 @@
           "round_type": "knockout2legged",
           "eliminate_count": 32,
           "next_round": "Group Stage",
-          "bye_teams": [],
           "pairs": [
             {
               "matches": [

@@ -17,25 +17,25 @@ const updateRankings = (fr1, fr2) => {
 }
 
 const updateSuccessorRankings = (successor_rankings, alltime_rankings) => {
-  successor_rankings.final_rankings.forEach((fr) => {
-    const tmp = alltime_rankings.final_rankings.find((afr) => afr.id === fr.parent_id)
+  successor_rankings.rankings.forEach((fr) => {
+    const tmp = alltime_rankings.rankings.find((afr) => afr.id === fr.parent_id)
     if (tmp) {
       fr.r = tmp.r
     }
     if (isSuccessor(fr.id)) {
-      const tmp2 = alltime_rankings.final_rankings.find((afr) => afr.id === fr.id)
+      const tmp2 = alltime_rankings.rankings.find((afr) => afr.id === fr.id)
       if (tmp2) {
         fr.r = tmp2.r
       }
     }
   })
-  successor_rankings.final_rankings.sort((a, b) => {
+  successor_rankings.rankings.sort((a, b) => {
     return a.r > b.r ? 1 : -1
   })
   successor_rankings.successors = []
   let previousRank = 0
   let tmp_rankings = []
-  successor_rankings.final_rankings.forEach((fr) => {
+  successor_rankings.rankings.forEach((fr) => {
     const currentRank = fr.r
     if (currentRank !== previousRank) {
       tmp_rankings = []
@@ -43,7 +43,7 @@ const updateSuccessorRankings = (successor_rankings, alltime_rankings) => {
       successor_rankings.successors.push({
         r: fr.r,
         name: fr.parent_id ? getTeamName(fr.parent_id) : getTeamName(fr.id),
-        final_rankings: tmp_rankings,
+        rankings: tmp_rankings,
         ranking_type: 'successorround',
       })
     } else {
@@ -71,10 +71,10 @@ const collectRankings = (competition) => {
   const { tournaments } = competition
   if (!tournaments) return
 
-  let final_rankings = []
+  let rankings = []
   let successor_rankings = []
-  let alltimeRankings = { final_rankings, ranking_type: 'alltimeround' }
-  let successorRankings = { final_rankings: successor_rankings, ranking_type: 'alltimeround' }
+  let alltimeRankings = { rankings, ranking_type: 'alltimeround' }
+  let successorRankings = { rankings: successor_rankings, ranking_type: 'alltimeround' }
 
   tournaments.forEach((t) => {
     let _teams = []
@@ -177,15 +177,15 @@ const collectRankings = (competition) => {
         if (fr) {
           const parentTeam = getParentTeam(fr.id)
           const teamId = parentTeam ? parentTeam.id : fr.id
-          const team_fr = final_rankings.find((fr2) => teamId === fr2.id)
+          const team_fr = rankings.find((fr2) => teamId === fr2.id)
           if (!team_fr) {
             if (parentTeam) {
-              final_rankings.push({ ...fr, id: parentTeam.id, children_teams: [{ id: fr.id, year: [fr.year] }] })
+              rankings.push({ ...fr, id: parentTeam.id, children_teams: [{ id: fr.id, year: [fr.year] }] })
               if (isSuccessor(parentTeam.id)) {
                 collectSuccessorRankings(successor_rankings, fr, parentTeam)
               }
             } else {
-              final_rankings.push(fr)
+              rankings.push(fr)
             }
           } else {
             if (parentTeam) {

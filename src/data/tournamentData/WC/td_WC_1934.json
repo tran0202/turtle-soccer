@@ -4,30 +4,30 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [
-        { "id": "ESP-1931-1936" },
-        { "id": "BRA" },
-        { "id": "HUN-1919-1946" },
-        { "id": "EGY-1922-1953" },
-        { "id": "SUI" },
-        { "id": "NED" },
-        { "id": "ITA-1861-1946" },
-        { "id": "USA" },
-        { "id": "TCH" },
-        { "id": "ROU" },
-        { "id": "SWE" },
-        { "id": "ARG" },
-        { "id": "AUT" },
-        { "id": "FRA" },
-        { "id": "GER-1933-1935" },
-        { "id": "BEL" }
-      ],
       "rounds": [
         {
           "name": "Round of 16",
           "short_name": "1/8",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
+          "teams": [
+            { "id": "ESP-1931-1936" },
+            { "id": "BRA" },
+            { "id": "HUN-1919-1946" },
+            { "id": "EGY-1922-1953" },
+            { "id": "SUI" },
+            { "id": "NED" },
+            { "id": "ITA-1861-1946" },
+            { "id": "USA" },
+            { "id": "TCH" },
+            { "id": "ROU" },
+            { "id": "SWE" },
+            { "id": "ARG" },
+            { "id": "AUT" },
+            { "id": "FRA" },
+            { "id": "GER-1933-1935" },
+            { "id": "BEL" }
+          ],
           "matches": [
             {
               "home_team": "ESP-1931-1936",

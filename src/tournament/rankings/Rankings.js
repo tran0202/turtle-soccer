@@ -12,12 +12,12 @@ import {
 } from '../../core/TooltipHelper'
 import { getTeamName, getTeamFlag, isSuccessor } from '../../core/TeamHelper'
 import NumberFormat from 'react-number-format'
-import { isEmpty } from 'lodash'
+import { isEmpty, isUndefined } from 'lodash'
 
 const hasExcludedRankings = (round) => {
-  if (!round || !round.final_rankings) return
+  if (!round || !round.rankings) return
   let tmp = false
-  round.final_rankings.forEach((fr) => {
+  round.rankings.forEach((fr) => {
     if (fr.excluded_last_team) {
       tmp = true
     }
@@ -27,7 +27,6 @@ const hasExcludedRankings = (round) => {
 
 const RankingRowSeparate = (props) => {
   const { round, config } = props
-  // console.log('round', round)
   const roundName = round.name
     ? round.name
         .replace('Fifth-place', 'Consolation Round')
@@ -46,15 +45,16 @@ const RankingRowSeparate = (props) => {
     roundName !== 'Final Second Leg' &&
     roundName !== 'Final Playoff' &&
     roundName !== 'Third-place' &&
-    (roundName !== 'Semi-finals' || (roundName === 'Semi-finals' && round.exception)) &&
+    (roundName !== 'Semi-finals' || (roundName === 'Semi-finals' && !isUndefined(round.exception))) &&
     roundName !== 'Consolation Semi-finals' &&
     roundName !== 'Preliminary Semi-finals' &&
     roundName !== 'Semi-finals Second Leg' &&
     roundName !== 'Playoff First Round' &&
     roundName !== 'Silver medal match' &&
+    roundName !== 'Relegation play-outs' &&
     roundName !== 'Final Round' && (
       <Row className="no-gutters ranking-tbl team-row padding-tb-md text-center">
-        <Col xs="12" className="font-italic gray3">
+        <Col xs="12" className="gray2">
           {round.ranking_type !== 'successorround' && <React.Fragment>{roundName}</React.Fragment>}
           {round.ranking_type === 'successorround' && <div id={`successor_${roundName.replace(/ /g, '_')}`}>{roundName}</div>}
           {hasExcludedRankings(round) && <ExcludedFourthPlaceTooltip target="excludedFourthPlaceTooltip" />}
@@ -98,7 +98,6 @@ export const RankingHead = (props) => {
 const RankingRow2 = (props) => {
   const { row, config } = props
   const { ranking_type } = config
-  // console.log('row', row)
   return (
     <Row className="no-gutters">
       <Col className="col-box-10">{getTeamFlag(row.id, config)}</Col>
@@ -149,6 +148,8 @@ const RankingRow2 = (props) => {
 export const RankingRow = (props) => {
   const { row, config, index } = props
   const { ranking_type, championship_round } = config
+  if (!row) return
+  // console.log('row', row)
   const row_striped = ranking_type === 'group' ? getRowStriped(row, config) : ranking_type === 'wildcard' ? getWildCardRowStriped(row, config) : ''
   const rankColPadding = row.r
     ? ''
@@ -174,7 +175,7 @@ export const RankingRow = (props) => {
   return (
     <Row className={`no-gutters ranking-tbl${top_divider} text-center${row_striped}${gold}${silver}${bronze}`}>
       <Col className={`col-box-5 padding-top-md ${rankColPadding}`}>
-        {row.r ? row.r : row[0].r}
+        {row.r ? row.r : row[0] ? row[0].r : '0'}
         {ranking_type === 'successorround' && index === 0 && `a`}
         {ranking_type === 'successorround' && index === 1 && `b`}
         {ranking_type === 'successorround' && index === 2 && `c`}
@@ -186,7 +187,7 @@ export const RankingRow = (props) => {
       </Col>
       <Col className="ranking-row col-box-95 padding-tb-md">
         {row.r && <RankingRow2 row={row} config={config} />}
-        {!row.r && row.map((r) => <RankingRow2 row={r} config={config} key={r.id} />)}
+        {!row.r && row.length > 0 && row.map((r) => <RankingRow2 row={r} config={config} key={r.id} />)}
       </Col>
     </Row>
   )
@@ -194,8 +195,9 @@ export const RankingRow = (props) => {
 
 const RankingRound = (props) => {
   const { round, config } = props
+  // console.log('round', round)
   const rankingType = !isEmpty(round.config) ? round.config.ranking_type : round.ranking_type
-  const rankingRowConfig = { ...config, ranking_type: rankingType }
+  const rankingRowConfig = { ...config, ranking_type: rankingType, ...round.config }
   updateFinalRankings(round)
   if (config.no_third_place && (round.name === 'Semi-finals' || round.name === 'Semi-finals Second Leg')) {
     createSemifinalistsPool(round)
@@ -203,7 +205,7 @@ const RankingRound = (props) => {
   return (
     <React.Fragment>
       <RankingRowSeparate round={round} config={config} />
-      {round.final_rankings && round.final_rankings.map((r, index) => <RankingRow row={r} config={rankingRowConfig} index={index} key={index} />)}
+      {!isEmpty(round.rankings) && round.rankings.map((r, index) => <RankingRow row={r} config={rankingRowConfig} index={index} key={index} />)}
     </React.Fragment>
   )
 }

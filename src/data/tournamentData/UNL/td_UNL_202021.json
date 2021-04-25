@@ -1951,11 +1951,8 @@
         },
         {
           "name": "Relegation play-outs",
-          "type": "knockout2legged",
-          "rounds": [
-            { "name": "Relegation First Leg", "round_type": "firstleg", "next_round": "Relegation Second Leg", "matches": [] },
-            { "name": "Relegation Second Leg", "round_type": "secondleg", "matches": [] }
-          ]
+          "type": "knockout",
+          "rounds": [{ "name": "Relegation play-outs", "round_type": "knockout2legged", "matches": [] }]
         }
       ]
     },
