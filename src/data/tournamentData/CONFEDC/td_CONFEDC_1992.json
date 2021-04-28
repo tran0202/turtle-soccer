@@ -4,13 +4,13 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [{ "id": "USA" }, { "id": "KSA" }, { "id": "ARG" }, { "id": "CIV" }],
       "rounds": [
         {
           "name": "Semi-finals",
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
+          "teams": [{ "id": "USA" }, { "id": "KSA" }, { "id": "ARG" }, { "id": "CIV" }],
           "matches": [
             {
               "home_team": "USA",

@@ -4,13 +4,13 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [{ "id": "FRA" }, { "id": "YUG-1945-1992" }, { "id": "TCH" }, { "id": "URS" }],
       "rounds": [
         {
           "name": "Semi-finals",
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
+          "teams": [{ "id": "FRA" }, { "id": "YUG-1945-1992" }, { "id": "TCH" }, { "id": "URS" }],
           "matches": [
             {
               "home_team": "FRA",

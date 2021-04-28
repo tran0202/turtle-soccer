@@ -5,29 +5,29 @@
       "name": "Knockout Stage",
       "type": "knockout",
       "consolation_round": true,
-      "teams": [
-        { "id": "TCH_U23MNT" },
-        { "id": "YUG-1918-1929_U23MNT" },
-        { "id": "ESP-1875-1931_U23MNT" },
-        { "id": "DEN_U23MNT" },
-        { "id": "ITA-1861-1946_U23MNT" },
-        { "id": "EGY-1914-1922_U23MNT" },
-        { "id": "NOR_U23MNT" },
-        { "id": "GBR_U23MNT" },
-        { "id": "NED_U23MNT" },
-        { "id": "LUX_U23MNT" },
-        { "id": "SWE_U23MNT" },
-        { "id": "GRE_U23MNT" },
-        { "id": "BEL_U23MNT" },
-        { "id": "POL_U23MNT" },
-        { "id": "FRA_U23MNT" }
-      ],
       "rounds": [
         {
           "name": "First Round",
           "short_name": "1/8",
           "eliminate_count": 7,
           "next_round": "Quarter-finals",
+          "teams": [
+            { "id": "TCH_U23MNT" },
+            { "id": "YUG-1918-1929_U23MNT" },
+            { "id": "ESP-1875-1931_U23MNT" },
+            { "id": "DEN_U23MNT" },
+            { "id": "ITA-1861-1946_U23MNT" },
+            { "id": "EGY-1914-1922_U23MNT" },
+            { "id": "NOR_U23MNT" },
+            { "id": "GBR_U23MNT" },
+            { "id": "NED_U23MNT" },
+            { "id": "LUX_U23MNT" },
+            { "id": "SWE_U23MNT" },
+            { "id": "GRE_U23MNT" },
+            { "id": "BEL_U23MNT" },
+            { "id": "POL_U23MNT" },
+            { "id": "FRA_U23MNT" }
+          ],
           "bye_teams": [{ "id": "FRA_U23MNT" }, { "id": "BEL_U23MNT" }],
           "matches": [
             {
@@ -207,6 +207,24 @@
           ]
         },
         {
+          "name": "Playoff Second Round",
+          "short_name": "Po2",
+          "consolation_notes": "Winner will face Netherlands for the silver medal",
+          "next_round": "Silver medal match",
+          "matches": [
+            {
+              "home_team": "ITA-1861-1946_U23MNT",
+              "away_team": "ESP-1875-1931_U23MNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "1920-09-02",
+              "time": "12:00",
+              "stadium": "Olympic Stadium",
+              "city": "Antwerp"
+            }
+          ]
+        },
+        {
           "name": "Semi-finals",
           "short_name": "1/2",
           "eliminate_count": 2,
@@ -237,18 +255,16 @@
           ]
         },
         {
-          "name": "Playoff Second Round",
-          "short_name": "Po2",
-          "consolation_notes": "Winner will face Netherlands for the silver medal",
-          "next_round": "Silver medal match",
+          "name": "Silver medal match",
+          "short_name": "2nd",
           "matches": [
             {
-              "home_team": "ITA-1861-1946_U23MNT",
-              "away_team": "ESP-1875-1931_U23MNT",
-              "home_score": 0,
-              "away_score": 2,
-              "date": "1920-09-02",
-              "time": "12:00",
+              "home_team": "ESP-1875-1931_U23MNT",
+              "away_team": "NED_U23MNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "1920-09-05",
+              "time": "15:00",
               "stadium": "Olympic Stadium",
               "city": "Antwerp"
             }
@@ -267,22 +283,6 @@
               "disqualified_notes": "Czechoslovakia walked off the field in the 40th minute to protest the officiating",
               "date": "1920-09-02",
               "time": "17:30",
-              "stadium": "Olympic Stadium",
-              "city": "Antwerp"
-            }
-          ]
-        },
-        {
-          "name": "Silver medal match",
-          "short_name": "2nd",
-          "matches": [
-            {
-              "home_team": "ESP-1875-1931_U23MNT",
-              "away_team": "NED_U23MNT",
-              "home_score": 3,
-              "away_score": 1,
-              "date": "1920-09-05",
-              "time": "15:00",
               "stadium": "Olympic Stadium",
               "city": "Antwerp"
             }

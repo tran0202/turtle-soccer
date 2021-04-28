@@ -142,5 +142,5 @@ export const getBracketTeamCode = (id, config) => {
 
 export const isSuccessor = (id) => {
   const team = getTeamArray().find((t) => t.id === id)
-  return !team.successor ? false : team.successor
+  return !team || !team.successor ? false : team.successor
 }

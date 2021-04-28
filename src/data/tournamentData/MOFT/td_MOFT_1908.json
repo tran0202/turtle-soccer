@@ -4,22 +4,22 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [
-        { "id": "DEN_U23MNT" },
-        { "id": "FRA-B_U23MNT" },
-        { "id": "GBR_U23MNT" },
-        { "id": "SWE_U23MNT" },
-        { "id": "NED_U23MNT" },
-        { "id": "FRA_U23MNT" },
-        { "id": "HUN-1867-1918_U23MNT" },
-        { "id": "BOH_U23MNT" }
-      ],
       "rounds": [
         {
           "name": "First Round",
           "short_name": "1/4",
           "eliminate_count": 4,
           "next_round": "Semi-finals",
+          "teams": [
+            { "id": "DEN_U23MNT" },
+            { "id": "FRA-B_U23MNT" },
+            { "id": "GBR_U23MNT" },
+            { "id": "SWE_U23MNT" },
+            { "id": "NED_U23MNT" },
+            { "id": "FRA_U23MNT" },
+            { "id": "HUN-1867-1918_U23MNT" },
+            { "id": "BOH_U23MNT" }
+          ],
           "matches": [
             {
               "home_team": "NED_U23MNT",

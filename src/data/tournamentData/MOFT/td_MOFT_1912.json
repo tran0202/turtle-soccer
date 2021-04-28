@@ -5,19 +5,6 @@
       "name": "Knockout Stage",
       "type": "knockout",
       "consolation_round": true,
-      "teams": [
-        { "id": "FIN-1809-1917_U23MNT" },
-        { "id": "ITA-1861-1946_U23MNT" },
-        { "id": "AUT-1918_U23MNT" },
-        { "id": "GER-1866-1918_U23MNT" },
-        { "id": "SWE_U23MNT" },
-        { "id": "NED_U23MNT" },
-        { "id": "RUS_U23MNT" },
-        { "id": "GBR_U23MNT" },
-        { "id": "HUN-1867-1918_U23MNT" },
-        { "id": "DEN_U23MNT" },
-        { "id": "NOR_U23MNT" }
-      ],
       "rounds": [
         {
           "name": "First Round",
@@ -25,6 +12,19 @@
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
           "next_consolation_round": "Consolation First Round",
+          "teams": [
+            { "id": "FIN-1809-1917_U23MNT" },
+            { "id": "ITA-1861-1946_U23MNT" },
+            { "id": "AUT-1918_U23MNT" },
+            { "id": "GER-1866-1918_U23MNT" },
+            { "id": "SWE_U23MNT" },
+            { "id": "NED_U23MNT" },
+            { "id": "RUS_U23MNT" },
+            { "id": "GBR_U23MNT" },
+            { "id": "HUN-1867-1918_U23MNT" },
+            { "id": "DEN_U23MNT" },
+            { "id": "NOR_U23MNT" }
+          ],
           "matches": [
             { "home_team": "GBR_U23MNT", "away_team": "", "home_bye": true, "date": "1912-06-28", "bracket_order": 1 },
             { "home_team": "HUN-1867-1918_U23MNT", "away_team": "", "home_bye": true, "date": "1912-06-28", "bracket_order": 2 },
@@ -227,6 +227,22 @@
           ]
         },
         {
+          "name": "Fifth-place",
+          "short_name": "5th",
+          "matches": [
+            {
+              "home_team": "HUN-1867-1918_U23MNT",
+              "away_team": "AUT-1918_U23MNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "1912-07-05",
+              "time": "19:00",
+              "stadium": "Tranebergs Idrottsplats",
+              "city": "Stockholm"
+            }
+          ]
+        },
+        {
           "name": "Third-place",
           "short_name": "3rd",
           "matches": [
@@ -254,22 +270,6 @@
               "date": "1912-07-04",
               "time": "19:00",
               "stadium": "Olympic Stadium",
-              "city": "Stockholm"
-            }
-          ]
-        },
-        {
-          "name": "Fifth-place",
-          "short_name": "5th",
-          "matches": [
-            {
-              "home_team": "HUN-1867-1918_U23MNT",
-              "away_team": "AUT-1918_U23MNT",
-              "home_score": 3,
-              "away_score": 0,
-              "date": "1912-07-05",
-              "time": "19:00",
-              "stadium": "Tranebergs Idrottsplats",
               "city": "Stockholm"
             }
           ]

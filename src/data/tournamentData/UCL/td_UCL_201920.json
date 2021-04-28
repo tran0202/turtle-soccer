@@ -4,13 +4,13 @@
     {
       "name": "Preliminary Round",
       "type": "knockout",
-      "teams": [{ "id": "TRP" }, { "id": "SAC" }, { "id": "FRN" }, { "id": "LRI" }],
       "rounds": [
         {
           "name": "Preliminary Semi-finals",
           "short_name": "1/2P",
           "eliminate_count": 77,
           "next_round": "Preliminary Final",
+          "teams": [{ "id": "TRP" }, { "id": "SAC" }, { "id": "FRN" }, { "id": "LRI" }],
           "matches": [
             {
               "home_team": "TRP",

@@ -4,13 +4,13 @@
     {
       "name": "Final tournament",
       "type": "knockout",
-      "teams": [{ "id": "SDN-1956-1970" }, { "id": "EGY-1953-1958" }, { "id": "ETH-1941-1974" }, { "id": "RSA-1928-1957" }],
       "rounds": [
         {
           "name": "Semi-finals",
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
+          "teams": [{ "id": "SDN-1956-1970" }, { "id": "EGY-1953-1958" }, { "id": "ETH-1941-1974" }, { "id": "RSA-1928-1957" }],
           "matches": [
             {
               "home_team": "SDN-1956-1970",

@@ -4,30 +4,30 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [
-        { "id": "ITA-1861-1946_U23MNT" },
-        { "id": "USA_U23MNT" },
-        { "id": "NOR_U23MNT" },
-        { "id": "TUR_U23MNT" },
-        { "id": "JPN_U23MNT" },
-        { "id": "SWE_U23MNT" },
-        { "id": "GER-1935-1945_U23MNT" },
-        { "id": "LUX_U23MNT" },
-        { "id": "POL_U23MNT" },
-        { "id": "HUN-1919-1946_U23MNT" },
-        { "id": "AUT_U23MNT" },
-        { "id": "EGY-1922-1953_U23MNT" },
-        { "id": "PER_U23MNT" },
-        { "id": "FIN_U23MNT" },
-        { "id": "GBR_U23MNT" },
-        { "id": "TPE-1924-1949_U23MNT" }
-      ],
       "rounds": [
         {
           "name": "First Round",
           "short_name": "1/8",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
+          "teams": [
+            { "id": "ITA-1861-1946_U23MNT" },
+            { "id": "USA_U23MNT" },
+            { "id": "NOR_U23MNT" },
+            { "id": "TUR_U23MNT" },
+            { "id": "JPN_U23MNT" },
+            { "id": "SWE_U23MNT" },
+            { "id": "GER-1935-1945_U23MNT" },
+            { "id": "LUX_U23MNT" },
+            { "id": "POL_U23MNT" },
+            { "id": "HUN-1919-1946_U23MNT" },
+            { "id": "AUT_U23MNT" },
+            { "id": "EGY-1922-1953_U23MNT" },
+            { "id": "PER_U23MNT" },
+            { "id": "FIN_U23MNT" },
+            { "id": "GBR_U23MNT" },
+            { "id": "TPE-1924-1949_U23MNT" }
+          ],
           "matches": [
             {
               "home_team": "ITA-1861-1946_U23MNT",

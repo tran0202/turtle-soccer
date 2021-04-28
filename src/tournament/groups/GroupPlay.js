@@ -5,7 +5,6 @@ import { Collapse, Row, Col, Button } from 'reactstrap'
 
 const GroupCollapse = (props) => {
   const { group, config } = props
-  // console.log('config', config)
   const matchArray = getRoundMatches(group, true)
   const [collapse, setCollapse] = useState(false)
   const [status, setStatus] = useState('Closed')
@@ -52,6 +51,7 @@ const GroupCollapse = (props) => {
 
 const GroupPlay = (props) => {
   const { group, config } = props
+  // console.log('group', group)
   return (
     <React.Fragment>
       <GroupCollapse group={group} config={config} />

@@ -4,25 +4,25 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [
-        { "id": "URS_U23MNT" },
-        { "id": "GER-1956-1968_U23MNT" },
-        { "id": "GBR_U23MNT" },
-        { "id": "THA_U23MNT" },
-        { "id": "AUS_U23MNT" },
-        { "id": "JPN_U23MNT" },
-        { "id": "YUG-1945-1992_U23MNT" },
-        { "id": "USA_U23MNT" },
-        { "id": "IDN_U23MNT" },
-        { "id": "BUL-1948-1967_U23MNT" },
-        { "id": "IND_U23MNT" }
-      ],
       "rounds": [
         {
           "name": "First Round",
           "short_name": "1/8",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
+          "teams": [
+            { "id": "URS_U23MNT" },
+            { "id": "GER-1956-1968_U23MNT" },
+            { "id": "GBR_U23MNT" },
+            { "id": "THA_U23MNT" },
+            { "id": "AUS_U23MNT" },
+            { "id": "JPN_U23MNT" },
+            { "id": "YUG-1945-1992_U23MNT" },
+            { "id": "USA_U23MNT" },
+            { "id": "IDN_U23MNT" },
+            { "id": "BUL-1948-1967_U23MNT" },
+            { "id": "IND_U23MNT" }
+          ],
           "matches": [
             {
               "home_team": "BUL-1948-1967_U23MNT",

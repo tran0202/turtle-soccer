@@ -4,13 +4,13 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [{ "id": "TCH" }, { "id": "NED" }, { "id": "YUG-1945-1992" }, { "id": "GER-1949-1990" }],
       "rounds": [
         {
           "name": "Semi-finals",
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
+          "teams": [{ "id": "TCH" }, { "id": "NED" }, { "id": "YUG-1945-1992" }, { "id": "GER-1949-1990" }],
           "matches": [
             {
               "home_team": "TCH",

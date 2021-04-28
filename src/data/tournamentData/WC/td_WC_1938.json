@@ -4,30 +4,30 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [
-        { "id": "SUI" },
-        { "id": "GER-1935-1945" },
-        { "id": "HUN-1919-1946" },
-        { "id": "INH" },
-        { "id": "SWE" },
-        { "id": "AUT" },
-        { "id": "CUB" },
-        { "id": "ROU" },
-        { "id": "FRA" },
-        { "id": "BEL" },
-        { "id": "ITA-1861-1946" },
-        { "id": "NOR" },
-        { "id": "BRA" },
-        { "id": "POL" },
-        { "id": "TCH" },
-        { "id": "NED" }
-      ],
       "rounds": [
         {
           "name": "Round of 16",
           "short_name": "1/8",
           "eliminate_count": 8,
           "next_round": "Quarter-finals",
+          "teams": [
+            { "id": "SUI" },
+            { "id": "GER-1935-1945" },
+            { "id": "HUN-1919-1946" },
+            { "id": "INH" },
+            { "id": "SWE" },
+            { "id": "AUT" },
+            { "id": "CUB" },
+            { "id": "ROU" },
+            { "id": "FRA" },
+            { "id": "BEL" },
+            { "id": "ITA-1861-1946" },
+            { "id": "NOR" },
+            { "id": "BRA" },
+            { "id": "POL" },
+            { "id": "TCH" },
+            { "id": "NED" }
+          ],
           "matches": [
             {
               "home_team": "SUI",

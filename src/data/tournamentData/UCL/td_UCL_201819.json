@@ -5,13 +5,13 @@
       "name": "Preliminary Round",
       "type": "knockout",
       "default": true,
-      "teams": [{ "id": "SAC" }, { "id": "DRI" }, { "id": "LFI" }, { "id": "LRI" }],
       "rounds": [
         {
           "name": "Preliminary Semi-finals",
           "short_name": "1/2P",
           "eliminate_count": 77,
           "next_round": "Preliminary Final",
+          "teams": [{ "id": "SAC" }, { "id": "DRI" }, { "id": "LFI" }, { "id": "LRI" }],
           "matches": [
             {
               "home_team": "SAC",

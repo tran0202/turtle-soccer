@@ -4,31 +4,13 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
-      "teams": [
-        { "id": "POR_U23MNT" },
-        { "id": "CHI_U23MNT" },
-        { "id": "BEL_U23MNT" },
-        { "id": "LUX_U23MNT" },
-        { "id": "GER_U23MNT" },
-        { "id": "SUI_U23MNT" },
-        { "id": "EGY-1922-1953_U23MNT" },
-        { "id": "TUR_U23MNT" },
-        { "id": "ITA-1861-1946_U23MNT" },
-        { "id": "FRA_U23MNT" },
-        { "id": "YUG-1918-1929_U23MNT" },
-        { "id": "ARG_U23MNT" },
-        { "id": "USA_U23MNT" },
-        { "id": "ESP-1875-1931_U23MNT" },
-        { "id": "MEX-1916-1934_U23MNT" },
-        { "id": "NED_U23MNT" },
-        { "id": "URU_U23MNT" }
-      ],
       "rounds": [
         {
           "name": "Preliminary Round",
           "short_name": "1/16",
           "eliminate_count": 16,
           "next_round": "First Round",
+          "teams": [{ "id": "POR_U23MNT" }, { "id": "CHI_U23MNT" }],
           "bye_teams": [
             { "id": "BEL_U23MNT" },
             { "id": "LUX_U23MNT" },

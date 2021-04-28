@@ -832,8 +832,10 @@ export const setGroupDetails = (g) => {
 
 export const setGroupConfig = (g) => {
   g.config = {
+    advancement: g.advancement || {},
     final_standings_excluded: g.final_standings_excluded || '',
   }
+  delete g.advancement
   delete g.final_standings_excluded
 }
 

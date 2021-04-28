@@ -12,7 +12,7 @@ import {
 } from '../../core/TooltipHelper'
 import { getTeamName, getTeamFlag, isSuccessor } from '../../core/TeamHelper'
 import NumberFormat from 'react-number-format'
-import { isEmpty, isUndefined } from 'lodash'
+import { isEmpty } from 'lodash'
 
 const hasExcludedRankings = (round) => {
   if (!round || !round.rankings) return
@@ -27,6 +27,7 @@ const hasExcludedRankings = (round) => {
 
 const RankingRowSeparate = (props) => {
   const { round, config } = props
+  const exception = config.id === 'MOFT1908' && round.details.name === 'Semi-finals'
   const roundName = round.name
     ? round.name
         .replace('Fifth-place', 'Consolation Round')
@@ -45,7 +46,7 @@ const RankingRowSeparate = (props) => {
     roundName !== 'Final Second Leg' &&
     roundName !== 'Final Playoff' &&
     roundName !== 'Third-place' &&
-    (roundName !== 'Semi-finals' || (roundName === 'Semi-finals' && !isUndefined(round.exception))) &&
+    (roundName !== 'Semi-finals' || (roundName === 'Semi-finals' && exception)) &&
     roundName !== 'Consolation Semi-finals' &&
     roundName !== 'Preliminary Semi-finals' &&
     roundName !== 'Semi-finals Second Leg' &&
@@ -147,9 +148,9 @@ const RankingRow2 = (props) => {
 
 export const RankingRow = (props) => {
   const { row, config, index } = props
+  // console.log('config', config)
   const { ranking_type, championship_round } = config
   if (!row) return
-  // console.log('row', row)
   const row_striped = ranking_type === 'group' ? getRowStriped(row, config) : ranking_type === 'wildcard' ? getWildCardRowStriped(row, config) : ''
   const rankColPadding = row.r
     ? ''
@@ -195,9 +196,11 @@ export const RankingRow = (props) => {
 
 const RankingRound = (props) => {
   const { round, config } = props
-  // console.log('round', round)
-  const rankingType = !isEmpty(round.config) ? round.config.ranking_type : round.ranking_type
-  const rankingRowConfig = { ...config, ranking_type: rankingType, ...round.config }
+  const rankingType = !isEmpty(round.config) && round.config.ranking_type ? round.config.ranking_type : round.ranking_type
+  const rankingRowConfig = !isEmpty(round.config.advancement)
+    ? { ...config, ranking_type: rankingType, ...round.config }
+    : { ...round.config, ...config, ranking_type: rankingType }
+  // console.log('rankingRowConfig', rankingRowConfig)
   updateFinalRankings(round)
   if (config.no_third_place && (round.name === 'Semi-finals' || round.name === 'Semi-finals Second Leg')) {
     createSemifinalistsPool(round)
