@@ -2,7 +2,7 @@ import React from 'react'
 import Rankings from './Rankings'
 import { isSharedBronze, calculateAggregateScore } from '../matches/MatchHelper'
 import { getTeamName } from '../../core/TeamHelper'
-import { isWinner, collectMdMatches } from '../../core/Helper'
+import { isWinner, collectPairMatches, collectFirstLegMatches } from '../../core/Helper'
 import {
   hasWildCardAdvancement,
   collectWildCardRankings,
@@ -33,6 +33,10 @@ const isRoundRobinRound = (round) => {
 
 const isKnockoutRound = (round) => {
   return !isRoundRobinRound(round)
+}
+
+const hasThirdPlaceRound = (tournament) => {
+  return !isUndefined(tournament.final_rankings.find((r) => r.name === 'Third-place'))
 }
 
 const prepRoundRankings = (tournament) => {
@@ -89,6 +93,19 @@ const initKnockoutRankings = (tournament, round) => {
   if (!isEmpty(rankings)) {
     at_round.rankings = at_round.rankings.concat(rankings)
   }
+}
+
+const calculateRoundRankings = (tournament, round, config) => {
+  calculateAggregateScore(round)
+  collectPairMatches(round)
+  calculateKnockoutRankings(tournament, round, config)
+}
+
+const eliminateRoundTeams = (tournament, round) => {
+  collectFirstLegMatches(round)
+  eliminateKnockoutTeams(tournament, round)
+  const fr_round = findRoundFinalRankings(tournament, round.details.name)
+  sortGroupRankings(fr_round, parseInt(fr_round.config.eliminate_count) + 1, null)
 }
 
 const eliminateGroupTeams = (tournament, round, group) => {
@@ -239,29 +256,17 @@ const advanceKnockoutTeams = (tournament, round) => {
       // console.log('home_ranking', home_ranking)
       const next_round = findRoundAdvancedTeams(tournament, round.config.next_round)
       if (isWinner('H', m)) {
-        if (!next_round) {
-          tournament.advanced_teams.push({ name: round.config.next_round, ranking_type: 'round', rankings: [home_ranking] })
-        } else {
-          next_round.rankings.push(home_ranking)
-        }
+        next_round.rankings.push(home_ranking)
       } else if (isWinner('A', m)) {
-        if (!next_round) {
-          tournament.advanced_teams.push({ name: round.config.next_round, ranking_type: 'round', rankings: [away_ranking] })
-        } else {
-          next_round.rankings.push(away_ranking)
-        }
+        next_round.rankings.push(away_ranking)
       } else if (m.match_postponed) {
-        if (!next_round) {
-          tournament.advanced_teams.push({ name: round.config.next_round, ranking_type: 'round', rankings: [home_ranking, away_ranking] })
-        } else {
-          next_round.rankings.push(home_ranking, away_ranking)
-        }
+        next_round.rankings.push(home_ranking, away_ranking)
       }
     })
 }
 
 const advanceThirdPlaceTeams = (tournament, round) => {
-  if (round.details.name !== 'Semi-finals') return
+  if (round.details.name !== 'Semi-finals' || !hasThirdPlaceRound(tournament)) return
   const at_round = findRoundAdvancedTeams(tournament, 'Semi-finals')
   round.matches &&
     round.matches.forEach((m) => {
@@ -380,10 +385,11 @@ const createFinalRankings = (tournament, round) => {
     round.details.name !== 'Fifth-place'
   )
     return
+  // console.log('round', round)
   const at_round = findRoundAdvancedTeams(tournament, round.details.name)
   const fr_round = findRoundFinalRankings(tournament, round.details.name)
   if (round.matches && at_round) {
-    const m = round.matches[round.matches.length - 1]
+    const m = round.config.round_type === 'knockout' ? round.matches[round.matches.length - 1] : round.matches.find((m) => m.match_type === 'firstleg')
     if (m) {
       let home_ranking = findTeam(at_round.rankings, m.home_team)
       let away_ranking = findTeam(at_round.rankings, m.away_team)
@@ -438,8 +444,8 @@ const createFinalRankings = (tournament, round) => {
 const filterRoundRankings = (tournament) => {
   tournament.final_rankings.reverse()
   const exception = tournament.id === 'MOFT1908'
-  const hasThirdPlaceRound = !isUndefined(tournament.final_rankings.find((r) => r.name === 'Third-place'))
-  let filteredRounds = hasThirdPlaceRound && !exception ? tournament.final_rankings.filter((r) => r.name !== 'Semi-finals') : tournament.final_rankings
+  let filteredRounds =
+    hasThirdPlaceRound(tournament) && !exception ? tournament.final_rankings.filter((r) => r.name !== 'Semi-finals') : tournament.final_rankings
   if (filteredRounds.find((r) => r.name === 'Consolation First Round' || r.name === 'Consolation Semi-finals' || r.name === 'Playoff First Round')) {
     filteredRounds = filteredRounds.filter((r) => r.name !== 'Quarter-finals')
   }
@@ -457,9 +463,9 @@ const FinalStandings = (props) => {
   prepRoundRankings(tournament)
   tournament &&
     tournament.final_rankings.reverse().forEach((r) => {
-      let fr_round = findRoundFinalRankings(tournament, r.details.name)
       if (isRoundRobinRound(r)) {
         switch (r.details.name) {
+          case 'Group allocation matches':
           case 'First Round': // WC1950
           case 'Second Round':
           case 'Final Round':
@@ -509,31 +515,28 @@ const FinalStandings = (props) => {
             console.log('r.details.name', r.details.name)
             advanceByeTeams(tournament, r)
             initKnockoutRankings(tournament, r)
-            calculateKnockoutRankings(tournament, r, config)
-            eliminateKnockoutTeams(tournament, r)
-            sortGroupRankings(fr_round, parseInt(fr_round.config.eliminate_count) + 1, null)
+            calculateRoundRankings(tournament, r, config)
+            eliminateRoundTeams(tournament, r)
             advanceKnockoutTeams(tournament, r)
             break
           case 'Semi-finals':
             console.log('r.details.name', r.details.name)
             initKnockoutRankings(tournament, r)
-            calculateKnockoutRankings(tournament, r, config)
-            eliminateKnockoutTeams(tournament, r)
-            fr_round = findRoundFinalRankings(tournament, r.details.name)
-            sortGroupRankings(fr_round, parseInt(fr_round.config.eliminate_count) + 1, null)
+            calculateRoundRankings(tournament, r, config)
+            eliminateRoundTeams(tournament, r)
             advanceThirdPlaceTeams(tournament, r)
             advanceKnockoutTeams(tournament, r)
             processSemifinalMOFT1908Exception(tournament)
             break
           case 'Playoff Second Round':
             console.log('r.details.name', r.details.name)
-            calculateKnockoutRankings(tournament, r, config)
+            calculateRoundRankings(tournament, r, config)
             createFinalRankings(tournament, r)
             advanceSilverMedalTeams(tournament, r)
             break
           case 'Silver medal match':
             console.log('r.details.name', r.details.name)
-            calculateKnockoutRankings(tournament, r, config)
+            calculateRoundRankings(tournament, r, config)
             createSilverMedalRankings(tournament, r)
             break
           case 'Fifth-place':
@@ -541,7 +544,7 @@ const FinalStandings = (props) => {
           case 'Final':
           case 'Final Playoff':
             console.log('r.details.name', r.details.name)
-            calculateKnockoutRankings(tournament, r, config)
+            calculateRoundRankings(tournament, r, config)
             createFinalRankings(tournament, r)
             processFinalPlayoffCOPA1922Exception(tournament)
             break

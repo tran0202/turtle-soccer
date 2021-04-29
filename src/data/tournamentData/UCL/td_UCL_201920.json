@@ -1156,14 +1156,14 @@
             {
               "matches": [
                 {
-                  "home_team": "PAO",
-                  "away_team": "SPM",
-                  "home_score": 3,
+                  "home_team": "BAS",
+                  "away_team": "LIN",
+                  "home_score": 1,
                   "away_score": 2,
-                  "date": "2018-08-08",
-                  "time": "19:00",
-                  "stadium": "Toumba Stadium",
-                  "city": "Thessaloniki",
+                  "date": "2019-08-07",
+                  "time": "20:00",
+                  "stadium": "St. Jakob-Park",
+                  "city": "Basel",
                   "path": "League",
                   "match_type": "firstleg"
                 },

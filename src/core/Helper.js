@@ -177,18 +177,33 @@ export const reorderBracketPairs = (pairs) => {
   return pairs
 }
 
-// export const collectPairMatches = (round) => {
-//   if (!round || !round.pairs) return []
-//   const matches = []
-//   round.pairs.forEach((p) => {
-//     p &&
-//       p.matches &&
-//       p.matches.forEach((m) => {
-//         matches.push(m)
-//       })
-//   })
-//   round.matches = matches
-// }
+export const collectPairMatches = (round) => {
+  if (!round || !round.pairs) return []
+  const matches = []
+  round.pairs.forEach((p) => {
+    p &&
+      p.matches &&
+      p.matches.forEach((m) => {
+        matches.push(m)
+      })
+  })
+  round.matches = matches
+}
+
+export const collectFirstLegMatches = (round) => {
+  if (!round || !round.pairs) return []
+  const matches = []
+  round.pairs.forEach((p) => {
+    p &&
+      p.matches &&
+      p.matches.forEach((m) => {
+        if (m.match_type === 'firstleg') {
+          matches.push(m)
+        }
+      })
+  })
+  round.matches = matches
+}
 
 export const collectMdMatches = (group) => {
   let matches = []

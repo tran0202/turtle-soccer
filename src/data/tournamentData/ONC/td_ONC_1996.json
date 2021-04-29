@@ -4,7 +4,6 @@
     {
       "name": "Final Tournament",
       "type": "knockout",
-      "teams": [{ "id": "NZL" }, { "id": "AUS" }, { "id": "SOL" }, { "id": "TAH" }],
       "rounds": [
         {
           "name": "Semi-finals",
@@ -12,6 +11,7 @@
           "round_type": "knockout2legged",
           "eliminate_count": 2,
           "next_round": "Final",
+          "teams": [{ "id": "NZL" }, { "id": "AUS" }, { "id": "SOL" }, { "id": "TAH" }],
           "pairs": [
             {
               "matches": [

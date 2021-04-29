@@ -85,7 +85,7 @@ const accumulateRanking2 = (team, match, config) => {
       team.fp = (team.fp ? team.fp : 0) + match.away_fair_pts
     }
   }
-  team.h2hm.push(match)
+  team.h2hm && team.h2hm.push(match)
 }
 
 const accumulateRanking = (team, match, config) => {

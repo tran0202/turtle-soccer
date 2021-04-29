@@ -148,7 +148,7 @@ const RankingRow2 = (props) => {
 
 export const RankingRow = (props) => {
   const { row, config, index } = props
-  // console.log('config', config)
+  // console.log('row', row)
   const { ranking_type, championship_round } = config
   if (!row) return
   const row_striped = ranking_type === 'group' ? getRowStriped(row, config) : ranking_type === 'wildcard' ? getWildCardRowStriped(row, config) : ''
@@ -200,11 +200,11 @@ const RankingRound = (props) => {
   const rankingRowConfig = !isEmpty(round.config.advancement)
     ? { ...config, ranking_type: rankingType, ...round.config }
     : { ...round.config, ...config, ranking_type: rankingType }
-  // console.log('rankingRowConfig', rankingRowConfig)
   updateFinalRankings(round)
   if (config.no_third_place && (round.name === 'Semi-finals' || round.name === 'Semi-finals Second Leg')) {
     createSemifinalistsPool(round)
   }
+  // console.log('round.rankings', round.rankings)
   return (
     <React.Fragment>
       <RankingRowSeparate round={round} config={config} />
