@@ -34,9 +34,7 @@ const calculateStageRankings = (tournament, stage) => {
   const { groups } = stage
   groups &&
     groups.forEach((g) => {
-      if (stage.config.type === 'roundrobinmatchday') {
-        collectMdMatches(g)
-      }
+      collectMdMatches(g)
       calculateGroupRankings(g.teams, g, config)
       let matchDay = g.teams ? (stage.config.home_and_away ? (g.teams.length - 1) * 2 : g.teams.length - 1) : 3
       matchDay = isGroupPlayoffTiebreaker(config) ? 3 : matchDay

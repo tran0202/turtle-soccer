@@ -27,6 +27,7 @@ const hasExcludedRankings = (round) => {
 
 const RankingRowSeparate = (props) => {
   const { round, config } = props
+  // console.log('config', config)
   const exception = config.id === 'MOFT1908' && round.details.name === 'Semi-finals'
   const roundName = round.name
     ? round.name
@@ -59,7 +60,7 @@ const RankingRowSeparate = (props) => {
           {round.ranking_type !== 'successorround' && <React.Fragment>{roundName}</React.Fragment>}
           {round.ranking_type === 'successorround' && <div id={`successor_${roundName.replace(/ /g, '_')}`}>{roundName}</div>}
           {hasExcludedRankings(round) && <ExcludedFourthPlaceTooltip target="excludedFourthPlaceTooltip" />}
-          {(config.tournament_type_id === 'UCL' || config.tournament_type_id === 'UEL') && roundName === 'Group Stage' && (
+          {(config.competition_id === 'UCL' || config.competition_id === 'UEL') && roundName === 'Group Stage' && (
             <ExcludedQualfyingRoundsTooltip target="excludedQualfyingRoundsTooltip" />
           )}
         </Col>
@@ -148,9 +149,8 @@ const RankingRow2 = (props) => {
 
 export const RankingRow = (props) => {
   const { row, config, index } = props
-  // console.log('row', row)
   const { ranking_type, championship_round } = config
-  if (!row) return
+  if (!row || (!row.r && row.length === 0)) return null
   const row_striped = ranking_type === 'group' ? getRowStriped(row, config) : ranking_type === 'wildcard' ? getWildCardRowStriped(row, config) : ''
   const rankColPadding = row.r
     ? ''
@@ -196,19 +196,26 @@ export const RankingRow = (props) => {
 
 const RankingRound = (props) => {
   const { round, config } = props
+  // console.log('round', round)
   const rankingType = !isEmpty(round.config) && round.config.ranking_type ? round.config.ranking_type : round.ranking_type
-  const rankingRowConfig = !isEmpty(round.config.advancement)
-    ? { ...config, ranking_type: rankingType, ...round.config }
-    : { ...round.config, ...config, ranking_type: rankingType }
+  const rankingRowConfig =
+    !isEmpty(round.config) && !isEmpty(round.config.advancement)
+      ? { ...config, ranking_type: rankingType, ...round.config }
+      : { ...round.config, ...config, ranking_type: rankingType }
   updateFinalRankings(round)
   if (config.no_third_place && (round.name === 'Semi-finals' || round.name === 'Semi-finals Second Leg')) {
     createSemifinalistsPool(round)
   }
-  // console.log('round.rankings', round.rankings)
   return (
     <React.Fragment>
-      <RankingRowSeparate round={round} config={config} />
-      {!isEmpty(round.rankings) && round.rankings.map((r, index) => <RankingRow row={r} config={rankingRowConfig} index={index} key={index} />)}
+      {!isEmpty(round.rankings) && (
+        <React.Fragment>
+          <RankingRowSeparate round={round} config={config} />
+          {round.rankings.map((r, index) => (
+            <RankingRow row={r} config={rankingRowConfig} index={index} key={index} />
+          ))}
+        </React.Fragment>
+      )}
     </React.Fragment>
   )
 }

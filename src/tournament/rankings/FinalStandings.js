@@ -2,7 +2,7 @@ import React from 'react'
 import Rankings from './Rankings'
 import { isSharedBronze, calculateAggregateScore } from '../matches/MatchHelper'
 import { getTeamName } from '../../core/TeamHelper'
-import { isWinner, collectPairMatches, collectFirstLegMatches } from '../../core/Helper'
+import { isWinner, collectPairMatches, collectFirstLegMatches, collectMdMatches } from '../../core/Helper'
 import {
   hasWildCardAdvancement,
   collectWildCardRankings,
@@ -466,7 +466,7 @@ const FinalStandings = (props) => {
       if (isRoundRobinRound(r)) {
         switch (r.details.name) {
           case 'Group allocation matches':
-          case 'First Round': // WC1950
+          case 'First Round':
           case 'Second Round':
           case 'Final Round':
           case 'Final Tournament':
@@ -477,6 +477,7 @@ const FinalStandings = (props) => {
             advanceByeTeams(tournament, r)
             if (r.groups) {
               r.groups.forEach((g) => {
+                collectMdMatches(g)
                 calculateGroupRankings(g.teams, g, config)
                 const matchDay = g.teams ? (r.config.home_and_away ? (g.teams.length - 1) * 2 : g.teams.length - 1) : 3
                 createGroupFinalRankings(tournament, g, matchDay, true)
@@ -510,6 +511,7 @@ const FinalStandings = (props) => {
           case 'Third Qualifying Round':
           case 'Play-off Round':
           case 'First Round':
+          case 'Round of 32':
           case 'Round of 16':
           case 'Quarter-finals':
             console.log('r.details.name', r.details.name)

@@ -197,7 +197,7 @@ export const collectFirstLegMatches = (round) => {
     p &&
       p.matches &&
       p.matches.forEach((m) => {
-        if (m.match_type === 'firstleg') {
+        if (m.match_type === 'firstleg' || m.match_type === 'firstlegonly') {
           matches.push(m)
         }
       })
@@ -206,6 +206,7 @@ export const collectFirstLegMatches = (round) => {
 }
 
 export const collectMdMatches = (group) => {
+  if (isEmpty(group.matchdays)) return
   let matches = []
   group.matchdays &&
     group.matchdays.forEach((md) => {
