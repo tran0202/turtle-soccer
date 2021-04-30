@@ -23,16 +23,15 @@ import { Row } from 'reactstrap'
 import { isEmpty, isUndefined } from 'lodash'
 
 const isRoundRobinRound = (round) => {
-  return (
-    round.config.round_type === 'roundrobin' ||
-    round.config.round_type === 'allocation' ||
-    round.config.round_type === 'roundrobinmatchday' ||
-    round.config.round_type === 'roundrobinleaguematchday'
-  )
+  return round.config.round_type === 'roundrobin' || round.config.round_type === 'allocation' || round.config.round_type === 'roundrobinmatchday'
+}
+
+const isRoundRobinLeagueMatchdayRound = (round) => {
+  return round.config.round_type === 'roundrobinleaguematchday'
 }
 
 const isKnockoutRound = (round) => {
-  return !isRoundRobinRound(round)
+  return round.config.round_type === 'knockout' || round.config.round_type === 'knockout2legged'
 }
 
 const hasThirdPlaceRound = (tournament) => {
@@ -50,8 +49,8 @@ const prepRoundRankings = (tournament) => {
         l.stages.forEach((s) => {
           if (s.config.type !== 'knockout') {
             s.config.round_type = s.config.type
-            tournament.advanced_teams.push({ name: l.details.name, ranking_type: 'round', rankings: [], ...s })
-            tournament.final_rankings.push({ name: l.details.name, ranking_type: 'round', rankings: [], ...s })
+            s.config = { ...s.config, ...l.config }
+            tournament.final_rankings.push({ name: l.details.name, ranking_type: 'round', rankings: [], positions: [], ...s })
           } else {
             s.rounds &&
               s.rounds.forEach((r) => {
@@ -101,6 +100,20 @@ const calculateRoundRankings = (tournament, round, config) => {
   calculateKnockoutRankings(tournament, round, config)
 }
 
+const collectLeaguePositionTeams = (league, group) => {
+  if (isEmpty(group.rankings)) return
+  // console.log('league', league)
+  group.rankings.forEach((gr) => {
+    const position_name = `Position ${gr.r}`
+    const leaguePosition = league.positions.find((p) => p.name === position_name)
+    if (!leaguePosition) {
+      league.positions.push({ name: position_name, position: gr.r, ranking_type: 'round', rankings: [gr] })
+    } else {
+      leaguePosition.rankings.push(gr)
+    }
+  })
+}
+
 const eliminateRoundTeams = (tournament, round) => {
   collectFirstLegMatches(round)
   eliminateKnockoutTeams(tournament, round)
@@ -111,10 +124,10 @@ const eliminateRoundTeams = (tournament, round) => {
 const eliminateGroupTeams = (tournament, round, group) => {
   if (!tournament.progress_rankings) return
   if (!group.rankings) return
-  let fr_round = findRoundFinalRankings(tournament, round.details.name)
+  let fr_round = findRoundFinalRankings(tournament, round.name)
   if (!fr_round) {
-    tournament.final_rankings.unshift({ name: round.details.name, ranking_type: 'round', rankings: [] })
-    fr_round = findRoundFinalRankings(tournament, round.details.name)
+    tournament.final_rankings.unshift({ name: round.name, ranking_type: 'round', rankings: [] })
+    fr_round = findRoundFinalRankings(tournament, round.name)
   }
   const config = !isEmpty(group.config.advancement) ? { ...round.config, advancement: group.config.advancement } : round.config
   // console.log('group', group)
@@ -441,6 +454,31 @@ const createFinalRankings = (tournament, round) => {
   }
 }
 
+const createLeagueRankings = (tournament, league, config) => {
+  const league_rankings = []
+  const semifinals_rankings = []
+  league.positions.forEach((p) => {
+    sortGroupRankings(p, league.config.standing_count + (p.position - 1) * league.groups.length + 1, config)
+    // console.log('p.rankings', p.rankings)
+    p.rankings.forEach((pr, index) => {
+      if (league.name === 'League A' && p.position === 1) {
+        semifinals_rankings.push(pr)
+      } else {
+        if (index === 0) {
+          pr.top_divider = true
+        }
+        league_rankings.push(pr)
+      }
+    })
+  })
+  if (semifinals_rankings.length > 0) {
+    const semifinals = findRoundAdvancedTeams(tournament, 'Semi-finals')
+    semifinals.rankings = semifinals_rankings
+  }
+  const leagueRankings = findRoundFinalRankings(tournament, league.name)
+  leagueRankings.rankings = league_rankings
+}
+
 const filterRoundRankings = (tournament) => {
   tournament.final_rankings.reverse()
   const exception = tournament.id === 'MOFT1908'
@@ -464,7 +502,7 @@ const FinalStandings = (props) => {
   tournament &&
     tournament.final_rankings.reverse().forEach((r) => {
       if (isRoundRobinRound(r)) {
-        switch (r.details.name) {
+        switch (r.name) {
           case 'Group allocation matches':
           case 'First Round':
           case 'Second Round':
@@ -473,7 +511,7 @@ const FinalStandings = (props) => {
           case 'First Group Stage':
           case 'Second Group Stage':
           case 'Group Stage':
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
             advanceByeTeams(tournament, r)
             if (r.groups) {
               r.groups.forEach((g) => {
@@ -490,16 +528,41 @@ const FinalStandings = (props) => {
                 }
               })
               eliminateAdvanceWildCardTeams(tournament, r)
-              const fr_round = findRoundFinalRankings(tournament, r.details.name)
+              const fr_round = findRoundFinalRankings(tournament, r.name)
               !r.config.championship_round && sortGroupRankings(fr_round, parseInt(fr_round.config.eliminate_count) + 1, null)
             }
             break
           default:
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
+        }
+      }
+      if (isRoundRobinLeagueMatchdayRound(r)) {
+        switch (r.name) {
+          case 'League A':
+          case 'League B':
+          case 'League C':
+          case 'League D':
+            console.log('r.name', r.name)
+            if (r.groups) {
+              r.groups.forEach((g) => {
+                collectMdMatches(g)
+                calculateGroupRankings(g.teams, g, config)
+                const matchDay = g.teams ? (r.config.home_and_away ? (g.teams.length - 1) * 2 : g.teams.length - 1) : 3
+                createGroupFinalRankings(tournament, g, matchDay, true)
+                calculateProgressRankings(tournament, g)
+                collectLeaguePositionTeams(r, g)
+              })
+              createLeagueRankings(tournament, r, config)
+              // const fr_round = findRoundFinalRankings(tournament, r.name)
+              // !r.config.championship_round && sortGroupRankings(fr_round, parseInt(fr_round.config.eliminate_count) + 1, null)
+            }
+            break
+          default:
+            console.log('r.name', r.name)
         }
       }
       if (isKnockoutRound(r)) {
-        switch (r.details.name) {
+        switch (r.name) {
           case 'Consolation First Round':
           case 'Consolation Semi-finals':
           case 'Playoff First Round':
@@ -514,7 +577,7 @@ const FinalStandings = (props) => {
           case 'Round of 32':
           case 'Round of 16':
           case 'Quarter-finals':
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
             advanceByeTeams(tournament, r)
             initKnockoutRankings(tournament, r)
             calculateRoundRankings(tournament, r, config)
@@ -522,7 +585,7 @@ const FinalStandings = (props) => {
             advanceKnockoutTeams(tournament, r)
             break
           case 'Semi-finals':
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
             initKnockoutRankings(tournament, r)
             calculateRoundRankings(tournament, r, config)
             eliminateRoundTeams(tournament, r)
@@ -531,13 +594,13 @@ const FinalStandings = (props) => {
             processSemifinalMOFT1908Exception(tournament)
             break
           case 'Playoff Second Round':
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
             calculateRoundRankings(tournament, r, config)
             createFinalRankings(tournament, r)
             advanceSilverMedalTeams(tournament, r)
             break
           case 'Silver medal match':
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
             calculateRoundRankings(tournament, r, config)
             createSilverMedalRankings(tournament, r)
             break
@@ -545,13 +608,13 @@ const FinalStandings = (props) => {
           case 'Third-place':
           case 'Final':
           case 'Final Playoff':
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
             calculateRoundRankings(tournament, r, config)
             createFinalRankings(tournament, r)
             processFinalPlayoffCOPA1922Exception(tournament)
             break
           default:
-            console.log('r.details.name', r.details.name)
+            console.log('r.name', r.name)
         }
       }
     })
