@@ -102,7 +102,6 @@ const calculateRoundRankings = (tournament, round, config) => {
 
 const collectLeaguePositionTeams = (league, group) => {
   if (isEmpty(group.rankings)) return
-  // console.log('league', league)
   group.rankings.forEach((gr) => {
     const position_name = `Position ${gr.r}`
     const leaguePosition = league.positions.find((p) => p.name === position_name)
@@ -194,15 +193,20 @@ const eliminateKnockoutTeams = (tournament, round) => {
 }
 
 const eliminateAdvanceWildCardTeams = (tournament, round) => {
-  const wildCardRankings = hasWildCardAdvancement(round.config) ? collectWildCardRankings(round) : null
+  const wildCardRankings = hasWildCardAdvancement(round.config) ? collectWildCardRankings(tournament, round) : null
   if (!wildCardRankings) return
   round.wild_card = wildCardRankings
   if (!tournament.final_rankings) return
   if (!tournament.advanced_teams) return
   const tmpFinalRankings = findRoundFinalRankings(tournament, round.details.name)
   const tmpAdvancedTeams = findRoundAdvancedTeams(tournament, round.config.next_round)
-  // console.log('wildCardRankings', wildCardRankings)
   if (tmpFinalRankings && tmpAdvancedTeams) {
+    if (tournament.id === 'WOFT2004') {
+      const groupG = tmpFinalRankings.groups.find((g) => g.details.name === 'Group G')
+      const australia = groupG.rankings.find((r) => r.id === 'AUS_U23WNT')
+      // console.log('australia', australia)
+      tmpAdvancedTeams.rankings.push(australia)
+    }
     wildCardRankings.rankings &&
       wildCardRankings.rankings.forEach((fr, index) => {
         if (index < round.config.advancement.teams.wild_card.count) {
@@ -574,6 +578,7 @@ const FinalStandings = (props) => {
           case 'Third Qualifying Round':
           case 'Play-off Round':
           case 'First Round':
+          case 'Second Round':
           case 'Round of 32':
           case 'Round of 16':
           case 'Quarter-finals':

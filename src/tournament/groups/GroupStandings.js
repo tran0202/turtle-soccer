@@ -7,8 +7,10 @@ import ordinalize from 'ordinalize'
 
 const GroupStandings = (props) => {
   const { stage, config } = props
+  // console.log('stage', stage)
   const { groups } = stage
   const wildCardPos = groups && hasWildCardAdvancement(stage.config) ? config.advancement.teams.wild_card.pos : 3
+  const woft2004 = config.id === 'WOFT2004' ? ' from groups E & F' : ''
   return (
     <React.Fragment>
       {groups && groups.map((g) => <GroupPlay group={g} config={config} key={g.details.name} />)}
@@ -16,7 +18,9 @@ const GroupStandings = (props) => {
         <React.Fragment>
           <Row>
             <Col>
-              <div className="h2-ff1 margin-top-md">Rankings of {ordinalize(wildCardPos)}-placed teams</div>
+              <div className="h2-ff1 margin-top-md">
+                Rankings of {ordinalize(wildCardPos)}-placed teams{woft2004}
+              </div>
             </Col>
           </Row>
           <Rankings rounds={[stage.wild_card]} config={config} />

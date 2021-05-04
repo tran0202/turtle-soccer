@@ -128,7 +128,8 @@ export const getFinalPathStage = (stage) => {
       r.details.name !== 'Consolation Semi-finals' &&
       r.details.name !== 'Fifth-place' &&
       r.details.name !== 'Playoff First Round' &&
-      r.details.name !== 'Playoff Second Round',
+      r.details.name !== 'Playoff Second Round' &&
+      r.details.name !== 'Silver medal match',
   )
   return { ...stage, rounds: newRounds }
 }
@@ -141,7 +142,8 @@ export const getConsolationPathStage = (stage) => {
       r.details.name === 'Consolation Semi-finals' ||
       r.details.name === 'Fifth-place' ||
       r.details.name === 'Playoff First Round' ||
-      r.details.name === 'Playoff Second Round',
+      r.details.name === 'Playoff Second Round' ||
+      r.details.name === 'Silver medal match',
   )
   return { ...stage, rounds: newRounds }
 }

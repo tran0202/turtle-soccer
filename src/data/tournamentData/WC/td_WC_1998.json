@@ -53,16 +53,6 @@
               "city": "Nantes"
             },
             {
-              "home_team": "BRA",
-              "away_team": "NOR",
-              "home_score": 1,
-              "away_score": 2,
-              "date": "1998-06-23",
-              "time": "21:00",
-              "stadium": "Stade Vélodrome",
-              "city": "Marseille"
-            },
-            {
               "home_team": "SCO",
               "away_team": "MAR",
               "home_score": 0,
@@ -71,6 +61,16 @@
               "time": "21:00",
               "stadium": "Stade Geoffroy-Guichard",
               "city": "Saint-Étienne"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "NOR",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "1998-06-23",
+              "time": "21:00",
+              "stadium": "Stade Vélodrome",
+              "city": "Marseille"
             }
           ]
         },
@@ -383,16 +383,6 @@
               "city": "Lyon"
             },
             {
-              "home_team": "USA",
-              "away_team": "YUG-1992-2003",
-              "home_score": 0,
-              "away_score": 1,
-              "date": "1998-06-25",
-              "time": "21:00",
-              "stadium": "Stade de la Beaujoire",
-              "city": "Nantes"
-            },
-            {
               "home_team": "GER",
               "away_team": "IRN",
               "home_score": 2,
@@ -401,6 +391,16 @@
               "time": "21:00",
               "stadium": "Stade de la Mosson",
               "city": "Montpellier"
+            },
+            {
+              "home_team": "USA",
+              "away_team": "YUG-1992-2003",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "1998-06-25",
+              "time": "21:00",
+              "stadium": "Stade de la Beaujoire",
+              "city": "Nantes"
             }
           ]
         },

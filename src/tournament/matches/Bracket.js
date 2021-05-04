@@ -57,6 +57,7 @@ export const getTeamFlag = (id, config) => {
 export const getHomeHalfBoxTooltip = (isPair, m1, m2, config) => {
   return (
     <React.Fragment>
+      &nbsp;
       {!isPair && getHomeBracketTooltip(m1, config)}
       {isPair && (
         <React.Fragment>
@@ -71,6 +72,7 @@ export const getHomeHalfBoxTooltip = (isPair, m1, m2, config) => {
 export const getAwayHalfBoxTooltip = (isPair, m1, m2, config) => {
   return (
     <React.Fragment>
+      &nbsp;
       {!isPair && getAwayBracketTooltip(m1, config)}
       {isPair && (
         <React.Fragment>
@@ -558,15 +560,12 @@ const attachReplayMatches = (round) => {
 
 const DisplayBracket = (props) => {
   const { stage, config } = props
-  const filteredRounds = stage.rounds
-    ? stage.rounds.filter((r) => r.details.name !== 'Preliminary Round' && r.details.name !== 'Third-place' && r.details.name !== 'Silver medal match')
-    : []
+  const filteredRounds = stage.rounds ? stage.rounds.filter((r) => r.details.name !== 'Preliminary Round' && r.details.name !== 'Third-place') : []
   let thirdPlace = stage.rounds ? stage.rounds.find((s) => s.details.name === 'Third-place') : {}
   // console.log('thirdPlace', thirdPlace)
   if (hasReplay(thirdPlace)) {
     thirdPlace = attachReplayMatches(thirdPlace)
   }
-  const silverMedal = stage.rounds ? stage.rounds.find((s) => s.details.name === 'Silver medal match') : {}
   const roundConfig = { ...config, column_count: filteredRounds.length }
   return (
     <Row className="no-gutters mb-5">
@@ -577,7 +576,7 @@ const DisplayBracket = (props) => {
           reorderBracketPairs(pairs)
           const hookCount = pairs.length % 2 === 0 ? pairs.length / 2 : (pairs.length - 1) / 2
           if (r.details.name === 'Final') {
-            return <BracketFinalCol round={r} thirdPlace={thirdPlace} silverMedal={silverMedal} config={roundConfig} key={r.details.name} />
+            return <BracketFinalCol round={r} thirdPlace={thirdPlace} config={roundConfig} key={r.details.name} />
           } else if (r.details.name !== 'Third-place') {
             return (
               <React.Fragment key={r.details.name}>

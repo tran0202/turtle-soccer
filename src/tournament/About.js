@@ -2,7 +2,7 @@ import React from 'react'
 import Qualified from './Qualified'
 import { SharedBronzeTooltip, GoldenBallRejectedTooltip } from '../core/TooltipHelper'
 import { isWinner } from '../core/Helper'
-import { getFlagSrc, getNationSmallFlagImg, getClubLogoImg, getTeamFlagName } from '../core/TeamHelper'
+import { getFlagSrc, getNationSmallFlagImg, getClubLogoImg, getTeamFlagName, getNationOfficialName } from '../core/TeamHelper'
 import { Row, Col } from 'reactstrap'
 import moment from 'moment'
 import NumberFormat from 'react-number-format'
@@ -125,7 +125,14 @@ const getPlayerClubNationName = (p, config) => {
           {getNationSmallFlagImg(p.team)}
         </React.Fragment>
       )}
-      {config.team_type_id !== 'CLUB' && p.team && <img className="flag-sm flag-md " src={getFlagSrc(p.team)} alt={p.team} title={p.team} />}
+      {config.team_type_id !== 'CLUB' && p.team && (
+        <img
+          className="flag-sm flag-md "
+          src={getFlagSrc(p.team)}
+          alt={`${p.team} ${getNationOfficialName(p.team)}`}
+          title={`${p.team} ${getNationOfficialName(p.team)}`}
+        />
+      )}
       <span className="padding-top-xs">
         &nbsp;{p.player} {getGoldenBootDetails(p)}
       </span>

@@ -185,16 +185,6 @@
               "city": "Ekaterinburg"
             },
             {
-              "home_team": "AUS",
-              "away_team": "PER",
-              "home_score": 0,
-              "away_score": 2,
-              "date": "2018-06-26",
-              "time": "17:00",
-              "stadium": "Fisht Stadium",
-              "city": "Sochi"
-            },
-            {
               "home_team": "DEN",
               "away_team": "FRA",
               "home_score": 0,
@@ -203,6 +193,16 @@
               "time": "17:00",
               "stadium": "Luzhniki Stadium",
               "city": "Moscow"
+            },
+            {
+              "home_team": "AUS",
+              "away_team": "PER",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2018-06-26",
+              "time": "17:00",
+              "stadium": "Fisht Stadium",
+              "city": "Sochi"
             }
           ]
         },
@@ -623,7 +623,7 @@
               "home_score": 3,
               "away_score": 2,
               "date": "2018-07-02",
-              "time": "18:00",
+              "time": "21:00",
               "stadium": "Rostov Arena",
               "city": "Rostov-On-Don",
               "bracket_order": 4

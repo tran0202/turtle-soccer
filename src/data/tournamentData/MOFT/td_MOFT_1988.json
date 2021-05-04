@@ -175,10 +175,10 @@
               "city": "Busan"
             },
             {
-              "home_team": "URS_U23MNT",
-              "away_team": "ARG_U23MNT",
-              "home_score": 2,
-              "away_score": 1,
+              "home_team": "ARG_U23MNT",
+              "away_team": "URS_U23MNT",
+              "home_score": 1,
+              "away_score": 2,
               "date": "1988-09-20",
               "time": "19:00",
               "stadium": "Daegu Civic Stadium",
@@ -195,10 +195,10 @@
               "city": "Busan"
             },
             {
-              "home_team": "URS_U23MNT",
-              "away_team": "USA_U23MNT",
-              "home_score": 4,
-              "away_score": 2,
+              "home_team": "USA_U23MNT",
+              "away_team": "URS_U23MNT",
+              "home_score": 2,
+              "away_score": 4,
               "date": "1988-09-22",
               "time": "17:00",
               "stadium": "Daegu Civic Stadium",
@@ -231,10 +231,10 @@
               "city": "Daejeon"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
-              "away_team": "NGA_U23MNT",
-              "home_score": 3,
-              "away_score": 1,
+              "home_team": "NGA_U23MNT",
+              "away_team": "YUG-1945-1992_U23MNT",
+              "home_score": 1,
+              "away_score": 3,
               "date": "1988-09-20",
               "time": "17:00",
               "stadium": "Daejeon Hanbat Stadium",
@@ -251,10 +251,10 @@
               "city": "Seoul"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
-              "away_team": "BRA_U23MNT",
-              "home_score": 1,
-              "away_score": 2,
+              "home_team": "BRA_U23MNT",
+              "away_team": "YUG-1945-1992_U23MNT",
+              "home_score": 2,
+              "away_score": 1,
               "date": "1988-09-22",
               "time": "19:00",
               "stadium": "Daejeon Hanbat Stadium",

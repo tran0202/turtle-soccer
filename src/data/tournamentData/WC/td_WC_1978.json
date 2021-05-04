@@ -279,6 +279,7 @@
       "type": "roundrobin",
       "eliminate_count": 4,
       "next_round": "Final",
+      "tiebreakers": ["team", "firstroundposition", "lot"],
       "advancement": {
         "teams": {
           "auto": [1],

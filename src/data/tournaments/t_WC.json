@@ -590,11 +590,6 @@
     },
     "hero_images": [
       {
-        "name": "Tango España",
-        "filename": "Adidas_Tango_España.jpg",
-        "text": "Adidas Tango España, official match ball of Spain '82"
-      },
-      {
         "name": "Camp Nou, Barcelona",
         "filename": "Camp_Nou_aerial_(cropped).jpg",
         "text": "The Camp Nou held the opening match"
@@ -603,6 +598,11 @@
         "name": "Santiago Bernabeu",
         "filename": "The_Santiago_Bernabeu_Stadium_-_U-g-g-B-o-y.jpg",
         "text": "The Santiago Bernabéu Stadium held the final"
+      },
+      {
+        "name": "Tango España",
+        "filename": "Adidas_Tango_España.jpg",
+        "text": "Adidas Tango España, official match ball of Spain '82"
       }
     ],
     "final_standings": { "champions": "ITA", "runners_up": "GER-1949-1990", "third_place": "POL", "fourth_place": "FRA" },
@@ -1057,11 +1057,6 @@
     },
     "hero_images": [
       {
-        "name": "France 1938 Ball",
-        "filename": "Pallone_del_mondiale_di_francia_1938.jpeg",
-        "text": "A ball from the tournament"
-      },
-      {
         "name": "Stade Olympique de Colombes",
         "filename": "Stade_de_Colombes_1924.jpg",
         "text": "The Stade Olympique de Colombes held the final."
@@ -1070,6 +1065,11 @@
         "name": "Parc des Princes, Paris",
         "filename": "1932_Le_parc_des_princes_v1.jpg",
         "text": "The Parc des Princes held the semi-final Hungary vs Sweden."
+      },
+      {
+        "name": "France 1938 Ball",
+        "filename": "Pallone_del_mondiale_di_francia_1938.jpeg",
+        "text": "A ball from the tournament"
       }
     ],
     "final_standings": { "champions": "ITA-1861-1946", "runners_up": "HUN-1919-1946", "third_place": "BRA", "fourth_place": "SWE" },

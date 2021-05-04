@@ -224,7 +224,7 @@
           "short_name": "1/4",
           "eliminate_count": 4,
           "next_round": "Semi-finals",
-          "next_consolation_round": "Consolation Semi-finals",
+          "next_consolation_round": "Consolation First Round",
           "matches": [
             {
               "home_team": "GER_U23MNT",
@@ -273,7 +273,7 @@
           ]
         },
         {
-          "name": "Consolation Semi-finals",
+          "name": "Consolation First Round",
           "short_name": "Csl Semi",
           "consolation_notes": "Played by losing quarter-finalists",
           "eliminate_count": 6,

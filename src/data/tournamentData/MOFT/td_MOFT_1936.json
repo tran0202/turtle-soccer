@@ -93,7 +93,7 @@
               "time": "17:30",
               "stadium": "Mommsenstadion",
               "city": "Berlin",
-              "bracket_order": 5
+              "bracket_order": 6
             },
             {
               "home_team": "PER_U23MNT",
@@ -104,7 +104,7 @@
               "time": "17:30",
               "stadium": "Hertha-BSC-Platz",
               "city": "Berlin",
-              "bracket_order": 6
+              "bracket_order": 5
             },
             {
               "home_team": "GBR_U23MNT",
@@ -137,10 +137,10 @@
               "bracket_order": 1
             },
             {
-              "home_team": "GER-1935-1945_U23MNT",
-              "away_team": "NOR_U23MNT",
-              "home_score": 0,
-              "away_score": 2,
+              "home_team": "NOR_U23MNT",
+              "away_team": "GER-1935-1945_U23MNT",
+              "home_score": 2,
+              "away_score": 0,
               "date": "1936-08-07",
               "time": "17:30",
               "stadium": "Poststadion",

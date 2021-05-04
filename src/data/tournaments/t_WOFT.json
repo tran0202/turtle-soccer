@@ -220,7 +220,8 @@
       "golden_boot": [
         { "player": "Cristiane", "team": "BRA_U23WNT", "goals": 5 },
         { "player": "Birgit Prinz", "team": "GER_U23WNT", "goals": 5 }
-      ]
+      ],
+      "fair_play_team": ["JPN_U23WNT", "SWE_U23WNT"]
     }
   },
   {
@@ -234,13 +235,13 @@
       "host": ["AUS_U23WNT"],
       "logo_filename": "2000_Summer_Olympics_logo.svg",
       "mascot_filename": "Football,_Sydney_2000.png",
-      "start_date": "2000-09-15",
+      "start_date": "2000-09-13",
       "end_date": "2000-09-28",
       "color": "#15296d",
       "team_count": 8,
       "confed_count": 6,
-      "venue_count": 5,
-      "city_count": 4
+      "venue_count": 3,
+      "city_count": 3
     },
     "hero_images": [
       {
@@ -315,7 +316,8 @@
         { "player": "Ann Kristin Aarønes", "team": "NOR_U23WNT", "goals": 4 },
         { "player": "Linda Medalen", "team": "NOR_U23WNT", "goals": 4 },
         { "player": "Pretinha", "team": "BRA_U23WNT", "goals": 4 }
-      ]
+      ],
+      "fair_play_team": ["USA_U23WNT"]
     }
   }
 ]

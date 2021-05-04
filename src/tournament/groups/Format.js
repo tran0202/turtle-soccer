@@ -199,6 +199,12 @@ const FormatContent = (props) => {
                           <li>Higher finishing position in the first round table</li>
                         </React.Fragment>
                       )
+                    } else if (tb === 'firstroundfirstsecond') {
+                      return (
+                        <React.Fragment key={index}>
+                          <li>Whether the team finished first or second in their first round group</li>
+                        </React.Fragment>
+                      )
                     } else if (tb === 'head2head') {
                       return (
                         <React.Fragment key={index}>

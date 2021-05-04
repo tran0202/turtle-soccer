@@ -1019,14 +1019,19 @@ export const collectProgressRankings = (tournament, teams, matchDay) => {
   })
 }
 
-export const collectWildCardRankings = (round) => {
+export const collectWildCardRankings = (tournament, round) => {
+  // console.log('round', round)
   const pos = round.groups && hasWildCardAdvancement(round.config) ? round.config.advancement.teams.wild_card.pos : 3
   let wildCard = { rankings: [], ranking_type: 'wildcard' }
   round.groups &&
     round.groups.forEach((g) => {
+      if (tournament.id === 'WOFT2004' && g.details.name === 'Group G') return
       if (isEmpty(g.rankings) || g.rankings.length < pos) return
-      const wcr = cloneRanking(g.rankings.find((fr) => fr.r === pos))
-      wildCard.rankings.push(wcr)
+      const r = g.rankings.find((fr) => fr.r === pos)
+      if (r) {
+        const wcr = cloneRanking(r)
+        wildCard.rankings.push(wcr)
+      }
     })
   sortGroupRankings(wildCard, 1, { noSavingDraws: true })
   return wildCard
@@ -1058,7 +1063,6 @@ export const isAdvancedNextRound = (row, config) => {
   if (config && config.advancement && config.advancement.teams && config.advancement.teams.auto) {
     let flag = false
     config.advancement.teams.auto.forEach((a) => (flag = flag || row.r === a))
-    // console.log('row', row)
     return flag
   }
   return false
@@ -1122,6 +1126,7 @@ export const isTransferred = (row, config) => {
 }
 
 export const getRowStriped = (row, config) => {
+  if (config.id === 'WOFT2004' && row.id === 'AUS_U23WNT') return ' advanced-next-round-striped'
   if (isAdvancedNextRound(row, config)) return ' advanced-next-round-striped'
   if (isAdvancedWildCard(row, config)) return ' advanced-wild-card-striped'
   if (isAdvancedPlayoff(row, config)) return ' advanced-playoff-striped'

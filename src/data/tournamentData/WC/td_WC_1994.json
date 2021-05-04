@@ -370,16 +370,6 @@
               "city": "Washington DC"
             },
             {
-              "home_team": "KSA",
-              "away_team": "MAR",
-              "home_score": 2,
-              "away_score": 1,
-              "date": "1994-06-25",
-              "time": "12:30",
-              "stadium": "Giants Stadium",
-              "city": "New Jersey"
-            },
-            {
               "home_team": "BEL",
               "away_team": "NED",
               "home_score": 1,
@@ -388,6 +378,16 @@
               "time": "12:30",
               "stadium": "Citrus Bowl",
               "city": "Orlando"
+            },
+            {
+              "home_team": "KSA",
+              "away_team": "MAR",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "1994-06-25",
+              "time": "12:30",
+              "stadium": "Giants Stadium",
+              "city": "New Jersey"
             },
             {
               "home_team": "BEL",

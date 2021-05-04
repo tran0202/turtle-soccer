@@ -614,6 +614,18 @@
     "end_date": "1960-01-01"
   },
   {
+    "id": "TPE-1960",
+    "name": "Formosa",
+    "official_name": "Republic of China",
+    "parent_nation_id": "TPE",
+    "confederation_id": "AFC",
+    "nation_type_id": "NATN",
+    "flag_filename": "Republic_of_China.png",
+    "code": "ROC",
+    "start_date": "1960-01-01",
+    "end_date": "1960-01-01"
+  },
+  {
     "id": "TPE-1960-1979",
     "name": "Republic of China",
     "official_name": "",
@@ -2564,6 +2576,7 @@
     "parent_nation_id": "",
     "nation_type_id": "NATN",
     "flag_filename": "Flag_of_Ireland.svg",
+    "code": "EIR",
     "start_date": "1936-01-01",
     "end_date": "1950-01-01"
   },
@@ -2574,6 +2587,7 @@
     "parent_nation_id": "",
     "nation_type_id": "NATN",
     "flag_filename": "Flag_of_Ireland.svg",
+    "code": "IFS",
     "start_date": "1924-01-01",
     "end_date": "1936-01-01"
   },
@@ -3064,7 +3078,7 @@
     "official_name": "",
     "parent_nation_id": "",
     "nation_type_id": "NATN",
-    "flag_filename": "Olympic.png",
+    "flag_filename": "Spain_Olympic_Flag_1980.svg",
     "start_date": "",
     "end_date": ""
   },

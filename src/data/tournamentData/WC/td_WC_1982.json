@@ -48,7 +48,7 @@
               "home_score": 0,
               "away_score": 0,
               "date": "1982-06-19",
-              "time": "19:15",
+              "time": "17:15",
               "stadium": "Estadio de Riazor",
               "city": "A Coruña"
             },
@@ -226,7 +226,7 @@
               "home_score": 1,
               "away_score": 1,
               "date": "1982-06-17",
-              "time": "17:45",
+              "time": "17:15",
               "stadium": "Estadio José Zorrilla",
               "city": "Valladolid"
             },
@@ -411,6 +411,7 @@
       "type": "roundrobin",
       "eliminate_count": 4,
       "next_round": "Semi-finals",
+      "tiebreakers": ["team", "firstroundfirstsecond", "lot"],
       "advancement": { "teams": { "auto": [1], "eliminated": [2, 3], "text": "The winners advance to the semi-finals round." } },
       "groups": [
         {

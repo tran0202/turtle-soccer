@@ -9,9 +9,9 @@
       "advancement": {
         "teams": {
           "auto": [1, 2],
-          "wild_card": { "pos": 3, "count": 2 },
+          "wild_card": { "pos": 3, "count": 1 },
           "eliminated": [4],
-          "text": "The top 2 teams and the 2 best third-placed teams would advance to the Quarter-finals."
+          "text": "The top 2 teams, along with the third-placed team from the four-team group (group G) and the better-ranked third-placed team from the three-team groups (groups E and F) would advance to the Quarter-finals."
         }
       },
       "groups": [

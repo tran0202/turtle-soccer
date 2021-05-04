@@ -112,8 +112,8 @@
 }
 
 .bracket-flag-xxxs {
-  width: 16px;
-  height: 12px;
+  width: 13px;
+  height: 9px;
   border: 1px solid #c7c6c6;
 }
 .bracket-logo-xxxs {
@@ -121,8 +121,8 @@
 }
 @media (min-width: 576px) {
   .bracket-flag-xxs {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     border: 1px solid #c7c6c6;
   }
   .bracket-logo-xxs {
@@ -141,8 +141,8 @@
 }
 @media (min-width: 992px) {
   .bracket-flag-sm {
-    width: 28px;
-    height: 21px;
+    width: 26px;
+    height: 18px;
     border: 1px solid #c7c6c6;
   }
   .bracket-logo-sm {
@@ -214,7 +214,11 @@
   font-size: 1.25rem;
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
-  padding-top: 8px;
+  padding-top: 12px;
+  line-height: 20px;
+}
+.box-team-name {
+  word-break: break-all;
 }
 .box-team-name-light,
 .box-score-light {

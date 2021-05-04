@@ -642,6 +642,7 @@
     "details": {
       "host": ["MEX_U23MNT"],
       "logo_filename": "1968_Mexico_emblem.svg",
+      "logo_height": "50px",
       "mascot_filename": "Football_pictogram_1948.svg",
       "start_date": "1968-10-13",
       "end_date": "1968-10-26",
@@ -771,7 +772,7 @@
     "final_standings": { "champions": "YUG-1945-1992_U23MNT", "runners_up": "DEN_U23MNT", "third_place": "HUN_U23MNT", "fourth_place": "ITA_U23MNT" },
     "statistics": { "total_matches": 28, "total_goals": 120 },
     "awards": {
-      "golden_boot": [{ "player": "Harald Nielsen", "team": "DEN_U23MNT", "goals": 8 }]
+      "golden_boot": [{ "player": "Milan Galić", "team": "YUG-1945-1992_U23MNT", "goals": 7 }]
     }
   },
   {
@@ -790,6 +791,7 @@
       "end_date": "1956-12-08",
       "color": "#15296d",
       "team_count": 11,
+      "confed_count": 4,
       "venue_count": 2,
       "city_count": 1
     },
@@ -864,10 +866,7 @@
     "final_standings": { "champions": "HUN-1949-1956_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "SWE_U23MNT", "fourth_place": "GER_U23MNT" },
     "statistics": { "total_matches": 26, "total_goals": 135 },
     "awards": {
-      "golden_boot": [
-        { "player": "Rajko Mitić", "team": "YUG-1945-1992_U23MNT", "goals": 7 },
-        { "player": "Branko Zebec", "team": "YUG-1945-1992_U23MNT", "goals": 7 }
-      ]
+      "golden_boot": [{ "player": "Branko Zebec", "team": "YUG-1945-1992_U23MNT", "goals": 7 }]
     }
   },
   {
@@ -1086,7 +1085,7 @@
       "team_count": 14,
       "confed_count": 2,
       "venue_count": 4,
-      "city_count": 1
+      "city_count": 3
     },
     "hero_images": [
       {
@@ -1110,7 +1109,7 @@
         "text": "Topscorer Herbert Carlsson"
       }
     ],
-    "final_standings": { "champions": "BEL_U23MNT", "runners_up": "ESP-1875-1931_U23MNT", "third_place": "NED_U23MNT", "fourth_place": "FRA_U23MNT" },
+    "final_standings": { "champions": "BEL_U23MNT", "runners_up": "ESP-1875-1931_U23MNT", "third_place": "NED_U23MNT", "fourth_place": "ITA-1861-1946_U23MNT" },
     "statistics": { "total_matches": 17, "total_goals": 70 },
     "awards": {
       "golden_boot": [{ "player": "Herbert Karlsson", "team": "SWE_U23MNT", "goals": 7 }]

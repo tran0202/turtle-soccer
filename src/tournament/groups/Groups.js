@@ -25,7 +25,7 @@ const getFormat = (stage) => {
 
 const getDisplayStageConfig = (state, stage) => {
   const { tournament, competition } = state
-  const _config = { ...competition.config, ...tournament.config, ...stage.config, ...getFormat(stage) }
+  const _config = { id: tournament.id, ...competition.config, ...tournament.config, ...stage.config, ...getFormat(stage) }
   return stage.tiebreakers ? { ..._config, tiebreakers: stage.tiebreakers } : _config
 }
 
@@ -42,7 +42,7 @@ const calculateStageRankings = (tournament, stage) => {
       createGroupFinalRankings(tournament, g, matchDay, false)
       calculateProgressRankings(tournament, g)
     })
-  stage.wild_card = groups && hasWildCardAdvancement(stage.config) ? collectWildCardRankings(stage) : {}
+  stage.wild_card = groups && hasWildCardAdvancement(stage.config) ? collectWildCardRankings(tournament, stage) : {}
 }
 
 const DisplayStage = (props) => {

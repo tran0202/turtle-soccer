@@ -48,6 +48,7 @@ const RankingRowSeparate = (props) => {
     roundName !== 'Final Playoff' &&
     roundName !== 'Third-place' &&
     (roundName !== 'Semi-finals' || (roundName === 'Semi-finals' && exception)) &&
+    roundName !== 'Consolation First Round' &&
     roundName !== 'Consolation Semi-finals' &&
     roundName !== 'Preliminary Semi-finals' &&
     roundName !== 'Semi-finals Second Leg' &&
@@ -150,6 +151,7 @@ const RankingRow2 = (props) => {
 export const RankingRow = (props) => {
   const { row, config, index } = props
   const { ranking_type, championship_round } = config
+  // console.log('row', row)
   if (!row || (!row.r && row.length === 0)) return null
   const row_striped = ranking_type === 'group' ? getRowStriped(row, config) : ranking_type === 'wildcard' ? getWildCardRowStriped(row, config) : ''
   const rankColPadding = row.r
@@ -196,7 +198,6 @@ export const RankingRow = (props) => {
 
 const RankingRound = (props) => {
   const { round, config } = props
-  // console.log('round', round)
   const rankingType = !isEmpty(round.config) && round.config.ranking_type ? round.config.ranking_type : round.ranking_type
   const rankingRowConfig =
     !isEmpty(round.config) && !isEmpty(round.config.advancement)
