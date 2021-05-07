@@ -217,7 +217,8 @@
   padding-top: 12px;
   line-height: 20px;
 }
-.box-team-name {
+.box-team-name,
+.tournament-result-team-name {
   word-break: break-all;
 }
 .box-team-name-light,

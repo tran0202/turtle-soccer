@@ -639,7 +639,6 @@ export const setTournamentDetails = (t) => {
   t.details = {
     color: t.details ? t.details.color || '' : '',
     host: t.details ? t.details.host || [] : [],
-    final_host: t.details ? t.details.final_host || [] : [],
     logo_filename: t.details ? t.details.logo_filename || '' : '',
     logo_height: t.details ? t.details.logo_height || '' : '',
     mascot_filename: t.details ? t.details.mascot_filename || '' : '',
@@ -659,6 +658,7 @@ export const setTournamentDetails = (t) => {
     confed_count: t.details ? t.details.confed_count || undefined : undefined,
     venue_count: t.details ? t.details.venue_count || undefined : undefined,
     city_count: t.details ? t.details.city_count || undefined : undefined,
+    final_host: t.details ? t.details.final_host || [] : [],
     final_team_count: t.details ? t.details.final_team_count || undefined : undefined,
     final_venue_count: t.details ? t.details.final_venue_count || undefined : undefined,
     final_city_count: t.details ? t.details.final_city_count || undefined : undefined,
@@ -678,6 +678,9 @@ export const setTournamentDetails = (t) => {
           best_defender: t.awards.best_defender || [],
           best_midfielder: t.awards.best_midfielder || [],
           best_forward: t.awards.best_forward || [],
+          final_top_scorer: t.awards.final_top_scorer || {},
+          final_best_player: t.awards.final_best_player || {},
+          final_best_young_player: t.awards.final_best_young_player || {},
           fair_play_team: t.awards.fair_play_team || [],
         }
       : {},

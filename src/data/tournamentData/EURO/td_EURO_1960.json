@@ -29,7 +29,7 @@
               "home_score": 0,
               "away_score": 3,
               "date": "1960-07-06",
-              "time": "21:30",
+              "time": "20:30",
               "stadium": "Stade Vélodrome",
               "city": "Marseille",
               "bracket_order": 1
@@ -64,10 +64,9 @@
               "home_extra_score": 1,
               "away_extra_score": 0,
               "date": "1960-07-10",
-              "time": "21:30",
+              "time": "20:30",
               "stadium": "Parc des Princes",
-              "city": "Paris",
-              "bracket_order": 2
+              "city": "Paris"
             }
           ]
         }

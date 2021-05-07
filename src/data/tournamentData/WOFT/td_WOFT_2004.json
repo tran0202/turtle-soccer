@@ -90,6 +90,7 @@
         {
           "name": "Group G",
           "teams": [{ "id": "GRE_U23WNT" }, { "id": "USA_U23WNT" }, { "id": "BRA_U23WNT" }, { "id": "AUS_U23WNT" }],
+          "advancement": { "teams": { "auto": [1, 2, 3], "eliminated": [4] } },
           "matches": [
             {
               "home_team": "GRE_U23WNT",

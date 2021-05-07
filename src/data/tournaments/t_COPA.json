@@ -679,7 +679,7 @@
     "short_name": "Argentina 1987",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -727,7 +727,7 @@
     "short_name": "1983",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "no_third_place": true,
     "details": {
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -777,7 +777,7 @@
     "short_name": "1979",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "no_third_place": true,
     "details": {
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -821,7 +821,7 @@
     "short_name": "1975",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "no_third_place": true,
     "details": {
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -866,7 +866,7 @@
     "era": "South American Championship",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["URU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -899,7 +899,7 @@
     "short_name": "Bolivia 1963",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["BOL"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -942,7 +942,7 @@
     "short_name": "Ecuador 1959",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ECU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -975,7 +975,7 @@
     "short_name": "Argentina 1959",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1023,7 +1023,7 @@
     "short_name": "Peru 1957",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["PER"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1074,7 +1074,7 @@
     "short_name": "Uruguay 1956",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["URU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1107,7 +1107,7 @@
     "short_name": "Chile 1955",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["CHI"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1140,7 +1140,7 @@
     "short_name": "Peru 1953",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team", "pointtiedtopstandings"],
     "details": {
       "host": ["PER"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1173,7 +1173,7 @@
     "short_name": "Brazil 1949",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team", "pointtiedtopstandings"],
     "details": {
       "host": ["BRA"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1221,7 +1221,7 @@
     "short_name": "Ecuador 1947",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ECU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1254,7 +1254,7 @@
     "short_name": "Argentina 1946",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1302,7 +1302,7 @@
     "short_name": "Chile 1945",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["CHI"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1343,7 +1343,7 @@
     "short_name": "Uruguay 1942",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["URU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1394,7 +1394,7 @@
     "short_name": "Chile 1941",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["CHI"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1432,7 +1432,7 @@
     "short_name": "Peru 1939",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["PER"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1470,7 +1470,7 @@
     "short_name": "Argentina 1937",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team", "pointtiedtopstandings"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1518,7 +1518,7 @@
     "short_name": "Peru 1935",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["PER"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1551,7 +1551,7 @@
     "short_name": "Argentina 1929",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1599,7 +1599,7 @@
     "short_name": "Peru 1927",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["PER"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1653,7 +1653,7 @@
     "short_name": "Chile 1926",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["CHI"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1686,7 +1686,7 @@
     "short_name": "Argentina 1925",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1729,7 +1729,7 @@
     "short_name": "Uruguay 1924",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["URU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1767,7 +1767,7 @@
     "short_name": "Uruguay 1923",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["URU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1808,7 +1808,7 @@
     "short_name": "Brazil 1922",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team", "pointtiedtopstandings"],
     "details": {
       "host": ["BRA"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1846,7 +1846,7 @@
     "short_name": "Argentina 1921",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1894,7 +1894,7 @@
     "short_name": "Chile 1920",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["CHI"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1935,7 +1935,7 @@
     "short_name": "Brazil 1919",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team", "pointtiedtopstandings"],
     "details": {
       "host": ["BRA"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -1986,7 +1986,7 @@
     "short_name": "Uruguay 1917",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["URU"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",
@@ -2029,7 +2029,7 @@
     "short_name": "Argentina 1916",
     "competition_id": "COPA",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headmatch", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["ARG"],
       "logo_filename": "CONMEBOL_logo_(2017).svg",

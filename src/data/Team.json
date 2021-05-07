@@ -51,7 +51,7 @@
   { "id": "SVN", "name": "Slovenia", "team_type_id": "MNT", "nation_id": "SVN", "parent_team_id": "" },
   { "id": "ANG", "name": "Angola", "team_type_id": "MNT", "nation_id": "ANG", "parent_team_id": "" },
   { "id": "TOG", "name": "Togo", "team_type_id": "MNT", "nation_id": "TOG", "parent_team_id": "" },
-  { "id": "TRI", "name": "Trinidad and Tobago", "short_name": "Trinidad&Tob", "team_type_id": "MNT", "nation_id": "TRI", "parent_team_id": "" },
+  { "id": "TRI", "name": "Trinidad and Tobago", "short_name": "Trinidad & Tobago", "team_type_id": "MNT", "nation_id": "TRI", "parent_team_id": "" },
   { "id": "QAT", "name": "Qatar", "team_type_id": "MNT", "nation_id": "QAT", "parent_team_id": "" },
   { "id": "SYR", "name": "Syria", "team_type_id": "MNT", "nation_id": "SYR", "parent_team_id": "" },
   { "id": "BAN", "name": "Bangladesh", "team_type_id": "MNT", "nation_id": "BAN", "parent_team_id": "" },
@@ -209,7 +209,7 @@
   { "id": "CGO-1970-1991", "name": "Congo", "team_type_id": "MNT", "nation_id": "CGO-1970-1991", "parent_team_id": "CGO" },
   { "id": "CMR-1961-1975", "name": "Cameroon", "team_type_id": "MNT", "nation_id": "CMR-1961-1975", "parent_team_id": "CMR" },
   { "id": "SDN-1956-1970", "name": "Sudan", "team_type_id": "MNT", "nation_id": "SDN-1956-1970", "parent_team_id": "SDN" },
-  { "id": "UAR", "name": "United Arab Republic", "short_name": "UtdArabRep", "team_type_id": "MNT", "nation_id": "UAR", "parent_team_id": "EGY" },
+  { "id": "UAR", "name": "United Arab Republic", "short_name": "United Arab Republic", "team_type_id": "MNT", "nation_id": "UAR", "parent_team_id": "EGY" },
   { "id": "ETH-1941-1974", "name": "Ethiopia", "team_type_id": "MNT", "nation_id": "ETH-1941-1974", "parent_team_id": "ETH" },
   {
     "id": "COD-1966-1971",
@@ -383,7 +383,7 @@
   {
     "id": "EGY-1958-1971_U23MNT",
     "name": "United Arab Republic",
-    "short_name": "United Arab",
+    "short_name": "United Arab Republic",
     "team_type_id": "U23MNT",
     "nation_id": "UAR",
     "parent_team_id": "EGY_U23MNT"

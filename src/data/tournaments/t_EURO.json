@@ -62,7 +62,7 @@
     "final_standings": { "champions": "POR", "runners_up": "FRA", "semi_finalist1": "GER", "semi_finalist2": "WAL" },
     "statistics": { "total_matches": 51, "total_goals": 108, "attendance": 2427303 },
     "awards": {
-      "golden_boot": [{ "player": "Antoine Griezmann", "team": "FRA", "goals": 6 }],
+      "golden_boot": [{ "player": "Antoine Griezmann", "team": "FRA", "goals": 6, "assists": 2 }],
       "silver_boot": [{ "player": "Cristiano Ronaldo", "team": "POR", "goals": 3, "assists": 3 }],
       "bronze_boot": [{ "player": "Olivier Giroud", "team": "FRA", "goals": 3, "assists": 2 }],
       "golden_ball": [{ "player": "Antoine Griezmann", "team": "FRA" }],

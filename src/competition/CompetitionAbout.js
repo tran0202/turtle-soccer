@@ -85,11 +85,15 @@ const TournamentRow = (props) => {
             </React.Fragment>
           )}
         </Col>
-        <Col className="text-center score-no-padding-right col-2">{details.final_standings && TeamCell(details.final_standings.champions, config)}</Col>
-        <Col className="text-center score-no-padding-right col-2">{details.final_standings && TeamCell(details.final_standings.runners_up, config)}</Col>
+        <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+          {details.final_standings && TeamCell(details.final_standings.champions, config)}
+        </Col>
+        <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+          {details.final_standings && TeamCell(details.final_standings.runners_up, config)}
+        </Col>
         {!config.no_third_place && (
           <React.Fragment>
-            <Col className="text-center score-no-padding-right col-2">
+            <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
               {typeof details.final_standings.third_place === 'string' && TeamCell(details.final_standings.third_place, config)}
               {typeof details.final_standings.third_place === 'object' && (
                 <React.Fragment>
@@ -100,14 +104,16 @@ const TournamentRow = (props) => {
                 </React.Fragment>
               )}
             </Col>
-            <Col className="text-center score-no-padding-right col-2">{details.final_standings && TeamCell(details.final_standings.fourth_place, config)}</Col>
+            <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+              {details.final_standings && TeamCell(details.final_standings.fourth_place, config)}
+            </Col>
           </React.Fragment>
         )}
         {config.no_third_place && (
           <Col className="text-center score-no-padding-right col-4">
             <Row>
-              <Col className="col-6">{TeamCell(details.final_standings.semi_finalist1, config)}</Col>
-              <Col className="col-6">{TeamCell(details.final_standings.semi_finalist2, config)}</Col>
+              <Col className="col-6 tournament-result-team-name">{TeamCell(details.final_standings.semi_finalist1, config)}</Col>
+              <Col className="col-6 tournament-result-team-name">{TeamCell(details.final_standings.semi_finalist2, config)}</Col>
             </Row>
           </Col>
         )}

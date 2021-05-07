@@ -120,7 +120,7 @@
       }
     ],
     "final_standings": { "champions": "USA_U23WNT", "runners_up": "JPN_U23WNT", "third_place": "CAN_U23WNT", "fourth_place": "FRA_U23WNT" },
-    "statistics": { "total_matches": 26, "total_goals": 71, "attendance": 661016 },
+    "statistics": { "total_matches": 26, "total_goals": 71, "attendance": 660986 },
     "awards": {
       "golden_boot": [{ "player": "Christine Sinclair", "team": "CAN_U23WNT", "goals": 6 }],
       "fair_play_team": ["USA_U23WNT"]
@@ -170,7 +170,8 @@
     "final_standings": { "champions": "USA_U23WNT", "runners_up": "BRA_U23WNT", "third_place": "GER_U23WNT", "fourth_place": "JPN_U23WNT" },
     "statistics": { "total_matches": 26, "total_goals": 66, "attendance": 740014 },
     "awards": {
-      "golden_boot": [{ "player": "Cristiane", "team": "BRA_U23WNT", "goals": 5 }]
+      "golden_boot": [{ "player": "Cristiane", "team": "BRA_U23WNT", "goals": 5 }],
+      "fair_play_team": ["CHN_U23WNT"]
     }
   },
   {

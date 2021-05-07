@@ -147,7 +147,7 @@
       "type": "roundrobin",
       "championship_round": true,
       "eliminate_count": 0,
-      "tiebreakers": ["points"],
+      "tiebreakers": ["team"],
       "advancement": { "teams": { "text": "The winner would win the African Cup of Nations." } },
       "groups": [
         {

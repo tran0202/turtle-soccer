@@ -201,12 +201,6 @@ const eliminateAdvanceWildCardTeams = (tournament, round) => {
   const tmpFinalRankings = findRoundFinalRankings(tournament, round.details.name)
   const tmpAdvancedTeams = findRoundAdvancedTeams(tournament, round.config.next_round)
   if (tmpFinalRankings && tmpAdvancedTeams) {
-    if (tournament.id === 'WOFT2004') {
-      const groupG = tmpFinalRankings.groups.find((g) => g.details.name === 'Group G')
-      const australia = groupG.rankings.find((r) => r.id === 'AUS_U23WNT')
-      // console.log('australia', australia)
-      tmpAdvancedTeams.rankings.push(australia)
-    }
     wildCardRankings.rankings &&
       wildCardRankings.rankings.forEach((fr, index) => {
         if (index < round.config.advancement.teams.wild_card.count) {

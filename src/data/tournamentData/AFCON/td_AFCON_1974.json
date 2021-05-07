@@ -183,10 +183,10 @@
           "short_name": "3rd",
           "matches": [
             {
-              "home_team": "CGO-1970-1991",
-              "away_team": "EGY",
-              "home_score": 0,
-              "away_score": 4,
+              "home_team": "EGY",
+              "away_team": "CGO-1970-1991",
+              "home_score": 4,
+              "away_score": 0,
               "date": "1974-03-11",
               "time": "12:00",
               "stadium": "Cairo International Stadium",

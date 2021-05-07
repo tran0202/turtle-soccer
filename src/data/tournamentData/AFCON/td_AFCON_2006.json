@@ -357,10 +357,10 @@
               "bracket_order": 1
             },
             {
-              "home_team": "NGA",
-              "away_team": "CIV",
-              "home_score": 0,
-              "away_score": 1,
+              "home_team": "CIV",
+              "away_team": "NGA",
+              "home_score": 1,
+              "away_score": 0,
               "date": "2006-02-07",
               "time": "15:00",
               "stadium": "Harras El-Hedoud Stadium",

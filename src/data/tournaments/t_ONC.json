@@ -15,7 +15,6 @@
       "end_date": "2016-06-11",
       "color": "#e1151e",
       "team_count": 8,
-      "confed_count": 1,
       "venue_count": 1,
       "city_count": 1
     },
@@ -55,7 +54,6 @@
       "end_date": "2012-06-10",
       "color": "#086349",
       "team_count": 8,
-      "confed_count": 1,
       "venue_count": 1,
       "city_count": 1
     },
@@ -88,14 +86,13 @@
     "competition_id": "ONC",
     "points_for_win": 3,
     "show_match_year": true,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "logo_filename": "OFCcup.png",
       "start_date": "2007-10-17",
       "end_date": "2008-11-19",
       "color": "#192e71",
       "team_count": 4,
-      "confed_count": 1,
       "venue_count": 5,
       "city_count": 5
     },
@@ -134,7 +131,7 @@
     "short_name": "Australia 2004",
     "competition_id": "ONC",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["AUS"],
       "logo_filename": "OFCcup.png",
@@ -142,7 +139,6 @@
       "end_date": "2004-10-12",
       "color": "#178338",
       "team_count": 6,
-      "confed_count": 1,
       "venue_count": 4,
       "city_count": 3
     },
@@ -184,7 +180,7 @@
     "short_name": "New Zealand 2002",
     "competition_id": "ONC",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["NZL"],
       "logo_filename": "OFCcup.png",
@@ -193,7 +189,6 @@
       "end_date": "2002-07-14",
       "color": "#1d368a",
       "team_count": 8,
-      "confed_count": 1,
       "venue_count": 2,
       "city_count": 2
     },
@@ -237,7 +232,7 @@
     "short_name": "Tahiti 2000",
     "competition_id": "ONC",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["TAH"],
       "logo_filename": "OFCcup.png",
@@ -245,7 +240,6 @@
       "end_date": "2000-06-28",
       "color": "#fe0000",
       "team_count": 6,
-      "confed_count": 1,
       "venue_count": 1,
       "city_count": 1
     },
@@ -272,7 +266,7 @@
     "short_name": "Australia 1998",
     "competition_id": "ONC",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["AUS"],
       "logo_filename": "OFCcup.png",
@@ -280,7 +274,6 @@
       "end_date": "1998-10-04",
       "color": "#178338",
       "team_count": 6,
-      "confed_count": 1,
       "venue_count": 1,
       "city_count": 1
     },
@@ -309,10 +302,10 @@
     "short_name": "1996",
     "competition_id": "ONC",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "no_third_place": true,
     "show_match_year": true,
-    "details": { "logo_filename": "OFCcup.png", "start_date": "1995-11-10", "end_date": "1996-11-01", "color": "#192e71", "team_count": 4, "confed_count": 1 },
+    "details": { "logo_filename": "OFCcup.png", "start_date": "1995-11-10", "end_date": "1996-11-01", "color": "#192e71", "team_count": 4 },
     "hero_images": [
       {
         "name": "Bruce Stadium, Canberra",
@@ -348,7 +341,7 @@
     "short_name": "New Caledonia 1980",
     "competition_id": "ONC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["NCL-1973-2008"],
       "logo_filename": "OFCcup.png",
@@ -356,7 +349,6 @@
       "end_date": "1980-03-01",
       "color": "#009543",
       "team_count": 8,
-      "confed_count": 1,
       "venue_count": 1,
       "city_count": 1
     },
@@ -383,7 +375,7 @@
     "short_name": "New Zealand 1973",
     "competition_id": "ONC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["NZL"],
       "logo_filename": "OFCcup.png",
@@ -391,7 +383,6 @@
       "end_date": "1973-02-24",
       "color": "#1d368a",
       "team_count": 5,
-      "confed_count": 1,
       "venue_count": 1,
       "city_count": 1
     },

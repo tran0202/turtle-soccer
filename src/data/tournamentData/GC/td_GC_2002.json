@@ -259,10 +259,10 @@
           "short_name": "3rd",
           "matches": [
             {
-              "home_team": "CAN",
-              "away_team": "KOR",
-              "home_score": 2,
-              "away_score": 1,
+              "home_team": "KOR",
+              "away_team": "CAN",
+              "home_score": 1,
+              "away_score": 2,
               "date": "2002-02-02",
               "time": "10:00",
               "stadium": "Rose Bowl",
@@ -275,10 +275,10 @@
           "short_name": "1st",
           "matches": [
             {
-              "home_team": "USA",
-              "away_team": "CRC",
-              "home_score": 2,
-              "away_score": 0,
+              "home_team": "CRC",
+              "away_team": "USA",
+              "home_score": 0,
+              "away_score": 2,
               "date": "2002-02-02",
               "time": "12:00",
               "stadium": "Rose Bowl",

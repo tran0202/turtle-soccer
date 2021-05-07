@@ -20,7 +20,6 @@
       "coefficient"
     ],
     "details": {
-      "final_host": ["ITA"],
       "logo_filename": "UEFA_Nations_League.svg",
       "start_league_date": "2020-09-03",
       "end_league_date": "2020-11-18",
@@ -30,6 +29,7 @@
       "end_relegation_date": "2022-03-29",
       "color": "#103d69",
       "team_count": 55,
+      "final_host": ["ITA"],
       "final_team_count": 4,
       "final_venue_count": 2,
       "final_city_count": 2
@@ -80,7 +80,6 @@
       "coefficient"
     ],
     "details": {
-      "final_host": ["POR"],
       "logo_filename": "2019_UEFA_Nations_League_Finals.svg",
       "start_league_date": "2018-09-06",
       "end_league_date": "2018-11-20",
@@ -88,6 +87,7 @@
       "end_final_date": "2019-06-09",
       "color": "#009e4d",
       "team_count": 55,
+      "final_host": ["POR"],
       "final_team_count": 4,
       "final_venue_count": 2,
       "final_city_count": 2
@@ -115,9 +115,12 @@
       }
     ],
     "final_standings": { "champions": "POR", "runners_up": "NED", "third_place": "ENG", "fourth_place": "SUI" },
-    "statistics": { "total_matches": 142, "total_goals": 342, "attendance": 2467041 },
+    "statistics": { "total_matches": 142, "total_goals": 342, "attendance": 2467041, "final_matches": 4, "final_goals": 9, "final_attendance": 127067 },
     "awards": {
-      "golden_boot": [{ "player": "Aleksandar Mitrović", "team": "SRB", "goals": 6 }]
+      "golden_boot": [{ "player": "Aleksandar Mitrović", "team": "SRB", "goals": 6 }],
+      "final_top_scorer": [{ "player": "Cristiano Ronaldo", "team": "POR", "goals": 3 }],
+      "final_best_player": [{ "player": "Bernardo Silva", "team": "POR" }],
+      "final_best_young_player": [{ "player": "Frenkie de Jong", "team": "NED" }]
     }
   }
 ]

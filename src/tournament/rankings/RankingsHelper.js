@@ -344,8 +344,8 @@ const findHeadtoHeadMatch = (a, b, group_playoff) => {
 const drawingLots = (a, b) => {
   // Italia 1990
   if (a.id === 'NED' && b.id === 'IRL') {
-    a.draw_lot_notes = 'Netherlands took 3rd place after finished identical records (points, goal difference and goad forward) with Republic of Ireland.'
-    b.draw_lot_notes = 'Republic of Ireland took 2nd place after finished identical records (points, goal difference and goad forward) with Netherlands.'
+    a.draw_lot_notes = 'Netherlands took 3rd place after finished identical records (points, goal difference and goal forward) with Republic of Ireland.'
+    b.draw_lot_notes = 'Republic of Ireland took 2nd place after finished identical records (points, goal difference and goal forward) with Netherlands.'
     return 1
   }
   // Mexico 1970
@@ -367,20 +367,20 @@ const drawingLots = (a, b) => {
   }
   // Gold Cup 2000
   if (a.id === 'KOR' && b.id === 'CAN') {
-    a.draw_lot_notes = 'Korea Republic took 3rd place after finished identical records (points, goal difference and goad forward) with Canada.'
-    b.draw_lot_notes = 'Canada took 2nd place after finished identical records (points, goal difference and goad forward) with Korea Republic.'
+    a.draw_lot_notes = 'Korea Republic took 3rd place after finished identical records (points, goal difference and goal forward) with Canada.'
+    b.draw_lot_notes = 'Canada took 2nd place after finished identical records (points, goal difference and goal forward) with Korea Republic.'
     return 1
   }
   // AFCON 2015
   if (a.id === 'MLI' && b.id === 'GUI') {
-    a.draw_lot_notes = 'Mali took 3rd place after tying with Guinea on head-to-head match, overall goal difference and overall goad forward.'
-    b.draw_lot_notes = 'Guinea took 2nd place after tying with Mali on head-to-head match, overall goal difference and overall goad forward.'
+    a.draw_lot_notes = 'Mali took 3rd place after tying with Guinea on head-to-head match, overall goal difference and overall goal forward.'
+    b.draw_lot_notes = 'Guinea took 2nd place after tying with Mali on head-to-head match, overall goal difference and overall goal forward.'
     return 1
   }
   // AFCON 1988
   if (a.id === 'ALG' && b.id === 'CIV') {
-    a.draw_lot_notes = 'Algeria took 2nd place after finished identical records (points, goal difference and goad forward) with Ivory Coast.'
-    b.draw_lot_notes = 'Ivory Coast took 3rd place after finished identical records (points, goal difference and goad forward) with Algeria.'
+    a.draw_lot_notes = 'Algeria took 2nd place after finished identical records (points, goal difference and goal forward) with Ivory Coast.'
+    b.draw_lot_notes = 'Ivory Coast took 3rd place after finished identical records (points, goal difference and goal forward) with Algeria.'
     return -1
   }
   // AFCON 1965
@@ -931,19 +931,19 @@ export const createGroupFinalRankings = (tournament, group, matchDay, page_exclu
         }
       })
   }
-  if (tournament.id === 'GC2002' && group.details.name === 'Group D') {
+  if (tournament.id === 'GC2002' && group.details.name === 'Group* D') {
     group.rankings[0].r = 3
     group.rankings[0].h2h_notes = null
     group.rankings[0].draw_lot_notes =
-      'Ecuador took 3rd place after finished identical records (points, goal difference and goad forward) with Canada and Haiti.'
+      'Ecuador took 3rd place after finished identical records (points, goal difference and goal forward) with Canada and Haiti.'
     group.rankings[1].r = 1
     group.rankings[1].h2h_notes = null
     group.rankings[1].draw_lot_notes =
-      'Canada took 1st place after finished identical records (points, goal difference and goad forward) with Haiti and Ecuador.'
+      'Canada took 1st place after finished identical records (points, goal difference and goal forward) with Haiti and Ecuador.'
     group.rankings[2].r = 2
     group.rankings[2].h2h_notes = null
     group.rankings[2].draw_lot_notes =
-      'Haiti took 2nd place after finished identical records (points, goal difference and goad forward) with Canada and Ecuador.'
+      'Haiti took 2nd place after finished identical records (points, goal difference and goals forward) with Canada and Ecuador.'
     group.rankings.sort((a, b) => {
       if (a.r < b.r) return -1
       else if (a.r > b.r) return 1
@@ -1020,12 +1020,12 @@ export const collectProgressRankings = (tournament, teams, matchDay) => {
 }
 
 export const collectWildCardRankings = (tournament, round) => {
-  // console.log('round', round)
   const pos = round.groups && hasWildCardAdvancement(round.config) ? round.config.advancement.teams.wild_card.pos : 3
   let wildCard = { rankings: [], ranking_type: 'wildcard' }
   round.groups &&
     round.groups.forEach((g) => {
-      if (tournament.id === 'WOFT2004' && g.details.name === 'Group G') return
+      // console.log('g', g)
+      if (g.config && g.config.advancement && g.config.advancement.teams && !g.config.advancement.teams.wild_card) return
       if (isEmpty(g.rankings) || g.rankings.length < pos) return
       const r = g.rankings.find((fr) => fr.r === pos)
       if (r) {
@@ -1126,7 +1126,6 @@ export const isTransferred = (row, config) => {
 }
 
 export const getRowStriped = (row, config) => {
-  if (config.id === 'WOFT2004' && row.id === 'AUS_U23WNT') return ' advanced-next-round-striped'
   if (isAdvancedNextRound(row, config)) return ' advanced-next-round-striped'
   if (isAdvancedWildCard(row, config)) return ' advanced-wild-card-striped'
   if (isAdvancedPlayoff(row, config)) return ' advanced-playoff-striped'

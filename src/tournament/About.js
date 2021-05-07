@@ -261,13 +261,6 @@ const About = (props) => {
               </Row>
             ))}
           </DisplayDetails>
-          <DisplayDetails field={final_host} label="Final Host">
-            {final_host.map((fh) => (
-              <Row className="no-margin-lr margin-bottom-xs" key={fh}>
-                {getTeamFlagName(fh, tournament.config)}
-              </Row>
-            ))}
-          </DisplayDetails>
           <DisplayDetails field={start_date} label="Dates">
             {start_date ? moment(start_date).format('MMMM D, YYYY') : ''} &mdash;&nbsp;
             {end_date ? moment(end_date).format('MMMM D, YYYY') : ''}
@@ -303,6 +296,13 @@ const About = (props) => {
           <DisplayDetails field={tournament_team_count} label="Competition Teams">
             {tournament_team_count}&nbsp;
             {transfer_team_count && <React.Fragment>+ {transfer_team_count} (transferred from UCL)</React.Fragment>}
+          </DisplayDetails>
+          <DisplayDetails field={final_host} label="Final Host">
+            {final_host.map((fh) => (
+              <Row className="no-margin-lr margin-bottom-xs" key={fh}>
+                {getTeamFlagName(fh, tournament.config)}
+              </Row>
+            ))}
           </DisplayDetails>
           <DisplayDetails field={final_team_count} label="Final Teams">
             {final_team_count}&nbsp;
@@ -378,6 +378,20 @@ const About = (props) => {
                 <NumberFormat value={statistics.attendance} displayType={'text'} thousandSeparator={true} />
                 &nbsp;(
                 <NumberFormat value={(statistics.attendance / statistics.total_matches).toFixed(0)} displayType={'text'} thousandSeparator={true} /> per match)
+              </DisplayDetails>
+              <DisplayDetails field={statistics.final_matches} label="Final Matches played">
+                {statistics.final_matches}
+              </DisplayDetails>
+              <DisplayDetails field={statistics.final_goals} label="Final Goals scored">
+                <NumberFormat value={statistics.final_goals} displayType={'text'} />
+                &nbsp;(
+                <NumberFormat value={(statistics.final_goals / statistics.final_matches).toFixed(2)} displayType={'text'} /> per match)
+              </DisplayDetails>
+              <DisplayDetails field={statistics.final_attendance} label="Final Attendance">
+                <NumberFormat value={statistics.final_attendance} displayType={'text'} thousandSeparator={true} />
+                &nbsp;(
+                <NumberFormat value={(statistics.final_attendance / statistics.final_matches).toFixed(0)} displayType={'text'} thousandSeparator={true} /> per
+                match)
               </DisplayDetails>
             </Col>
           </React.Fragment>
@@ -461,6 +475,27 @@ const About = (props) => {
                 {awards.best_forward.map((bf) => (
                   <Row className="no-margin-lr margin-bottom-xs display-block" key={bf.player}>
                     {getPlayerClubNationName(bf, tournament.config)}
+                  </Row>
+                ))}
+              </DisplayDetails>
+              <DisplayDetails field={awards.final_top_scorer} label="Final Top Scorer" showDivider={true}>
+                {awards.final_top_scorer.map((fts) => (
+                  <Row className="no-margin-lr margin-bottom-xs display-block" key={fts.player}>
+                    {getPlayerClubNationName(fts, tournament.config)}
+                  </Row>
+                ))}
+              </DisplayDetails>
+              <DisplayDetails field={awards.final_best_player} label="Final Best Player" showDivider={true}>
+                {awards.final_best_player.map((fbp) => (
+                  <Row className="no-margin-lr margin-bottom-xs display-block" key={fbp.player}>
+                    {getPlayerClubNationName(fbp, tournament.config)}
+                  </Row>
+                ))}
+              </DisplayDetails>
+              <DisplayDetails field={awards.final_best_young_player} label="Final Best Young Player" showDivider={true}>
+                {awards.final_best_young_player.map((fbyp) => (
+                  <Row className="no-margin-lr margin-bottom-xs display-block" key={fbyp.player}>
+                    {getPlayerClubNationName(fbyp, tournament.config)}
                   </Row>
                 ))}
               </DisplayDetails>

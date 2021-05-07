@@ -10,7 +10,7 @@
         "teams": {
           "auto": [1, 2],
           "eliminated": [3, 4],
-          "text": "The winner would've won the Copa America. As Brazil and Uruguay finished tied in the final round, a playoff match was played between Brazil and Uruguay to determine the champion. Brazil eventually won the Final Playoff."
+          "text": "The winner would've won the Copa America. As Brazil and Uruguay finished tied on points in the final round, a playoff match was played between Brazil and Uruguay to determine the champion. Brazil eventually won the Final Playoff."
         }
       },
       "groups": [
@@ -96,7 +96,7 @@
               "away_score": 0,
               "home_extra_score": 1,
               "away_extra_score": 0,
-              "date": "1919-05-26",
+              "date": "1919-05-29",
               "time": "12:00",
               "stadium": "Estádio das Laranjeiras",
               "city": "Rio de Janeiro"

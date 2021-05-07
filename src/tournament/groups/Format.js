@@ -155,6 +155,12 @@ const FormatContent = (props) => {
                           <li>Goals scored in all group matches</li>
                         </React.Fragment>
                       )
+                    } else if (tb === 'pointtiedtopstandings') {
+                      return (
+                        <React.Fragment key={index}>
+                          <li>If points tied at the top of the standings, a playoff match would be held to determine the champion.</li>
+                        </React.Fragment>
+                      )
                     } else if (tb === 'pointandgoaldifference') {
                       return (
                         <React.Fragment key={index}>

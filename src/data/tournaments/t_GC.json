@@ -387,7 +387,7 @@
     "short_name": "United States",
     "competition_id": "GC",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "no_third_place": true,
     "details": {
       "host": ["USA"],
@@ -445,7 +445,7 @@
     "competition_id": "GC",
     "golden_goal_rule": true,
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["USA", "MEX"],
       "logo_filename": "gc_2003.png",
@@ -494,7 +494,7 @@
     "competition_id": "GC",
     "golden_goal_rule": true,
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team", "lot"],
     "details": {
       "host": ["USA"],
       "logo_filename": "gc_2002.png",
@@ -535,7 +535,7 @@
     "competition_id": "GC",
     "golden_goal_rule": true,
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team", "lot"],
     "no_third_place": true,
     "details": {
       "host": ["USA"],
@@ -583,7 +583,7 @@
     "competition_id": "GC",
     "golden_goal_rule": true,
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["USA"],
       "logo_filename": "gc_1998.png",
@@ -630,7 +630,7 @@
     "competition_id": "GC",
     "golden_goal_rule": true,
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["USA"],
       "logo_filename": "gc_1996.png",
@@ -674,7 +674,7 @@
     "competition_id": "GC",
     "golden_goal_rule": true,
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["USA", "MEX"],
       "logo_filename": "gc_1993.jpg",
@@ -717,7 +717,7 @@
     "short_name": "1991 United States",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["USA"],
       "logo_filename": "gc_1991.jpg",
@@ -756,7 +756,7 @@
     "era": "CONCACAF Championship",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "logo_filename": "CONCACAF.png",
       "start_date": "1989-03-19",
@@ -809,7 +809,7 @@
     "short_name": "1985",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "logo_filename": "CONCACAF.png",
       "start_date": "1985-02-24",
@@ -853,7 +853,7 @@
     "short_name": "1981 Honduras",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["HON"],
       "logo_filename": "CONCACAF.png",
@@ -885,7 +885,7 @@
     "short_name": "1977 Mexico",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["MEX"],
       "logo_filename": "CONCACAF.png",
@@ -922,7 +922,7 @@
     "short_name": "1973 Haiti",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["HAI-1964-1986"],
       "logo_filename": "CONCACAF.png",
@@ -959,7 +959,7 @@
     "short_name": "1971 Trinidad and Tobago",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["TRI"],
       "logo_filename": "CONCACAF.png",
@@ -1003,7 +1003,7 @@
     "short_name": "1969 Costa Rica",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["CRC"],
       "logo_filename": "CONCACAF.png",
@@ -1039,7 +1039,7 @@
     "short_name": "1967 Honduras",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["HON"],
       "logo_filename": "CONCACAF.png",
@@ -1079,7 +1079,7 @@
     "short_name": "1965 Guatemala",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["GUA"],
       "logo_filename": "CONCACAF.png",
@@ -1114,7 +1114,7 @@
     "short_name": "1963 El Salvador",
     "competition_id": "GC",
     "points_for_win": 2,
-    "tiebreakers": ["team", "head2headpoints", "lot"],
+    "tiebreakers": ["team"],
     "details": {
       "host": ["SLV"],
       "logo_filename": "CONCACAF.png",
