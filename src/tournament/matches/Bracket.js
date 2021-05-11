@@ -20,7 +20,7 @@ const getMatchDate = (match, config) => {
 
 const getMatchPairDate = (match) => {
   if (isEmpty(match)) return
-  return <React.Fragment>{match.date ? moment(match.date).format('MMM D, YYYY') : ''}</React.Fragment>
+  return <React.Fragment>{match.date ? moment(match.date).format('MM/DD') : ''}</React.Fragment>
 }
 
 export const getBracketClubLogoImg = (id, config) => {

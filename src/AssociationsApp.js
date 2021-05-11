@@ -35,7 +35,7 @@ class AssociationsApp extends React.Component {
       <Page>
         <Container>
           <h1 className="h1-ff5 text-center mt-3 mb-3">National Associations</h1>
-          <Row className="mt-3 mb-3 text-left conf-box">
+          <Row className="mt-3 mb-3 text-left assoc-page-box">
             <Col sm="12" md="12">
               <section className="associations section-bg">
                 <div className="container">

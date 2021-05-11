@@ -14,7 +14,7 @@ const TournamentHead = (props) => {
   const runnerupLabel = !isOlympicTournaments(config.id) ? 'Runners-up' : 'Silver'
   const thirdPlaceLabel = !isOlympicTournaments(config.id) ? 'Third-place' : 'Bronze'
   return (
-    <Row className="ranking-tbl team-header-row padding-tb-md text-center gray-striped">
+    <Row className="competition-tbl team-header-row padding-tb-md text-center gray-striped">
       <Col className="col-1">No.</Col>
       <Col className="score-no-padding-right col-2">Edition</Col>
       <Col className="text-center score-no-padding-right col-2">{championLabel}</Col>
@@ -55,12 +55,12 @@ const TournamentRow = (props) => {
   return (
     <React.Fragment>
       {details.era && (
-        <Row className="ranking-tbl team-header-row padding-tb-md text-center gray-striped">
+        <Row className="competition-tbl team-header-row padding-tb-md text-center gray-striped">
           <Col>{details.era}</Col>
         </Row>
       )}
       {config.showHeader && <TournamentHead config={config} />}
-      <Row className={`ranking-tbl team-row padding-tb-md text-center${count % 2 !== 0 ? ' ltblue-striped' : ''}`}>
+      <Row className={`competition-tbl team-row padding-tb-md text-center${count % 2 !== 0 ? ' ltblue-striped' : ''}`}>
         <Col className="col-1">{count}</Col>
         <Col className="score-no-padding-right col-2">
           {!details.short_name && (
@@ -79,21 +79,21 @@ const TournamentRow = (props) => {
                   <a href={`/tournament/${row.id}`}>
                     <img src={`/images/${config.logo_path}/${details.logo_filename}`} alt={details.name} title={details.name} className="tournament-logo-sm" />
                   </a>
-                  <p className="ranking-tbl-sm">{details.short_name}</p>
+                  <p className="competition-tbl-sm">{details.short_name}</p>
                 </React.Fragment>
               )}
             </React.Fragment>
           )}
         </Col>
-        <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+        <Col className="text-center score-no-padding-right col-2 word-break-all">
           {details.final_standings && TeamCell(details.final_standings.champions, config)}
         </Col>
-        <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+        <Col className="text-center score-no-padding-right col-2 word-break-all">
           {details.final_standings && TeamCell(details.final_standings.runners_up, config)}
         </Col>
         {!config.no_third_place && (
           <React.Fragment>
-            <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+            <Col className="text-center score-no-padding-right col-2 word-break-all">
               {typeof details.final_standings.third_place === 'string' && TeamCell(details.final_standings.third_place, config)}
               {typeof details.final_standings.third_place === 'object' && (
                 <React.Fragment>
@@ -104,7 +104,7 @@ const TournamentRow = (props) => {
                 </React.Fragment>
               )}
             </Col>
-            <Col className="text-center score-no-padding-right col-2 tournament-result-team-name">
+            <Col className="text-center score-no-padding-right col-2 word-break-all">
               {details.final_standings && TeamCell(details.final_standings.fourth_place, config)}
             </Col>
           </React.Fragment>
@@ -112,8 +112,8 @@ const TournamentRow = (props) => {
         {config.no_third_place && (
           <Col className="text-center score-no-padding-right col-4">
             <Row>
-              <Col className="col-6 tournament-result-team-name">{TeamCell(details.final_standings.semi_finalist1, config)}</Col>
-              <Col className="col-6 tournament-result-team-name">{TeamCell(details.final_standings.semi_finalist2, config)}</Col>
+              <Col className="col-6 word-break-all">{TeamCell(details.final_standings.semi_finalist1, config)}</Col>
+              <Col className="col-6 word-break-all">{TeamCell(details.final_standings.semi_finalist2, config)}</Col>
             </Row>
           </Col>
         )}

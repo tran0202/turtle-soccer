@@ -35,6 +35,7 @@ const DisplayPath = (props) => {
           }
           if (r.config.round_type === 'knockout') {
             const matchArray = getRoundMatches(r, true)
+            // console.log('matchArray', matchArray)
             if (!hasReplay(r)) {
               if (!stage.config.multiple_paths) {
                 return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />

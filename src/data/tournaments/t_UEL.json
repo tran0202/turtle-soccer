@@ -39,11 +39,12 @@
         "text": "The Stadion Miejski will host the final."
       }
     ],
-    "statistics": { "total_matches": 183, "total_goals": 564, "attendance": 98455 },
+    "statistics": { "total_matches": 203, "total_goals": 616, "attendance": 99205 },
     "awards": {
       "golden_boot": [
         { "player": "Pizzi", "team": "POR", "club": "SLB", "goals": 7, "minutes": 385 },
-        { "player": "Yusuf Yazıcı", "team": "TUR", "club": "LIL", "goals": 7, "minutes": 625 }
+        { "player": "Yusuf Yazıcı", "team": "TUR", "club": "LIL", "goals": 7, "minutes": 625 },
+        { "player": "Borja Mayoral", "team": "ESP", "club": "ROM", "goals": 7, "minutes": 659 }
       ]
     }
   },

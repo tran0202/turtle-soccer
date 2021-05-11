@@ -202,8 +202,6 @@ const accumulateRanking = (team, match, config) => {
   team.h2hm && team.h2hm.forEach((m) => newH2h.push(m))
   newH2h.push(match)
   team.h2hm = newH2h
-  // team.h2hm.push(match)
-  // console.log('team.h2hm', team.h2hm)
 }
 
 export const getBlankRanking = (teamId) => {
@@ -293,14 +291,6 @@ export const calculateProgressRankings = (tournament, group) => {
   calculateGroupRankings(tournament.progress_rankings, group, config)
 }
 
-// export const calculateGroupRankings = (container, group, config) => {
-//   // calculateRoundRankings(container, teams, matches, config)
-// }
-
-// const calculateKnockoutTeamRanking = (team, match, config) => {
-//   accumulateRanking(team, match, config)
-// }
-
 export const calculateKnockoutRankings = (tournament, round, config) => {
   const at_round = findRoundAdvancedTeams(tournament, round.details.name)
   round.matches &&
@@ -311,14 +301,6 @@ export const calculateKnockoutRankings = (tournament, round, config) => {
       accumulateRanking(away_rankings, m, config)
     })
 }
-
-// export const calculateLeagueKnockoutRankings = (advanced_teams, round, config) => {
-//   round.matches &&
-//     round.matches.forEach((m) => {
-//       calculateKnockoutTeamRanking(findTeam(advanced_teams.rankings, m.home_team), m, config)
-//       calculateKnockoutTeamRanking(findTeam(advanced_teams.rankings, m.away_team), m, config)
-//     })
-// }
 
 export const findRoundAdvancedTeams = (tournament, name) => {
   if (!tournament.advanced_teams) return

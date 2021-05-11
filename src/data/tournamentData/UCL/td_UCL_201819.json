@@ -23,7 +23,8 @@
               "date": "2018-06-26",
               "time": "17:00",
               "stadium": "Victoria Stadium",
-              "city": "Gibraltar"
+              "city": "Gibraltar",
+              "bracket_order": 2
             },
             {
               "home_team": "LFI",
@@ -33,7 +34,8 @@
               "date": "2018-06-26",
               "time": "21:00",
               "stadium": "Victoria Stadium",
-              "city": "Gibraltar"
+              "city": "Gibraltar",
+              "bracket_order": 1
             }
           ]
         },
@@ -77,12 +79,12 @@
           ],
           "matches": [
             {
-              "home_team": "DRI",
-              "away_team": "LRI",
+              "home_team": "LRI",
+              "away_team": "DRI",
               "home_score": 1,
               "away_score": 1,
-              "home_extra_score": 3,
-              "away_extra_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 3,
               "date": "2018-06-29",
               "time": "20:30",
               "stadium": "Victoria Stadium",

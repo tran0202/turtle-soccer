@@ -678,9 +678,9 @@ export const setTournamentDetails = (t) => {
           best_defender: t.awards.best_defender || [],
           best_midfielder: t.awards.best_midfielder || [],
           best_forward: t.awards.best_forward || [],
-          final_top_scorer: t.awards.final_top_scorer || {},
-          final_best_player: t.awards.final_best_player || {},
-          final_best_young_player: t.awards.final_best_young_player || {},
+          final_top_scorer: t.awards.final_top_scorer || [],
+          final_best_player: t.awards.final_best_player || [],
+          final_best_young_player: t.awards.final_best_young_player || [],
           fair_play_team: t.awards.fair_play_team || [],
         }
       : {},

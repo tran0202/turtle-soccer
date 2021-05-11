@@ -3910,6 +3910,7 @@
     {
       "name": "Knockout Stage",
       "type": "knockout",
+      "default": true,
       "rounds": [
         {
           "name": "Round of 32",
@@ -4582,23 +4583,181 @@
         {
           "name": "Quarter-finals",
           "short_name": "1/4",
+          "round_type": "knockout2legged",
           "eliminate_count": 4,
           "next_round": "Semi-finals",
           "pairs": [
-            { "matches": [], "bracket_order": 3 },
-            { "matches": [], "bracket_order": 4 },
-            { "matches": [], "bracket_order": 1 },
-            { "matches": [], "bracket_order": 2 }
+            {
+              "matches": [
+                {
+                  "home_team": "GCF",
+                  "away_team": "MUN",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2021-04-08",
+                  "time": "21:00",
+                  "stadium": "Nuevo Los Cármenes",
+                  "city": "Granada",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "MUN",
+                  "away_team": "GCF",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2021-04-15",
+                  "time": "21:00",
+                  "stadium": "Old Trafford",
+                  "city": "Manchester",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 3
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "ARS",
+                  "away_team": "SLP",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2021-04-08",
+                  "time": "21:00",
+                  "stadium": "Emirates Stadium",
+                  "city": "London",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "SLP",
+                  "away_team": "ARS",
+                  "home_score": 0,
+                  "away_score": 4,
+                  "date": "2021-04-15",
+                  "time": "21:00",
+                  "stadium": "Sinobo Stadium",
+                  "city": "Prague",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "AJA",
+                  "away_team": "ROM",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2021-04-08",
+                  "time": "21:00",
+                  "stadium": "Johan Cruyff Arena",
+                  "city": "Amsterdam",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "ROM",
+                  "away_team": "AJA",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2021-04-15",
+                  "time": "21:00",
+                  "stadium": "Stadio Olimpico",
+                  "city": "Rome",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 4
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "DZA",
+                  "away_team": "VIL",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2021-04-08",
+                  "time": "21:00",
+                  "stadium": "Stadion Maksimir",
+                  "city": "Zagreb",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "VIL",
+                  "away_team": "DZA",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2021-04-15",
+                  "time": "21:00",
+                  "stadium": "Estadio de la Cerámica",
+                  "city": "Villarreal",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
+            }
           ]
         },
         {
           "name": "Semi-finals",
           "short_name": "1/2",
+          "round_type": "knockout2legged",
           "eliminate_count": 2,
           "next_round": "Final",
           "pairs": [
-            { "matches": [], "bracket_order": 2 },
-            { "matches": [], "bracket_order": 1 }
+            {
+              "matches": [
+                {
+                  "home_team": "MUN",
+                  "away_team": "ROM",
+                  "home_score": 6,
+                  "away_score": 2,
+                  "date": "2021-04-29",
+                  "time": "21:00",
+                  "stadium": "Old Trafford",
+                  "city": "Manchester",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "ROM",
+                  "away_team": "MUN",
+                  "home_score": 3,
+                  "away_score": 2,
+                  "date": "2021-05-06",
+                  "time": "21:00",
+                  "stadium": "Stadio Olimpico",
+                  "city": "Rome",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "VIL",
+                  "away_team": "ARS",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2021-04-29",
+                  "time": "21:00",
+                  "stadium": "Estadio de la Cerámica",
+                  "city": "Villarreal",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "ARS",
+                  "away_team": "VIL",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2021-05-06",
+                  "time": "21:00",
+                  "stadium": "Emirates Stadium",
+                  "city": "London",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
+            }
           ]
         },
         { "name": "Final", "short_name": "1st", "matches": [] }

@@ -25,7 +25,7 @@ export const getNationSmallFlagImg = (id) => {
     if (nation) {
       return (
         <React.Fragment>
-          <img className="flag-xs-2 flag-sm-3" src={`/images/flags/${nation.flag_filename}`} alt={nation.id} title={nation.id} />
+          <img className="flag-xs-2 flag-sm-2" src={`/images/flags/${nation.flag_filename}`} alt={nation.id} title={nation.id} />
         </React.Fragment>
       )
     } else {

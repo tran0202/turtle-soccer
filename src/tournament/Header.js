@@ -96,7 +96,7 @@ class Header extends React.Component {
       <Row className="mt-3 text-center">
         <Col lg={{ size: 2, offset: 1 }} md={{ size: 2 }} sm="3" className="mt-3 mb-2">
           <a href={`/tournament/${tournament.id}`}>
-            <img className="card-img-top-height-100" src={`/images/${competition.config.logo_path}/${logo_filename}`} alt={name} title={name} />
+            <img className="tournament-top-height-100" src={`/images/${competition.config.logo_path}/${logo_filename}`} alt={name} title={name} />
           </a>
         </Col>
         <Col lg="9" md="10" sm="9">

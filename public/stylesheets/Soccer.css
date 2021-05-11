@@ -36,11 +36,127 @@
   padding-bottom: 10px;
 }
 
+.tournament-logo {
+  width: auto;
+  height: 90px;
+  max-width: 100%;
+}
+.tournament-logo-sm {
+  width: auto;
+  height: 70px;
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .tournament-logo {
+    width: auto;
+    height: 70px;
+    max-width: 100%;
+  }
+  .tournament-logo-sm {
+    width: auto;
+    height: 50px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tournament-logo {
+    width: auto;
+    height: 50px;
+    max-width: 100%;
+  }
+  .tournament-logo-sm {
+    width: auto;
+    height: 40px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .tournament-logo {
+    width: auto;
+    height: 40px;
+    max-width: 100%;
+  }
+  .tournament-logo-sm {
+    width: auto;
+    height: 30px;
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 576px) {
   .tournament-award {
     border-bottom: 1px solid #e6e7e9;
     padding-bottom: 10px;
   }
+}
+
+.tournament-title {
+  font-family: 'Dusha', sans-serif;
+}
+.tournament-title-WC {
+  font-family: 'Dusha', sans-serif;
+}
+.tournament-title-WWC {
+  font-family: 'Mexcellent 3D', sans-serif;
+}
+.tournament-title-MOFT {
+  font-family: 'London 2012', sans-serif;
+}
+.tournament-title-WOFT {
+  font-family: 'Mexcellent', sans-serif;
+}
+.tournament-title-CONFEDC {
+  font-family: 'Philosopher', sans-serif;
+}
+.tournament-title-EURO {
+  font-family: 'Bridge', sans-serif;
+}
+.tournament-title-UNL {
+  font-family: 'Good Times', sans-serif;
+}
+.tournament-title-UCL {
+  font-family: 'Champions Bold', sans-serif;
+}
+.tournament-title-UEL {
+  font-family: 'Europa Title', sans-serif;
+}
+.tournament-title-COPA {
+  font-family: 'Copa America', sans-serif;
+}
+.tournament-title-GC {
+  font-family: 'Coolvetica', sans-serif;
+}
+.tournament-title-AFCON {
+  font-family: 'Hemi Head', sans-serif;
+}
+.tournament-title-AAC {
+  font-family: 'Go3', sans-serif;
+}
+.tournament-title-ONC {
+  font-family: 'Capture it', sans-serif;
+}
+
+.tournament-top-height-100 {
+  width: auto;
+  height: 100px;
+  max-width: 100%;
+}
+
+.tournament-format {
+  vertical-align: middle;
+  border: 1px solid #a2a9b1;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.tournament-mascot {
+  width: 100%;
+  border: 1px solid #c7c6c6;
+  border-radius: 0.25rem;
 }
 
 /* ========== Associations ========== */
@@ -56,7 +172,7 @@
   margin-bottom: 30px;
 }
 
-/* ========== Flag ========== */
+/* ========== Flags ========== */
 
 .flag-xxs {
   width: 16px;
@@ -70,11 +186,6 @@
 }
 .flag-xs {
   width: 24px;
-  border: 1px solid #c7c6c6;
-}
-.flag-sm-2 {
-  width: 28px;
-  height: 21px;
   border: 1px solid #c7c6c6;
 }
 .flag-sm {
@@ -92,7 +203,7 @@
   border: 1px solid #c7c6c6;
 }
 @media (min-width: 768px) {
-  .flag-sm-3 {
+  .flag-sm-2 {
     width: 28px;
     height: 21px;
     border: 1px solid #c7c6c6;
@@ -101,9 +212,6 @@
     width: 48px;
     height: 32px;
     border: 1px solid #c7c6c6;
-  }
-  .flag-md-olympic {
-    height: 25px;
   }
   .flag-club-md {
     max-width: 36px;
@@ -148,16 +256,6 @@
   .bracket-logo-sm {
     height: 28px;
   }
-}
-
-.margin-top-flag {
-  margin-top: -6px;
-}
-.logo-md {
-  height: 32px;
-}
-.logo-lg {
-  height: 44px;
 }
 
 /* ========== Boxes ========== */
@@ -217,36 +315,140 @@
   padding-top: 12px;
   line-height: 20px;
 }
-.box-team-name,
-.tournament-result-team-name {
+.box-team-name {
   word-break: break-all;
 }
 .box-team-name-light,
 .box-score-light {
   font-weight: 300;
 }
+
+@media (max-width: 768px) {
+  .box-team-name,
+  .box-score {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 14px;
+  }
+  .box-team-name-light,
+  .box-score-light {
+    font-weight: 300;
+  }
+}
+
+.box-tip-text {
+  font-size: 14px;
+  color: blue;
+}
+
+.conf-box,
+.comp-box,
+.assoc-page-box {
+  vertical-align: middle;
+  border: 1px solid #a2a9b1;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.conf-logo,
+.comp-logo {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+/* ========== Matches & Rankings ========== */
+
+.russia-2018 {
+  color: #930c10;
+}
+.unl-red {
+  color: #e30e1b;
+}
+.unl-league-A {
+  color: #e30918;
+}
+.unl-league-B {
+  color: #ac16e1;
+}
+.unl-league-C {
+  color: #009e4d;
+}
+.unl-league-D {
+  color: #f39205;
+}
+
+.advanced-next-round-striped {
+  background-color: #e3fae3;
+}
+.advanced-wild-card-striped {
+  background-color: #bbf3ff;
+}
+.advanced-wild-card-extra-striped {
+  background-color: #ffffbb;
+}
+.advanced-playoff-striped {
+  background-color: #bbf3ff;
+}
+.advanced-third-place-striped {
+  background-color: #bbf3ff;
+}
+.transferred-striped {
+  background-color: #bbf3ff;
+}
+.qualification-winner-striped {
+  background-color: #bbf3bb;
+}
+.promotion-striped {
+  background-color: #bbf3bb;
+}
+.relegation-striped {
+  background-color: #ffe2e2;
+}
+.gray-striped {
+  background-color: #eaecf0;
+}
+.ltblue-striped {
+  background-color: #eaf4ff;
+}
+
+.gold {
+  background-color: gold;
+}
+.silver {
+  background-color: silver;
+}
+.bronze {
+  background-color: rgb(204, 153, 102);
+}
+
 .ranking-tbl,
+.competition-tbl,
 .team-name,
 .score {
   font-size: 2rem;
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
 }
-.ranking-tbl-sm {
+.ranking-tbl-sm,
+.competition-tbl-sm {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   font-size: 1rem;
 }
 
-.successor-subscript,
-.withdrew-subscript {
-  font-size: 1rem;
-}
+@media (max-width: 992px) {
+  .team-name-no-padding-right,
+  .score-no-padding-right {
+    padding-right: 0;
+  }
 
-.aggregate_text {
-  font-size: 20px;
+  .team-name-no-padding-left,
+  .flag-no-padding-left {
+    padding-left: 0;
+  }
 }
-
 .ranking-row div.row:nth-child(2),
 .ranking-row div.row:nth-child(3),
 .ranking-row div.row:nth-child(4),
@@ -263,64 +465,52 @@
 .rank-col-padding-2 {
   padding-top: 65px;
 }
-
 .rank-col-padding-3 {
   padding-top: 115px;
 }
-
 .rank-col-padding-4 {
   padding-top: 155px;
 }
-
 .rank-col-padding-5 {
   padding-top: 205px;
 }
-
 .rank-col-padding-6 {
   padding-top: 245px;
 }
-
 .rank-col-padding-7 {
   padding-top: 300px;
 }
-
 .rank-col-padding-8 {
   padding-top: 340px;
 }
-
 .rank-col-padding-9 {
   padding-top: 390px;
 }
 
-.tournament-logo {
-  width: auto;
-  height: 90px;
-  max-width: 100%;
+.successor-subscript,
+.withdrew-subscript {
+  font-size: 1rem;
 }
-.tournament-logo-sm {
-  width: auto;
-  height: 70px;
-  max-width: 100%;
+.aggregate_text {
+  font-size: 20px;
 }
 
 @media (max-width: 992px) {
-  .ranking-tbl {
+  .ranking-tbl,
+  .competition-tbl {
     font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
     padding-top: 10px;
     padding-bottom: 5px;
   }
-  .ranking-tbl-sm {
+  .ranking-tbl-sm,
+  .competition-tbl-sm {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     font-size: 0.75rem;
   }
 
-  .successor-subscript,
-  .withdrew-subscript {
-    font-size: 1rem;
-  }
   .rank-col-padding-2 {
     padding-top: 60px;
   }
@@ -346,20 +536,15 @@
     padding-top: 450px;
   }
 
-  .tournament-logo {
-    width: auto;
-    height: 70px;
-    max-width: 100%;
-  }
-  .tournament-logo-sm {
-    width: auto;
-    height: 50px;
-    max-width: 100%;
+  .successor-subscript,
+  .withdrew-subscript {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .ranking-tbl,
+  .competition-tbl,
   .team-name,
   .score {
     font-size: 1rem;
@@ -368,16 +553,13 @@
     padding-top: 10px;
     padding-bottom: 5px;
   }
-  .ranking-tbl-sm {
+  .ranking-tbl-sm,
+  .competition-tbl-sm {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     font-size: 0.5rem;
   }
 
-  .successor-subscript,
-  .withdrew-subscript {
-    font-size: 0.5rem;
-  }
   .rank-col-padding-2 {
     padding-top: 55px;
   }
@@ -402,36 +584,19 @@
   .rank-col-padding-9 {
     padding-top: 360px;
   }
-  .box-team-name,
-  .box-score {
-    font-size: 0.75rem;
-    font-weight: 400;
-    font-family: 'Oswald', sans-serif;
-    padding-top: 14px;
-  }
-  .box-team-name-light,
-  .box-score-light {
-    font-weight: 300;
-  }
 
+  .successor-subscript,
+  .withdrew-subscript {
+    font-size: 0.5rem;
+  }
   .aggregate_text {
     font-size: 15px;
-  }
-
-  .tournament-logo {
-    width: auto;
-    height: 50px;
-    max-width: 100%;
-  }
-  .tournament-logo-sm {
-    width: auto;
-    height: 40px;
-    max-width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   .ranking-tbl,
+  .competition-tbl,
   .team-name,
   .score {
     font-size: 0.75rem;
@@ -439,13 +604,10 @@
     padding-top: 10px;
     padding-bottom: 5px;
   }
-  .ranking-tbl-sm {
+  .ranking-tbl-sm,
+  .competition-tbl-sm {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
-    font-size: 0.25rem;
-  }
-
-  .successor-subscript {
     font-size: 0.25rem;
   }
 
@@ -474,6 +636,13 @@
     padding-top: 320px;
   }
 
+  .successor-subscript {
+    font-size: 0.25rem;
+  }
+  .aggregate_text {
+    font-size: 10px;
+  }
+
   .no-display-xs {
     display: none;
   }
@@ -481,27 +650,9 @@
   .margin-top-time-xs {
     margin-top: 3px;
   }
-
-  .aggregate_text {
-    font-size: 10px;
-  }
-
-  .tournament-logo {
-    width: auto;
-    height: 40px;
-    max-width: 100%;
-  }
-  .tournament-logo-sm {
-    width: auto;
-    height: 30px;
-    max-width: 100%;
-  }
 }
 
-.box-tip-text {
-  font-size: 14px;
-  color: blue;
-}
+/* ========== Columns ========== */
 
 .col-box-5,
 .col-box-7,
@@ -696,19 +847,7 @@
   }
 }
 
-@media (max-width: 992px) {
-  .team-name-no-padding-right,
-  .score-no-padding-right {
-    padding-right: 0;
-  }
-
-  .team-name-no-padding-left,
-  .flag-no-padding-left {
-    padding-left: 0;
-  }
-}
-
-/* ========== Bracket ========== */
+/* ========== Brackets ========== */
 
 .col-brk-1,
 .col-brk-2,
@@ -1005,81 +1144,8 @@
 .bracket-gap-height-40 {
   height: 1060px;
 }
-/* 
-.bracket-gap-height-32 {
-  height: 510px;
-}
-.bracket-gap-height-40 {
-  height: 610px;
-}
-.bracket-gap-height-50 {
-  height: 610px;
-}
-.bracket-gap-height-51 {
-  height: 2120px;
-} */
 
 /* ========== Miscelaneous ========== */
-
-.tournament-title {
-  font-family: 'Dusha', sans-serif;
-}
-.tournament-title-WC {
-  font-family: 'Dusha', sans-serif;
-}
-.tournament-title-WWC {
-  font-family: 'Mexcellent 3D', sans-serif;
-}
-.tournament-title-MOFT {
-  font-family: 'London 2012', sans-serif;
-}
-.tournament-title-WOFT {
-  font-family: 'Mexcellent', sans-serif;
-}
-.tournament-title-CONFEDC {
-  font-family: 'Philosopher', sans-serif;
-}
-.tournament-title-EURO {
-  font-family: 'Bridge', sans-serif;
-}
-.tournament-title-UNL {
-  font-family: 'Good Times', sans-serif;
-}
-.tournament-title-UCL {
-  font-family: 'Champions Bold', sans-serif;
-}
-.tournament-title-UEL {
-  font-family: 'Europa Title', sans-serif;
-}
-.tournament-title-COPA {
-  font-family: 'Copa America', sans-serif;
-}
-.tournament-title-GC {
-  font-family: 'Coolvetica', sans-serif;
-}
-.tournament-title-AFCON {
-  font-family: 'Hemi Head', sans-serif;
-}
-.tournament-title-AAC {
-  font-family: 'Go3', sans-serif;
-}
-.tournament-title-ONC {
-  font-family: 'Capture it', sans-serif;
-}
-
-.tournament-format {
-  vertical-align: middle;
-  border: 1px solid #a2a9b1;
-  padding: 1.5rem 1.5rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-}
-
-.tournament-mascot {
-  width: 100%;
-  border: 1px solid #c7c6c6;
-  border-radius: 0.25rem;
-}
 
 .competition-trophy {
   width: 100%;
@@ -1087,21 +1153,10 @@
   border-radius: 0.25rem;
 }
 
-.confed-tab {
-  width: 14%;
-  text-align: center;
-}
-
 .qualification-confed-links {
   line-height: 1;
   border-top: 1px solid #e6e7e9;
   border-bottom: 1px solid #e6e7e9;
-}
-
-.card-img-top-height-100 {
-  width: auto;
-  height: 100px;
-  max-width: 100%;
 }
 
 .btn-collapse {
@@ -1112,20 +1167,6 @@
 .successor-tooltip {
   max-width: 300px;
   text-align: left;
-}
-
-.conf-box {
-  vertical-align: middle;
-  border: 1px solid #a2a9b1;
-  padding: 1.5rem 1.5rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-}
-
-.conf-logo,
-.comp-logo {
-  max-height: 100px;
-  max-width: 100px;
 }
 
 /* ========== Nav Tabs Override ========== */

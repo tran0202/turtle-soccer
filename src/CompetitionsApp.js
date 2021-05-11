@@ -69,7 +69,7 @@ class CompetitionsApp extends React.Component {
           <h1 className="h1-ff5 text-center mt-3 mb-3">Competitions</h1>
           {competitions.map((c) => {
             return (
-              <Row className="mt-3 mb-3 text-left conf-box" key={c.id}>
+              <Row className="mt-3 mb-3 text-left comp-box" key={c.id}>
                 <Col sm="12" md="2" className="mb-2">
                   {c.details.trophy_filename && (
                     <img
@@ -107,7 +107,7 @@ class CompetitionsApp extends React.Component {
                                     src={`/images/${t.config.logo_path}/${t.details.logo_filename}`}
                                     alt={t.details.name}
                                     title={t.details.name}
-                                    className="card-img-top-height-100 mx-auto"
+                                    className="tournament-top-height-100 mx-auto"
                                   />
                                 )}
                               </a>
@@ -120,7 +120,7 @@ class CompetitionsApp extends React.Component {
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 text-center" data-aos="fade-up">
                           <div className="tournament-box">
                             <a href={`/competition/${c.id}`}>
-                              <i className="icofont-football card-img-top-height-100 mx-auto"></i>
+                              <i className="icofont-football tournament-top-height-100 mx-auto"></i>
                             </a>
                             <a href={`/competition/${c.id}`}>
                               <p className="text-center font-bold mt-3">

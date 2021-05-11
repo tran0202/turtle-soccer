@@ -37,7 +37,7 @@
         "text": "The Atatürk Olympic Stadium will host the final."
       }
     ],
-    "statistics": { "total_matches": 112, "total_goals": 337, "attendance": 165939 },
+    "statistics": { "total_matches": 124, "total_goals": 365, "attendance": 165939 },
     "awards": {
       "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "club": "DOR", "goals": 10 }]
     }

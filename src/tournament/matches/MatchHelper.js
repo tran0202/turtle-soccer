@@ -1,6 +1,5 @@
 import React from 'react'
 import { getTeamName, getTeamFlag } from '../../core/TeamHelper'
-// import { isAwayGoalsWinner } from '../../core/Helper'
 import {
   PlayoffWinTooltip,
   WalkoverTooltip,
@@ -42,10 +41,6 @@ export const calculateAggregateScore = (round) => {
         }
       }
       if (!isUndefined(m2) && !isUndefined(m1) && m2.home_team === m1.away_team && m2.away_team === m1.home_team) {
-        // m1.round_type = firstLeg.round_type
-        // m2.round_type = secondLeg.round_type
-        // m1.first_leg = true
-        // m2.second_leg = true
         m1.home_score_2nd_leg = m2.away_score
         m1.away_score_2nd_leg = m2.home_score
         m1.home_extra_score_2nd_leg = m2.away_extra_score
@@ -115,12 +110,8 @@ export const calculateAggregateScore = (round) => {
           m1.bypass_away_goals = m2.bypass_away_goals
         }
         if (m1.need_playoff) {
-          // firstLeg.need_playoff = m1.need_playoff
-          // secondLeg.need_playoff = m1.need_playoff
           m2.need_playoff = m1.need_playoff
         } else if (m2.need_playoff) {
-          // firstLeg.need_playoff = m2.need_playoff
-          // secondLeg.need_playoff = m2.need_playoff
           m1.need_playoff = m2.need_playoff
         }
         if (m2.away_aggregate_playoff_win) {
@@ -188,7 +179,6 @@ export const getRoundMatches = (round, sorted) => {
     return [getDateMatchArray(tmp, sorted), getDateMatchArray(tmpReplay, sorted)]
   } else {
     return [getDateMatchArray(tmp, sorted), getDateMatchArray(tmpPlayoff, sorted)]
-    //return [getDateMatchArray(tmp, sorted), { ...getDateMatchArrayPair(tmpPlayoff, sorted), name: 'Playoff' }]
   }
 }
 
@@ -822,10 +812,9 @@ export const DisplayMatch = (props) => {
 
 export const DisplaySchedule2 = (props) => {
   const { round, config, details } = props
-  // console.log('details', details)
+  // console.log('round', round)
   if (isEmpty(round)) return null
   const { show_match_year, hide_date_grouping } = config
-  //   const { dates, matches } = round
   return (
     <React.Fragment>
       {details && details.path_name && (

@@ -51,10 +51,6 @@
   src: url('fonts/Champions-Bold.ttf');
 }
 @font-face {
-  font-family: 'Homoarak';
-  src: url('fonts/HOMOARAK.TTF');
-}
-@font-face {
   font-family: 'Europa Title';
   src: url('fonts/europatitlebold.ttf');
 }
@@ -69,15 +65,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f8f8f8;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
 a {
   color: #0040ff;
 }
-
 a:hover {
   color: #2acaea;
   text-decoration: none;
@@ -102,26 +95,6 @@ a:hover {
 }
 .orange {
   color: #ffa500;
-}
-
-.russia-2018 {
-  color: #930c10;
-}
-
-.unl-red {
-  color: #e30e1b;
-}
-.unl-league-A {
-  color: #e30918;
-}
-.unl-league-B {
-  color: #ac16e1;
-}
-.unl-league-C {
-  color: #009e4d;
-}
-.unl-league-D {
-  color: #f39205;
 }
 
 /*Tertiary*/
@@ -170,22 +143,19 @@ a:hover {
 .weight-black {
   font-weight: 900;
 }
+
 .font-bold {
   font-weight: bold;
 }
-
 .font-10 {
   font-size: 10px;
 }
-
 .font-14 {
   font-size: 14px;
 }
-
 .font-20 {
   font-size: 20px;
 }
-
 .font-custom1 {
   font-size: 40px;
 }
@@ -608,6 +578,19 @@ a:hover {
 
 /* ========== Miscellaneous ========== */
 
+.no-display {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+.txt-underline {
+  text-decoration: underline;
+}
+.word-break-all {
+  word-break: break-all;
+}
+
 .modal-md {
   max-width: 800px;
 }
@@ -616,93 +599,4 @@ a:hover {
 }
 .modal-close {
   font-size: 26px;
-}
-.card-img-top-height-85 {
-  width: auto;
-  height: 85px;
-}
-.card-img-top-height-150 {
-  width: auto;
-  height: 150px;
-}
-.card-img-top-height-200 {
-  width: auto;
-  height: 200px;
-}
-
-a:hover.hover-pointer {
-  cursor: pointer;
-}
-.group-link {
-  color: #007bff;
-  text-decoration: none;
-}
-.group-link:hover {
-  color: #007bc9;
-  text-decoration: underline;
-}
-
-.no-display {
-  display: none;
-}
-
-.display-block {
-  display: block;
-}
-
-.padding-top-logo {
-  padding-top: 30px;
-}
-
-.scenario-striped {
-  background-color: #e6e7e9;
-}
-.ranking-striped {
-  background-color: #ebebeb;
-}
-.advanced-next-round-striped {
-  background-color: #e3fae3;
-}
-.advanced-wild-card-striped {
-  background-color: #bbf3ff;
-}
-.advanced-wild-card-extra-striped {
-  background-color: #ffffbb;
-}
-.advanced-playoff-striped {
-  background-color: #bbf3ff;
-}
-.advanced-third-place-striped {
-  background-color: #bbf3ff;
-}
-.transferred-striped {
-  background-color: #bbf3ff;
-}
-.qualification-winner-striped {
-  background-color: #bbf3bb;
-}
-.promotion-striped {
-  background-color: #bbf3bb;
-}
-.relegation-striped {
-  background-color: #ffe2e2;
-}
-.gray-striped {
-  background-color: #eaecf0;
-}
-.ltblue-striped {
-  background-color: #eaf4ff;
-}
-
-.gold {
-  background-color: gold;
-}
-.silver {
-  background-color: silver;
-}
-.bronze {
-  background-color: rgb(204, 153, 102);
-}
-.txt-underline {
-  text-decoration: underline;
 }

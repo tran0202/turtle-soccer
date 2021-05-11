@@ -278,6 +278,7 @@
   { "id": "MLT", "name": "Malta", "team_type_id": "MNT", "nation_id": "MLT", "parent_team_id": "" },
   { "id": "ARM", "name": "Armenia", "team_type_id": "MNT", "nation_id": "ARM", "parent_team_id": "" },
   { "id": "MKD", "name": "North Macedonia", "team_type_id": "MNT", "nation_id": "MKD", "parent_team_id": "" },
+  { "id": "MKD-2019", "name": "Macedonia", "team_type_id": "MNT", "nation_id": "MKD-2019", "parent_team_id": "MKD" },
   { "id": "GIB", "name": "Gibraltar", "team_type_id": "MNT", "nation_id": "GIB", "parent_team_id": "" },
   { "id": "LIE", "name": "Liechtenstein", "team_type_id": "MNT", "nation_id": "LIE", "parent_team_id": "" },
 

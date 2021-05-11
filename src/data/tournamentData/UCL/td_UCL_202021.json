@@ -2259,23 +2259,181 @@
         {
           "name": "Quarter-finals",
           "short_name": "1/4",
+          "round_type": "knockout2legged",
           "eliminate_count": 4,
           "next_round": "Semi-finals",
           "pairs": [
-            { "matches": [], "bracket_order": 2 },
-            { "matches": [], "bracket_order": 4 },
-            { "matches": [], "bracket_order": 1 },
-            { "matches": [], "bracket_order": 3 }
+            {
+              "matches": [
+                {
+                  "home_team": "MCI",
+                  "away_team": "DOR",
+                  "home_score": 2,
+                  "away_score": 1,
+                  "date": "2021-04-06",
+                  "time": "21:00",
+                  "stadium": "City of Manchester Stadium",
+                  "city": "Manchester",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "DOR",
+                  "away_team": "MCI",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2021-04-14",
+                  "time": "21:00",
+                  "stadium": "Westfalenstadion",
+                  "city": "Dortmund",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "PTO",
+                  "away_team": "CHE",
+                  "home_score": 0,
+                  "away_score": 2,
+                  "date": "2021-04-07",
+                  "time": "21:00",
+                  "stadium": "Ramón Sánchez Pizjuán",
+                  "city": "Seville (Spain)",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "CHE",
+                  "away_team": "PTO",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2021-04-13",
+                  "time": "21:00",
+                  "stadium": "Ramón Sánchez Pizjuán",
+                  "city": "Seville (Spain)",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 4
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "BAY",
+                  "away_team": "PSG",
+                  "home_score": 2,
+                  "away_score": 3,
+                  "date": "2021-04-07",
+                  "time": "21:00",
+                  "stadium": "Allianz Arena",
+                  "city": "Munich",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "PSG",
+                  "away_team": "BAY",
+                  "home_score": 0,
+                  "away_score": 1,
+                  "date": "2021-04-13",
+                  "time": "21:00",
+                  "stadium": "Parc des Princes",
+                  "city": "Paris",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "RMA",
+                  "away_team": "LIV",
+                  "home_score": 3,
+                  "away_score": 1,
+                  "date": "2021-04-06",
+                  "time": "21:00",
+                  "stadium": "Alfredo Di Stéfano",
+                  "city": "Madrid",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "LIV",
+                  "away_team": "RMA",
+                  "home_score": 0,
+                  "away_score": 0,
+                  "date": "2021-04-14",
+                  "time": "21:00",
+                  "stadium": "Anfield",
+                  "city": "Liverpool",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 3
+            }
           ]
         },
         {
           "name": "Semi-finals",
           "short_name": "1/2",
+          "round_type": "knockout2legged",
           "eliminate_count": 2,
           "next_round": "Final",
           "pairs": [
-            { "matches": [], "bracket_order": 1 },
-            { "matches": [], "bracket_order": 2 }
+            {
+              "matches": [
+                {
+                  "home_team": "PSG",
+                  "away_team": "MCI",
+                  "home_score": 1,
+                  "away_score": 2,
+                  "date": "2021-04-28",
+                  "time": "21:00",
+                  "stadium": "Parc des Princes",
+                  "city": "Paris",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "MCI",
+                  "away_team": "PSG",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2021-05-04",
+                  "time": "21:00",
+                  "stadium": "City of Manchester Stadium",
+                  "city": "Manchester",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 1
+            },
+            {
+              "matches": [
+                {
+                  "home_team": "RMA",
+                  "away_team": "CHE",
+                  "home_score": 1,
+                  "away_score": 1,
+                  "date": "2021-04-27",
+                  "time": "21:00",
+                  "stadium": "Alfredo Di Stéfano",
+                  "city": "Madrid",
+                  "match_type": "firstleg"
+                },
+                {
+                  "home_team": "CHE",
+                  "away_team": "RMA",
+                  "home_score": 2,
+                  "away_score": 0,
+                  "date": "2021-05-05",
+                  "time": "21:00",
+                  "stadium": "Stamford Bridge",
+                  "city": "London",
+                  "match_type": "secondleg"
+                }
+              ],
+              "bracket_order": 2
+            }
           ]
         },
         { "name": "Final", "short_name": "1st", "matches": [] }

@@ -264,7 +264,6 @@ const advanceKnockoutTeams = (tournament, round) => {
     round.matches.forEach((m) => {
       const home_ranking = findTeam(at_round.rankings, m.home_team)
       const away_ranking = findTeam(at_round.rankings, m.away_team)
-      // console.log('home_ranking', home_ranking)
       const next_round = findRoundAdvancedTeams(tournament, round.config.next_round)
       if (isWinner('H', m)) {
         next_round.rankings.push(home_ranking)
@@ -551,8 +550,6 @@ const FinalStandings = (props) => {
                 collectLeaguePositionTeams(r, g)
               })
               createLeagueRankings(tournament, r, config)
-              // const fr_round = findRoundFinalRankings(tournament, r.name)
-              // !r.config.championship_round && sortGroupRankings(fr_round, parseInt(fr_round.config.eliminate_count) + 1, null)
             }
             break
           default:

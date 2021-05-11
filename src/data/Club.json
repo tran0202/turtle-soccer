@@ -347,7 +347,7 @@
   {
     "id": "RSB",
     "name": "Red Star Belgrade",
-    "short_name": "Red Star Bel.",
+    "short_name": "Red Star B.",
     "team_type_id": "CLUB",
     "nation_id": "SRB",
     "parent_team_id": "",
@@ -490,7 +490,7 @@
   {
     "id": "RBS",
     "name": "Red Bull Salzburg",
-    "short_name": "RBSalzburg",
+    "short_name": "Salzburg",
     "team_type_id": "CLUB",
     "nation_id": "AUT",
     "parent_team_id": "",
@@ -584,6 +584,7 @@
   {
     "id": "YBO",
     "name": "Young Boys",
+    "short_name": "Young Boy",
     "team_type_id": "CLUB",
     "nation_id": "SUI",
     "parent_team_id": "",
@@ -594,7 +595,7 @@
   {
     "id": "BRG",
     "name": "Club Brugge",
-    "short_name": "ClubBrugge",
+    "short_name": "Brugge",
     "team_type_id": "CLUB",
     "nation_id": "BEL",
     "parent_team_id": "",
@@ -719,7 +720,7 @@
   {
     "id": "SHK",
     "name": "Shakhtar Donetsk",
-    "short_name": "Shakhtar D.",
+    "short_name": "Shakhtar",
     "team_type_id": "CLUB",
     "nation_id": "UKR",
     "parent_team_id": "",
@@ -802,7 +803,7 @@
   {
     "id": "MUN",
     "name": "Manchester United",
-    "short_name": "ManUnited",
+    "short_name": "Man Utd",
     "team_type_id": "CLUB",
     "nation_id": "ENG",
     "parent_team_id": "",
@@ -1013,7 +1014,7 @@
   {
     "id": "MTA",
     "name": "Maccabi Tel Aviv",
-    "short_name": "Maccabi.T.Av.",
+    "short_name": "Maccabi TA",
     "team_type_id": "CLUB",
     "nation_id": "ISR",
     "parent_team_id": "",
@@ -1024,6 +1025,7 @@
   {
     "id": "OLY",
     "name": "Olympiacos",
+    "short_name": "Olympiaco",
     "team_type_id": "CLUB",
     "nation_id": "GRE",
     "parent_team_id": "",
@@ -3011,6 +3013,7 @@
   {
     "id": "ROA",
     "name": "Royal Antwerp",
+    "short_name": "Antwerp",
     "team_type_id": "CLUB",
     "nation_id": "BEL",
     "parent_team_id": "",
@@ -3133,7 +3136,7 @@
   {
     "id": "WOL",
     "name": "Wolfsberger AC",
-    "short_name": "Wolfsberger",
+    "short_name": "Wolfsberg",
     "team_type_id": "CLUB",
     "nation_id": "AUT",
     "parent_team_id": "",
@@ -3685,6 +3688,7 @@
   {
     "id": "SOC",
     "name": "Real Sociedad",
+    "short_name": "Sociedad",
     "team_type_id": "CLUB",
     "nation_id": "ESP",
     "parent_team_id": "",
@@ -3695,6 +3699,7 @@
   {
     "id": "LEI",
     "name": "Leicester City",
+    "short_name": "Leicester",
     "team_type_id": "CLUB",
     "nation_id": "ENG",
     "parent_team_id": "",

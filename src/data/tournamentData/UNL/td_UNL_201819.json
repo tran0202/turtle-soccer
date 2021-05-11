@@ -1959,7 +1959,7 @@
             },
             {
               "name": "Group 4",
-              "teams": [{ "id": "ARM" }, { "id": "LIE" }, { "id": "GIB" }, { "id": "MKD" }],
+              "teams": [{ "id": "ARM" }, { "id": "LIE" }, { "id": "GIB" }, { "id": "MKD-2019" }],
               "matchdays": [
                 {
                   "name": "Matchday 1",
@@ -1976,7 +1976,7 @@
                     },
                     {
                       "home_team": "GIB",
-                      "away_team": "MKD",
+                      "away_team": "MKD-2019",
                       "home_score": 0,
                       "away_score": 2,
                       "date": "2018-09-06",
@@ -1990,7 +1990,7 @@
                   "name": "Matchday 2",
                   "matches": [
                     {
-                      "home_team": "MKD",
+                      "home_team": "MKD-2019",
                       "away_team": "ARM",
                       "home_score": 2,
                       "away_score": 0,
@@ -2025,7 +2025,7 @@
                       "city": "Yerevan"
                     },
                     {
-                      "home_team": "MKD",
+                      "home_team": "MKD-2019",
                       "away_team": "LIE",
                       "home_score": 4,
                       "away_score": 1,
@@ -2041,7 +2041,7 @@
                   "matches": [
                     {
                       "home_team": "ARM",
-                      "away_team": "MKD",
+                      "away_team": "MKD-2019",
                       "home_score": 4,
                       "away_score": 0,
                       "date": "2018-10-16",
@@ -2076,7 +2076,7 @@
                     },
                     {
                       "home_team": "LIE",
-                      "away_team": "MKD",
+                      "away_team": "MKD-2019",
                       "home_score": 0,
                       "away_score": 2,
                       "date": "2018-11-16",
@@ -2090,7 +2090,7 @@
                   "name": "Matchday 6",
                   "matches": [
                     {
-                      "home_team": "MKD",
+                      "home_team": "MKD-2019",
                       "away_team": "GIB",
                       "home_score": 4,
                       "away_score": 0,
