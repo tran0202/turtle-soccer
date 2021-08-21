@@ -139,6 +139,14 @@ const FormatContent = (props) => {
                           <li>Goals scored in all group matches</li>
                         </React.Fragment>
                       )
+                    } else if (tb === 'goaldifferencegoalscoredwins') {
+                      return (
+                        <React.Fragment key={index}>
+                          <li>Goal difference in all group matches</li>
+                          <li>Goals scored in all group matches</li>
+                          <li>Wins in all group matches</li>
+                        </React.Fragment>
+                      )
                     } else if (tb === 'awaygoalswinsawaywins') {
                       return (
                         <React.Fragment key={index}>

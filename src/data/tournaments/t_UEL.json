@@ -37,14 +37,21 @@
         "name": "Stadion Miejski, Gdańsk",
         "filename": "PGE_Arena_Gdańsk_(6018955265).jpg",
         "text": "The Stadion Miejski will host the final."
+      },
+      {
+        "name": "Program",
+        "filename": "2021_UEFA_Europa_League_Final_programme.jpg",
+        "text": "This is the official match programme for the 2021 UEFA Europa League Final."
       }
     ],
-    "statistics": { "total_matches": 203, "total_goals": 616, "attendance": 99205 },
+    "final_standings": { "champions": "VIL", "runners_up": "MUN", "semi_finalist1": "ARS", "semi_finalist2": "ROM" },
+    "statistics": { "total_matches": 204, "total_goals": 618, "attendance": 108617 },
     "awards": {
       "golden_boot": [
         { "player": "Pizzi", "team": "POR", "club": "SLB", "goals": 7, "minutes": 385 },
         { "player": "Yusuf Yazıcı", "team": "TUR", "club": "LIL", "goals": 7, "minutes": 625 },
-        { "player": "Borja Mayoral", "team": "ESP", "club": "ROM", "goals": 7, "minutes": 659 }
+        { "player": "Borja Mayoral", "team": "ESP", "club": "ROM", "goals": 7, "minutes": 659 },
+        { "player": "Gerard Moreno", "team": "ESP", "club": "VIL", "goals": 7, "minutes": 879 }
       ]
     }
   },

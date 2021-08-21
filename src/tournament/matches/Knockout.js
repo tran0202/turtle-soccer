@@ -13,7 +13,8 @@ const DisplayPath = (props) => {
     consolation_bracket: true,
     ...config,
   }
-  const isHideBracket = (!isEmpty(stage.config) && stage.config.hide_bracket) || (!isEmpty(stage.rounds) && stage.rounds.length === 1)
+  const isHideBracket =
+    isEmpty(stage) || (!isEmpty(stage.config) && stage.config.hide_bracket) || isEmpty(stage.rounds) || (!isEmpty(stage.rounds) && stage.rounds.length === 1)
   return (
     <React.Fragment>
       {config.consolation_path && (
@@ -35,7 +36,6 @@ const DisplayPath = (props) => {
           }
           if (r.config.round_type === 'knockout') {
             const matchArray = getRoundMatches(r, true)
-            // console.log('matchArray', matchArray)
             if (!hasReplay(r)) {
               if (!stage.config.multiple_paths) {
                 return <DisplaySchedule round={matchArray} config={displayScheduleConfig} details={r.details} key={r.details.name} />

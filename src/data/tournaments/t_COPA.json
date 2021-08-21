@@ -2,28 +2,54 @@
   {
     "id": "COPA2021",
     "year": "2021",
-    "name": "Copa America Argentina–Colombia 2021",
+    "name": "Copa America Brazil 2021",
     "competition_id": "COPA",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
-      "host": ["ARG", "COL"],
+      "host": ["BRA"],
       "logo_filename": "2021_Copa_América_logo.svg",
       "start_date": "2021-06-13",
       "end_date": "2021-07-10",
       "color": "#003282",
       "team_count": 10,
       "confed_count": 1,
-      "venue_count": 8,
-      "city_count": 8
+      "venue_count": 5,
+      "city_count": 4
     },
     "hero_images": [
       {
-        "name": "Estadio Metropolitano, Barranquilla",
-        "filename": "Estadio_Metropolitano_de_Baranquilla_2011.jpg",
-        "text": "The Estadio Metropolitano will host the final."
+        "name": "Golden Ball - Golden Boot",
+        "filename": "Rus-Arg_2017_(16).jpg",
+        "text": "Lionel Messi scored four goals for Argentina en route to the final."
+      },
+      {
+        "name": "Maracanã Stadium, Rio de Janeiro",
+        "filename": "Estádio_Maracanã_1.jpg",
+        "text": "The Maracanã Stadium in Rio de Janeiro hosted the final."
+      },
+      {
+        "name": "Ángel Di María, Argentina",
+        "filename": "NIG-ARG_(5).jpg",
+        "text": "Ángel Di María scored the lone goal of the Copa América final and was named man of the match."
+      },
+      {
+        "name": "Estádio Nilton Santos, Rio de Janeiro",
+        "filename": "Rio2016_Gerais_030_8069_-c-2016_GabrielHeusi_HeusiAction.jpg",
+        "text": "The Estádio Nilton Santos in Rio de Janeiro hosted the semi-final Brazil vs Peru."
       }
-    ]
+    ],
+    "final_standings": { "champions": "ARG", "runners_up": "BRA", "third_place": "COL", "fourth_place": "PER" },
+    "statistics": { "total_matches": 28, "total_goals": 65, "attendance": 7800 },
+    "awards": {
+      "golden_boot": [
+        { "player": "Lionel Messi", "team": "ARG", "goals": 4 },
+        { "player": "Luis Díaz", "team": "COL", "goals": 4 }
+      ],
+      "golden_ball": [{ "player": "Lionel Messi", "team": "ARG" }],
+      "golden_glove": [{ "player": "Emiliano Martínez", "team": "ARG" }],
+      "fair_play_team": ["BRA"]
+    }
   },
   {
     "id": "COPA2019",

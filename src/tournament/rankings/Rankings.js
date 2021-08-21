@@ -1,6 +1,14 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
-import { updateFinalRankings, createSemifinalistsPool, isGoalRatioTiebreaker, getRowStriped, isWildCardExtraRow, getWildCardRowStriped } from './RankingsHelper'
+import {
+  updateFinalRankings,
+  createSemifinalistsPool,
+  isGoalRatioTiebreaker,
+  getRowStriped,
+  isWildCardExtraRow,
+  getWildCardRowStriped,
+  isRankingValid,
+} from './RankingsHelper'
 import {
   FairPlayTooltip,
   WildCardTooltip,
@@ -152,6 +160,7 @@ export const RankingRow = (props) => {
   const { row, config, index } = props
   const { ranking_type, championship_round } = config
   // console.log('row', row)
+  if (!isRankingValid(row)) return null
   if (!row || (!row.r && row.length === 0)) return null
   const row_striped = ranking_type === 'group' ? getRowStriped(row, config) : ranking_type === 'wildcard' ? getWildCardRowStriped(row, config) : ''
   const rankColPadding = row.r

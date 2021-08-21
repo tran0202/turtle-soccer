@@ -18,6 +18,7 @@ import {
   getBlankRanking,
   findRoundAdvancedTeams,
   findRoundFinalRankings,
+  isMatchFinal,
 } from './RankingsHelper'
 import { Row } from 'reactstrap'
 import { isEmpty, isUndefined } from 'lodash'
@@ -144,49 +145,51 @@ const eliminateKnockoutTeams = (tournament, round) => {
   const at_round = findRoundAdvancedTeams(tournament, round.details.name)
   round.matches &&
     round.matches.forEach((m) => {
-      const fr_round = findRoundFinalRankings(tournament, round.details.name)
-      let nextConsolationRound = findRoundAdvancedTeams(tournament, round.config.next_consolation_round)
-      const home_ranking = findTeam(at_round.rankings, m.home_team)
-      const away_ranking = findTeam(at_round.rankings, m.away_team)
-      if (!isWinner('H', m) && !m.away_walkover && !m.away_withdrew && !m.match_postponed) {
-        const tmp = fr_round.rankings.find((fr) => fr.id === home_ranking.id)
-        if (!tmp) {
-          fr_round.rankings.push(home_ranking)
-        }
-        fr_round.rankings = fr_round.rankings.filter((fr) => fr && fr.id !== m.away_team)
-        if (round.config.next_consolation_round) {
-          if (!nextConsolationRound) {
-            tournament.advanced_teams.push({
-              name: round.config.next_consolation_round,
-              ranking_type: 'round',
-              rankings: [home_ranking],
-              exception,
-            })
-            nextConsolationRound = findRoundAdvancedTeams(tournament, round.config.next_consolation_round)
-          } else {
-            nextConsolationRound.rankings.push(home_ranking)
+      if (isMatchFinal(m)) {
+        const fr_round = findRoundFinalRankings(tournament, round.details.name)
+        let nextConsolationRound = findRoundAdvancedTeams(tournament, round.config.next_consolation_round)
+        const home_ranking = findTeam(at_round.rankings, m.home_team)
+        const away_ranking = findTeam(at_round.rankings, m.away_team)
+        if (!isWinner('H', m) && !m.away_walkover && !m.away_withdrew && !m.match_postponed) {
+          const tmp = fr_round.rankings.find((fr) => fr.id === home_ranking.id)
+          if (!tmp) {
+            fr_round.rankings.push(home_ranking)
           }
-          nextConsolationRound.rankings = nextConsolationRound.rankings.filter((fr) => fr.id !== m.away_team)
-        }
-      } else if (m.away_team !== '' && !isWinner('A', m) && !m.home_walkover && !m.away_withdrew && !m.match_postponed) {
-        const tmp = fr_round.rankings.find((fr) => fr.id === away_ranking.id)
-        if (!tmp) {
-          fr_round.rankings.push(away_ranking)
-        }
-        fr_round.rankings = fr_round.rankings.filter((fr) => fr && fr.id !== m.home_team)
-        if (round.config.next_consolation_round) {
-          if (!nextConsolationRound) {
-            tournament.advanced_teams.push({
-              name: round.config.next_consolation_round,
-              ranking_type: 'round',
-              rankings: [away_ranking],
-              exception,
-            })
-            nextConsolationRound = findRoundAdvancedTeams(tournament, round.config.next_consolation_round)
-          } else {
-            nextConsolationRound.rankings.push(away_ranking)
+          fr_round.rankings = fr_round.rankings.filter((fr) => fr && fr.id !== m.away_team)
+          if (round.config.next_consolation_round) {
+            if (!nextConsolationRound) {
+              tournament.advanced_teams.push({
+                name: round.config.next_consolation_round,
+                ranking_type: 'round',
+                rankings: [home_ranking],
+                exception,
+              })
+              nextConsolationRound = findRoundAdvancedTeams(tournament, round.config.next_consolation_round)
+            } else {
+              nextConsolationRound.rankings.push(home_ranking)
+            }
+            nextConsolationRound.rankings = nextConsolationRound.rankings.filter((fr) => fr.id !== m.away_team)
           }
-          nextConsolationRound.rankings = nextConsolationRound.rankings.filter((fr) => fr.id !== m.home_team)
+        } else if (m.away_team !== '' && !isWinner('A', m) && !m.home_walkover && !m.away_withdrew && !m.match_postponed) {
+          const tmp = fr_round.rankings.find((fr) => fr.id === away_ranking.id)
+          if (!tmp) {
+            fr_round.rankings.push(away_ranking)
+          }
+          fr_round.rankings = fr_round.rankings.filter((fr) => fr && fr.id !== m.home_team)
+          if (round.config.next_consolation_round) {
+            if (!nextConsolationRound) {
+              tournament.advanced_teams.push({
+                name: round.config.next_consolation_round,
+                ranking_type: 'round',
+                rankings: [away_ranking],
+                exception,
+              })
+              nextConsolationRound = findRoundAdvancedTeams(tournament, round.config.next_consolation_round)
+            } else {
+              nextConsolationRound.rankings.push(away_ranking)
+            }
+            nextConsolationRound.rankings = nextConsolationRound.rankings.filter((fr) => fr.id !== m.home_team)
+          }
         }
       }
     })

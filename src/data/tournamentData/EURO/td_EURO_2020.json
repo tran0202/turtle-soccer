@@ -1,0 +1,642 @@
+{
+  "id": "EURO2020",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 16,
+      "next_round": "Round of 16",
+      "advancement": {
+        "teams": {
+          "auto": [1, 2],
+          "wild_card": { "pos": 3, "count": 4 },
+          "eliminated": [4],
+          "text": "The top 2 teams and the best 4 third-placed teams would advance to the Round of 16."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "TUR" }, { "id": "ITA" }, { "id": "WAL" }, { "id": "SUI" }],
+          "matches": [
+            {
+              "home_team": "TUR",
+              "away_team": "ITA",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2021-06-11",
+              "time": "21:00",
+              "stadium": "Stadio Olimpico",
+              "city": "Rome"
+            },
+            {
+              "home_team": "WAL",
+              "away_team": "SUI",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-12",
+              "time": "15:00",
+              "stadium": "Olympic Stadium",
+              "city": "Baku"
+            },
+            {
+              "home_team": "TUR",
+              "away_team": "WAL",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-06-16",
+              "time": "18:00",
+              "stadium": "Olympic Stadium",
+              "city": "Baku"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "SUI",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2021-06-16",
+              "time": "21:00",
+              "stadium": "Stadio Olimpico",
+              "city": "Rome"
+            },
+            {
+              "home_team": "SUI",
+              "away_team": "TUR",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-06-20",
+              "time": "18:00",
+              "stadium": "Olympic Stadium",
+              "city": "Baku"
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "WAL",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-20",
+              "time": "18:00",
+              "stadium": "Stadio Olimpico",
+              "city": "Rome"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "DEN" }, { "id": "FIN" }, { "id": "BEL" }, { "id": "RUS" }],
+          "three_way_tied": true,
+          "matches": [
+            {
+              "home_team": "DEN",
+              "away_team": "FIN",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-06-12",
+              "time": "18:00",
+              "stadium": "Parken Stadium",
+              "city": "Copenhagen"
+            },
+            {
+              "home_team": "BEL",
+              "away_team": "RUS",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2021-06-12",
+              "time": "21:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg"
+            },
+            {
+              "home_team": "FIN",
+              "away_team": "RUS",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-06-16",
+              "time": "15:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg"
+            },
+            {
+              "home_team": "DEN",
+              "away_team": "BEL",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-06-17",
+              "time": "18:00",
+              "stadium": "Parken Stadium",
+              "city": "Copenhagen"
+            },
+            {
+              "home_team": "RUS",
+              "away_team": "DEN",
+              "home_score": 1,
+              "away_score": 4,
+              "date": "2021-06-21",
+              "time": "21:00",
+              "stadium": "Parken Stadium",
+              "city": "Copenhagen"
+            },
+            {
+              "home_team": "FIN",
+              "away_team": "BEL",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-06-21",
+              "time": "21:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg"
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [{ "id": "AUT" }, { "id": "MKD" }, { "id": "NED" }, { "id": "UKR" }],
+          "matches": [
+            {
+              "home_team": "AUT",
+              "away_team": "MKD",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-06-13",
+              "time": "18:00",
+              "stadium": "Arena Națională",
+              "city": "Bucharest"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "UKR",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2021-06-13",
+              "time": "21:00",
+              "stadium": "Johan Cruyff Arena",
+              "city": "Amsterdam"
+            },
+            {
+              "home_team": "UKR",
+              "away_team": "MKD",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2021-06-17",
+              "time": "15:00",
+              "stadium": "Arena Națională",
+              "city": "Bucharest"
+            },
+            {
+              "home_team": "NED",
+              "away_team": "AUT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2021-06-17",
+              "time": "21:00",
+              "stadium": "Johan Cruyff Arena",
+              "city": "Amsterdam"
+            },
+            {
+              "home_team": "MKD",
+              "away_team": "NED",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2021-06-21",
+              "time": "18:00",
+              "stadium": "Johan Cruyff Arena",
+              "city": "Amsterdam"
+            },
+            {
+              "home_team": "UKR",
+              "away_team": "AUT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-06-21",
+              "time": "18:00",
+              "stadium": "Arena Națională",
+              "city": "Bucharest"
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [{ "id": "ENG" }, { "id": "CRO" }, { "id": "SCO" }, { "id": "CZE" }],
+          "matches": [
+            {
+              "home_team": "ENG",
+              "away_team": "CRO",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-13",
+              "time": "15:00",
+              "stadium": "Wembley Stadium",
+              "city": "London"
+            },
+            {
+              "home_team": "SCO",
+              "away_team": "CZE",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-06-14",
+              "time": "15:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "CRO",
+              "away_team": "CZE",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-18",
+              "time": "18:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "SCO",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2021-06-18",
+              "time": "21:00",
+              "stadium": "Wembley Stadium",
+              "city": "London"
+            },
+            {
+              "home_team": "CRO",
+              "away_team": "SCO",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-06-22",
+              "time": "21:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow"
+            },
+            {
+              "home_team": "CZE",
+              "away_team": "ENG",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-06-22",
+              "time": "21:00",
+              "stadium": "Wembley Stadium",
+              "city": "London"
+            }
+          ]
+        },
+        {
+          "name": "Group E",
+          "teams": [{ "id": "POL" }, { "id": "SVK" }, { "id": "ESP" }, { "id": "SWE" }],
+          "matches": [
+            {
+              "home_team": "POL",
+              "away_team": "SVK",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-06-14",
+              "time": "18:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg"
+            },
+            {
+              "home_team": "ESP",
+              "away_team": "SWE",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2021-06-14",
+              "time": "21:00",
+              "stadium": "La Cartuja",
+              "city": "Seville"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "SVK",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-18",
+              "time": "15:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg"
+            },
+            {
+              "home_team": "ESP",
+              "away_team": "POL",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-19",
+              "time": "21:00",
+              "stadium": "La Cartuja",
+              "city": "Seville"
+            },
+            {
+              "home_team": "SVK",
+              "away_team": "ESP",
+              "home_score": 0,
+              "away_score": 5,
+              "date": "2021-06-23",
+              "time": "18:00",
+              "stadium": "La Cartuja",
+              "city": "Seville"
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "POL",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2021-06-23",
+              "time": "18:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg"
+            }
+          ]
+        },
+        {
+          "name": "Group F",
+          "teams": [{ "id": "HUN" }, { "id": "POR" }, { "id": "FRA" }, { "id": "GER" }],
+          "matches": [
+            {
+              "home_team": "HUN",
+              "away_team": "POR",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2021-06-15",
+              "time": "18:00",
+              "stadium": "Puskás Aréna",
+              "city": "Budapest"
+            },
+            {
+              "home_team": "FRA",
+              "away_team": "GER",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-15",
+              "time": "21:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            },
+            {
+              "home_team": "HUN",
+              "away_team": "FRA",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-19",
+              "time": "15:00",
+              "stadium": "Puskás Aréna",
+              "city": "Budapest"
+            },
+            {
+              "home_team": "POR",
+              "away_team": "GER",
+              "home_score": 2,
+              "away_score": 4,
+              "date": "2021-06-19",
+              "time": "18:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            },
+            {
+              "home_team": "POR",
+              "away_team": "FRA",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2021-06-23",
+              "time": "21:00",
+              "stadium": "Puskás Aréna",
+              "city": "Budapest"
+            },
+            {
+              "home_team": "GER",
+              "away_team": "HUN",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2021-06-23",
+              "time": "21:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Round of 16",
+          "short_name": "1/8",
+          "eliminate_count": 8,
+          "next_round": "Quarter-finals",
+          "matches": [
+            {
+              "home_team": "WAL",
+              "away_team": "DEN",
+              "home_score": 0,
+              "away_score": 4,
+              "date": "2021-06-26",
+              "time": "18:00",
+              "stadium": "Johan Cruyff Arena",
+              "city": "Amsterdam",
+              "bracket_order": 8
+            },
+            {
+              "home_team": "ITA",
+              "away_team": "AUT",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 2,
+              "away_extra_score": 1,
+              "date": "2021-06-26",
+              "time": "21:00",
+              "stadium": "Wembley Stadium",
+              "city": "London",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "NED",
+              "away_team": "CZE",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-06-27",
+              "time": "18:00",
+              "stadium": "Puskás Aréna",
+              "city": "Budapest",
+              "bracket_order": 7
+            },
+            {
+              "home_team": "BEL",
+              "away_team": "POR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-27",
+              "time": "21:00",
+              "stadium": "La Cartuja",
+              "city": "Seville",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "CRO",
+              "away_team": "ESP",
+              "home_score": 3,
+              "away_score": 3,
+              "home_extra_score": 0,
+              "away_extra_score": 2,
+              "date": "2021-06-28",
+              "time": "18:00",
+              "stadium": "Parken Stadium",
+              "city": "Copenhagen",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "FRA",
+              "away_team": "SUI",
+              "home_score": 3,
+              "away_score": 3,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 4,
+              "away_penalty_score": 5,
+              "date": "2021-06-28",
+              "time": "21:00",
+              "stadium": "Arena Națională",
+              "city": "Bucharest",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "GER",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2021-06-29",
+              "time": "18:00",
+              "stadium": "Wembley Stadium",
+              "city": "London",
+              "bracket_order": 6
+            },
+            {
+              "home_team": "SWE",
+              "away_team": "UKR",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 1,
+              "date": "2021-06-29",
+              "time": "21:00",
+              "stadium": "Hampden Park",
+              "city": "Glasgow",
+              "bracket_order": 5
+            }
+          ]
+        },
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "SUI",
+              "away_team": "ESP",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 1,
+              "away_penalty_score": 3,
+              "date": "2021-07-02",
+              "time": "18:00",
+              "stadium": "Krestovsky Stadium",
+              "city": "Saint Petersburg",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "BEL",
+              "away_team": "ITA",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-07-02",
+              "time": "21:00",
+              "stadium": "Allianz Arena",
+              "city": "Munich",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "CZE",
+              "away_team": "DEN",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-07-03",
+              "time": "18:00",
+              "stadium": "Olympic Stadium",
+              "city": "Baku",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "UKR",
+              "away_team": "ENG",
+              "home_score": 0,
+              "away_score": 4,
+              "date": "2021-07-03",
+              "time": "21:00",
+              "stadium": "Stadio Olimpico",
+              "city": "Rome",
+              "bracket_order": 3
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "ITA",
+              "away_team": "ESP",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 4,
+              "away_penalty_score": 2,
+              "date": "2021-07-06",
+              "time": "21:00",
+              "stadium": "Wembley Stadium",
+              "city": "London",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "ENG",
+              "away_team": "DEN",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "2021-07-07",
+              "time": "21:00",
+              "stadium": "Wembley Stadium",
+              "city": "London",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "ITA",
+              "away_team": "ENG",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 3,
+              "away_penalty_score": 2,
+              "date": "2021-07-11",
+              "time": "21:00",
+              "stadium": "Wembley Stadium",
+              "city": "London"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

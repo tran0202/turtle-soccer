@@ -94,6 +94,10 @@ const getTopScorerLabel = (tournament, position) => {
   }
 }
 
+const getHostLabel = (host) => {
+  return host.length > 1 ? 'Hosts' : 'Host'
+}
+
 const getGoldenBallLabel = (tournament) => {
   if (tournament.config.competition_id === 'EURO') {
     return 'Player of the Tournament'
@@ -254,7 +258,7 @@ const About = (props) => {
           <DisplayDetails field={original_name} label="Original Name">
             {original_name}
           </DisplayDetails>
-          <DisplayDetails field={host} label="Host">
+          <DisplayDetails field={host} label={getHostLabel(host)}>
             {host.map((h) => (
               <Row className="no-margin-lr margin-bottom-xs" key={h}>
                 {getTeamFlagName(h, tournament.config)}

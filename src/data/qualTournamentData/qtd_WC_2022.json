@@ -185,11 +185,11 @@
               "pos": 2,
               "count": 4,
               "count_extra": 1,
-              "text_extra": "Should Qatar win Group E or be among the 4 best runners-up, the fifth best runner-up would take Qatar's place in the World Cup qualifying third round."
+              "text_extra": "Should Qatar win Group E or be among the best 4 runners-up, the fifth best runner-up would take Qatar's place in the World Cup qualifying third round."
             },
-            "text": "The 8 group winners and the 4 best runners-up would advance to the third round."
+            "text": "The 8 group winners and the best 4 runners-up would advance to the third round."
           },
-          "extra": "If Qatar, the World Cup hosts, win their group or finish as one of the 4 best second-placed teams, their spot in the third round would be given to the fifth best second-placed team."
+          "extra": "If Qatar, the World Cup hosts, win their group or finish as one of the best 4 second-placed teams, their spot in the third round would be given to the fifth best second-placed team."
         },
         "groups": [
           {

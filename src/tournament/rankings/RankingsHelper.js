@@ -36,7 +36,10 @@ export const isPointsLotTiebreaker = (config) => {
 export const isHead2HeadBeforeGoalDifference = (config) => {
   const { tiebreakers } = config
   if (!tiebreakers) return false
-  return tiebreakers.findIndex((tb) => tb === 'head2head') < tiebreakers.findIndex((tb) => tb === 'goaldifferenceandgoalscored')
+  return (
+    tiebreakers.findIndex((tb) => tb === 'head2head') <
+    tiebreakers.findIndex((tb) => tb === 'goaldifferenceandgoalscored' || tb === 'goaldifferencegoalscoredwins')
+  )
 }
 
 const accumulateRanking2 = (team, match, config) => {
@@ -90,6 +93,7 @@ const accumulateRanking2 = (team, match, config) => {
 
 const accumulateRanking = (team, match, config) => {
   if (!team) return
+  if (!isMatchFinal(match)) return
   if (
     match.home_walkover ||
     match.home_bye ||
@@ -101,7 +105,6 @@ const accumulateRanking = (team, match, config) => {
   )
     return
   if ((match.match_type === 'secondleg' || config.match_type === 'secondleg') && match.home_extra_score != null && match.away_extra_score != null) {
-    // console.log('team', team)
     return accumulateRanking2(team, match, config)
   }
   const side = match.home_team === team.id ? 'home' : 'away'
@@ -228,8 +231,8 @@ const findLastTeamRanking = (teams, teamId) => {
 const calculateTeamRanking = (container, team, match, config) => {
   if (!team) return
   if (!container) return
+  if (!isMatchFinal(match)) return
   const lr = findLastTeamRanking(container, team.id)
-  // console.log('lr', lr)
   const newRanking = { ...lr, year: config.year }
   accumulateRanking(newRanking, match, config)
   const _team = container.find((t) => t.id === team.id)
@@ -732,10 +735,10 @@ export const createDrawPools = (group, startingIndex, config) => {
           fr.h2h_notes = !gd_tied
             ? `Considering only the matches between themselves, teams ${allTeamNames} all tied on points (${fr.pts}). ${getTeamName(fr.id)} GF/GA = ${fr.gf}/${
                 fr.ga
-              }. Goal Difference >>> ${getTeamName(fr.id)} ${fr.gd}`
+              }. Goal Difference >>> ${getTeamName(fr.id)} ${fr.gd > 0 ? '+' : ''}${fr.gd}`
             : `Considering only the matches between themselves, teams ${allTeamNames} all tied on points (${fr.pts}) and goal difference (${
-                fr.gd
-              }). ${getTeamName(fr.id)} GF/GA = ${fr.gf}/${fr.ga}. Goals >>> ${getTeamName(fr.id)} ${fr.gf}`
+                fr.gd > 0 ? '+' : ''
+              }${fr.gd}). ${getTeamName(fr.id)} GF/GA = ${fr.gf}/${fr.ga}. Goals >>> ${getTeamName(fr.id)} ${fr.gf}`
         })
       }
     })
@@ -1202,6 +1205,14 @@ export const createSemifinalistsPool = (round) => {
   })
   round.rankings = []
   round.rankings.push(pool)
+}
+
+export const isMatchFinal = (m) => {
+  return isFinite(m.home_score) && isFinite(m.away_score)
+}
+
+export const isRankingValid = (r) => {
+  return !isEmpty(r) && (!isEmpty(r.id) || r.length > 1)
 }
 
 export const cloneRanking = (ranking) => {

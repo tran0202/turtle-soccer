@@ -5,25 +5,47 @@
     "name": "Women's Olympic Football Tournament Tokyo 2020",
     "competition_id": "WOFT",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "show_match_year": true,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
       "host": ["JPN_U23WNT"],
       "logo_filename": "2020_Summer_Olympics_logo_new.svg",
+      "mascot_filename": "Football,_Tokyo_2020.svg",
       "start_date": "2021-07-21",
       "end_date": "2021-08-06",
       "color": "#202b5a",
       "team_count": 12,
       "confed_count": 6,
-      "venue_count": 7,
+      "venue_count": 6,
       "city_count": 6
     },
     "hero_images": [
       {
-        "name": "National Stadium, Tokyo",
-        "filename": "New_national_stadium_tokyo_1.jpg",
-        "text": "The National Stadium will host the final."
+        "name": "International Stadium, Yokohama",
+        "filename": "Nissan_International_Stadium_Yokohama.jpg",
+        "text": "The International Stadium hosted the final Sweden vs Canada."
+      },
+      {
+        "name": "Kashima Stadium, Kashima",
+        "filename": "Kashima_Stadium_1.jpeg",
+        "text": "The Kashima Stadium hosted the semi-final United States vs Canada."
+      },
+      {
+        "name": "Miyagi Stadium, Rifu",
+        "filename": "MiyagiStadiumTrackField.jpg",
+        "text": "The Miyagi Stadium hosted the quarter-final Canada vs Brazil."
+      },
+      {
+        "name": "Saitama Stadium 2002, Saitama",
+        "filename": "Saitama_Stadium_Panorama.jpg",
+        "text": "The Saitama Stadium 2002 hosted the quarter-final Sweden vs Japan."
       }
-    ]
+    ],
+    "final_standings": { "champions": "CAN_U23WNT", "runners_up": "SWE_U23WNT", "third_place": "USA_U23WNT", "fourth_place": "AUS_U23WNT" },
+    "statistics": { "total_matches": 26, "total_goals": 101, "attendance": 13913 },
+    "awards": {
+      "golden_boot": [{ "player": "Vivianne Miedema", "team": "NED_U23WNT", "goals": 10 }]
+    }
   },
   {
     "id": "WOFT2016",
@@ -279,7 +301,7 @@
     "details": {
       "host": ["USA_U23WNT"],
       "logo_filename": "1996_Summer_Olympics_logo.svg",
-      "mascot_filename": "Football_pictogram_1948.svg",
+      "mascot_filename": "Football,_Atlanta_1996.png",
       "start_date": "1996-07-21",
       "end_date": "1996-08-01",
       "color": "#e12631",

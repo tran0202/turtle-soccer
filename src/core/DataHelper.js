@@ -68,6 +68,7 @@ import td_MOFT_2004 from '../data/tournamentData/MOFT/td_MOFT_2004.json'
 import td_MOFT_2008 from '../data/tournamentData/MOFT/td_MOFT_2008.json'
 import td_MOFT_2012 from '../data/tournamentData/MOFT/td_MOFT_2012.json'
 import td_MOFT_2016 from '../data/tournamentData/MOFT/td_MOFT_2016.json'
+import td_MOFT_2020 from '../data/tournamentData/MOFT/td_MOFT_2020.json'
 
 import td_WOFT_1996 from '../data/tournamentData/WOFT/td_WOFT_1996.json'
 import td_WOFT_2000 from '../data/tournamentData/WOFT/td_WOFT_2000.json'
@@ -75,6 +76,7 @@ import td_WOFT_2004 from '../data/tournamentData/WOFT/td_WOFT_2004.json'
 import td_WOFT_2008 from '../data/tournamentData/WOFT/td_WOFT_2008.json'
 import td_WOFT_2012 from '../data/tournamentData/WOFT/td_WOFT_2012.json'
 import td_WOFT_2016 from '../data/tournamentData/WOFT/td_WOFT_2016.json'
+import td_WOFT_2020 from '../data/tournamentData/WOFT/td_WOFT_2020.json'
 
 import td_CONFEDC_1992 from '../data/tournamentData/CONFEDC/td_CONFEDC_1992.json'
 import td_CONFEDC_1995 from '../data/tournamentData/CONFEDC/td_CONFEDC_1995.json'
@@ -102,6 +104,7 @@ import td_EURO_2004 from '../data/tournamentData/EURO/td_EURO_2004.json'
 import td_EURO_2008 from '../data/tournamentData/EURO/td_EURO_2008.json'
 import td_EURO_2012 from '../data/tournamentData/EURO/td_EURO_2012.json'
 import td_EURO_2016 from '../data/tournamentData/EURO/td_EURO_2016.json'
+import td_EURO_2020 from '../data/tournamentData/EURO/td_EURO_2020.json'
 
 import td_UNL_201819 from '../data/tournamentData/UNL/td_UNL_201819.json'
 import td_UNL_202021 from '../data/tournamentData/UNL/td_UNL_202021.json'
@@ -160,6 +163,7 @@ import td_COPA_2011 from '../data/tournamentData/COPA/td_COPA_2011.json'
 import td_COPA_2015 from '../data/tournamentData/COPA/td_COPA_2015.json'
 import td_COPA_2016 from '../data/tournamentData/COPA/td_COPA_2016.json'
 import td_COPA_2019 from '../data/tournamentData/COPA/td_COPA_2019.json'
+import td_COPA_2021 from '../data/tournamentData/COPA/td_COPA_2021.json'
 
 import td_GC_1963 from '../data/tournamentData/GC/td_GC_1963.json'
 import td_GC_1965 from '../data/tournamentData/GC/td_GC_1965.json'
@@ -186,6 +190,7 @@ import td_GC_2013 from '../data/tournamentData/GC/td_GC_2013.json'
 import td_GC_2015 from '../data/tournamentData/GC/td_GC_2015.json'
 import td_GC_2017 from '../data/tournamentData/GC/td_GC_2017.json'
 import td_GC_2019 from '../data/tournamentData/GC/td_GC_2019.json'
+import td_GC_2021 from '../data/tournamentData/GC/td_GC_2021.json'
 
 import td_AFCON_1957 from '../data/tournamentData/AFCON/td_AFCON_1957.json'
 import td_AFCON_1959 from '../data/tournamentData/AFCON/td_AFCON_1959.json'
@@ -253,8 +258,8 @@ import QualificationTournamentWCArray from '../data/QualificationTournamentWC.js
 import qtd_WC_2022 from '../data/qualTournamentData/qtd_WC_2022.json'
 
 import Competitions from '../data/Competitions.json'
-import TeamArray from '../data/Team.json'
-import ClubArray from '../data/Club.json'
+import TeamArray from '../data/Teams.json'
+import ClubArray from '../data/Clubs.json'
 
 export const getTeamArray = () => {
   return [].concat(TeamArray, ClubArray)
@@ -351,11 +356,12 @@ export const getTournamentDataMOFT = () => {
     [td_MOFT_2008],
     [td_MOFT_2012],
     [td_MOFT_2016],
+    [td_MOFT_2020],
   )
 }
 
 export const getTournamentDataWOFT = () => {
-  return [].concat([td_WOFT_1996], [td_WOFT_2000], [td_WOFT_2004], [td_WOFT_2008], [td_WOFT_2012], [td_WOFT_2016])
+  return [].concat([td_WOFT_1996], [td_WOFT_2000], [td_WOFT_2004], [td_WOFT_2008], [td_WOFT_2012], [td_WOFT_2016], [td_WOFT_2020])
 }
 
 export const getTournamentDataCONFEDC = () => {
@@ -390,6 +396,7 @@ export const getTournamentDataEURO = () => {
     [td_EURO_2008],
     [td_EURO_2012],
     [td_EURO_2016],
+    [td_EURO_2020],
   )
 }
 
@@ -453,6 +460,7 @@ export const getTournamentDataCOPA = () => {
     [td_COPA_2015],
     [td_COPA_2016],
     [td_COPA_2019],
+    [td_COPA_2021],
   )
 }
 
@@ -483,6 +491,7 @@ export const getTournamentDataGC = () => {
     [td_GC_2015],
     [td_GC_2017],
     [td_GC_2019],
+    [td_GC_2021],
   )
 }
 

@@ -32,12 +32,18 @@
     },
     "hero_images": [
       {
-        "name": "Atatürk Olympic Stadium, Istanbul",
-        "filename": "Istanbul_Atatürk_Olympic_Stadium_1.jpg",
-        "text": "The Atatürk Olympic Stadium will host the final."
+        "name": "Estádio do Dragão, Porto",
+        "filename": "Porto_Estádio_do_Dragão_2.jpg",
+        "text": "The Estádio do Dragão in Porto hosted the final."
+      },
+      {
+        "name": "Program",
+        "filename": "2021_UEFA_Champions_League_Final_programme.png",
+        "text": "This is the official match programme for the 2021 UEFA Champions League Final."
       }
     ],
-    "statistics": { "total_matches": 124, "total_goals": 365, "attendance": 165939 },
+    "final_standings": { "champions": "CHE", "runners_up": "MCI", "semi_finalist1": "PSG", "semi_finalist2": "RMA" },
+    "statistics": { "total_matches": 124, "total_goals": 366, "attendance": 180049 },
     "awards": {
       "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "club": "DOR", "goals": 10 }]
     }

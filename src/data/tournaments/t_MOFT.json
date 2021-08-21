@@ -5,10 +5,12 @@
     "name": "Men's Olympic Football Tournament Tokyo 2020",
     "competition_id": "MOFT",
     "points_for_win": 3,
-    "tiebreakers": ["team", "head2head", "lot"],
+    "show_match_year": true,
+    "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "details": {
       "host": ["JPN_U23MNT"],
       "logo_filename": "2020_Summer_Olympics_logo_new.svg",
+      "mascot_filename": "Football,_Tokyo_2020.svg",
       "start_date": "2021-07-22",
       "end_date": "2021-08-07",
       "color": "#202b5a",
@@ -21,9 +23,29 @@
       {
         "name": "International Stadium, Yokohama",
         "filename": "Nissan_International_Stadium_Yokohama.jpg",
-        "text": "The International Stadium will host the final."
+        "text": "The International Stadium hosted the final Brazil vs Spain."
+      },
+      {
+        "name": "Kashima Stadium, Kashima",
+        "filename": "Kashima_Stadium_1.jpeg",
+        "text": "The Kashima Stadium hosted the semi-final Mexico vs Brazil."
+      },
+      {
+        "name": "Miyagi Stadium, Rifu",
+        "filename": "MiyagiStadiumTrackField.jpg",
+        "text": "The Miyagi Stadium hosted the quarter-final Spain vs Ivory Coast."
+      },
+      {
+        "name": "Tokyo Stadium, Chōfu",
+        "filename": "Ajinomoto_Stadium_20101120.jpeg",
+        "text": "The Tokyo Stadium hosted the group A matches."
       }
-    ]
+    ],
+    "final_standings": { "champions": "BRA_U23MNT", "runners_up": "ESP_U23MNT", "third_place": "MEX_U23MNT", "fourth_place": "JPN_U23MNT" },
+    "statistics": { "total_matches": 32, "total_goals": 93, "attendance": 14291 },
+    "awards": {
+      "golden_boot": [{ "player": "Richarlison", "team": "BRA_U23MNT", "goals": 5 }]
+    }
   },
   {
     "id": "MOFT2016",
@@ -305,7 +327,7 @@
     "details": {
       "host": ["USA_U23MNT"],
       "logo_filename": "1996_Summer_Olympics_logo.svg",
-      "mascot_filename": "Football_pictogram_1948.svg",
+      "mascot_filename": "Football,_Atlanta_1996.png",
       "start_date": "1996-07-20",
       "end_date": "1996-08-03",
       "color": "#e12631",

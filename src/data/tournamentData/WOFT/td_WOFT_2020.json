@@ -1,0 +1,353 @@
+{
+  "id": "WOFT2020",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": {
+        "teams": {
+          "auto": [1, 2],
+          "wild_card": { "pos": 3, "count": 2 },
+          "eliminated": [4],
+          "text": "The top 2 teams and the 2 best third-placed teams would advance to the Quarter-finals."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group E",
+          "teams": [{ "id": "GBR_U23WNT" }, { "id": "CHI_U23WNT" }, { "id": "JPN_U23WNT" }, { "id": "CAN_U23WNT" }],
+          "matches": [
+            {
+              "home_team": "GBR_U23WNT",
+              "away_team": "CHI_U23WNT",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2021-07-21",
+              "time": "16:30",
+              "stadium": "Sapporo Dome",
+              "city": "Sapporo"
+            },
+            {
+              "home_team": "JPN_U23WNT",
+              "away_team": "CAN_U23WNT",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-07-21",
+              "time": "19:30",
+              "stadium": "Sapporo Dome",
+              "city": "Sapporo"
+            },
+            {
+              "home_team": "CHI_U23WNT",
+              "away_team": "CAN_U23WNT",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-07-24",
+              "time": "16:30",
+              "stadium": "Sapporo Dome",
+              "city": "Sapporo"
+            },
+            {
+              "home_team": "JPN_U23WNT",
+              "away_team": "GBR_U23WNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-07-24",
+              "time": "19:30",
+              "stadium": "Sapporo Dome",
+              "city": "Sapporo"
+            },
+            {
+              "home_team": "CHI_U23WNT",
+              "away_team": "JPN_U23WNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-07-27",
+              "time": "20:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu"
+            },
+            {
+              "home_team": "CAN_U23WNT",
+              "away_team": "GBR_U23WNT",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-07-27",
+              "time": "20:00",
+              "stadium": "Kashima Stadium",
+              "city": "Kashima"
+            }
+          ]
+        },
+        {
+          "name": "Group F",
+          "teams": [{ "id": "CHN_U23WNT" }, { "id": "BRA_U23WNT" }, { "id": "ZAM_U23WNT" }, { "id": "NED_U23WNT" }],
+          "matches": [
+            {
+              "home_team": "CHN_U23WNT",
+              "away_team": "BRA_U23WNT",
+              "home_score": 0,
+              "away_score": 5,
+              "date": "2021-07-21",
+              "time": "17:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu"
+            },
+            {
+              "home_team": "ZAM_U23WNT",
+              "away_team": "NED_U23WNT",
+              "home_score": 3,
+              "away_score": 10,
+              "date": "2021-07-21",
+              "time": "20:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu"
+            },
+            {
+              "home_team": "CHN_U23WNT",
+              "away_team": "ZAM_U23WNT",
+              "home_score": 4,
+              "away_score": 4,
+              "date": "2021-07-24",
+              "time": "17:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu"
+            },
+            {
+              "home_team": "NED_U23WNT",
+              "away_team": "BRA_U23WNT",
+              "home_score": 3,
+              "away_score": 3,
+              "date": "2021-07-24",
+              "time": "20:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu"
+            },
+            {
+              "home_team": "NED_U23WNT",
+              "away_team": "CHN_U23WNT",
+              "home_score": 8,
+              "away_score": 2,
+              "date": "2021-07-27",
+              "time": "20:30",
+              "stadium": "International Stadium Yokohama",
+              "city": "Yokohama"
+            },
+            {
+              "home_team": "BRA_U23WNT",
+              "away_team": "ZAM_U23WNT",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-27",
+              "time": "20:30",
+              "stadium": "Saitama Stadium 2002",
+              "city": "Saitama"
+            }
+          ]
+        },
+        {
+          "name": "Group G",
+          "teams": [{ "id": "SWE_U23WNT" }, { "id": "USA_U23WNT" }, { "id": "AUS_U23WNT" }, { "id": "NZL_U23WNT" }],
+          "matches": [
+            {
+              "home_team": "SWE_U23WNT",
+              "away_team": "USA_U23WNT",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2021-07-21",
+              "time": "17:30",
+              "stadium": "Tokyo Stadium",
+              "city": "Tokyo"
+            },
+            {
+              "home_team": "AUS_U23WNT",
+              "away_team": "NZL_U23WNT",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2021-07-21",
+              "time": "20:30",
+              "stadium": "Tokyo Stadium",
+              "city": "Tokyo"
+            },
+            {
+              "home_team": "SWE_U23WNT",
+              "away_team": "AUS_U23WNT",
+              "home_score": 4,
+              "away_score": 2,
+              "date": "2021-07-24",
+              "time": "17:30",
+              "stadium": "Saitama Stadium 2002",
+              "city": "Saitama"
+            },
+            {
+              "home_team": "NZL_U23WNT",
+              "away_team": "USA_U23WNT",
+              "home_score": 1,
+              "away_score": 6,
+              "date": "2021-07-24",
+              "time": "20:30",
+              "stadium": "Saitama Stadium 2002",
+              "city": "Saitama"
+            },
+            {
+              "home_team": "NZL_U23WNT",
+              "away_team": "SWE_U23WNT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-07-27",
+              "time": "17:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu"
+            },
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "AUS_U23WNT",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2021-07-27",
+              "time": "17:00",
+              "stadium": "Kashima Stadium",
+              "city": "Kashima"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "CAN_U23WNT",
+              "away_team": "BRA_U23WNT",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 4,
+              "away_penalty_score": 3,
+              "date": "2021-07-30",
+              "time": "17:00",
+              "stadium": "Miyagi Stadium",
+              "city": "Rifu",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "GBR_U23WNT",
+              "away_team": "AUS_U23WNT",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 1,
+              "away_extra_score": 2,
+              "date": "2021-07-30",
+              "time": "18:00",
+              "stadium": "Kashima Stadium",
+              "city": "Kashima",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "SWE_U23WNT",
+              "away_team": "JPN_U23WNT",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-07-30",
+              "time": "19:00",
+              "stadium": "Saitama Stadium 2002",
+              "city": "Saitama",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "NED_U23WNT",
+              "away_team": "USA_U23WNT",
+              "home_score": 2,
+              "away_score": 2,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 2,
+              "away_penalty_score": 4,
+              "date": "2021-07-30",
+              "time": "20:00",
+              "stadium": "International Stadium Yokohama",
+              "city": "Yokohama",
+              "bracket_order": 3
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "USA_U23WNT",
+              "away_team": "CAN_U23WNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-08-02",
+              "time": "17:00",
+              "stadium": "Kashima Stadium",
+              "city": "Kashima",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "AUS_U23WNT",
+              "away_team": "SWE_U23WNT",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-08-02",
+              "time": "20:00",
+              "stadium": "International Stadium Yokohama",
+              "city": "Yokohama",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "AUS_U23WNT",
+              "away_team": "USA_U23WNT",
+              "home_score": 3,
+              "away_score": 4,
+              "date": "2021-08-05",
+              "time": "17:00",
+              "stadium": "Kashima Stadium",
+              "city": "Kashima"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "SWE_U23WNT",
+              "away_team": "CAN_U23WNT",
+              "home_score": 1,
+              "away_score": 1,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 2,
+              "away_penalty_score": 3,
+              "date": "2021-08-06",
+              "time": "21:00",
+              "stadium": "International Stadium Yokohama",
+              "city": "Yokohama"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,26 +5,51 @@
     "name": "UEFA Euro 2020",
     "competition_id": "EURO",
     "points_for_win": 3,
-    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferenceandgoalscored", "penalty", "fairplay", "coefficient"],
+    "show_match_year": true,
+    "tiebreakers": ["points", "head2head", "head2headreapply", "goaldifferencegoalscoredwins", "penalty", "fairplaylight", "coefficient"],
     "no_third_place": true,
     "details": {
-      "host": ["ENG", "GER", "AZE", "RUS", "ITA", "DEN", "ROU", "NED", "IRL", "ESP", "HUN", "SCO"],
+      "host": ["AZE", "DEN", "ENG", "GER", "HUN", "ITA", "NED", "ROU", "RUS", "SCO", "ESP"],
       "logo_filename": "Euro_2020.png",
       "mascot_filename": "mascot_2020.jpg",
       "start_date": "2021-06-11",
       "end_date": "2021-07-11",
       "color": "#0084a4",
       "team_count": 24,
-      "venue_count": 12,
-      "city_count": 12
+      "venue_count": 11,
+      "city_count": 11
     },
     "hero_images": [
       {
+        "name": "Champions",
+        "filename": "Sergio_Mattarella_meets_Italy_national_football_team_and_Matteo_Berrettini_(12_July_2021)_01.jpg",
+        "text": "Meeting with the Italian national team, winner of the UEFA Euro 2020 European football championships and the tennis player Matteo Berrettini, finalist at the Wimbledon Tournament."
+      },
+      {
         "name": "Wembley Stadium, London",
-        "filename": "Wembley-Stadion_2013_16x10.jpg",
-        "text": "The Wembley Stadium will host the final."
+        "filename": "UEFA_Euro_2020_Final,_Wembley_Stadium.jpg",
+        "text": "The Wembley Stadium hosted the final Italy vs England."
+      },
+      {
+        "name": "Luke Shaw",
+        "filename": "Shaw_-_July_2015_(cropped).jpg",
+        "text": "Luke Shaw scored for England in the second minute, the fastest goal ever scored in a Euro final."
+      },
+      {
+        "name": "Leonardo Bonucci",
+        "filename": "20150616_-_Portugal_-_Italie_-_Genève_-_Leonardo_Bonucci_(cropped_2).jpg",
+        "text": "Italy's Leonardo Bonucci scored in the 67th minute, tying the match and making him the oldest person to score a goal in a Euro final."
       }
-    ]
+    ],
+    "final_standings": { "champions": "ITA", "runners_up": "ENG", "semi_finalist1": "DEN", "semi_finalist2": "ESP" },
+    "statistics": { "total_matches": 51, "total_goals": 142, "attendance": 1099278 },
+    "awards": {
+      "golden_boot": [{ "player": "Cristiano Ronaldo", "team": "POR", "goals": 5, "assists": 1, "minutes": 360 }],
+      "silver_boot": [{ "player": "Patrik Schick", "team": "CZE", "goals": 5, "assists": 0, "minutes": 404 }],
+      "bronze_boot": [{ "player": "Karim Benzema", "team": "FRA", "goals": 4, "assists": 0, "minutes": 349 }],
+      "golden_ball": [{ "player": "Gianluigi Donnarumma", "team": "ITA" }],
+      "best_young_player": { "player": "Pedri", "team": "ESP" }
+    }
   },
   {
     "id": "EURO2016",

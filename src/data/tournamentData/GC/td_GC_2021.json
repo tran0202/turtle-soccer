@@ -1,0 +1,384 @@
+{
+  "id": "GC2021",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": { "teams": { "auto": [1, 2], "eliminated": [3, 4], "text": "The top 2 teams would advance to the quarter-finals." } },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "MEX" }, { "id": "TRI" }, { "id": "SLV" }, { "id": "GUA" }],
+          "matches": [
+            {
+              "home_team": "MEX",
+              "away_team": "TRI",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2021-07-10",
+              "time": "22:30",
+              "stadium": "AT&T Stadium",
+              "city": "Arlington"
+            },
+            {
+              "home_team": "SLV",
+              "away_team": "GUA",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2021-07-11",
+              "time": "23:00",
+              "stadium": "Toyota Stadium",
+              "city": "Frisco"
+            },
+            {
+              "home_team": "TRI",
+              "away_team": "SLV",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-07-14",
+              "time": "19:30",
+              "stadium": "Toyota Stadium",
+              "city": "Frisco"
+            },
+            {
+              "home_team": "GUA",
+              "away_team": "MEX",
+              "home_score": 0,
+              "away_score": 3,
+              "date": "2021-07-14",
+              "time": "22:30",
+              "stadium": "Cotton Bowl",
+              "city": "Dallas"
+            },
+            {
+              "home_team": "MEX",
+              "away_team": "SLV",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-18",
+              "time": "22:00",
+              "stadium": "Cotton Bowl",
+              "city": "Dallas"
+            },
+            {
+              "home_team": "GUA",
+              "away_team": "TRI",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-07-18",
+              "time": "22:00",
+              "stadium": "Toyota Stadium",
+              "city": "Frisco"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "CAN" }, { "id": "MTQ" }, { "id": "USA" }, { "id": "HAI" }],
+          "matches": [
+            {
+              "home_team": "CAN",
+              "away_team": "MTQ",
+              "home_score": 4,
+              "away_score": 1,
+              "date": "2021-07-11",
+              "time": "18:30",
+              "stadium": "Children's Mercy Park",
+              "city": "Kansas City"
+            },
+            {
+              "home_team": "USA",
+              "away_team": "HAI",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-11",
+              "time": "21:00",
+              "stadium": "Children's Mercy Park",
+              "city": "Kansas City"
+            },
+            {
+              "home_team": "HAI",
+              "away_team": "CAN",
+              "home_score": 1,
+              "away_score": 4,
+              "date": "2021-07-15",
+              "time": "19:30",
+              "stadium": "Children's Mercy Park",
+              "city": "Kansas City"
+            },
+            {
+              "home_team": "MTQ",
+              "away_team": "USA",
+              "home_score": 1,
+              "away_score": 6,
+              "date": "2021-07-15",
+              "time": "22:00",
+              "stadium": "Children's Mercy Park",
+              "city": "Kansas City"
+            },
+            {
+              "home_team": "MTQ",
+              "away_team": "HAI",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-07-18",
+              "time": "17:00",
+              "stadium": "Toyota Stadium",
+              "city": "Frisco"
+            },
+            {
+              "home_team": "USA",
+              "away_team": "CAN",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-18",
+              "time": "17:00",
+              "stadium": "Children's Mercy Park",
+              "city": "Kansas City"
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [{ "id": "JAM" }, { "id": "SUR" }, { "id": "CRC" }, { "id": "GLP" }],
+          "matches": [
+            {
+              "home_team": "JAM",
+              "away_team": "SUR",
+              "home_score": 2,
+              "away_score": 0,
+              "date": "2021-07-12",
+              "time": "18:30",
+              "stadium": "Exploria Stadium",
+              "city": "Orlando"
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "GLP",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-07-12",
+              "time": "21:00",
+              "stadium": "Exploria Stadium",
+              "city": "Orlando"
+            },
+            {
+              "home_team": "GLP",
+              "away_team": "JAM",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-07-16",
+              "time": "18:30",
+              "stadium": "Exploria Stadium",
+              "city": "Orlando"
+            },
+            {
+              "home_team": "SUR",
+              "away_team": "CRC",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-07-16",
+              "time": "21:00",
+              "stadium": "Exploria Stadium",
+              "city": "Orlando"
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "JAM",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-20",
+              "time": "19:00",
+              "stadium": "Exploria Stadium",
+              "city": "Orlando"
+            },
+            {
+              "home_team": "SUR",
+              "away_team": "GLP",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2021-07-20",
+              "time": "19:00",
+              "stadium": "BBVA Stadium",
+              "city": "Houston"
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [{ "id": "QAT" }, { "id": "PAN" }, { "id": "HON" }, { "id": "GRN" }],
+          "matches": [
+            {
+              "home_team": "QAT",
+              "away_team": "PAN",
+              "home_score": 3,
+              "away_score": 3,
+              "date": "2021-07-13",
+              "time": "20:50",
+              "stadium": "BBVA Stadium",
+              "city": "Houston"
+            },
+            {
+              "home_team": "HON",
+              "away_team": "GRN",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "2021-07-13",
+              "time": "23:10",
+              "stadium": "BBVA Stadium",
+              "city": "Houston"
+            },
+            {
+              "home_team": "GRN",
+              "away_team": "QAT",
+              "home_score": 0,
+              "away_score": 4,
+              "date": "2021-07-17",
+              "time": "19:30",
+              "stadium": "BBVA Stadium",
+              "city": "Houston"
+            },
+            {
+              "home_team": "PAN",
+              "away_team": "HON",
+              "home_score": 2,
+              "away_score": 3,
+              "date": "2021-07-17",
+              "time": "21:30",
+              "stadium": "BBVA Stadium",
+              "city": "Houston"
+            },
+            {
+              "home_team": "HON",
+              "away_team": "QAT",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-07-20",
+              "time": "21:30",
+              "stadium": "BBVA Stadium",
+              "city": "Houston"
+            },
+            {
+              "home_team": "PAN",
+              "away_team": "GRN",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-07-20",
+              "time": "23:30",
+              "stadium": "Exploria Stadium",
+              "city": "Orlando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "QAT",
+              "away_team": "SLV",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2021-07-24",
+              "time": "19:30",
+              "stadium": "State Farm Stadium",
+              "city": "Glendale",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "MEX",
+              "away_team": "HON",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2021-07-24",
+              "time": "22:30",
+              "stadium": "State Farm Stadium",
+              "city": "Glendale",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "CRC",
+              "away_team": "CAN",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-07-25",
+              "time": "19:00",
+              "stadium": "AT&T Stadium",
+              "city": "Arlington",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "USA",
+              "away_team": "JAM",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-25",
+              "time": "21:30",
+              "stadium": "AT&T Stadium",
+              "city": "Arlington",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "QAT",
+              "away_team": "USA",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-07-29",
+              "time": "19:30",
+              "stadium": "Q2 Stadium",
+              "city": "Austin",
+              "bracket_order": 1
+            },
+            {
+              "home_team": "MEX",
+              "away_team": "CAN",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2021-07-29",
+              "time": "22:15",
+              "stadium": "NRG Stadium",
+              "city": "Houston",
+              "bracket_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "USA",
+              "away_team": "MEX",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 1,
+              "away_extra_score": 0,
+              "date": "2021-08-01",
+              "time": "21:00",
+              "stadium": "Allegiant Stadium",
+              "city": "Paradise"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

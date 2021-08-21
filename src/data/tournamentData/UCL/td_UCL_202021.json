@@ -2436,7 +2436,22 @@
             }
           ]
         },
-        { "name": "Final", "short_name": "1st", "matches": [] }
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "MCI",
+              "away_team": "CHE",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-05-29",
+              "time": "20:00",
+              "stadium": "Estádio do Dragão",
+              "city": "Porto"
+            }
+          ]
+        }
       ]
     }
   ]

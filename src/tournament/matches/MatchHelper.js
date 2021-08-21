@@ -812,7 +812,6 @@ export const DisplayMatch = (props) => {
 
 export const DisplaySchedule2 = (props) => {
   const { round, config, details } = props
-  // console.log('round', round)
   if (isEmpty(round)) return null
   const { show_match_year, hide_date_grouping } = config
   return (
@@ -824,29 +823,32 @@ export const DisplaySchedule2 = (props) => {
           </Col>
         </Row>
       )}
-      {round.map((x, index) => (
-        <Row key={x.date}>
-          {!hide_date_grouping && (
-            <Col sm="12" className="h4-ff3 border-bottom-gray2 margin-top-md">
-              {show_match_year ? moment(x.date).format('dddd, MMMM D, YYYY') : moment(x.date).format('dddd, MMMM D')}
-            </Col>
-          )}
-          {x.leagues &&
-            x.leagues.map((l) => (
-              <React.Fragment key={l.name}>
-                <Col sm="12" className={`${getLeagueClassname(l.name)} h5-ff3 margin-top-md`}>
-                  {l.name}
+      {round.map(
+        (x, index) =>
+          !isEmpty(x.date) && (
+            <Row key={x.date}>
+              {!hide_date_grouping && (
+                <Col sm="12" className="h4-ff3 border-bottom-gray2 margin-top-md">
+                  {show_match_year ? moment(x.date).format('dddd, MMMM D, YYYY') : moment(x.date).format('dddd, MMMM D')}
                 </Col>
-                <React.Fragment>{l.matches && l.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}</React.Fragment>
-              </React.Fragment>
-            ))}
-          {x.pairs &&
-            x.pairs.map((p, index) => (
-              <React.Fragment key={index}>{p.matches && p.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}</React.Fragment>
-            ))}
-          {x.matches && x.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}
-        </Row>
-      ))}
+              )}
+              {x.leagues &&
+                x.leagues.map((l) => (
+                  <React.Fragment key={l.name}>
+                    <Col sm="12" className={`${getLeagueClassname(l.name)} h5-ff3 margin-top-md`}>
+                      {l.name}
+                    </Col>
+                    <React.Fragment>{l.matches && l.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}</React.Fragment>
+                  </React.Fragment>
+                ))}
+              {x.pairs &&
+                x.pairs.map((p, index) => (
+                  <React.Fragment key={index}>{p.matches && p.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}</React.Fragment>
+                ))}
+              {x.matches && x.matches.map((m, index) => <DisplayMatch m={m} config={config} key={index} />)}
+            </Row>
+          ),
+      )}
     </React.Fragment>
   )
 }

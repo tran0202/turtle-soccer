@@ -2,19 +2,53 @@
   {
     "id": "GC2021",
     "year": "2021",
-    "name": "Gold Cup 2021",
-    "short_name": "2021",
+    "name": "Gold Cup 2021 United States",
+    "short_name": "2021 United States",
     "competition_id": "GC",
     "points_for_win": 3,
     "tiebreakers": ["team", "head2head", "fairplay", "lot"],
     "no_third_place": true,
     "details": {
-      "logo_filename": "CONCACAF_Gold_Cup_2021.png",
+      "host": ["USA"],
+      "logo_filename": "CONCACAF_Gold_Cup_2021.svg",
       "start_date": "2021-07-10",
       "end_date": "2021-08-01",
       "color": "#d39534",
       "team_count": 16,
-      "confed_count": 2
+      "confed_count": 2,
+      "venue_count": 10,
+      "city_count": 9
+    },
+    "hero_images": [
+      {
+        "name": "Allegiant Stadium, Paradise",
+        "filename": "Allegiantstadiumjune2020.jpg",
+        "text": "The Allegiant Stadium in Paradise hosted the final United States vs Mexico."
+      },
+      {
+        "name": "NRG Stadium, Houston",
+        "filename": "Reliantstadium.jpg",
+        "text": "The NRG Stadium in Houston hosted the semi-final Mexico vs Canada."
+      },
+      {
+        "name": "AT&T Stadium, Arlington",
+        "filename": "Arlington_June_2020_4_(AT&T_Stadium).jpg",
+        "text": "The AT&T Stadium in Arlington hosted the quarter-final United States vs Jamaica."
+      },
+      {
+        "name": "State Farm Stadium, Glendale",
+        "filename": "University_of_Phoenix_Stadium_aerial.jpg",
+        "text": "The State Farm Stadium in Glendale hosted the quarter-final Qatar vs El Salvador"
+      }
+    ],
+    "final_standings": { "champions": "USA", "runners_up": "MEX", "semi_finalist1": "CAN", "semi_finalist2": "QAT" },
+    "statistics": { "total_matches": 31, "total_goals": 89 },
+    "awards": {
+      "golden_boot": [{ "player": "Almoez Ali", "team": "QAT", "goals": 4 }],
+      "golden_ball": [{ "player": "Héctor Herrera", "team": "MEX" }],
+      "best_young_player": { "player": "Tajon Buchanan", "team": "CAN" },
+      "golden_glove": [{ "player": "Matt Turner", "team": "USA" }],
+      "fair_play_team": ["USA"]
     }
   },
   {

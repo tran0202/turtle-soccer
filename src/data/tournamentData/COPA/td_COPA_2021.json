@@ -1,0 +1,358 @@
+{
+  "id": "COPA2021",
+  "stages": [
+    {
+      "name": "Group Stage",
+      "type": "roundrobin",
+      "eliminate_count": 8,
+      "next_round": "Quarter-finals",
+      "advancement": {
+        "teams": {
+          "auto": [1, 2, 3, 4],
+          "eliminated": [5],
+          "text": "The top 4 teams would advance to the Quarter-finals."
+        }
+      },
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [{ "id": "ARG" }, { "id": "CHI" }, { "id": "PAR" }, { "id": "BOL" }, { "id": "URU" }],
+          "matches": [
+            {
+              "home_team": "ARG",
+              "away_team": "CHI",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-14",
+              "time": "18:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "PAR",
+              "away_team": "BOL",
+              "home_score": 3,
+              "away_score": 1,
+              "date": "2021-06-14",
+              "time": "21:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia"
+            },
+            {
+              "home_team": "CHI",
+              "away_team": "BOL",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-18",
+              "time": "18:00",
+              "stadium": "Arena Pantanal",
+              "city": "Cuiabá"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "URU",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-18",
+              "time": "21:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília"
+            },
+            {
+              "home_team": "URU",
+              "away_team": "CHI",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-21",
+              "time": "18:00",
+              "stadium": "Arena Pantanal",
+              "city": "Cuiabá"
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "PAR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-21",
+              "time": "21:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília"
+            },
+            {
+              "home_team": "BOL",
+              "away_team": "URU",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-06-24",
+              "time": "18:00",
+              "stadium": "Arena Pantanal",
+              "city": "Cuiabá"
+            },
+            {
+              "home_team": "CHI",
+              "away_team": "PAR",
+              "home_score": 0,
+              "away_score": 2,
+              "date": "2021-06-24",
+              "time": "21:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília"
+            },
+            {
+              "home_team": "URU",
+              "away_team": "PAR",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-28",
+              "time": "21:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "BOL",
+              "away_team": "ARG",
+              "home_score": 1,
+              "away_score": 4,
+              "date": "2021-06-28",
+              "time": "21:00",
+              "stadium": "Arena Pantanal",
+              "city": "Cuiabá"
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [{ "id": "BRA" }, { "id": "VEN" }, { "id": "COL" }, { "id": "ECU" }, { "id": "PER" }],
+          "matches": [
+            {
+              "home_team": "BRA",
+              "away_team": "VEN",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2021-06-13",
+              "time": "18:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília"
+            },
+            {
+              "home_team": "COL",
+              "away_team": "ECU",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-06-13",
+              "time": "21:00",
+              "stadium": "Arena Pantanal",
+              "city": "Cuiabá"
+            },
+            {
+              "home_team": "COL",
+              "away_team": "VEN",
+              "home_score": 0,
+              "away_score": 0,
+              "date": "2021-06-17",
+              "time": "18:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "PER",
+              "home_score": 4,
+              "away_score": 0,
+              "date": "2021-06-17",
+              "time": "21:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "VEN",
+              "away_team": "ECU",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2021-06-20",
+              "time": "18:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "COL",
+              "away_team": "PER",
+              "home_score": 1,
+              "away_score": 2,
+              "date": "2021-06-20",
+              "time": "21:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia"
+            },
+            {
+              "home_team": "ECU",
+              "away_team": "PER",
+              "home_score": 2,
+              "away_score": 2,
+              "date": "2021-06-23",
+              "time": "18:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "COL",
+              "home_score": 2,
+              "away_score": 1,
+              "date": "2021-06-23",
+              "time": "21:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro"
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "ECU",
+              "home_score": 1,
+              "away_score": 1,
+              "date": "2021-06-27",
+              "time": "18:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia"
+            },
+            {
+              "home_team": "VEN",
+              "away_team": "PER",
+              "home_score": 0,
+              "away_score": 1,
+              "date": "2021-06-27",
+              "time": "18:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knockout Stage",
+      "type": "knockout",
+      "rounds": [
+        {
+          "name": "Quarter-finals",
+          "short_name": "1/4",
+          "eliminate_count": 4,
+          "next_round": "Semi-finals",
+          "matches": [
+            {
+              "home_team": "PER",
+              "away_team": "PAR",
+              "home_score": 3,
+              "away_score": 3,
+              "home_penalty_score": 4,
+              "away_penalty_score": 3,
+              "date": "2021-07-02",
+              "time": "18:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia",
+              "bracket_order": 4
+            },
+            {
+              "home_team": "BRA",
+              "away_team": "CHI",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-02",
+              "time": "21:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro",
+              "bracket_order": 3
+            },
+            {
+              "home_team": "URU",
+              "away_team": "COL",
+              "home_score": 0,
+              "away_score": 0,
+              "home_penalty_score": 2,
+              "away_penalty_score": 4,
+              "date": "2021-07-03",
+              "time": "19:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "ECU",
+              "home_score": 3,
+              "away_score": 0,
+              "date": "2021-07-03",
+              "time": "22:00",
+              "stadium": "Estádio Olímpico Pedro Ludovico",
+              "city": "Goiânia",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Semi-finals",
+          "short_name": "1/2",
+          "eliminate_count": 2,
+          "next_round": "Final",
+          "matches": [
+            {
+              "home_team": "BRA",
+              "away_team": "PER",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-05",
+              "time": "20:00",
+              "stadium": "Estádio Olímpico Nilton Santos",
+              "city": "Rio de Janeiro",
+              "bracket_order": 2
+            },
+            {
+              "home_team": "ARG",
+              "away_team": "COL",
+              "home_score": 1,
+              "away_score": 1,
+              "home_penalty_score": 3,
+              "away_penalty_score": 2,
+              "date": "2021-07-06",
+              "time": "22:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília",
+              "bracket_order": 1
+            }
+          ]
+        },
+        {
+          "name": "Third-place",
+          "short_name": "3rd",
+          "matches": [
+            {
+              "home_team": "COL",
+              "away_team": "PER",
+              "home_score": 3,
+              "away_score": 2,
+              "date": "2021-07-09",
+              "time": "21:00",
+              "stadium": "Estádio Nacional Mané Garrincha",
+              "city": "Brasília"
+            }
+          ]
+        },
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "ARG",
+              "away_team": "BRA",
+              "home_score": 1,
+              "away_score": 0,
+              "date": "2021-07-10",
+              "time": "21:00",
+              "stadium": "Maracanã Stadium",
+              "city": "Rio de Janeiro"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

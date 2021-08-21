@@ -4760,7 +4760,26 @@
             }
           ]
         },
-        { "name": "Final", "short_name": "1st", "matches": [] }
+        {
+          "name": "Final",
+          "short_name": "1st",
+          "matches": [
+            {
+              "home_team": "VIL",
+              "away_team": "MUN",
+              "home_score": 0,
+              "away_score": 0,
+              "home_extra_score": 0,
+              "away_extra_score": 0,
+              "home_penalty_score": 11,
+              "away_penalty_score": 10,
+              "date": "2021-05-26",
+              "time": "21:00",
+              "stadium": "Stadion Gdańsk",
+              "city": "Gdańsk"
+            }
+          ]
+        }
       ]
     }
   ]
