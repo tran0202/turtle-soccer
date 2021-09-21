@@ -10,7 +10,7 @@
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
-          "teams": [{ "id": "SDN-1956-1970" }, { "id": "EGY-1953-1958" }, { "id": "ETH-1941-1974" }, { "id": "RSA-1928-1957" }],
+          "teams": [{ "id": "SDN-1956-1970" }, { "id": "EGY-1953-1958" }, { "id": "ETH-1941-1974" }, { "id": "RSA-1928-1994" }],
           "matches": [
             {
               "home_team": "SDN-1956-1970",
@@ -25,7 +25,7 @@
             },
             {
               "home_team": "ETH-1941-1974",
-              "away_team": "RSA-1928-1957",
+              "away_team": "RSA-1928-1994",
               "home_walkover": true,
               "walkover_notes": "Walkover: South Africa was disqualified due to apartheid. Ethiopia therefore had a bye to the final.",
               "date": "1957-02-10",

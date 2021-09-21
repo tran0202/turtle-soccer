@@ -274,7 +274,7 @@
         },
         {
           "name": "Group 5",
-          "teams": [{ "id": "ESP" }, { "id": "HON" }, { "id": "YUG-1945-1992" }, { "id": "NIR" }],
+          "teams": [{ "id": "ESP" }, { "id": "HON" }, { "id": "YUG-1963-1992" }, { "id": "NIR" }],
           "matches": [
             {
               "home_team": "ESP",
@@ -287,7 +287,7 @@
               "city": "Valencia"
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1963-1992",
               "away_team": "NIR",
               "home_score": 0,
               "away_score": 0,
@@ -298,7 +298,7 @@
             },
             {
               "home_team": "ESP",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1963-1992",
               "home_score": 2,
               "away_score": 1,
               "date": "1982-06-20",
@@ -318,7 +318,7 @@
             },
             {
               "home_team": "HON",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1963-1992",
               "home_score": 0,
               "away_score": 1,
               "date": "1982-06-24",

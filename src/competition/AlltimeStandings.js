@@ -112,6 +112,7 @@ const collectRankings = (competition) => {
           })
         s.rounds &&
           s.rounds.forEach((r) => {
+            r.teams && r.teams.forEach((t) => _teams.push(t))
             r.bye_teams && r.bye_teams.forEach((t) => _teams.push(t))
             r.matches &&
               r.matches.forEach((m) => {

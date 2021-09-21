@@ -340,7 +340,7 @@ const drawingLots = (a, b) => {
     return -1
   }
   // Switzerland 1954
-  if (a.id === 'YUG-1945-1992' && b.id === 'BRA') {
+  if (a.id === 'YUG-1945-1963' && b.id === 'BRA') {
     a.draw_lot_notes = 'Yugoslavia took 2nd place after finished level points with Brazil.'
     b.draw_lot_notes = 'Brazil took 1st place after finished level points with Yugoslavia.'
     return 1

@@ -17,10 +17,10 @@
       "groups": [
         {
           "name": "Group A",
-          "teams": [{ "id": "VEN-1930-2006" }, { "id": "COL" }, { "id": "PER" }, { "id": "BOL" }],
+          "teams": [{ "id": "VEN-1954-2006" }, { "id": "COL" }, { "id": "PER" }, { "id": "BOL" }],
           "matches": [
             {
-              "home_team": "VEN-1930-2006",
+              "home_team": "VEN-1954-2006",
               "away_team": "COL",
               "home_score": 0,
               "away_score": 1,
@@ -51,7 +51,7 @@
             },
             {
               "home_team": "PER",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 3,
               "away_score": 1,
               "date": "2004-07-09",
@@ -60,7 +60,7 @@
               "city": "Lima"
             },
             {
-              "home_team": "VEN-1930-2006",
+              "home_team": "VEN-1954-2006",
               "away_team": "BOL",
               "home_score": 1,
               "away_score": 1,

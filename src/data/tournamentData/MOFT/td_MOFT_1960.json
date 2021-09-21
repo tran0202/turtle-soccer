@@ -10,7 +10,7 @@
       "groups": [
         {
           "name": "Group A",
-          "teams": [{ "id": "BUL-1948-1967_U23MNT" }, { "id": "TUR_U23MNT" }, { "id": "YUG-1945-1992_U23MNT" }, { "id": "EGY-1958-1971_U23MNT" }],
+          "teams": [{ "id": "BUL-1948-1967_U23MNT" }, { "id": "TUR_U23MNT" }, { "id": "YUG-1945-1963_U23MNT" }, { "id": "EGY-1958-1971_U23MNT" }],
           "matches": [
             {
               "home_team": "BUL-1948-1967_U23MNT",
@@ -23,7 +23,7 @@
               "city": "Grosseto"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "EGY-1958-1971_U23MNT",
               "home_score": 6,
               "away_score": 1,
@@ -43,7 +43,7 @@
               "city": "L'Aquila"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "TUR_U23MNT",
               "home_score": 4,
               "away_score": 0,
@@ -63,7 +63,7 @@
               "city": "Livorno"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "BUL-1948-1967_U23MNT",
               "home_score": 3,
               "away_score": 3,
@@ -286,7 +286,7 @@
           "matches": [
             {
               "home_team": "ITA_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1945-1963_U23MNT",
               "home_score": 0,
               "away_score": 0,
               "home_extra_score": 1,
@@ -332,7 +332,7 @@
           "short_name": "1st",
           "matches": [
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "DEN_U23MNT",
               "home_score": 3,
               "away_score": 1,

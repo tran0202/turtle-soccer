@@ -10,7 +10,7 @@
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
-          "teams": [{ "id": "TCH" }, { "id": "NED" }, { "id": "YUG-1945-1992" }, { "id": "GER-1949-1990" }],
+          "teams": [{ "id": "TCH" }, { "id": "NED" }, { "id": "YUG-1963-1992" }, { "id": "GER-1949-1990" }],
           "matches": [
             {
               "home_team": "TCH",
@@ -26,7 +26,7 @@
               "bracket_order": 1
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1963-1992",
               "away_team": "GER-1949-1990",
               "home_score": 2,
               "away_score": 2,
@@ -46,7 +46,7 @@
           "matches": [
             {
               "home_team": "NED",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1963-1992",
               "home_score": 2,
               "away_score": 2,
               "home_extra_score": 1,

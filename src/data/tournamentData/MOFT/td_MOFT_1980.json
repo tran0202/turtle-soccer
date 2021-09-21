@@ -208,10 +208,10 @@
         },
         {
           "name": "Group D",
-          "teams": [{ "id": "YUG-1945-1992_U23MNT" }, { "id": "FIN_U23MNT" }, { "id": "IRQ-1963-1991_U23MNT" }, { "id": "CRC_U23MNT" }],
+          "teams": [{ "id": "YUG-1963-1992_U23MNT" }, { "id": "FIN_U23MNT" }, { "id": "IRQ-1963-1991_U23MNT" }, { "id": "CRC_U23MNT" }],
           "matches": [
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1963-1992_U23MNT",
               "away_team": "FIN_U23MNT",
               "home_score": 2,
               "away_score": 0,
@@ -231,7 +231,7 @@
               "city": "Kiev"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1963-1992_U23MNT",
               "away_team": "CRC_U23MNT",
               "home_score": 3,
               "away_score": 2,
@@ -261,7 +261,7 @@
               "city": "Kiev"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1963-1992_U23MNT",
               "away_team": "IRQ-1963-1991_U23MNT",
               "home_score": 1,
               "away_score": 1,
@@ -285,7 +285,7 @@
           "next_round": "Semi-finals",
           "matches": [
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1963-1992_U23MNT",
               "away_team": "ALG_U23MNT",
               "home_score": 3,
               "away_score": 0,
@@ -349,7 +349,7 @@
             },
             {
               "home_team": "TCH_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1963-1992_U23MNT",
               "home_score": 2,
               "away_score": 0,
               "date": "1980-07-29",
@@ -366,7 +366,7 @@
           "matches": [
             {
               "home_team": "URS_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1963-1992_U23MNT",
               "home_score": 2,
               "away_score": 0,
               "date": "1980-08-01",

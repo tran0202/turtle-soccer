@@ -83,11 +83,11 @@
         },
         {
           "name": "Group B",
-          "teams": [{ "id": "BRA" }, { "id": "VEN-1930-2006" }, { "id": "CHI" }, { "id": "MEX" }],
+          "teams": [{ "id": "BRA" }, { "id": "VEN-1954-2006" }, { "id": "CHI" }, { "id": "MEX" }],
           "matches": [
             {
               "home_team": "BRA",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 7,
               "away_score": 0,
               "date": "1999-06-30",
@@ -117,7 +117,7 @@
             },
             {
               "home_team": "CHI",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 3,
               "away_score": 0,
               "date": "1999-07-03",
@@ -137,7 +137,7 @@
             },
             {
               "home_team": "MEX",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 3,
               "away_score": 1,
               "date": "1999-07-06",

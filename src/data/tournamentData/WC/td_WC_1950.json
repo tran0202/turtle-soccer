@@ -10,7 +10,7 @@
       "groups": [
         {
           "name": "Group 1",
-          "teams": [{ "id": "BRA" }, { "id": "MEX" }, { "id": "YUG-1945-1992" }, { "id": "SUI" }],
+          "teams": [{ "id": "BRA" }, { "id": "MEX" }, { "id": "YUG-1945-1963" }, { "id": "SUI" }],
           "matches": [
             {
               "home_team": "BRA",
@@ -23,7 +23,7 @@
               "city": "Rio de Janeiro"
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1945-1963",
               "away_team": "SUI",
               "home_score": 3,
               "away_score": 0,
@@ -43,7 +43,7 @@
               "city": "São Paulo"
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1945-1963",
               "away_team": "MEX",
               "home_score": 4,
               "away_score": 1,
@@ -54,7 +54,7 @@
             },
             {
               "home_team": "BRA",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1945-1963",
               "home_score": 2,
               "away_score": 0,
               "date": "1950-07-01",

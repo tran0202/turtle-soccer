@@ -536,7 +536,7 @@
     "competition_id": "EURO",
     "points_for_win": 2,
     "details": {
-      "host": ["YUG-1945-1992"],
+      "host": ["YUG-1963-1992"],
       "logo_filename": "Euro_1976.png",
       "start_date": "1976-06-16",
       "end_date": "1976-06-20",
@@ -562,7 +562,7 @@
         "text": "Alternate tournament logo"
       }
     ],
-    "final_standings": { "champions": "TCH", "runners_up": "GER-1949-1990", "third_place": "NED", "fourth_place": "YUG-1945-1992" },
+    "final_standings": { "champions": "TCH", "runners_up": "GER-1949-1990", "third_place": "NED", "fourth_place": "YUG-1963-1992" },
     "statistics": { "total_matches": 4, "total_goals": 19, "attendance": 106087 },
     "awards": { "golden_boot": [{ "player": "Dieter Müller", "team": "GER-1949-1990", "goals": 4 }] }
   },
@@ -648,9 +648,9 @@
         "text": "The Stadio Comunale held the semi-final Yugoslavia vs England."
       }
     ],
-    "final_standings": { "champions": "ITA", "runners_up": "YUG-1945-1992", "third_place": "ENG", "fourth_place": "URS" },
+    "final_standings": { "champions": "ITA", "runners_up": "YUG-1963-1992", "third_place": "ENG", "fourth_place": "URS" },
     "statistics": { "total_matches": 5, "total_goals": 7, "attendance": 260916 },
-    "awards": { "golden_boot": [{ "player": "Dragan Džajić", "team": "YUG-1945-1992", "goals": 2 }] }
+    "awards": { "golden_boot": [{ "player": "Dragan Džajić", "team": "YUG-1963-1992", "goals": 2 }] }
   },
   {
     "id": "EURO1964",
@@ -722,15 +722,15 @@
         "text": "The Stade Vélodrome held the semi-final Czechoslovakia vs Soviet Union."
       }
     ],
-    "final_standings": { "champions": "URS", "runners_up": "YUG-1945-1992", "third_place": "TCH", "fourth_place": "FRA" },
+    "final_standings": { "champions": "URS", "runners_up": "YUG-1945-1963", "third_place": "TCH", "fourth_place": "FRA" },
     "statistics": { "total_matches": 4, "total_goals": 17, "attendance": 78958 },
     "awards": {
       "golden_boot": [
         { "player": "François Heutte", "team": "FRA", "goals": 2 },
         { "player": "Valentin Ivanov", "team": "URS", "goals": 2 },
         { "player": "Viktor Ponedelnik", "team": "URS", "goals": 2 },
-        { "player": "Milan Galić", "team": "YUG-1945-1992", "goals": 2 },
-        { "player": "Dražan Jerković", "team": "YUG-1945-1992", "goals": 2 }
+        { "player": "Milan Galić", "team": "YUG-1945-1963", "goals": 2 },
+        { "player": "Dražan Jerković", "team": "YUG-1945-1963", "goals": 2 }
       ]
     }
   }

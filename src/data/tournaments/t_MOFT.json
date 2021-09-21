@@ -503,12 +503,12 @@
         "text": "The Harvard Stadium held group B matches"
       }
     ],
-    "final_standings": { "champions": "FRA_U23MNT", "runners_up": "BRA_U23MNT", "third_place": "YUG-1945-1992_U23MNT", "fourth_place": "ITA_U23MNT" },
+    "final_standings": { "champions": "FRA_U23MNT", "runners_up": "BRA_U23MNT", "third_place": "YUG-1963-1992_U23MNT", "fourth_place": "ITA_U23MNT" },
     "statistics": { "total_matches": 32, "total_goals": 84, "attendance": 1425181 },
     "awards": {
       "golden_boot": [
-        { "player": "Borislav Cvetković", "team": "YUG-1945-1992_U23MNT", "goals": 5 },
-        { "player": "Stjepan Deverić", "team": "YUG-1945-1992_U23MNT", "goals": 5 },
+        { "player": "Borislav Cvetković", "team": "YUG-1963-1992_U23MNT", "goals": 5 },
+        { "player": "Stjepan Deverić", "team": "YUG-1963-1992_U23MNT", "goals": 5 },
         { "player": "Daniel Xuereb", "team": "FRA_U23MNT", "goals": 5 }
       ]
     }
@@ -554,7 +554,7 @@
         "text": "The Kirow Stadium held group B matches"
       }
     ],
-    "final_standings": { "champions": "TCH_U23MNT", "runners_up": "GDR_U23MNT", "third_place": "URS_U23MNT", "fourth_place": "YUG-1945-1992_U23MNT" },
+    "final_standings": { "champions": "TCH_U23MNT", "runners_up": "GDR_U23MNT", "third_place": "URS_U23MNT", "fourth_place": "YUG-1963-1992_U23MNT" },
     "statistics": { "total_matches": 32, "total_goals": 82, "attendance": 1821624 },
     "awards": {
       "golden_boot": [{ "player": "Sergey Andreyev", "team": "URS_U23MNT", "goals": 5 }]
@@ -791,10 +791,10 @@
         "text": "The Stadio Comunale held a group C match Denmark vs Tunisia"
       }
     ],
-    "final_standings": { "champions": "YUG-1945-1992_U23MNT", "runners_up": "DEN_U23MNT", "third_place": "HUN_U23MNT", "fourth_place": "ITA_U23MNT" },
+    "final_standings": { "champions": "YUG-1945-1963_U23MNT", "runners_up": "DEN_U23MNT", "third_place": "HUN_U23MNT", "fourth_place": "ITA_U23MNT" },
     "statistics": { "total_matches": 28, "total_goals": 120 },
     "awards": {
-      "golden_boot": [{ "player": "Milan Galić", "team": "YUG-1945-1992_U23MNT", "goals": 7 }]
+      "golden_boot": [{ "player": "Milan Galić", "team": "YUG-1945-1963_U23MNT", "goals": 7 }]
     }
   },
   {
@@ -834,12 +834,12 @@
         "text": "The Olympic Park Stadium held the semi-final match Soviet Union vs Bulgaria."
       }
     ],
-    "final_standings": { "champions": "URS_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "BUL-1948-1967_U23MNT", "fourth_place": "IND_U23MNT" },
+    "final_standings": { "champions": "URS_U23MNT", "runners_up": "YUG-1945-1963_U23MNT", "third_place": "BUL-1948-1967_U23MNT", "fourth_place": "IND_U23MNT" },
     "statistics": { "total_matches": 12, "total_goals": 53, "attendance": 194333 },
     "awards": {
       "golden_boot": [
         { "player": "Neville D'Souza", "team": "IND_U23MNT", "goals": 4 },
-        { "player": "Todor Veselinović", "team": "YUG-1945-1992_U23MNT", "goals": 4 },
+        { "player": "Todor Veselinović", "team": "YUG-1945-1963_U23MNT", "goals": 4 },
         { "player": "Dimitar Milanov", "team": "BUL-1948-1967_U23MNT", "goals": 4 }
       ]
     }
@@ -885,10 +885,10 @@
         "text": "The Kupittaan Jalkapallostadion held the first round matches."
       }
     ],
-    "final_standings": { "champions": "HUN-1949-1956_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "SWE_U23MNT", "fourth_place": "GER_U23MNT" },
+    "final_standings": { "champions": "HUN-1949-1956_U23MNT", "runners_up": "YUG-1945-1963_U23MNT", "third_place": "SWE_U23MNT", "fourth_place": "GER_U23MNT" },
     "statistics": { "total_matches": 26, "total_goals": 135 },
     "awards": {
-      "golden_boot": [{ "player": "Branko Zebec", "team": "YUG-1945-1992_U23MNT", "goals": 7 }]
+      "golden_boot": [{ "player": "Branko Zebec", "team": "YUG-1945-1963_U23MNT", "goals": 7 }]
     }
   },
   {
@@ -932,7 +932,7 @@
         "text": "The final match ball."
       }
     ],
-    "final_standings": { "champions": "SWE_U23MNT", "runners_up": "YUG-1945-1992_U23MNT", "third_place": "DEN_U23MNT", "fourth_place": "GBR_U23MNT" },
+    "final_standings": { "champions": "SWE_U23MNT", "runners_up": "YUG-1945-1963_U23MNT", "third_place": "DEN_U23MNT", "fourth_place": "GBR_U23MNT" },
     "statistics": { "total_matches": 18, "total_goals": 102 },
     "awards": {
       "golden_boot": [

@@ -83,11 +83,11 @@
         },
         {
           "name": "Group B",
-          "teams": [{ "id": "BOL" }, { "id": "VEN-1930-2006" }, { "id": "PER" }, { "id": "URU" }],
+          "teams": [{ "id": "BOL" }, { "id": "VEN-1954-2006" }, { "id": "PER" }, { "id": "URU" }],
           "matches": [
             {
               "home_team": "BOL",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 1,
               "away_score": 0,
               "date": "1997-06-12",
@@ -107,7 +107,7 @@
             },
             {
               "home_team": "URU",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 2,
               "away_score": 0,
               "date": "1997-06-15",
@@ -127,7 +127,7 @@
             },
             {
               "home_team": "PER",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 2,
               "away_score": 0,
               "date": "1997-06-18",

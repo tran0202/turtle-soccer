@@ -12,7 +12,7 @@
           "next_round": "First Round",
           "teams": [{ "id": "LUX_U23MNT" }, { "id": "AFG-1931-1973_U23MNT" }, { "id": "NED_U23MNT" }, { "id": "IRL_U23MNT" }],
           "bye_teams": [
-            { "id": "YUG-1945-1992_U23MNT" },
+            { "id": "YUG-1945-1963_U23MNT" },
             { "id": "DEN_U23MNT" },
             { "id": "EGY-1922-1953_U23MNT" },
             { "id": "GBR_U23MNT" },
@@ -57,7 +57,7 @@
           "next_round": "Quarter-finals",
           "matches": [
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "LUX_U23MNT",
               "home_score": 6,
               "away_score": 1,
@@ -157,7 +157,7 @@
           "next_round": "Semi-finals",
           "matches": [
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "TUR_U23MNT",
               "home_score": 3,
               "away_score": 1,
@@ -220,7 +220,7 @@
               "bracket_order": 2
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "GBR_U23MNT",
               "home_score": 3,
               "away_score": 1,
@@ -253,7 +253,7 @@
           "short_name": "1st",
           "matches": [
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1945-1963_U23MNT",
               "away_team": "SWE_U23MNT",
               "home_score": 1,
               "away_score": 3,

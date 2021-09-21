@@ -10,7 +10,7 @@
       "groups": [
         {
           "name": "Group 1",
-          "teams": [{ "id": "URU" }, { "id": "COL" }, { "id": "URS" }, { "id": "YUG-1945-1992" }],
+          "teams": [{ "id": "URU" }, { "id": "COL" }, { "id": "URS" }, { "id": "YUG-1945-1963" }],
           "matches": [
             {
               "home_team": "URU",
@@ -24,7 +24,7 @@
             },
             {
               "home_team": "URS",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1945-1963",
               "home_score": 2,
               "away_score": 0,
               "date": "1962-05-31",
@@ -33,7 +33,7 @@
               "city": "Arica"
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1945-1963",
               "away_team": "URU",
               "home_score": 3,
               "away_score": 1,
@@ -63,7 +63,7 @@
               "city": "Arica"
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1945-1963",
               "away_team": "COL",
               "home_score": 5,
               "away_score": 0,
@@ -318,7 +318,7 @@
               "bracket_order": 2
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1945-1963",
               "away_team": "GER-1949-1990",
               "home_score": 1,
               "away_score": 0,
@@ -337,7 +337,7 @@
           "next_round": "Final",
           "matches": [
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1945-1963",
               "away_team": "TCH",
               "home_score": 1,
               "away_score": 3,
@@ -366,7 +366,7 @@
           "matches": [
             {
               "home_team": "CHI",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1945-1963",
               "home_score": 1,
               "away_score": 0,
               "date": "1962-06-16",

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" width="1200" height="600" viewBox="0 0 180 90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <clipPath id="c">
+   <path transform="rotate(-36,1,0)" d="m1 0h-1v-1"/>
+  </clipPath>
+ </defs>
+ <path d="m0 0h180v90H0z" fill="#ce1126"/>
+ <path d="m0 0h180v45H0Z" fill="#0038a8"/>
+ <path d="m0 0v90l77.94228634-45" fill="#fff"/>
+ <g fill="#fcd116">
+  <g id="e" transform="matrix(5 0 0 5 63.94228634 45)">
+   <path id="a" transform="rotate(18,1,0)" d="m1 0h-1v1" clip-path="url(#c)"/>
+   <g id="b">
+    <use transform="rotate(72)" xlink:href="#a"/>
+    <use transform="rotate(144)" xlink:href="#a"/>
+   </g>
+   <use transform="rotate(144)" xlink:href="#b"/>
+  </g>
+  <use transform="rotate(240 25.98076211 45)" xlink:href="#e"/>
+  <use transform="rotate(120 25.98076211 45)" xlink:href="#e"/>
+  <g transform="translate(28,45)">
+   <g id="g">
+    <g id="f">
+     <g id="d">
+      <path d="M-19 0-17.83127637 1.16872363 0 0-17.83127637-1.16872363"/>
+      <path id="h" d="M-17 2.238092482-16.04628707 3.191804926 0 0"/>
+      <use transform="scale(1,-1)" xlink:href="#h"/>
+     </g>
+     <use transform="rotate(90)" xlink:href="#d"/>
+    </g>
+    <use transform="scale(-1)" xlink:href="#f"/>
+   </g>
+   <use transform="rotate(45)" xlink:href="#g"/>
+   <circle r="9"/>
+  </g>
+ </g>
+</svg>

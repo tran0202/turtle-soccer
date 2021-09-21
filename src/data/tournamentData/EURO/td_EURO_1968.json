@@ -10,7 +10,7 @@
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
-          "teams": [{ "id": "ITA" }, { "id": "URS" }, { "id": "YUG-1945-1992" }, { "id": "ENG" }],
+          "teams": [{ "id": "ITA" }, { "id": "URS" }, { "id": "YUG-1963-1992" }, { "id": "ENG" }],
           "matches": [
             {
               "home_team": "ITA",
@@ -27,7 +27,7 @@
               "bracket_order": 1
             },
             {
-              "home_team": "YUG-1945-1992",
+              "home_team": "YUG-1963-1992",
               "away_team": "ENG",
               "home_score": 1,
               "away_score": 0,
@@ -61,7 +61,7 @@
           "matches": [
             {
               "home_team": "ITA",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1963-1992",
               "home_score": 1,
               "away_score": 1,
               "home_extra_score": 0,
@@ -73,7 +73,7 @@
             },
             {
               "home_team": "ITA",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1963-1992",
               "home_score": 2,
               "away_score": 0,
               "date": "1968-06-10",

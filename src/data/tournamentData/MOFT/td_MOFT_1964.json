@@ -76,7 +76,7 @@
         },
         {
           "name": "Group B",
-          "teams": [{ "id": "HUN_U23MNT" }, { "id": "MAR_U23MNT" }, { "id": "YUG-1945-1992_U23MNT" }],
+          "teams": [{ "id": "HUN_U23MNT" }, { "id": "MAR_U23MNT" }, { "id": "YUG-1963-1992_U23MNT" }],
           "matches": [
             {
               "home_team": "HUN_U23MNT",
@@ -89,7 +89,7 @@
               "city": "Tokyo"
             },
             {
-              "home_team": "YUG-1945-1992_U23MNT",
+              "home_team": "YUG-1963-1992_U23MNT",
               "away_team": "MAR_U23MNT",
               "home_score": 3,
               "away_score": 1,
@@ -100,7 +100,7 @@
             },
             {
               "home_team": "HUN_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1963-1992_U23MNT",
               "home_score": 6,
               "away_score": 5,
               "date": "1964-10-15",
@@ -228,7 +228,7 @@
           "matches": [
             {
               "home_team": "GER_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1963-1992_U23MNT",
               "home_score": 1,
               "away_score": 0,
               "date": "1964-10-18",
@@ -281,7 +281,7 @@
           "matches": [
             {
               "home_team": "JPN_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1963-1992_U23MNT",
               "home_score": 1,
               "away_score": 6,
               "date": "1964-10-20",
@@ -339,7 +339,7 @@
           "matches": [
             {
               "home_team": "ROU-1952-1965_U23MNT",
-              "away_team": "YUG-1945-1992_U23MNT",
+              "away_team": "YUG-1963-1992_U23MNT",
               "home_score": 3,
               "away_score": 0,
               "date": "1964-10-22",

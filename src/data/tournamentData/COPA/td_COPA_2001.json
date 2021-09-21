@@ -17,7 +17,7 @@
       "groups": [
         {
           "name": "Group A",
-          "teams": [{ "id": "ECU" }, { "id": "CHI" }, { "id": "COL" }, { "id": "VEN-1930-2006" }],
+          "teams": [{ "id": "ECU" }, { "id": "CHI" }, { "id": "COL" }, { "id": "VEN-1954-2006" }],
           "matches": [
             {
               "home_team": "ECU",
@@ -31,7 +31,7 @@
             },
             {
               "home_team": "COL",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 2,
               "away_score": 0,
               "date": "2001-07-11",
@@ -41,7 +41,7 @@
             },
             {
               "home_team": "CHI",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 1,
               "away_score": 0,
               "date": "2001-07-14",
@@ -61,7 +61,7 @@
             },
             {
               "home_team": "ECU",
-              "away_team": "VEN-1930-2006",
+              "away_team": "VEN-1954-2006",
               "home_score": 4,
               "away_score": 0,
               "date": "2001-07-17",

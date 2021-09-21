@@ -10,11 +10,11 @@
           "short_name": "1/2",
           "eliminate_count": 2,
           "next_round": "Final",
-          "teams": [{ "id": "FRA" }, { "id": "YUG-1945-1992" }, { "id": "TCH" }, { "id": "URS" }],
+          "teams": [{ "id": "FRA" }, { "id": "YUG-1945-1963" }, { "id": "TCH" }, { "id": "URS" }],
           "matches": [
             {
               "home_team": "FRA",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1945-1963",
               "home_score": 4,
               "away_score": 5,
               "date": "1960-07-06",
@@ -58,7 +58,7 @@
           "matches": [
             {
               "home_team": "URS",
-              "away_team": "YUG-1945-1992",
+              "away_team": "YUG-1945-1963",
               "home_score": 1,
               "away_score": 1,
               "home_extra_score": 1,
