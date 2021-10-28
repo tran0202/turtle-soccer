@@ -5,7 +5,6 @@
     "name": "2020/21 UEFA Nations League",
     "short_name": "2020/21",
     "competition_id": "UNL",
-    "active": true,
     "points_for_win": 3,
     "show_match_year": true,
     "tiebreakers_collapsed": true,
@@ -56,9 +55,20 @@
         "text": "Panorama of Turin, with the Mole Antonelliana and the Alps, from Monte dei Cappuccini"
       }
     ],
-    "statistics": { "total_matches": 160, "total_goals": 362, "attendance": 102538 },
+    "final_standings": { "champions": "FRA", "runners_up": "ESP", "third_place": "ITA", "fourth_place": "BEL" },
+    "statistics": { "total_matches": 164, "total_goals": 376, "attendance": 196706 },
     "awards": {
-      "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "goals": 6 }]
+      "golden_boot": [
+        { "player": "Romelu Lukaku", "team": "BEL", "goals": 6 },
+        { "player": "Erling Haaland", "team": "NOR", "goals": 6 },
+        { "player": "Ferran Torres", "team": "ESP", "goals": 6 }
+      ],
+      "final_top_scorer": [
+        { "player": "Karim Benzema", "team": "FRA", "goals": 2 },
+        { "player": "Kylian Mbappé", "team": "FRA", "goals": 2 },
+        { "player": "Ferran Torres", "team": "ESP", "goals": 2 }
+      ],
+      "final_best_player": [{ "player": "Sergio Busquets", "team": "ESP" }]
     }
   },
   {
