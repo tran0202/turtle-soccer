@@ -43,9 +43,13 @@
       }
     ],
     "final_standings": { "champions": "CHE", "runners_up": "MCI", "semi_finalist1": "PSG", "semi_finalist2": "RMA" },
-    "statistics": { "total_matches": 124, "total_goals": 366, "attendance": 180049 },
+    "statistics": { "total_matches": 125, "total_goals": 366, "attendance": 180049 },
     "awards": {
-      "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "club": "DOR", "goals": 10 }]
+      "golden_boot": [{ "player": "Erling Haaland", "team": "NOR", "club": "DOR", "goals": 10 }],
+      "golden_glove": [{ "player": "Édouard Mendy", "team": "SEN", "club": "CHE" }],
+      "best_defender": [{ "player": "Rúben Dias", "team": "POR", "club": "MCI" }],
+      "best_midfielder": [{ "player": "N'Golo Kanté", "team": "FRA", "club": "CHE" }],
+      "best_forward": [{ "player": "Erling Haaland", "team": "NOR", "club": "DOR" }]
     }
   },
   {
