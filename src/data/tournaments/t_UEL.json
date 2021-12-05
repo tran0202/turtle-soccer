@@ -52,7 +52,8 @@
         { "player": "Yusuf Yazıcı", "team": "TUR", "club": "LIL", "goals": 7, "minutes": 625 },
         { "player": "Borja Mayoral", "team": "ESP", "club": "ROM", "goals": 7, "minutes": 659 },
         { "player": "Gerard Moreno", "team": "ESP", "club": "VIL", "goals": 7, "minutes": 879 }
-      ]
+      ],
+      "golden_ball": [{ "player": "Gerard Moreno", "team": "ESP", "club": "VIL" }]
     }
   },
   {
