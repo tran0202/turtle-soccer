@@ -309,7 +309,8 @@
     "statistics": { "total_matches": 26, "total_goals": 86, "attendance": 1050230 },
     "awards": {
       "golden_boot": [{ "player": "Robinho", "team": "BRA", "goals": 6 }],
-      "golden_ball": [{ "player": "Robinho", "team": "BRA" }]
+      "golden_ball": [{ "player": "Robinho", "team": "BRA" }],
+      "best_young_player": { "player": "Lionel Messi", "team": "ARG" }
     }
   },
   {
