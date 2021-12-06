@@ -454,7 +454,7 @@
         { "player": "Frédéric Kanouté", "team": "MLI", "goals": 4 },
         { "player": "Patrick Mboma", "team": "CMR", "goals": 4 },
         { "player": "Jay-Jay Okocha", "team": "NGA", "goals": 4 },
-        { "player": "Francileudo dos Santos", "team": "TUN", "goals": 4 }
+        { "player": "Francileudo Santos", "team": "TUN", "goals": 4 }
       ],
       "golden_ball": [{ "player": "Jay-Jay Okocha", "team": "NGA" }]
     }
@@ -648,7 +648,7 @@
     "statistics": { "total_matches": 29, "total_goals": 78, "attendance": 640880 },
     "awards": {
       "golden_boot": [{ "player": "Kalusha Bwalya", "team": "ZAM", "goals": 5 }],
-      "golden_ball": [{ "player": "Kalusha Bwalyay", "team": "ZAM" }]
+      "golden_ball": [{ "player": "Kalusha Bwalya", "team": "ZAM" }]
     }
   },
   {
