@@ -1104,7 +1104,7 @@
       "start_date": "1920-08-28",
       "end_date": "1920-09-05",
       "color": "#dc171e",
-      "team_count": 14,
+      "team_count": 15,
       "confed_count": 2,
       "venue_count": 4,
       "city_count": 3
@@ -1132,7 +1132,7 @@
       }
     ],
     "final_standings": { "champions": "BEL_U23MNT", "runners_up": "ESP-1875-1931_U23MNT", "third_place": "NED_U23MNT", "fourth_place": "ITA-1861-1946_U23MNT" },
-    "statistics": { "total_matches": 17, "total_goals": 70 },
+    "statistics": { "total_matches": 17, "total_goals": 70, "attendance": 150600 },
     "awards": {
       "golden_boot": [{ "player": "Herbert Karlsson", "team": "SWE_U23MNT", "goals": 7 }]
     }

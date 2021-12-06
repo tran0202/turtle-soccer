@@ -1059,10 +1059,10 @@
     "final_standings": { "champions": "CRC", "runners_up": "GUA", "third_place": "ANT-1959-1986", "fourth_place": "MEX" },
     "statistics": { "total_matches": 15, "total_goals": 43 },
     "awards": {
-      "golden_boot": [
+      "golden_boot": [{ "player": "Victor Manuel Ruiz", "team": "CRC", "goals": 4 }],
+      "silver_boot": [
         { "player": "Nelson Melgar", "team": "GUA", "goals": 3 },
-        { "player": "Marco Fión", "team": "GUA", "goals": 3 },
-        { "player": "Victor Manuel Ruiz", "team": "CRC", "goals": 3 }
+        { "player": "Marco Fión", "team": "GUA", "goals": 3 }
       ]
     }
   },
