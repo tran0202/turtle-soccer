@@ -595,9 +595,9 @@
         "text": "The Camp Nou held the opening match"
       },
       {
-        "name": "Santiago Bernabeu",
+        "name": "Santiago Bernabéu, Madrid",
         "filename": "The_Santiago_Bernabeu_Stadium_-_U-g-g-B-o-y.jpg",
-        "text": "The Santiago Bernabéu Stadium held the final"
+        "text": "The final was played at the Santiago Bernabéu."
       },
       {
         "name": "Tango España",
@@ -703,6 +703,11 @@
     },
     "hero_images": [
       {
+        "name": "Final",
+        "filename": "Beckenbauer_cruyff_alfieri.jpg",
+        "text": "Franz Beckenbauer (left) and Johan Cruyff (right), keyplayers of Germany and Netherlands respectively."
+      },
+      {
         "name": "Second round - Group A",
         "filename": "Bundesarchiv_Bild_183-N0704-308,_Fußball-WM,_DDR_-_Argentinien_1-1.jpg",
         "text": "Streich heads East Germany into the lead v. Argentina"
@@ -758,7 +763,7 @@
       {
         "name": "Champion",
         "filename": "Pele_celebrating_1970.jpg",
-        "text": "Pelé celebrating after winning the match. It was the last World Cup for him so he would retire from the national team one year after."
+        "text": "Pelé celebrating after winning the match. It was his last World Cup as he would retire from the national team one year later."
       },
       {
         "name": "Azteca Stadium",
@@ -969,7 +974,7 @@
       {
         "name": "Wankdorf Stadium, Bern",
         "filename": "lossy-page1-2722px-ETH-BIB-Bern,_Wankdorf-Stadion,_Fussballspiel-LBS_H1-016067_crop.tif.jpg",
-        "text": "The Wankdorf Stadium held the final"
+        "text": "The final was played at the Wankdorf Stadium."
       },
       {
         "name": "St. Jakob Stadium, Basel",
@@ -1011,7 +1016,7 @@
       {
         "name": "Final",
         "filename": "Gol_ghiggia_vs_brasil.jpg",
-        "text": "Uruguayan forward Alcides Ghiggia celebrates after scoring the 2nd goal"
+        "text": "Uruguayan forward Alcides Ghiggia celebrates after scoring the 2nd goal."
       },
       {
         "name": "Maracana Stadium, Rio de Janeiro",
