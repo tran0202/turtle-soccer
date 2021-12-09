@@ -68,6 +68,11 @@
     },
     "hero_images": [
       {
+        "name": "Final",
+        "filename": "640px-Vitoria_da_Alemanha.jpg",
+        "text": "Germany vs Sweden"
+      },
+      {
         "name": "Semi-final",
         "filename": "Alemanha_x_Canadá_-_Futebol_feminino_-_Olimpíada_Rio_2016_(28592213900).jpg",
         "text": "Germany vs Canada"
@@ -120,6 +125,11 @@
       "city_count": 6
     },
     "hero_images": [
+      {
+        "name": "Gold Medals",
+        "filename": "640px-Association_football_at_the_2012_Summer_Olympics_007.jpg",
+        "text": "The United States team."
+      },
       {
         "name": "Great Britain",
         "filename": "Team_GB_during_anthem.jpg",

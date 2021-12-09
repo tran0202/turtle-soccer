@@ -581,6 +581,11 @@
     },
     "hero_images": [
       {
+        "name": "Soviet Union",
+        "filename": "640px-Lequipe_de_football_olympique_dURSS,_troisieme_du_tournoi_1976_a_Montreal.jpg",
+        "text": "The Soviet Union team"
+      },
+      {
         "name": "Olympic Stadium, Montreal",
         "filename": "Le_Stade_Olympique_3.jpg",
         "text": "The Olympic Stadium held the gold medal match"
@@ -622,6 +627,11 @@
       "city_count": 6
     },
     "hero_images": [
+      {
+        "name": "Germany DR",
+        "filename": "Lequipe_dAllemagne_de_lEst_de_football,_medaillee_de_bronze_aux_JO_de_1972.jpg",
+        "text": "The Germany DR team"
+      },
       {
         "name": "Olympiastadion, Munich",
         "filename": "2014_Olympiastadion_Munich.jpg",
@@ -771,6 +781,11 @@
     },
     "hero_images": [
       {
+        "name": "Champions",
+        "filename": "640px-Yugoslavia_olimpic_gold_medalist_1960.jpg",
+        "text": "Yugoslavia national association football team at the Stadio Flaminio in Rome, Italy, after the 1960 Summer Olympics football tournament final against Denmark; Yugoslavia eventually won 3-1 and won the gold medal."
+      },
+      {
         "name": "Stadio Flaminio, Rome",
         "filename": "Stadio_Flaminio_a_Roma.jpg",
         "text": "The Stadio Flaminio held the gold medal match"
@@ -864,6 +879,11 @@
       "city_count": 5
     },
     "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "640px-1952_Summer_olympics,_olympic_stadium._The_Hungarian_national_team_after_the_final_(Hungary_-_Yugoslavia_2-0).jpg",
+        "text": "The Hungarian national team after the final (Hungary - Yugoslavia 2:0). Lantos, Bozsik, Czibor, Palotás, Lóránt, Zakariás, Grosics, Kocsis, Hidegkúti, Puskás, Buzánszky."
+      },
       {
         "name": "Champions",
         "filename": "Kuusela_Hungary_1952.jpg",

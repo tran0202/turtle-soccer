@@ -99,6 +99,11 @@
     "hero_images": [
       {
         "name": "Westpac Stadium, Wellington",
+        "filename": "640px-All_Whites_v_Peru_11_November_2017.jpg",
+        "text": "Westpac Stadium, Wellington"
+      },
+      {
+        "name": "Westpac Stadium, Wellington",
         "filename": "Westpac_Trust_stadium_viewed_from_Wadestown.jpg",
         "text": "Westpac Stadium, Wellington"
       },
@@ -280,6 +285,11 @@
     "hero_images": [
       {
         "name": "Lang Park, Brisbane",
+        "filename": "640px-Suncorp_Stadium_22_April_2012_(cropped).jpg",
+        "text": "The Lang Park hosted all the matches of the tournament."
+      },
+      {
+        "name": "Lang Park, Brisbane",
         "filename": "Suncorp_Stadium,_Milton_Road_facade,_Brisbane_05.jpg",
         "text": "The Lang Park hosted all the matches of the tournament."
       },
@@ -320,6 +330,11 @@
       {
         "name": "Queen Elizabeth II Park, Christchurch",
         "filename": "QEII1.jpg",
+        "text": "The Queen Elizabeth II Park hosted the 1st-leg of the semi-final New Zealand vs Australia."
+      },
+      {
+        "name": "Queen Elizabeth II Park, Christchurch",
+        "filename": "QEII2.jpeg",
         "text": "The Queen Elizabeth II Park hosted the 1st-leg of the semi-final New Zealand vs Australia."
       },
       {

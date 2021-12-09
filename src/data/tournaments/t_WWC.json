@@ -170,6 +170,11 @@
     },
     "hero_images": [
       {
+        "name": "Champions",
+        "filename": "Seleção_japonesa_agradece_o_apoio_da_torcida_(DSC01105).jpg",
+        "text": "Japan team thank you for your support"
+      },
+      {
         "name": "Opening ceremony",
         "filename": "FIFA_Womens_World_Cup_2011_Olympiastadion_Berlin.jpg",
         "text": "Opening ceremony"
@@ -178,11 +183,6 @@
         "name": "Final",
         "filename": "Penalty_vainqueur_de_Saki_Kumagai_en_2011.jpg",
         "text": "Saki Kumagai of Japan scoring the winning penalty"
-      },
-      {
-        "name": "Japan",
-        "filename": "Seleção_japonesa_agradece_o_apoio_da_torcida_(DSC01105).jpg",
-        "text": "Japan team thank you for your support."
       },
       {
         "name": "United States",

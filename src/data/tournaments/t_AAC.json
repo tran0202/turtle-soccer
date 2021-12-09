@@ -248,6 +248,11 @@
         "text": "The Workers Stadium hosted the final."
       },
       {
+        "name": "Workers Stadium, Beijing",
+        "filename": "640px-Workers_stadium_internal_field.jpeg",
+        "text": "The Workers Stadium hosted the final."
+      },
+      {
         "name": "Shandong Sports Center, Jinan",
         "filename": "SHANGDONGSPORTS.jpg",
         "text": "The Shandong Sports Center hosted the semi-final Bahrain vs Japan."
@@ -478,6 +483,11 @@
       "city_count": 1
     },
     "hero_images": [
+      {
+        "name": "National Stadium, Kallang",
+        "filename": "640px-NationalStadium.jpg",
+        "text": "The National Stadium hosted all the matches."
+      },
       {
         "name": "National Stadium, Kallang",
         "filename": "National_stadium_kallang_sg_z.JPG",

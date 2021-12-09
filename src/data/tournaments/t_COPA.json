@@ -144,6 +144,11 @@
         "name": "Levi's Stadium, Santa Clara",
         "filename": "Levis_Stadium_interior_1.jpg",
         "text": "The Levi's Stadium hosted the quarter-final match Mexico vs Chile."
+      },
+      {
+        "name": "Semi-final",
+        "filename": "640px-USA_vs_Argentina_(Moments_before_kickoff).jpg",
+        "text": "Moments before kickoff"
       }
     ],
     "final_standings": { "champions": "CHI", "runners_up": "ARG", "third_place": "COL", "fourth_place": "USA" },
@@ -233,6 +238,11 @@
       "city_count": 8
     },
     "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "640px-Uruguay_players_celebrating_CA_triumph.jpg",
+        "text": "Uruguay players celebrating after winning the 2011 Copa America final against Paraguay."
+      },
       {
         "name": "Champions",
         "filename": "Uruguay_players_with_CA_trophy.jpg",
@@ -721,6 +731,11 @@
     "hero_images": [
       {
         "name": "Champions",
+        "filename": "640px-Uruguay_festejo_copa_america.jpg",
+        "text": "Players celebrating the Copa América."
+      },
+      {
+        "name": "Champions",
         "filename": "Uruguay_copa_1987.jpg",
         "text": "Players of Uruguay holding the trophy, as covered on El Gráfico"
       },
@@ -765,6 +780,11 @@
       "confed_count": 1
     },
     "hero_images": [
+      {
+        "name": "Group B - Argentina vs Brazil",
+        "filename": "Gareca_erra_gol_vs_brasil.jpg",
+        "text": "Gareca fails to score."
+      },
       {
         "name": "Group B - Argentina vs Ecuador",
         "filename": "Argentina_v_ecuador_copa_america.jpg",
@@ -1016,6 +1036,11 @@
     },
     "hero_images": [
       {
+        "name": "Champions",
+        "filename": "619px-Argentina_equipo_vs_brasil_1959.jpg",
+        "text": "Team of Argentina vs Brazil, (standing): Lombardo, Griffa, Mouriño, Negri, Muru. Martínez; (down): Nardiello, Pizzutti, Sosa, Callá, Belén."
+      },
+      {
         "name": "Brazil",
         "filename": "Bra_par1959ca.jpg",
         "text": "Brazil national football team (Brazil - Paraguay, Buenos Aires, Copa Averica 1959)"
@@ -1065,7 +1090,7 @@
     "hero_images": [
       {
         "name": "Champions",
-        "filename": "Argentina_Copa_América_1957.jpg",
+        "filename": "Argentina_Copa_America_1957.jpg",
         "text": "Argentina national team –nicknamed Los Carasucias– that won the 1957 South American championship in Lima, winning 5 of 6 matches. Players are, f.l.t.r (standing): Juan Carlos Giménez, Guillermo Stábile (coach), Rogelio Domínguez, Pedro Dellacha, Néstor Rossi, Federico Vairo, Ángel Schandlein; (bent): Orestes Corbatta, Humberto Maschio, Antonio Angelillo, Enrique Sívori, Osvaldo Cruz."
       },
       {
@@ -1342,6 +1367,11 @@
       "city_count": 1
     },
     "hero_images": [
+      {
+        "name": "Champions",
+        "filename": "Argentina_1945.jpeg",
+        "text": "Line-up of Argentina national football team during the 1945 Southamerican Championship. Standing: Sosa, Salomón, Colombo, Palma, Ricardo and Perucca. Crouching: Muñoz, Méndez, Ferraro, Martino and Loustau."
+      },
       {
         "name": "Champions",
         "filename": "Argentina_martino_andas.jpg",
@@ -1888,13 +1918,13 @@
     "hero_images": [
       {
         "name": "Champions",
-        "filename": "Argentina_equipo_1921.jpg",
-        "text": "Team of Argentina that played in the South American Championship. Players are (up): Américo Tesoriere, Miguel Delavalle, Emilio Solari, Alfredo López, Florindo Bearzotti, Adolfo Celli; (down): Pedro Calomino, Julio Libonatti, Gabino Sosa, Raúl Echeverría, Jaime Chavín."
+        "filename": "Argentina_team_v_uruguay_1921.jpg",
+        "text": "The Argentina team that beat Uruguay in the last game"
       },
       {
         "name": "Argentina",
-        "filename": "Argentina_team_v_uruguay_1921.jpg",
-        "text": "The Argentina team that beat Uruguay in the last game"
+        "filename": "Argentina_equipo_1921.jpg",
+        "text": "Team of Argentina that played in the South American Championship. Players are (up): Américo Tesoriere, Miguel Delavalle, Emilio Solari, Alfredo López, Florindo Bearzotti, Adolfo Celli; (down): Pedro Calomino, Julio Libonatti, Gabino Sosa, Raúl Echeverría, Jaime Chavín."
       },
       {
         "name": "Top scorer",
@@ -1936,7 +1966,7 @@
     "hero_images": [
       {
         "name": "Champions",
-        "filename": "Uruguay_campeón_1920.jpg",
+        "filename": "Uruguay_campeon_1920.jpg",
         "text": "Uruguay's winning squad"
       },
       {

@@ -630,7 +630,7 @@
       },
       {
         "name": "Kings Park Stadium, Durban",
-        "filename": "King's_Park_Stadium,_Durban.jpg",
+        "filename": "Kings_Park_Stadium,_Durban.jpg",
         "text": "The Kings Park Stadium hosted the semi-final Zambia vs Tunisia"
       },
       {
@@ -719,7 +719,7 @@
     "hero_images": [
       {
         "name": "Stade de l'Amitié, Dakar",
-        "filename": "Senegal_1_-_Cameroon_0_-_Stade_Léopold_Sédar_Senghor.jpg",
+        "filename": "Senegal_1_-_Cameroon_0_-_Stade_Leopold_Sedar_Senghor.jpg",
         "text": "The Stade de l'Amitié hosted the final."
       },
       {
@@ -761,7 +761,7 @@
     "hero_images": [
       {
         "name": "Stade 5 Juillet 1962, Algiers",
-        "filename": "Olimpiai_Komplexum,_szemben_az_1962._július_5.-e_Stadion._Fortepan_100571.jpg",
+        "filename": "Olimpiai_Komplexum,_szemben_az_1962._julius_5.-e_Stadion._Fortepan_100571.jpg",
         "text": "The Stade 5 Juillet 1962 hosted the final."
       },
       {
@@ -812,7 +812,7 @@
       },
       {
         "name": "Casablanca, Morocco",
-        "filename": "La_grande_mosquée_hassan_II.jpg",
+        "filename": "La_grande_mosquee_hassan_II.jpg",
         "text": "Casablanca, Morocco"
       },
       {
@@ -1009,9 +1009,9 @@
         "text": "Victoria Island, Lagos, Nigeria"
       },
       {
-        "name": "Ibadan, Nigeria",
+        "name": "Sango, Ibadan, Nigeria",
         "filename": "Nigerias_Oyo_state,_Ibadan_has_beautiful_place_by_kingknx.jpg",
-        "text": "Sango, Ibadan"
+        "text": "Sango, Ibadan, Nigeria"
       }
     ],
     "final_standings": { "champions": "NGA", "runners_up": "ALG", "third_place": "MAR", "fourth_place": "EGY" },
@@ -1189,6 +1189,11 @@
         "text": "The Stade Omnisports hosted the final."
       },
       {
+        "name": "Stade Omnisports, Yaoundé",
+        "filename": "640px-Ahmadou_Ahidjo_stadium-2.jpg",
+        "text": "The Stade Omnisports hosted the final."
+      },
+      {
         "name": "Yaoundé, Cameroon",
         "filename": "Ngousso_Ntem.jpg",
         "text": "Yaoundé, Cameroon"
@@ -1225,6 +1230,11 @@
       "city_count": 2
     },
     "hero_images": [
+      {
+        "name": "Khartoum, Sudan",
+        "filename": "Khartoum.jpg",
+        "text": "Khartoum, Sudan"
+      },
       {
         "name": "Khartoum, Sudan",
         "filename": "Khartoumdowntown.jpg",

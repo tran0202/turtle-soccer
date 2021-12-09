@@ -632,7 +632,7 @@
     "hero_images": [
       {
         "name": "Los Angeles Memorial Coliseum, Los Angeles",
-        "filename": "11-11-06-LA-Coliseum-USC-UO.jpg",
+        "filename": "640px-L.A._Memorial_Coliseum_Entrance.jpeg",
         "text": "The Los Angeles Memorial Coliseum hosted the final"
       },
       {
@@ -767,7 +767,7 @@
       {
         "name": "Memorial Coliseum, Los Angeles",
         "filename": "11-11-06-LA-Coliseum-USC-UO.jpg",
-        "text": "The Memorial Coliseum hosted the final"
+        "text": "The Memorial Coliseum hosted the final."
       },
       {
         "name": "Rose Bowl, Pasadena",
@@ -853,6 +853,16 @@
       "confed_count": 1
     },
     "hero_images": [
+      {
+        "name": "Estadio Cuscatlán, San Salvador, El Salvador",
+        "filename": "640px-Monumental_Estadio_Cuscatlan.jpg",
+        "text": "Estadio Cuscatlán, San Salvador, El Salvador"
+      },
+      {
+        "name": "Estadio Nacional, San José, Costa Rica",
+        "filename": "640px-Estadio_nacional_costarica.jpg",
+        "text": "Estadio Nacional, San José, Costa Rica"
+      },
       {
         "name": "Varsity Stadium, Toronto, Canada",
         "filename": "Varsity_Centre.jpeg",
@@ -1019,7 +1029,7 @@
       {
         "name": "Arima Velodrome, Arima",
         "filename": "TnT_Arima_Velodrome_1.jpg",
-        "text": "Arima Velodrome, Arima"
+        "text": "Arima Velodrome, Arima, Trinidad and Tobago"
       },
       {
         "name": "Arima, Trinidad and Tobago",
@@ -1051,9 +1061,9 @@
     },
     "hero_images": [
       {
-        "name": "Costa Rica",
-        "filename": "Costa_Rican_Football_Federation_logo.svg",
-        "text": "Costa Rica"
+        "name": "Estadio Nacional, San José, Costa Rica",
+        "filename": "640px-Estadio_nacional_costarica.jpg",
+        "text": "Estadio Nacional, San José, Costa Rica"
       }
     ],
     "final_standings": { "champions": "CRC", "runners_up": "GUA", "third_place": "ANT-1959-1986", "fourth_place": "MEX" },
@@ -1124,6 +1134,11 @@
       "confed_count": 1
     },
     "hero_images": [
+      {
+        "name": "Estadio Mateo Flores, Guatemala City",
+        "filename": "640px-Estadio_Mateo_Flores_Guatemala.jpeg",
+        "text": "Estadio Mateo Flores, Guatemala City"
+      },
       {
         "name": "Estadio Mateo Flores, Guatemala City",
         "filename": "Cremas-calentando.jpg",
