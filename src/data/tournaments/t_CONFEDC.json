@@ -451,6 +451,11 @@
     },
     "hero_images": [
       {
+        "name": "King Fahd Stadium, Riyadh",
+        "filename": "640px-King_Fahd_International_Stadium_(66723825).jpeg",
+        "text": "The King Fahd Stadium hosted all the tournament matches."
+      },
+      {
         "name": "Riyadh, Saudi Arabia",
         "filename": "Lake_at_Wadi_Hanifah_(5218227168).jpg",
         "text": "Lake at the 120 km long Wadi Hanifa valley that cuts through Riyadh"
@@ -483,6 +488,11 @@
       "city_count": 1
     },
     "hero_images": [
+      {
+        "name": "King Fahd Stadium, Riyadh",
+        "filename": "640px-King_fahad_staduim.jpgg",
+        "text": "The King Fahd Stadium hosted all the tournament matches."
+      },
       {
         "name": "Riyadh, Saudi Arabia",
         "filename": "Saudi-desert.gif",
