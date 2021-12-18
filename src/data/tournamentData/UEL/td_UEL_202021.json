@@ -57,7 +57,7 @@
             { "id": "VES" },
             { "id": "DAT" },
             { "id": "SSO" },
-            { "id": "SFA" },
+            { "id": "SFI" },
             { "id": "DMI" },
             { "id": "GLI" },
             { "id": "AGF" },
@@ -65,7 +65,7 @@
             { "id": "SHR" },
             { "id": "ILV" },
             { "id": "FHA" },
-            { "id": "DAC" },
+            { "id": "DAC-2021" },
             { "id": "TNS" },
             { "id": "ZIL" },
             { "id": "VAD" },
@@ -92,7 +92,7 @@
             { "id": "KFR" },
             { "id": "PBE" },
             { "id": "RFS" },
-            { "id": "POZ" },
+            { "id": "POZ-2021" },
             { "id": "VLM" },
             { "id": "ORD" },
             { "id": "BTO" },
@@ -438,7 +438,7 @@
             },
             {
               "home_team": "SSO",
-              "away_team": "SFA",
+              "away_team": "SFI",
               "home_score": 0,
               "away_score": 0,
               "home_extra_score": 0,
@@ -486,7 +486,7 @@
             },
             {
               "home_team": "FHA",
-              "away_team": "DAC",
+              "away_team": "DAC-2021",
               "home_score": 0,
               "away_score": 2,
               "date": "2020-08-27",
@@ -635,7 +635,7 @@
               "city": "Belgrade"
             },
             {
-              "home_team": "POZ",
+              "home_team": "POZ-2021",
               "away_team": "VLM",
               "home_score": 3,
               "away_score": 0,
@@ -925,7 +925,7 @@
             },
             {
               "home_team": "HAM",
-              "away_team": "POZ",
+              "away_team": "POZ-2021",
               "home_score": 0,
               "away_score": 3,
               "date": "2020-09-16",
@@ -1101,7 +1101,7 @@
               "path": "Main"
             },
             {
-              "home_team": "SFA",
+              "home_team": "SFI",
               "away_team": "PBE",
               "home_score": 0,
               "away_score": 0,
@@ -1270,7 +1270,7 @@
               "path": "Main"
             },
             {
-              "home_team": "DAC",
+              "home_team": "DAC-2021",
               "away_team": "JAB",
               "home_score": 3,
               "away_score": 3,
@@ -1582,7 +1582,7 @@
             },
             {
               "home_team": "LIN",
-              "away_team": "DAC",
+              "away_team": "DAC-2021",
               "home_score": 7,
               "away_score": 0,
               "date": "2020-09-24",
@@ -1650,7 +1650,7 @@
             },
             {
               "home_team": "APL",
-              "away_team": "POZ",
+              "away_team": "POZ-2021",
               "home_score": 0,
               "away_score": 5,
               "date": "2020-09-23",
@@ -1952,7 +1952,7 @@
             },
             {
               "home_team": "SPC",
-              "away_team": "POZ",
+              "away_team": "POZ-2021",
               "home_score": 1,
               "away_score": 2,
               "date": "2020-10-01",
@@ -2501,7 +2501,7 @@
         },
         {
           "name": "Group D",
-          "teams": [{ "id": "STL" }, { "id": "RFC" }, { "id": "POZ" }, { "id": "SLB" }],
+          "teams": [{ "id": "STL" }, { "id": "RFC" }, { "id": "POZ-2021" }, { "id": "SLB" }],
           "matchdays": [
             {
               "name": "Matchday 1",
@@ -2517,7 +2517,7 @@
                   "city": "Liège"
                 },
                 {
-                  "home_team": "POZ",
+                  "home_team": "POZ-2021",
                   "away_team": "SLB",
                   "home_score": 2,
                   "away_score": 4,
@@ -2543,7 +2543,7 @@
                 },
                 {
                   "home_team": "RFC",
-                  "away_team": "POZ",
+                  "away_team": "POZ-2021",
                   "home_score": 1,
                   "away_score": 0,
                   "date": "2020-10-29",
@@ -2567,7 +2567,7 @@
                   "city": "Lisbon"
                 },
                 {
-                  "home_team": "POZ",
+                  "home_team": "POZ-2021",
                   "away_team": "STL",
                   "home_score": 3,
                   "away_score": 1,
@@ -2583,7 +2583,7 @@
               "matches": [
                 {
                   "home_team": "STL",
-                  "away_team": "POZ",
+                  "away_team": "POZ-2021",
                   "home_score": 2,
                   "away_score": 1,
                   "date": "2020-11-26",
@@ -2608,7 +2608,7 @@
               "matches": [
                 {
                   "home_team": "SLB",
-                  "away_team": "POZ",
+                  "away_team": "POZ-2021",
                   "home_score": 4,
                   "away_score": 0,
                   "date": "2020-12-03",
@@ -2642,7 +2642,7 @@
                   "city": "Liège"
                 },
                 {
-                  "home_team": "POZ",
+                  "home_team": "POZ-2021",
                   "away_team": "RFC",
                   "home_score": 0,
                   "away_score": 2,

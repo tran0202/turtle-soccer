@@ -36,7 +36,7 @@
             { "id": "FOL" },
             { "id": "GLE" },
             { "id": "MOL" },
-            { "id": "DAC" },
+            { "id": "DAC-2021" },
             { "id": "TBI" },
             { "id": "KAU" },
             { "id": "APL" },
@@ -87,15 +87,15 @@
             { "id": "BAL" },
             { "id": "KES" },
             { "id": "RAB" },
-            { "id": "BUH" },
+            { "id": "BUH-2020" },
             { "id": "PLJ" },
             { "id": "PBE" },
-            { "id": "CSO" },
+            { "id": "CSO-2017-2019" },
             { "id": "RIG" },
             { "id": "ORH" },
             { "id": "SKS" },
             { "id": "RAD" },
-            { "id": "POZ" },
+            { "id": "POZ-2021" },
             { "id": "GAN" },
             { "id": "CHS" },
             { "id": "BEJ" },
@@ -358,7 +358,7 @@
             { "id": "DBR" },
             { "id": "ATS" },
             { "id": "SEV" },
-            { "id": "ATR" },
+            { "id": "ATR-2006-2020" },
             { "id": "GNK" },
             { "id": "DJU" },
             { "id": "MRP" },
@@ -502,7 +502,7 @@
             {
               "matches": [
                 {
-                  "home_team": "DAC",
+                  "home_team": "DAC-2021",
                   "away_team": "TBI",
                   "home_score": 1,
                   "away_score": 1,
@@ -514,7 +514,7 @@
                 },
                 {
                   "home_team": "TBI",
-                  "away_team": "DAC",
+                  "away_team": "DAC-2021",
                   "home_score": 1,
                   "away_score": 2,
                   "date": "2018-07-19",
@@ -1181,7 +1181,7 @@
               "matches": [
                 {
                   "home_team": "RAB",
-                  "away_team": "BUH",
+                  "away_team": "BUH-2020",
                   "home_score": 2,
                   "away_score": 1,
                   "date": "2018-07-11",
@@ -1191,7 +1191,7 @@
                   "match_type": "firstleg"
                 },
                 {
-                  "home_team": "BUH",
+                  "home_team": "BUH-2020",
                   "away_team": "RAB",
                   "home_score": 4,
                   "away_score": 0,
@@ -1232,7 +1232,7 @@
             {
               "matches": [
                 {
-                  "home_team": "CSO",
+                  "home_team": "CSO-2017-2019",
                   "away_team": "RIG",
                   "home_score": 1,
                   "away_score": 0,
@@ -1244,7 +1244,7 @@
                 },
                 {
                   "home_team": "RIG",
-                  "away_team": "CSO",
+                  "away_team": "CSO-2017-2019",
                   "home_score": 1,
                   "away_score": 0,
                   "home_extra_score": 0,
@@ -1314,7 +1314,7 @@
             {
               "matches": [
                 {
-                  "home_team": "POZ",
+                  "home_team": "POZ-2021",
                   "away_team": "GAN",
                   "home_score": 2,
                   "away_score": 0,
@@ -1326,7 +1326,7 @@
                 },
                 {
                   "home_team": "GAN",
-                  "away_team": "POZ",
+                  "away_team": "POZ-2021",
                   "home_score": 2,
                   "away_score": 1,
                   "date": "2018-07-19",
@@ -2262,7 +2262,7 @@
             {
               "matches": [
                 {
-                  "home_team": "CSO",
+                  "home_team": "CSO-2017-2019",
                   "away_team": "ADM",
                   "home_score": 3,
                   "away_score": 0,
@@ -2275,7 +2275,7 @@
                 },
                 {
                   "home_team": "ADM",
-                  "away_team": "CSO",
+                  "away_team": "CSO-2017-2019",
                   "home_score": 1,
                   "away_score": 3,
                   "date": "2018-08-02",
@@ -2486,7 +2486,7 @@
             {
               "matches": [
                 {
-                  "home_team": "BUH",
+                  "home_team": "BUH-2020",
                   "away_team": "PRO",
                   "home_score": 1,
                   "away_score": 0,
@@ -2499,7 +2499,7 @@
                 },
                 {
                   "home_team": "PRO",
-                  "away_team": "BUH",
+                  "away_team": "BUH-2020",
                   "home_score": 2,
                   "away_score": 0,
                   "date": "2018-08-02",
@@ -2570,7 +2570,7 @@
             {
               "matches": [
                 {
-                  "home_team": "DAC",
+                  "home_team": "DAC-2021",
                   "away_team": "DMI",
                   "home_score": 1,
                   "away_score": 3,
@@ -2583,7 +2583,7 @@
                 },
                 {
                   "home_team": "DMI",
-                  "away_team": "DAC",
+                  "away_team": "DAC-2021",
                   "home_score": 4,
                   "away_score": 1,
                   "date": "2018-08-02",
@@ -2767,7 +2767,7 @@
               "matches": [
                 {
                   "home_team": "SSO",
-                  "away_team": "POZ",
+                  "away_team": "POZ-2021",
                   "home_score": 1,
                   "away_score": 1,
                   "date": "2018-07-26",
@@ -2778,7 +2778,7 @@
                   "match_type": "firstleg"
                 },
                 {
-                  "home_team": "POZ",
+                  "home_team": "POZ-2021",
                   "away_team": "SSO",
                   "home_score": 1,
                   "away_score": 1,
@@ -2797,7 +2797,7 @@
               "matches": [
                 {
                   "home_team": "HIB",
-                  "away_team": "ATR",
+                  "away_team": "ATR-2006-2020",
                   "home_score": 3,
                   "away_score": 2,
                   "date": "2018-07-26",
@@ -2808,7 +2808,7 @@
                   "match_type": "firstleg"
                 },
                 {
-                  "home_team": "ATR",
+                  "home_team": "ATR-2006-2020",
                   "away_team": "HIB",
                   "home_score": 1,
                   "away_score": 1,
@@ -3436,7 +3436,7 @@
               "matches": [
                 {
                   "home_team": "GNK",
-                  "away_team": "POZ",
+                  "away_team": "POZ-2021",
                   "home_score": 2,
                   "away_score": 0,
                   "date": "2018-08-09",
@@ -3447,7 +3447,7 @@
                   "match_type": "firstleg"
                 },
                 {
-                  "home_team": "POZ",
+                  "home_team": "POZ-2021",
                   "away_team": "GNK",
                   "home_score": 1,
                   "away_score": 2,
@@ -3687,7 +3687,7 @@
             {
               "matches": [
                 {
-                  "home_team": "CSO",
+                  "home_team": "CSO-2017-2019",
                   "away_team": "COP",
                   "home_score": 1,
                   "away_score": 2,
@@ -3700,7 +3700,7 @@
                 },
                 {
                   "home_team": "COP",
-                  "away_team": "CSO",
+                  "away_team": "CSO-2017-2019",
                   "home_score": 2,
                   "away_score": 1,
                   "date": "2018-08-16",
