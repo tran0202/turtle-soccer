@@ -1,0 +1,72 @@
+[
+  {
+    "id": "world-cup",
+    "organizationId": "fifa",
+    "name": "FIFA World Cup",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1930,
+    "frequency": "Every 4 years",
+    "description": "The pinnacle of men's international football, contested by national teams from every confederation."
+  },
+  {
+    "id": "womens-world-cup",
+    "organizationId": "fifa",
+    "name": "FIFA Women's World Cup",
+    "scope": "national",
+    "gender": "women",
+    "founded": 1991,
+    "frequency": "Every 4 years",
+    "description": "The premier international tournament for women's national teams."
+  },
+  {
+    "id": "euro",
+    "organizationId": "uefa",
+    "name": "UEFA European Championship",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1960,
+    "frequency": "Every 4 years",
+    "description": "Europe's national team championship, known simply as the Euros."
+  },
+  {
+    "id": "champions-league",
+    "organizationId": "uefa",
+    "name": "UEFA Champions League",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1955,
+    "frequency": "Annual",
+    "description": "Europe's top club competition, contested by the continent's highest-finishing domestic sides."
+  },
+  {
+    "id": "copa-america",
+    "organizationId": "conmebol",
+    "name": "Copa América",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1916,
+    "frequency": "Irregular, roughly every 2-4 years",
+    "description": "The oldest continental national team championship in the world."
+  },
+  {
+    "id": "libertadores",
+    "organizationId": "conmebol",
+    "name": "Copa Libertadores",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1960,
+    "frequency": "Annual",
+    "description": "South America's premier club competition."
+  },
+  {
+    "id": "epl-season",
+    "organizationId": "premier-league",
+    "name": "Premier League Season",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1992,
+    "frequency": "Annual",
+    "description": "The English top-flight season, decided over 38 rounds of matches."
+  }
+]

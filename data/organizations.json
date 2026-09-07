@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fifa",
+    "name": "FIFA",
+    "fullName": "Fédération Internationale de Football Association",
+    "scope": "national",
+    "type": "global governing body",
+    "founded": 1904,
+    "country": null,
+    "description": "The global governing body for national team football, organizing the World Cup and its regional qualifiers."
+  },
+  {
+    "id": "uefa",
+    "name": "UEFA",
+    "fullName": "Union of European Football Associations",
+    "scope": "both",
+    "type": "confederation",
+    "founded": 1954,
+    "country": null,
+    "description": "Europe's governing body, running both the men's and women's national team championships and the continent's top club competitions."
+  },
+  {
+    "id": "conmebol",
+    "name": "CONMEBOL",
+    "fullName": "Confederación Sudamericana de Fútbol",
+    "scope": "both",
+    "type": "confederation",
+    "founded": 1916,
+    "country": null,
+    "description": "South America's confederation, organizing the Copa América for national teams and the Copa Libertadores for clubs."
+  },
+  {
+    "id": "premier-league",
+    "name": "Premier League",
+    "fullName": "English Premier League",
+    "scope": "club",
+    "type": "domestic league",
+    "founded": 1992,
+    "country": "England",
+    "description": "The top flight of English club football."
+  }
+]
