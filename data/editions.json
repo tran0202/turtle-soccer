@@ -11,7 +11,10 @@
     "runnerUp": "France",
     "thirdPlace": "Croatia",
     "topScorer": "Kylian Mbappé (8)",
-    "notes": "Argentina won on penalties after a 3-3 final against France, widely regarded as one of the greatest finals in history."
+    "notes": "Argentina won on penalties after a 3-3 final against France, widely regarded as one of the greatest finals in history.",
+    "hostCodes": [
+      "qa"
+    ]
   },
   {
     "id": "world-cup-2018",
@@ -25,7 +28,10 @@
     "runnerUp": "Croatia",
     "thirdPlace": "Belgium",
     "topScorer": "Harry Kane (6)",
-    "notes": "France's second World Cup title, built around a young Kylian Mbappé's breakout tournament."
+    "notes": "France's second World Cup title, built around a young Kylian Mbappé's breakout tournament.",
+    "hostCodes": [
+      "ru"
+    ]
   },
   {
     "id": "womens-world-cup-2023",
@@ -39,7 +45,11 @@
     "runnerUp": "England",
     "thirdPlace": "Sweden",
     "topScorer": "Hinata Miyazawa (5)",
-    "notes": "Spain's first Women's World Cup title, in the first edition with an expanded 32-team field."
+    "notes": "Spain's first Women's World Cup title, in the first edition with an expanded 32-team field.",
+    "hostCodes": [
+      "au",
+      "nz"
+    ]
   },
   {
     "id": "euro-2024",
@@ -53,7 +63,10 @@
     "runnerUp": "England",
     "thirdPlace": null,
     "topScorer": "Harry Kane / Georges Mikautadze / Dani Olmo / Jamal Musiala / Ivan Schranz / Cody Gakpo (3)",
-    "notes": "Spain won a record fourth European Championship title, going undefeated through all seven matches."
+    "notes": "Spain won a record fourth European Championship title, going undefeated through all seven matches.",
+    "hostCodes": [
+      "de"
+    ]
   },
   {
     "id": "champions-league-2023-24",
@@ -67,7 +80,10 @@
     "runnerUp": "Borussia Dortmund",
     "thirdPlace": null,
     "topScorer": "Harry Kane / Antoine Griezmann (8)",
-    "notes": "Real Madrid's record-extending 15th European Cup / Champions League title."
+    "notes": "Real Madrid's record-extending 15th European Cup / Champions League title.",
+    "hostCodes": [
+      "gb-eng"
+    ]
   },
   {
     "id": "copa-america-2024",
@@ -81,7 +97,10 @@
     "runnerUp": "Colombia",
     "thirdPlace": "Uruguay",
     "topScorer": "Lautaro Martínez (5)",
-    "notes": "Argentina defended their title, beating Colombia 1-0 after extra time in the final."
+    "notes": "Argentina defended their title, beating Colombia 1-0 after extra time in the final.",
+    "hostCodes": [
+      "us"
+    ]
   },
   {
     "id": "libertadores-2023",
@@ -95,7 +114,10 @@
     "runnerUp": "Boca Juniors",
     "thirdPlace": null,
     "topScorer": "Paulinho (7)",
-    "notes": "Fluminense's first Copa Libertadores title, won at their home Maracanã stadium."
+    "notes": "Fluminense's first Copa Libertadores title, won at their home Maracanã stadium.",
+    "hostCodes": [
+      "br"
+    ]
   },
   {
     "id": "epl-2023-24",
@@ -109,6 +131,9 @@
     "runnerUp": "Arsenal",
     "thirdPlace": "Liverpool",
     "topScorer": "Erling Haaland (27)",
-    "notes": "Manchester City's fourth consecutive title, a first for an English top-flight club."
+    "notes": "Manchester City's fourth consecutive title, a first for an English top-flight club.",
+    "hostCodes": [
+      "gb-eng"
+    ]
   }
 ]

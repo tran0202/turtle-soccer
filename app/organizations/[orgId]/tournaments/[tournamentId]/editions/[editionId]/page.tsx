@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getAllEditionIds,
@@ -6,6 +5,9 @@ import {
   getOrganization,
   getTournament,
 } from "@/lib/data";
+import { FlagGroup } from "@/components/Flag";
+import { NameWithFlag } from "@/components/NameWithFlag";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export function generateStaticParams() {
   return getAllEditionIds();
@@ -43,12 +45,17 @@ export default function EditionPage({
 
   return (
     <div>
-      <Link
-        href={`/organizations/${org.id}/tournaments/${tournament.id}`}
-        className="text-sm text-ink/50 hover:text-turtle-blue transition-colors"
-      >
-        ← {tournament.name}
-      </Link>
+      <Breadcrumb
+        items={[
+          { label: "Organizations", href: "/organizations" },
+          { label: org.name, href: `/organizations/${org.id}` },
+          {
+            label: tournament.name,
+            href: `/organizations/${org.id}/tournaments/${tournament.id}`,
+          },
+          { label: edition.label },
+        ]}
+      />
 
       <h1 className="font-display text-5xl uppercase tracking-tight mt-4">
         {tournament.name}
@@ -63,7 +70,10 @@ export default function EditionPage({
             <div className="text-xs uppercase tracking-wide text-turtle-green mb-1">
               Host
             </div>
-            <div>{edition.host}</div>
+            <div className="flex items-center gap-1.5">
+              <FlagGroup codes={edition.hostCodes} />
+              <span>{edition.host}</span>
+            </div>
           </div>
           <div className="p-4">
             <div className="text-xs uppercase tracking-wide text-turtle-green mb-1">
@@ -91,7 +101,11 @@ export default function EditionPage({
               Champion
             </div>
             <div className="font-display text-3xl uppercase tracking-tight text-turtle-blue">
-              {edition.champion}
+              <NameWithFlag
+                name={edition.champion}
+                isCountry={tournament.scope === "national"}
+                size="md"
+              />
             </div>
           </div>
           <div className="p-6">
@@ -99,7 +113,11 @@ export default function EditionPage({
               Runner-up
             </div>
             <div className="font-display text-3xl uppercase tracking-tight">
-              {edition.runnerUp}
+              <NameWithFlag
+                name={edition.runnerUp}
+                isCountry={tournament.scope === "national"}
+                size="md"
+              />
             </div>
           </div>
           <div className="p-6">
@@ -107,7 +125,15 @@ export default function EditionPage({
               Third place
             </div>
             <div className="font-display text-3xl uppercase tracking-tight text-ink/60">
-              {edition.thirdPlace ?? "—"}
+              {edition.thirdPlace ? (
+                <NameWithFlag
+                  name={edition.thirdPlace}
+                  isCountry={tournament.scope === "national"}
+                  size="md"
+                />
+              ) : (
+                "—"
+              )}
             </div>
           </div>
         </div>

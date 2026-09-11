@@ -6,6 +6,10 @@ import {
   getOrganization,
   getTournament,
 } from "@/lib/data";
+import { InitialsBadge } from "@/components/InitialsBadge";
+import { FlagGroup } from "@/components/Flag";
+import { NameWithFlag } from "@/components/NameWithFlag";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export function generateStaticParams() {
   return getAllTournamentIds();
@@ -25,16 +29,20 @@ export default function TournamentPage({
 
   return (
     <div>
-      <Link
-        href={`/organizations/${org.id}`}
-        className="text-sm text-ink/50 hover:text-turtle-blue transition-colors"
-      >
-        ← {org.name}
-      </Link>
+      <Breadcrumb
+        items={[
+          { label: "Organizations", href: "/organizations" },
+          { label: org.name, href: `/organizations/${org.id}` },
+          { label: tournament.name },
+        ]}
+      />
 
-      <h1 className="font-display text-5xl uppercase tracking-tight mt-4 mb-2">
-        {tournament.name}
-      </h1>
+      <div className="flex items-center gap-3 mt-4 mb-2">
+        <InitialsBadge name={tournament.name} size="lg" />
+        <h1 className="font-display text-5xl uppercase tracking-tight">
+          {tournament.name}
+        </h1>
+      </div>
       <p className="text-ink/60 mb-10 max-w-lg">{tournament.description}</p>
 
       <h2 className="text-xs uppercase tracking-wide text-turtle-green mb-3">
@@ -53,10 +61,18 @@ export default function TournamentPage({
               <div>
                 <div className="text-ink">
                   Champion:{" "}
-                  <span className="text-turtle-blue">{e.champion}</span>
+                  <span className="text-turtle-blue">
+                    <NameWithFlag
+                      name={e.champion}
+                      isCountry={tournament.scope === "national"}
+                      size="sm"
+                    />
+                  </span>
                 </div>
-                <div className="text-sm text-ink/50 mt-0.5">
-                  Hosted by {e.host}
+                <div className="text-sm text-ink/50 mt-0.5 flex items-center gap-1.5">
+                  Hosted by
+                  <FlagGroup codes={e.hostCodes} size="sm" />
+                  {e.host}
                 </div>
               </div>
               <div className="text-right shrink-0 text-xs text-ink/40">

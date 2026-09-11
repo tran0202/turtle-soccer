@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Big_Shoulders_Display, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="font-body bg-paper text-ink min-h-screen">
         <div className="max-w-4xl mx-auto px-6">
-          <header className="pt-10 pb-8 border-b border-paper-line">
+          <header className="pt-10 pb-8 border-b border-paper-line flex items-end justify-between flex-wrap gap-4">
             <a href="/" className="inline-flex items-end gap-3">
               <Image
                 src="/logo.png"
@@ -44,9 +45,14 @@ export default function RootLayout({
                 Archive
               </span>
             </a>
-            <p className="text-sm text-ink/50 mt-3">
-              Organizations, tournaments, and every edition on record.
-            </p>
+            <nav className="pb-1">
+              <Link
+                href="/organizations"
+                className="font-display text-lg uppercase tracking-tight text-turtle-blue hover:text-turtle-green transition-colors"
+              >
+                Organizations
+              </Link>
+            </nav>
           </header>
           <main className="py-10">{children}</main>
           <footer className="border-t border-paper-line py-8 text-xs text-ink/40">

@@ -37,6 +37,7 @@ export type Edition = {
   thirdPlace: string | null;
   topScorer: string;
   notes: string;
+  hostCodes: string[];
 };
 
 export function getOrganizations(): Organization[] {
