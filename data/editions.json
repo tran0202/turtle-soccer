@@ -1,5 +1,22 @@
 [
   {
+    "id": "club-world-cup-2025",
+    "tournamentId": "club-world-cup",
+    "label": "2025",
+    "host": "United States",
+    "startDate": "2025-06-14",
+    "endDate": "2025-07-13",
+    "teams": 32,
+    "champion": "Chelsea",
+    "runnerUp": "Paris Saint-Germain",
+    "thirdPlace": null,
+    "topScorer": "Ángel Di María / Gonzalo García / Serhou Guirassy / Marcos Leonardo (4)",
+    "notes": "The inaugural 32-team edition, expanded from the old 7-team annual format. Chelsea beat PSG 3-0 in the final at MetLife Stadium. FIFA opted not to hold a third-place match for this edition.",
+    "hostCodes": [
+      "us"
+    ]
+  },
+  {
     "id": "world-cup-2022",
     "tournamentId": "world-cup",
     "label": "2022",

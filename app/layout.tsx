@@ -45,18 +45,24 @@ export default function RootLayout({
                 Archive
               </span>
             </a>
-            <nav className="pb-1">
+            <nav className="pb-1 flex items-center gap-6">
               <Link
                 href="/organizations"
                 className="font-display text-lg uppercase tracking-tight text-turtle-blue hover:text-turtle-green transition-colors"
               >
                 Organizations
               </Link>
+              <Link
+                href="/tournaments"
+                className="font-display text-lg uppercase tracking-tight text-turtle-blue hover:text-turtle-green transition-colors"
+              >
+                Tournaments
+              </Link>
             </nav>
           </header>
           <main className="py-10">{children}</main>
-          <footer className="border-t border-paper-line py-8 text-xs text-ink/40">
-            A hobby archive. Data lives in /data as plain JSON.
+          <footer className="py-8 text-xs text-ink/40">
+            A hobby non-commercial archive for the love of soccer.
           </footer>
         </div>
       </body>

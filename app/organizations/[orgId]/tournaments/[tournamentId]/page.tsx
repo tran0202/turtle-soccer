@@ -4,6 +4,7 @@ import {
   getAllTournamentIds,
   getEditionsByTournament,
   getOrganization,
+  getBreadcrumbAncestors,
   getTournament,
 } from "@/lib/data";
 import { InitialsBadge } from "@/components/InitialsBadge";
@@ -26,22 +27,33 @@ export default function TournamentPage({
     return notFound();
   }
   const editions = getEditionsByTournament(tournament.id);
+  const ancestors = getBreadcrumbAncestors(org.id);
 
   return (
     <div>
       <Breadcrumb
         items={[
           { label: "Organizations", href: "/organizations" },
-          { label: org.name, href: `/organizations/${org.id}` },
+          ...ancestors.map((a) => ({
+            label: a.name,
+            href: `/organizations/${a.id}`,
+          })),
           { label: tournament.name },
         ]}
       />
 
       <div className="flex items-center gap-3 mt-4 mb-2">
         <InitialsBadge name={tournament.name} size="lg" />
-        <h1 className="font-display text-5xl uppercase tracking-tight">
-          {tournament.name}
-        </h1>
+        <div className="flex items-baseline gap-3 flex-wrap">
+          <h1 className="font-display text-5xl uppercase tracking-tight">
+            {tournament.name}
+          </h1>
+          {org.country && (
+            <span className="text-sm text-ink/50">
+              <NameWithFlag name={org.country} isCountry size="sm" />
+            </span>
+          )}
+        </div>
       </div>
       <p className="text-ink/60 mb-10 max-w-lg">{tournament.description}</p>
 
@@ -69,11 +81,13 @@ export default function TournamentPage({
                     />
                   </span>
                 </div>
-                <div className="text-sm text-ink/50 mt-0.5 flex items-center gap-1.5">
-                  Hosted by
-                  <FlagGroup codes={e.hostCodes} size="sm" />
-                  {e.host}
-                </div>
+                {!org.country && (
+                  <div className="text-sm text-ink/50 mt-0.5 flex items-center gap-1.5">
+                    Hosted by
+                    <FlagGroup codes={e.hostCodes} size="sm" />
+                    {e.host}
+                  </div>
+                )}
               </div>
               <div className="text-right shrink-0 text-xs text-ink/40">
                 {e.teams} teams

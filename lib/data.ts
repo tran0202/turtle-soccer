@@ -8,6 +8,8 @@ export type Organization = {
   fullName: string;
   scope: "national" | "club" | "both";
   type: string;
+  level: "global" | "confederation" | "association" | "league";
+  parentId: string | null;
   founded: number;
   country: string | null;
   description: string;
@@ -46,6 +48,40 @@ export function getOrganizations(): Organization[] {
 
 export function getOrganization(id: string): Organization | undefined {
   return getOrganizations().find((o) => o.id === id);
+}
+
+export function getRootOrganizations(): Organization[] {
+  return getOrganizations().filter((o) => o.parentId === null);
+}
+
+export function getChildOrganizations(parentId: string): Organization[] {
+  return getOrganizations().filter((o) => o.parentId === parentId);
+}
+
+// Full ancestor chain from the root down to (and including) this org, for
+// breadcrumbs. e.g. for Premier League: [FIFA, UEFA, The FA, Premier League].
+export function getOrgAncestors(id: string): Organization[] {
+  const chain: Organization[] = [];
+  let current = getOrganization(id);
+  while (current) {
+    chain.unshift(current);
+    current = current.parentId ? getOrganization(current.parentId) : undefined;
+  }
+  return chain;
+}
+
+// Same chain, but drops the root (FIFA) whenever there's something below it.
+// The root org isn't meaningfully different from a confederation — it's just
+// the one with no parent — so breadcrumbs under a confederation shouldn't
+// carry it along as dead weight. Only shows up when it's the org actually
+// being viewed.
+export function getBreadcrumbAncestors(id: string): Organization[] {
+  const chain = getOrgAncestors(id);
+  return chain.length > 1 ? chain.slice(1) : chain;
+}
+
+export function getAllTournaments(): Tournament[] {
+  return tournaments as Tournament[];
 }
 
 export function getTournamentsByOrg(organizationId: string): Tournament[] {

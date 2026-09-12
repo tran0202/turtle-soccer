@@ -4,10 +4,12 @@
 const COUNTRY_CODES: Record<string, string> = {
   Argentina: "ar",
   Belgium: "be",
+  Brazil: "br",
   Colombia: "co",
   Croatia: "hr",
   England: "gb-eng",
   France: "fr",
+  Germany: "de",
   Spain: "es",
   Sweden: "se",
   Uruguay: "uy",

@@ -3,11 +3,13 @@
     "id": "fifa",
     "name": "FIFA",
     "fullName": "Fédération Internationale de Football Association",
-    "scope": "national",
+    "scope": "both",
     "type": "global governing body",
+    "level": "global",
+    "parentId": null,
     "founded": 1904,
     "country": null,
-    "description": "The global governing body for national team football, organizing the World Cup and its regional qualifiers."
+    "description": "The global governing body for football, organizing the men's and women's World Cups for national teams as well as the FIFA Club World Cup for the champions of each confederation."
   },
   {
     "id": "uefa",
@@ -15,6 +17,8 @@
     "fullName": "Union of European Football Associations",
     "scope": "both",
     "type": "confederation",
+    "level": "confederation",
+    "parentId": "fifa",
     "founded": 1954,
     "country": null,
     "description": "Europe's governing body, running both the men's and women's national team championships and the continent's top club competitions."
@@ -25,18 +29,106 @@
     "fullName": "Confederación Sudamericana de Fútbol",
     "scope": "both",
     "type": "confederation",
+    "level": "confederation",
+    "parentId": "fifa",
     "founded": 1916,
     "country": null,
     "description": "South America's confederation, organizing the Copa América for national teams and the Copa Libertadores for clubs."
   },
   {
-    "id": "premier-league",
-    "name": "Premier League",
-    "fullName": "English Premier League",
-    "scope": "club",
-    "type": "domestic league",
-    "founded": 1992,
+    "id": "the-fa",
+    "name": "FA",
+    "fullName": "The Football Association",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "uefa",
+    "founded": 1863,
     "country": "England",
-    "description": "The top flight of English club football."
+    "description": "The governing body for football in England, the oldest national football association in the world, overseeing the national team and the domestic league and cup pyramid."
+  },
+  {
+    "id": "rfef",
+    "name": "RFEF",
+    "fullName": "Real Federación Española de Fútbol",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "uefa",
+    "founded": 1913,
+    "country": "Spain",
+    "description": "The governing body for football in Spain, overseeing the national team and the domestic league and cup system."
+  },
+  {
+    "id": "dfb",
+    "name": "DFB",
+    "fullName": "Deutscher Fußball-Bund",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "uefa",
+    "founded": 1900,
+    "country": "Germany",
+    "description": "The governing body for football in Germany, overseeing the national team and the domestic league and cup system."
+  },
+  {
+    "id": "fff",
+    "name": "FFF",
+    "fullName": "Fédération Française de Football",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "uefa",
+    "founded": 1919,
+    "country": "France",
+    "description": "The governing body for football in France, overseeing the national team and the domestic league and cup system."
+  },
+  {
+    "id": "afa",
+    "name": "AFA",
+    "fullName": "Asociación del Fútbol Argentino",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "conmebol",
+    "founded": 1893,
+    "country": "Argentina",
+    "description": "The governing body for football in Argentina, overseeing the national team and the domestic league and cup system."
+  },
+  {
+    "id": "cbf",
+    "name": "CBF",
+    "fullName": "Confederação Brasileira de Futebol",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "conmebol",
+    "founded": 1914,
+    "country": "Brazil",
+    "description": "The governing body for football in Brazil, overseeing the national team and the domestic league and cup system."
+  },
+  {
+    "id": "auf",
+    "name": "AUF",
+    "fullName": "Asociación Uruguaya de Fútbol",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "conmebol",
+    "founded": 1900,
+    "country": "Uruguay",
+    "description": "The governing body for football in Uruguay, overseeing the national team and the domestic league and cup system."
+  },
+  {
+    "id": "fcf",
+    "name": "FCF",
+    "fullName": "Federación Colombiana de Fútbol",
+    "scope": "both",
+    "type": "national football association",
+    "level": "association",
+    "parentId": "conmebol",
+    "founded": 1924,
+    "country": "Colombia",
+    "description": "The governing body for football in Colombia, overseeing the national team and the domestic league and cup system."
   }
 ]

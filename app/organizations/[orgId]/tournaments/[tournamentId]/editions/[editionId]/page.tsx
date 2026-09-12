@@ -3,6 +3,7 @@ import {
   getAllEditionIds,
   getEdition,
   getOrganization,
+  getBreadcrumbAncestors,
   getTournament,
 } from "@/lib/data";
 import { FlagGroup } from "@/components/Flag";
@@ -43,12 +44,17 @@ export default function EditionPage({
     return notFound();
   }
 
+  const ancestors = getBreadcrumbAncestors(org.id);
+
   return (
     <div>
       <Breadcrumb
         items={[
           { label: "Organizations", href: "/organizations" },
-          { label: org.name, href: `/organizations/${org.id}` },
+          ...ancestors.map((a) => ({
+            label: a.name,
+            href: `/organizations/${a.id}`,
+          })),
           {
             label: tournament.name,
             href: `/organizations/${org.id}/tournaments/${tournament.id}`,

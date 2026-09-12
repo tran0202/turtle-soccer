@@ -1,0 +1,11 @@
+{
+  "fifa": {
+    "src": "/org/fifa/fifa-logo.svg"
+  },
+  "uefa": {
+    "src": "/org/uefa/UEFA_full_logo.svg"
+  },
+  "conmebol": {
+    "src": "/org/conmebol/CONMEBOL_logo_(2017).svg"
+  }
+}

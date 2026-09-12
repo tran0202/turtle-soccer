@@ -20,6 +20,16 @@
     "description": "The premier international tournament for women's national teams."
   },
   {
+    "id": "club-world-cup",
+    "organizationId": "fifa",
+    "name": "FIFA Club World Cup",
+    "scope": "club",
+    "gender": "men",
+    "founded": 2000,
+    "frequency": "Every 4 years (revamped to a 32-team format in 2025)",
+    "description": "FIFA's global club competition, bringing together the champions of each confederation. Ran as a smaller annual event from 2000-2023 before its 2025 expansion to 32 teams."
+  },
+  {
     "id": "euro",
     "organizationId": "uefa",
     "name": "UEFA European Championship",
@@ -61,12 +71,12 @@
   },
   {
     "id": "epl-season",
-    "organizationId": "premier-league",
-    "name": "Premier League Season",
+    "organizationId": "the-fa",
+    "name": "Premier League",
     "scope": "club",
     "gender": "men",
     "founded": 1992,
     "frequency": "Annual",
-    "description": "The English top-flight season, decided over 38 rounds of matches."
+    "description": "The top flight of English club football, decided over 38 rounds of matches each season."
   }
 ]
