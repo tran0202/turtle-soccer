@@ -7,7 +7,7 @@ import {
   getBreadcrumbAncestors,
   getTournament,
 } from "@/lib/data";
-import { InitialsBadge } from "@/components/InitialsBadge";
+import { TournamentMark } from "@/components/TournamentMark";
 import { FlagGroup } from "@/components/Flag";
 import { NameWithFlag } from "@/components/NameWithFlag";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -43,7 +43,7 @@ export default function TournamentPage({
       />
 
       <div className="flex items-center gap-3 mt-4 mb-2">
-        <InitialsBadge name={tournament.name} size="lg" />
+        <TournamentMark tournamentId={tournament.id} tournamentName={tournament.name} size="lg" />
         <div className="flex items-baseline gap-3 flex-wrap">
           <h1 className="font-display text-5xl uppercase tracking-tight">
             {tournament.name}

@@ -7,8 +7,8 @@ import {
   getChildOrganizations,
   getTournamentsByOrg,
 } from "@/lib/data";
-import { InitialsBadge } from "@/components/InitialsBadge";
 import { OrgMark } from "@/components/OrgMark";
+import { TournamentMark } from "@/components/TournamentMark";
 import { NameWithFlag } from "@/components/NameWithFlag";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
@@ -125,8 +125,8 @@ export default function OrganizationPage({
                   href={`/organizations/${org.id}/tournaments/${t.id}`}
                   className="group flex items-baseline justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
                 >
-                  <div className="flex items-baseline gap-3">
-                    <InitialsBadge name={t.name} size="md" />
+                  <div className="flex items-center gap-3">
+                    <TournamentMark tournamentId={t.id} tournamentName={t.name} size="md" />
                     <div>
                       <div className="font-display text-2xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
                         {t.name}
