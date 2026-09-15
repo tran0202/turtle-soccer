@@ -1,30 +1,30 @@
 import { InitialsBadge } from "./InitialsBadge";
-import tournamentLogos from "@/data/tournament-logos.json";
+import competitionLogos from "@/data/competition-logos.json";
 
-// Only add a tournament here once its logo's copyright/PD status has
+// Only add a competition here once its logo's copyright/PD status has
 // actually been verified (same rule as ORG_LOGOS in OrgMark.tsx). Everyone
 // else falls back to the initials badge.
-const TOURNAMENT_LOGOS: Record<string, { src: string }> = tournamentLogos;
+const COMPETITION_LOGOS: Record<string, { src: string }> = competitionLogos;
 
 const SIZE_CLASSES = {
-  sm: "h-10 w-32",
-  md: "h-11 w-36",
-  lg: "h-14 w-44",
+  sm: "h-20 w-64",
+  md: "h-[5.5rem] w-72",
+  lg: "h-28 w-[22rem]",
 } as const;
 
-export function TournamentMark({
-  tournamentId,
-  tournamentName,
+export function CompetitionMark({
+  competitionId,
+  competitionName,
   size = "md",
 }: {
-  tournamentId: string;
-  tournamentName: string;
+  competitionId: string;
+  competitionName: string;
   size?: "sm" | "md" | "lg";
 }) {
-  const logo = TOURNAMENT_LOGOS[tournamentId];
+  const logo = COMPETITION_LOGOS[competitionId];
 
   if (!logo) {
-    return <InitialsBadge name={tournamentName} size={size} />;
+    return <InitialsBadge name={competitionName} size={size} />;
   }
 
   return (
@@ -34,7 +34,7 @@ export function TournamentMark({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={logo.src}
-        alt={tournamentName}
+        alt={competitionName}
         className="max-h-full max-w-full object-contain"
       />
     </span>

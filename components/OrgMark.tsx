@@ -12,13 +12,12 @@ const ORG_LOGOS: Record<string, { src: string }> = orgLogos;
 // ratios (FIFA's wordmark is much wider than UEFA's), so height-only sizing
 // makes each logo a different rendered width, throwing off where the text
 // next to it starts. A fixed-width box + object-contain keeps that consistent
-// regardless of each logo's shape. Height floors at 40px (h-10) per size so
-// logos stay legible; width is sized to fit FIFA's ~3:1 wordmark at that
-// height without shrinking.
+// regardless of each logo's shape. Width is sized to fit FIFA's ~3:1 wordmark
+// at each height without shrinking.
 const SIZE_CLASSES = {
-  sm: "h-10 w-32",
-  md: "h-11 w-36",
-  lg: "h-14 w-44",
+  sm: "h-20 w-64",
+  md: "h-[5.5rem] w-72",
+  lg: "h-28 w-[22rem]",
 } as const;
 
 export function OrgMark({

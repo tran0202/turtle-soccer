@@ -19,7 +19,7 @@ const body = Inter({
 export const metadata: Metadata = {
   title: "Turtle Soccer Archive",
   description:
-    "A record of soccer organizations, their tournaments, and every edition played.",
+    "A record of soccer organizations, their competitions, and every edition played.",
 };
 
 export default function RootLayout({
@@ -53,10 +53,10 @@ export default function RootLayout({
                 Organizations
               </Link>
               <Link
-                href="/tournaments"
+                href="/competitions"
                 className="font-display text-lg uppercase tracking-tight text-turtle-blue hover:text-turtle-green transition-colors"
               >
-                Tournaments
+                Competitions
               </Link>
             </nav>
           </header>

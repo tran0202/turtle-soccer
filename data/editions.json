@@ -1,7 +1,7 @@
 [
   {
     "id": "club-world-cup-2025",
-    "tournamentId": "club-world-cup",
+    "competitionId": "club-world-cup",
     "label": "2025",
     "host": "United States",
     "startDate": "2025-06-14",
@@ -18,7 +18,7 @@
   },
   {
     "id": "world-cup-2022",
-    "tournamentId": "world-cup",
+    "competitionId": "world-cup",
     "label": "2022",
     "host": "Qatar",
     "startDate": "2022-11-20",
@@ -35,7 +35,7 @@
   },
   {
     "id": "world-cup-2018",
-    "tournamentId": "world-cup",
+    "competitionId": "world-cup",
     "label": "2018",
     "host": "Russia",
     "startDate": "2018-06-14",
@@ -52,7 +52,7 @@
   },
   {
     "id": "womens-world-cup-2023",
-    "tournamentId": "womens-world-cup",
+    "competitionId": "womens-world-cup",
     "label": "2023",
     "host": "Australia / New Zealand",
     "startDate": "2023-07-20",
@@ -70,7 +70,7 @@
   },
   {
     "id": "euro-2024",
-    "tournamentId": "euro",
+    "competitionId": "euro",
     "label": "2024",
     "host": "Germany",
     "startDate": "2024-06-14",
@@ -87,7 +87,7 @@
   },
   {
     "id": "champions-league-2023-24",
-    "tournamentId": "champions-league",
+    "competitionId": "champions-league",
     "label": "2023-24",
     "host": "Various (final in London)",
     "startDate": "2023-06-27",
@@ -104,7 +104,7 @@
   },
   {
     "id": "copa-america-2024",
-    "tournamentId": "copa-america",
+    "competitionId": "copa-america",
     "label": "2024",
     "host": "United States",
     "startDate": "2024-06-20",
@@ -121,7 +121,7 @@
   },
   {
     "id": "libertadores-2023",
-    "tournamentId": "libertadores",
+    "competitionId": "libertadores",
     "label": "2023",
     "host": "Various (final in Rio de Janeiro)",
     "startDate": "2023-02-07",
@@ -138,7 +138,7 @@
   },
   {
     "id": "epl-2023-24",
-    "tournamentId": "epl-season",
+    "competitionId": "epl-season",
     "label": "2023-24",
     "host": "England",
     "startDate": "2023-08-11",

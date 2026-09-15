@@ -1,5 +1,5 @@
 import organizations from "@/data/organizations.json";
-import tournaments from "@/data/tournaments.json";
+import competitions from "@/data/competitions.json";
 import editions from "@/data/editions.json";
 
 export type Organization = {
@@ -15,7 +15,7 @@ export type Organization = {
   description: string;
 };
 
-export type Tournament = {
+export type Competition = {
   id: string;
   organizationId: string;
   name: string;
@@ -28,7 +28,7 @@ export type Tournament = {
 
 export type Edition = {
   id: string;
-  tournamentId: string;
+  competitionId: string;
   label: string;
   host: string;
   startDate: string;
@@ -80,23 +80,23 @@ export function getBreadcrumbAncestors(id: string): Organization[] {
   return chain.length > 1 ? chain.slice(1) : chain;
 }
 
-export function getAllTournaments(): Tournament[] {
-  return tournaments as Tournament[];
+export function getAllCompetitions(): Competition[] {
+  return competitions as Competition[];
 }
 
-export function getTournamentsByOrg(organizationId: string): Tournament[] {
-  return (tournaments as Tournament[]).filter(
-    (t) => t.organizationId === organizationId
+export function getCompetitionsByOrg(organizationId: string): Competition[] {
+  return (competitions as Competition[]).filter(
+    (c) => c.organizationId === organizationId
   );
 }
 
-export function getTournament(id: string): Tournament | undefined {
-  return (tournaments as Tournament[]).find((t) => t.id === id);
+export function getCompetition(id: string): Competition | undefined {
+  return (competitions as Competition[]).find((c) => c.id === id);
 }
 
-export function getEditionsByTournament(tournamentId: string): Edition[] {
+export function getEditionsByCompetition(competitionId: string): Edition[] {
   return (editions as Edition[])
-    .filter((e) => e.tournamentId === tournamentId)
+    .filter((e) => e.competitionId === competitionId)
     .sort((a, b) => (a.startDate < b.startDate ? 1 : -1));
 }
 
@@ -108,20 +108,20 @@ export function getAllOrgIds(): string[] {
   return getOrganizations().map((o) => o.id);
 }
 
-export function getAllTournamentIds(): { orgId: string; tournamentId: string }[] {
-  return (tournaments as Tournament[]).map((t) => ({
-    orgId: t.organizationId,
-    tournamentId: t.id,
+export function getAllCompetitionIds(): { orgId: string; competitionId: string }[] {
+  return (competitions as Competition[]).map((c) => ({
+    orgId: c.organizationId,
+    competitionId: c.id,
   }));
 }
 
 export function getAllEditionIds(): {
   orgId: string;
-  tournamentId: string;
+  competitionId: string;
   editionId: string;
 }[] {
   return (editions as Edition[]).map((e) => {
-    const t = getTournament(e.tournamentId)!;
-    return { orgId: t.organizationId, tournamentId: t.id, editionId: e.id };
+    const c = getCompetition(e.competitionId)!;
+    return { orgId: c.organizationId, competitionId: c.id, editionId: e.id };
   });
 }

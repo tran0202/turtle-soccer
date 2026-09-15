@@ -1,0 +1,23 @@
+{
+  "champions-league": {
+    "src": "/org/uefa/competitions/champions-league/362px-Trofeo_UEFA_Champions_League.jpg"
+  },
+  "club-world-cup": {
+    "src": "/org/fifa/competitions/club-world-cup/FIFA_Club_World_Cup_trophy.jpg"
+  },
+  "copa-america": {
+    "src": "/org/conmebol/competitions/copa-america/291px-Copa_america_trofeo.jpg"
+  },
+  "euro": {
+    "src": "/org/uefa/competitions/euro/Coupe_Henri_Delaunay_2017.jpg"
+  },
+  "libertadores": {
+    "src": "/org/conmebol/competitions/libertadores/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
+  },
+  "womens-world-cup": {
+    "src": "/org/fifa/competitions/womens-world-cup/Trophy-scaled-1.jpg"
+  },
+  "world-cup": {
+    "src": "/org/fifa/competitions/world-cup/FIFA_Trophy.jpg"
+  }
+}

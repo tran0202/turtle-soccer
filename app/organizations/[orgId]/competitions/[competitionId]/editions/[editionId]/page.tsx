@@ -4,7 +4,7 @@ import {
   getEdition,
   getOrganization,
   getBreadcrumbAncestors,
-  getTournament,
+  getCompetition,
 } from "@/lib/data";
 import { FlagGroup } from "@/components/Flag";
 import { NameWithFlag } from "@/components/NameWithFlag";
@@ -28,18 +28,18 @@ function formatDateRange(start: string, end: string) {
 export default function EditionPage({
   params,
 }: {
-  params: { orgId: string; tournamentId: string; editionId: string };
+  params: { orgId: string; competitionId: string; editionId: string };
 }) {
   const org = getOrganization(params.orgId);
-  const tournament = getTournament(params.tournamentId);
+  const competition = getCompetition(params.competitionId);
   const edition = getEdition(params.editionId);
 
   if (
     !org ||
-    !tournament ||
+    !competition ||
     !edition ||
-    tournament.organizationId !== org.id ||
-    edition.tournamentId !== tournament.id
+    competition.organizationId !== org.id ||
+    edition.competitionId !== competition.id
   ) {
     return notFound();
   }
@@ -56,15 +56,15 @@ export default function EditionPage({
             href: `/organizations/${a.id}`,
           })),
           {
-            label: tournament.name,
-            href: `/organizations/${org.id}/tournaments/${tournament.id}`,
+            label: competition.name,
+            href: `/organizations/${org.id}/competitions/${competition.id}`,
           },
           { label: edition.label },
         ]}
       />
 
       <h1 className="font-display text-5xl uppercase tracking-tight mt-4">
-        {tournament.name}
+        {competition.name}
       </h1>
       <div className="font-display text-2xl text-turtle-blue uppercase tracking-tight mb-8">
         {edition.label}
@@ -109,7 +109,7 @@ export default function EditionPage({
             <div className="font-display text-3xl uppercase tracking-tight text-turtle-blue">
               <NameWithFlag
                 name={edition.champion}
-                isCountry={tournament.scope === "national"}
+                isCountry={competition.scope === "national"}
                 size="md"
               />
             </div>
@@ -121,7 +121,7 @@ export default function EditionPage({
             <div className="font-display text-3xl uppercase tracking-tight">
               <NameWithFlag
                 name={edition.runnerUp}
-                isCountry={tournament.scope === "national"}
+                isCountry={competition.scope === "national"}
                 size="md"
               />
             </div>
@@ -134,7 +134,7 @@ export default function EditionPage({
               {edition.thirdPlace ? (
                 <NameWithFlag
                   name={edition.thirdPlace}
-                  isCountry={tournament.scope === "national"}
+                  isCountry={competition.scope === "national"}
                   size="md"
                 />
               ) : (

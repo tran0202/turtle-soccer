@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { getEdition, getOrganization, getTournament } from "@/lib/data";
+import { getEdition, getOrganization, getCompetition } from "@/lib/data";
 import { FlagGroup } from "@/components/Flag";
 import { NameWithFlag } from "@/components/NameWithFlag";
 
 export default function HomePage() {
   const edition = getEdition("world-cup-2022")!;
-  const tournament = getTournament(edition.tournamentId)!;
-  const org = getOrganization(tournament.organizationId)!;
+  const competition = getCompetition(edition.competitionId)!;
+  const org = getOrganization(competition.organizationId)!;
 
   return (
     <div>
@@ -14,12 +14,12 @@ export default function HomePage() {
         Welcome
       </h1>
       <p className="text-ink/60 mb-10 max-w-md">
-        A record of soccer organizations, their tournaments, and every
+        A record of soccer organizations, their competitions, and every
         edition played.
       </p>
 
       <Link
-        href={`/organizations/${org.id}/tournaments/${tournament.id}/editions/${edition.id}`}
+        href={`/organizations/${org.id}/competitions/${competition.id}/editions/${edition.id}`}
         className="group relative block overflow-hidden rounded-none bg-turtle-blue text-paper"
       >
         <svg
@@ -47,7 +47,7 @@ export default function HomePage() {
             Featured edition
           </div>
           <div className="font-display text-3xl sm:text-4xl uppercase tracking-tight">
-            {tournament.name}
+            {competition.name}
           </div>
           <div className="font-display text-2xl sm:text-3xl uppercase tracking-tight text-turtle-green flex items-center gap-2">
             <span>{edition.label}</span>
@@ -59,7 +59,7 @@ export default function HomePage() {
             <span className="font-semibold text-paper">
               <NameWithFlag
                 name={edition.champion}
-                isCountry={tournament.scope === "national"}
+                isCountry={competition.scope === "national"}
                 size="sm"
               />
             </span>

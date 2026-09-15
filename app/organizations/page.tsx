@@ -8,7 +8,7 @@ function OrgRow({ org }: { org: ReturnType<typeof getRootOrganizations>[number] 
   return (
     <Link
       href={`/organizations/${org.id}`}
-      className="group flex items-baseline justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
+      className="group flex items-center justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
     >
       <div className="flex items-center gap-3">
         <OrgMark orgId={org.id} orgName={org.name} size="md" />
@@ -56,7 +56,7 @@ export default function OrganizationsPage() {
               <OrgRow org={org} />
 
               {confederations.length > 0 && (
-                <div className="pb-4">
+                <div className="pt-2 pb-4">
                   <div className="text-xs uppercase tracking-wide text-turtle-green mb-1 px-2">
                     Confederations
                   </div>

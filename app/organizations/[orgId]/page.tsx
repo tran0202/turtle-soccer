@@ -5,10 +5,10 @@ import {
   getOrganization,
   getBreadcrumbAncestors,
   getChildOrganizations,
-  getTournamentsByOrg,
+  getCompetitionsByOrg,
 } from "@/lib/data";
 import { OrgMark } from "@/components/OrgMark";
-import { TournamentMark } from "@/components/TournamentMark";
+import { CompetitionMark } from "@/components/CompetitionMark";
 import { NameWithFlag } from "@/components/NameWithFlag";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
@@ -30,7 +30,7 @@ export default function OrganizationPage({
 }) {
   const org = getOrganization(params.orgId);
   if (!org) return notFound();
-  const tournaments = getTournamentsByOrg(org.id);
+  const competitions = getCompetitionsByOrg(org.id);
   const children = getChildOrganizations(org.id);
   const ancestors = getBreadcrumbAncestors(org.id);
 
@@ -46,30 +46,25 @@ export default function OrganizationPage({
         ]}
       />
 
-      <div className="flex items-center gap-3 mt-4 mb-2">
-        <div className="flex flex-col items-center gap-1 w-44">
-          <OrgMark orgId={org.id} orgName={org.name} size="lg" />
-          <div className="text-xs uppercase tracking-wide text-turtle-green text-center">
-            {LEVEL_LABELS[org.level]}
+      <div className="flex items-start gap-3 mt-4 mb-10">
+        <OrgMark orgId={org.id} orgName={org.name} size="lg" />
+        <div>
+          <div className="flex items-baseline gap-3 flex-wrap">
+            <h1 className="font-display text-5xl uppercase tracking-tight">
+              {org.name}
+            </h1>
+            <span className="text-sm text-ink/50">
+              {org.fullName}
+              {org.country && (
+                <>
+                  {" "}
+                  &middot; <NameWithFlag name={org.country} isCountry size="sm" />
+                </>
+              )}
+            </span>
           </div>
+          <p className="text-ink/60 max-w-lg mt-2">{org.description}</p>
         </div>
-        <div className="flex items-baseline gap-3 flex-wrap">
-          <h1 className="font-display text-5xl uppercase tracking-tight">
-            {org.name}
-          </h1>
-          <span className="text-sm text-ink/50">
-            {org.fullName}
-            {org.country && (
-              <>
-                {" "}
-                &middot; <NameWithFlag name={org.country} isCountry size="sm" />
-              </>
-            )}
-          </span>
-        </div>
-      </div>
-      <div className="mb-10">
-        <p className="text-ink/60 max-w-lg">{org.description}</p>
       </div>
 
       {children.length > 0 && (
@@ -113,20 +108,20 @@ export default function OrganizationPage({
         </>
       )}
 
-      {tournaments.length > 0 && (
+      {competitions.length > 0 && (
         <>
           <h2 className="text-xs uppercase tracking-wide text-turtle-green mb-3">
-            Tournaments
+            Competitions
           </h2>
           <ul className="border-t border-paper-line">
-            {tournaments.map((t) => (
+            {competitions.map((t) => (
               <li key={t.id} className="border-b border-paper-line">
                 <Link
-                  href={`/organizations/${org.id}/tournaments/${t.id}`}
-                  className="group flex items-baseline justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
+                  href={`/organizations/${org.id}/competitions/${t.id}`}
+                  className="group flex items-center justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
                 >
                   <div className="flex items-center gap-3">
-                    <TournamentMark tournamentId={t.id} tournamentName={t.name} size="md" />
+                    <CompetitionMark competitionId={t.id} competitionName={t.name} size="md" />
                     <div>
                       <div className="font-display text-2xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
                         {t.name}
@@ -151,7 +146,7 @@ export default function OrganizationPage({
         </>
       )}
 
-      {children.length === 0 && tournaments.length === 0 && (
+      {children.length === 0 && competitions.length === 0 && (
         <p className="text-ink/40 text-sm">Nothing on record here yet.</p>
       )}
     </div>

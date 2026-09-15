@@ -1,5 +1,5 @@
 // Maps the country names used in our data (org.country, and champion/runnerUp/
-// thirdPlace for national-scope tournaments) to flag-icons country codes.
+// thirdPlace for national-scope competitions) to flag-icons country codes.
 // Add an entry here whenever a new country name shows up in the data.
 const COUNTRY_CODES: Record<string, string> = {
   Argentina: "ar",
