@@ -40,14 +40,14 @@ export function InitialsBadge({
 
   const sizeClasses =
     size === "sm"
-      ? "text-[0.6rem] px-1.5 py-0.5"
+      ? "text-xs px-1.5 py-0.5"
       : size === "lg"
-      ? "text-lg px-3 py-1.5"
-      : "text-xs px-2 py-1";
+      ? "text-xl px-3 py-1.5"
+      : "text-sm px-2 py-1";
 
   return (
     <span
-      className={`inline-flex items-center justify-center font-display uppercase tracking-tight rounded-sm border shrink-0 ${sizeClasses}`}
+      className={`inline-flex items-center justify-center align-middle font-display uppercase tracking-tight rounded-sm border shrink-0 ${sizeClasses}`}
       style={{
         color,
         borderColor: `${color}55`,

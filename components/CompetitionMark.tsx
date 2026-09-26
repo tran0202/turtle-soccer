@@ -7,9 +7,20 @@ import competitionLogos from "@/data/competition-logos.json";
 const COMPETITION_LOGOS: Record<string, { src: string }> = competitionLogos;
 
 const SIZE_CLASSES = {
-  sm: "h-20 w-64",
-  md: "h-[5.5rem] w-72",
-  lg: "h-28 w-[22rem]",
+  sm: "h-[100px] w-[320px]",
+  md: "h-[100px] w-[320px]",
+  lg: "h-[125px] w-[400px]",
+  // Narrower box for compact grids (e.g. the 2-column cards on an org's own
+  // page). No competition currently has a verified working logo file, so
+  // there's no wide-wordmark aspect ratio to preserve room for here.
+  card: "h-20 w-40",
+} as const;
+
+const BADGE_SIZE = {
+  sm: "sm",
+  md: "md",
+  lg: "lg",
+  card: "sm",
 } as const;
 
 export function CompetitionMark({
@@ -19,12 +30,12 @@ export function CompetitionMark({
 }: {
   competitionId: string;
   competitionName: string;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "card";
 }) {
   const logo = COMPETITION_LOGOS[competitionId];
 
   if (!logo) {
-    return <InitialsBadge name={competitionName} size={size} />;
+    return <InitialsBadge name={competitionName} size={BADGE_SIZE[size]} />;
   }
 
   return (

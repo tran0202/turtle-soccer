@@ -4,13 +4,13 @@ import { FlagGroup } from "@/components/Flag";
 import { NameWithFlag } from "@/components/NameWithFlag";
 
 export default function HomePage() {
-  const edition = getEdition("world-cup-2022")!;
+  const edition = getEdition("world-cup-2026")!;
   const competition = getCompetition(edition.competitionId)!;
   const org = getOrganization(competition.organizationId)!;
 
   return (
     <div>
-      <h1 className="font-display text-4xl uppercase tracking-tight mb-2">
+      <h1 className="font-display text-5xl uppercase tracking-tight mb-2">
         Welcome
       </h1>
       <p className="text-ink/60 mb-10 max-w-md">
@@ -20,7 +20,7 @@ export default function HomePage() {
 
       <Link
         href={`/organizations/${org.id}/competitions/${competition.id}/editions/${edition.id}`}
-        className="group relative block overflow-hidden rounded-none bg-turtle-blue text-paper"
+        className="group relative block overflow-hidden rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)] bg-turtle-blue text-paper"
       >
         <svg
           className="absolute inset-0 h-full w-full opacity-[0.12]"
@@ -43,16 +43,17 @@ export default function HomePage() {
         </svg>
 
         <div className="relative p-8 sm:p-10">
-          <div className="text-xs uppercase tracking-widest text-paper/60 mb-3">
+          <div className="text-sm uppercase tracking-widest text-paper/60 mb-3">
             Featured edition
           </div>
-          <div className="font-display text-3xl sm:text-4xl uppercase tracking-tight">
-            {competition.name}
-          </div>
-          <div className="font-display text-2xl sm:text-3xl uppercase tracking-tight text-turtle-green flex items-center gap-2">
+          <div className="font-display text-4xl uppercase tracking-tight flex items-center flex-wrap gap-3">
+            <span>{competition.name}</span>
+            <FlagGroup
+              codes={edition.hosts.map((h) => h.code)}
+              label={edition.hosts.map((h) => h.name).join(" / ")}
+              size="xl"
+            />
             <span>{edition.label}</span>
-            <span aria-hidden="true">&middot;</span>
-            <FlagGroup codes={edition.hostCodes} label={edition.host} />
           </div>
           <div className="mt-4 text-paper/80">
             Champion:{" "}
@@ -60,13 +61,9 @@ export default function HomePage() {
               <NameWithFlag
                 name={edition.champion}
                 isCountry={competition.scope === "national"}
-                size="sm"
+                size="lg"
               />
             </span>
-          </div>
-          <div className="mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-wide text-paper group-hover:text-turtle-green transition-colors">
-            View edition
-            <span aria-hidden="true">&rarr;</span>
           </div>
         </div>
       </Link>

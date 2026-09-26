@@ -10,7 +10,25 @@ export type Organization = {
   type: string;
   level: "global" | "confederation" | "association" | "league";
   parentId: string | null;
-  founded: number;
+  // For the handful of nations that have switched confederations — e.g.
+  // Australia moved from OFC to AFC in 2006. A short note shown on the
+  // org's own page; null for everyone else.
+  confederationHistory: string | null;
+  // For confederation members that are NOT FIFA members (associate members
+  // only, or full confederation members without FIFA recognition at all) —
+  // e.g. Zanzibar, a CAF associate member since 2004, has never been
+  // admitted to FIFA. null for every normal FIFA-member association.
+  fifaAffiliation: string | null;
+  // Distinct from FIFA membership: whether this association is a full or
+  // merely associate member of its own confederation. null means full (true
+  // for essentially every FIFA member, and most non-FIFA ones too — only a
+  // few of the latter, like Zanzibar or Kiribati, are associate members).
+  confederationStatus: "associate" | null;
+  // null for associations added without an individually-verified founding
+  // year (see docs/organizations.md) — never rendered for association-level
+  // orgs anyway, only used as a fallback on the root org listing page for
+  // orgs with no children.
+  founded: number | null;
   country: string | null;
   description: string;
 };
@@ -26,20 +44,44 @@ export type Competition = {
   description: string;
 };
 
+export type TopScorer = {
+  name: string;
+  goals: number;
+  countryCode: string;
+};
+
+export type Host = {
+  name: string;
+  code: string;
+};
+
 export type Edition = {
   id: string;
   competitionId: string;
   label: string;
-  host: string;
+  // The name this specific edition was actually played under, if different
+  // from the competition's current name (e.g. Copa América's early editions
+  // were played as the "South American Championship"). Falls back to the
+  // competition's own name everywhere this is null.
+  historicalName: string | null;
+  hosts: Host[];
+  hostType: "single" | "multi" | "final" | "multi-final";
   startDate: string;
   endDate: string;
   teams: number;
   champion: string;
   runnerUp: string;
   thirdPlace: string | null;
-  topScorer: string;
+  fourthPlace: string | null;
+  // For the rare case of a genuine 3rd-place MATCH that ended without a
+  // decider (e.g. drawn after extra time, no shootout held) — both teams are
+  // officially declared joint third, and there's no fourth place at all.
+  // Different from `semifinalists`, which means no 3rd-place match was ever
+  // played. thirdPlace/fourthPlace are both null whenever this is set.
+  coThirdPlace: [string, string] | null;
+  semifinalists: [string, string] | null;
+  topScorers: TopScorer[];
   notes: string;
-  hostCodes: string[];
 };
 
 export function getOrganizations(): Organization[] {

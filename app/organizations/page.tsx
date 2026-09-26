@@ -3,20 +3,36 @@ import { getRootOrganizations, getChildOrganizations } from "@/lib/data";
 import { OrgMark } from "@/components/OrgMark";
 import { NameWithFlag } from "@/components/NameWithFlag";
 
-function OrgRow({ org }: { org: ReturnType<typeof getRootOrganizations>[number] }) {
+function OrgRow({
+  org,
+  card = false,
+}: {
+  org: ReturnType<typeof getRootOrganizations>[number];
+  card?: boolean;
+}) {
   const childCount = getChildOrganizations(org.id).length;
+  const childLabel =
+    org.level === "global"
+      ? "confederation"
+      : org.level === "confederation"
+      ? "national association"
+      : "member";
   return (
     <Link
       href={`/organizations/${org.id}`}
-      className="group flex items-center justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
+      className={
+        card
+          ? "group flex items-center justify-between gap-6 p-4 hover:bg-paper-surface transition-colors rounded-lg"
+          : "group flex items-center justify-between gap-6 py-5 hover:bg-paper-surface transition-colors px-2 -mx-2"
+      }
     >
       <div className="flex items-center gap-3">
         <OrgMark orgId={org.id} orgName={org.name} size="md" />
         <div>
-          <div className="font-display text-2xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
+          <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
             {org.name}
           </div>
-          <div className="text-sm text-ink/50 mt-0.5">
+          <div className="text-base text-ink/50 mt-0.5">
             {org.fullName}
             {org.country && (
               <>
@@ -28,11 +44,13 @@ function OrgRow({ org }: { org: ReturnType<typeof getRootOrganizations>[number] 
         </div>
       </div>
       <div className="text-right shrink-0">
-        <div className="text-xs uppercase tracking-wide text-turtle-green">
+        <div className="text-sm uppercase tracking-wide text-turtle-green">
           {org.scope === "both" ? "national · club" : org.scope}
         </div>
-        <div className="text-xs text-ink/40 mt-0.5">
-          {childCount > 0 ? `${childCount} members` : `est. ${org.founded}`}
+        <div className="text-sm text-ink/40 mt-0.5">
+          {childCount > 0
+            ? `${childCount} ${childLabel}${childCount === 1 ? "" : "s"}`
+            : `est. ${org.founded}`}
         </div>
       </div>
     </Link>
@@ -44,35 +62,40 @@ export default function OrganizationsPage() {
 
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase tracking-tight mb-10">
+      <h1 className="font-display text-6xl uppercase tracking-tight mb-10">
         Organizations
       </h1>
 
-      <ul className="border-t border-paper-line">
+      <div className="flex flex-col gap-4">
         {organizations.map((org) => {
           const confederations = getChildOrganizations(org.id);
           return (
-            <li key={org.id} className="border-b border-paper-line">
-              <OrgRow org={org} />
+            <div key={org.id}>
+              <div className="border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)] mb-4">
+                <OrgRow org={org} card />
+              </div>
 
               {confederations.length > 0 && (
-                <div className="pt-2 pb-4">
-                  <div className="text-xs uppercase tracking-wide text-turtle-green mb-1 px-2">
+                <div>
+                  <div className="text-sm uppercase tracking-wide text-turtle-green mb-3">
                     Confederations
                   </div>
-                  <ul>
+                  <ul className="flex flex-col gap-4">
                     {confederations.map((conf) => (
-                      <li key={conf.id}>
-                        <OrgRow org={conf} />
+                      <li
+                        key={conf.id}
+                        className="border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]"
+                      >
+                        <OrgRow org={conf} card />
                       </li>
                     ))}
                   </ul>
                 </div>
               )}
-            </li>
+            </div>
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }

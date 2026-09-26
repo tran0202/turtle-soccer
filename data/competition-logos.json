@@ -1,23 +1,59 @@
 {
-  "champions-league": {
-    "src": "/org/uefa/competitions/champions-league/362px-Trofeo_UEFA_Champions_League.jpg"
-  },
-  "club-world-cup": {
-    "src": "/org/fifa/competitions/club-world-cup/FIFA_Club_World_Cup_trophy.jpg"
-  },
-  "copa-america": {
-    "src": "/org/conmebol/competitions/copa-america/291px-Copa_america_trofeo.jpg"
-  },
-  "euro": {
-    "src": "/org/uefa/competitions/euro/Coupe_Henri_Delaunay_2017.jpg"
-  },
-  "libertadores": {
-    "src": "/org/conmebol/competitions/libertadores/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
+  "world-cup": {
+    "src": "/comp-logos/FIFA_Trophy.jpg"
   },
   "womens-world-cup": {
-    "src": "/org/fifa/competitions/womens-world-cup/Trophy-scaled-1.jpg"
+    "src": "/comp-logos/Trophy-scaled-1.jpg"
   },
-  "world-cup": {
-    "src": "/org/fifa/competitions/world-cup/FIFA_Trophy.jpg"
+  "club-world-cup": {
+    "src": "/comp-logos/FIFA_Club_World_Cup_trophy.jpg"
+  },
+  "afcon": {
+    "src": "/comp-logos/Africa_Cup_of_Nation_official_logo.png"
+  },
+  "afc-asian-cup": {
+    "src": "/comp-logos/AFC_Asian_Cup.png"
+  },
+  "euro": {
+    "src": "/comp-logos/Coupe_Henri_Delaunay_2017.jpg"
+  },
+  "champions-league": {
+    "src": "/comp-logos/362px-Trofeo_UEFA_Champions_League.jpg"
+  },
+  "concacaf-gold-cup": {
+    "src": "/comp-logos/Concacaf_Gold_Cup_2021.svg"
+  },
+  "ofc-nations-cup": {
+    "src": "/comp-logos/OFC_Men's_Nations_Cup.jpg"
+  },
+  "copa-america": {
+    "src": "/comp-logos/291px-Copa_america_trofeo.jpg"
+  },
+  "libertadores": {
+    "src": "/comp-logos/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
+  },
+  "liga-profesional-argentina": {
+    "src": "/comp-logos/Liga_Profesional_de_Fútbol_(Argentina)_logo.svg"
+  },
+  "brasileirao": {
+    "src": "/comp-logos/Campeonato_Brasileiro_Série_A_logo_(2024).svg"
+  },
+  "categoria-primera-a": {
+    "src": "/comp-logos/BetPlay-Dimayor_logo.svg"
+  },
+  "epl-season": {
+    "src": "/comp-logos/Premier_League_Logo.svg"
+  },
+  "ligue-1": {
+    "src": "/comp-logos/Ligue_1_2024_Logo.png"
+  },
+  "bundesliga": {
+    "src": "/comp-logos/Bundesliga_logo_(2017).svg"
+  },
+  "la-liga": {
+    "src": "/comp-logos/LaLiga_2023_Vertical_Logo.svg"
+  },
+  "primera-division-uruguay": {
+    "src": "/comp-logos/Liga_AUF_Uruguaya_-_logo_azul.png"
   }
 }

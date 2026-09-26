@@ -30,6 +30,26 @@
     "description": "FIFA's global club competition, bringing together the champions of each confederation. Ran as a smaller annual event from 2000-2023 before its 2025 expansion to 32 teams."
   },
   {
+    "id": "afcon",
+    "organizationId": "caf",
+    "name": "Africa Cup of Nations",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1957,
+    "frequency": "Every 2 years",
+    "description": "Africa's national team championship, commonly known as AFCON."
+  },
+  {
+    "id": "afc-asian-cup",
+    "organizationId": "afc",
+    "name": "AFC Asian Cup",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1956,
+    "frequency": "Every 4 years",
+    "description": "Asia's national team championship, the second-oldest continental football tournament in the world after the Copa América."
+  },
+  {
     "id": "euro",
     "organizationId": "uefa",
     "name": "UEFA European Championship",
@@ -50,6 +70,26 @@
     "description": "Europe's top club competition, contested by the continent's highest-finishing domestic sides."
   },
   {
+    "id": "concacaf-gold-cup",
+    "organizationId": "concacaf",
+    "name": "CONCACAF Gold Cup",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1991,
+    "frequency": "Every 2 years",
+    "description": "The national team championship of North America, Central America and the Caribbean."
+  },
+  {
+    "id": "ofc-nations-cup",
+    "organizationId": "ofc",
+    "name": "OFC Nations Cup",
+    "scope": "national",
+    "gender": "men",
+    "founded": 1973,
+    "frequency": "Every 4 years",
+    "description": "Oceania's national team championship, historically dominated by New Zealand and Australia (who left for the AFC in 2006)."
+  },
+  {
     "id": "copa-america",
     "organizationId": "conmebol",
     "name": "Copa América",
@@ -57,7 +97,7 @@
     "gender": "men",
     "founded": 1916,
     "frequency": "Irregular, roughly every 2-4 years",
-    "description": "The oldest continental national team championship in the world."
+    "description": "The oldest continental national team championship in the world. Known as the South American Championship until 1967; the tournament resumed in 1975 under its current name."
   },
   {
     "id": "libertadores",
@@ -70,6 +110,36 @@
     "description": "South America's premier club competition."
   },
   {
+    "id": "liga-profesional-argentina",
+    "organizationId": "afa",
+    "name": "Liga Profesional de Fútbol",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1891,
+    "frequency": "Annual",
+    "description": "The top flight of Argentine club football, the oldest league competition in the Americas."
+  },
+  {
+    "id": "brasileirao",
+    "organizationId": "cbf",
+    "name": "Campeonato Brasileiro Série A",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1971,
+    "frequency": "Annual",
+    "description": "The top flight of Brazilian club football, commonly known as the Brasileirão."
+  },
+  {
+    "id": "categoria-primera-a",
+    "organizationId": "fcf",
+    "name": "Categoría Primera A",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1948,
+    "frequency": "Annual, split into Apertura and Finalización tournaments",
+    "description": "The top flight of Colombian club football, played as two independent short tournaments each year rather than one full-season table."
+  },
+  {
     "id": "epl-season",
     "organizationId": "the-fa",
     "name": "Premier League",
@@ -78,5 +148,45 @@
     "founded": 1992,
     "frequency": "Annual",
     "description": "The top flight of English club football, decided over 38 rounds of matches each season."
+  },
+  {
+    "id": "ligue-1",
+    "organizationId": "fff",
+    "name": "Ligue 1",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1932,
+    "frequency": "Annual",
+    "description": "The top flight of French club football."
+  },
+  {
+    "id": "bundesliga",
+    "organizationId": "dfb",
+    "name": "Bundesliga",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1963,
+    "frequency": "Annual",
+    "description": "The top flight of German club football."
+  },
+  {
+    "id": "la-liga",
+    "organizationId": "rfef",
+    "name": "La Liga",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1929,
+    "frequency": "Annual",
+    "description": "The top flight of Spanish club football."
+  },
+  {
+    "id": "primera-division-uruguay",
+    "organizationId": "auf",
+    "name": "Uruguayan Primera División",
+    "scope": "club",
+    "gender": "men",
+    "founded": 1900,
+    "frequency": "Annual",
+    "description": "The top flight of Uruguayan club football."
   }
 ]

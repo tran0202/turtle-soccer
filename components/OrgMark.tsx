@@ -9,15 +9,30 @@ import orgLogos from "@/data/org-logos.json";
 const ORG_LOGOS: Record<string, { src: string }> = orgLogos;
 
 // Fixed box per size, not just a fixed height. Logos have different aspect
-// ratios (FIFA's wordmark is much wider than UEFA's), so height-only sizing
-// makes each logo a different rendered width, throwing off where the text
-// next to it starts. A fixed-width box + object-contain keeps that consistent
-// regardless of each logo's shape. Width is sized to fit FIFA's ~3:1 wordmark
-// at each height without shrinking.
+// ratios — FIFA and AFC's wordmarks are roughly 3:1, while UEFA and CONMEBOL's
+// are close to square — so height-only sizing makes each logo a wildly
+// different rendered width. A fixed box + object-contain keeps every logo's
+// footprint closer together: the box is 1.75:1, wide enough that a square
+// logo still renders at full height, but narrow enough that a 3:1 wordmark
+// gets width-constrained and shrinks (both dimensions) to fit, rather than
+// rendering three times as wide as everything else at the same height.
 const SIZE_CLASSES = {
-  sm: "h-20 w-64",
-  md: "h-[5.5rem] w-72",
-  lg: "h-28 w-[22rem]",
+  sm: "h-[100px] w-[175px]",
+  md: "h-[100px] w-[175px]",
+  lg: "h-[125px] w-[220px]",
+  // Narrower box for compact grids (e.g. the 2-column cards on an org's own
+  // page) where excess box width crowds out the name text next to it.
+  card: "h-20 w-[140px]",
+} as const;
+
+// InitialsBadge doesn't know about "card" — it's a box-width concern specific
+// to this component, not a badge-text-size concern, so the fallback badge
+// just renders at "sm".
+const BADGE_SIZE = {
+  sm: "sm",
+  md: "md",
+  lg: "lg",
+  card: "sm",
 } as const;
 
 export function OrgMark({
@@ -27,12 +42,12 @@ export function OrgMark({
 }: {
   orgId: string;
   orgName: string;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "card";
 }) {
   const logo = ORG_LOGOS[orgId];
 
   if (!logo) {
-    return <InitialsBadge name={orgName} size={size} />;
+    return <InitialsBadge name={orgName} size={BADGE_SIZE[size]} />;
   }
 
   // Plain <img>, not next/image: these are already-vector local assets with

@@ -1,11 +1,689 @@
 {
   "fifa": {
-    "src": "/org/fifa/fifa-logo.svg"
+    "src": "/org-logos/fifa-logo.svg"
   },
-  "conmebol": {
-    "src": "/org/conmebol/CONMEBOL_logo_(2017).svg"
+  "caf": {
+    "src": "/org-logos/Confederation_of_African_Football_logo.svg"
+  },
+  "afc": {
+    "src": "/org-logos/Asian_Football_Confederation_logo_2025.svg"
   },
   "uefa": {
-    "src": "/org/uefa/UEFA_full_logo.svg"
+    "src": "/org-logos/UEFA_full_logo.svg"
+  },
+  "concacaf": {
+    "src": "/org-logos/Concacaf_logo.svg"
+  },
+  "ofc": {
+    "src": "/org-logos/Oceania_Football_Confederation_logo.svg"
+  },
+  "conmebol": {
+    "src": "/org-logos/CONMEBOL_logo_(2017).svg"
+  },
+  "afg": {
+    "src": "/org-logos/Afghanistan_Football_Federation_logo_green.png"
+  },
+  "alb": {
+    "src": "/org-logos/Albanian_Football_Federation.svg"
+  },
+  "alg": {
+    "src": "/org-logos/Algerian_Football_Federation_logo.png"
+  },
+  "asa": {
+    "src": "/org-logos/Football_Federation_American_Samoa_(badge).svg"
+  },
+  "and": {
+    "src": "/org-logos/Andorran_Football_Federation_logo.svg"
+  },
+  "ang": {
+    "src": "/org-logos/Angolan_Football_Federation_logo.svg"
+  },
+  "aia": {
+    "src": "/org-logos/Anguilla_Football_Association_(2020).png"
+  },
+  "atg": {
+    "src": "/org-logos/Antigua_and_Barbuda_FA_logo.svg"
+  },
+  "afa": {
+    "src": "/org-logos/Asociación_del_Fútbol_Argentino_(crest).svg"
+  },
+  "arm": {
+    "src": "/org-logos/Football_Federation_of_Armenia_logo.svg"
+  },
+  "aru": {
+    "src": "/org-logos/Aruba_Football_Federation_logo.png"
+  },
+  "aus": {
+    "src": "/org-logos/Football_Australia_logo.svg"
+  },
+  "aut": {
+    "src": "/org-logos/Austrian_Football_Association_Logo.svg"
+  },
+  "aze": {
+    "src": "/org-logos/Association_of_Football_Federations_of_Azerbaijan_logo.svg"
+  },
+  "bah": {
+    "src": "/org-logos/Bahamas_Football_Association.svg"
+  },
+  "bhr": {
+    "src": "/org-logos/Bahrain_FA_logo.svg"
+  },
+  "ban": {
+    "src": "/org-logos/Logo_of_Bangladesh_Football_Federation.svg"
+  },
+  "brb": {
+    "src": "/org-logos/Barbados_FA.png"
+  },
+  "blr": {
+    "src": "/org-logos/Football_Federation_of_Belarus_logo.svg"
+  },
+  "bel": {
+    "src": "/org-logos/Royal_Belgian_FA_logo_2019.svg"
+  },
+  "blz": {
+    "src": "/org-logos/Belize_FA_2.svg"
+  },
+  "ben": {
+    "src": "/org-logos/Benin_Football_Federation_logo.svg"
+  },
+  "ber": {
+    "src": "/org-logos/Bermuda_FA_logo.svg"
+  },
+  "bhu": {
+    "src": "/org-logos/Bhutan_FF_logo.svg"
+  },
+  "bol": {
+    "src": "/org-logos/Bolivian_Football_Federation_logo.svg"
+  },
+  "bon": {
+    "src": "/org-logos/Bonaire_Football_Federation_logo.png"
+  },
+  "bih": {
+    "src": "/org-logos/Football_Association_of_Bosnia_and_Herzegovina_logo.svg"
+  },
+  "bot": {
+    "src": "/org-logos/Botswana_Football_Association_logo.jpg"
+  },
+  "cbf": {
+    "src": "/org-logos/Brazilian_Football_Confederation_logo.svg"
+  },
+  "vgb": {
+    "src": "/org-logos/British_Virgin_Islands_Football_Association.svg"
+  },
+  "bru": {
+    "src": "/org-logos/Football_Association_of_Brunei_Darussalam_logo.svg"
+  },
+  "bul": {
+    "src": "/org-logos/Bulgarian_Football_Union_logo.svg"
+  },
+  "bfa": {
+    "src": "/org-logos/Burkinabé_Football_Federation_logo.png"
+  },
+  "bdi": {
+    "src": "/org-logos/Football_Federation_of_Burundi_logo.png"
+  },
+  "cam": {
+    "src": "/org-logos/Football_Federation_of_Cambodia_logo.svg"
+  },
+  "cmr": {
+    "src": "/org-logos/Cameroon_2010crest.png"
+  },
+  "canada-soccer": {
+    "src": "/org-logos/Canadian_Soccer_Association_logo.svg"
+  },
+  "cpv": {
+    "src": "/org-logos/Cape_Verdean_Football_Federation_logo.svg"
+  },
+  "cay": {
+    "src": "/org-logos/Cayman_Islands_Football_Association.svg"
+  },
+  "cta": {
+    "src": "/org-logos/Central_African_Football_Federation_logo.svg"
+  },
+  "cha": {
+    "src": "/org-logos/Chadian_Football_Federation_logo.png"
+  },
+  "chi": {
+    "src": "/org-logos/Federación_de_Fútbol_de_Chile_logo.svg"
+  },
+  "chn": {
+    "src": "/org-logos/Chinese_Football_Association_logo.svg"
+  },
+  "tpe": {
+    "src": "/org-logos/Chinese_Taipei_Football_Association_logo.svg"
+  },
+  "fcf": {
+    "src": "/org-logos/FCF-Logo-2023.svg"
+  },
+  "com": {
+    "src": "/org-logos/Comoros_Football_Federation_logo.svg"
+  },
+  "cgo": {
+    "src": "/org-logos/Congolese_Football_Federation_logo.svg"
+  },
+  "cok": {
+    "src": "/org-logos/Cook_Islands_FA.svg"
+  },
+  "fcrf": {
+    "src": "/org-logos/Costa_Rican_Football_Federation_logo.svg"
+  },
+  "cro": {
+    "src": "/org-logos/Croatian_Football_Federation_logo.svg"
+  },
+  "cub": {
+    "src": "/org-logos/Football_Association_of_Cuba_logo.svg"
+  },
+  "cuw": {
+    "src": "/org-logos/Curacao_Football_Federation.svg"
+  },
+  "cyp": {
+    "src": "/org-logos/Cyprus_Football_Association_logo.svg"
+  },
+  "cze": {
+    "src": "/org-logos/Football_Association_of_the_Czech_Republic_logo.svg"
+  },
+  "cod": {
+    "src": "/org-logos/Congolese_Association_Football_Federation_logo.png"
+  },
+  "den": {
+    "src": "/org-logos/Dansk_boldspil_union_logo.svg"
+  },
+  "dji": {
+    "src": "/org-logos/Djiboutian_Football_Federation_logo.svg"
+  },
+  "dma": {
+    "src": "/org-logos/Dominica_Football_Association.svg"
+  },
+  "dom": {
+    "src": "/org-logos/Federación_Dominicana_de_Fútbol_logo_(2025).svg"
+  },
+  "ecu": {
+    "src": "/org-logos/Logo_de_la_Federación_Ecuatoriana_de_Fútbol.svg"
+  },
+  "efa-egypt": {
+    "src": "/org-logos/Egyptian_Football_Association_logo.svg"
+  },
+  "slv": {
+    "src": "/org-logos/FESFUT_logo.svg"
+  },
+  "the-fa": {
+    "src": "/org-logos/FA_crest_2009.svg"
+  },
+  "eqg": {
+    "src": "/org-logos/Equatoguinean_Football_Federation_logo.png"
+  },
+  "eri": {
+    "src": "/org-logos/Eritrean_National_Football_Federation_logo.png"
+  },
+  "est": {
+    "src": "/org-logos/Estonian_Football_Association_logo.svg"
+  },
+  "swz": {
+    "src": "/org-logos/Eswatini_Football_Association_logo.svg"
+  },
+  "eth": {
+    "src": "/org-logos/Ethiopian_Football_Federation.svg"
+  },
+  "fro": {
+    "src": "/org-logos/Faroe_Islands_Football_Association_logo.svg"
+  },
+  "fiji-fa": {
+    "src": "/org-logos/Fiji_FA.svg"
+  },
+  "fin": {
+    "src": "/org-logos/Football_Association_of_Finland_logo.svg"
+  },
+  "fff": {
+    "src": "/org-logos/French_Football_Federation_logo.svg"
+  },
+  "guf": {
+    "src": "/org-logos/Ligue_de_Football_de_la_Guyane.svg"
+  },
+  "gab": {
+    "src": "/org-logos/Gabonese_Football_Federation_logo.svg"
+  },
+  "gam": {
+    "src": "/org-logos/Gambia_Football_Federation_emblem.png"
+  },
+  "geo": {
+    "src": "/org-logos/Georgian_Football_Federation_logo.svg"
+  },
+  "dfb": {
+    "src": "/org-logos/DFB-Logo_2025_(WB).svg.webp"
+  },
+  "gha": {
+    "src": "/org-logos/Ghana_Football_Association_logo_(2001).svg"
+  },
+  "gib": {
+    "src": "/org-logos/Gibraltar_Football_Association_(2020).svg"
+  },
+  "gre": {
+    "src": "/org-logos/Hellenic_Football_Federation_logo.svg"
+  },
+  "grn": {
+    "src": "/org-logos/Grenada_Football_Association_logo_2015.svg"
+  },
+  "glp": {
+    "src": "/org-logos/Guadaloupean_football_league_logo.png"
+  },
+  "gum": {
+    "src": "/org-logos/Guam_Football_Association_logo_2026.png"
+  },
+  "gua": {
+    "src": "/org-logos/Fedefut_Guate_logo.svg"
+  },
+  "gui": {
+    "src": "/org-logos/Guinean_Football_Federation_logo.svg"
+  },
+  "gnb": {
+    "src": "/org-logos/Football_Federation_of_Guinea-Bissau_logo.png"
+  },
+  "guy": {
+    "src": "/org-logos/Guyana_Football_Federation_logo.svg"
+  },
+  "hai": {
+    "src": "/org-logos/Federation_Haitienne_de_Football.png"
+  },
+  "hon": {
+    "src": "/org-logos/Honduras_football_crest.svg"
+  },
+  "hkg": {
+    "src": "/org-logos/HKFA_logo_2023.svg"
+  },
+  "hun": {
+    "src": "/org-logos/Hungarian_Football_Federation_logo.svg"
+  },
+  "isl": {
+    "src": "/org-logos/Football_Association_of_Iceland_logo.svg"
+  },
+  "ind": {
+    "src": "/org-logos/All_India_Football_Federation_logo_(with_wordmark).svg"
+  },
+  "idn": {
+    "src": "/org-logos/Football_Association_of_Indonesia_logo.svg"
+  },
+  "ffiri": {
+    "src": "/org-logos/Football_Federation_Islamic_Republic_of_Iran_logo.svg"
+  },
+  "irq": {
+    "src": "/org-logos/Iraq_Football_Association_logo.svg"
+  },
+  "isr": {
+    "src": "/org-logos/Israel_Football_Association_logo.svg"
+  },
+  "ita": {
+    "src": "/org-logos/Logo_Federazione_Italiana_Giuoco_Calcio_-_2021.svg"
+  },
+  "civ": {
+    "src": "/org-logos/Ivorian_Football_Federation_logo.svg"
+  },
+  "jam": {
+    "src": "/org-logos/Jamaica_FA.svg"
+  },
+  "jfa": {
+    "src": "/org-logos/Japan_FA_logo.svg"
+  },
+  "jor": {
+    "src": "/org-logos/Jordan_Football_Association_logo.svg"
+  },
+  "kaz": {
+    "src": "/org-logos/Kazakhstan_Football_Federation_logo.svg"
+  },
+  "ken": {
+    "src": "/org-logos/Football_Kenya_Federation_logo.svg"
+  },
+  "kir": {
+    "src": "/org-logos/Kiribati_Football_Association.svg"
+  },
+  "kos": {
+    "src": "/org-logos/Football_Federation_of_Kosovo_logo.svg"
+  },
+  "kuw": {
+    "src": "/org-logos/Kuwait_Football_Association_logo.svg"
+  },
+  "kgz": {
+    "src": "/org-logos/Kyrgyz_Football_Union_logo.svg"
+  },
+  "lao": {
+    "src": "/org-logos/Lao_Football_Federation_logo.svg"
+  },
+  "lva": {
+    "src": "/org-logos/Latvian_Football_Federation_logo.svg"
+  },
+  "lbn": {
+    "src": "/org-logos/Lebanese_Football_Association_(LFA)_logo.svg"
+  },
+  "les": {
+    "src": "/org-logos/Lesotho_Football_Association_logo.svg"
+  },
+  "lbr": {
+    "src": "/org-logos/Liberia_Football_Association_logo.svg"
+  },
+  "lby": {
+    "src": "/org-logos/Libyan_Football_Federation_Logo.png"
+  },
+  "lie": {
+    "src": "/org-logos/Liechtenstein_Football_Association_logo.svg"
+  },
+  "ltu": {
+    "src": "/org-logos/Lithuanian_Football_Federation_logo.svg"
+  },
+  "lux": {
+    "src": "/org-logos/Luxembourg_Football_Federation_logo.svg"
+  },
+  "mac": {
+    "src": "/org-logos/Macau_Football_Association_logo.svg"
+  },
+  "mad": {
+    "src": "/org-logos/MAD.jpeg"
+  },
+  "mwi": {
+    "src": "/org-logos/Malawi_FA_(logo).png"
+  },
+  "mas": {
+    "src": "/org-logos/Football_Association_of_Malaysia_crest.svg"
+  },
+  "mdv": {
+    "src": "/org-logos/Football_Association_of_Maldives_logo.svg"
+  },
+  "mli": {
+    "src": "/org-logos/Mali_FF_(New).png"
+  },
+  "mlt": {
+    "src": "/org-logos/Malta_Football_Association_logo.svg"
+  },
+  "mtq": {
+    "src": "/org-logos/LFM_Martinique.svg"
+  },
+  "mtn": {
+    "src": "/org-logos/Football_Federation_of_the_Islamic_Republic_of_Mauritania_logo.svg"
+  },
+  "mri": {
+    "src": "/org-logos/Mauritius_FA.png"
+  },
+  "fmf": {
+    "src": "/org-logos/Federación_Mexicana_de_Fútbol_logo_(2025).svg"
+  },
+  "mda": {
+    "src": "/org-logos/Moldovan_Football_Federation_logo.svg"
+  },
+  "mng": {
+    "src": "/org-logos/Mongolian_Football_Federation_logo.svg"
+  },
+  "mne": {
+    "src": "/org-logos/Football_Association_of_Montenegro_logo.svg"
+  },
+  "msr": {
+    "src": "/org-logos/Montserrat_Football_Association.svg"
+  },
+  "frmf": {
+    "src": "/org-logos/Royal_Moroccan_Football_Federation_logo.svg"
+  },
+  "moz": {
+    "src": "/org-logos/Mozambique_FA.svg"
+  },
+  "mya": {
+    "src": "/org-logos/Myanmar_Football_Federation_logo.svg"
+  },
+  "nam": {
+    "src": "/org-logos/Namibia_Football_Association_logo.svg"
+  },
+  "nep": {
+    "src": "/org-logos/All_Nepal_Football_Association_logo_2019.svg"
+  },
+  "ned": {
+    "src": "/org-logos/Royal_Dutch_Football_Association_logo.svg"
+  },
+  "ncl": {
+    "src": "/org-logos/New_Caledonia_FA.svg"
+  },
+  "nzf": {
+    "src": "/org-logos/New_Zealand_Football_logo.svg"
+  },
+  "nca": {
+    "src": "/org-logos/Nicaragua_FA_logo.svg"
+  },
+  "nig": {
+    "src": "/org-logos/Niger_FF_(logo).png"
+  },
+  "nff": {
+    "src": "/org-logos/Nigeria_Football_Federation_logo.svg"
+  },
+  "prk": {
+    "src": "/org-logos/North_Korea_FA.png"
+  },
+  "mkd": {
+    "src": "/org-logos/Football_Federation_of_Macedonia_logo.svg"
+  },
+  "nir": {
+    "src": "/org-logos/Irish_Football_Association_logo.svg"
+  },
+  "nmi": {
+    "src": "/org-logos/NMIFA_crest.svg"
+  },
+  "nor": {
+    "src": "/org-logos/Norwegian_Football_Federation_logo.svg"
+  },
+  "oma": {
+    "src": "/org-logos/Oman_Football_Association_logo.svg"
+  },
+  "pak": {
+    "src": "/org-logos/Pakistan_Football_Federation_logo.svg"
+  },
+  "ple": {
+    "src": "/org-logos/Palestinian_Football_Association_logo.svg"
+  },
+  "pan": {
+    "src": "/org-logos/Panamanian_Football_Federation_logo_2024.svg"
+  },
+  "pngfa": {
+    "src": "/org-logos/PNGFA_Logo.svg"
+  },
+  "par": {
+    "src": "/org-logos/Asociación_Paraguaya_de_Fútbol_logo.svg"
+  },
+  "per": {
+    "src": "/org-logos/Logotipo_de_la_Federación_Peruana_de_Fútbol.svg"
+  },
+  "phi": {
+    "src": "/org-logos/Logo_of_Philippine_Football_Federation.svg"
+  },
+  "pol": {
+    "src": "/org-logos/Polish_Football_Association_logo.svg"
+  },
+  "por": {
+    "src": "/org-logos/Federação_Portuguesa_de_Futebol_logo_(2026).svg"
+  },
+  "pur": {
+    "src": "/org-logos/Puerto_Rican_Football_Federation_logo.svg"
+  },
+  "qat": {
+    "src": "/org-logos/Qatar_Football_Association_logo.svg"
+  },
+  "irl": {
+    "src": "/org-logos/Football_Association_of_Ireland_logo_(2023).svg"
+  },
+  "rou": {
+    "src": "/org-logos/Romanian_Football_Federation_logo_(2019).svg"
+  },
+  "rus": {
+    "src": "/org-logos/Russian_Football_Union_logo.svg"
+  },
+  "rwa": {
+    "src": "/org-logos/Rwanda_FA.png"
+  },
+  "reu": {
+    "src": "/org-logos/Réunion_FL_(logo).png"
+  },
+  "skn": {
+    "src": "/org-logos/Saint_Kitts_&_Nevis_Football_Association.svg"
+  },
+  "lca": {
+    "src": "/org-logos/Saint_Lucia_FA.png"
+  },
+  "maf": {
+    "src": "/org-logos/saint-martin-national-team.a2cc69d6.png"
+  },
+  "vin": {
+    "src": "/org-logos/Saint_Vincent_and_the_Grenadines_Football_Federation_logo.svg"
+  },
+  "sam": {
+    "src": "/org-logos/Football_Federation_Samoa_logo_(2025).png"
+  },
+  "smr": {
+    "src": "/org-logos/San_Marino_Football_Federation_logo.svg"
+  },
+  "saff": {
+    "src": "/org-logos/Saudi_Arabian_Football_Federation_Logo.svg"
+  },
+  "sco": {
+    "src": "/org-logos/Scottish_Football_Association_Logo.svg"
+  },
+  "sen": {
+    "src": "/org-logos/Senegalese_Football_Federation_logo.svg"
+  },
+  "srb": {
+    "src": "/org-logos/Football_Association_of_Serbia_logo.svg"
+  },
+  "sey": {
+    "src": "/org-logos/Seychelles_Football_Federation.png"
+  },
+  "sle": {
+    "src": "/org-logos/Sierra_Leone_Football_Association_logo_2018.jpg"
+  },
+  "sgp": {
+    "src": "/org-logos/Football_Association_of_Singapore_crest.svg"
+  },
+  "sxm": {
+    "src": "/org-logos/Sint-Maarten_FA.png"
+  },
+  "svk": {
+    "src": "/org-logos/Slovak_Football_Association_logo.svg"
+  },
+  "svn": {
+    "src": "/org-logos/Football_Association_of_Slovenia_logo.svg"
+  },
+  "sol": {
+    "src": "/org-logos/Solomon_Islands_FA.svg"
+  },
+  "som": {
+    "src": "/org-logos/Somali_Football_Federation_logo.svg"
+  },
+  "safa": {
+    "src": "/org-logos/South_African_Football_Association_logo.svg"
+  },
+  "kfa": {
+    "src": "/org-logos/Korea_Football_Association_logo.svg"
+  },
+  "ssd": {
+    "src": "/org-logos/South_Sudan_Football_Association.png"
+  },
+  "rfef": {
+    "src": "/org-logos/Royal_Spanish_Football_Federation_logo.svg"
+  },
+  "sri": {
+    "src": "/org-logos/Football_Federation_of_Sri_Lanka_logo.svg"
+  },
+  "sdn": {
+    "src": "/org-logos/Sudan_FA_(logo).png"
+  },
+  "sur": {
+    "src": "/org-logos/Surinaamse_Voetbal_Bond_logo.svg"
+  },
+  "swe": {
+    "src": "/org-logos/Swedish_Football_Association_crest.svg"
+  },
+  "sui": {
+    "src": "/org-logos/Swiss_Football_Association_logo.svg"
+  },
+  "syr": {
+    "src": "/org-logos/Syrian_Football_Association_logo.svg"
+  },
+  "stp": {
+    "src": "/org-logos/Federação_Santomense_de_Futebol_Logo.png"
+  },
+  "tah": {
+    "src": "/org-logos/Tahiti_FA_(2016–).svg"
+  },
+  "tjk": {
+    "src": "/org-logos/Tajikistan_Football_Federation_Logo.svg"
+  },
+  "tan": {
+    "src": "/org-logos/Tanzania_FF_(logo).png"
+  },
+  "tha": {
+    "src": "/org-logos/Football_Association_of_Thailand_logo.svg"
+  },
+  "tls": {
+    "src": "/org-logos/Football_Federation_of_Timor-Leste_logo.svg"
+  },
+  "tog": {
+    "src": "/org-logos/Togolese_Football_Federation_logo.svg"
+  },
+  "tga": {
+    "src": "/org-logos/Tonga_FA_logo.png"
+  },
+  "tri": {
+    "src": "/org-logos/Trinidad_and_Tobago_Football_Association_logo.svg"
+  },
+  "tun": {
+    "src": "/org-logos/Tunisian_Football_Federation_logo.svg"
+  },
+  "tur": {
+    "src": "/org-logos/Turkish_Football_Federation_crest.svg"
+  },
+  "tkm": {
+    "src": "/org-logos/Football_Federation_of_Turkmenistan_logo.svg"
+  },
+  "tca": {
+    "src": "/org-logos/Turks_&_Caicos_Islands_Football_Association_(2015).png"
+  },
+  "tuv": {
+    "src": "/org-logos/TUV.jpeg"
+  },
+  "vir": {
+    "src": "/org-logos/US_Virgin_Islands_Soccer_Federation.svg"
+  },
+  "uga": {
+    "src": "/org-logos/Federation_of_Uganda_Football_Associations_logo.svg"
+  },
+  "ukr": {
+    "src": "/org-logos/Ukrainian_Association_of_Football_logo.svg"
+  },
+  "uae": {
+    "src": "/org-logos/United_Arab_Emirates_Football_Association_logo.svg"
+  },
+  "ussf": {
+    "src": "/org-logos/United_States_Soccer_Federation_logo.svg"
+  },
+  "auf": {
+    "src": "/org-logos/Auf_association_body_logo.svg"
+  },
+  "uzb": {
+    "src": "/org-logos/Uzbekistan_Football_Association.svg"
+  },
+  "vff": {
+    "src": "/org-logos/Vanuatu_Football_Federation_Logo.svg"
+  },
+  "ven": {
+    "src": "/org-logos/Logotipo_de_la_Federación_Venezolana_de_Fútbol.svg"
+  },
+  "vie": {
+    "src": "/org-logos/Vietnam_Football_Federation_logo.svg"
+  },
+  "wal": {
+    "src": "/org-logos/Football_Association_of_Wales_logo_(2019).svg"
+  },
+  "yem": {
+    "src": "/org-logos/Yemen_Football_Association.png"
+  },
+  "zam": {
+    "src": "/org-logos/ZambiaFA.png"
+  },
+  "zan": {
+    "src": "/org-logos/Zanzibar_FA.png"
+  },
+  "zim": {
+    "src": "/org-logos/Zifa-full-crest.png"
   }
 }
