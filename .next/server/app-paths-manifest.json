@@ -1,0 +1,9 @@
+{
+  "/organizations/[orgId]/page": "app/organizations/[orgId]/page.js",
+  "/organizations/page": "app/organizations/page.js",
+  "/competitions/page": "app/competitions/page.js",
+  "/organizations/[orgId]/competitions/[competitionId]/page": "app/organizations/[orgId]/competitions/[competitionId]/page.js",
+  "/icon.png/route": "app/icon.png/route.js",
+  "/organizations/[orgId]/competitions/[competitionId]/editions/[editionId]/page": "app/organizations/[orgId]/competitions/[competitionId]/editions/[editionId]/page.js",
+  "/page": "app/page.js"
+}

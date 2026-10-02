@@ -1,14 +1,36 @@
-node_modules
-.next
-out
-.env*.local
-.DS_Store
+# Dependencies
+node_modules/
 
-# Yarn Berry
-.pnp.*
+# Yarn (keep the release binary and config, ignore the rest)
 .yarn/*
-!.yarn/patches
-!.yarn/plugins
 !.yarn/releases
+!.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+.pnp.*
+
+# Next.js (apps/web)
+apps/web/.next/
+apps/web/out/
+apps/web/next-env.d.ts
+apps/web/tsconfig.tsbuildinfo
+
+# Expo / React Native (apps/mobile)
+apps/mobile/.expo/
+apps/mobile/dist/
+apps/mobile/web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Env files
+.env
+.env.local
+.env*.local
+
+# OS / editor
+.DS_Store
+*.log
+.vscode/

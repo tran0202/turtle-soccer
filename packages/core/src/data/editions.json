@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "world-cup-2026",
+    "competitionId": "world-cup",
+    "label": "2026",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Canada",
+        "code": "CAN"
+      },
+      {
+        "name": "Mexico",
+        "code": "MEX"
+      },
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2026-06-11",
+    "endDate": "2026-07-19",
+    "teams": 48,
+    "champion": "Spain",
+    "runnerUp": "Argentina",
+    "thirdPlace": "England",
+    "fourthPlace": "France",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "The first World Cup hosted by three countries, and the first at the expanded 48-team format. Spain won 1-0 after extra time, denying Argentina back-to-back titles — a second title for Spain, extending an unbeaten run that reached 38 matches (a record for a European team) and conceding just one goal across the whole tournament, a record for a champion.",
+    "topScorers": [
+      {
+        "name": "Kylian Mbappé",
+        "goals": 10,
+        "countryCode": "FRA"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2022",
+    "competitionId": "world-cup",
+    "label": "2022",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Qatar",
+        "code": "QAT"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2022-11-20",
+    "endDate": "2022-12-18",
+    "teams": 32,
+    "champion": "Argentina",
+    "runnerUp": "France",
+    "thirdPlace": "Croatia",
+    "fourthPlace": "Morocco",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Argentina won on penalties after a 3-3 final against France, widely regarded as one of the greatest finals in history.",
+    "topScorers": [
+      {
+        "name": "Kylian Mbappé",
+        "goals": 8,
+        "countryCode": "FRA"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2018",
+    "competitionId": "world-cup",
+    "label": "2018",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Russia",
+        "code": "RUS"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2018-06-14",
+    "endDate": "2018-07-15",
+    "teams": 32,
+    "champion": "France",
+    "runnerUp": "Croatia",
+    "thirdPlace": "Belgium",
+    "fourthPlace": "England",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "France's second World Cup title, built around a young Kylian Mbappé's breakout tournament.",
+    "topScorers": [
+      {
+        "name": "Harry Kane",
+        "goals": 6,
+        "countryCode": "ENG"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2014",
+    "competitionId": "world-cup",
+    "label": "2014",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Brazil",
+        "code": "BRA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2014-06-12",
+    "endDate": "2014-07-13",
+    "teams": 32,
+    "champion": "Germany",
+    "runnerUp": "Argentina",
+    "thirdPlace": "Netherlands",
+    "fourthPlace": "Brazil",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Germany's fourth title, won 1-0 after extra time on a Mario Götze volley in the 113th minute at the Maracanã — their first major title since Euro 1996 and first World Cup since reunification. Host Brazil's run ended in the infamous semifinal 'Mineirazo,' a 7-1 defeat to Germany that remains the worst loss by a host nation in World Cup history, with five of Germany's goals scored in the first 29 minutes.",
+    "topScorers": [
+      {
+        "name": "James Rodríguez",
+        "goals": 6,
+        "countryCode": "COL"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2010",
+    "competitionId": "world-cup",
+    "label": "2010",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "South Africa",
+        "code": "RSA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2010-06-11",
+    "endDate": "2010-07-11",
+    "teams": 32,
+    "champion": "Spain",
+    "runnerUp": "Netherlands",
+    "thirdPlace": "Germany",
+    "fourthPlace": "Uruguay",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "The first World Cup held in Africa. Spain won their first title, beating the Netherlands 1-0 after extra time on Andrés Iniesta's 116th-minute winner at Soccer City, Johannesburg — becoming the first team ever to win the World Cup after losing their opening match. Four players finished tied on 5 goals; Thomas Müller was awarded the Golden Boot on the tiebreaker of most assists (3, versus 1 each for the other three).",
+    "topScorers": [
+      {
+        "name": "Thomas Müller",
+        "goals": 5,
+        "countryCode": "GER"
+      },
+      {
+        "name": "David Villa",
+        "goals": 5,
+        "countryCode": "ESP"
+      },
+      {
+        "name": "Wesley Sneijder",
+        "goals": 5,
+        "countryCode": "NED"
+      },
+      {
+        "name": "Diego Forlán",
+        "goals": 5,
+        "countryCode": "URU"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2006",
+    "competitionId": "world-cup",
+    "label": "2006",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Germany",
+        "code": "GER"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2006-06-09",
+    "endDate": "2006-07-09",
+    "teams": 32,
+    "champion": "Italy",
+    "runnerUp": "France",
+    "thirdPlace": "Germany",
+    "fourthPlace": "Portugal",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Italy's fourth title, won 5-3 on penalties after a 1-1 draw at Berlin's Olympiastadion. The final is remembered above all for Zinedine Zidane's headbutt on Marco Materazzi in extra time, earning a red card in what was Zidane's last-ever match — he was nonetheless awarded the Golden Ball as the tournament's best player.",
+    "topScorers": [
+      {
+        "name": "Miroslav Klose",
+        "goals": 5,
+        "countryCode": "GER"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2002",
+    "competitionId": "world-cup",
+    "label": "2002",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Japan",
+        "code": "JPN"
+      },
+      {
+        "name": "South Korea",
+        "code": "KOR"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2002-05-31",
+    "endDate": "2002-06-30",
+    "teams": 32,
+    "champion": "Brazil",
+    "runnerUp": "Germany",
+    "thirdPlace": "Turkey",
+    "fourthPlace": "South Korea",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "The first World Cup held in Asia and the only one ever jointly hosted by two nations (FIFA amended its statutes in 2004 to bar future co-hosting bids). Brazil won a record fifth title, beating Germany 2-0 in Yokohama with both goals scored by Ronaldo, completing his comeback from career-threatening knee injuries that had sidelined him for nearly two years. Host South Korea became the first Asian team to reach a World Cup semifinal, before Turkey beat them 3-2 in the third-place match — a game that opened with the fastest goal in World Cup history, scored 10.8 seconds after kickoff.",
+    "topScorers": [
+      {
+        "name": "Ronaldo",
+        "goals": 8,
+        "countryCode": "BRA"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-1998",
+    "competitionId": "world-cup",
+    "label": "1998",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "France",
+        "code": "FRA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "1998-06-10",
+    "endDate": "1998-07-12",
+    "teams": 32,
+    "champion": "France",
+    "runnerUp": "Brazil",
+    "thirdPlace": "Croatia",
+    "fourthPlace": "Netherlands",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "France's first title, beating defending champions Brazil 3-0 in the final at the Stade de France — two goals from Zinedine Zidane and a stoppage-time strike from Emmanuel Petit. The first World Cup at the expanded 32-team format. Croatia's third-place finish came in their first-ever World Cup as an independent nation, having only been admitted to FIFA in 1992.",
+    "topScorers": [
+      {
+        "name": "Davor Šuker",
+        "goals": 6,
+        "countryCode": "CRO"
+      }
+    ]
+  },
+  {
+    "id": "womens-world-cup-2023",
+    "competitionId": "womens-world-cup",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Australia",
+        "code": "AUS"
+      },
+      {
+        "name": "New Zealand",
+        "code": "NZL"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2023-07-20",
+    "endDate": "2023-08-20",
+    "teams": 32,
+    "champion": "Spain",
+    "runnerUp": "England",
+    "thirdPlace": "Sweden",
+    "fourthPlace": "Australia",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Spain's first Women's World Cup title, in the first edition with an expanded 32-team field.",
+    "topScorers": [
+      {
+        "name": "Hinata Miyazawa",
+        "goals": 5,
+        "countryCode": "JPN"
+      }
+    ]
+  },
+  {
+    "id": "club-world-cup-2025",
+    "competitionId": "club-world-cup",
+    "label": "2025",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2025-06-14",
+    "endDate": "2025-07-13",
+    "teams": 32,
+    "champion": "Chelsea",
+    "runnerUp": "Paris Saint-Germain",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "Fluminense",
+      "Real Madrid"
+    ],
+    "notes": "The inaugural 32-team edition, expanded from the old 7-team annual format. Chelsea beat PSG 3-0 in the final at MetLife Stadium. FIFA opted not to hold a third-place match for this edition.",
+    "topScorers": [
+      {
+        "name": "Ángel Di María",
+        "goals": 4,
+        "countryCode": "ARG"
+      },
+      {
+        "name": "Gonzalo García",
+        "goals": 4,
+        "countryCode": "ESP"
+      },
+      {
+        "name": "Serhou Guirassy",
+        "goals": 4,
+        "countryCode": "GUI"
+      },
+      {
+        "name": "Marcos Leonardo",
+        "goals": 4,
+        "countryCode": "BRA"
+      }
+    ]
+  },
+  {
+    "id": "afcon-2023",
+    "competitionId": "afcon",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Ivory Coast",
+        "code": "CIV"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2024-01-13",
+    "endDate": "2024-02-11",
+    "teams": 24,
+    "champion": "Ivory Coast",
+    "runnerUp": "Nigeria",
+    "thirdPlace": "South Africa",
+    "fourthPlace": "DR Congo",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Hosts Ivory Coast won their third title despite barely surviving the group stage and changing head coach mid-tournament, beating Nigeria 2-1 in the final.",
+    "topScorers": [
+      {
+        "name": "Emilio Nsue",
+        "goals": 5,
+        "countryCode": "EQG"
+      }
+    ]
+  },
+  {
+    "id": "afc-asian-cup-2023",
+    "competitionId": "afc-asian-cup",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Qatar",
+        "code": "QAT"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2024-01-12",
+    "endDate": "2024-02-10",
+    "teams": 24,
+    "champion": "Qatar",
+    "runnerUp": "Jordan",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "Iran",
+      "South Korea"
+    ],
+    "notes": "Qatar defended their title on home soil, beating first-time finalists Jordan 3-1 thanks to an Akram Afif hat-trick of penalties.",
+    "topScorers": [
+      {
+        "name": "Akram Afif",
+        "goals": 8,
+        "countryCode": "QAT"
+      }
+    ]
+  },
+  {
+    "id": "euro-2024",
+    "competitionId": "euro",
+    "label": "2024",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Germany",
+        "code": "GER"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2024-06-14",
+    "endDate": "2024-07-14",
+    "teams": 24,
+    "champion": "Spain",
+    "runnerUp": "England",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "France",
+      "Netherlands"
+    ],
+    "notes": "Spain won a record fourth European Championship title, going undefeated through all seven matches.",
+    "topScorers": [
+      {
+        "name": "Harry Kane",
+        "goals": 3,
+        "countryCode": "ENG"
+      },
+      {
+        "name": "Georges Mikautadze",
+        "goals": 3,
+        "countryCode": "GEO"
+      },
+      {
+        "name": "Dani Olmo",
+        "goals": 3,
+        "countryCode": "ESP"
+      },
+      {
+        "name": "Jamal Musiala",
+        "goals": 3,
+        "countryCode": "GER"
+      },
+      {
+        "name": "Ivan Schranz",
+        "goals": 3,
+        "countryCode": "SVK"
+      },
+      {
+        "name": "Cody Gakpo",
+        "goals": 3,
+        "countryCode": "NED"
+      }
+    ]
+  },
+  {
+    "id": "champions-league-2023-24",
+    "competitionId": "champions-league",
+    "label": "2023-24",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "London",
+        "code": "ENG"
+      }
+    ],
+    "hostType": "final",
+    "startDate": "2023-06-27",
+    "endDate": "2024-06-01",
+    "teams": 32,
+    "champion": "Real Madrid",
+    "runnerUp": "Borussia Dortmund",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "Bayern Munich",
+      "Paris Saint-Germain"
+    ],
+    "notes": "Real Madrid's record-extending 15th European Cup / Champions League title.",
+    "topScorers": [
+      {
+        "name": "Harry Kane",
+        "goals": 8,
+        "countryCode": "ENG"
+      },
+      {
+        "name": "Antoine Griezmann",
+        "goals": 8,
+        "countryCode": "FRA"
+      }
+    ]
+  },
+  {
+    "id": "concacaf-gold-cup-2023",
+    "competitionId": "concacaf-gold-cup",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Canada",
+        "code": "CAN"
+      },
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2023-06-24",
+    "endDate": "2023-07-16",
+    "teams": 16,
+    "champion": "Mexico",
+    "runnerUp": "Panama",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "Jamaica",
+      "United States"
+    ],
+    "notes": "Mexico won a record ninth Gold Cup title, beating Panama 1-0 in the final at SoFi Stadium.",
+    "topScorers": [
+      {
+        "name": "Jesús Ferreira",
+        "goals": 7,
+        "countryCode": "USA"
+      }
+    ]
+  },
+  {
+    "id": "concacaf-gold-cup-2015",
+    "competitionId": "concacaf-gold-cup",
+    "label": "2015",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Canada",
+        "code": "CAN"
+      },
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2015-07-07",
+    "endDate": "2015-07-26",
+    "teams": 12,
+    "champion": "Mexico",
+    "runnerUp": "Jamaica",
+    "thirdPlace": "Panama",
+    "fourthPlace": "United States",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Jamaica's stunning run to their first-ever Gold Cup final (beating the defending-champion US 2-1 in the semifinal) forced the tournament's first third-place match since 2003. Panama beat the US on penalties after a 1-1 draw to take third.",
+    "topScorers": [
+      {
+        "name": "Clint Dempsey",
+        "goals": 7,
+        "countryCode": "USA"
+      }
+    ]
+  },
+  {
+    "id": "concacaf-gold-cup-1993",
+    "competitionId": "concacaf-gold-cup",
+    "label": "1993",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Mexico",
+        "code": "MEX"
+      },
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "1993-07-10",
+    "endDate": "1993-07-25",
+    "teams": 8,
+    "champion": "Mexico",
+    "runnerUp": "United States",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": [
+      "Costa Rica",
+      "Jamaica"
+    ],
+    "semifinalists": null,
+    "notes": "Mexico's first Gold Cup title, thrashing defending champions United States 4-0 in the final. The third-place match between Costa Rica and Jamaica finished 1-1 after extra time with no shootout held, so both were declared joint third — there was no official fourth place this edition.",
+    "topScorers": [
+      {
+        "name": "Zague",
+        "goals": 11,
+        "countryCode": "MEX"
+      }
+    ]
+  },
+  {
+    "id": "ofc-nations-cup-2024",
+    "competitionId": "ofc-nations-cup",
+    "label": "2024",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Fiji",
+        "code": "FIJ"
+      },
+      {
+        "name": "Vanuatu",
+        "code": "VAN"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2024-06-15",
+    "endDate": "2024-06-30",
+    "teams": 7,
+    "champion": "New Zealand",
+    "runnerUp": "Vanuatu",
+    "thirdPlace": "Tahiti",
+    "fourthPlace": "Fiji",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "New Zealand's sixth title, beating Vanuatu 3-0 in the final. New Caledonia withdrew days before the tournament citing civil unrest at home, leaving seven teams.",
+    "topScorers": [
+      {
+        "name": "Roy Krishna",
+        "goals": 5,
+        "countryCode": "FIJ"
+      }
+    ]
+  },
+  {
+    "id": "copa-america-2024",
+    "competitionId": "copa-america",
+    "label": "2024",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2024-06-20",
+    "endDate": "2024-07-14",
+    "teams": 16,
+    "champion": "Argentina",
+    "runnerUp": "Colombia",
+    "thirdPlace": "Uruguay",
+    "fourthPlace": "Canada",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Argentina defended their title, beating Colombia 1-0 after extra time in the final.",
+    "topScorers": [
+      {
+        "name": "Lautaro Martínez",
+        "goals": 5,
+        "countryCode": "ARG"
+      }
+    ]
+  },
+  {
+    "id": "copa-america-1983",
+    "competitionId": "copa-america",
+    "label": "1983",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Brazil",
+        "code": "BRA"
+      },
+      {
+        "name": "Uruguay",
+        "code": "URU"
+      }
+    ],
+    "hostType": "multi-final",
+    "startDate": "1983-08-10",
+    "endDate": "1983-11-04",
+    "teams": 10,
+    "champion": "Uruguay",
+    "runnerUp": "Brazil",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "Paraguay",
+      "Peru"
+    ],
+    "notes": "Uruguay's 12th title ended a 16-year wait for an official championship since 1967. The final was contested over two legs: Montevideo, then Salvador, Brazil.",
+    "topScorers": [
+      {
+        "name": "Carlos Aguilera",
+        "goals": 3,
+        "countryCode": "URU"
+      },
+      {
+        "name": "Jorge Luis Burruchaga",
+        "goals": 3,
+        "countryCode": "ARG"
+      },
+      {
+        "name": "Roberto Dinamite",
+        "goals": 3,
+        "countryCode": "BRA"
+      }
+    ]
+  },
+  {
+    "id": "copa-america-1967",
+    "competitionId": "copa-america",
+    "label": "1967",
+    "historicalName": "South American Championship",
+    "hosts": [
+      {
+        "name": "Uruguay",
+        "code": "URU"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "1967-01-17",
+    "endDate": "1967-02-02",
+    "teams": 6,
+    "champion": "Uruguay",
+    "runnerUp": "Argentina",
+    "thirdPlace": "Chile",
+    "fourthPlace": "Paraguay",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Played under the tournament's original name, the South American Championship — the last edition before its 1975 rebrand. Hosts Uruguay won their 11th title, beating Argentina 1-0 in the decisive match of the round-robin, played entirely at Estadio Centenario in Montevideo.",
+    "topScorers": [
+      {
+        "name": "Luis Artime",
+        "goals": 5,
+        "countryCode": "ARG"
+      }
+    ]
+  },
+  {
+    "id": "libertadores-2023",
+    "competitionId": "libertadores",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Rio de Janeiro",
+        "code": "BRA"
+      }
+    ],
+    "hostType": "final",
+    "startDate": "2023-02-07",
+    "endDate": "2023-11-04",
+    "teams": 47,
+    "champion": "Fluminense",
+    "runnerUp": "Boca Juniors",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": [
+      "Internacional",
+      "Palmeiras"
+    ],
+    "notes": "Fluminense's first Copa Libertadores title, won at their home Maracanã stadium.",
+    "topScorers": [
+      {
+        "name": "Germán Cano",
+        "goals": 13,
+        "countryCode": "ARG"
+      }
+    ]
+  },
+  {
+    "id": "liga-profesional-argentina-2023",
+    "competitionId": "liga-profesional-argentina",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Argentina",
+        "code": "ARG"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-01-27",
+    "endDate": "2023-07-30",
+    "teams": 28,
+    "champion": "River Plate",
+    "runnerUp": "Talleres (Córdoba)",
+    "thirdPlace": "San Lorenzo",
+    "fourthPlace": "Lanús",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "River Plate's 38th national league title, won with two matches to spare in a single round-robin format.",
+    "topScorers": [
+      {
+        "name": "Michael Santos",
+        "goals": 13,
+        "countryCode": "URU"
+      },
+      {
+        "name": "Pablo Vegetti",
+        "goals": 13,
+        "countryCode": "ARG"
+      }
+    ]
+  },
+  {
+    "id": "brasileirao-2023",
+    "competitionId": "brasileirao",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Brazil",
+        "code": "BRA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-04-15",
+    "endDate": "2023-12-06",
+    "teams": 20,
+    "champion": "Palmeiras",
+    "runnerUp": "Grêmio",
+    "thirdPlace": "Atlético Mineiro",
+    "fourthPlace": "Flamengo",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Palmeiras' 12th Brazilian title, clinched on the final matchday with a 1-1 draw against Cruzeiro.",
+    "topScorers": [
+      {
+        "name": "Paulinho",
+        "goals": 20,
+        "countryCode": "BRA"
+      }
+    ]
+  },
+  {
+    "id": "categoria-primera-a-2023-finalizacion",
+    "competitionId": "categoria-primera-a",
+    "label": "2023 Finalización",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Colombia",
+        "code": "COL"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-01-24",
+    "endDate": "2023-12-13",
+    "teams": 20,
+    "champion": "Atlético Junior",
+    "runnerUp": "Deportivo Independiente Medellín",
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Junior's 10th league title, won on penalties after a 4-4 aggregate draw. Colombia's league is split into two independent tournaments (Apertura and Finalización) each year rather than one full season — this edition covers the Finalización tournament specifically. Millonarios won the 2023 Apertura.",
+    "topScorers": [
+      {
+        "name": "Carlos Bacca",
+        "goals": 18,
+        "countryCode": "COL"
+      }
+    ]
+  },
+  {
+    "id": "epl-2023-24",
+    "competitionId": "epl-season",
+    "label": "2023-24",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "England",
+        "code": "ENG"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-08-11",
+    "endDate": "2024-05-19",
+    "teams": 20,
+    "champion": "Manchester City",
+    "runnerUp": "Arsenal",
+    "thirdPlace": "Liverpool",
+    "fourthPlace": "Aston Villa",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Manchester City's fourth consecutive title, a first for an English top-flight club.",
+    "topScorers": [
+      {
+        "name": "Erling Haaland",
+        "goals": 27,
+        "countryCode": "NOR"
+      }
+    ]
+  },
+  {
+    "id": "ligue-1-2023-24",
+    "competitionId": "ligue-1",
+    "label": "2023-24",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "France",
+        "code": "FRA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-08-11",
+    "endDate": "2024-05-19",
+    "teams": 18,
+    "champion": "Paris Saint-Germain",
+    "runnerUp": "Monaco",
+    "thirdPlace": "Brest",
+    "fourthPlace": "Lille",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "PSG's record-extending 12th Ligue 1 title, secured with three matches to spare.",
+    "topScorers": [
+      {
+        "name": "Kylian Mbappé",
+        "goals": 27,
+        "countryCode": "FRA"
+      }
+    ]
+  },
+  {
+    "id": "bundesliga-2023-24",
+    "competitionId": "bundesliga",
+    "label": "2023-24",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Germany",
+        "code": "GER"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-08-18",
+    "endDate": "2024-05-18",
+    "teams": 18,
+    "champion": "Bayer Leverkusen",
+    "runnerUp": "VfB Stuttgart",
+    "thirdPlace": "Bayern Munich",
+    "fourthPlace": "RB Leipzig",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Bayer Leverkusen's first-ever Bundesliga title, won as the first team in league history to go the entire season unbeaten, ending Bayern Munich's run of eleven consecutive titles.",
+    "topScorers": [
+      {
+        "name": "Harry Kane",
+        "goals": 36,
+        "countryCode": "ENG"
+      }
+    ]
+  },
+  {
+    "id": "la-liga-2023-24",
+    "competitionId": "la-liga",
+    "label": "2023-24",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Spain",
+        "code": "ESP"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-08-11",
+    "endDate": "2024-05-26",
+    "teams": 20,
+    "champion": "Real Madrid",
+    "runnerUp": "Barcelona",
+    "thirdPlace": "Girona",
+    "fourthPlace": "Atlético Madrid",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Real Madrid's record-extending 36th title, clinched with four matches to spare. Girona's 3rd-place finish was a historic first top-three result for the club.",
+    "topScorers": [
+      {
+        "name": "Artem Dovbyk",
+        "goals": 24,
+        "countryCode": "UKR"
+      }
+    ]
+  },
+  {
+    "id": "primera-division-uruguay-2023",
+    "competitionId": "primera-division-uruguay",
+    "label": "2023",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Uruguay",
+        "code": "URU"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2023-02-04",
+    "endDate": "2023-12-16",
+    "teams": 16,
+    "champion": "Liverpool (Montevideo)",
+    "runnerUp": "Peñarol",
+    "thirdPlace": "Nacional",
+    "fourthPlace": "Defensor Sporting",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Liverpool FC's first-ever Uruguayan top-flight title, beating Peñarol 3-0 on aggregate in the championship final. Third and fourth place reflect Copa Libertadores qualification order rather than a single aggregate table, since the season is decided through Apertura/Clausura tournaments and a championship playoff.",
+    "topScorers": [
+      {
+        "name": "Ignacio Ramírez",
+        "goals": 19,
+        "countryCode": "URU"
+      }
+    ]
+  }
+]

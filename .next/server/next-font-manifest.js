@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/minhthontran/dev/turtle-soccer/app/layout\":[\"static/media/86339167d940b282-s.p.woff2\",\"static/media/97ac91773d3121b2-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
