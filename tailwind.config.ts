@@ -14,6 +14,7 @@ const config: Config = {
         turtle: {
           blue: "#2B34DE",
           green: "#1C8A4B",
+          amber: "#B45309",
         },
       },
       fontFamily: {

@@ -6,10 +6,15 @@ import editionLogos from "@/data/edition-logos.json";
 // in CompetitionMark.tsx). Everyone else falls back to the initials badge.
 const EDITION_LOGOS: Record<string, { src: string }> = editionLogos;
 
+// Unlike OrgMark/CompetitionMark, these logos are mostly portrait-oriented
+// tournament emblems (the 2022 World Cup logo is roughly 0.8:1, Euro 2024
+// roughly 0.76:1) rather than wide wordmarks, so a near-square box fits
+// actual content far better than a wide one — a wide box here just leaves
+// a lot of empty space on either side of a narrow, tall logo.
 const SIZE_CLASSES = {
-  sm: "h-[70px] w-[224px]",
-  md: "h-[100px] w-[320px]",
-  lg: "h-[125px] w-[400px]",
+  sm: "h-[70px] w-[70px]",
+  md: "h-[100px] w-[100px]",
+  lg: "h-[125px] w-[125px]",
 } as const;
 
 export function EditionMark({

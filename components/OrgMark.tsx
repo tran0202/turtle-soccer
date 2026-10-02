@@ -18,11 +18,16 @@ const ORG_LOGOS: Record<string, { src: string }> = orgLogos;
 // rendering three times as wide as everything else at the same height.
 const SIZE_CLASSES = {
   sm: "h-[100px] w-[175px]",
-  md: "h-[100px] w-[175px]",
+  // A proportional box (1/3 of its row, with height derived from the same
+  // 1.75:1 ratio via aspect-ratio) rather than a fixed pixel box — scales
+  // down naturally on narrow screens instead of staying a fixed size that's
+  // too wide relative to the viewport, while still looking proportionate on
+  // wide screens since it's always relative to its own row's width.
+  md: "w-1/3 aspect-[1.75]",
   lg: "h-[125px] w-[220px]",
   // Narrower box for compact grids (e.g. the 2-column cards on an org's own
   // page) where excess box width crowds out the name text next to it.
-  card: "h-20 w-[140px]",
+  card: "w-1/3 aspect-[1.75]",
 } as const;
 
 // InitialsBadge doesn't know about "card" — it's a box-width concern specific

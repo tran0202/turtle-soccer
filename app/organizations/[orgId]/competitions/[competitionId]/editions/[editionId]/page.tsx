@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getAllEditionIds,
@@ -5,6 +6,7 @@ import {
   getOrganization,
   getBreadcrumbAncestors,
   getCompetition,
+  getAdjacentEditions,
 } from "@/lib/data";
 import { Flag } from "@/components/Flag";
 import { EditionMark } from "@/components/EditionMark";
@@ -46,6 +48,7 @@ export default function EditionPage({
   }
 
   const ancestors = getBreadcrumbAncestors(org.id);
+  const { previous, next } = getAdjacentEditions(edition.id);
 
   return (
     <div>
@@ -64,11 +67,38 @@ export default function EditionPage({
         ]}
       />
 
-      <div className="flex items-center gap-3 mt-4 mb-8">
-        <EditionMark editionId={edition.id} editionLabel={edition.label} size="lg" />
-        <h1 className="font-display text-6xl uppercase tracking-tight">
-          {edition.label} {edition.historicalName ?? competition.name}
-        </h1>
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 mt-4 mb-8">
+        <div>
+          {previous && (
+            <Link
+              href={`/organizations/${org.id}/competitions/${competition.id}/editions/${previous.id}`}
+              className="font-display text-3xl sm:text-4xl uppercase tracking-tight text-turtle-amber/60 hover:text-turtle-amber transition-colors whitespace-nowrap"
+            >
+              &lsaquo; {previous.label}
+            </Link>
+          )}
+        </div>
+        <div className="flex items-center justify-center gap-3">
+          <span className="sm:hidden">
+            <EditionMark editionId={edition.id} editionLabel={edition.label} size="md" />
+          </span>
+          <span className="hidden sm:inline">
+            <EditionMark editionId={edition.id} editionLabel={edition.label} size="lg" />
+          </span>
+          <h1 className="font-display text-5xl sm:text-6xl uppercase tracking-tight">
+            {edition.label} {edition.historicalName ?? competition.name}
+          </h1>
+        </div>
+        <div className="text-right">
+          {next && (
+            <Link
+              href={`/organizations/${org.id}/competitions/${competition.id}/editions/${next.id}`}
+              className="font-display text-3xl sm:text-4xl uppercase tracking-tight text-turtle-amber/60 hover:text-turtle-amber transition-colors whitespace-nowrap"
+            >
+              {next.label} &rsaquo;
+            </Link>
+          )}
+        </div>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">

@@ -7,6 +7,14 @@
 //
 // Covers all 211 current FIFA member associations plus Monaco (not a FIFA
 // member, but included since AS Monaco is referenced via lib/clubs.ts).
+//
+// A few countries have officially renamed since some of the editions in our
+// data took place (e.g. Turkey → Türkiye, May 2022; Czech Republic →
+// Czechia, April 2026). Rather than retroactively rewriting history — a 2002
+// edition should say "Turkey", not "Türkiye", since that's what the country
+// was actually called at the time — both the old and new names are listed
+// here, aliased to the same code. Use whichever name was correct for the
+// specific edition's date; both resolve to the same flag.
 const COUNTRY_CODES: Record<string, string> = {
   Afghanistan: "AFG",
   Albania: "ALB",
@@ -60,6 +68,7 @@ const COUNTRY_CODES: Record<string, string> = {
   Cuba: "CUB",
   Curaçao: "CUW",
   Cyprus: "CYP",
+  "Czech Republic": "CZE",
   "Czechia": "CZE",
   "DR Congo": "COD",
   Denmark: "DEN",
@@ -203,6 +212,7 @@ const COUNTRY_CODES: Record<string, string> = {
   Tonga: "TGA",
   "Trinidad and Tobago": "TRI",
   Tunisia: "TUN",
+  Turkey: "TUR",
   Türkiye: "TUR",
   Turkmenistan: "TKM",
   "Turks and Caicos Islands": "TCA",

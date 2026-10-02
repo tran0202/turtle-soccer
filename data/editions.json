@@ -98,6 +98,175 @@
     ]
   },
   {
+    "id": "world-cup-2014",
+    "competitionId": "world-cup",
+    "label": "2014",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Brazil",
+        "code": "BRA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2014-06-12",
+    "endDate": "2014-07-13",
+    "teams": 32,
+    "champion": "Germany",
+    "runnerUp": "Argentina",
+    "thirdPlace": "Netherlands",
+    "fourthPlace": "Brazil",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Germany's fourth title, won 1-0 after extra time on a Mario Götze volley in the 113th minute at the Maracanã — their first major title since Euro 1996 and first World Cup since reunification. Host Brazil's run ended in the infamous semifinal 'Mineirazo,' a 7-1 defeat to Germany that remains the worst loss by a host nation in World Cup history, with five of Germany's goals scored in the first 29 minutes.",
+    "topScorers": [
+      {
+        "name": "James Rodríguez",
+        "goals": 6,
+        "countryCode": "COL"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2010",
+    "competitionId": "world-cup",
+    "label": "2010",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "South Africa",
+        "code": "RSA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2010-06-11",
+    "endDate": "2010-07-11",
+    "teams": 32,
+    "champion": "Spain",
+    "runnerUp": "Netherlands",
+    "thirdPlace": "Germany",
+    "fourthPlace": "Uruguay",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "The first World Cup held in Africa. Spain won their first title, beating the Netherlands 1-0 after extra time on Andrés Iniesta's 116th-minute winner at Soccer City, Johannesburg — becoming the first team ever to win the World Cup after losing their opening match. Four players finished tied on 5 goals; Thomas Müller was awarded the Golden Boot on the tiebreaker of most assists (3, versus 1 each for the other three).",
+    "topScorers": [
+      {
+        "name": "Thomas Müller",
+        "goals": 5,
+        "countryCode": "GER"
+      },
+      {
+        "name": "David Villa",
+        "goals": 5,
+        "countryCode": "ESP"
+      },
+      {
+        "name": "Wesley Sneijder",
+        "goals": 5,
+        "countryCode": "NED"
+      },
+      {
+        "name": "Diego Forlán",
+        "goals": 5,
+        "countryCode": "URU"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2006",
+    "competitionId": "world-cup",
+    "label": "2006",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Germany",
+        "code": "GER"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "2006-06-09",
+    "endDate": "2006-07-09",
+    "teams": 32,
+    "champion": "Italy",
+    "runnerUp": "France",
+    "thirdPlace": "Germany",
+    "fourthPlace": "Portugal",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Italy's fourth title, won 5-3 on penalties after a 1-1 draw at Berlin's Olympiastadion. The final is remembered above all for Zinedine Zidane's headbutt on Marco Materazzi in extra time, earning a red card in what was Zidane's last-ever match — he was nonetheless awarded the Golden Ball as the tournament's best player.",
+    "topScorers": [
+      {
+        "name": "Miroslav Klose",
+        "goals": 5,
+        "countryCode": "GER"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2002",
+    "competitionId": "world-cup",
+    "label": "2002",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Japan",
+        "code": "JPN"
+      },
+      {
+        "name": "South Korea",
+        "code": "KOR"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2002-05-31",
+    "endDate": "2002-06-30",
+    "teams": 32,
+    "champion": "Brazil",
+    "runnerUp": "Germany",
+    "thirdPlace": "Turkey",
+    "fourthPlace": "South Korea",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "The first World Cup held in Asia and the only one ever jointly hosted by two nations (FIFA amended its statutes in 2004 to bar future co-hosting bids). Brazil won a record fifth title, beating Germany 2-0 in Yokohama with both goals scored by Ronaldo, completing his comeback from career-threatening knee injuries that had sidelined him for nearly two years. Host South Korea became the first Asian team to reach a World Cup semifinal, before Turkey beat them 3-2 in the third-place match — a game that opened with the fastest goal in World Cup history, scored 10.8 seconds after kickoff.",
+    "topScorers": [
+      {
+        "name": "Ronaldo",
+        "goals": 8,
+        "countryCode": "BRA"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-1998",
+    "competitionId": "world-cup",
+    "label": "1998",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "France",
+        "code": "FRA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "1998-06-10",
+    "endDate": "1998-07-12",
+    "teams": 32,
+    "champion": "France",
+    "runnerUp": "Brazil",
+    "thirdPlace": "Croatia",
+    "fourthPlace": "Netherlands",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "France's first title, beating defending champions Brazil 3-0 in the final at the Stade de France — two goals from Zinedine Zidane and a stoppage-time strike from Emmanuel Petit. The first World Cup at the expanded 32-team format. Croatia's third-place finish came in their first-ever World Cup as an independent nation, having only been admitted to FIFA in 1992.",
+    "topScorers": [
+      {
+        "name": "Davor Šuker",
+        "goals": 6,
+        "countryCode": "CRO"
+      }
+    ]
+  },
+  {
     "id": "womens-world-cup-2023",
     "competitionId": "womens-world-cup",
     "label": "2023",
@@ -517,12 +686,12 @@
     "historicalName": null,
     "hosts": [
       {
-        "name": "Uruguay",
-        "code": "URU"
-      },
-      {
         "name": "Brazil",
         "code": "BRA"
+      },
+      {
+        "name": "Uruguay",
+        "code": "URU"
       }
     ],
     "hostType": "multi-final",

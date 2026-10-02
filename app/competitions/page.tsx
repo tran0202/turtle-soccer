@@ -16,11 +16,20 @@ const GROUP_ORDER: { level: string; title: string; subGroup: boolean }[] = [
 ];
 
 function CompetitionRow({ c, org }: { c: Competition; org: Organization }) {
+  const scopeAndYear = (
+    <>
+      <div className="text-sm uppercase tracking-wide text-turtle-green">
+        {c.scope} · {c.gender}
+      </div>
+      <div className="text-sm text-ink/40 mt-0.5">since {c.founded}</div>
+    </>
+  );
+
   return (
     <li className="border-b border-paper-line">
       <Link
         href={`/organizations/${org.id}/competitions/${c.id}`}
-        className="group flex items-center justify-between gap-6 py-5 hover:bg-paper-surface transition-colors pl-24 pr-2 -mx-2"
+        className="group flex sm:items-center sm:justify-between gap-6 py-5 hover:bg-paper-surface transition-colors pl-24 pr-2 -mx-2"
       >
         <div className="flex items-center gap-3">
           <CompetitionMark competitionId={c.id} competitionName={c.name} size="md" />
@@ -29,13 +38,11 @@ function CompetitionRow({ c, org }: { c: Competition; org: Organization }) {
               {c.name}
             </div>
             <div className="text-base text-ink/50 mt-0.5">{c.frequency}</div>
+            <div className="mt-2 sm:hidden">{scopeAndYear}</div>
           </div>
         </div>
-        <div className="text-right shrink-0">
-          <div className="text-sm uppercase tracking-wide text-turtle-green">
-            {c.scope} · {c.gender}
-          </div>
-          <div className="text-sm text-ink/40 mt-0.5">since {c.founded}</div>
+        <div className="hidden sm:block sm:text-right shrink-0">
+          {scopeAndYear}
         </div>
       </Link>
     </li>

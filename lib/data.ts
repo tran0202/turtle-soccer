@@ -146,6 +146,27 @@ export function getEdition(id: string): Edition | undefined {
   return (editions as Edition[]).find((e) => e.id === id);
 }
 
+// The editions immediately before and after this one, chronologically,
+// within the same competition — e.g. for World Cup 2022, previous is 2018
+// and next is 2026. null at either end of a competition's history.
+export function getAdjacentEditions(editionId: string): {
+  previous: Edition | null;
+  next: Edition | null;
+} {
+  const edition = getEdition(editionId);
+  if (!edition) return { previous: null, next: null };
+
+  // Newest-first order, so the array index right after this one is older
+  // (previous), and the index right before it is newer (next).
+  const siblings = getEditionsByCompetition(edition.competitionId);
+  const index = siblings.findIndex((e) => e.id === editionId);
+
+  return {
+    previous: index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : null,
+    next: index > 0 ? siblings[index - 1] : null,
+  };
+}
+
 export function getAllOrgIds(): string[] {
   return getOrganizations().map((o) => o.id);
 }

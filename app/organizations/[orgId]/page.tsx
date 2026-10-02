@@ -39,22 +39,22 @@ export default function OrganizationPage({
         ]}
       />
 
-      <div className="flex items-start gap-3 mt-4 mb-10">
-        <OrgMark orgId={org.id} orgName={org.name} size="lg" />
+      <div className="flex flex-col sm:flex-row sm:items-start gap-3 mt-4 mb-10">
+        <div className="self-center sm:self-auto">
+          <OrgMark orgId={org.id} orgName={org.name} size="lg" />
+        </div>
         <div>
-          <div className="flex items-baseline gap-3 flex-wrap">
-            <h1 className="font-display text-6xl uppercase tracking-tight">
-              {org.name}
-            </h1>
-            <span className="text-base text-ink/50">
-              {org.fullName}
-              {org.country && (
-                <>
-                  {" "}
-                  &middot; <NameWithFlag name={org.country} isCountry size="sm" />
-                </>
-              )}
-            </span>
+          <h1 className="font-display text-6xl uppercase tracking-tight">
+            {org.name}
+          </h1>
+          <div className="text-base text-ink/50 mt-1">
+            {org.fullName}
+            {org.country && (
+              <>
+                {" "}
+                &middot; <NameWithFlag name={org.country} isCountry size="sm" />
+              </>
+            )}
           </div>
           <p className="text-ink/60 max-w-lg mt-2">{org.description}</p>
           {org.confederationHistory && (
@@ -68,99 +68,111 @@ export default function OrganizationPage({
         </div>
       </div>
 
-      {children.length > 0 && (
-        <>
-          <h2 className="text-sm uppercase tracking-wide text-turtle-green mb-3">
-            {(() => {
-              if (org.level === "global") return "Confederations";
-              if (org.level !== "confederation") return "Members";
-              const associateCount = children.filter(
-                (c) => c.confederationStatus === "associate"
-              ).length;
-              const fullCount = children.length - associateCount;
-              return associateCount > 0
-                ? `National Associations (${fullCount} full, ${associateCount} associate)`
-                : `National Associations (${children.length})`;
-            })()}
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-            {children.map((child) => {
-              const associationCount =
-                org.level === "global"
-                  ? getChildOrganizations(child.id).length
-                  : null;
-              return (
-                <li key={child.id} className="border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]">
-                  <Link
-                    href={`/organizations/${child.id}`}
-                    className="group flex items-center gap-3 p-4 hover:bg-paper-surface transition-colors h-full rounded-lg"
-                  >
-                    <OrgMark orgId={child.id} orgName={child.name} size="card" />
-                    <div>
-                      <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
-                        {child.name}
-                      </div>
-                      <div className="text-base text-ink/50 mt-0.5">
-                        {associationCount !== null
-                          ? `${associationCount} national association${associationCount === 1 ? "" : "s"}`
-                          : child.country ? (
-                          <NameWithFlag
-                            name={child.country}
-                            isCountry
-                            size="sm"
-                          />
-                        ) : (
-                          child.fullName
+      {(() => {
+        const membersSection = children.length > 0 && (
+          <>
+            <h2 className="text-sm uppercase tracking-wide text-turtle-green mb-3">
+              {(() => {
+                if (org.level === "global") return "Confederations";
+                if (org.level !== "confederation") return "Members";
+                const associateCount = children.filter(
+                  (c) => c.confederationStatus === "associate"
+                ).length;
+                const fullCount = children.length - associateCount;
+                return associateCount > 0
+                  ? `National Associations (${fullCount} full, ${associateCount} associate)`
+                  : `National Associations (${children.length})`;
+              })()}
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+              {children.map((child) => {
+                const associationCount =
+                  org.level === "global"
+                    ? getChildOrganizations(child.id).length
+                    : null;
+                return (
+                  <li key={child.id} className="border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]">
+                    <Link
+                      href={`/organizations/${child.id}`}
+                      className="group flex items-center gap-3 p-4 hover:bg-paper-surface transition-colors h-full rounded-lg"
+                    >
+                      <OrgMark orgId={child.id} orgName={child.name} size="card" />
+                      <div>
+                        <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
+                          {child.name}
+                        </div>
+                        <div className="text-base text-ink/50 mt-0.5">
+                          {associationCount !== null
+                            ? `${associationCount} national association${associationCount === 1 ? "" : "s"}`
+                            : child.country ? (
+                            <NameWithFlag
+                              name={child.country}
+                              isCountry
+                              size="sm"
+                            />
+                          ) : (
+                            child.fullName
+                          )}
+                        </div>
+                        {child.confederationHistory && (
+                          <div className="text-xs text-ink/30 mt-0.5">
+                            {child.confederationHistory}
+                          </div>
+                        )}
+                        {child.fifaAffiliation && (
+                          <div className="text-xs text-ink/30 mt-0.5">
+                            {child.fifaAffiliation}
+                          </div>
                         )}
                       </div>
-                      {child.confederationHistory && (
-                        <div className="text-xs text-ink/30 mt-0.5">
-                          {child.confederationHistory}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        );
+
+        const competitionsSection = competitions.length > 0 && (
+          <>
+            <h2 className="text-sm uppercase tracking-wide text-turtle-green mb-3">
+              Competitions
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+              {competitions.map((t) => (
+                <li key={t.id} className="border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]">
+                  <Link
+                    href={`/organizations/${org.id}/competitions/${t.id}`}
+                    className="group flex items-center gap-4 p-4 hover:bg-paper-surface transition-colors h-full rounded-lg"
+                  >
+                    <div className="flex items-center gap-3 w-full">
+                      <CompetitionMark competitionId={t.id} competitionName={t.name} size="card" />
+                      <div>
+                        <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
+                          {t.name}
                         </div>
-                      )}
-                      {child.fifaAffiliation && (
-                        <div className="text-xs text-ink/30 mt-0.5">
-                          {child.fifaAffiliation}
+                        <div className="text-base text-ink/50 mt-0.5">
+                          {t.frequency}
                         </div>
-                      )}
+                      </div>
                     </div>
                   </Link>
                 </li>
-              );
-            })}
-          </ul>
-        </>
-      )}
+              ))}
+            </ul>
+          </>
+        );
 
-      {competitions.length > 0 && (
-        <>
-          <h2 className="text-sm uppercase tracking-wide text-turtle-green mb-3">
-            Competitions
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {competitions.map((t) => (
-              <li key={t.id} className="border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]">
-                <Link
-                  href={`/organizations/${org.id}/competitions/${t.id}`}
-                  className="group flex items-center gap-4 p-4 hover:bg-paper-surface transition-colors h-full rounded-lg"
-                >
-                  <div className="flex items-center gap-3">
-                    <CompetitionMark competitionId={t.id} competitionName={t.name} size="card" />
-                    <div>
-                      <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
-                        {t.name}
-                      </div>
-                      <div className="text-base text-ink/50 mt-0.5">
-                        {t.frequency}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+        // Competitions come first everywhere — they're the actual focus of
+        // the archive, while the association/confederation lists are more
+        // of a directory and are often quite long.
+        return (
+          <>
+            {competitionsSection}
+            {membersSection}
+          </>
+        );
+      })()}
 
       {children.length === 0 && competitions.length === 0 && (
         <p className="text-ink/40 text-base">Nothing on record here yet.</p>

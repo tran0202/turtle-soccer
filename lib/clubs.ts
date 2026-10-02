@@ -49,3 +49,53 @@ const CLUB_COUNTRY_CODES: Record<string, string> = {
 export function getClubCountryCode(name: string): string | undefined {
   return CLUB_COUNTRY_CODES[name];
 }
+
+// Short 3-letter codes for compact display (e.g. mobile edition-table rows),
+// parallel to how country names resolve to FIFA codes. Unlike countries,
+// clubs have no single official 3-letter standard — some of these are
+// genuinely how the club is commonly abbreviated (PSG, BVB, DIM, RMA), others
+// are a reasonable initials-based code made up for this purpose since no
+// widely-recognized one exists. Add an entry here alongside
+// CLUB_COUNTRY_CODES whenever a new club shows up in the data, checking for
+// collisions with existing codes.
+const CLUB_CODES: Record<string, string> = {
+  Arsenal: "ARS",
+  "Aston Villa": "AVL",
+  "Atlético Junior": "JUN",
+  "Atlético Madrid": "ATM",
+  "Atlético Mineiro": "CAM",
+  Barcelona: "BAR",
+  "Bayer Leverkusen": "LEV",
+  "Bayern Munich": "BAY",
+  "Boca Juniors": "BOC",
+  "Borussia Dortmund": "BVB",
+  Brest: "BRE",
+  Chelsea: "CHE",
+  "Defensor Sporting": "DEF",
+  "Deportivo Independiente Medellín": "DIM",
+  Flamengo: "FLA",
+  Fluminense: "FLU",
+  Girona: "GIR",
+  "Grêmio": "GRE",
+  Internacional: "INT",
+  "Lanús": "LAN",
+  Lille: "LIL",
+  Liverpool: "LIV",
+  "Liverpool (Montevideo)": "LIM",
+  "Manchester City": "MCI",
+  Monaco: "MON",
+  Nacional: "NAC",
+  Palmeiras: "PAL",
+  "Paris Saint-Germain": "PSG",
+  "Peñarol": "PEN",
+  "RB Leipzig": "RBL",
+  "Real Madrid": "RMA",
+  "River Plate": "RIV",
+  "San Lorenzo": "SLO",
+  "Talleres (Córdoba)": "TAL",
+  "VfB Stuttgart": "VFB",
+};
+
+export function getClubCode(name: string): string | undefined {
+  return CLUB_CODES[name];
+}

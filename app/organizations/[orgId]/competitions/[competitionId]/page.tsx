@@ -42,8 +42,10 @@ export default function CompetitionPage({
         ]}
       />
 
-      <div className="flex items-start gap-3 mt-4 mb-10">
-        <CompetitionMark competitionId={competition.id} competitionName={competition.name} size="lg" />
+      <div className="flex flex-col sm:flex-row sm:items-start gap-3 mt-4 mb-10">
+        <div className="self-center sm:self-auto">
+          <CompetitionMark competitionId={competition.id} competitionName={competition.name} size="lg" />
+        </div>
         <div>
           <div className="flex items-baseline gap-3 flex-wrap">
             <h1 className="font-display text-6xl uppercase tracking-tight">
@@ -85,7 +87,7 @@ export default function CompetitionPage({
 
         return (
           <>
-            <div className="grid grid-cols-[22rem_1fr_1fr_1fr_1fr] gap-4 px-4 pb-2">
+            <div className="hidden sm:grid grid-cols-[11rem_1fr_1fr_1fr_1fr] gap-4 px-4 pb-2">
               <div />
               <div className="text-sm uppercase tracking-wide text-turtle-green">
                 Champion
@@ -104,6 +106,26 @@ export default function CompetitionPage({
             <ul className="flex flex-col gap-3">
               {editions.map((e) => {
                 const isCountry = competition.scope === "national";
+
+                // Resolve the 3rd/4th slots to plain data once, rather than
+                // repeating this branching for both the desktop grid and the
+                // mobile layout below.
+                const slot3 = e.coThirdPlace
+                  ? { name: e.coThirdPlace[0], label: "Joint third" }
+                  : e.semifinalists
+                  ? { name: e.semifinalists[0], label: !usesSemifinalists ? "Semifinalist" : null }
+                  : e.thirdPlace
+                  ? { name: e.thirdPlace, label: usesSemifinalists ? "Third place" : null }
+                  : null;
+                const slot4 = e.coThirdPlace
+                  ? { name: e.coThirdPlace[1], label: "Joint third" }
+                  : e.semifinalists
+                  ? { name: e.semifinalists[1], label: !usesSemifinalists ? "Semifinalist" : null }
+                  : e.fourthPlace
+                  ? { name: e.fourthPlace, label: usesSemifinalists ? "Fourth place" : null }
+                  : null;
+                const slot4Color = e.coThirdPlace || e.semifinalists ? "text-ink/60" : "text-ink/40";
+
                 return (
                   <li
                     key={e.id}
@@ -111,83 +133,83 @@ export default function CompetitionPage({
                   >
                     <Link
                       href={`/organizations/${org.id}/competitions/${competition.id}/editions/${e.id}`}
-                      className="group grid grid-cols-[22rem_1fr_1fr_1fr_1fr] items-center gap-4 py-5 px-4 hover:bg-paper-surface transition-colors rounded-lg"
+                      className="group hover:bg-paper-surface transition-colors rounded-lg"
                     >
-                      <div className="flex items-center gap-3">
-                        <EditionMark editionId={e.id} editionLabel={e.label} size="sm" />
-                        <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
-                          {e.label}
+                      {/* Mobile: logo + year on the left, then each result as
+                          a compact flag-over-code chip, all on one row. */}
+                      <div className="sm:hidden flex items-center gap-3 py-4 px-3">
+                        <div className="flex items-center gap-1.5 shrink-0">
+                          <EditionMark editionId={e.id} editionLabel={e.label} size="sm" />
+                          <div className="font-display text-xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
+                            {e.label}
+                          </div>
+                        </div>
+                        <div className="flex-1 grid grid-cols-4">
+                          <span className="flex justify-center text-turtle-blue">
+                            <NameWithFlag name={e.champion} isCountry={isCountry} size="sm" compact />
+                          </span>
+                          <span className="flex justify-center text-turtle-green">
+                            <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="sm" compact />
+                          </span>
+                          <span className="flex justify-center text-ink/60">
+                            {slot3 ? (
+                              <NameWithFlag name={slot3.name} isCountry={isCountry} size="sm" compact />
+                            ) : (
+                              <span className="text-ink/30 text-xs">—</span>
+                            )}
+                          </span>
+                          <span className={`flex justify-center ${slot4Color}`}>
+                            {slot4 ? (
+                              <NameWithFlag name={slot4.name} isCountry={isCountry} size="sm" compact />
+                            ) : (
+                              <span className="text-ink/30 text-xs">—</span>
+                            )}
+                          </span>
                         </div>
                       </div>
-                      <div className="font-display text-3xl uppercase tracking-tight text-turtle-blue">
-                        <NameWithFlag name={e.champion} isCountry={isCountry} size="lg" />
-                      </div>
-                      <div className="font-display text-3xl uppercase tracking-tight">
-                        <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="lg" />
-                      </div>
-                      <div className="font-display text-3xl uppercase tracking-tight text-ink/60">
-                        {e.coThirdPlace ? (
-                          <>
-                            <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
-                              Joint third
-                            </div>
-                            <NameWithFlag name={e.coThirdPlace[0]} isCountry={isCountry} size="lg" />
-                          </>
-                        ) : e.semifinalists ? (
-                          <>
-                            {!usesSemifinalists && (
-                              <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
-                                Semifinalist
-                              </div>
-                            )}
-                            <NameWithFlag name={e.semifinalists[0]} isCountry={isCountry} size="lg" />
-                          </>
-                        ) : e.thirdPlace ? (
-                          <>
-                            {usesSemifinalists && (
-                              <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
-                                Third place
-                              </div>
-                            )}
-                            <NameWithFlag name={e.thirdPlace} isCountry={isCountry} size="lg" />
-                          </>
-                        ) : (
-                          <span className="text-ink/30">—</span>
-                        )}
-                      </div>
-                      <div
-                        className={`font-display text-3xl uppercase tracking-tight ${
-                          e.coThirdPlace || e.semifinalists ? "text-ink/60" : "text-ink/40"
-                        }`}
-                      >
-                        {e.coThirdPlace ? (
-                          <>
-                            <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
-                              Joint third
-                            </div>
-                            <NameWithFlag name={e.coThirdPlace[1]} isCountry={isCountry} size="lg" />
-                          </>
-                        ) : e.semifinalists ? (
-                          <>
-                            {!usesSemifinalists && (
-                              <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
-                                Semifinalist
-                              </div>
-                            )}
-                            <NameWithFlag name={e.semifinalists[1]} isCountry={isCountry} size="lg" />
-                          </>
-                        ) : e.fourthPlace ? (
-                          <>
-                            {usesSemifinalists && (
-                              <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
-                                Fourth place
-                              </div>
-                            )}
-                            <NameWithFlag name={e.fourthPlace} isCountry={isCountry} size="lg" />
-                          </>
-                        ) : (
-                          <span className="text-ink/30">—</span>
-                        )}
+
+                      {/* Desktop: full grid with names, flags, and labels. */}
+                      <div className="hidden sm:grid grid-cols-[11rem_1fr_1fr_1fr_1fr] items-center gap-4 py-5 px-4">
+                        <div className="flex items-center gap-3">
+                          <EditionMark editionId={e.id} editionLabel={e.label} size="sm" />
+                          <div className="font-display text-3xl uppercase tracking-tight group-hover:text-turtle-blue transition-colors">
+                            {e.label}
+                          </div>
+                        </div>
+                        <div className="font-display text-3xl uppercase tracking-tight text-turtle-blue">
+                          <NameWithFlag name={e.champion} isCountry={isCountry} size="lg" />
+                        </div>
+                        <div className="font-display text-3xl uppercase tracking-tight text-turtle-green">
+                          <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="lg" />
+                        </div>
+                        <div className="font-display text-3xl uppercase tracking-tight text-ink/60">
+                          {slot3 ? (
+                            <>
+                              {slot3.label && (
+                                <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
+                                  {slot3.label}
+                                </div>
+                              )}
+                              <NameWithFlag name={slot3.name} isCountry={isCountry} size="lg" />
+                            </>
+                          ) : (
+                            <span className="text-ink/30">—</span>
+                          )}
+                        </div>
+                        <div className={`font-display text-3xl uppercase tracking-tight ${slot4Color}`}>
+                          {slot4 ? (
+                            <>
+                              {slot4.label && (
+                                <div className="font-body normal-case text-xs tracking-normal text-ink/30 mb-0.5">
+                                  {slot4.label}
+                                </div>
+                              )}
+                              <NameWithFlag name={slot4.name} isCountry={isCountry} size="lg" />
+                            </>
+                          ) : (
+                            <span className="text-ink/30">—</span>
+                          )}
+                        </div>
                       </div>
                     </Link>
                   </li>
