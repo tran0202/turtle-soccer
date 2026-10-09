@@ -30,6 +30,12 @@
     "plugins": [
       "expo-font",
       "expo-splash-screen"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "71b00b60-1c10-4d81-b1f6-1c8953130bfa"
+      }
+    },
+    "owner": "turtle-soccer"
   }
 }

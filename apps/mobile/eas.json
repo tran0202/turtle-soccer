@@ -7,16 +7,19 @@
       "distribution": "internal",
       "ios": {
         "simulator": true
-      }
+      },
+      "corepack": true
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "corepack": true
     },
     "preview": {
       "distribution": "internal",
       "android": {
         "buildType": "apk"
-      }
+      },
+      "corepack": true
     }
   },
   "submit": {
