@@ -1,6 +1,9 @@
 {
+  "world-cup-2030": {
+    "src": "/edition-logos/2030_FIFA_World_Cup_Logo.svg"
+  },
   "world-cup-2026": {
-    "src": "/edition-logos/2026_FIFA_World_Cup_emblem.svg"
+    "src": "/edition-logos/2026_FIFA_World_Cup_emblem.svg.webp"
   },
   "world-cup-2022": {
     "src": "/edition-logos/2022_FIFA_World_Cup.svg"
@@ -23,47 +26,602 @@
   "world-cup-1998": {
     "src": "/edition-logos/1998_FIFA_World_Cup.svg"
   },
+  "world-cup-1994": {
+    "src": "/edition-logos/1994_FIFA_World_Cup.svg"
+  },
+  "world-cup-1990": {
+    "src": "/edition-logos/1990_FIFA_World_Cup.svg"
+  },
+  "world-cup-1986": {
+    "src": "/edition-logos/1986_FIFA_World_Cup.svg"
+  },
+  "world-cup-1982": {
+    "src": "/edition-logos/1982_FIFA_World_Cup.svg"
+  },
+  "world-cup-1978": {
+    "src": "/edition-logos/Logo_Mundial_78.svg"
+  },
+  "world-cup-1974": {
+    "src": "/edition-logos/FIFA_World_Cup_1974_-_emblem.svg"
+  },
+  "world-cup-1970": {
+    "src": "/edition-logos/1970_FIFA_World_Cup.svg"
+  },
+  "world-cup-1966": {
+    "src": "/edition-logos/1966_FIFA_World_Cup.svg"
+  },
+  "world-cup-1962": {
+    "src": "/edition-logos/1962_FIFA_World_Cup.svg"
+  },
+  "world-cup-1958": {
+    "src": "/edition-logos/1958_FIFA_World_Cup.svg"
+  },
+  "world-cup-1954": {
+    "src": "/edition-logos/1954_World_Cup.svg"
+  },
+  "world-cup-1950": {
+    "src": "/edition-logos/Poster_-_World_Cup_1950.jpg"
+  },
+  "world-cup-1938": {
+    "src": "/edition-logos/1938_fifa_worldcup_poster.jpg"
+  },
+  "world-cup-1934": {
+    "src": "/edition-logos/1934_fifa_worldcup_poster.jpg"
+  },
+  "world-cup-1930": {
+    "src": "/edition-logos/Uruguay_1930_World_Cup.jpg"
+  },
   "womens-world-cup-2023": {
     "src": "/edition-logos/Logo_of_the_2023_FIFA_Women's_World_Cup.svg"
+  },
+  "womens-world-cup-2019": {
+    "src": "/edition-logos/2019_FIFA_Women's_World_Cup.svg.webp"
+  },
+  "womens-world-cup-2015": {
+    "src": "/edition-logos/2015_FIFA_Women's_World_Cup.svg"
+  },
+  "womens-world-cup-2011": {
+    "src": "/edition-logos/2011_FIFA_Women's_World_Cup.svg"
+  },
+  "womens-world-cup-2007": {
+    "src": "/edition-logos/2007_FIFA_Women's_World_Cup.svg"
+  },
+  "womens-world-cup-2003": {
+    "src": "/edition-logos/2003_FIFA_Women's_World_Cup.svg"
+  },
+  "womens-world-cup-1999": {
+    "src": "/edition-logos/Logo_1999_FIFA_Women's_World_Cup.svg"
+  },
+  "womens-world-cup-1995": {
+    "src": "/edition-logos/1995_FIFA_Women's_World_Cup.png"
+  },
+  "womens-world-cup-1991": {
+    "src": "/edition-logos/1991_FIFA_Women's_World_Cup.png"
   },
   "club-world-cup-2025": {
     "src": "/edition-logos/2025_FIFA_Club_World_Cup.svg"
   },
+  "club-world-cup-2023": {
+    "src": "/edition-logos/2023_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2022": {
+    "src": "/edition-logos/2022_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2021": {
+    "src": "/edition-logos/2021_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2020": {
+    "src": "/edition-logos/2020_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2019": {
+    "src": "/edition-logos/2019_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2018": {
+    "src": "/edition-logos/2018_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2017": {
+    "src": "/edition-logos/2017_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2016": {
+    "src": "/edition-logos/2016_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2015": {
+    "src": "/edition-logos/2015_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2014": {
+    "src": "/edition-logos/2014_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2013": {
+    "src": "/edition-logos/2013_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2012": {
+    "src": "/edition-logos/2012_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2011": {
+    "src": "/edition-logos/2011_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2010": {
+    "src": "/edition-logos/2010_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2009": {
+    "src": "/edition-logos/2009_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2008": {
+    "src": "/edition-logos/2008_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2007": {
+    "src": "/edition-logos/2007_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2006": {
+    "src": "/edition-logos/2006_FIFA_Club_World_Cup.svg"
+  },
+  "club-world-cup-2005": {
+    "src": "/edition-logos/2005_FIFA_Club_World_Championship.svg"
+  },
+  "club-world-cup-2000": {
+    "src": "/edition-logos/2000_FIFA_Club_World_Championship.svg"
+  },
+  "afcon-2025": {
+    "src": "/edition-logos/2025_Africa_Cup_of_Nations_logo.svg"
+  },
   "afcon-2023": {
     "src": "/edition-logos/2023_Africa_Cup_of_Nations_logo.svg"
   },
+  "afcon-2021": {
+    "src": "/edition-logos/2021_Africa_Cup_of_Nations_logo.png"
+  },
+  "afcon-2019": {
+    "src": "/edition-logos/2019_Africa_Cup_of_Nations_logo.svg"
+  },
+  "afcon-2017": {
+    "src": "/edition-logos/2017_Africa_Cup_of_Nations_logo.png"
+  },
+  "afcon-2015": {
+    "src": "/edition-logos/2015_Africa_Cup_of_Nations_logo.png"
+  },
+  "afcon-2013": {
+    "src": "/edition-logos/2013_Africa_Cup_of_Nations.png"
+  },
+  "afcon-2012": {
+    "src": "/edition-logos/2012_Africa_Cup_of_Nations_logo.png"
+  },
+  "afcon-2010": {
+    "src": "/edition-logos/2010_Africa_Cup_of_Nations_logo.svg"
+  },
+  "afcon-2008": {
+    "src": "/edition-logos/2008_Africa_Cup_of_Nations_logo.svg"
+  },
+  "afcon-2006": {
+    "src": "/edition-logos/2006_Africa_Cup_of_Nations_logo.svg"
+  },
+  "afcon-2004": {
+    "src": "/edition-logos/2004_Africa_Cup_of_Nations_logo.svg"
+  },
+  "afcon-2002": {
+    "src": "/edition-logos/Mali_CAN2002.png"
+  },
+  "afcon-2000": {
+    "src": "/edition-logos/GhanaNigeria2000logo.png"
+  },
+  "afcon-1998": {
+    "src": "/edition-logos/Af98logo.png"
+  },
+  "afcon-1996": {
+    "src": "/edition-logos/CAN_1996_logo.jpg"
+  },
+  "afcon-1994": {
+    "src": "/edition-logos/1994_African_Cup_of_Nations_logo.jpg"
+  },
+  "afcon-1992": {
+    "src": "/edition-logos/African_Cup_of_Nations_(ACN)_1990.svg"
+  },
+  "afcon-1990": {
+    "src": "/edition-logos/CAN_Algerie_1990_logo.png"
+  },
+  "afcon-1988": {
+    "src": "/edition-logos/CAN_1988_(logo).png"
+  },
+  "afcon-1986": {
+    "src": "/edition-logos/CAN_1986_(logo).png"
+  },
+  "afcon-1984": {
+    "src": "/edition-logos/CAN_1984_(logo).png"
+  },
+  "afcon-1982": {
+    "src": "/edition-logos/CAN_1982_(logo).png"
+  },
+  "afcon-1980": {
+    "src": "/edition-logos/1980_Afcon_(logo).png"
+  },
+  "afcon-1978": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1976": {
+    "src": "/edition-logos/1976_Afcon_-_logo.png"
+  },
+  "afcon-1974": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1972": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1970": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1968": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1965": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1963": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1962": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1959": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
+  "afcon-1957": {
+    "src": "/edition-logos/The Abdel Aziz Abdullah Salem Trophy.jpeg"
+  },
   "afc-asian-cup-2023": {
-    "src": "/edition-logos/2023_AFC_Asian_Cup_logo.svg"
+    "src": "/edition-logos/2023_AFC_Asian_Cup_logo.svg.webp"
+  },
+  "afc-asian-cup-2019": {
+    "src": "/edition-logos/2019_AFC_Asian_Cup_logo.svg"
+  },
+  "afc-asian-cup-2015": {
+    "src": "/edition-logos/2015_AFC_Asian_Cup_logo.svg"
+  },
+  "afc-asian-cup-2011": {
+    "src": "/edition-logos/2011_AFC_Asian_Cup_full_logo.svg"
+  },
+  "afc-asian-cup-2007": {
+    "src": "/edition-logos/2007_Asian_Cup_Logo.svg"
+  },
+  "afc-asian-cup-2004": {
+    "src": "/edition-logos/2004_AFC_Asian_Cup_full_logo.svg"
+  },
+  "afc-asian-cup-2000": {
+    "src": "/edition-logos/2000_AFC_Asian_Cup_logo.svg"
+  },
+  "afc-asian-cup-1996": {
+    "src": "/edition-logos/1996_AFC_Asian_Cup_logo.svg"
+  },
+  "afc-asian-cup-1992": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1988": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1984": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1980": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1976": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1972": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1968": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1964": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1960": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
+  },
+  "afc-asian-cup-1956": {
+    "src": "/edition-logos/AFC_Asian_Cup.svg"
   },
   "euro-2024": {
     "src": "/edition-logos/UEFA_Euro_2024_Logo.svg"
   },
+  "euro-2020": {
+    "src": "/edition-logos/UEFA_Euro_2020_Logo.svg"
+  },
+  "euro-2016": {
+    "src": "/edition-logos/UEFA_Euro_2016_Logo.svg.webp"
+  },
+  "euro-2012": {
+    "src": "/edition-logos/UEFA_Euro_2012_logo_(artistic_version).svg.webp"
+  },
+  "euro-2008": {
+    "src": "/edition-logos/UEFA_Euro_2008_Logo.svg"
+  },
+  "euro-2004": {
+    "src": "/edition-logos/UEFA_Euro_2004_logo.svg"
+  },
+  "euro-2000": {
+    "src": "/edition-logos/UEFA_Euro_2000_logo.svg"
+  },
+  "euro-1996": {
+    "src": "/edition-logos/UEFA_Euro_1996_logo.svg"
+  },
+  "euro-1992": {
+    "src": "/edition-logos/UEFA_Euro_1992_logo.svg"
+  },
+  "euro-1988": {
+    "src": "/edition-logos/UEFA_Euro_1988_logo.svg"
+  },
+  "euro-1984": {
+    "src": "/edition-logos/UEFA_Euro_1984_logo.svg"
+  },
+  "euro-1980": {
+    "src": "/edition-logos/UEFA_Euro_1980_official_logo.svg"
+  },
+  "euro-1976": {
+    "src": "/edition-logos/UEFA_Euro_1976_logo.svg"
+  },
+  "euro-1972": {
+    "src": "/edition-logos/UEFA_Euro_1972_logo.svg"
+  },
+  "euro-1968": {
+    "src": "/edition-logos/UEFA_Euro_1968_logo.svg"
+  },
+  "euro-1964": {
+    "src": "/edition-logos/UEFA_Euro_1964_logo.svg"
+  },
+  "euro-1960": {
+    "src": "/edition-logos/UEFA_Euro_1960_logo.svg"
+  },
+  "champions-league-2025-26": {
+    "src": "/edition-logos/362px-Trofeo_UEFA_Champions_League.jpg"
+  },
+  "champions-league-2024-25": {
+    "src": "/edition-logos/362px-Trofeo_UEFA_Champions_League.jpg"
+  },
   "champions-league-2023-24": {
-    "src": "/edition-logos/UEFA_Champions_League.svg"
+    "src": "/edition-logos/362px-Trofeo_UEFA_Champions_League.jpg"
+  },
+  "concacaf-gold-cup-2025": {
+    "src": "/edition-logos/CONCACAF_-_Gold_Cup.svg"
   },
   "concacaf-gold-cup-2023": {
-    "src": "/edition-logos/Concacaf_Gold_Cup_2021.svg"
+    "src": "/edition-logos/1991_CONCACAF_Gold_Cup_logo.jpg"
+  },
+  "concacaf-gold-cup-2021": {
+    "src": "/edition-logos/CONCACAF_-_Gold_Cup.svg"
+  },
+  "concacaf-gold-cup-2019": {
+    "src": "/edition-logos/2019_CONCACAF_Gold_Cup.svg"
+  },
+  "concacaf-gold-cup-2017": {
+    "src": "/edition-logos/2017_CONCACAF_Gold_Cup.svg"
   },
   "concacaf-gold-cup-2015": {
     "src": "/edition-logos/CONCACAF_Gold_Cup_2015.svg"
   },
+  "concacaf-gold-cup-2013": {
+    "src": "/edition-logos/2013_CONCACAF_Gold_Cup.svg.webp"
+  },
+  "concacaf-gold-cup-2011": {
+    "src": "/edition-logos/2011-concacaf-gold-cup.png"
+  },
+  "concacaf-gold-cup-2009": {
+    "src": "/edition-logos/2009_CONCACAF_Gold_Cup_logo.svg"
+  },
+  "concacaf-gold-cup-2007": {
+    "src": "/edition-logos/2007_CONCACAF_Gold_Cup_logo.svg"
+  },
+  "concacaf-gold-cup-2005": {
+    "src": "/edition-logos/2005_CONCACAF_Gold_Cup_logo.svg"
+  },
+  "concacaf-gold-cup-2003": {
+    "src": "/edition-logos/2003_CONCACAF_Gold_Cup_logo.svg"
+  },
+  "concacaf-gold-cup-2002": {
+    "src": "/edition-logos/2002_CONCACAF_Gold_Cup_logo.png"
+  },
+  "concacaf-gold-cup-2000": {
+    "src": "/edition-logos/2000_CONCACAF_Gold_Cup.png"
+  },
+  "concacaf-gold-cup-1998": {
+    "src": "/edition-logos/gc_1998.png"
+  },
+  "concacaf-gold-cup-1996": {
+    "src": "/edition-logos/1996_CONCACAF_Gold_Cup.png"
+  },
   "concacaf-gold-cup-1993": {
     "src": "/edition-logos/1993_CONCACAF_Gold_Cup.jpg"
   },
+  "concacaf-gold-cup-1991": {
+    "src": "/edition-logos/1991_CONCACAF_Gold_Cup_logo.jpg"
+  },
   "ofc-nations-cup-2024": {
-    "src": "/edition-logos/OFC_Men's_Nations_Cup.jpg"
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-2016": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-2012": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-2008": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-2004": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-2002": {
+    "src": "/edition-logos/OFC3-copy-2002.jpeg"
+  },
+  "ofc-nations-cup-2000": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-1998": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-1996": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-1980": {
+    "src": "/edition-logos/OFCcup.png"
+  },
+  "ofc-nations-cup-1973": {
+    "src": "/edition-logos/OFCcup.png"
   },
   "copa-america-2024": {
     "src": "/edition-logos/2024_Copa_América_logo.svg"
   },
+  "copa-america-2021": {
+    "src": "/edition-logos/2021_Copa_América_logo.svg"
+  },
+  "copa-america-2019": {
+    "src": "/edition-logos/2019_Copa_América_logo.svg"
+  },
+  "copa-america-2016": {
+    "src": "/edition-logos/Copa_América_Centenario.svg"
+  },
+  "copa-america-2015": {
+    "src": "/edition-logos/2015_Copa_América.svg"
+  },
+  "copa-america-2011": {
+    "src": "/edition-logos/2011_Copa_América_logo.svg"
+  },
+  "copa-america-2007": {
+    "src": "/edition-logos/2007_Copa_América_logo.svg"
+  },
+  "copa-america-2004": {
+    "src": "/edition-logos/2004_Copa_América_logo.svg"
+  },
+  "copa-america-2001": {
+    "src": "/edition-logos/Copa_América_2001_official_logo.png"
+  },
+  "copa-america-1999": {
+    "src": "/edition-logos/1999_Copa_América_logo.svg"
+  },
+  "copa-america-1997": {
+    "src": "/edition-logos/1997_Copa_América_logo.svg"
+  },
+  "copa-america-1995": {
+    "src": "/edition-logos/Copa_América_1995.svg"
+  },
+  "copa-america-1993": {
+    "src": "/edition-logos/1993_Copa_América_logo.jpg"
+  },
+  "copa-america-1991": {
+    "src": "/edition-logos/1991_Copa_América_logo.png"
+  },
+  "copa-america-1989": {
+    "src": "/edition-logos/1989_Copa_America_logo.svg"
+  },
+  "copa-america-1987": {
+    "src": "/edition-logos/1987_Copa_América_logo.svg"
+  },
   "copa-america-1983": {
+    "src": "/edition-logos/640px-Logo_de_la_Conmebol_Copa_América.svg.png"
+  },
+  "copa-america-1979": {
+    "src": "/edition-logos/640px-Logo_de_la_Conmebol_Copa_América.svg.png"
+  },
+  "copa-america-1975": {
     "src": "/edition-logos/640px-Logo_de_la_Conmebol_Copa_América.svg.png"
   },
   "copa-america-1967": {
     "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
   },
+  "copa-america-1963": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1959-ecu": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1959-arg": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1957": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1956": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1955": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1953": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1949": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1947": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1946": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1945": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1942": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1941": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1939": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1937": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1935": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1929": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1927": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1926": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1925": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1924": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1923": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1922": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1921": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1920": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1919": {
+    "src": "/edition-logos/Copa_america_poster1919.jpg"
+  },
+  "copa-america-1917": {
+    "src": "/edition-logos/305px-Copa_Atlansia_Trofeo.png"
+  },
+  "copa-america-1916": {
+    "src": "/edition-logos/Sudamericano_de_football_1916_brazilian_art.jpg"
+  },
+  "libertadores-2025": {
+    "src": "/edition-logos/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
+  },
+  "libertadores-2024": {
+    "src": "/edition-logos/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
+  },
   "libertadores-2023": {
-    "src": "/edition-logos/Copa_Libertadores_logo.svg"
+    "src": "/edition-logos/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
+  },
+  "libertadores-2022": {
+    "src": "/edition-logos/328-3287452_copa-libertadores-primer-trofeo-hd-png-download.png"
   },
   "liga-profesional-argentina-2023": {
     "src": "/edition-logos/Logo_de_la_Liga_Profesional_de_Fútbol_de_Argentina.svg"
@@ -74,16 +632,52 @@
   "categoria-primera-a-2023-finalizacion": {
     "src": "/edition-logos/PrimeraA2020-.png"
   },
+  "epl-2022-23": {
+    "src": "/edition-logos/Premier_League.svg"
+  },
   "epl-2023-24": {
     "src": "/edition-logos/Premier_League.svg"
+  },
+  "epl-2024-25": {
+    "src": "/edition-logos/Premier_League.svg"
+  },
+  "epl-2025-26": {
+    "src": "/edition-logos/Premier_League.svg"
+  },
+  "ligue-1-2022-23": {
+    "src": "/edition-logos/Ligue1.svg"
   },
   "ligue-1-2023-24": {
     "src": "/edition-logos/Ligue1.svg"
   },
+  "ligue-1-2024-25": {
+    "src": "/edition-logos/Ligue1.svg"
+  },
+  "ligue-1-2025-26": {
+    "src": "/edition-logos/Ligue1.svg"
+  },
+  "bundesliga-2022-23": {
+    "src": "/edition-logos/Bundesliga_Wordmark_(2002-2010).svg.webp"
+  },
   "bundesliga-2023-24": {
     "src": "/edition-logos/Bundesliga_Wordmark_(2002-2010).svg.webp"
   },
+  "bundesliga-2024-25": {
+    "src": "/edition-logos/Bundesliga_Wordmark_(2002-2010).svg.webp"
+  },
+  "bundesliga-2025-26": {
+    "src": "/edition-logos/Bundesliga_Wordmark_(2002-2010).svg.webp"
+  },
+  "la-liga-2022-23": {
+    "src": "/edition-logos/LaLiga_logo_(2023).svg.webp"
+  },
   "la-liga-2023-24": {
+    "src": "/edition-logos/LaLiga_logo_(2023).svg.webp"
+  },
+  "la-liga-2024-25": {
+    "src": "/edition-logos/LaLiga_logo_(2023).svg.webp"
+  },
+  "la-liga-2025-26": {
     "src": "/edition-logos/LaLiga_logo_(2023).svg.webp"
   },
   "primera-division-uruguay-2023": {

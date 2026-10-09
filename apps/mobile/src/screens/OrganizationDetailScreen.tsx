@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import {
   View,
-  Text,
   FlatList,
   Pressable,
   ActivityIndicator,
   StyleSheet,
 } from "react-native";
+import { AppText as Text } from "../components/AppText";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
-import type { RootStackParamList } from "../navigation/RootNavigator";
+import type { OrganizationsStackParamList } from "../navigation/RootNavigator";
 import {
   getOrganization,
   getChildOrganizations,
@@ -16,8 +16,11 @@ import {
   type Organization,
   type Competition,
 } from "@turtle-soccer/core";
+import { LogoMark } from "../components/LogoMark";
+import { ORG_LOGOS } from "../lib/orgLogoRegistry";
+import { COMPETITION_LOGOS } from "../lib/competitionLogoRegistry";
 
-type Props = NativeStackScreenProps<RootStackParamList, "OrganizationDetail">;
+type Props = NativeStackScreenProps<OrganizationsStackParamList, "OrganizationDetail">;
 
 type DetailData = {
   org: Organization;
@@ -78,19 +81,38 @@ export function OrganizationDetailScreen({ route, navigation }: Props) {
 
   const { org, children, competitions } = data;
 
-  const childLabel =
-    org.level === "global"
-      ? "Confederations"
-      : org.level === "confederation"
-      ? "National Associations"
-      : "Members";
+  // On a confederation's page, show how many associations it has — split
+  // into full/associate only when it actually has associate members
+  // (currently CAF and OFC), same rule as the web app's heading.
+  const childLabel = (() => {
+    if (org.level === "global") return "Confederations";
+    if (org.level !== "confederation") return "Members";
+    const associateCount = children.filter(
+      (c) => c.confederationStatus === "associate"
+    ).length;
+    const fullCount = children.length - associateCount;
+    return associateCount > 0
+      ? `National Associations (${fullCount} full, ${associateCount} associate)`
+      : `National Associations (${children.length})`;
+  })();
 
   return (
     <FlatList
       ListHeaderComponent={
         <View style={styles.header}>
-          <Text style={styles.orgName}>{org.name}</Text>
-          <Text style={styles.orgFullName}>{org.fullName}</Text>
+          <View style={styles.headerTop}>
+            <LogoMark
+              registry={ORG_LOGOS}
+              logoKey={org.id}
+              name={org.name}
+              width={100}
+              height={56}
+            />
+            <View style={styles.headerText}>
+              <Text display style={styles.orgName}>{org.name}</Text>
+              <Text style={styles.orgFullName}>{org.fullName}</Text>
+            </View>
+          </View>
           <Text style={styles.description}>{org.description}</Text>
           {org.confederationHistory && (
             <Text style={styles.note}>{org.confederationHistory}</Text>
@@ -103,10 +125,28 @@ export function OrganizationDetailScreen({ route, navigation }: Props) {
             <>
               <Text style={styles.sectionLabel}>Competitions</Text>
               {competitions.map((c) => (
-                <View key={c.id} style={styles.card}>
-                  <Text style={styles.cardTitle}>{c.name}</Text>
-                  <Text style={styles.cardSubtitle}>{c.frequency}</Text>
-                </View>
+                <Pressable
+                  key={c.id}
+                  style={[styles.card, styles.cardRow]}
+                  onPress={() =>
+                    navigation.navigate("CompetitionDetail", {
+                      orgId,
+                      competitionId: c.id,
+                    })
+                  }
+                >
+                  <LogoMark
+                    registry={COMPETITION_LOGOS}
+                    logoKey={c.id}
+                    name={c.name}
+                    width={40}
+                    height={56}
+                  />
+                  <View style={styles.cardTextColumn}>
+                    <Text display style={styles.cardTitle}>{c.name}</Text>
+                    <Text style={styles.cardSubtitle}>{c.frequency}</Text>
+                  </View>
+                </Pressable>
               ))}
             </>
           )}
@@ -121,15 +161,24 @@ export function OrganizationDetailScreen({ route, navigation }: Props) {
       contentContainerStyle={styles.listContent}
       renderItem={({ item }) => (
         <Pressable
-          style={styles.card}
+          style={[styles.card, styles.cardRow]}
           onPress={() =>
             navigation.push("OrganizationDetail", { orgId: item.id })
           }
         >
-          <Text style={styles.cardTitle}>{item.name}</Text>
-          <Text style={styles.cardSubtitle} numberOfLines={1}>
-            {item.fullName}
-          </Text>
+          <LogoMark
+            registry={ORG_LOGOS}
+            logoKey={item.id}
+            name={item.name}
+            width={56}
+            height={32}
+          />
+          <View style={styles.cardTextColumn}>
+            <Text display style={styles.cardTitle}>{item.name}</Text>
+            <Text style={styles.cardSubtitle} numberOfLines={1}>
+              {item.fullName}
+            </Text>
+          </View>
         </Pressable>
       )}
     />
@@ -153,6 +202,22 @@ const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 20,
     paddingTop: 16,
+  },
+  headerTop: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+  },
+  headerText: {
+    flex: 1,
+  },
+  cardRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+  },
+  cardTextColumn: {
+    flex: 1,
   },
   orgName: {
     fontSize: 32,

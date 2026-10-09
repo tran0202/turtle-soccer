@@ -1,5 +1,37 @@
 [
   {
+    "id": "world-cup-2030",
+    "competitionId": "world-cup",
+    "label": "2030",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Morocco",
+        "code": "MAR"
+      },
+      {
+        "name": "Portugal",
+        "code": "POR"
+      },
+      {
+        "name": "Spain",
+        "code": "ESP"
+      }
+    ],
+    "hostType": "multi",
+    "startDate": "2030-06-08",
+    "endDate": "2030-07-21",
+    "teams": 48,
+    "champion": null,
+    "runnerUp": null,
+    "thirdPlace": null,
+    "fourthPlace": null,
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "The centenary World Cup, marking 100 years since the first tournament in Uruguay in 1930, and the first held across three continents. Morocco, Portugal and Spain host the tournament, with one match each played in Uruguay, Argentina and Paraguay on 8–9 June 2030 before it moves to its main hosts; all six countries qualify automatically. Not yet played: as of October 2026 the dates follow FIFA's published outline schedule (final on 21 July 2030), the final venue has not been announced, and FIFA is studying a one-off expansion from 48 to 64 teams, with no decision reported.",
+    "topScorers": []
+  },
+  {
     "id": "world-cup-2026",
     "competitionId": "world-cup",
     "label": "2026",
@@ -263,6 +295,71 @@
         "name": "Davor Šuker",
         "goals": 6,
         "countryCode": "CRO"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-1994",
+    "competitionId": "world-cup",
+    "label": "1994",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "United States",
+        "code": "USA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "1994-06-17",
+    "endDate": "1994-07-17",
+    "teams": 24,
+    "champion": "Brazil",
+    "runnerUp": "Italy",
+    "thirdPlace": "Sweden",
+    "fourthPlace": "Bulgaria",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "Brazil became the first nation to win four World Cups, beating Italy 3-2 on penalties after a 0-0 draw at the Rose Bowl in Pasadena — the first World Cup final decided by a shootout, and the first without a goal. Roberto Baggio's missed penalty settled it. The first World Cup hosted in the United States. Hristo Stoichkov and Oleg Salenko shared the Golden Boot on six goals each; Salenko scored five of his in a single match, against Cameroon, a World Cup record.",
+    "topScorers": [
+      {
+        "name": "Hristo Stoichkov",
+        "goals": 6,
+        "countryCode": "BUL"
+      },
+      {
+        "name": "Oleg Salenko",
+        "goals": 6,
+        "countryCode": "RUS"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-1990",
+    "competitionId": "world-cup",
+    "label": "1990",
+    "historicalName": null,
+    "hosts": [
+      {
+        "name": "Italy",
+        "code": "ITA"
+      }
+    ],
+    "hostType": "single",
+    "startDate": "1990-06-08",
+    "endDate": "1990-07-08",
+    "teams": 24,
+    "champion": "West Germany",
+    "runnerUp": "Argentina",
+    "thirdPlace": "Italy",
+    "fourthPlace": "England",
+    "coThirdPlace": null,
+    "semifinalists": null,
+    "notes": "West Germany's third title, and the last World Cup won by West Germany before reunification. Andreas Brehme's 85th-minute penalty settled a 1-0 final against Argentina at Rome's Stadio Olimpico, in which Argentina had two players sent off — Pedro Monzón, the first player ever dismissed in a World Cup final, and Gustavo Dezotti. Both semifinals went to penalty shootouts: hosts Italy lost to Argentina and England to West Germany, before Italy took third place by beating England 2-1. Salvatore Schillaci, little known before the tournament, won both the Golden Boot (6 goals) and the Golden Ball.",
+    "topScorers": [
+      {
+        "name": "Salvatore Schillaci",
+        "goals": 6,
+        "countryCode": "ITA"
       }
     ]
   },

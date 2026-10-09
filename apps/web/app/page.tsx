@@ -14,8 +14,9 @@ export default async function HomePage() {
         Welcome
       </h1>
       <p className="text-ink/60 mb-10 max-w-md">
-        A record of soccer organizations, their competitions, and every
-        edition played.
+        An archive of soccer organizations, their competitions, and
+        every edition played. A hobby, non-commercial project for the
+        love of soccer.
       </p>
 
       <Link
@@ -55,16 +56,18 @@ export default async function HomePage() {
             />
             <span>{edition.label}</span>
           </div>
-          <div className="mt-4 text-paper/80">
-            Champion:{" "}
-            <span className="font-semibold text-paper">
-              <NameWithFlag
-                name={edition.champion}
-                isCountry={competition.scope === "national"}
-                size="lg"
-              />
-            </span>
-          </div>
+          {edition.champion && (
+            <div className="mt-4 text-paper/80">
+              Champion:{" "}
+              <span className="font-semibold text-paper">
+                <NameWithFlag
+                  name={edition.champion}
+                  isCountry={competition.scope === "national"}
+                  size="lg"
+                />
+              </span>
+            </div>
+          )}
         </div>
       </Link>
     </div>

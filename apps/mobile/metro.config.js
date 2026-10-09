@@ -21,4 +21,12 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, "node_modules"),
 ];
 
+// Treat .svg as source to be compiled into a React component (via
+// react-native-svg) rather than as a static image asset — this is what
+// lets `import Flag from "./ARG.svg"` work and render as `<Flag />`,
+// matching how the 220+ flag files are used.
+config.transformer.babelTransformerPath = require.resolve("react-native-svg-transformer");
+config.resolver.assetExts = config.resolver.assetExts.filter((ext) => ext !== "svg");
+config.resolver.sourceExts = [...config.resolver.sourceExts, "svg"];
+
 module.exports = config;

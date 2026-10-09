@@ -10,6 +10,7 @@ import {
 import { CompetitionMark } from "@/components/CompetitionMark";
 import { EditionMark } from "@/components/EditionMark";
 import { NameWithFlag } from "@/components/NameWithFlag";
+import { PlaceIcon } from "@/components/PlaceIcon";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
 export async function generateStaticParams() {
@@ -125,6 +126,9 @@ export default async function CompetitionPage({
                   ? { name: e.fourthPlace, label: usesSemifinalists ? "Fourth place" : null }
                   : null;
                 const slot4Color = e.coThirdPlace || e.semifinalists ? "text-ink/60" : "text-ink/40";
+                // An edition that hasn't been played shows a numbered medal in each empty slot. 3 and 4
+                // only under "Third place / Fourth place" headers: under "Semifinalist" they'd be wrong.
+                const placeholders = e.champion === null && !usesSemifinalists;
 
                 return (
                   <li
@@ -146,14 +150,24 @@ export default async function CompetitionPage({
                         </div>
                         <div className="flex-1 grid grid-cols-4">
                           <span className="flex justify-center text-turtle-blue">
-                            <NameWithFlag name={e.champion} isCountry={isCountry} size="sm" compact />
+                            {e.champion ? (
+                              <NameWithFlag name={e.champion} isCountry={isCountry} size="sm" compact />
+                            ) : (
+                              <PlaceIcon place={1} size={22} />
+                            )}
                           </span>
                           <span className="flex justify-center text-turtle-green">
-                            <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="sm" compact />
+                            {e.runnerUp ? (
+                              <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="sm" compact />
+                            ) : (
+                              <PlaceIcon place={2} size={22} />
+                            )}
                           </span>
                           <span className="flex justify-center text-ink/60">
                             {slot3 ? (
                               <NameWithFlag name={slot3.name} isCountry={isCountry} size="sm" compact />
+                            ) : placeholders ? (
+                              <PlaceIcon place={3} size={22} />
                             ) : (
                               <span className="text-ink/30 text-xs">—</span>
                             )}
@@ -161,6 +175,8 @@ export default async function CompetitionPage({
                           <span className={`flex justify-center ${slot4Color}`}>
                             {slot4 ? (
                               <NameWithFlag name={slot4.name} isCountry={isCountry} size="sm" compact />
+                            ) : placeholders ? (
+                              <PlaceIcon place={4} size={22} />
                             ) : (
                               <span className="text-ink/30 text-xs">—</span>
                             )}
@@ -177,10 +193,18 @@ export default async function CompetitionPage({
                           </div>
                         </div>
                         <div className="font-display text-3xl uppercase tracking-tight text-turtle-blue">
-                          <NameWithFlag name={e.champion} isCountry={isCountry} size="lg" />
+                          {e.champion ? (
+                            <NameWithFlag name={e.champion} isCountry={isCountry} size="lg" />
+                          ) : (
+                            <PlaceIcon place={1} size={38} />
+                          )}
                         </div>
                         <div className="font-display text-3xl uppercase tracking-tight text-turtle-green">
-                          <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="lg" />
+                          {e.runnerUp ? (
+                            <NameWithFlag name={e.runnerUp} isCountry={isCountry} size="lg" />
+                          ) : (
+                            <PlaceIcon place={2} size={38} />
+                          )}
                         </div>
                         <div className="font-display text-3xl uppercase tracking-tight text-ink/60">
                           {slot3 ? (
@@ -192,6 +216,8 @@ export default async function CompetitionPage({
                               )}
                               <NameWithFlag name={slot3.name} isCountry={isCountry} size="lg" />
                             </>
+                          ) : placeholders ? (
+                            <PlaceIcon place={3} size={38} />
                           ) : (
                             <span className="text-ink/30">—</span>
                           )}
@@ -206,6 +232,8 @@ export default async function CompetitionPage({
                               )}
                               <NameWithFlag name={slot4.name} isCountry={isCountry} size="lg" />
                             </>
+                          ) : placeholders ? (
+                            <PlaceIcon place={4} size={38} />
                           ) : (
                             <span className="text-ink/30">—</span>
                           )}

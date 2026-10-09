@@ -249,6 +249,19 @@ const NON_FIFA_TERRITORY_CODES: Record<string, string> = {
   "Zanzibar": "ZAN",
 };
 
+// Teams that no longer exist under that name, recorded under the name AND
+// FIFA code they used at the time. The code is what a chip displays and what
+// picks the flag file (flags/FRG.svg). Unlike the Turkey -> Türkiye aliases
+// above, these have their own code, separate from their successor's, so each
+// is tied to that successor explicitly in teamLineage.ts.
+const HISTORICAL_TEAM_CODES: Record<string, string> = {
+  "West Germany": "FRG",
+};
+
 export function getCountryCode(name: string): string | undefined {
-  return COUNTRY_CODES[name] ?? NON_FIFA_TERRITORY_CODES[name];
+  return (
+    COUNTRY_CODES[name] ??
+    NON_FIFA_TERRITORY_CODES[name] ??
+    HISTORICAL_TEAM_CODES[name]
+  );
 }

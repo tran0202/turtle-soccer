@@ -50,8 +50,9 @@ export type Edition = {
   startDate: string;
   endDate: string;
   teams: number;
-  champion: string;
-  runnerUp: string;
+  /** null for an edition that hasn't been played yet (e.g. a scheduled World Cup). */
+  champion: string | null;
+  runnerUp: string | null;
   thirdPlace: string | null;
   fourthPlace: string | null;
   coThirdPlace: [string, string] | null;

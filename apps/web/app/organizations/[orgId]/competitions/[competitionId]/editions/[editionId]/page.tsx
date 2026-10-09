@@ -11,6 +11,7 @@ import {
 import { Flag } from "@/components/Flag";
 import { EditionMark } from "@/components/EditionMark";
 import { NameWithFlag } from "@/components/NameWithFlag";
+import { PlaceIcon } from "@/components/PlaceIcon";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
 export async function generateStaticParams() {
@@ -158,6 +159,9 @@ export default async function EditionPage({
                 </span>
               </div>
             ))}
+            {edition.topScorers.length === 0 && (
+              <span className="text-ink/30">—</span>
+            )}
           </div>
         </div>
       </div>
@@ -168,12 +172,16 @@ export default async function EditionPage({
             Champion
           </div>
           <div className="font-display text-4xl uppercase tracking-tight text-turtle-blue">
-            <NameWithFlag
-              name={edition.champion}
-              isCountry={competition.scope === "national"}
-              size="xl"
-              nameMaxWidth="16rem"
-            />
+            {edition.champion ? (
+              <NameWithFlag
+                name={edition.champion}
+                isCountry={competition.scope === "national"}
+                size="xl"
+                nameMaxWidth="16rem"
+              />
+            ) : (
+              <PlaceIcon place={1} size={40} />
+            )}
           </div>
         </div>
         <div className="p-6 border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]">
@@ -181,12 +189,16 @@ export default async function EditionPage({
             Runner-up
           </div>
           <div className="font-display text-4xl uppercase tracking-tight text-turtle-green">
-            <NameWithFlag
-              name={edition.runnerUp}
-              isCountry={competition.scope === "national"}
-              size="xl"
-              nameMaxWidth="16rem"
-            />
+            {edition.runnerUp ? (
+              <NameWithFlag
+                name={edition.runnerUp}
+                isCountry={competition.scope === "national"}
+                size="xl"
+                nameMaxWidth="16rem"
+              />
+            ) : (
+              <PlaceIcon place={2} size={40} />
+            )}
           </div>
         </div>
         <div className="p-6 border border-paper-line rounded-lg shadow-[3px_3px_6px_rgba(23,26,33,0.08)]">
@@ -219,6 +231,8 @@ export default async function EditionPage({
                 size="xl"
                 nameMaxWidth="16rem"
               />
+            ) : edition.champion === null ? (
+              <PlaceIcon place={3} size={40} />
             ) : (
               "—"
             )}
@@ -258,6 +272,8 @@ export default async function EditionPage({
                 size="xl"
                 nameMaxWidth="16rem"
               />
+            ) : edition.champion === null ? (
+              <PlaceIcon place={4} size={40} />
             ) : (
               "—"
             )}

@@ -1,21 +1,23 @@
 import { useEffect, useState } from "react";
 import {
   View,
-  Text,
   FlatList,
   Pressable,
   ActivityIndicator,
   StyleSheet,
 } from "react-native";
+import { AppText as Text } from "../components/AppText";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
-import type { RootStackParamList } from "../navigation/RootNavigator";
+import type { OrganizationsStackParamList } from "../navigation/RootNavigator";
 import {
   getRootOrganizations,
   getChildOrganizations,
   type Organization,
 } from "@turtle-soccer/core";
+import { LogoMark } from "../components/LogoMark";
+import { ORG_LOGOS } from "../lib/orgLogoRegistry";
 
-type Props = NativeStackScreenProps<RootStackParamList, "OrganizationsList">;
+type Props = NativeStackScreenProps<OrganizationsStackParamList, "OrganizationsList">;
 
 // A root org (FIFA) plus its direct children (confederations), fetched
 // together so the list can show both in one screen without re-fetching
@@ -92,10 +94,19 @@ export function OrganizationsListScreen({ navigation }: Props) {
             navigation.navigate("OrganizationDetail", { orgId: item.org.id })
           }
         >
-          <Text style={styles.orgName}>{item.org.name}</Text>
-          <Text style={styles.orgFullName} numberOfLines={1}>
-            {item.org.fullName}
-          </Text>
+          <LogoMark
+            registry={ORG_LOGOS}
+            logoKey={item.org.id}
+            name={item.org.name}
+            width={item.isChild ? 48 : 64}
+            height={item.isChild ? 28 : 36}
+          />
+          <View style={styles.rowText}>
+            <Text display style={styles.orgName}>{item.org.name}</Text>
+            <Text style={styles.orgFullName} numberOfLines={1}>
+              {item.org.fullName}
+            </Text>
+          </View>
         </Pressable>
       )}
     />
@@ -117,10 +128,16 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   row: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
     paddingVertical: 14,
     paddingHorizontal: 20,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: "#E4E1D8",
+  },
+  rowText: {
+    flex: 1,
   },
   childRow: {
     paddingLeft: 36,

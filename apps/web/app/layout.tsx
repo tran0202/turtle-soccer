@@ -19,7 +19,7 @@ const body = Source_Serif_4({
 export const metadata: Metadata = {
   title: "Turtle Soccer Archive",
   description:
-    "A record of soccer organizations, their competitions, and every edition played.",
+    "An archive of soccer organizations, their competitions, and every edition played. A hobby, non-commercial project for the love of soccer.",
 };
 
 export default function RootLayout({
@@ -61,9 +61,6 @@ export default function RootLayout({
             </nav>
           </header>
           <main className="py-10">{children}</main>
-          <footer className="py-8 text-sm text-ink/40">
-            A hobby non-commercial archive for the love of soccer.
-          </footer>
         </div>
       </body>
     </html>
